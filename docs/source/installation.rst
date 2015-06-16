@@ -40,14 +40,14 @@ The following sections contain detailed instructions on how to install and confi
 
 The application server requires the following additional software:
 
-* Java: Oracle JSE version 7 (1.7.0_67+)
+* Java: Oracle JSE version 8 (1.8.0_45+) or Oracle JSE version 7 (1.7.0_67+)
 * Apache Tomcat 7 64 Bit
 
 The database server requires the following additional software:
 
 * MongoDB version 2.4.x
 
-*Important: MongoDB version 2.6.x is not yet officially supported by Effektif. Please, make sure to install version 2.4.x.*
+*Important: MongoDB version 2.6.x or higher is not yet officially supported by Effektif. Please, make sure to install version 2.4.x.*
 
 .. _supported-browsers:
 
@@ -84,7 +84,7 @@ On Linux systems you need to make the scripts executable with the ``chmod`` comm
 
 Install Java
 ------------
-The application server requires a Java runtime environment in order to execute the Java backend of Effektif. Therefore, you have to install Java 7 64Bit on the application server. You can download a respective installation package for your operating system here: 
+The application server requires a Java runtime environment in order to execute the Java backend of Effektif. Therefore, you have to install Java 8 64Bit or Java 7 64Bit on the application server. You can download a respective installation package for your operating system here: 
 
 https://www.java.com/en/download/manual.jsp
 

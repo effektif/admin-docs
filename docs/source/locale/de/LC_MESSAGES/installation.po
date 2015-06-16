@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-31 11:18+0100\n"
-"PO-Revision-Date: 2015-02-13 11:12+0100\n"
+"PO-Revision-Date: 2015-06-16 15:25+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
 "MIME-Version: 1.0\n"
@@ -127,10 +127,6 @@ msgstr "Softwareanforderungen"
 msgid "The application server requires the following additional software:"
 msgstr "Der Anwendungsserver benötigt die folgende Software:"
 
-#: ../../source/installation.rst:43
-msgid "Java: Oracle JSE version 7 (1.7.0_67+)"
-msgstr "Java: Oracle JSE, Version 7 (1.7.0_67+)"
-
 #: ../../source/installation.rst:46
 msgid "The database server requires the following additional software:"
 msgstr "Der Datenbankserver benötigt die folgende Software:"
@@ -211,17 +207,6 @@ msgstr "ROOT - Verzeichnis, das die Webanwendung enthält"
 #: ../../source/installation.rst:86
 msgid "Install Java"
 msgstr "Java installieren"
-
-#: ../../source/installation.rst:87
-msgid ""
-"The application server requires a Java runtime environment in order to "
-"execute the Java backend of Effektif. Therefore, you have to install Java 7 "
-"64Bit on the application server. You can download a respective installation "
-"package for your operating system here:"
-msgstr ""
-"Der Anwendungsserver benötigt eine Java Ausführungsumgebung, um das Java-"
-"Back End von Effektif auszuführen. Installieren Sie daher Java 7 64Bit für "
-"Ihr Betriebssystem. Die entsprechenden Dateien erhalten Sie hier:"
 
 #: ../../source/installation.rst:89
 msgid "https://www.java.com/en/download/manual.jsp"
@@ -1406,15 +1391,6 @@ msgstr ""
 "können zudem in der Datei effektif.log eingesehen werden. Logfiles, die "
 "älter als 30 Tage sind, werden automatisch gelöscht. "
 
-#: ../../source/installation.rst:50
-msgid ""
-"*Important: MongoDB version 2.6.x is not yet officially supported by "
-"Effektif. Please, make sure to install version 2.4.x.*"
-msgstr ""
-"*Wichtig: MongoDB,  2.6.x wird von Effektif momentan offiziell nicht "
-"unterstüzt. Stellen Sie daher sicher, dass Sie MongoDB version 2.4.x "
-"installieren.*"
-
 #: ../../source/installation.rst:166
 msgid ""
 "*Important: If the server is running on any other port than port 80, your "
@@ -1540,6 +1516,55 @@ msgstr ""
 "können Sie auch eine grafische Anwendung wie z. B. Robomongo verwenden, um "
 "den Datenbanknutzer anzulegen. Abschnitt :ref:`appendix-add-mongodb-user` "
 "exklärt Ihnen, wie Sie den Datenbanknutzer mit Robomongo erstellen können."
+
+#: ../../source/installation.rst:43
+msgid ""
+"Java: Oracle JSE version 8 (1.8.0_45+) or Oracle JSE version 7 (1.7.0_67+)"
+msgstr ""
+"Java: Oracle JSE Version 8 (1.8.0_45+) oder Oracle JSE Version 7 "
+"(1.7.0_67+)\""
+
+#: ../../source/installation.rst:50
+msgid ""
+"*Important: MongoDB version 2.6.x or higher is not yet officially supported "
+"by Effektif. Please, make sure to install version 2.4.x.*"
+msgstr ""
+"*Wichtig: MongoDB, Version 2.6.x oder höher, wird von Effektif momentan "
+"offiziell nicht unterstützt. Stellen Sie daher sicher, dass Sie MongoDB "
+"Version 2.4.x installieren.*"
+
+#: ../../source/installation.rst:87
+msgid ""
+"The application server requires a Java runtime environment in order to "
+"execute the Java backend of Effektif. Therefore, you have to install Java 8 "
+"64Bit or Java 7 64Bit on the application server. You can download a "
+"respective installation package for your operating system here:"
+msgstr ""
+"Der Anwendungsserver benötigt eine Java Ausführungsumgebung, um das Java-"
+"Back End von Effektif auszuführen. Installieren Sie daher Java 8 64Bit oder "
+"Java 7 64Bit für Ihr Betriebssystem. Die entsprechenden Dateien erhalten Sie "
+"hier:"
+
+#~ msgid "Java: Oracle JSE version 7 (1.7.0_67+)"
+#~ msgstr "Java: Oracle JSE, Version 7 (1.7.0_67+)"
+
+#~ msgid ""
+#~ "The application server requires a Java runtime environment in order to "
+#~ "execute the Java backend of Effektif. Therefore, you have to install Java "
+#~ "7 64Bit on the application server. You can download a respective "
+#~ "installation package for your operating system here:"
+#~ msgstr ""
+#~ "Der Anwendungsserver benötigt eine Java Ausführungsumgebung, um das Java-"
+#~ "Back End von Effektif auszuführen. Installieren Sie daher Java 7 64Bit "
+#~ "für Ihr Betriebssystem. Die entsprechenden Dateien erhalten Sie hier:"
+
+#~ msgid ""
+#~ "*Important: MongoDB version 2.6.x is not yet officially supported by "
+#~ "Effektif. Please, make sure to install version 2.4.x.*"
+#~ msgstr ""
+#~ "*Wichtig: MongoDB,  2.6.x wird von Effektif momentan offiziell nicht "
+#~ "unterstüzt. Stellen Sie daher sicher, dass Sie MongoDB version 2.4.x "
+#~ "installieren.*"
 
 #~ msgid ""
 #~ "In order to add a new user to MongoDB, the MongoDB server has to be "

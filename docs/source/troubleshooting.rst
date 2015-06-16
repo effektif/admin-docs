@@ -61,4 +61,18 @@ Solution:
 
     In order to check the second issue, jump to section :ref:`add-mongodb-user`\ . This section lists all necessary roles and explains how to verify that the Effektif user has all the required roles. Especially the restore and backup commands require certain roles to work properly.
 
+Problem:
+    Effektif does not start and the log file contains the error message ``INFO  LockingDbExecutor Database is locked by another executor. Wait...``.
 
+Solution:
+    The problem with the LockingDbExecutor arises when the application server is shutdown during the initialisation (update of licenses and migration of  database) before the lock can be released again. You have to manually remove the respective lock from the database. It is recommened to use a tool like Robomongo for this purpose. Section :ref:`tooling-mongodb` explains how to retrieve Robomongo and in section :ref:`appendix-add-mongodb-user` you will find an explanation on how to setup a connection to your MongoDB. 
+
+    1. Open Robomongo.
+    2. Establish a connection to MongoDB.
+    3. Open the content of the Effektif DB on the left side of the application.
+    4. Under Collections you will find the table ``properties``.
+    5. A double click on ``properties`` shows all entries. In case of an error you will see three entries, if everything is normal there will be only two.
+    6. Out of the three entries in the list, select the one that contains the value ``schema.lock`` for the key ``k``.
+    7. Use a right click to open the context menu for the respective entry and choose „Delete Document…“ to remove the entry.
+
+    IMPORTANT: Only the entry for ``schema.lock`` must be deleted. You are advised to create a backup of the database upfront.
