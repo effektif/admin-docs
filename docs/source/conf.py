@@ -200,9 +200,9 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
   ('index', 'Effektifadminstratorsguide.tex', u'Effektif administrators guide',
-   u'Effektif GmbH', 'manual'),
+   u'Signavio GmbH', 'manual'),
   # ('index', 'Effektifadminstratorsguide.tex', u'Effektif Administratorenhandbuch',
-  #  u'Effektif GmbH', 'manual'),
+  #  u'Signavio GmbH', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
