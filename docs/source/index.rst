@@ -19,7 +19,7 @@ Effektif administrators documentation
 
 Contact and legal information
 -----------------------------
-| Effektif GmbH
+| Signavio GmbH
 
 | Registered office of the company
 | Nürnberger Straße 8
@@ -33,7 +33,7 @@ Contact and legal information
 | http://www.effektif.com
 
 | Legal information
-| CEO:              Tom Baeyens
-| VATIN:            DE290063301
-| TIN:              27/048/09069
+| CEO:              Torben Schreiter
+| VATIN:            DE265675123
+| TIN:              27/048/09093
 | Register court:   Amtsgericht Charlottenburg, HRB 150074 B

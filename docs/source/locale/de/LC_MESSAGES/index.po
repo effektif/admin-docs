@@ -1,10 +1,10 @@
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-30 13:50+0100\n"
-"PO-Revision-Date: 2014-10-30 14:09+0100\n"
+"PO-Revision-Date: 2015-06-29 14:27+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
 "MIME-Version: 1.0\n"
@@ -21,10 +21,6 @@ msgstr "Effektif Adminstratorenhandbuch"
 #: ../../source/index.rst:21
 msgid "Contact and legal information"
 msgstr "Kontaktinformationen und rechtliche Angaben"
-
-#: ../../source/index.rst:22
-msgid "Effektif GmbH"
-msgstr "Effektif GmbH"
 
 #: ../../source/index.rst:24
 msgid "Registered office of the company"
@@ -62,18 +58,34 @@ msgstr "http://www.effektif.com"
 msgid "Legal information"
 msgstr "Rechtliche Angaben"
 
-#: ../../source/index.rst:36
-msgid "CEO:              Tom Baeyens"
-msgstr "Geschäftsführer: Tom Baeyens"
-
-#: ../../source/index.rst:37
-msgid "VATIN:            DE290063301"
-msgstr "Umsatzsteuer-ID: DE290063301"
-
-#: ../../source/index.rst:38
-msgid "TIN:              27/048/09069"
-msgstr "Steuernummer: 27/048/09069"
-
 #: ../../source/index.rst:39
 msgid "Register court:   Amtsgericht Charlottenburg, HRB 150074 B"
 msgstr "Registergericht: Amtsgericht Charlottenburg, HRB 150074 B"
+
+#: ../../source/index.rst:22
+msgid "Signavio GmbH"
+msgstr "Signavio GmbH"
+
+#: ../../source/index.rst:36
+msgid "CEO:              Torben Schreiter"
+msgstr "Geschäftsführer:\tTorben Schreiter"
+
+#: ../../source/index.rst:37
+msgid "VATIN:            DE265675123"
+msgstr "Umsatzsteuer-ID:\tDE265675123"
+
+#: ../../source/index.rst:38
+msgid "TIN:              27/048/09093"
+msgstr "Steuernummer:\t27/048/09093"
+
+#~ msgid "Effektif GmbH"
+#~ msgstr "Effektif GmbH"
+
+#~ msgid "CEO:              Tom Baeyens"
+#~ msgstr "Geschäftsführer: Tom Baeyens"
+
+#~ msgid "VATIN:            DE290063301"
+#~ msgstr "Umsatzsteuer-ID: DE290063301"
+
+#~ msgid "TIN:              27/048/09069"
+#~ msgstr "Steuernummer: 27/048/09069"
