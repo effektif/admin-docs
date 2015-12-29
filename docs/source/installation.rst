@@ -106,7 +106,8 @@ Furthermore, it is recommended to install the Apache Tomcat into a root folder o
 
 Debian
 ``````
-If you are using Linux, you might consider installing Apache Tomcat using a packet manager. In case of Debian, you can use the Advanced Packaging Tool (APT) and execute the following command: ::
+If you are using Linux, consider installing Apache Tomcat using a package manager.
+On Debian, you can use the Advanced Packaging Tool (APT) and execute the following command: ::
 
     apt-get install tomcat7
 
@@ -125,7 +126,7 @@ There are some Java options that need to be configured before starting the Tomca
 +---------------------------+-----------------------------------------------------------------+
 | ``-Xmx2048m``             | maximum RAM, should be at least 2GB but more is recommended     |
 +---------------------------+-----------------------------------------------------------------+
-| ``-Dfile.encoding=UTF-8`` | sets UTF-8 as Apache Tomcats default encoding mechanism         |
+| ``-Dfile.encoding=UTF-8`` | sets UTF-8 as Apache Tomcat’s default encoding mechanism        |
 +---------------------------+-----------------------------------------------------------------+
 | ``-XX:PermSize=128m``     | initial permanent generation space in MB                        |
 +---------------------------+-----------------------------------------------------------------+
@@ -165,7 +166,9 @@ By default the Tomcat server will start up using port 8080 and 8005. Port 8080 i
 
 *Important: If the server is running on any other port than port 80, your users will have to enter the port in the address line of the web browser, e.g. http://effektif.yourdomain.com:8080/\ .*
 
-Locate the HTTP connector and change the value of port to your preferred port. Furthmore, make sure the connector contains the entry ``URIEnconding=”UTF-8”``\ . For example, the connector could look like this:
+Locate the HTTP connector and change the value of port to your preferred port.
+Furthermore, make sure the connector contains the entry ``URIEnconding="UTF-8"``\ .
+For example, the connector could look like this:
 
 ::
 
@@ -176,23 +179,28 @@ Locate the HTTP connector and change the value of port to your preferred port. F
 
 Copy the Effektif webapp
 ------------------------
-The Effektif webapp which can be found in the directory ``$EFFEKTIF_HOME/effektif/ROOT`` needs to be copied to the Tomcat’s webapps folder. Therefore remove any files and folders that are located in ``$TOMCAT_HOME/webapps`` and copy the ROOT folder to ``$TOMCAT_HOME/webapps/``\ .
+The Effektif webapp which can be found in the directory ``$EFFEKTIF_HOME/effektif/ROOT`` needs to be copied to Tomcat’s webapps folder.
+Therefore remove any files and folders that are located in ``$TOMCAT_HOME/webapps`` and copy the ROOT folder to ``$TOMCAT_HOME/webapps/``\ .
 
-The Effektif application needs to run as the ROOT application in the Tomcat. Therefore, running it in parallel with another application that requires to run as the ROOT application in the same Tomcat is currently not possible.
+The Effektif application needs to run as the ROOT application in Tomcat.
+Running Effektif in parallel with another application that must run as the ROOT application in the same Tomcat is currently not possible.
 
 Install MongoDB
 ---------------
-MongoDB is the only database system currently supported by Effektif. In case, you have already an infrastructure that can provide a MongoDB version 2.4.x instance, simply create a new instance for Effektif and skip to the section :ref:`configure-mongodb`. Otherwise go on with the installation instructions.
+MongoDB is the only database system currently supported by Effektif.
+If you already have an infrastructure that can provide a MongoDB version 2.4.x instance,
+simply create a new instance for Effektif and skip to the section :ref:`configure-mongodb`. Otherwise go on with the installation instructions.
 
-General information about installing MongoDB on different operating systems can be found on:
+General information about installing MongoDB on different operating systems can be found at:
 
 http://docs.mongodb.org/v2.4/installation/
 
-In case you are using Linux, you have the possibilities to install MongoDB using either a package manager like apt-get or downloading the binaries directly. It is recommened to use the package manager because it will also setup respective scripts that allow you to start and stop the server easily. However, you have to make sure the correct version is installed. Subsection :ref:`install-mongodb-debian` explains in more details how to setup MongoDB on Debian and might work as an example for other Linux distributions.
+If you are using Linux, you have the possibilities to install MongoDB using either a package manager like apt-get or downloading the binaries directly. It is recommened to use the package manager because it will also setup respective scripts that allow you to start and stop the server easily. However, you have to make sure the correct version is installed. Subsection :ref:`install-mongodb-debian` explains in more details how to setup MongoDB on Debian and might work as an example for other Linux distributions.
 
 Remarks for downloading the binaries
 ````````````````````````````````````
-Effektif does not yet support MongoDB 2.6.x. Therefore, you have to download the latest MongoDB 2.4.x release, which will be listed under previous releases. You can find the respective version for your operating system here: 
+Effektif does not yet support MongoDB 2.6.x. Therefore, you have to download the latest MongoDB 2.4.x release, which will be listed under previous releases.
+You can find the correct version for your operating system here: 
 
 http://www.mongodb.org/downloads
 
@@ -353,7 +361,9 @@ Once the Effektif user is created, its credentials have to be added to the Effek
 
 Backup and restore
 ``````````````````
-You are advised to do regular backups of the MongoDB database to prevent a complete data loss in case of a system failure. The Effektif system will NOT backup the user data on its own. Section :ref:`backup` explains in details how to set up backups for MongoDB properly. Furthermore, section :ref:`restore` explains how you can restore an older version of the user data using one of the backups.
+You are advised to do regular backups of the MongoDB database to prevent a complete data loss in case of system failure. The Effektif system will NOT backup the user data on its own.
+The :ref:`backup` section explains in detail how to set up MongoDB backups properly.
+The :ref:`restore` section explains how you can restore an older version of the user data from a backup.
 
 .. _configure-effektif:
 
@@ -364,7 +374,8 @@ Configuring Effektif
 
 Install the license file
 ````````````````````````
-Along with the Effektif application you have received the Effektif license file license.xml. Before you can start the Effektif system, you have to add the license file to the application. Therefore, copy the license file into the directory ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes``\ . The Effektif system will check your license file on startup and setup the defined number of licenses.
+Along with the Effektif application you have received the Effektif license file, `license.xml`.
+Before you can start the Effektif system, you have to add the license file to the application. Therefore, copy the license file into the directory ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes``\ . The Effektif system will check your license file on startup and setup the defined number of licenses.
 
 .. _update-effektif-configuration:
 
@@ -372,25 +383,26 @@ Update the Effektif configuration file
 ``````````````````````````````````````
 Before you can start Effektif for the first time, you need to configure some mandatory properties in the Effektif configuration file. Make sure you have copied the Effektif web application to the Tomcat’s webapps directory before continuing. The configuration file can be found here ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes/effektif-onpremise.properties``\ . 
 
-The configuration file is a property file that contains one configuration option per line and key and value are separated by a “=”. Every line that starts with a “#” is commented out and will not be considered.
+The configuration file is a property file that contains one configuration option per line and key and value are separated by a ``=``.
+Every line that starts with a ``#`` is commented out and will not be used.
 
 In general, the configuration allows to configure the base URL of the Effektif system, the mail server, the database connection and integrations with third party systems (e.g. Signavio).
 
 .. tabularcolumns:: |p{6cm}|p{9cm}|
 
 =============================   =============================
-``effektif.baseUrl``            (Required) The ip address or server name (incl. the port) of the server running the Effektif Tomcat application server. E.g. http://effektif.yourdomain.com:8080\ . If the server is running on port 80, the port can be omitted.
-``effektif.smtp.host``          (Required) The ip address or server name of the outgoing email server.
+``effektif.baseUrl``            (Required) The IP address or server name (including the port) of the server running the Effektif Tomcat application server. E.g. http://effektif.yourdomain.com:8080\ . If the server is running on port 80, the port can be omitted.
+``effektif.smtp.host``          (Required) The IP address or server name of the outgoing email server.
 ``effektif.smtp.port``          The port on which the outgoing SMTP server listens
 ``effektif.smtp.ssl``           If SSL should be used ( true or false )
 ``effektif.smtp.tls``           If TLS should be used ( true or false )
 ``effektif.smtp.user``          The username for authentication
 ``effektif.smtp.password``      The password for authentication
 ``effektif.mail.from``          This email address is used as the sender when the Effektif system sends out notifications.
-``effektif.mongodb.servers``    A comma separated list of mongodb servers (hostnames). If you have MongodDB running on the same server as Tomcat, the default value of localhost is ok.
-``effektif.mongodb.username``   The Effektif MongoDB user name. If you created the user following the instructions in this guide, the name is effektif .
-``effektif.mongodb.password``   The password of the Effektif MongoDB user. This is the password you have defined during the user creation.
-``effektif.mongodb.database``   The name of the database Effektif should use. The default value effektif is ok.
+``effektif.mongodb.servers``    A comma-separated list of MongoDB servers (hostnames). If you have MongodDB running on the same server as Tomcat, the default value of localhost is okay.
+``effektif.mongodb.username``   The Effektif MongoDB user name. If you created the user following the instructions in this guide, the name is ``effektif``.
+``effektif.mongodb.password``   The password of the Effektif MongoDB user. This is the password you defined during user creation.
+``effektif.mongodb.database``   The name of the database Effektif should use. The default value ``effektif`` is okay.
 =============================   =============================
 
 The following properties are only relevant if your Effektif installation is connected to your Signavio installation. ::
