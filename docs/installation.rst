@@ -140,7 +140,7 @@ Windows
 ```````
 If you installed Tomcat using the Windows service installer, you can open the configuration dialog by opening the Windows start menu and selecting ``Program Files\Apache Tomcat\Configure Tomcat``\ .
 
-.. figure:: _static/Configure_Tomcat_Windows_en.png
+.. figure:: _static/images/Configure_Tomcat_Windows.png
     :align: center
     :scale: 70%
 

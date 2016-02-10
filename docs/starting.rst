@@ -53,7 +53,7 @@ Tomcat
 ^^^^^^
 Assuming you installed Tomcat using the Windows service installer, you can open the Tomcat configuration dialog again by opening the Windows start menu and selecting ``Program Files\Apache Tomcat\Configure Tomcat``\ . The tab General contains respective buttons to start and stop the Tomcat service. 
 
-.. figure:: _static/Start_Tomcat_Windows_en.png
+.. figure:: _static/images/Start_Tomcat_Windows.png
     :align: center
     :scale: 70%
 
@@ -94,51 +94,24 @@ Login to Effektif
 -----------------
 When the Effektif system was started properly you can see the login screen by entering the URL of your Effektif installation in your browser. There are different versions of the login screen. If you purchased an Effektif standalone version, you will see a form that requires an email address and a password to login.
  
-.. ifconfig:: language == 'en'
+.. figure:: _static/images/login.png
+    :align: center
 
-    .. figure:: _static/login_en.png
-        :align: center
-
-        The default Effektif login screen
-
-.. ifconfig:: language == 'de'
-
-    .. figure:: _static/login_de.png
-        :align: center
-
-        The default Effektif login screen
+    The default Effektif login screen
 
 If you purchased Effektif along with Signavio, you will see a login screen with one button. You can login to Effektif using your Signavio account as soon as the Effektif users have been set up. Jump to section :ref:`signavio-user-management` for more information on how to set up the users. 
 
-.. ifconfig:: language == 'en'
+.. figure:: _static/images/signavio_login.png
+    :align: center
 
-    .. figure:: _static/signavio_login_en.png
-        :align: center
-
-        The Signavio login screen
-
-.. ifconfig:: language == 'de'
-
-    .. figure:: _static/signavio_login_de.png
-        :align: center
-
-        The Signavio login screen
+    The Signavio login screen
 
 When you click *Log in with Signavio account*\ , you will be redirected to Signavio and asked to authorize the access of Effektif. When you click on *Grant*\ , you will be redirected back to Effektif and automatically logged in. The authorization dialog is only shown the first time you use this method to login.
 
-.. ifconfig:: language == 'en'
-    
-    .. figure:: _static/authorization_en.png
-        :align: center
+.. figure:: _static/images/authorization.png
+    :align: center
 
-        The Signavio authorization dialog
-
-.. ifconfig:: language == 'de'
-
-    .. figure:: _static/authorization_de.png
-        :align: center
-
-        The Signavio authorization dialog
+    The Signavio authorization dialog
 
 *Important: You have to be logged in to Signavio in order to see the authorization dialog. Otherwise, you will be redirected to the Collaboration Portal.*
 
