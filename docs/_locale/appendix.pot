@@ -1,0 +1,94 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Signavio GmbH
+# This file is distributed under the same license as the Effektif administrators guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Effektif administrators guide 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-11 10:03+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../appendix.rst:2
+msgid "Appendix"
+msgstr ""
+
+#: ../appendix.rst:4
+msgid "This chapter contains content to various topics which extend the descriptions in the administration guide."
+msgstr ""
+
+#: ../appendix.rst:9
+msgid "How to add the Effektif MongoDB user with Robomongo"
+msgstr ""
+
+#: ../appendix.rst:11
+msgid "This section will show an alternative approach on how to create the Effektif database user in MongoDB instead of using the command line. For this approach we will use the free GUI application Robomongo to adminstrate MongoDB. See section :ref:`tooling-mongodb` for more information on Robomongo and where to download it."
+msgstr ""
+
+#: ../appendix.rst:13
+msgid "*Important: This methods works only if you execute Robomongo on the same system where your MongoDB server is already running. When authentication is turned on, MongoDB will only accept connections from localhost to create the initial user.*"
+msgstr ""
+
+#: ../appendix.rst:15
+msgid "Make sure your MongoDB server is running and open Robomongo."
+msgstr ""
+
+#: ../appendix.rst:21
+msgid "In the upper left corner click on the icon to open a new connection."
+msgstr ""
+
+#: ../appendix.rst:27
+msgid "Click on the link *Create* to setup a new connection."
+msgstr ""
+
+#: ../appendix.rst:33
+msgid "In the dialog that opens up you can rename the connection. Do not change the address and leave ``localhost`` there. The method explained in this guide will only work when you execute Robomongo on the same server that runs the MongoDB."
+msgstr ""
+
+#: ../appendix.rst:39
+msgid "Click on *Save* to create the new connection."
+msgstr ""
+
+#: ../appendix.rst:45
+msgid "Select the new item in the list and click on *Connect*\\ ."
+msgstr ""
+
+#: ../appendix.rst:51
+msgid "You will see the connection in the left panel. Open the folder *System* > *admin* and select the folder *Users*\\ ."
+msgstr ""
+
+#: ../appendix.rst:57
+msgid "Right click on the folder *Users* and select the menu entry *Add Users…*\\ ."
+msgstr ""
+
+#: ../appendix.rst:63
+msgid "In the dialog enter the *Name* ``effektif`` and choose a password. Remember this password, you will have to fill it into the Effektif configuration file. Furthermore, select the four roles ``clusterAdmin``\\ , ``readWriteAnyDatabase``\\ , ``userAdminAnyDatabas``\\ , and ``dbAdminAnyDatabase``\\ . Eventually, click on *Save*\\ . Your Effektif user has been created."
+msgstr ""
+
+#: ../appendix.rst:69
+msgid "Because you created a new user, the connection to the MongoDB server now requires a user name and a password. Right click on the connection (in this case *localhost*) in the left panel and select the menu entry *Disconnect*\\ . Afterwards, click on the icon for a new connection."
+msgstr ""
+
+#: ../appendix.rst:75
+msgid "Select the connection you have created before and click on *edit*\\ ."
+msgstr ""
+
+#: ../appendix.rst:81
+msgid "Go to the tab *Authentication* and activate the option *Perform authentication*\\ . Then enter *User Name* (``effektif``) and the *Password* you have chosen before. Finally, click on *Save*\\ ."
+msgstr ""
+
+#: ../appendix.rst:87
+msgid "The connection indicates now that it is using the configured user credentials. If you click on *Connect* now, your connection should work again."
+msgstr ""
+
+#: ../appendix.rst:93
+msgid "When you open the folders *System* > *admin* > *Users*\\ , you will see the Effektif user, you have created before. If you select the user, do a right click and select the menu entry *Edit User*\\ , you can verify the user was created with the four required roles."
+msgstr ""
+

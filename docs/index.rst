@@ -6,6 +6,7 @@ Effektif administrators documentation
    
     introduction
     installation
+    update-notes
     update
     starting
     stopping

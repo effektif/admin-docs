@@ -8,8 +8,8 @@ Checklist
 ---------
 Before starting Effektif, use the following checklist to make sure everything is setup properly.
 
-* Oracle Java 8 or Oracle Java 7 is installed
-* Apache Tomcat 7 is installed
+* Oracle Java 8 is installed
+* Apache Tomcat 8 is installed
 
     * the Java options are configured
 

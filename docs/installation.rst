@@ -88,6 +88,8 @@ The application server requires a Java runtime environment in order to execute t
 
 https://www.java.com/en/download/manual.jsp
 
+.. _install-tomcat:
+
 Install Tomcat
 --------------
 The Java backend of the Effektif system is executed using Apache Tomcat 7. Effektif does not support any older or younger versions of Tomcat than version 7. Furthermore, you have to use a 64 Bit version of Apache Tomcat 7.

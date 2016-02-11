@@ -18,7 +18,7 @@ The Apache Tomcat is an application server that hosts the Effektif web applicati
 
 MongoDB
 ```````
-MongoDB is a document-oriented database system. It is the only database system that is supported by Effektif. More detailed information about MongoDB can be found in the MongoDB documentation: http://docs.mongodb.org/v2.4/
+MongoDB is a document-oriented database system. It is the only database system that is supported by Effektif. More detailed information about MongoDB can be found in the MongoDB documentation: https://docs.mongodb.org
 
 Mail server (SMTP)
 ``````````````````
@@ -37,7 +37,7 @@ Within this adminstrators guide several placeholders are used to increase the re
 
 ==================  ==================
 ``$EFFEKTIF_HOME``  Refers to the directory that contains the unzipped content of the downloaded effektif-{version}.zip.
-``$TOMCAT_HOME``    Refers to the directory where your Apache Tomcat is installed. This directory contains the folders ``webapps`` and ``conf``\ . On Linux for example the directory might be located in ``/var/lib/tomcat7``\ .
+``$TOMCAT_HOME``    Refers to the directory where your Apache Tomcat is installed. This directory contains the folders ``webapps`` and ``conf``\ . On Linux for example the directory might be located in ``/var/lib/tomcat8``\ .
 ``$MONGO_HOME``     Refers to the directory where your MongoDB is installed.
 ==================  ==================
 
