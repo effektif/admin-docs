@@ -31,7 +31,7 @@ def prepare(cwd, path, lang):
 
   prepare_language(cwd, lang=lang)
 
-  touch('%s/_build/latex/Effektifadminstratorsguide.tex' % cwd)
+  touch('%s/_build/latex/Effektifadministratorsguide.tex' % cwd)
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -51,6 +51,7 @@ extensions = []
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 locale_dirs = ['_locale']
+gettext_compact = False # optional
 
 # The suffix of source filenames.
 source_suffix = '.rst'
@@ -195,7 +196,7 @@ html_show_sphinx = False
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Effektifadminstratorsguidedoc'
+htmlhelp_basename = 'Effektifadministratorsguidedoc'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -215,7 +216,7 @@ latex_elements = {
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
-latex_logo = '_static/effektif-logo.png'
+latex_logo = '_static/images/effektif-logo.png'
 
 # For "manual" documents, if this is true, then toplevel headings are parts,
 # not chapters.
@@ -239,7 +240,7 @@ latex_logo = '_static/effektif-logo.png'
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'effektifadminstratorsguide', u'Effektif adminstrators guide',
+    ('index', 'effektifadministratorsguide', u'Effektif adminstrators guide',
      [u'Christian Wiggert'], 1)
 ]
 
@@ -253,7 +254,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'Effektifadminstratorsguide', u'Effektif adminstrators guide',
+  ('index', 'Effektifadministratorsguide', u'Effektif adminstrators guide',
    u'Christian Wiggert', 'Effektif admin guide', '',
    'Miscellaneous'),
 ]
@@ -269,8 +270,3 @@ texinfo_documents = [
 
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 #texinfo_no_detailmenu = False
-
-# -- Options for internationalization -------------------------------------
-
-locale_dirs = ['locale/']
-gettext_compact = False # optional

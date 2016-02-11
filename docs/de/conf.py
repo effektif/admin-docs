@@ -14,7 +14,7 @@ language = 'de'
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'Effektifadminstratorsguide.tex', u'Effektif Administratorenhandbuch',
+  ('index', 'Effektifadministratorsguide.tex', u'Effektif Administratorenhandbuch',
    u'Signavio GmbH', 'manual'),
 ]
 
