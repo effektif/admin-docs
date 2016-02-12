@@ -11,56 +11,31 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../update-notes.rst:2
+#: ../../update-notes.rst:5
 msgid "Update notes"
 msgstr ""
 
-#: ../../update-notes.rst:3
-msgid ""
-"This section contains important information for updates of your Effektif "
-"systems. It will list changed technical requirements for newer versions and "
-"additional instructions for updates."
-msgstr ""
-
-#: ../../update-notes.rst:6
-msgid "Version 3.4"
-msgstr ""
-
-#: ../../update-notes.rst:7
-msgid ""
-"The official support for Tomcat 7 was dropped, however, Effektif 3.4 will "
-"still run in Tomcat 7. Furthermore, Effektif 3.4 now requires Java 8 and "
-"MongoDB 3.2. When updating Effektif and your infrastructure, you should "
-"follow the following sequence of actions:"
-msgstr ""
-
-#: ../../update-notes.rst:10
+#: ../../update-notes.rst:14
 msgid "Update Java to Java 8."
 msgstr ""
 
-#: ../../update-notes.rst:11
+#: ../../update-notes.rst:15
 msgid "Update Tomcat to Tomcat 8"
 msgstr ""
 
-#: ../../update-notes.rst:12
+#: ../../update-notes.rst:16
 msgid "Update the Effektif application"
 msgstr ""
 
-#: ../../update-notes.rst:13
+#: ../../update-notes.rst:17
 msgid "Update MongoDB to MongoDB 3.2"
 msgstr ""
 
-#: ../../update-notes.rst:15
-msgid ""
-"Be aware, the update to version 3.4 contains multiple changes in the "
-"underlying data schema which require several long running migrations."
-msgstr ""
-
-#: ../../update-notes.rst:19
+#: ../../update-notes.rst:22
 msgid "Update Java and Tomcat"
 msgstr ""
 
-#: ../../update-notes.rst:20
+#: ../../update-notes.rst:23
 msgid ""
 "The last Effektif release 2.27.x is already compatible with Java 8 and "
 "Tomcat 8. Therefore, you should start by updating Java and Tomcat, because "
@@ -73,14 +48,307 @@ msgid ""
 " Now, you should be able access the Effektif system again via a browser."
 msgstr ""
 
-#: ../../update-notes.rst:23
+#: ../../update-notes.rst:26
 msgid "Update Effektif"
 msgstr ""
 
-#: ../../update-notes.rst:27
+#: ../../update-notes.rst:32
 msgid "Update MongoDB"
 msgstr ""
 
-#: ../../update-notes.rst:31
-msgid "configuration file format has changed"
+#: ../../update-notes.rst:9
+msgid "Update to Effektif 3.4"
 msgstr ""
+
+#: ../../update-notes.rst:19
+msgid ""
+"Be aware, the update to version 3.4 contains multiple changes in the "
+"underlying data schema which require several long running migrations. "
+"Depending on the size of your database, the migrations might take several "
+"seconds up to 20 minutes."
+msgstr ""
+
+#: ../../update-notes.rst:27
+msgid ""
+"As mentioned before, with the latest update to version 3.4, the data schema "
+"has changed. Therefore, you are advised to create a backup of your database "
+"before updating the application. Furthermore, the data migrations might take"
+" several seconds up to minutes. They are executed on the start of the "
+"server. Therefore, the first start of Effektif might take longer than usual."
+msgstr ""
+
+#: ../../update-notes.rst:29
+msgid ""
+"See chapter :ref:`update` for more information on how to update the Effektif"
+" application. After you have successfully updated Effektif, you can continue"
+" with the next section, which covers the update of MongoDB."
+msgstr ""
+
+#: ../../update-notes.rst:33
+msgid ""
+"Effektif 3.4 supports now the latest version of MongoDB (3.2.x) which comes "
+"with improved performance and functionalities. The usual upgrade from "
+"MongoDB 2.4.x to 3.2.x (https://docs.mongodb.org/manual/release-"
+"notes/3.2-upgrade/) requires a stepwise approach, first upgrading from 2.4 "
+"to 2.6, then from 2.6 to 3.0 and at last from 3.0 to 3.2. The upgrade of the"
+" database also includes a change of the storage engine from the old MMAPv1 "
+"to the new WiredTiger."
+msgstr ""
+
+#: ../../update-notes.rst:37
+msgid ""
+"Stop Effektif and MongoDB, see chapter :ref:`stopping` for more information."
+msgstr ""
+
+#: ../../update-notes.rst:48
+msgid "Install MongoDB 3.2.x and recreate the Effektif database user again."
+msgstr ""
+
+#: ../../update-notes.rst:50
+msgid ""
+"``${TOMCAT_HOME}/webapps/ROOT/WEB-INF/classes/effektif-"
+"onpremise.properties`` contains the current name and password of the "
+"Effektif database user"
+msgstr ""
+
+#: ../../update-notes.rst:53
+msgid ""
+"Section :ref:`install-mongodb` contains more information on how to setup "
+"MongoDB 3.2.x"
+msgstr ""
+
+#: ../../update-notes.rst:40
+msgid "This backup will be imported later into the new MongoDB 3.2."
+msgstr ""
+
+#: ../../update-notes.rst:42
+msgid ""
+"*Windows only:* Remove the manually created MongoDB service by executing "
+"``${MONGO_HOME}\\bin\\mongod.exe --remove`` with administrator privileges on"
+" the command line cmd"
+msgstr ""
+
+#: ../../update-notes.rst:43
+msgid "Uninstall MongoDB 2.4.x, but ensure you don't delete your backup!"
+msgstr ""
+
+#: ../../update-notes.rst:45
+msgid "*Windows:* Delete the MongoDB directory."
+msgstr ""
+
+#: ../../update-notes.rst:46
+msgid ""
+"*Debian:* Use your package manager and uninstall the package ``mongodb-"
+"10gen``."
+msgstr ""
+
+#: ../../update-notes.rst:51
+msgid ""
+"You can install the new version in the same place as the old one, please "
+"ensure the data directory of the new database is empty before you start it."
+msgstr ""
+
+#: ../../update-notes.rst:52
+msgid ""
+"Be aware, the format of the MongoDB configuration file has changed. The "
+"Effektif"
+msgstr ""
+
+#: ../../update-notes.rst:55
+msgid "Start the new MongoDB instance."
+msgstr ""
+
+#: ../../update-notes.rst:69
+msgid ""
+"In case, you have been using Robomongo before to access MongoDB, you will "
+"have to download the latest version in order to be able to connect to "
+"MongoDB 3.2."
+msgstr ""
+
+#: ../../update-notes.rst:58
+msgid ""
+"The database name is specified in the parameter ``--db`` and additionally in"
+" the directory of the existing backup."
+msgstr ""
+
+#: ../../update-notes.rst:6
+msgid ""
+"This section contains important information for updates of your Effektif "
+"system. It will list changed technical requirements for newer versions and "
+"additional instructions for updates."
+msgstr ""
+
+#: ../../update-notes.rst:10
+msgid ""
+"Effektif 3.4 introduces multiple changed The official support for Tomcat 7 "
+"was dropped, however, Effektif 3.4 will still run in Tomcat 7. Furthermore, "
+"Effektif 3.4 now requires Java 8 and MongoDB 3.2. When updating Effektif and"
+" your infrastructure, you should follow the following sequence of actions:"
+msgstr ""
+
+#: ../../update-notes.rst:35
+msgid ""
+"However, we will use a different approach to migrate your MongoDB 2.4.x to "
+"version 3.2.x. This approach will simply import a backup of MongoDB 2.4.x "
+"into a completely fresh setup of MongoDB 3.2.x."
+msgstr ""
+
+#: ../../update-notes.rst:38
+msgid ""
+"Create a backup of your database using ``mongodump``, see chapter "
+":ref:`backup` for more information."
+msgstr ""
+
+#: ../../update-notes.rst:56
+msgid ""
+"Restore the backup partially to your new MongoDB instance using "
+"``mongorestore``. Your backup from step 1 should contain multiple folders, "
+"one for each database which exists in the MongoDB instance. You only need to"
+" restore two of them which contain the data of the Effektif application. The"
+" default names are ``effektif`` and ``effektif-files``. You might have "
+"chosen a different name by defining another value for "
+"``effektif.mongodb.database`` in your Effektif configuration file. The value"
+" there represents the name of the first database and the name of the second "
+"database is generated by adding ``-files``. You have to execute the restore "
+"command for both of the directories separately. The following lines show "
+"examples for the restore commands assuming your MongoDB user is called "
+"``effektif`` and your chosen database name is ``effektif`` as well."
+msgstr ""
+
+#: ../../update-notes.rst:59
+msgid "*Windows:* ::"
+msgstr ""
+
+#: ../../update-notes.rst:64
+msgid "*Debian:* ::"
+msgstr ""
+
+#~ msgid "*Debian:*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``mongorestore -u effektif -p <password> --authenticationDatabase admin --db"
+#~ " effektif /path/to/dumps/effektif``"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``mongorestore -u effektif -p <password> --authenticationDatabase admin --db"
+#~ " effektif-files /path/to/dumps/effektif-files``"
+#~ msgstr ""
+
+#~ msgid "*Windows:*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``${MONGO_HOME}\\bin\\mongorestore.exe -u effektif -p <password> "
+#~ "--authenticationDatabase admin --db effektif C:\\path\\to\\dumps\\effektif``"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``${MONGO_HOME}\\bin\\mongorestore.exe -u effektif -p <password> "
+#~ "--authenticationDatabase admin --db effektif-files C:\\path\\to\\dumps"
+#~ "\\effektif-files``"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This section contains important information for updates of your Effektif "
+#~ "systems. It will list changed technical requirements for newer versions and "
+#~ "additional instructions for updates."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The official support for Tomcat 7 was dropped, however, Effektif 3.4 will "
+#~ "still run in Tomcat 7. Furthermore, Effektif 3.4 now requires Java 8 and "
+#~ "MongoDB 3.2. When updating Effektif and your infrastructure, you should "
+#~ "follow the following sequence of actions:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "However, we will use a different approach to migrate your MongDB 2.4.x to "
+#~ "version 3.2.x. This approach will simply import a dump of MongoDB 2.4.x into"
+#~ " a completely fresh setup of MongoDB 3.2.x."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Create a backup of your database using mongodump, see chapter :ref:`backup` "
+#~ "for more information."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Restore the backup partially to your new MongoDB instance. Your backup from "
+#~ "step 1 should contain multiple folders, one for each database which exists "
+#~ "in the MongoDB instance. We only need to restore two of them which contain "
+#~ "the data of the Effektif application. The default names are ``effektif`` and"
+#~ " ``effektif-files``. You might have chosen a different name by defining "
+#~ "another value for ``effektif.mongodb.database`` in your Effektif "
+#~ "configuration file. The value there represents the name of the first "
+#~ "database and the name of the second database is generated by adding "
+#~ "``-files``. You have to execute the restore command for both of the "
+#~ "directories separately. The following lines show examples for the restore "
+#~ "commands assuming your MongoDB user is called ``effektif`` and your chosen "
+#~ "database name is ``effektif`` as well."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``mongorestore -u effektif -p <password> --authenticationDatabase admin --db"
+#~ " effektif-files /path/to/dumps/effektif-files"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Restore the backup partially to your new MongoDB instance. Your backup from "
+#~ "step should contain multiple folders, one for each database"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "mongorestore -u effektif -p <password> --authenticationDatabase admin --db "
+#~ "effektif C:\\dumps\\effektif mongorestore -u effektif -p <password> "
+#~ "--authenticationDatabase admin --db effektif-files C:\\dumps\\effektif-files"
+#~ msgstr ""
+
+#~ msgid "configuration file format has changed"
+#~ msgstr ""
+
+#~ msgid "Uninstall MongoDB 2.4.x"
+#~ msgstr ""
+
+#~ msgid "download a newer version of robomongo (if necessary)"
+#~ msgstr ""
+
+#~ msgid "change of storage engine"
+#~ msgstr ""
+
+#~ msgid "mongodump --> before upgrade"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "--> after upgrade mongorestore -u effektif -p <password> "
+#~ "--authenticationDatabase admin --db effektif C:\\dumps\\effektif "
+#~ "mongorestore -u effektif -p <password> --authenticationDatabase admin --db "
+#~ "effektif-files C:\\dumps\\effektif-files"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Windows: Remove the manually created MongoDB service by executing "
+#~ "``${MONGO_HOME}\\bin\\mongod.exe --remove`` as an administrator on ``CMD``"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Windows: Remove the manually created MongoDB service "
+#~ "``${MONGO_HOME}\\bin\\mongod.exe --remove``"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "#. Install MongoDB 3.2.x and recreate the Effektif database user again. ##. "
+#~ "``${TOMCAT_HOME}\\webapps\\ROOT\\WEB-INF\\classes\\effektif-"
+#~ "onpremise.properties`` contains the current name and password of the "
+#~ "Effektif database user ##. Section :ref:`install-mongodb` contains more "
+#~ "information on how to setup MongoDB 3.2.x"
+#~ msgstr ""
+
+#~ msgid "Version 3.4"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Be aware, the update to version 3.4 contains multiple changes in the "
+#~ "underlying data schema which require several long running migrations."
+#~ msgstr ""

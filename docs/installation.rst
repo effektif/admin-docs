@@ -182,6 +182,8 @@ The Effektif webapp which can be found in the directory ``$EFFEKTIF_HOME/effekti
 
 The Effektif application needs to run as the ROOT application in the Tomcat. Therefore, running it in parallel with another application that requires to run as the ROOT application in the same Tomcat is currently not possible.
 
+.. _install-mongodb:
+
 Install MongoDB
 ---------------
 MongoDB is the only database system currently supported by Effektif. In case, you have already an infrastructure that can provide a MongoDB version 2.4.x instance, simply create a new instance for Effektif and skip to the section :ref:`configure-mongodb`. Otherwise go on with the installation instructions.
@@ -267,6 +269,8 @@ The server will use the default configuration file ``/etc/mongodb.conf``\ . See 
 Configure MongoDB
 -----------------
 In order to run MongoDB properly, some configuration options have to be defined. The easiest solution is to create a configuration file and link this configuration file when starting MongoDB with the option ``--config``\ .
+
+TODO: yaml doesn't like tabs, use spaces --> www.yamllint.com
 
 If you installed MongoDB under Windows using the method in the last section, you have already copied the predefined configuration file and adjusted the values for dbpath and logpath to your system. Then your configuration file contains already all necessary values.
 

@@ -1,3 +1,5 @@
+.. _update:
+
 Update
 ======
 This section will guide you through an update of your Effektif system. It assumes you have successfully installed an early version of Effektif. If you are installing Effektif for the first time, you can skip this chapter. Please, consult the previous chapter :ref:`update-notes` for additional information on the update to the latest version of Effektif before continuing with the update.
