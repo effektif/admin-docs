@@ -40,14 +40,12 @@ The following sections contain detailed instructions on how to install and confi
 
 The application server requires the following additional software:
 
-* Java: Oracle JSE version 8 (1.8.0_45+) or Oracle JSE version 7 (1.7.0_67+)
-* Apache Tomcat 7 64 Bit
+* Java: Oracle JSE version 8 (1.8.0_66+)
+* Apache Tomcat 8 64 Bit
 
 The database server requires the following additional software:
 
-* MongoDB version 2.4.x
-
-*Important: MongoDB version 2.6.x or higher is not yet officially supported by Effektif. Please, make sure to install version 2.4.x.*
+* MongoDB version 3.2.x
 
 .. _supported-browsers:
 
@@ -84,7 +82,7 @@ On Linux systems you need to make the scripts executable with the ``chmod`` comm
 
 Install Java
 ------------
-The application server requires a Java runtime environment in order to execute the Java backend of Effektif. Therefore, you have to install Java 8 64Bit or Java 7 64Bit on the application server. You can download a respective installation package for your operating system here: 
+The application server requires a Java runtime environment in order to execute the Java backend of Effektif. Therefore, you have to install Java 8 64Bit on the application server. You can download a respective installation package for your operating system here: 
 
 https://www.java.com/en/download/manual.jsp
 
@@ -92,11 +90,11 @@ https://www.java.com/en/download/manual.jsp
 
 Install Tomcat
 --------------
-The Java backend of the Effektif system is executed using Apache Tomcat 7. Effektif does not support any older or younger versions of Tomcat than version 7. Furthermore, you have to use a 64 Bit version of Apache Tomcat 7.
+The Java backend of the Effektif system is executed using Apache Tomcat 8. Effektif does not officially support any older or younger versions of Tomcat than version 8. Furthermore, you have to use a 64 Bit version of Apache Tomcat 8.
 
 You can download the latest installation files for different operating systems from the following site:
 
-http://tomcat.apache.org/download-70.cgi
+http://tomcat.apache.org/download-80.cgi
 
 In general, please make sure the user executing the Tomcat has read / write permissions for the folder ``$TOMCAT_HOME/webapps`` and the containing subfolders.
 
@@ -110,13 +108,13 @@ Debian
 ``````
 If you are using Linux, you might consider installing Apache Tomcat using a packet manager. In case of Debian, you can use the Advanced Packaging Tool (APT) and execute the following command: ::
 
-    apt-get install tomcat7
+    apt-get install tomcat8
 
 Configure Tomcat
 ----------------
 This section will point the configuration options that are required to run Effektif. However, Tomcat offers more configuration options that can be found in the official documentation:
 
-http://tomcat.apache.org/tomcat-7.0-doc/
+http://tomcat.apache.org/tomcat-8.0-doc/
 
 Java options
 ````````````

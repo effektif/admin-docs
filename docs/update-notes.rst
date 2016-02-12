@@ -7,8 +7,8 @@ This section contains important information for updates of your Effektif system.
 
 Update to Effektif 3.4
 ----------------------
-Effektif 3.4 introduces multiple changed
-The official support for Tomcat 7 was dropped, however, Effektif 3.4 will still run in Tomcat 7. Furthermore, Effektif 3.4 now requires Java 8 and MongoDB 3.2. 
+Effektif 3.4 requires several changes of your infrastructure. The official support for Tomcat 7 was dropped, however, Effektif 3.4 will still run in Tomcat 7. Furthermore, Effektif 3.4 now requires Java 8 and MongoDB 3.2. 
+
 When updating Effektif and your infrastructure, you should follow the following sequence of actions:
 
 #. Update Java to Java 8.
