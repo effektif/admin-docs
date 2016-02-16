@@ -15,7 +15,7 @@ Effektif administrators documentation
     tooling
     signavio
     troubleshooting
-    appendix
+    .. appendix --> currently not used
 
 
 Contact and legal information

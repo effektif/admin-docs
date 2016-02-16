@@ -41,7 +41,7 @@ The following sections contain detailed instructions on how to install and confi
 The application server requires the following additional software:
 
 * Java: Oracle JSE version 8 (1.8.0_66+)
-* Apache Tomcat 8 64 Bit
+* Apache Tomcat 8 64 Bit (recommended) or Apache Tomcat 7 64 Bit
 
 The database server requires the following additional software:
 
@@ -67,7 +67,7 @@ The directory will contain the following files:
 * \*.sh - Linux shell scripts 
 * db - directory that contains MongoDB configuration files
 
-    * mongodb.conf - configuration file for Linux
+    * mongod.conf - configuration file for Linux
     * mongod.cfg - configuration file for Windows
 
 * effektif - directory 
@@ -90,7 +90,7 @@ https://www.java.com/en/download/manual.jsp
 
 Install Tomcat
 --------------
-The Java backend of the Effektif system is executed using Apache Tomcat 8. Effektif does not officially support any older or younger versions of Tomcat than version 8. Furthermore, you have to use a 64 Bit version of Apache Tomcat 8.
+The Java backend of the Effektif system is executed using Apache Tomcat. Effektif supports Apache Tomcat 64 Bit in version 7 and 8. However, you are advised to use the newer version Tomcat 8. 
 
 You can download the latest installation files for different operating systems from the following site:
 
@@ -106,8 +106,9 @@ Furthermore, it is recommended to install the Apache Tomcat into a root folder o
 
 Debian
 ``````
-If you are using Linux, you might consider installing Apache Tomcat using a packet manager. In case of Debian, you can use the Advanced Packaging Tool (APT) and execute the following command: ::
+If you are using Linux, you might consider installing Apache Tomcat using a packet manager. In case of Debian, you can use the Advanced Packaging Tool (APT) and execute one of the following commands: ::
 
+    apt-get install tomcat7
     apt-get install tomcat8
 
 Configure Tomcat
@@ -150,7 +151,7 @@ The tab Java offers the possibility to set the options and define the memory poo
 
 Debian
 ``````
-One way to define the ``JAVA_OPTS`` under Debian and other Linux distributions is to create the file ``setenv.sh`` in the Tomcat 7 ``/bin/`` directory. This directory contains also other files like the ``catalina.sh``\ , the ``startup.sh`` or the ``shutdown.sh`` und is for instance located in ``/usr/share/tomcat7`` or a similar directory.
+One way to define the ``JAVA_OPTS`` under Debian and other Linux distributions is to create the file ``setenv.sh`` in the Tomcat ``/bin/`` directory. This directory contains also other files like the ``catalina.sh``\ , the ``startup.sh`` or the ``shutdown.sh`` und is for instance located in ``/usr/share/tomcat8`` or a similar directory.
 Simply create or extend any existing setenv.sh file and add the line for ``the JAVA_OPTS``\ : ::
 
     export JAVA_OPTS="$JAVA_OPTS -Xms1536m [... add the other options]"
@@ -184,19 +185,21 @@ The Effektif application needs to run as the ROOT application in the Tomcat. The
 
 Install MongoDB
 ---------------
-MongoDB is the only database system currently supported by Effektif. In case, you have already an infrastructure that can provide a MongoDB version 2.4.x instance, simply create a new instance for Effektif and skip to the section :ref:`configure-mongodb`. Otherwise go on with the installation instructions.
+MongoDB is the only database system currently supported by Effektif. In case, you have already an infrastructure that can provide a MongoDB version 3.2.x instance, simply create a new instance for Effektif and skip to the section :ref:`configure-mongodb`. Otherwise go on with the installation instructions.
 
 General information about installing MongoDB on different operating systems can be found on:
 
-http://docs.mongodb.org/v2.4/installation/
+https://docs.mongodb.org/manual/installation/
+
+There are two versions of MongoDB, *MongoDB Community Edition* and *MongoDB Enterprise*. *MongoDB Community Edition* can be used free of charge even in a commercial context, whereas *MongoDB Enterprise* is a commercial product which offers additional tooling and support. Both versions can be used in combination with Effektif.
 
 In case you are using Linux, you have the possibilities to install MongoDB using either a package manager like apt-get or downloading the binaries directly. It is recommened to use the package manager because it will also setup respective scripts that allow you to start and stop the server easily. However, you have to make sure the correct version is installed. Subsection :ref:`install-mongodb-debian` explains in more details how to setup MongoDB on Debian and might work as an example for other Linux distributions.
 
 Remarks for downloading the binaries
 ````````````````````````````````````
-Effektif does not yet support MongoDB 2.6.x. Therefore, you have to download the latest MongoDB 2.4.x release, which will be listed under previous releases. You can find the respective version for your operating system here: 
+You can find the respective version of MongoDB for your operating system here: 
 
-http://www.mongodb.org/downloads
+https://www.mongodb.org/downloads
 
 Please, make sure to download the 64Bit version of MongoDB. The 32Bit version has a limited size of 2GB for stored content and, therefore, cannot be used in productive systems.
 
@@ -206,14 +209,13 @@ Windows requires you to download the binaries. Consider the remarks of the last 
 
 You can find more details about installing MongoDB on Windows in the documentation:
 
-http://docs.mongodb.org/v2.4/tutorial/install-mongodb-on-windows/
+https://docs.mongodb.org/manual/tutorial/install-mongodb-on-windows/
 
 When you finished downloading MongoDB follow the next steps:
 
-#. Extract the content of the downloaded archive into ``C:\MongoDB`` or any directory of your choice.
+#. Start the installation by double-clicking the downloaded MongoDB ``.msi`` and follow the instructions.
 
-    * The MongoDB directory should contain directly the extracted bin directory.
-    * Important: The whole path shouldn’t contain any whitespaces. Otherwise the service configuration will not work.
+    * You can select another install directory, e.g. ``C:\MongoDB``, if you choose the *Custom* installation option.
 
 #. Create a data directory for the MongoDB files, e.g. ``C:\MongoDB\data``\ . 
 
@@ -222,8 +224,9 @@ When you finished downloading MongoDB follow the next steps:
 #. Create a logs directory for the MongoDB log files, e.g. ``C:\MongoDB\logs``\ .
 #. Copy the file ``$EFFEKTIF_HOME\db\mongod.cfg`` to your MongoDB directory ``C:\MongoDB\mongod.cfg`` and edit the file.
 
-    * The dbpath needs to contain the absolute path to the data directory, e.g. ``C:\MongoDB\data``\ .
-    * The logpath needs to contain the absolute path to the log file, e.g. ``C:\MongoDB\logs\mongodb.log``\ . The log file will be created once MongoDB is started.
+    * The ``dbPath`` under ``storage`` needs to contain the absolute path to the data directory, e.g. ``C:\MongoDB\data``\ .
+    * The ``path`` under ``systemLog`` needs to contain the absolute path to the log file, e.g. ``C:\MongoDB\logs\mongodb.log``\ . The log file will be created once MongoDB is started.
+    * The configuration file needs to be in a valid YAML format. You can use an online checker, like http://www.yamllint.com/ , to verify the validity.
     * See section :ref:`configure-mongodb` for more information about the other configuration values.
 
 #. Open the command line cmd with administrative privileges and execute the following command. Make sure to use absolute paths and replace them with the matching ones on your system.
@@ -235,7 +238,6 @@ When you finished downloading MongoDB follow the next steps:
 
 #. You can now start MongoDB by executing the following command: ``net start MongoDB``
     
-    * If this command fails with the error 1053 or 2186, make sure that the configuration file contains absolute paths. Furthermore, the paths must not have any whitespaces and should not be located in any directory that requires admin privileges.
     * You can stop MongoDB by calling: ``net stop MongoDB``
     * The service is also listed in the services window that can be opened by running ``services.msc``\ .
 
@@ -245,52 +247,64 @@ Debian
 ``````
 If you are installing MongoDB on a Debian system, you are advised to use the method described in the MongoDB configuration:
 
-http://docs.mongodb.org/v2.4/tutorial/install-mongodb-on-debian/
+https://docs.mongodb.org/manual/tutorial/install-mongodb-on-debian/
 
-For convenience reasons the script ``$EFFEKTIF_HOME/mongodb.install.debian.sh`` already wraps all necessary commands to install the correct version of MongoDB using apt-get. Simply execute it from the command line by opening ``$EFFEKTIF_HOME`` and calling: ::
+For convenience reasons the script ``$EFFEKTIF_HOME/mongodb.install.debian.sh`` already wraps all necessary commands to install the correct version of MongoDB on *Debian 7 Wheezy* using apt-get. Simply execute it from the command line by opening ``$EFFEKTIF_HOME`` and calling: ::
 
     sudo ./mongodb.install.debian.sh
 
-This will add the MongoDB repositories to your package sources and install the version 2.4.x of MongoDB.
+This will add the MongoDB repositories to your package sources and install the version 3.2.x of MongoDB. Be aware, the script only works with Debian 7 Wheezy.
 You can now simply start and stop the MongoDB server by calling ::
 
-    sudo /etc/init.d/mongodb start
+    sudo /etc/init.d/mongod start
 
 or ::
 
-    sudo /etc/init.d/mongodb stop
+    sudo /etc/init.d/mongod stop
 
-The server will use the default configuration file ``/etc/mongodb.conf``\ . See the next subsection for more information on how to configure MongoDB for Effektif and create the required user. Be aware, the installation probably started the MongoDB server already. You will need to restart the MongoDB server when you edit the configuration.
+The server will use the default configuration file ``/etc/mongod.conf``\ . See the next subsection for more information on how to configure MongoDB for Effektif and create the required user. Be aware, the installation probably started the MongoDB server already. You will need to restart the MongoDB server when you edit the configuration.
 
 .. _configure-mongodb:
 
 Configure MongoDB
 -----------------
-In order to run MongoDB properly, some configuration options have to be defined. The easiest solution is to create a configuration file and link this configuration file when starting MongoDB with the option ``--config``\ .
+In order to run MongoDB properly, some configuration options have to be defined. The easiest solution is to create a configuration file and link this configuration file when starting MongoDB with the option ``--config``\ . The MongoDB configuration uses the YAML format, you can use an online checker like http://www.yamllint.com to verify that your configuration file has the proper format.
 
-TODO: yaml doesn't like tabs, use spaces --> www.yamllint.com
+If you installed MongoDB under Windows using the method in the last section, you have already copied the predefined configuration file and adjusted the values for ``dbPath`` and ``systemLog`` ``path`` to your system. Then your configuration file contains already all necessary values.
 
-If you installed MongoDB under Windows using the method in the last section, you have already copied the predefined configuration file and adjusted the values for dbpath and logpath to your system. Then your configuration file contains already all necessary values.
+If you installed MongoDB under Linux using apt-get, e.g. by following the instructions in the last section, there should be a respective configuration file ``/etc/mongod.conf``\ . Edit this configuration file. The properties ``dbPath`` and ``systemLog`` ``path`` should be defined already. It is recommened to set the properties ``logAppend`` to ``true`` and ``authorization`` to ``enabled``.
 
-If you installed MongoDB under Linux using apt-get, e.g. by following the instructions in the last section, there should be a respective configuration file ``/etc/mongodb.conf``\ . Edit this configuration file. The properties dbpath and logpath should be defined already. It is recommened to set the properties logpath and auth to true. Furthermore, you will need to add the entry ``setParameter=textSearchEnabled=true``\ . 
+In any other case make sure the configuration file contains the following properties. ::
 
-In any other case make sure the configuration file contains the following properties.
+    systemLog:
+      destination: file
+      path: /var/log/mongodbdb/mongodb.log
+      logAppend: true
+    storage:
+      dbPath: /var/lib/mongodb
+    security:
+      authorization: enabled
 
 .. tabularcolumns:: |p{3cm}|p{12cm}|
 
-+-------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ``dbpath``        | Defines the directory where the database files are stored.                                                                                                | 
-+-------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ``logpath``       | Defines the file that will contain the logging output.                                                                                                    |
-+-------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ``logappend``     | Indicates that new logs will be appended to an existing log file after restarting the server, if set to true.                                             |
-+-------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ``setParameter``  | set the value to ``textSearchEnabled=true``                                                                                                               |
-+-------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ``auth``          | (optional) Turns authentication on, if set to true. It is advised to turn authentication on in case the MongoDB instance can be accessed over the network.|
-+-------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
++-------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ``dbPath``        | Defines the directory where the database files are stored.                                                                                                       | 
++-------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ``path``          | Defines the file that will contain the logging output.                                                                                                           |
++-------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ``logAppend``     | Indicates that new logs will be appended to an existing log file after restarting the server, if set to true.                                                    |
++-------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ``authorization`` | (optional) Turns authentication on, if set to ``enabled``. It is advised to turn authentication on in case the MongoDB instance can be accessed over the network.|
++-------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-For more configuration options, see http://docs.mongodb.org/v2.4/reference/configuration-options/\ .
+If you have installed MongoDB on Debian using a package manager, the default configuration file will probably contain the following entry: ::
+
+    net:
+      bindIp: 127.0.0.1
+
+This setting tells MongoDB to only bind to the local interface and, therefore, reject remote connections. If you plan on setting up the MongoDB on a different machine than the Tomcat, you need to update this setting and either remove it or add the IP interface MongoDB should bind to, in order to listen for incoming connections. This value can contain a comma separated list of IPs and should NOT contain the IP address of the application server.
+
+For more configuration options, see https://docs.mongodb.org/manual/reference/configuration-options/\ .
 
 .. _add-mongodb-user:
 
@@ -311,7 +325,7 @@ The user will access the databases for Effektif. Effektif will create two databa
 
 In general, if you want to create a new user in MongoDB you will need to authenticate with an existing user that has the role userAdmin or userAdminAnyDatabase. There is an exception for a fresh MongoDB setup. It will allow you to create the first user from localhost without any authentication. The following examples will show you how to create a new user using the credentials of an admin user and how to do it without any credentials in case of a new MongoDB.
 
-In order to add a new user to MongoDB, the MongoDB server has to be running. The following subsections will show you how to create the Effektif database user using the command line. Alternatively, you can use a GUI application like Robomongo to create the database user. Section :ref:`appendix-add-mongodb-user` explains how to setup the database user with Robomongo.
+In order to add a new user to MongoDB, the MongoDB server has to be running. The following subsections will show you how to create the Effektif database user using the command line. 
 
 Windows
 ^^^^^^^
@@ -319,38 +333,38 @@ Windows
 #. Open the command cmd and go to your MongoDB\bin directory, e.g. by executing: ``cd C:\MongoDB\bin``
 #. If you have an admin user, create the Effektif user by executing: 
 
-    * ``mongo.exe admin -u admin -p <enterYourAdminPasswordHere> --eval "db.addUser( { user: 'effektif', pwd: '<enterEffektifPasswordHere>', roles: ['dbAdminAnyDatabase', 'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )"``
+    * ``mongo.exe admin -u admin -p <enterYourAdminPasswordHere> --eval "db.createUser( { user: 'effektif', pwd: '<enterEffektifPasswordHere>', roles: ['dbAdminAnyDatabase', 'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )"``
     * Replace <enterAdminPasswordHere> with the password, you have defined for the admin user.
     * Replace <enterEffektifPasswordHere> with the password for the new Effektif user. As you can see the user name is effektif.
 
 #. If you have a new MongoDB and no admin user, create the Effektif user by executing:
     
-    * ``mongo.exe admin --eval "db.addUser( { user: 'effektif', pwd: '<enterEffektifPasswordHere>', roles: ['dbAdminAnyDatabase', 'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )"``
+    * ``mongo.exe admin --eval "db.createUser( { user: 'effektif', pwd: '<enterEffektifPasswordHere>', roles: ['dbAdminAnyDatabase', 'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )"``
     * Replace <enterEffektifPasswordHere> with the password for the new Effektif user. As you can see the user name is effektif.
 
 #. You can verify the creation of the new Effektif user by executing:
     
-    * ``mongo.exe admin -u effektif -p <enterEffektifPasswordHere> --eval "db.system.users.find({ user: 'effektif'}).forEach(function(u) {printjson(u)});"``
+    * ``mongo.exe admin -u effektif -p <enterEffektifPasswordHere> --eval "db.getUser('effektif'});"``
     * On the command line you will see the user information including the four assigned roles.
 
 Debian
 ^^^^^^
-If you have installed MongoDB using a package manager, the binaries should be available on the path. Otherwise, open the directory with the MongoDB binary files and  follow the instructions.
+If you have installed MongoDB using a package manager, the binaries should be available on the path. Otherwise, open the directory with the MongoDB binary files and follow the instructions.
 
 #. If you have an admin user, create the Effektif user by executing: 
 
-    * ``mongo admin -u admin -p <enterYourAdminPasswordHere> --eval "db.addUser( { user: 'effektif', pwd: '<enterEffektifPasswordHere>', roles: ['dbAdminAnyDatabase', 'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )"``
+    * ``mongo admin -u admin -p <enterYourAdminPasswordHere> --eval "db.createUser( { user: 'effektif', pwd: '<enterEffektifPasswordHere>', roles: ['dbAdminAnyDatabase', 'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )"``
     * Replace <enterAdminPasswordHere> with the password, you have defined for the admin user.
     * Replace <enterEffektifPasswordHere> with the password for the new Effektif user. As you can see the user name is effektif.
 
 #. If you have a new MongoDB and no admin user, create the Effektif user by executing:
     
-    * ``mongo admin --eval "db.addUser( { user: 'effektif', pwd: '<enterEffektifPasswordHere>', roles: ['dbAdminAnyDatabase', 'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )"``
+    * ``mongo admin --eval "db.createUser( { user: 'effektif', pwd: '<enterEffektifPasswordHere>', roles: ['dbAdminAnyDatabase', 'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )"``
     * Replace <enterEffektifPasswordHere> with the password for the new Effektif user. As you can see the user name is effektif.
 
 #. You can verify the creation of the new Effektif user by executing:
     
-    * ``mongo admin -u effektif -p <enterEffektifPasswordHere> --eval "db.system.users.find({ user: 'effektif'}).forEach(function(u) {printjson(u)});"``
+    * ``mongo admin -u effektif -p <enterEffektifPasswordHere> --eval "db.getUser('effektif');"``
     * On the command line you will see the user information including the four assigned roles.
 
 Once the Effektif user is created, its credentials have to be added to the Effektif configuration file to the properties ``effektif.mongodb.username`` and ``effektif.mongodb.password``\ . Section :ref:`update-effektif-configuration` explains how to update the configuration file.

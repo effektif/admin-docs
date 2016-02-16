@@ -9,7 +9,7 @@ Checklist
 Before starting Effektif, use the following checklist to make sure everything is setup properly.
 
 * Oracle Java 8 is installed
-* Apache Tomcat 8 is installed
+* Apache Tomcat 7 or 8 is installed
 
     * the Java options are configured
 
@@ -66,29 +66,33 @@ MongoDB
 ^^^^^^^
 If you followed the instructions in this guide to setup MongoDB using a packet manager, some additional scripts have been installed that allow you to start, stop and restart the database very easily. Be aware, the execution of those scripts might require root privileges. ::
 
-    /etc/init.d/mongodb start
+    /etc/init.d/mongod start
 
 If MongoDB is already running, you can restart the database by executing: ::
     
-    /etc/init.d/mongodb restart
+    /etc/init.d/mongod restart
 
 In order to determine whether MongoDB is running or not, you can check upon the status with the following command: ::
     
-    /etc/init.d/mongodb status
+    /etc/init.d/mongod status
+
+Be aware, in earlier versions of MongoDB, e.g. 2.4.x, the scripts had a different name ``/etc/init.d/mongodb``.
 
 Tomcat
 ^^^^^^
 The recommended way to install Tomcat is to use a packet manager. Installing Tomcat under Debian with APT will install additional scripts to start, stop and restart the server. Be aware, the execution of those scripts might require root privileges. ::
 
-    /etc/init.d/tomcat7 start
+    /etc/init.d/tomcat8 start
 
 You can restart the Tomcat server if it is already running by executing: ::
 
-    /etc/init.d/tomcat7 restart
+    /etc/init.d/tomcat8 restart
 
 Furthermore, you can check upon the status of the Tomcat and determine whether it is running or not with the following command: ::
 
-    /etc/init.d/tomcat7 status
+    /etc/init.d/tomcat8 status
+
+The examples above show only the commands for Tomcat 8. However, if you use Tomcat 7, the same commands will work with the script ``/etc/init.d/tomcat7``\ .
 
 Login to Effektif
 -----------------
@@ -131,6 +135,6 @@ Invite other users
 ------------------
 In case this is an integrated installation with Signavio, please jump to section :ref:`signavio-integration` for setting up synchronization of users.
 
-To invite other users, go to the organization configuration panel. That's located in the dropdown under your name in the top right corner named *My organization*\ . In section Invitations you can enter email addresses of users you want to invite. The amount of users that can be invited to your organisation depends on the number of user licenses you have acquired. All organisations on an on-premise system share the same license pool. This means the shown number of unused licenses is the same in every organisation. If one organisation invites another user the count of unused licenses in all organisations decreases.
+To invite other users, go to the organization configuration panel. That's located in the dropdown under your name in the top right corner named *Organization settings*\ . In section Invitations you can enter email addresses of users you want to invite. The amount of users that can be invited to your organisation depends on the number of user licenses you have acquired. All organisations on an on-premise system share the same license pool. This means the shown number of unused licenses is the same in every organisation. If one organisation invites another user the count of unused licenses in all organisations decreases.
 
 A user can be invited to multiple organisations. If a user is part of two organisations, he will require two user licenses, one for each organisation he is part of.

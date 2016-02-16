@@ -42,10 +42,6 @@ msgstr "\\*.sh - Linux shell scripts"
 msgid "db - directory that contains MongoDB configuration files"
 msgstr "db - directory that contains MongoDB configuration files"
 
-#: ../../update.rst:18
-msgid "mongodb.conf - configuration file for Linux"
-msgstr "mongodb.conf - configuration file for Linux"
-
 #: ../../update.rst:19
 msgid "mongod.cfg - configuration file for Windows"
 msgstr "mongod.cfg - configuration file for Windows"
@@ -155,20 +151,6 @@ msgstr ""
 #: ../../update.rst:63
 msgid "Revisit the configuration files"
 msgstr "Revisit the configuration files"
-
-#: ../../update.rst:64
-msgid ""
-"Upon upgrading to a newer version, it might be necessary to update existing "
-"configuration files and add, remove, or modify some values. Therefore, it "
-"necessary that you refer to section :ref:`configure-effektif` and make sure "
-"your Effektif configuration file is up-to-date before starting the system "
-"again."
-msgstr ""
-"Upon upgrading to a newer version, it might be necessary to update existing "
-"configuration files and add, remove, or modify some values. Therefore, it "
-"necessary that you refer to section :ref:`configure-effektif` and make sure "
-"your Effektif configuration file is up-to-date before starting the system "
-"again."
 
 #: ../../update.rst:67
 msgid "Start Effektif"
@@ -332,6 +314,35 @@ msgid ""
 "information on the update to the latest version of Effektif before "
 "continuing with the update."
 msgstr ""
+
+#: ../../update.rst:18
+msgid "mongod.conf - configuration file for Linux"
+msgstr ""
+
+#: ../../update.rst:64
+msgid ""
+"Upon upgrading to a newer version, it might be necessary to update existing "
+"configuration files and add, remove, or modify some values. Therefore, it is"
+" necessary that you refer to section :ref:`configure-effektif` and make sure"
+" your Effektif configuration file is up-to-date before starting the system "
+"again."
+msgstr ""
+
+#~ msgid "mongodb.conf - configuration file for Linux"
+#~ msgstr "mongodb.conf - configuration file for Linux"
+
+#~ msgid ""
+#~ "Upon upgrading to a newer version, it might be necessary to update existing "
+#~ "configuration files and add, remove, or modify some values. Therefore, it "
+#~ "necessary that you refer to section :ref:`configure-effektif` and make sure "
+#~ "your Effektif configuration file is up-to-date before starting the system "
+#~ "again."
+#~ msgstr ""
+#~ "Upon upgrading to a newer version, it might be necessary to update existing "
+#~ "configuration files and add, remove, or modify some values. Therefore, it "
+#~ "necessary that you refer to section :ref:`configure-effektif` and make sure "
+#~ "your Effektif configuration file is up-to-date before starting the system "
+#~ "again."
 
 #~ msgid ""
 #~ "This section will guide you through an update of your Effektif system. It "

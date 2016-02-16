@@ -15,7 +15,7 @@ The directory will contain the following files:
 * \*.sh - Linux shell scripts 
 * db - directory that contains MongoDB configuration files
 
-    * mongodb.conf - configuration file for Linux
+    * mongod.conf - configuration file for Linux
     * mongod.cfg - configuration file for Windows
 
 * effektif - directory 
@@ -61,7 +61,7 @@ In order to update the Effektif system, you have to replace the ``ROOT`` folder 
 
 Revisit the configuration files
 -------------------------------
-Upon upgrading to a newer version, it might be necessary to update existing configuration files and add, remove, or modify some values. Therefore, it necessary that you refer to section :ref:`configure-effektif` and make sure your Effektif configuration file is up-to-date before starting the system again.
+Upon upgrading to a newer version, it might be necessary to update existing configuration files and add, remove, or modify some values. Therefore, it is necessary that you refer to section :ref:`configure-effektif` and make sure your Effektif configuration file is up-to-date before starting the system again.
 
 Start Effektif
 --------------

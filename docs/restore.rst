@@ -4,7 +4,7 @@ Restore
 =======
 Backups can be restored using MongoDB’s mongorestore. Similar to mongodump it is executed on the command line. For more detailed information on mongorestore see the official documentation:
 
-http://docs.mongodb.org/v2.4/reference/program/mongorestore/
+https://docs.mongodb.org/manual/reference/program/mongorestore
 
 You will need to use the Effektif MongoDB user credentials again to overwrite the contents of the Effektif databases.
 

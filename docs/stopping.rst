@@ -26,10 +26,14 @@ Tomcat
 ^^^^^^
 If you installed Tomcat using a packet manager, you can simply run the following command. Be aware, the execution might require root privileges. ::
     
-    /etc/init.d/tomcat7 stop
+    /etc/init.d/tomcat8 stop
+
+The example above shows only the command for Tomcat 8. However, if you use Tomcat 7, the same command will work with the script ``/etc/init.d/tomcat7``\ .
 
 MongoDB
 ^^^^^^^
 If MongoDB was setup following the instructions in this guide, you can simply stop the MongoDB server by executing the following command. Be aware, the execution might require root privileges. ::
 
-    /etc/init.d/mongodb stop
+    /etc/init.d/mongod stop
+
+Be aware, in earlier versions of MongoDB, e.g. 2.4.x, the scripts had a different name ``/etc/init.d/mongodb``.

@@ -1,6 +1,8 @@
 Appendix
 ========
 
+TODO: Update this chapter as soon as Robomongo supports the new user operations.
+
 This chapter contains content to various topics which extend the descriptions in the administration guide.
 
 .. _appendix-add-mongodb-user:

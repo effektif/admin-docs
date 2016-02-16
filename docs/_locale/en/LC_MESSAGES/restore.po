@@ -28,10 +28,6 @@ msgstr ""
 "it is executed on the command line. For more detailed information on "
 "mongorestore see the official documentation:"
 
-#: ../../restore.rst:7
-msgid "http://docs.mongodb.org/v2.4/reference/program/mongorestore/"
-msgstr "http://docs.mongodb.org/v2.4/reference/program/mongorestore/"
-
 #: ../../restore.rst:9
 msgid ""
 "You will need to use the Effektif MongoDB user credentials again to "
@@ -91,3 +87,10 @@ msgid ""
 msgstr ""
 "As you can see, you have to fill in the credentials of the Effektif MongoDB "
 "user again. Furthermore, you need to specify where the backup is located."
+
+#: ../../restore.rst:7
+msgid "https://docs.mongodb.org/manual/reference/program/mongorestore"
+msgstr ""
+
+#~ msgid "http://docs.mongodb.org/v2.4/reference/program/mongorestore/"
+#~ msgstr "http://docs.mongodb.org/v2.4/reference/program/mongorestore/"

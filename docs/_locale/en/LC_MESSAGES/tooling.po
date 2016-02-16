@@ -30,10 +30,6 @@ msgstr ""
 msgid "MongoDB"
 msgstr "MongoDB"
 
-#: ../../tooling.rst:11
-msgid "http://robomongo.org/"
-msgstr "http://robomongo.org/"
-
 #: ../../tooling.rst:9
 msgid ""
 "A good tool to manage your MongoDB installation is Robomongo. It is free and"
@@ -47,6 +43,13 @@ msgstr ""
 "Please, be careful when you use a tool to manipulate the database. Effektif "
 "does not guarantee that any manipulated data can be restored. The tool can "
 "be downloaded from this site:"
+
+#: ../../tooling.rst:11
+msgid "https://robomongo.org/"
+msgstr ""
+
+#~ msgid "http://robomongo.org/"
+#~ msgstr "http://robomongo.org/"
 
 #~ msgid ""
 #~ "A good tool to manage your MongoDB installation is Robomongo. It is free and"

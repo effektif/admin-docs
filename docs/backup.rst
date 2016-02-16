@@ -4,7 +4,8 @@ Backup
 ======
 In order to take a backup, it is sufficient to backup the content of MongoDB. All uploaded files are stored in the database and, therefore, covered by a database backup. MongoDB comes with built-in solutions for backups. Effektif recommends to use mongodump. For more detailed information about backups of MongoDB see the official documentation:
 
-http://docs.mongodb.org/v2.4/core/backups/
+https://docs.mongodb.org/manual/core/backups/
+https://docs.mongodb.org/manual/tutorial/backup-and-restore-tools/#binary-bson-dumps
 
 Make sure the MongoDB server is running when you want to execute mongodump. If not stated otherwise via command line parameters, mongodump will try to backup data from the locally running mongod service.
 
