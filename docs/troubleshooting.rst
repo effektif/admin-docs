@@ -17,7 +17,7 @@ MongoDB
 ```````
 The MongoDB log file is configured by the logpath option. This is either defined in the MongoDB configuration file that you reference when starting MongoDB or directly as a start parameter of MongoDB. Anyway, the value of this parameter will tell you where to find the log file.
 
-On Linux, one default location where the log file can be found is ``/var/log/mongodb/mongodb.log``\ . Whereas a default location for the configuration file is ``/etc/mongodb.conf``\ . Be aware, these locations can change depending on the distribution and depend on how you have installed MongoDB.
+On Linux, one default location where the log file can be found is ``/var/log/mongodb/mongodb.log``\ . Whereas a default location for the configuration file is ``/etc/mongodb.conf``\ . These locations can change depending on the distribution and depend on how you have installed MongoDB.
 
 If you are using Windows and followed the instructions in this guide to setup MongoDB, you should find the log file in your MongoDB installation directory ``$MONGO_HOME\logs``\ .
 
@@ -33,7 +33,7 @@ Problem:
     The Effektif site shows a HTTP Status 500 error including the message ``root cause java.lang.RuntimeException: Cannot find license.xml``\ . 
 
 Solution: 
-    You have not installed the Effektif license.xml at all or placed it in the wrong directory. Jump to section :ref:`install-license` to solve the issue.
+    You have not installed the Effektif license.xml at all or placed it in the wrong directory. See :ref:`install-license` to solve the issue.
 
 Problem:
     The Effektif site shows a HTTP Status 500 error including the message ``com/effektif/EffektifServlet : Unsupported major.minor version 51.0 (unable to load class com.effektif.EffektifServlet)``\ .
@@ -43,7 +43,7 @@ Solution:
 
         java -version
 
-    Section :ref:`install-java` explains how to install the correct Java version.
+    The :ref:`install-java` section explains how to install the correct Java version.
 
 Problem:
     Executing a MongoDB command yields the error message ``errmsg: “unauthorized”`` or  ``errmsg: “auth fails”``\ .
@@ -59,13 +59,18 @@ Solution:
     
     If this command fails with the error message ``exception: login failed`` you know that your username / password combination is wrong. Please, make sure you spelled the username and password correctly.
 
-    In order to check the second issue, jump to section :ref:`add-mongodb-user`\ . This section lists all necessary roles and explains how to verify that the Effektif user has all the required roles. Especially the restore and backup commands require certain roles to work properly.
+    In order to check the second issue, see the :ref:`add-mongodb-user` section.
+    This section lists all necessary roles and explains how to verify that the Effektif user has all the required roles.
+    Especially the restore and backup commands require certain roles to work properly.
 
 Problem:
     Effektif does not start and the log file contains the error message ``INFO  LockingDbExecutor Database is locked by another executor. Wait...``.
 
 Solution:
-    The problem with the LockingDbExecutor arises when the application server is shutdown during the initialisation (update of licenses and migration of  database) before the lock can be released again. You have to manually remove the respective lock from the database. It is recommened to use a tool like Robomongo for this purpose. Section :ref:`tooling-mongodb` explains how to retrieve Robomongo and setup a connection to your MongoDB. 
+    The problem with the LockingDbExecutor arises when the application server is shut down during the initialisation (update of licenses and migration of  database) before the lock can be released again. 
+    You have to manually remove the lock from the database.
+    We recommend using a tool like Robomongo for this purpose.
+    The :ref:`tooling-mongodb` section explains how to install Robomongo and set-up a connection to your MongoDB. 
 
     1. Open Robomongo.
     2. Establish a connection to MongoDB.

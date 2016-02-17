@@ -18,7 +18,8 @@ The Apache Tomcat is an application server that hosts the Effektif web applicati
 
 MongoDB
 ```````
-MongoDB is a document-oriented database system. It is the only database system that is supported by Effektif. More detailed information about MongoDB can be found in the MongoDB documentation: https://docs.mongodb.org
+MongoDB is a document-oriented database system. It is the only database system that Effektif supports.
+You can find more detailed information in the `MongoDB documentation <https://docs.mongodb.org>`_.
 
 Mail server (SMTP)
 ``````````````````

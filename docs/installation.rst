@@ -1,5 +1,5 @@
-Installation
-============
+Installing Effektif
+===================
 This section will guide you through the setup of Effektif. Simply follow the subsections step by step. If you have already installed Effektif and want to update the system to a newer version, you can skip this chapter.
 
 System requirements
@@ -9,16 +9,16 @@ Operating system
 ````````````````
 The Effektif system can be deployed on different operating systems. Officially supported are the following operating systems:
 
-* Debian Stable Release 64Bit
-* Microsoft Windows Server 64Bit
+* Debian Stable Release 64-bit
+* Microsoft Windows Server 64-bit
 
 *Important: In general, it is possible to install Effektif on other Linux distributions. However, the installation process can differ from the following instructions and the Effektif team cannot offer official support in case of an installation problem.*
 
-You are advised to use a 64Bit operating system in order to be able to assign more than 1.5GB of heap space to the Java VM. Furthermore, MongoDB is limited to 2GB of content on 32Bit operating systems.
+You are advised to use a 64-bit operating system in order to be able to assign more than 1.5GB of heap space to the Java VM. Furthermore, MongoDB is limited to 2GB of content on 32-bit operating systems.
 
 Hardware requirements
 `````````````````````
-The described installation in this adminstration guide will setup the database and the application server on the same system. However, it is also possible to setup the database and application server on separate systems. For instance, if you have already an infrastructure that provides MongoDB instances for different applications, you can simply reuse your infrastructure and just create another database for Effektif.
+The described installation in this adminstration guide will setup the database and the application server on the same system. However, it is also possible to setup the database and application server on separate systems. For instance, if you already have an infrastructure that provides MongoDB instances for different applications, you can simply reuse your infrastructure and just create another database for Effektif.
 
 The minimal hardware requirements for the combined system of application and database server are:
 
@@ -26,7 +26,9 @@ The minimal hardware requirements for the combined system of application and dat
 * 4 core CPU
 * 50 GB disk space
 
-The required disk space depends on how you will use Effektif. 50 GB should be sufficient disk space for most scenarios. However, if you plan on using a lot of file uploads in your processes the required disk space depends largely on the number and size of the uploaded files. Be aware, the required disk space does not include the space necessary for backups. If you plan on storing the backups on the same server, you should add more.
+The required disk space depends on how you will use Effektif. 50 GB should be sufficient disk space for most scenarios. However, if you plan on using a lot of file uploads in your processes the required disk space depends largely on the number and size of the uploaded files.
+
+Note that the required disk space does not include the space necessary for backups. If you plan on storing the backups on the same server, you should add more.
 
 Other systems
 `````````````
@@ -34,14 +36,14 @@ The Effektif system relies on a SMTP mail server to send notifications and invit
 
 Software requirements
 `````````````````````
-In order to run Effektif on your server, you will need to install some additional software. Depending on your deployment strategy (combined or separate system for application and database), you have to install the following software requirements either on the same server or the respective separate servers. 
+In order to run Effektif on your server, you will need to install some additional software. Depending on your deployment strategy (combined or separate system for application and database), you have to install the following required software either on the same server or the respective separate servers. 
 
 The following sections contain detailed instructions on how to install and configure the additional software components.
 
 The application server requires the following additional software:
 
 * Java: Oracle JSE version 8 (1.8.0_66+)
-* Apache Tomcat 8 64 Bit (recommended) or Apache Tomcat 7 64 Bit
+* Apache Tomcat 8 64-bit (recommended) or Apache Tomcat 7 64-bit
 
 The database server requires the following additional software:
 
@@ -58,8 +60,8 @@ A current web browser is necessary on every client that shall display the Effekt
 * Microsoft Internet Explorer 9 or newer
 * Apple Safari 5 or newer
 
-Unpack Effektif
----------------
+Unpacking Effektif
+------------------
 Unzip the effektif-{version}.zip to a directory of your choice, e.g. ``/yourlocation/effektif-{version}``
 In the rest of this guide, we'll refer to the effektif home directory as ``$EFFEKTIF_HOME``\ .
 The directory will contain the following files:
@@ -80,29 +82,32 @@ On Linux systems you need to make the scripts executable with the ``chmod`` comm
 
 .. _install-java:
 
-Install Java
-------------
-The application server requires a Java runtime environment in order to execute the Java backend of Effektif. Therefore, you have to install Java 8 64Bit on the application server. You can download a respective installation package for your operating system here: 
+Installing Java
+---------------
+The application server requires a Java runtime environment in order to execute Effektif’s Java backend.
+You must install Java 8 64-bit on the application server. Download an installation package for your operating system here:
 
 https://www.java.com/en/download/manual.jsp
 
 .. _install-tomcat:
 
-Install Tomcat
---------------
-The Java backend of the Effektif system is executed using Apache Tomcat. Effektif supports Apache Tomcat 64 Bit in version 7 and 8. However, you are advised to use the newer version Tomcat 8. 
+Installing Tomcat
+-----------------
+The Java backend of the Effektif system is executed using Apache Tomcat.
+Effektif supports Apache Tomcat 64-bit versions 7 and 8.
+We recommend using the newer version Tomcat 8. 
 
 You can download the latest installation files for different operating systems from the following site:
 
 http://tomcat.apache.org/download-80.cgi
 
-In general, please make sure the user executing the Tomcat has read / write permissions for the folder ``$TOMCAT_HOME/webapps`` and the containing subfolders.
+In general, please make sure the user executing the Tomcat has read/write permissions for the ``$TOMCAT_HOME/webapps`` directory and its sub-directories.
 
 Windows
 ```````
 If you are using a Windows system, the download site offers a Windows Service Installer (“32-bit/64-bit Windows Service Installer”). This installer will install the Apache Tomcat as a Windows service which can be started, stopped and configured over a graphical user interface. The service installer is the recommended way for Windows users to install the Tomcat server. Please, make sure you execute the installer with administrator privileges.
 
-Furthermore, it is recommended to install the Apache Tomcat into a root folder on ``C:\``\ .
+Furthermore, it is recommended to install the Apache Tomcat into a root directory on ``C:\``\ .
 
 Debian
 ``````
@@ -111,8 +116,8 @@ If you are using Linux, you might consider installing Apache Tomcat using a pack
     apt-get install tomcat7
     apt-get install tomcat8
 
-Configure Tomcat
-----------------
+Configuring Tomcat
+------------------
 This section will point the configuration options that are required to run Effektif. However, Tomcat offers more configuration options that can be found in the official documentation:
 
 http://tomcat.apache.org/tomcat-8.0-doc/
@@ -133,7 +138,7 @@ There are some Java options that need to be configured before starting the Tomca
 | ``-XX:MaxPermSize=256m``  | maximum permanent generation space in MB                        |
 +---------------------------+-----------------------------------------------------------------+
 
-In order to allocate sufficient RAM to the Tomcat server you have to set the options Xms and Xmx followed by the number of MB allocated and a literal ‘m’. ``Xms`` defines the initial / minimum amount of RAM that is used and ``Xmx`` the allowed maximum. You are advised to allocate at least 2GB of RAM to the Tomcat. However, it is recommended to use more RAM. For example, if you want to assign 4GB of maximum RAM the option would be ``-Xmx4096m``\ .
+In order to allocate sufficient RAM to the Tomcat server you have to set the ``Xms`` and ``Xmx`` options, followed by the number of MB allocated and a literal ``m``. ``Xms`` defines the initial/minimum amount of RAM that is used and ``Xmx`` the allowed maximum. You are advised to allocate at least 2GB of RAM to the Tomcat. However, it is recommended to use more RAM. For example, if you want to assign 4GB of maximum RAM the option would be ``-Xmx4096m``\ .
 
 The values for the permanent generation space have to be increased as well, these are defined by the values ``-XX:PermSize=128m`` and ``-XX:MaxPermSize=256m``\ .
 
@@ -175,37 +180,43 @@ Locate the HTTP connector and change the value of port to your preferred port. F
         redirectPort="8443" 
         URIEncoding="UTF-8" />
 
-Copy the Effektif webapp
-------------------------
-The Effektif webapp which can be found in the directory ``$EFFEKTIF_HOME/effektif/ROOT`` needs to be copied to the Tomcat’s webapps folder. Therefore remove any files and folders that are located in ``$TOMCAT_HOME/webapps`` and copy the ROOT folder to ``$TOMCAT_HOME/webapps/``\ .
+Installing the Effektif web application
+---------------------------------------
+The Effektif web application, which can be found in the directory ``$EFFEKTIF_HOME/effektif/ROOT``, needs to be copied to the Tomcat’s ``webapps`` directory.
+Remove any files and directories that are located in ``$TOMCAT_HOME/webapps`` and copy the ``ROOT`` directory to ``$TOMCAT_HOME/webapps/``\ .
 
-The Effektif application needs to run as the ROOT application in the Tomcat. Therefore, running it in parallel with another application that requires to run as the ROOT application in the same Tomcat is currently not possible.
+The Effektif application needs to run as the ROOT application in the Tomcat.
+Running it in parallel with another application that requires to run as the ROOT application in the same Tomcat is currently not possible.
 
 .. _install-mongodb:
 
-Install MongoDB
----------------
-MongoDB is the only database system currently supported by Effektif. In case, you have already an infrastructure that can provide a MongoDB version 3.2.x instance, simply create a new instance for Effektif and skip to the section :ref:`configure-mongodb`. Otherwise go on with the installation instructions.
+Installing MongoDB
+------------------
+MongoDB is currently the only database system that Effektif supports.
+If you already have an infrastructure that can provide a MongoDB version 3.2.x instance, simply create a new instance for Effektif and skip to :ref:`configure-mongodb`.
+Otherwise continue with the installation instructions.
 
 General information about installing MongoDB on different operating systems can be found on:
 
 https://docs.mongodb.org/manual/installation/
 
-There are two versions of MongoDB, *MongoDB Community Edition* and *MongoDB Enterprise*. *MongoDB Community Edition* can be used free of charge even in a commercial context, whereas *MongoDB Enterprise* is a commercial product which offers additional tooling and support. Both versions can be used in combination with Effektif.
+There are two versions of MongoDB, *MongoDB Community Edition* and *MongoDB Enterprise*. *MongoDB Community Edition* can be used free of charge even in a commercial context, whereas *MongoDB Enterprise* is a commercial product that offers additional tooling and support.
+You can use either version with Effektif.
 
-In case you are using Linux, you have the possibilities to install MongoDB using either a package manager like apt-get or downloading the binaries directly. It is recommened to use the package manager because it will also setup respective scripts that allow you to start and stop the server easily. However, you have to make sure the correct version is installed. Subsection :ref:`install-mongodb-debian` explains in more details how to setup MongoDB on Debian and might work as an example for other Linux distributions.
+In case you are using Linux, you have the possibilities to install MongoDB using either a package manager like ``apt-get`` or downloading the binaries directly. It is recommened to use the package manager because it will also setup scripts that allow you to start and stop the server easily. However, you have to make sure the correct version is installed. :ref:`install-mongodb-debian` explains in more details how to setup MongoDB on Debian and might work as an example for other Linux distributions.
 
 Remarks for downloading the binaries
 ````````````````````````````````````
-You can find the respective version of MongoDB for your operating system here: 
+You can find a version of MongoDB for your operating system here: 
 
 https://www.mongodb.org/downloads
 
-Please, make sure to download the 64Bit version of MongoDB. The 32Bit version has a limited size of 2GB for stored content and, therefore, cannot be used in productive systems.
+Please, make sure to download the 64-bit version of MongoDB.
+The 32-bit version is limited to 2GB of stored content and cannot therefore be used in production systems.
 
 Windows
 ```````
-Windows requires you to download the binaries. Consider the remarks of the last subsection when doing so. If you are using any version older than Windows Server 2008 R2, you have to download the 64Bit legacy release. 
+Windows requires you to download the binaries. Consider the remarks of the last subsection when doing so. If you are using any version older than Windows Server 2008 R2, you have to download the 64-bit legacy release. 
 
 You can find more details about installing MongoDB on Windows in the documentation:
 
@@ -213,7 +224,7 @@ https://docs.mongodb.org/manual/tutorial/install-mongodb-on-windows/
 
 When you finished downloading MongoDB follow the next steps:
 
-#. Start the installation by double-clicking the downloaded MongoDB ``.msi`` and follow the instructions.
+#. Start the installation by double-clicking the downloaded MongoDB ``.msi`` and following the instructions.
 
     * You can select another install directory, e.g. ``C:\MongoDB``, if you choose the *Custom* installation option.
 
@@ -224,12 +235,12 @@ When you finished downloading MongoDB follow the next steps:
 #. Create a logs directory for the MongoDB log files, e.g. ``C:\MongoDB\logs``\ .
 #. Copy the file ``$EFFEKTIF_HOME\db\mongod.cfg`` to your MongoDB directory ``C:\MongoDB\mongod.cfg`` and edit the file.
 
-    * The ``dbPath`` under ``storage`` needs to contain the absolute path to the data directory, e.g. ``C:\MongoDB\data``\ .
-    * The ``path`` under ``systemLog`` needs to contain the absolute path to the log file, e.g. ``C:\MongoDB\logs\mongodb.log``\ . The log file will be created once MongoDB is started.
-    * The configuration file needs to be in a valid YAML format. You can use an online checker, like http://www.yamllint.com/ , to verify the validity.
-    * See section :ref:`configure-mongodb` for more information about the other configuration values.
+    * The ``dbPath`` under ``storage`` must contain the absolute path to the data directory, e.g. ``C:\MongoDB\data``\ .
+    * The ``path`` under ``systemLog`` must contain the absolute path to the log file, e.g. ``C:\MongoDB\logs\mongodb.log``\ . The log file will be created once MongoDB is started.
+    * The configuration file needs to be in a valid `YAML <http://yaml.org>`_ format. You can use an online checker like `YAML Lint <http://www.yamllint.com/>`_ to verify the validity.
+    * See :ref:`configure-mongodb` for more information about the other configuration values.
 
-#. Open the command line cmd with administrative privileges and execute the following command. Make sure to use absolute paths and replace them with the matching ones on your system.
+#. Open the command line ``cmd`` with administrative privileges and execute the following command. Make sure to use absolute paths and replace them with the matching ones on your system.
 
     * ``C:\MongoDB\bin\mongod.exe --config C:\MongoDB\mongod.cfg --install``
     * The command line should tell you that the service MongoDB was properly created.
@@ -249,11 +260,13 @@ If you are installing MongoDB on a Debian system, you are advised to use the met
 
 https://docs.mongodb.org/manual/tutorial/install-mongodb-on-debian/
 
-For convenience reasons the script ``$EFFEKTIF_HOME/mongodb.install.debian.sh`` already wraps all necessary commands to install the correct version of MongoDB on *Debian 7 Wheezy* using apt-get. Simply execute it from the command line by opening ``$EFFEKTIF_HOME`` and calling: ::
+For convenience, the script ``$EFFEKTIF_HOME/mongodb.install.debian.sh`` wraps the necessary commands for installing the correct version of MongoDB on *Debian 7 Wheezy* using ``apt-get``.
+Simply execute it from the command line by opening ``$EFFEKTIF_HOME`` and calling: ::
 
     sudo ./mongodb.install.debian.sh
 
-This will add the MongoDB repositories to your package sources and install the version 3.2.x of MongoDB. Be aware, the script only works with Debian 7 Wheezy.
+This will add the MongoDB repositories to your package sources and install the version 3.2.x of MongoDB.
+Note that this script only works with Debian 7 Wheezy.
 You can now simply start and stop the MongoDB server by calling ::
 
     sudo /etc/init.d/mongod start
@@ -262,17 +275,18 @@ or ::
 
     sudo /etc/init.d/mongod stop
 
-The server will use the default configuration file ``/etc/mongod.conf``\ . See the next subsection for more information on how to configure MongoDB for Effektif and create the required user. Be aware, the installation probably started the MongoDB server already. You will need to restart the MongoDB server when you edit the configuration.
+The server will use the default configuration file ``/etc/mongod.conf``\ . See the next subsection for more information on how to configure MongoDB for Effektif and create the required user. Note that the installation probably already started the MongoDB server. You will need to restart the MongoDB server after you edit the configuration.
 
 .. _configure-mongodb:
 
-Configure MongoDB
------------------
-In order to run MongoDB properly, some configuration options have to be defined. The easiest solution is to create a configuration file and link this configuration file when starting MongoDB with the option ``--config``\ . The MongoDB configuration uses the YAML format, you can use an online checker like http://www.yamllint.com to verify that your configuration file has the proper format.
+Configuring MongoDB
+-------------------
+In order to run MongoDB properly, some configuration options have to be defined. The easiest solution is to create a configuration file and link this configuration file when starting MongoDB with the ``--config`` option.
+The MongoDB configuration uses the `YAML <http://yaml.org>`_ format, you can use an online checker like `YAML Lint <http://www.yamllint.com/>`_ to verify that your configuration file has the proper format.
 
-If you installed MongoDB under Windows using the method in the last section, you have already copied the predefined configuration file and adjusted the values for ``dbPath`` and ``systemLog`` ``path`` to your system. Then your configuration file contains already all necessary values.
+If you installed MongoDB under Windows using the method in the last section, you have already copied the predefined configuration file and adjusted the values for ``dbPath`` and ``systemLog`` ``path`` to your system. Then your configuration file already contains all necessary values.
 
-If you installed MongoDB under Linux using apt-get, e.g. by following the instructions in the last section, there should be a respective configuration file ``/etc/mongod.conf``\ . Edit this configuration file. The properties ``dbPath`` and ``systemLog`` ``path`` should be defined already. It is recommened to set the properties ``logAppend`` to ``true`` and ``authorization`` to ``enabled``.
+If you installed MongoDB under Linux using ``apt-get``, e.g. by following the instructions in the last section, there should be a ``/etc/mongod.conf`` configuration file. Edit this configuration file. The ``dbPath``, ``systemLog`` and ``path`` properties should already be defined. It is recommened to set the ``logAppend`` property to ``true`` and the ``authorization`` property to ``enabled``.
 
 In any other case make sure the configuration file contains the following properties. ::
 
@@ -302,7 +316,9 @@ If you have installed MongoDB on Debian using a package manager, the default con
     net:
       bindIp: 127.0.0.1
 
-This setting tells MongoDB to only bind to the local interface and, therefore, reject remote connections. If you plan on setting up the MongoDB on a different machine than the Tomcat, you need to update this setting and either remove it or add the IP interface MongoDB should bind to, in order to listen for incoming connections. This value can contain a comma separated list of IPs and should NOT contain the IP address of the application server.
+This setting tells MongoDB to only bind to the local interface and reject remote connections.
+If you plan to install MongoDB and Tomcat on different machines, you must update this setting and either remove it or add the IP interface MongoDB should bind to, in order to listen for incoming connections.
+This value can contain a comma separated list of IPs and should NOT contain the IP address of the application server.
 
 For more configuration options, see https://docs.mongodb.org/manual/reference/configuration-options/\ .
 
@@ -367,11 +383,11 @@ If you have installed MongoDB using a package manager, the binaries should be av
     * ``mongo admin -u effektif -p <enterEffektifPasswordHere> --eval "db.getUser('effektif');"``
     * On the command line you will see the user information including the four assigned roles.
 
-Once the Effektif user is created, its credentials have to be added to the Effektif configuration file to the properties ``effektif.mongodb.username`` and ``effektif.mongodb.password``\ . Section :ref:`update-effektif-configuration` explains how to update the configuration file.
+Once the Effektif user is created, its credentials have to be added to the Effektif configuration file to the ``effektif.mongodb.username`` and ``effektif.mongodb.password`` properties. Section :ref:`update-effektif-configuration` explains how to update the configuration file.
 
 Backup and restore
 ``````````````````
-You are advised to do regular backups of the MongoDB database to prevent a complete data loss in case of a system failure. The Effektif system will NOT backup the user data on its own. Section :ref:`backup` explains in details how to set up backups for MongoDB properly. Furthermore, section :ref:`restore` explains how you can restore an older version of the user data using one of the backups.
+You are advised to do regular backups of the MongoDB database to prevent a complete data loss in case of a system failure. The Effektif system will NOT backup the user data on its own. Section :ref:`backup` explains in details how to set up backups for MongoDB properly. Furthermore, the :ref:`restore` section explains how you can restore an older version of the user data using one of the backups.
 
 .. _configure-effektif:
 
@@ -382,7 +398,8 @@ Configuring Effektif
 
 Install the license file
 ````````````````````````
-Along with the Effektif application you have received the Effektif license file license.xml. Before you can start the Effektif system, you have to add the license file to the application. Therefore, copy the license file into the directory ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes``\ . The Effektif system will check your license file on startup and setup the defined number of licenses.
+Along with the Effektif application you have received the Effektif license file license.xml. Before you can start the Effektif system, you have to add the license file to the application.
+Copy the license file into the directory ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes``\ . The Effektif system will check your license file on startup and setup the defined number of licenses.
 
 .. _update-effektif-configuration:
 
@@ -420,7 +437,7 @@ The following properties are only relevant if your Effektif installation is conn
     effektif.com.effektif.model.service.signavio.SignavioAuthenticationProvider.
         clientSecret
 
-See section :ref:`signavio-integration` for more information on how to set up the integration.
+See :ref:`signavio-integration` for more information on how to set up the integration.
 
 Configure logging
 `````````````````

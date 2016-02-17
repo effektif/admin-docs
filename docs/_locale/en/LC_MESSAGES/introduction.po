@@ -88,11 +88,11 @@ msgstr ""
 msgid "MongoDB"
 msgstr "MongoDB"
 
-#: ../../introduction.rst:24
+#: ../../introduction.rst:25
 msgid "Mail server (SMTP)"
 msgstr "Mail server (SMTP)"
 
-#: ../../introduction.rst:25
+#: ../../introduction.rst:26
 msgid ""
 "The mail server is necessary to send notifications and invitation requests "
 "to users. Any server that is accessible via SMTP can be used."
@@ -100,15 +100,15 @@ msgstr ""
 "The mail server is necessary to send notifications and invitation requests "
 "to users. Any server that is accessible via SMTP can be used."
 
-#: ../../introduction.rst:28
+#: ../../introduction.rst:29
 msgid "Web browser"
 msgstr "Web browser"
 
-#: ../../introduction.rst:32
+#: ../../introduction.rst:33
 msgid "Naming conventions"
 msgstr "Naming conventions"
 
-#: ../../introduction.rst:33
+#: ../../introduction.rst:34
 msgid ""
 "Within this adminstrators guide several placeholders are used to increase "
 "the readability."
@@ -116,7 +116,7 @@ msgstr ""
 "Within this adminstrators guide several placeholders are used to increase "
 "the readability."
 
-#: ../../introduction.rst:44
+#: ../../introduction.rst:45
 msgid ""
 "Those placeholders are used within example command line code. You need to "
 "replace those placeholders with the appropriate paths on your system."
@@ -124,7 +124,7 @@ msgstr ""
 "Those placeholders are used within example command line code. You need to "
 "replace those placeholders with the appropriate paths on your system."
 
-#: ../../introduction.rst:29
+#: ../../introduction.rst:30
 msgid ""
 "Effektif runs as a web application. The user interface can be accessed using"
 " a modern web browser. More details about the supported browsers can be "
@@ -134,11 +134,11 @@ msgstr ""
 " a modern web browser. More details about the supported browsers can be "
 "found in the section :ref:`supported-browsers`\\ ."
 
-#: ../../introduction.rst:39
+#: ../../introduction.rst:40
 msgid "``$EFFEKTIF_HOME``"
 msgstr "``$EFFEKTIF_HOME``"
 
-#: ../../introduction.rst:39
+#: ../../introduction.rst:40
 msgid ""
 "Refers to the directory that contains the unzipped content of the downloaded"
 " effektif-{version}.zip."
@@ -146,31 +146,43 @@ msgstr ""
 "Refers to the directory that contains the unzipped content of the downloaded"
 " effektif-{version}.zip."
 
-#: ../../introduction.rst:40
+#: ../../introduction.rst:41
 msgid "``$TOMCAT_HOME``"
 msgstr "``$TOMCAT_HOME``"
 
-#: ../../introduction.rst:41
+#: ../../introduction.rst:42
 msgid "``$MONGO_HOME``"
 msgstr "``$MONGO_HOME``"
 
-#: ../../introduction.rst:41
+#: ../../introduction.rst:42
 msgid "Refers to the directory where your MongoDB is installed."
 msgstr "Refers to the directory where your MongoDB is installed."
 
-#: ../../introduction.rst:21
-msgid ""
-"MongoDB is a document-oriented database system. It is the only database "
-"system that is supported by Effektif. More detailed information about "
-"MongoDB can be found in the MongoDB documentation: https://docs.mongodb.org"
-msgstr ""
-
-#: ../../introduction.rst:40
+#: ../../introduction.rst:41
 msgid ""
 "Refers to the directory where your Apache Tomcat is installed. This "
 "directory contains the folders ``webapps`` and ``conf``\\ . On Linux for "
 "example the directory might be located in ``/var/lib/tomcat8``\\ ."
 msgstr ""
+
+#: ../../introduction.rst:21
+msgid ""
+"MongoDB is a document-oriented database system. It is the only database "
+"system that Effektif supports. You can find more detailed information in the"
+" `MongoDB documentation <https://docs.mongodb.org>`_."
+msgstr ""
+
+#~ msgid ""
+#~ "MongoDB is a document-oriented database system. It is the only database "
+#~ "system that Effektif supports. More detailed information about MongoDB can "
+#~ "be found in the `MongoDB documentation <https://docs.mongodb.org>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "MongoDB is a document-oriented database system. It is the only database "
+#~ "system that is supported by Effektif. More detailed information about "
+#~ "MongoDB can be found in the MongoDB documentation: https://docs.mongodb.org"
+#~ msgstr ""
 
 #~ msgid ""
 #~ "MongoDB is a document-oriented database system. It is the only database "

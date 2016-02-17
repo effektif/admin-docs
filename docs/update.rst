@@ -1,8 +1,10 @@
 .. _update:
 
-Update
-======
-This section will guide you through an update of your Effektif system. It assumes you have successfully installed an early version of Effektif. If you are installing Effektif for the first time, you can skip this chapter. Please, consult the previous chapter :ref:`update-notes` for additional information on the update to the latest version of Effektif before continuing with the update.
+Updating Effektif
+=================
+This section will guide you through an update of your Effektif system. It assumes you have successfully installed an early version of Effektif. If you are installing Effektif for the first time, you can skip this chapter.
+
+First, check :ref:`update-notes` for additional information about the update to the latest version of Effektif before continuing.
 
 .. _update-unpack-effektif:
 
@@ -61,7 +63,8 @@ In order to update the Effektif system, you have to replace the ``ROOT`` folder 
 
 Revisit the configuration files
 -------------------------------
-Upon upgrading to a newer version, it might be necessary to update existing configuration files and add, remove, or modify some values. Therefore, it is necessary that you refer to section :ref:`configure-effektif` and make sure your Effektif configuration file is up-to-date before starting the system again.
+After upgrading to a newer version, it might be necessary to update existing configuration files and add, remove, or modify some values.
+Refer to section :ref:`configure-effektif` and make sure your Effektif configuration file is up-to-date before starting the system again.
 
 Start Effektif
 --------------

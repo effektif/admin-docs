@@ -3,44 +3,64 @@
 
 Update notes
 ============
-This section contains important information for updates of your Effektif system. It will list changed technical requirements for newer versions and additional instructions for updates.
+This section contains important information about Effektif system updates.
+It lists changes to technical requirements for new versions and additional instructions for updates.
 
-Update to Effektif 3.4
-----------------------
-Effektif 3.4 requires several changes of your infrastructure. Starting with version 3.4, Effektif requires Java 8. Furthermore, it is recommended to update your MongoDB to version 3.2.x, because of the increased performance and functionality. Effektif 3.4 will still support MongoDB 2.4.x, however, following releases will assume, you are using MongoDB 3.2. Last but not least, Effektif 3.4 supports Apache Tomcat 7 and 8. For now, you can use either version, but it is recommended to do the optional upgrade to Tomcat 8.
+Updating to Effektif 3.4
+------------------------
+Effektif 3.4 requires several infrastructure changes.
+Starting with version 3.4, Effektif requires Java 8.
+We also recommended upgrading MongoDB to version 3.2.x, because of the increased performance and functionality.
+Effektif 3.4 will still support MongoDB 2.4.x, but later releases will assume that you are using MongoDB 3.2.
+Last but not least, Effektif 3.4 supports Apache Tomcat 7 and 8.
+For now, you can use either version, but we recommend the optional upgrade to Tomcat 8.
 
-When updating Effektif and your infrastructure, you should follow the following sequence of actions:
+When updating Effektif and your infrastructure, follow the following sequence:
 
 #. Update Java to Java 8 (required)
 #. Update Tomcat to Tomcat 8 (optional)
 #. Update the Effektif application
 #. Update MongoDB to MongoDB 3.2 (required)
 
-Be aware, the update to Effektif 3.4 contains multiple changes in the underlying data schema which require several long running migrations. Depending on the size of your database, the migrations might take several seconds up to 20 minutes.
+Be aware, the update to Effektif 3.4 contains multiple changes in the underlying data schema which require several long running migrations.
+Depending on the size of your database, the migrations might take several seconds, or up to 20 minutes.
 
-Update Java and Tomcat
-``````````````````````
-The last Effektif release 2.27.x is already compatible with Java 8 and Tomcat 8. Therefore, you should start by updating Java and Tomcat, because Effektif 3.4 will not run on Java 7. You can for instance install Tomcat 8 next to an existing Tomcat 7, in order to simply switch between the application servers. Section :ref:`install-tomcat` explains how to setup a Tomcat 8 server. After the successful setup, ensure none of the Tomcat servers is running. Then copy the directory ``$TOMCAT_HOME/webapps/ROOT`` from your Tomcat 7 to your Tomcat 8 directory and start the Tomcat 8 server. Now, you should be able to access the Effektif system again via a browser. 
+Updating Java and Tomcat
+````````````````````````
+The last Effektif release 2.27.x is already compatible with Java 8 and Tomcat 8.
+Start by updating Java and Tomcat, because Effektif 3.4 will not run on Java 7.
+You can install Tomcat 8 next to an existing Tomcat 7, and then switch between the application servers.
+:ref:`install-tomcat` explains how to setup a Tomcat 8 server.
+After the successful setup, ensure none of the Tomcat servers is running.
+Then copy the ``$TOMCAT_HOME/webapps/ROOT`` directory from your Tomcat 7 to your Tomcat 8 directory and start the Tomcat 8 server.
+Now, you should be able to access the Effektif system again via a browser. 
 
-Update Effektif
-```````````````
-As mentioned before, with the latest update to version 3.4, the data schema has changed. Therefore, you are advised to create a backup of your database before updating the application. Furthermore, the data migrations might take several seconds up to minutes. They are executed on the start of the server. Therefore, the first start of Effektif might take longer than usual.
+Updating Effektif
+`````````````````
+As mentioned before, with the update to version 3.4 changes the data schema.
+Create a backup of your database before updating the application.
 
-See chapter :ref:`update` for more information on how to update the Effektif application. After you have successfully updated Effektif, you can continue with the next section, which covers the update of MongoDB.
+Data migrations might take from several seconds up to several minutes.
+These migrations are executed when the server starts, so the first start of Effektif might take longer than usual.
 
-Update MongoDB 
-``````````````
-Effektif 3.4 supports now the latest version of MongoDB (3.2.x) which comes with improved performance and functionalities. The usual upgrade from MongoDB 2.4.x to 3.2.x (https://docs.mongodb.org/manual/release-notes/3.2-upgrade/) requires a stepwise approach, first upgrading from 2.4 to 2.6, then from 2.6 to 3.0 and at last from 3.0 to 3.2. The upgrade of the database also includes a change of the storage engine from the old MMAPv1 to the new WiredTiger. 
+See :ref:`update` for more information on how to update the Effektif application.
+After you have successfully updated Effektif, you can continue with the next section and update MongoDB.
+
+Updating MongoDB 
+````````````````
+Effektif 3.4 now supports the latest version of MongoDB (3.2.x) which comes with improved performance and functionality. 
+The usual upgrade from MongoDB 2.4.x to 3.2.x (https://docs.mongodb.org/manual/release-notes/3.2-upgrade/) requires a stepwise approach, first upgrading from 2.4 to 2.6, then from 2.6 to 3.0 and at last from 3.0 to 3.2.
+Upgrading the database also changes the storage engine from the old MMAPv1 engine to the new WiredTiger engine.
 
 However, we will use a different approach to migrate your MongoDB 2.4.x to version 3.2.x. This approach will simply import a backup of MongoDB 2.4.x into a completely fresh setup of MongoDB 3.2.x.
 
-#. Stop the Tomcat application server, see chapter :ref:`stopping` for more information.
-#. Create a backup of your database using ``mongodump``, see chapter :ref:`backup` for more information.
+#. Stop the Tomcat application server - see :ref:`stopping`.
+#. Create a backup of your database using ``mongodump`` - see :ref:`backup`.
 	
-	* This backup will be imported later into the new MongoDB 3.2.
+	* You will later import this backup into a new MongoDB 3.2 installation.
 
-#. Stop MongoDB, see chapter :ref:`stopping` for more information.
-#. *Windows only:* Remove the manually created MongoDB service by executing ``$MONGO_HOME\bin\mongod.exe --remove`` with administrator privileges on the command line cmd
+#. Stop MongoDB - see :ref:`stopping`.
+#. *Windows only:* manually remove the created MongoDB service by executing ``$MONGO_HOME\bin\mongod.exe --remove`` with administrator privileges on the command line ``cmd``
 #. Uninstall MongoDB 2.4.x, but ensure you don't delete your backup!
 
 	* *Windows:* Delete the MongoDB directory. 
@@ -50,13 +70,13 @@ However, we will use a different approach to migrate your MongoDB 2.4.x to versi
 	
 	* ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes/effektif-onpremise.properties`` contains the current name and password of the Effektif database user
 	* You can install the new version in the same place as the old one, please ensure the data directory of the new database is empty before you start it.
-	* Be aware, the format of the MongoDB configuration file has changed. The Effektif 
-	* Section :ref:`install-mongodb` contains more information on how to setup MongoDB 3.2.x
+	* Note that the the MongoDB configuration file format has changed.
+	* :ref:`install-mongodb` contains more information on how to setup MongoDB 3.2.x
 
 #. Start the new MongoDB instance. 
-#. Restore the backup partially to your new MongoDB instance using ``mongorestore``. Your backup from step 1 should contain multiple folders, one for each database which exists in the MongoDB instance. You only need to restore two of them which contain the data of the Effektif application. The default names are ``effektif`` and ``effektif-files``. You might have chosen a different name by defining another value for ``effektif.mongodb.database`` in your Effektif configuration file. The value there represents the name of the first database and the name of the second database is generated by adding ``-files``. You have to execute the restore command for both of the directories separately. The following lines show examples for the restore commands assuming your MongoDB user is called ``effektif`` and your chosen database name is ``effektif`` as well.
+#. Restore the backup partially to your new MongoDB instance using ``mongorestore``. Your backup from step 1 should contain multiple folders, one for each database in the MongoDB instance. You only need to restore the two that contain Effektif’s data. Their default names are ``effektif`` and ``effektif-files``. You might have chosen a different name by defining another value for ``effektif.mongodb.database`` in your Effektif configuration file. The value there represents the name of the first database and the name of the second database is generated by adding ``-files``. You have to execute the restore command for both of the directories separately. The following lines show examples for the restore commands, assuming your MongoDB user and database are both called ``effektif``.
 	
-	* The database name is specified in the parameter ``--db`` and additionally in the directory of the existing backup.
+	* The database name is specified by the ``--db`` parameter and also by the existing backup directory name.
 	* *Windows:* 
 
 		* ``$MONGO_HOME\bin\mongorestore.exe -u effektif -p <password> --authenticationDatabase admin --db effektif C:\path\to\dumps\effektif``
@@ -67,8 +87,9 @@ However, we will use a different approach to migrate your MongoDB 2.4.x to versi
 		* ``mongorestore -u effektif -p <password> --authenticationDatabase admin --db effektif /path/to/dumps/effektif``
 		* ``mongorestore -u effektif -p <password> --authenticationDatabase admin --db effektif-files /path/to/dumps/effektif-files``
 
-#. Restart Effektif and MongoDB, see chapter :ref:`starting-effektif` for more information.
+#. Restart Effektif and MongoDB - see :ref:`starting-effektif`.
 
-Your Effektif system has been updated successfully. Now, you should be able to access the Effektif system again via a browser. 
+Your Effektif system has been updated successfully.
+You can now access the Effektif application again via a browser. 
 
-In case, you have been using Robomongo before to access MongoDB, you will have to download the latest version in order to be able to connect to MongoDB 3.2.
+Note: if you use Robomongo to access MongoDB, download the latest version in order to be able to connect to MongoDB 3.2.
