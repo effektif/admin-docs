@@ -286,7 +286,7 @@ The MongoDB configuration uses the `YAML <http://yaml.org>`_ format, you can use
 
 If you installed MongoDB under Windows using the method in the last section, you have already copied the predefined configuration file and adjusted the values for ``dbPath`` and ``systemLog`` ``path`` to your system. Then your configuration file already contains all necessary values.
 
-If you installed MongoDB under Linux using ``apt-get``, e.g. by following the instructions in the last section, there should be a ``/etc/mongod.conf`` configuration file. Edit this configuration file. The ``dbPath``, ``systemLog`` and ``path`` properties should already be defined. It is recommened to set the ``logAppend`` property to ``true`` and the ``authorization`` property to ``enabled``.
+If you installed MongoDB under Linux using ``apt-get``, e.g. by following the instructions in the last section, there should be a ``/etc/mongod.conf`` configuration file. Edit this configuration file. The ``dbPath``, ``systemLog`` ``path`` properties should already be defined. It is recommened to set the ``logAppend`` property to ``true`` and the ``authorization`` property to ``enabled``.
 
 In any other case make sure the configuration file contains the following properties. ::
 

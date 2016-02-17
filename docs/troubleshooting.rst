@@ -17,7 +17,7 @@ MongoDB
 ```````
 The MongoDB log file is configured by the logpath option. This is either defined in the MongoDB configuration file that you reference when starting MongoDB or directly as a start parameter of MongoDB. Anyway, the value of this parameter will tell you where to find the log file.
 
-On Linux, one default location where the log file can be found is ``/var/log/mongodb/mongodb.log``\ . Whereas a default location for the configuration file is ``/etc/mongodb.conf``\ . These locations can change depending on the distribution and depend on how you have installed MongoDB.
+On Linux, one default location where the log file can be found is ``/var/log/mongodb/mongodb.log``\ . Whereas default locations for the configuration file are ``/etc/mongodb.conf`` or ``/etc/mongod.conf``\ . These locations can change depending on the distribution and depend on how you have installed MongoDB.
 
 If you are using Windows and followed the instructions in this guide to setup MongoDB, you should find the log file in your MongoDB installation directory ``$MONGO_HOME\logs``\ .
 
