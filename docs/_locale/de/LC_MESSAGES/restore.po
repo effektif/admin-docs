@@ -14,26 +14,7 @@ msgstr ""
 "X-Generator: Poedit 1.6.9\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#: ../../restore.rst:4
-msgid "Restore"
-msgstr "Wiederherstellung"
-
-#: ../../restore.rst:5
-msgid ""
-"Backups can be restored using MongoDB’s mongorestore. Similar to mongodump "
-"it is executed on the command line. For more detailed information on "
-"mongorestore see the official documentation:"
-msgstr ""
-"Backups können über den MongoDB-Befehl mongorestore wiederhergestellt "
-"werden.mongorestore kann – vergleichbar zu mongodump – über die "
-"Kommandozeile ausgeführt werden. Weitere Informationen zu mongorestore "
-"können Sie der offiziellen Dokumentation entnehmen: "
-
-#: ../../restore.rst:7
-msgid "http://docs.mongodb.org/v2.4/reference/program/mongorestore/"
-msgstr "http://docs.mongodb.org/v2.4/reference/program/mongorestore/"
-
-#: ../../restore.rst:9
+#: ../../restore.rst:11
 msgid ""
 "You will need to use the Effektif MongoDB user credentials again to "
 "overwrite the contents of the Effektif databases."
@@ -41,7 +22,7 @@ msgstr ""
 "Zum Überschreiben des Inhalts der Effektif-Datenbank benötigen Sie wieder "
 "die Nutzerdaten des Effektif MongoDB-Nutzers."
 
-#: ../../restore.rst:11
+#: ../../restore.rst:13
 msgid ""
 "We recommend running mongorestore with the parameter --drop which will "
 "remove every collection (table) from the database before it is restored."
@@ -50,11 +31,11 @@ msgstr ""
 "Collections (Tabellen) aus der Datenbank entfernt, bevor die "
 "Wiederherstellung beginnt."
 
-#: ../../restore.rst:14
+#: ../../restore.rst:16
 msgid "Windows"
 msgstr "Windows"
 
-#: ../../restore.rst:15
+#: ../../restore.rst:17
 msgid ""
 "The mongorestore.exe can be found in your MongoDB installation directory: "
 "``$MONGO_HOME\\bin\\mongorestore.exe``\\ . If you followed the instructions "
@@ -66,7 +47,7 @@ msgstr ""
 "Installationsbeschreibung in diesem Handbuch gefolgt sind, lässt sich das "
 "Backup wie folgt einspielen: ::"
 
-#: ../../restore.rst:19
+#: ../../restore.rst:21
 msgid ""
 "Replace the user credentials with the ones you have chosen during the setup "
 "and the directory with the one where you store your backups."
@@ -75,11 +56,11 @@ msgstr ""
 "Parameter –u beschreibt den Nutzernamen, der Parameter –p das Passwort. "
 "Passen Sie zudem den Pfad zu Ihrem Backup an."
 
-#: ../../restore.rst:22
+#: ../../restore.rst:24
 msgid "Debian"
 msgstr "Debian"
 
-#: ../../restore.rst:23
+#: ../../restore.rst:25
 msgid ""
 "Using Debian, the command to restore a backup stored in /path/to/dump would "
 "look like this: ::"
@@ -87,10 +68,41 @@ msgstr ""
 "Unter Debian kann das Wiederherstellungskommando, um ein Backup aus dem Pfad"
 " /path/to/dump wieder herzustellen, wie folgt ausgeführt werden: ::"
 
-#: ../../restore.rst:27
+#: ../../restore.rst:29
 msgid ""
 "As you can see, you have to fill in the credentials of the Effektif MongoDB "
 "user again. Furthermore, you need to specify where the backup is located."
 msgstr ""
 "Der Parameter –u beschreibt den Nutzernamen, der Parameter –p das Passwort. "
 "Passen Sie zudem den Pfad zu Ihrem Backup an."
+
+#: ../../restore.rst:4
+msgid "Restoring backups"
+msgstr ""
+
+#: ../../restore.rst:5
+msgid ""
+"Backups can be restored using MongoDB’s ``mongorestore`` tool. Like "
+"``mongodump`` you run it on the command line. For more detailed information,"
+" see the official ``mongorestore`` documentation:"
+msgstr ""
+
+#: ../../restore.rst:9
+msgid "https://docs.mongodb.org/manual/reference/program/mongorestore"
+msgstr ""
+
+#~ msgid "Restore"
+#~ msgstr "Wiederherstellung"
+
+#~ msgid ""
+#~ "Backups can be restored using MongoDB’s mongorestore. Similar to mongodump "
+#~ "it is executed on the command line. For more detailed information on "
+#~ "mongorestore see the official documentation:"
+#~ msgstr ""
+#~ "Backups können über den MongoDB-Befehl mongorestore wiederhergestellt "
+#~ "werden.mongorestore kann – vergleichbar zu mongodump – über die "
+#~ "Kommandozeile ausgeführt werden. Weitere Informationen zu mongorestore "
+#~ "können Sie der offiziellen Dokumentation entnehmen: "
+
+#~ msgid "http://docs.mongodb.org/v2.4/reference/program/mongorestore/"
+#~ msgstr "http://docs.mongodb.org/v2.4/reference/program/mongorestore/"

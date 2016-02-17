@@ -65,8 +65,8 @@ Have a look at  `docs/Makefile` for more information about the available output 
 To build the documentation for a specific language you need to use the language specifc conf.yp files. Those are located in the respective lang_code subdirectories, i.e. de or en.
 
 ### Updating translations
-When you edited the documentation, you have to update the translations as well. Every time you build the documentation, the translation files are updated automatically.
-In order to update the translation, update the respective \*.po files in `docs/_locale`.
+When you edited the documentation, you have to update the translations as well. Every time you build the documentation for a certain language, the translation files are updated automatically.
+In order to update the translations, update the respective \*.po files in `docs/_locale`.
 
 Always commit the \*.mo files as well, because they are required by readthedocs to create the german translation.
 

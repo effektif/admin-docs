@@ -14,11 +14,7 @@ msgstr ""
 "X-Generator: Poedit 1.6.9\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#: ../../update.rst:2
-msgid "Update"
-msgstr "Aktualisieren"
-
-#: ../../update.rst:3
+#: ../../update.rst:5
 msgid ""
 "This section will guide you through an update of your Effektif system. It "
 "assumes you have successfully installed an early version of Effektif. If you"
@@ -29,11 +25,11 @@ msgstr ""
 "ältere Version von Effektif erfolgreich installiert haben. Wenn Sie Effektif"
 " zum ersten Mal installieren, können Sie dieses Kapitel überspringen."
 
-#: ../../update.rst:8
+#: ../../update.rst:12
 msgid "Unpack Effektif"
 msgstr "Effektif entpacken"
 
-#: ../../update.rst:9
+#: ../../update.rst:13
 msgid ""
 "Unzip the effektif-{version}.zip to a directory of your choice, e.g. "
 "``/yourlocation/effektif-{version}`` In the rest of this guide, we'll refer "
@@ -45,35 +41,31 @@ msgstr ""
 "wird im weiteren Text als ``$EFFEKTIF_HOME`` bezeichnet. Das Verzeichnis "
 "enthält die folgenden Dateien:"
 
-#: ../../update.rst:13
+#: ../../update.rst:17
 msgid "\\*.sh - Linux shell scripts"
 msgstr "\\*.sh - Linux Shellskripte "
 
-#: ../../update.rst:14
+#: ../../update.rst:18
 msgid "db - directory that contains MongoDB configuration files"
 msgstr "db – Verzeichnis, das die MongoDB Konfigurationsdateien enthält"
 
-#: ../../update.rst:16
-msgid "mongodb.conf - configuration file for Linux"
-msgstr "mongodb.conf – Konfigurationsdateien für Linux"
-
-#: ../../update.rst:17
+#: ../../update.rst:21
 msgid "mongod.cfg - configuration file for Windows"
 msgstr "mongod.cfg - Konfigurationsdateien für Windows"
 
-#: ../../update.rst:19
+#: ../../update.rst:23
 msgid "effektif - directory"
 msgstr "effektif - Verzeichnis "
 
-#: ../../update.rst:21
+#: ../../update.rst:25
 msgid "ROOT - this directory contains the web application"
 msgstr "ROOT - Verzeichnis, das die Webanwendung enthält"
 
-#: ../../update.rst:26
+#: ../../update.rst:30
 msgid "Stop Effektif"
 msgstr "Effektif stoppen"
 
-#: ../../update.rst:27
+#: ../../update.rst:31
 msgid ""
 "Before you can start with the update process you have to shutdown the "
 "Effektif system. It is sufficient when you shutdown the Tomcat server "
@@ -87,15 +79,15 @@ msgstr ""
 ":ref:`stopping` finden Sie weitere Information darüber, wie Sie Effektif "
 "stoppen."
 
-#: ../../update.rst:30
+#: ../../update.rst:34
 msgid "Backup MongoDB"
 msgstr "Backup MongoDB"
 
-#: ../../update.rst:36
+#: ../../update.rst:40
 msgid "Backup the configuration files"
 msgstr "Sichern der Konfigurationsdateien"
 
-#: ../../update.rst:37
+#: ../../update.rst:41
 msgid ""
 "During the first setup you have modified some configuration files and added "
 "the Effektif license file. In order to preserve those changes, you have to "
@@ -110,19 +102,19 @@ msgstr ""
 "aktualisieren. Sie finden die entsprechenden Dateien in dem Verzeichnis "
 "``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes``\\ ."
 
-#: ../../update.rst:40
+#: ../../update.rst:44
 msgid "Effektif configuration file"
 msgstr "Effektif Konfigurationsdatei"
 
-#: ../../update.rst:41
+#: ../../update.rst:45
 msgid "configuration file for Effektif logs"
 msgstr "Konfiguration der Effektif Logs"
 
-#: ../../update.rst:42
+#: ../../update.rst:46
 msgid "Effektif license file"
 msgstr "Effektif Lizenzdatei"
 
-#: ../../update.rst:45
+#: ../../update.rst:49
 msgid ""
 "Simply copy the files mentioned above to another location, e.g. "
 "``$TOMCAT_HOME/webapps``\\ ."
@@ -130,15 +122,15 @@ msgstr ""
 "Kopieren Sie einfach die oben genannten Dateien in ein anderes Verzeichnis, "
 "z. B. ``$TOMCAT_HOME/webapps``\\ ."
 
-#: ../../update.rst:50
+#: ../../update.rst:54
 msgid "Install a new version"
 msgstr "Eine neue Version installieren"
 
-#: ../../update.rst:53
+#: ../../update.rst:57
 msgid "Delete the folder ``$TOMCAT_HOME/webapps/ROOT`` completely."
 msgstr "Löschen Sie den Ordner ``$TOMCAT_HOME/webapps/ROOT`` vollständig."
 
-#: ../../update.rst:54
+#: ../../update.rst:58
 msgid ""
 "Copy the folder ``$EFFEKTIF_HOME/effektif/ROOT`` to "
 "``$TOMCAT_HOME/webapps``\\ ."
@@ -146,7 +138,7 @@ msgstr ""
 "Kopieren Sie den Ordner ``$EFFEKTIF_HOME/effektif/ROOT`` nach "
 "``$TOMCAT_HOME/webapps``\\ ."
 
-#: ../../update.rst:55
+#: ../../update.rst:59
 msgid ""
 "Copy the configuration files you have backed up in subsection :ref:`update-"
 "backup-configuration` back into the directory ``$TOMCAT_HOME/webapps/ROOT"
@@ -156,7 +148,7 @@ msgstr ""
 "backup-configuration` gesichert haben, zurück in das Verzeichnis "
 "``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes``\\ ."
 
-#: ../../update.rst:56
+#: ../../update.rst:60
 msgid ""
 "If you have been provided with a new ``license.xml``\\ , copy the file into "
 "``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes`` and replace the existing file."
@@ -168,30 +160,15 @@ msgstr ""
 "Datei. Sollten Sie keine neue ``license.xml`` erhalten haben, können Sie "
 "weiterhin die alte Datei verwenden."
 
-#: ../../update.rst:61
+#: ../../update.rst:65
 msgid "Revisit the configuration files"
 msgstr "Konfigurationsdateien anpassen"
 
-#: ../../update.rst:62
-msgid ""
-"Upon upgrading to a newer version, it might be necessary to update existing "
-"configuration files and add, remove, or modify some values. Therefore, it "
-"necessary that you refer to section :ref:`configure-effektif` and make sure "
-"your Effektif configuration file is up-to-date before starting the system "
-"again."
-msgstr ""
-"Wenn das System auf eine neuere Version gebracht wird, kann es notwendig "
-"sein, die existierenden Konfigurationsdateien erneut anzupassen und "
-"entsprechend Werte hinzuzufügen, anzupassen oder zu entfernen. Konsultieren "
-"Sie hierfür erneut Abschnitt :ref:`configure-effektif` und stellen Sie "
-"sicher, dass Ihre Effektif Konfiguration auf dem neuesten Stand ist bevor "
-"Sie das System wieder hochfahren."
-
-#: ../../update.rst:65
+#: ../../update.rst:70
 msgid "Start Effektif"
 msgstr "Effektif starten"
 
-#: ../../update.rst:66
+#: ../../update.rst:71
 msgid ""
 "When you have successfully installed the new Effektif version and verified "
 "that the configuration files are up-to-date, you can restart the Effektif "
@@ -203,11 +180,11 @@ msgstr ""
 "können Sie das Effektif-System wieder starten. Kapitel :ref:`starting-"
 "effektif` gibt Ihnen weitere Information, wie Sie Effektif starten."
 
-#: ../../update.rst:71
+#: ../../update.rst:76
 msgid "Restore an older version"
 msgstr "Eine ältere Version wieder herstellen"
 
-#: ../../update.rst:72
+#: ../../update.rst:77
 msgid ""
 "In case of exceptional problems you might want to restore an older version "
 "of Effektif. Be aware, if you revert Effektif to an older version, it is not"
@@ -229,7 +206,7 @@ msgstr ""
 "unterstützte Version erkennt. Aus diesem Grund sollten Sie vor jeder "
 "Aktualisierung ein Backup der Datenbank anlegen."
 
-#: ../../update.rst:74
+#: ../../update.rst:79
 msgid ""
 "In order to restore an older version, you can follow the instructions in "
 "this chapter again. However, instead of creating a backup you should restore"
@@ -239,18 +216,18 @@ msgstr ""
 "Anweisungen in diesem Kapitel folgen. Jedoch statt ein Backup anzulegen, "
 "müssen Sie nun ein zuvor erstelltes Backup wieder herstellen."
 
-#: ../../update.rst:76
+#: ../../update.rst:81
 msgid ""
 "Unpack the older version of Effektif, see :ref:`update-unpack-effektif`"
 msgstr ""
 "Entpacken Sie die ältere Version von Effektif, vgl. :ref:`update-unpack-"
 "effektif`"
 
-#: ../../update.rst:77
+#: ../../update.rst:82
 msgid "Stop the Effektif system, see :ref:`update-stop-effektif`"
 msgstr "Stoppen Sie das Effektif-System, vgl. :ref:`update-stop-effektif`"
 
-#: ../../update.rst:78
+#: ../../update.rst:83
 msgid ""
 "Restore an earlier back up that was taken while the old Effektif version was"
 " deployed. See chapter :ref:`restore` for more information on how to restore"
@@ -261,13 +238,13 @@ msgstr ""
 ":ref:`restore` finden Sie weitere Hinweise, wie Sie ein Backup wieder "
 "herstellen können."
 
-#: ../../update.rst:79
+#: ../../update.rst:84
 msgid "Backup the configuration files, see :ref:`update-backup-configuration`"
 msgstr ""
 "Sichern Sie die Konfigurationsdateien, vgl. :ref:`update-backup-"
 "configuration`"
 
-#: ../../update.rst:80
+#: ../../update.rst:85
 msgid ""
 "Install the older version in ``$TOMCAT_HOME/webapps``\\ , see :ref:`update-"
 "install-version`"
@@ -275,23 +252,23 @@ msgstr ""
 "Installieren Sie die ältere Version von Effektif in "
 "``$TOMCAT_HOME/webapps``\\ , vgl. :ref:`update-install-version`"
 
-#: ../../update.rst:81
+#: ../../update.rst:86
 msgid ""
 "Check the configuration files again, see :ref:`update-revisit-configuration`"
 msgstr ""
 "Überprüfen Sie die Konfigurationsdateien erneut, vgl. :ref:`update-revisit-"
 "configuration`"
 
-#: ../../update.rst:82
+#: ../../update.rst:87
 msgid "Start the Effektif system, see :ref:`starting-effektif`"
 msgstr "Starten Sie das Effektif-System, vgl. :ref:`starting-effektif`"
 
-#: ../../update.rst:84
+#: ../../update.rst:89
 msgid ""
 "Now, the Effektif system should be running with the older version again."
 msgstr "Jetzt sollte das Effektif-System wieder mit der alten Version laufen."
 
-#: ../../update.rst:51
+#: ../../update.rst:55
 msgid ""
 "In order to update the Effektif system, you have to replace the ``ROOT`` "
 "folder in ``$TOMCAT_HOME/webapps`` with the newer version you can find in "
@@ -302,7 +279,7 @@ msgstr ""
 "welche sich in dem entpackten Verzeichnis ``$EFFEKTIF_HOME/effektif`` "
 "befindet."
 
-#: ../../update.rst:31
+#: ../../update.rst:35
 msgid ""
 "Updating Effektif to a newer version might involve changes in the database "
 "schema. Therefore, you are requested to backup the database before you go "
@@ -323,19 +300,19 @@ msgstr ""
 "Version von Effektif mit einer Datenbank betreiben können, die bereits auf "
 "ein neueres Schema migriert wurde."
 
-#: ../../update.rst:40
+#: ../../update.rst:44
 msgid "``effektif-onpremise.properties``"
 msgstr "``effektif-onpremise.properties``"
 
-#: ../../update.rst:41
+#: ../../update.rst:45
 msgid "``logback.xml``"
 msgstr "``logback.xml``"
 
-#: ../../update.rst:42
+#: ../../update.rst:46
 msgid "``license.xml``"
 msgstr "``license.xml``"
 
-#: ../../update.rst:68
+#: ../../update.rst:73
 msgid ""
 "During the first startup the Effektif system will migrate the database if "
 "there are any outstanding schema changes. Therefore, the startup might take "
@@ -348,6 +325,48 @@ msgstr ""
 " dauern, abhängig von der Größe Ihrer Datenbank. Wenn das System jedoch "
 "nicht innerhalb von Minuten wieder verfügbar wird, überprüfen Sie bitte die "
 "Effektif-Logdateien auf neue Fehlermeldungen."
+
+#: ../../update.rst:4
+msgid "Updating Effektif"
+msgstr ""
+
+#: ../../update.rst:7
+msgid ""
+"First, check :ref:`update-notes` for additional information about the update"
+" to the latest version of Effektif before continuing."
+msgstr ""
+
+#: ../../update.rst:20
+msgid "mongod.conf - configuration file for Linux"
+msgstr ""
+
+#: ../../update.rst:66
+msgid ""
+"After upgrading to a newer version, it might be necessary to update existing"
+" configuration files and add, remove, or modify some values. Refer to "
+"section :ref:`configure-effektif` and make sure your Effektif configuration "
+"file is up-to-date before starting the system again."
+msgstr ""
+
+#~ msgid "Update"
+#~ msgstr "Aktualisieren"
+
+#~ msgid "mongodb.conf - configuration file for Linux"
+#~ msgstr "mongodb.conf – Konfigurationsdateien für Linux"
+
+#~ msgid ""
+#~ "Upon upgrading to a newer version, it might be necessary to update existing "
+#~ "configuration files and add, remove, or modify some values. Therefore, it "
+#~ "necessary that you refer to section :ref:`configure-effektif` and make sure "
+#~ "your Effektif configuration file is up-to-date before starting the system "
+#~ "again."
+#~ msgstr ""
+#~ "Wenn das System auf eine neuere Version gebracht wird, kann es notwendig "
+#~ "sein, die existierenden Konfigurationsdateien erneut anzupassen und "
+#~ "entsprechend Werte hinzuzufügen, anzupassen oder zu entfernen. Konsultieren "
+#~ "Sie hierfür erneut Abschnitt :ref:`configure-effektif` und stellen Sie "
+#~ "sicher, dass Ihre Effektif Konfiguration auf dem neuesten Stand ist bevor "
+#~ "Sie das System wieder hochfahren."
 
 #~ msgid ""
 #~ "Updating Effektif to a newer version might involve changes in the database "
