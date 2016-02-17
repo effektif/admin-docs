@@ -65,7 +65,7 @@ Problem:
     Effektif does not start and the log file contains the error message ``INFO  LockingDbExecutor Database is locked by another executor. Wait...``.
 
 Solution:
-    The problem with the LockingDbExecutor arises when the application server is shutdown during the initialisation (update of licenses and migration of  database) before the lock can be released again. You have to manually remove the respective lock from the database. It is recommened to use a tool like Robomongo for this purpose. Section :ref:`tooling-mongodb` explains how to retrieve Robomongo and in section :ref:`appendix-add-mongodb-user` you will find an explanation on how to setup a connection to your MongoDB. 
+    The problem with the LockingDbExecutor arises when the application server is shutdown during the initialisation (update of licenses and migration of  database) before the lock can be released again. You have to manually remove the respective lock from the database. It is recommened to use a tool like Robomongo for this purpose. Section :ref:`tooling-mongodb` explains how to retrieve Robomongo and setup a connection to your MongoDB. 
 
     1. Open Robomongo.
     2. Establish a connection to MongoDB.

@@ -48,6 +48,66 @@ msgstr ""
 msgid "https://robomongo.org/"
 msgstr ""
 
+#: ../../tooling.rst:14
+msgid "Connect to MongoDB using Robomongo"
+msgstr ""
+
+#: ../../tooling.rst:15
+msgid ""
+"This section will show you, how you can connect to your MongoDB server using"
+" the GUI tool Robomongo. Be aware, MongoDB 3.2 requires you to use the "
+"latest version of Robomongo."
+msgstr ""
+
+#: ../../tooling.rst:17
+msgid ""
+"*Important: If you try to connect to your MongoDB from a remote system, "
+"ensure the MongoDB configuration has either no value defined for ``bindIp`` "
+"or lists the IP address you are trying to connect to.*"
+msgstr ""
+
+#: ../../tooling.rst:19
+msgid "Make sure your MongoDB server is running and open Robomongo."
+msgstr ""
+
+#: ../../tooling.rst:25
+msgid "In the upper left corner click on the icon to open a new connection."
+msgstr ""
+
+#: ../../tooling.rst:31
+msgid "Click on the link *Create* to setup a new connection."
+msgstr ""
+
+#: ../../tooling.rst:37
+msgid ""
+"In the dialog that opens up you can rename the connection. Furthermore, "
+"change the address if you are connecting to a remote server, otherwise leave"
+" ``localhost`` there."
+msgstr ""
+
+#: ../../tooling.rst:43
+msgid ""
+"If you enabled authorization for your MongoDB server, go to the tab "
+"*Authentication* and activate the option *Perform authentication*\\ . Then "
+"enter *User Name* (``effektif``) and the *Password* you have chosen before."
+msgstr ""
+
+#: ../../tooling.rst:49
+msgid ""
+"If you click on *Test*\\ , you should see a similar success message. "
+"Afterwards, click on *Save*\\ ."
+msgstr ""
+
+#: ../../tooling.rst:55
+msgid "Select the new item in the list and click on *Connect*\\ ."
+msgstr ""
+
+#: ../../tooling.rst:61
+msgid ""
+"You will see the connection in the left panel and below it the two Effektif "
+"databases."
+msgstr ""
+
 #~ msgid "http://robomongo.org/"
 #~ msgstr "http://robomongo.org/"
 
