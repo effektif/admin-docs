@@ -254,14 +254,6 @@ msgstr ""
 "WICHTIG: Es darf nur der Eintrag für ``schema.lock`` gelöscht werden. Es ist"
 " außerdem ratsam vorher ein Backup der Datenbank zu erstellen."
 
-#: ../../troubleshooting.rst:20
-msgid ""
-"On Linux, one default location where the log file can be found is "
-"``/var/log/mongodb/mongodb.log``\\ . Whereas a default location for the "
-"configuration file is ``/etc/mongodb.conf``\\ . These locations can change "
-"depending on the distribution and depend on how you have installed MongoDB."
-msgstr ""
-
 #: ../../troubleshooting.rst:36
 msgid ""
 "You have not installed the Effektif license.xml at all or placed it in the "
@@ -291,6 +283,22 @@ msgid ""
 "this purpose. The :ref:`tooling-mongodb` section explains how to install "
 "Robomongo and set-up a connection to your MongoDB."
 msgstr ""
+
+#: ../../troubleshooting.rst:20
+msgid ""
+"On Linux, one default location where the log file can be found is "
+"``/var/log/mongodb/mongodb.log``\\ . Whereas default locations for the "
+"configuration file are ``/etc/mongodb.conf`` or ``/etc/mongod.conf``\\ . "
+"These locations can change depending on the distribution and depend on how "
+"you have installed MongoDB."
+msgstr ""
+
+#~ msgid ""
+#~ "On Linux, one default location where the log file can be found is "
+#~ "``/var/log/mongodb/mongodb.log``\\ . Whereas a default location for the "
+#~ "configuration file is ``/etc/mongodb.conf``\\ . These locations can change "
+#~ "depending on the distribution and depend on how you have installed MongoDB."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "On Linux, one default location where the log file can be found is "

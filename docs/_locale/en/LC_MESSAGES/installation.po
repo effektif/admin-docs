@@ -1009,12 +1009,6 @@ msgid ""
 "'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )\"``"
 msgstr ""
 
-#: ../../installation.rst:363
-msgid ""
-"``mongo.exe admin -u effektif -p <enterEffektifPasswordHere> --eval "
-"\"db.getUser('effektif'});\"``"
-msgstr ""
-
 #: ../../installation.rst:368
 msgid ""
 "If you have installed MongoDB using a package manager, the binaries should "
@@ -1176,16 +1170,6 @@ msgid ""
 " you have already copied the predefined configuration file and adjusted the "
 "values for ``dbPath`` and ``systemLog`` ``path`` to your system. Then your "
 "configuration file already contains all necessary values."
-msgstr ""
-
-#: ../../installation.rst:289
-msgid ""
-"If you installed MongoDB under Linux using ``apt-get``, e.g. by following "
-"the instructions in the last section, there should be a ``/etc/mongod.conf``"
-" configuration file. Edit this configuration file. The ``dbPath``, "
-"``systemLog`` and ``path`` properties should already be defined. It is "
-"recommened to set the ``logAppend`` property to ``true`` and the "
-"``authorization`` property to ``enabled``."
 msgstr ""
 
 #: ../../installation.rst:319
@@ -1363,6 +1347,36 @@ msgstr ""
 #: ../../installation.rst:2
 msgid "Installing Effektif"
 msgstr ""
+
+#: ../../installation.rst:289
+msgid ""
+"If you installed MongoDB under Linux using ``apt-get``, e.g. by following "
+"the instructions in the last section, there should be a ``/etc/mongod.conf``"
+" configuration file. Edit this configuration file. The ``dbPath``, "
+"``systemLog`` ``path`` properties should already be defined. It is "
+"recommened to set the ``logAppend`` property to ``true`` and the "
+"``authorization`` property to ``enabled``."
+msgstr ""
+
+#: ../../installation.rst:363
+msgid ""
+"``mongo.exe admin -u effektif -p <enterEffektifPasswordHere> --eval "
+"\"db.getUser('effektif');\"``"
+msgstr ""
+
+#~ msgid ""
+#~ "``mongo.exe admin -u effektif -p <enterEffektifPasswordHere> --eval "
+#~ "\"db.getUser('effektif'});\"``"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you installed MongoDB under Linux using ``apt-get``, e.g. by following "
+#~ "the instructions in the last section, there should be a ``/etc/mongod.conf``"
+#~ " configuration file. Edit this configuration file. The ``dbPath``, "
+#~ "``systemLog`` and ``path`` properties should already be defined. It is "
+#~ "recommened to set the ``logAppend`` property to ``true`` and the "
+#~ "``authorization`` property to ``enabled``."
+#~ msgstr ""
 
 #~ msgid "Installation"
 #~ msgstr "Installation"

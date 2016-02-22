@@ -1219,16 +1219,6 @@ msgid ""
 "configuration file already contains all necessary values."
 msgstr ""
 
-#: ../../installation.rst:289
-msgid ""
-"If you installed MongoDB under Linux using ``apt-get``, e.g. by following "
-"the instructions in the last section, there should be a ``/etc/mongod.conf``"
-" configuration file. Edit this configuration file. The ``dbPath``, "
-"``systemLog`` and ``path`` properties should already be defined. It is "
-"recommened to set the ``logAppend`` property to ``true`` and the "
-"``authorization`` property to ``enabled``."
-msgstr ""
-
 #: ../../installation.rst:291
 msgid ""
 "In any other case make sure the configuration file contains the following "
@@ -1302,12 +1292,6 @@ msgid ""
 "'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )\"``"
 msgstr ""
 
-#: ../../installation.rst:363
-msgid ""
-"``mongo.exe admin -u effektif -p <enterEffektifPasswordHere> --eval "
-"\"db.getUser('effektif'});\"``"
-msgstr ""
-
 #: ../../installation.rst:368
 msgid ""
 "If you have installed MongoDB using a package manager, the binaries should "
@@ -1369,6 +1353,36 @@ msgid ""
 "See :ref:`signavio-integration` for more information on how to set up the "
 "integration."
 msgstr ""
+
+#: ../../installation.rst:289
+msgid ""
+"If you installed MongoDB under Linux using ``apt-get``, e.g. by following "
+"the instructions in the last section, there should be a ``/etc/mongod.conf``"
+" configuration file. Edit this configuration file. The ``dbPath``, "
+"``systemLog`` ``path`` properties should already be defined. It is "
+"recommened to set the ``logAppend`` property to ``true`` and the "
+"``authorization`` property to ``enabled``."
+msgstr ""
+
+#: ../../installation.rst:363
+msgid ""
+"``mongo.exe admin -u effektif -p <enterEffektifPasswordHere> --eval "
+"\"db.getUser('effektif');\"``"
+msgstr ""
+
+#~ msgid ""
+#~ "If you installed MongoDB under Linux using ``apt-get``, e.g. by following "
+#~ "the instructions in the last section, there should be a ``/etc/mongod.conf``"
+#~ " configuration file. Edit this configuration file. The ``dbPath``, "
+#~ "``systemLog`` and ``path`` properties should already be defined. It is "
+#~ "recommened to set the ``logAppend`` property to ``true`` and the "
+#~ "``authorization`` property to ``enabled``."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``mongo.exe admin -u effektif -p <enterEffektifPasswordHere> --eval "
+#~ "\"db.getUser('effektif'});\"``"
+#~ msgstr ""
 
 #~ msgid "Installation"
 #~ msgstr "Installation"

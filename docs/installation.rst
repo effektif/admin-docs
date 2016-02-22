@@ -360,7 +360,7 @@ Windows
 
 #. You can verify the creation of the new Effektif user by executing:
     
-    * ``mongo.exe admin -u effektif -p <enterEffektifPasswordHere> --eval "db.getUser('effektif'});"``
+    * ``mongo.exe admin -u effektif -p <enterEffektifPasswordHere> --eval "db.getUser('effektif');"``
     * On the command line you will see the user information including the four assigned roles.
 
 Debian
