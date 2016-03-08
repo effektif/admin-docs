@@ -23,7 +23,7 @@ Contact and legal information
 | Signavio GmbH
 
 | Registered office of the company
-| Nürnberger Straße 8
+| Kurfürstenstraße 111
 | 10787 Berlin
 
 | Contact
@@ -34,7 +34,7 @@ Contact and legal information
 | http://www.effektif.com
 
 | Legal information
-| CEO:              Torben Schreiter
+| CEO:              Gero Decker
 | VATIN:            DE265675123
 | TIN:              27/048/09093
 | Register court:   Amtsgericht Charlottenburg, HRB 150074 B

@@ -1,10 +1,10 @@
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-30 13:50+0100\n"
-"PO-Revision-Date: 2015-06-29 14:27+0100\n"
+"PO-Revision-Date: 2016-03-08 18:45+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
 "Language: de\n"
@@ -25,10 +25,6 @@ msgstr "Kontaktinformationen und rechtliche Angaben"
 #: ../../index.rst:25
 msgid "Registered office of the company"
 msgstr "Sitz der Gesellschaft"
-
-#: ../../index.rst:26
-msgid "Nürnberger Straße 8"
-msgstr "Nürnberger Straße 8"
 
 #: ../../index.rst:27
 msgid "10787 Berlin"
@@ -66,10 +62,6 @@ msgstr "Registergericht: Amtsgericht Charlottenburg, HRB 150074 B"
 msgid "Signavio GmbH"
 msgstr "Signavio GmbH"
 
-#: ../../index.rst:37
-msgid "CEO:              Torben Schreiter"
-msgstr "Geschäftsführer:\tTorben Schreiter"
-
 #: ../../index.rst:38
 msgid "VATIN:            DE265675123"
 msgstr "Umsatzsteuer-ID:\tDE265675123"
@@ -77,6 +69,20 @@ msgstr "Umsatzsteuer-ID:\tDE265675123"
 #: ../../index.rst:39
 msgid "TIN:              27/048/09093"
 msgstr "Steuernummer:\t27/048/09093"
+
+#: ../../index.rst:26
+msgid "Kurfürstenstraße 111"
+msgstr "Kurfürstenstraße 111"
+
+#: ../../index.rst:37
+msgid "CEO:              Gero Decker"
+msgstr "Geschäftsführer: Gero Decker"
+
+#~ msgid "Nürnberger Straße 8"
+#~ msgstr "Nürnberger Straße 8"
+
+#~ msgid "CEO:              Torben Schreiter"
+#~ msgstr "Geschäftsführer:\tTorben Schreiter"
 
 #~ msgid "Effektif GmbH"
 #~ msgstr "Effektif GmbH"
