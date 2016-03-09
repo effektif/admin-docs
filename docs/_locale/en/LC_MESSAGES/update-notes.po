@@ -149,12 +149,6 @@ msgstr ""
 msgid "Updating Effektif"
 msgstr ""
 
-#: ../../update-notes.rst:40
-msgid ""
-"As mentioned before, with the update to version 3.4 changes the data schema."
-" Create a backup of your database before updating the application."
-msgstr ""
-
 #: ../../update-notes.rst:43
 msgid ""
 "Data migrations might take from several seconds up to several minutes. These"
@@ -267,6 +261,17 @@ msgid ""
 "Note: if you use Robomongo to access MongoDB, download the latest version in"
 " order to be able to connect to MongoDB 3.2."
 msgstr ""
+
+#: ../../update-notes.rst:40
+msgid ""
+"As mentioned before, the update to version 3.4 changes the data schema. "
+"Create a backup of your database before updating the application."
+msgstr ""
+
+#~ msgid ""
+#~ "As mentioned before, with the update to version 3.4 changes the data schema."
+#~ " Create a backup of your database before updating the application."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "In case, you have been using Robomongo before to access MongoDB, you will "

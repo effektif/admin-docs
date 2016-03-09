@@ -26,10 +26,6 @@ msgstr "Contact and legal information"
 msgid "Registered office of the company"
 msgstr "Registered office of the company"
 
-#: ../../index.rst:26
-msgid "Nürnberger Straße 8"
-msgstr "Nürnberger Straße 8"
-
 #: ../../index.rst:27
 msgid "10787 Berlin"
 msgstr "10787 Berlin"
@@ -66,10 +62,6 @@ msgstr "Register court:   Amtsgericht Charlottenburg, HRB 150074 B"
 msgid "Signavio GmbH"
 msgstr "Signavio GmbH"
 
-#: ../../index.rst:37
-msgid "CEO:              Torben Schreiter"
-msgstr "CEO:              Torben Schreiter"
-
 #: ../../index.rst:38
 msgid "VATIN:            DE265675123"
 msgstr "VATIN:            DE265675123"
@@ -77,6 +69,20 @@ msgstr "VATIN:            DE265675123"
 #: ../../index.rst:39
 msgid "TIN:              27/048/09093"
 msgstr "TIN:              27/048/09093"
+
+#: ../../index.rst:26
+msgid "Kurfürstenstraße 111"
+msgstr ""
+
+#: ../../index.rst:37
+msgid "CEO:              Gero Decker"
+msgstr ""
+
+#~ msgid "Nürnberger Straße 8"
+#~ msgstr "Nürnberger Straße 8"
+
+#~ msgid "CEO:              Torben Schreiter"
+#~ msgstr "CEO:              Torben Schreiter"
 
 #~ msgid "Effektif GmbH"
 #~ msgstr "Effektif GmbH"

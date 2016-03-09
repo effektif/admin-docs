@@ -37,7 +37,7 @@ Now, you should be able to access the Effektif system again via a browser.
 
 Updating Effektif
 `````````````````
-As mentioned before, with the update to version 3.4 changes the data schema.
+As mentioned before, the update to version 3.4 changes the data schema.
 Create a backup of your database before updating the application.
 
 Data migrations might take from several seconds up to several minutes.
