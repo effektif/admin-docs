@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-31 11:18+0100\n"
-"PO-Revision-Date: 2016-03-09 11:50+0100\n"
+"PO-Revision-Date: 2016-03-09 17:13+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
 "Language: de\n"
@@ -892,11 +892,11 @@ msgstr "Effektif installieren"
 
 #: ../../installation.rst:12
 msgid "Debian Stable Release 64-bit"
-msgstr "Debian Stable Release 64-bit"
+msgstr "Debian Stable Release 64-Bit"
 
 #: ../../installation.rst:13
 msgid "Microsoft Windows Server 64-bit"
-msgstr "Microsoft Windows Server 64-bit"
+msgstr "Microsoft Windows Server 64-Bit"
 
 #: ../../installation.rst:17
 msgid ""
