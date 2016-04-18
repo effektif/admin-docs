@@ -30,6 +30,7 @@ Before starting Effektif, use the following checklist to make sure everything is
 
 If the system is integrated with Signavio check also the following points:
 
+* Effektif and Signavio have compatible versions
 * Effektif is configured in the Signavio configuration.xml
 * Signavio is configured in the Effektif configuration file
 

@@ -15,6 +15,8 @@ Effektif 3.4 will still support MongoDB 2.4.x, but later releases will assume th
 Last but not least, Effektif 3.4 supports Apache Tomcat 7 and 8.
 For now, you can use either version, but we recommend the optional upgrade to Tomcat 8.
 
+If you are using Effektif in combination with a Signavio system, you are required to update your Signavio sytem as well to version 9.7 or higher. 
+
 When updating Effektif and your infrastructure, follow the following sequence:
 
 #. Update Java to Java 8 (required)

@@ -2,7 +2,22 @@
 
 Signavio integration
 ====================
-The Signavio integration with Effektif enables Signavio users to execute approval workflows for their process models using Effektif. In order to setup the integration properly, both systems, Signavio and Effektif, have to be installed. For information about installing Signavio refer to Signavio's adminstration manual. In case both systems run on the same server, you need to set up two Tomcat instances.
+The Signavio integration with Effektif enables Signavio users to execute approval workflows for their process models using Effektif. 
+In order to setup the integration properly, both systems, Signavio and Effektif, have to be installed. 
+For information about installing Signavio refer to Signavio's adminstration manual. 
+In case both systems run on the same server, you need to set up two Tomcat instances.
+
+Compatibility list
+------------------
+Due to changes in the communication protocol, you are required to use a compatible version of Signavio in combination with your Effektif system. 
+The following table shows the compatible versions of Effektif and Signavio.
+
+================  ================
+Effektif version  Signavio version
+2.22.6            8.3 - 8.6
+2.27.4 - 2.32.7   9.2.1 - 9.3
+3.4.7             9.7
+================  ================
 
 Setup
 -----
@@ -49,6 +64,10 @@ If you add any of the following properties to the configuration file, make sure 
 
 User management
 ---------------
-In case you use the Effektif OEM version that is shipped with Signavio, the user management is handled by the Signavio system. The Signavio system will synchronise all Signavio users to Effektif. Within Effektif you will not be able to register any initial user nor invite more users. 
+In case you use the Effektif OEM version that is shipped with Signavio, the user management is handled by the Signavio system. 
+The Signavio system will synchronise all Signavio users to Effektif. 
+Within Effektif you will not be able to register any initial user nor invite more users. 
 
-If you have purchased a standalone version of Effektif, you will be able to create an initial user and invite more users to Effektif. However, it is advised to create your Effektif organization by activating the approval workflow feature in Signavio. This way your Signavio workspace and the Effektif organization will be linked automatically.
+If you have purchased a standalone version of Effektif, you will be able to create an initial user and invite more users to Effektif. 
+However, it is advised to create your Effektif organization by activating the approval workflow feature in Signavio. 
+This way your Signavio workspace and the Effektif organization will be linked automatically.

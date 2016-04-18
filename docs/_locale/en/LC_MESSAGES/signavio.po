@@ -1,10 +1,10 @@
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-31 11:18+0100\n"
-"PO-Revision-Date: 2014-11-05 13:30+0100\n"
+"PO-Revision-Date: 2016-04-18 16:52+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
 "Language: en\n"
@@ -22,49 +22,47 @@ msgstr "Signavio integration"
 msgid ""
 "The Signavio integration with Effektif enables Signavio users to execute "
 "approval workflows for their process models using Effektif. In order to "
-"setup the integration properly, both systems, Signavio and Effektif, have to"
-" be installed. For information about installing Signavio refer to Signavio's"
-" adminstration manual. In case both systems run on the same server, you need"
-" to set up two Tomcat instances."
+"setup the integration properly, both systems, Signavio and Effektif, have to "
+"be installed. For information about installing Signavio refer to Signavio's "
+"adminstration manual. In case both systems run on the same server, you need "
+"to set up two Tomcat instances."
 msgstr ""
 "The Signavio integration with Effektif enables Signavio users to execute "
 "approval workflows for their process models using Effektif. In order to "
-"setup the integration properly, both systems, Signavio and Effektif, have to"
-" be installed. For information about installing Signavio refer to Signavio's"
-" adminstration manual. In case both systems run on the same server, you need"
-" to set up two Tomcat instances."
+"setup the integration properly, both systems, Signavio and Effektif, have to "
+"be installed. For information about installing Signavio refer to Signavio's "
+"adminstration manual. In case both systems run on the same server, you need "
+"to set up two Tomcat instances."
 
-#: ../../signavio.rst:8
+#: ../../signavio.rst:23
 msgid "Setup"
 msgstr "Setup"
 
-#: ../../signavio.rst:9
+#: ../../signavio.rst:24
 msgid "Make sure both systems are NOT running."
 msgstr "Make sure both systems are NOT running."
 
-#: ../../signavio.rst:10
+#: ../../signavio.rst:25
 msgid ""
-"Edit the Signavio configuration file ``ROOT/WEB-"
-"INF/classes/configuration.xml`` which can be found in the Tomcat that hosts "
-"the Signavio system. ::"
+"Edit the Signavio configuration file ``ROOT/WEB-INF/classes/configuration."
+"xml`` which can be found in the Tomcat that hosts the Signavio system. ::"
 msgstr ""
-"Edit the Signavio configuration file ``ROOT/WEB-"
-"INF/classes/configuration.xml`` which can be found in the Tomcat that hosts "
-"the Signavio system. ::"
+"Edit the Signavio configuration file ``ROOT/WEB-INF/classes/configuration."
+"xml`` which can be found in the Tomcat that hosts the Signavio system. ::"
 
-#: ../../signavio.rst:21
+#: ../../signavio.rst:36
 msgid "``effektifServerUrl``"
 msgstr "``effektifServerUrl``"
 
-#: ../../signavio.rst:21
+#: ../../signavio.rst:36
 msgid "Defines the URL under which your Effektif system is available."
 msgstr "Defines the URL under which your Effektif system is available."
 
-#: ../../signavio.rst:22
+#: ../../signavio.rst:37
 msgid "``effektifUserName``"
 msgstr "``effektifUserName``"
 
-#: ../../signavio.rst:22
+#: ../../signavio.rst:37
 msgid ""
 "Defines the mail of the system user that will access the Effektif system. "
 "Make sure to use ``system@signavio.com`` to ensure the integration to work "
@@ -76,11 +74,11 @@ msgstr ""
 "properly. The value is already preconfigured. You do NOT have to create an "
 "account for this user in any of the systems."
 
-#: ../../signavio.rst:23
+#: ../../signavio.rst:38
 msgid "``effektifUserPw``"
 msgstr "``effektifUserPw``"
 
-#: ../../signavio.rst:23
+#: ../../signavio.rst:38
 msgid ""
 "Defines the password of the system user. Remember this password, you will "
 "need to set the exact same password in the Effektif configuration file."
@@ -88,41 +86,39 @@ msgstr ""
 "Defines the password of the system user. Remember this password, you will "
 "need to set the exact same password in the Effektif configuration file."
 
-#: ../../signavio.rst:26
+#: ../../signavio.rst:41
 msgid ""
-"Edit the Effektif configuration file ``$TOMCAT_HOME/webapps/ROOT/WEB-"
-"INF/classes/ effektif-onpremise.properties`` and add / update the following "
+"Edit the Effektif configuration file ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/"
+"classes/ effektif-onpremise.properties`` and add / update the following "
 "entries. ::"
 msgstr ""
-"Edit the Effektif configuration file ``$TOMCAT_HOME/webapps/ROOT/WEB-"
-"INF/classes/ effektif-onpremise.properties`` and add / update the following "
+"Edit the Effektif configuration file ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/"
+"classes/ effektif-onpremise.properties`` and add / update the following "
 "entries. ::"
 
-#: ../../signavio.rst:35
+#: ../../signavio.rst:50
 msgid ""
 "If you add any of the following properties to the configuration file, make "
-"sure to add the required prefix "
-"``effektif.com.effektif.model.service.signavio.SignavioAuthenticationProvider.``"
-" in front of the property key:"
+"sure to add the required prefix ``effektif.com.effektif.model.service."
+"signavio.SignavioAuthenticationProvider.`` in front of the property key:"
 msgstr ""
 "If you add any of the following properties to the configuration file, make "
-"sure to add the required prefix "
-"``effektif.com.effektif.model.service.signavio.SignavioAuthenticationProvider.``"
-" in front of the property key:"
+"sure to add the required prefix ``effektif.com.effektif.model.service."
+"signavio.SignavioAuthenticationProvider.`` in front of the property key:"
 
-#: ../../signavio.rst:40
+#: ../../signavio.rst:55
 msgid "``serviceBaseUrl``"
 msgstr "``serviceBaseUrl``"
 
-#: ../../signavio.rst:40
+#: ../../signavio.rst:55
 msgid "Defines the URL under which your Signavio system is available."
 msgstr "Defines the URL under which your Signavio system is available."
 
-#: ../../signavio.rst:41
+#: ../../signavio.rst:56
 msgid "``clientId``"
 msgstr "``clientId``"
 
-#: ../../signavio.rst:41
+#: ../../signavio.rst:56
 msgid ""
 "Defines the ID the Effektif system uses to identify itself to the Signavio "
 "system. Make sure to use ``com.effektif.oem`` to ensure the integration to "
@@ -132,11 +128,11 @@ msgstr ""
 "system. Make sure to use ``com.effektif.oem`` to ensure the integration to "
 "work properly. This value is already preconfigured."
 
-#: ../../signavio.rst:42
+#: ../../signavio.rst:57
 msgid "``clientSecret``"
 msgstr "``clientSecret``"
 
-#: ../../signavio.rst:42
+#: ../../signavio.rst:57
 msgid ""
 "Defines the password the Effektif system uses to identify itself to the "
 "Signavio system. Reuse the same password that you have set in the Signavio "
@@ -146,11 +142,11 @@ msgstr ""
 "Signavio system. Reuse the same password that you have set in the Signavio "
 "configuration file."
 
-#: ../../signavio.rst:45
+#: ../../signavio.rst:60
 msgid "Start both systems."
 msgstr "Start both systems."
 
-#: ../../signavio.rst:46
+#: ../../signavio.rst:61
 msgid ""
 "Activate the approval workflow feature within your Signavio workspace. Your "
 "Effektif organization will be setup automatically. For more information on "
@@ -160,11 +156,11 @@ msgstr ""
 "Effektif organization will be setup automatically. For more information on "
 "how to activate the approval workflow, refer to Signavio's user manual."
 
-#: ../../signavio.rst:51
+#: ../../signavio.rst:66
 msgid "User management"
 msgstr "User management"
 
-#: ../../signavio.rst:52
+#: ../../signavio.rst:67
 msgid ""
 "In case you use the Effektif OEM version that is shipped with Signavio, the "
 "user management is handled by the Signavio system. The Signavio system will "
@@ -176,7 +172,7 @@ msgstr ""
 "synchronise all Signavio users to Effektif. Within Effektif you will not be "
 "able to register any initial user nor invite more users."
 
-#: ../../signavio.rst:54
+#: ../../signavio.rst:71
 msgid ""
 "If you have purchased a standalone version of Effektif, you will be able to "
 "create an initial user and invite more users to Effektif. However, it is "
@@ -189,3 +185,60 @@ msgstr ""
 "advised to create your Effektif organization by activating the approval "
 "workflow feature in Signavio. This way your Signavio workspace and the "
 "Effektif organization will be linked automatically."
+
+#: ../../signavio.rst:11
+msgid "Compatibility list"
+msgstr "Compatibility list"
+
+#: ../../signavio.rst:16
+msgid "Effektif version"
+msgstr "Effektif version"
+
+#: ../../signavio.rst:16
+msgid "Signavio version"
+msgstr "Signavio version"
+
+#: ../../signavio.rst:17
+msgid "2.22.6"
+msgstr "2.22.6"
+
+#: ../../signavio.rst:17
+msgid "8.3 - 8.6"
+msgstr "8.3 - 8.6"
+
+#: ../../signavio.rst:18
+msgid "2.27.4 - 2.32.7"
+msgstr "2.27.4 - 2.32.7"
+
+#: ../../signavio.rst:18
+msgid "9.2.1 - 9.3"
+msgstr "9.2.1 - 9.3"
+
+#: ../../signavio.rst:19
+msgid "3.4.7"
+msgstr "3.4.7"
+
+#: ../../signavio.rst:19
+msgid "9.7"
+msgstr "9.7"
+
+#: ../../signavio.rst:12
+msgid ""
+"Due to changes in the communication protocol, you are required to use a "
+"compatible version of Signavio in combination with your Effektif system. The "
+"following table shows the compatible versions of Effektif and Signavio."
+msgstr ""
+"Due to changes in the communication protocol, you are required to use a "
+"compatible version of Signavio in combination with your Effektif system. The "
+"following table shows the compatible versions of Effektif and Signavio."
+
+#~ msgid ""
+#~ "Due to changes in the communication protocol, you are required to use a "
+#~ "compatible version of Signavio in combination with your Effektif system. "
+#~ "The following table shows the compatibilities between the Effektif and "
+#~ "Signavio versions."
+#~ msgstr ""
+#~ "Due to changes in the communication protocol, you are required to use a "
+#~ "compatible version of Signavio in combination with your Effektif system. "
+#~ "The following table shows the compatibilities between the Effektif and "
+#~ "Signavio versions."
