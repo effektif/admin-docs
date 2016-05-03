@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-31 11:18+0100\n"
-"PO-Revision-Date: 2016-04-18 16:52+0100\n"
+"PO-Revision-Date: 2016-05-03 19:10+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
 "Language: de\n"
@@ -14,26 +14,6 @@ msgstr ""
 "X-Generator: Poedit 1.6.9\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#: ../../signavio.rst:4
-msgid "Signavio integration"
-msgstr "Signavio-Integration"
-
-#: ../../signavio.rst:5
-msgid ""
-"The Signavio integration with Effektif enables Signavio users to execute "
-"approval workflows for their process models using Effektif. In order to "
-"setup the integration properly, both systems, Signavio and Effektif, have to "
-"be installed. For information about installing Signavio refer to Signavio's "
-"adminstration manual. In case both systems run on the same server, you need "
-"to set up two Tomcat instances."
-msgstr ""
-"Durch die Integration mit Signavio können Signavio-Nutzer Freigabe-Workflows "
-"für Ihre Prozessmodelle in Effektif ausführen. Um die Integration zu "
-"gewährleisten, müssen selbstverständlich beide Systeme installiert worden "
-"sein. Die Installation von Signavio wird in einem eigenständigen "
-"Administrationshandbuch behandelt. Für den Fall, dass beide Systeme auf "
-"einem Server laufen, müssen Sie zwei Tomcat-Instanzen aufsetzen."
-
 #: ../../signavio.rst:23
 msgid "Setup"
 msgstr "Setup"
@@ -42,64 +22,17 @@ msgstr "Setup"
 msgid "Make sure both systems are NOT running."
 msgstr "Stellen Sie sicher, dass beide System NICHT ausgeführt werden."
 
-#: ../../signavio.rst:25
-msgid ""
-"Edit the Signavio configuration file ``ROOT/WEB-INF/classes/configuration."
-"xml`` which can be found in the Tomcat that hosts the Signavio system. ::"
-msgstr ""
-"Bearbeiten Sie die Signavio-Konfigurationsdatei ``ROOT/WEB-INF/classes/"
-"configuration.xml``\\ , die sich in dem Tomcat befindet, in dem Signavio "
-"gehostet wird: ::"
-
 #: ../../signavio.rst:36
 msgid "``effektifServerUrl``"
 msgstr "``effektifServerUrl``"
-
-#: ../../signavio.rst:36
-msgid "Defines the URL under which your Effektif system is available."
-msgstr ""
-"Tragen Sie die Server-URL ein, unter der Ihr Effektif-System erreichbar ist."
 
 #: ../../signavio.rst:37
 msgid "``effektifUserName``"
 msgstr "``effektifUserName``"
 
-#: ../../signavio.rst:37
-msgid ""
-"Defines the mail of the system user that will access the Effektif system. "
-"Make sure to use ``system@signavio.com`` to ensure the integration to work "
-"properly. The value is already preconfigured. You do NOT have to create an "
-"account for this user in any of the systems."
-msgstr ""
-"Hier wird die Emailadresse des Systemnutzers, der auf Effektif für Signavio "
-"zugreift, festgelegt. Stellen Sie sicher, dass der Wert hierfür "
-"``system@signavio.com`` ist. Hierbei handelt es sich um den "
-"vorkonfigurierten Wert. Sie müssen für diesen Nutzer KEINEN Account in einem "
-"der beiden System anlegen."
-
 #: ../../signavio.rst:38
 msgid "``effektifUserPw``"
 msgstr "``effektifUserPw``"
-
-#: ../../signavio.rst:38
-msgid ""
-"Defines the password of the system user. Remember this password, you will "
-"need to set the exact same password in the Effektif configuration file."
-msgstr ""
-"Tragen Sie hier das Passwort für den Systemnutzer ein. Wichtig: Genau dieses "
-"Passwort muss ebenfalls in die Effektif-Konfigurationsdatei eingetragen "
-"werden."
-
-#: ../../signavio.rst:41
-msgid ""
-"Edit the Effektif configuration file ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/"
-"classes/ effektif-onpremise.properties`` and add / update the following "
-"entries. ::"
-msgstr ""
-"Bearbeiten Sie die Effektif-Konfigurationsdatei ``$TOMCAT_HOME/webapps/ROOT/"
-"WEB-INF/classes/ effektif-onpremise.properties`` (diese liegt natürlich im "
-"Effektif-Tomcat) und bearbeiten, beziehungsweise ergänzen Sie die folgenden "
-"Einträge: ::"
 
 #: ../../signavio.rst:50
 msgid ""
@@ -124,87 +57,21 @@ msgstr ""
 msgid "``clientId``"
 msgstr "``clientId``"
 
-#: ../../signavio.rst:56
-msgid ""
-"Defines the ID the Effektif system uses to identify itself to the Signavio "
-"system. Make sure to use ``com.effektif.oem`` to ensure the integration to "
-"work properly. This value is already preconfigured."
-msgstr ""
-"Hier ist die ID hinterlegt, mit der sich Effektif in Signavio identifiziert. "
-"Stellen Sie sicher, dass der Wert com.effektif.oem ist. Hierbei handelt es "
-"sich um einen vorkonfigurierten Wert."
-
 #: ../../signavio.rst:57
 msgid "``clientSecret``"
 msgstr "``clientSecret``"
-
-#: ../../signavio.rst:57
-msgid ""
-"Defines the password the Effektif system uses to identify itself to the "
-"Signavio system. Reuse the same password that you have set in the Signavio "
-"configuration file."
-msgstr ""
-"Hier wird das Passwort des Effektif Systemnutzers in Signavio hinterlegt. "
-"Stellen Sie sicher, dass Sie exakt das Passwort verwenden, das Sie vorher in "
-"der Signavio-Konfigurationsdatei eingetragen haben."
 
 #: ../../signavio.rst:60
 msgid "Start both systems."
 msgstr "Starten Sie beide Systeme."
 
-#: ../../signavio.rst:61
-msgid ""
-"Activate the approval workflow feature within your Signavio workspace. Your "
-"Effektif organization will be setup automatically. For more information on "
-"how to activate the approval workflow, refer to Signavio's user manual."
-msgstr ""
-"Aktivieren Sie die Freigabe-Workflow-Funktion in Signavio, um Ihre Effektif-"
-"Organisation automatisch zu erstellen. Die Aktivierung der Freigabe-Workflow-"
-"Funktion wird im Signavio Nutzerhandbuch detailliert beschrieben."
-
 #: ../../signavio.rst:66
 msgid "User management"
 msgstr "Nutzerverwaltung"
 
-#: ../../signavio.rst:67
-msgid ""
-"In case you use the Effektif OEM version that is shipped with Signavio, the "
-"user management is handled by the Signavio system. The Signavio system will "
-"synchronise all Signavio users to Effektif. Within Effektif you will not be "
-"able to register any initial user nor invite more users."
-msgstr ""
-"Falls Sie die Effektif OEM Version verwenden, die Sie zusammen mit Signavio "
-"erhalten haben, werden die Nutzer vom Signavio System verwaltet. Das "
-"Signavio System synchronisiert alle Signavio Nutzer in Effektif. In Effektif "
-"selbst ist es in diesem Fall nicht möglich Nutzer einzuladen oder zu "
-"registrieren. "
-
-#: ../../signavio.rst:71
-msgid ""
-"If you have purchased a standalone version of Effektif, you will be able to "
-"create an initial user and invite more users to Effektif. However, it is "
-"advised to create your Effektif organization by activating the approval "
-"workflow feature in Signavio. This way your Signavio workspace and the "
-"Effektif organization will be linked automatically."
-msgstr ""
-"Falls Sie eine Standalone-Version von Effektif verwenden, können Sie den "
-"ersten Nutzer registrieren und weitere Nutzer einladen. Allerdings empfehlen "
-"wir, die erste Effektif-Organisation durch die Synchronisation mit Signavio "
-"zu erstellen, indem Sie die Freigabe-Workflow-Funktion aktivieren. Hierdurch "
-"wird der Signavio-Arbeitsbereich automatisch mit Ihrer Effektif-Organisation "
-"verbunden."
-
 #: ../../signavio.rst:11
 msgid "Compatibility list"
 msgstr "Kompatibilitätsliste"
-
-#: ../../signavio.rst:16
-msgid "Effektif version"
-msgstr "Effektif Version"
-
-#: ../../signavio.rst:16
-msgid "Signavio version"
-msgstr "Signavio Version"
 
 #: ../../signavio.rst:17
 msgid "2.22.6"
@@ -230,24 +97,152 @@ msgstr "3.4.7"
 msgid "9.7"
 msgstr "9.7"
 
+#: ../../signavio.rst:4
+msgid "Signavio Process Editor integration"
+msgstr "Signavio Process Editor-Integration"
+
+#: ../../signavio.rst:5
+msgid ""
+"The Signavio Process Editor (SPE) integration with Signavio Workflow enables "
+"Signavio users to execute approval workflows for their process models using "
+"Signavio Workflow. In order to setup the integration properly, both systems, "
+"SPE and Signavio Workflow, have to be installed. For information about "
+"installing SPE refer to SPE's adminstration manual. In case both systems run "
+"on the same server, you need to set up two Tomcat instances."
+msgstr ""
+"Durch die Integration mit dem Signavio Process Editor (SPE) können Signavio-"
+"Nutzer Freigabe-Workflows für Ihre Prozessmodelle in Signavio Workflow "
+"ausführen. Um die Integration zu gewährleisten, müssen selbstverständlich "
+"beide Systeme installiert worden sein. Die Installation vom Signavio Process "
+"Editor wird in einem eigenständigen Administrationshandbuch behandelt. Für "
+"den Fall, dass beide Systeme auf einem Server laufen, müssen Sie zwei Tomcat-"
+"Instanzen aufsetzen."
+
 #: ../../signavio.rst:12
 msgid ""
 "Due to changes in the communication protocol, you are required to use a "
-"compatible version of Signavio in combination with your Effektif system. The "
-"following table shows the compatible versions of Effektif and Signavio."
+"compatible version of the SPE in combination with your Signavio Workflow "
+"system. The following table shows the compatible versions of Signavio "
+"Workflow and SPE."
 msgstr ""
 "Aufgrund von Änderungen des Kommunikationsprotokolls, müssen Sie eine "
-"Version von Signavio verwenden, die kompatibel ist mit der Version Ihres "
-"Effektif Systems. Die folgende Tabelle zeigt Ihnen eine Übersicht der "
-"kompatiblen Versionen von Effektif und Signavio."
+"Version vom SPE verwenden, die kompatibel ist mit der Version Ihres Signavio "
+"Workflow-Systems. Die folgende Tabelle zeigt Ihnen eine Übersicht der "
+"kompatiblen Versionen von Signavio Workflow und SPE."
 
-#~ msgid ""
-#~ "Due to changes in the communication protocol, you are required to use a "
-#~ "compatible version of Signavio in combination with your Effektif system. "
-#~ "The following table shows the compatibilities between the Effektif and "
-#~ "Signavio versions."
-#~ msgstr ""
-#~ "Aufgrund von Änderungen des Kommunikationsprotokolls, müssen Sie eine "
-#~ "Version von Signavio verwenden, die kompatibel ist mit der Version Ihres "
-#~ "Effektif Systems. Die folgende Tabelle zeigt Ihnen eine Übersicht der "
-#~ "kompatiblen Versionen von Effektif und Signavio."
+#: ../../signavio.rst:16
+msgid "Signavio Workflow version"
+msgstr "Signavio Workflow-Version"
+
+#: ../../signavio.rst:16
+msgid "Signavio Process Editor version"
+msgstr "Signavio Process Editor-Version"
+
+#: ../../signavio.rst:25
+msgid ""
+"Edit the Signavio configuration file ``ROOT/WEB-INF/classes/configuration."
+"xml`` which can be found in the Tomcat that hosts the SPE system. ::"
+msgstr ""
+"Bearbeiten Sie die Signavio-Konfigurationsdatei ``ROOT/WEB-INF/classes/"
+"configuration.xml``\\ , die sich in dem Tomcat befindet, in dem das SPE "
+"System gehostet wird: ::"
+
+#: ../../signavio.rst:36
+msgid "Defines the URL under which your Signavio Workflow system is available."
+msgstr ""
+"Tragen Sie die Server-URL ein, unter der Ihr Signavio Workflow-System "
+"erreichbar ist."
+
+#: ../../signavio.rst:37
+msgid ""
+"Defines the mail of the system user that will access the Signavio Workflow "
+"system. Make sure to use ``system@signavio.com`` to ensure the integration "
+"to work properly. The value is already preconfigured. You do NOT have to "
+"create an account for this user in any of the systems."
+msgstr ""
+"Hier wird die E-Mail-Adresse des Systemnutzers, der auf Signavio Workflow für "
+"den SPE zugreift, festgelegt. Stellen Sie sicher, dass der Wert hierfür "
+"``system@signavio.com`` ist. Hierbei handelt es sich um den "
+"vorkonfigurierten Wert. Sie müssen für diesen Nutzer KEINEN Account in einem "
+"der beiden System anlegen."
+
+#: ../../signavio.rst:38
+msgid ""
+"Defines the password of the system user. Remember this password, you will "
+"need to set the exact same password in the Signavio Workflow configuration "
+"file."
+msgstr ""
+"Tragen Sie hier das Passwort für den Systemnutzer ein. Wichtig: Genau dieses "
+"Passwort muss ebenfalls in die Signavio Workflow-Konfigurationsdatei "
+"eingetragen werden."
+
+#: ../../signavio.rst:41
+msgid ""
+"Edit the Signavio Workflow configuration file ``$TOMCAT_HOME/webapps/ROOT/"
+"WEB-INF/classes/ effektif-onpremise.properties`` and add / update the "
+"following entries. ::"
+msgstr ""
+"Bearbeiten Sie die Signavio Workflow-Konfigurationsdatei ``$TOMCAT_HOME/"
+"webapps/ROOT/WEB-INF/classes/ effektif-onpremise.properties`` (diese liegt "
+"natürlich im Signavio Workflow-Tomcat) und bearbeiten, beziehungsweise "
+"ergänzen Sie die folgenden Einträge: ::"
+
+#: ../../signavio.rst:56
+msgid ""
+"Defines the ID the Signavio Workflow system uses to identify itself to the "
+"Signavio system. Make sure to use ``com.effektif.oem`` to ensure the "
+"integration to work properly. This value is already preconfigured."
+msgstr ""
+"Hier ist die ID hinterlegt, mit der sich Signavio Workflow im SPE "
+"identifiziert. Stellen Sie sicher, dass der Wert ``com.effektif.oem`` ist. "
+"Hierbei handelt es sich um einen vorkonfigurierten Wert."
+
+#: ../../signavio.rst:57
+msgid ""
+"Defines the password the Signavio Workflow system uses to identify itself to "
+"the Signavio system. Reuse the same password that you have set in the "
+"Signavio configuration file."
+msgstr ""
+"Hier wird das Passwort des Signavio Workflow Systemnutzers im SPE System "
+"hinterlegt. Stellen Sie sicher, dass Sie exakt das Passwort verwenden, das "
+"Sie vorher in der Signavio-Konfigurationsdatei eingetragen haben."
+
+#: ../../signavio.rst:61
+msgid ""
+"Activate the approval workflow feature within your Signavio workspace. Your "
+"Signavio Workflow organization will be setup automatically. For more "
+"information on how to activate the approval workflow, refer to Signavio's "
+"user manual."
+msgstr ""
+"Aktivieren Sie die Freigabe-Workflow-Funktion in Signavio, um Ihre Signavio "
+"Workflow-Organisation automatisch zu erstellen. Die Aktivierung der Freigabe-"
+"Workflow-Funktion wird im Signavio Nutzerhandbuch detailliert beschrieben."
+
+#: ../../signavio.rst:67
+msgid ""
+"In case you use the Signavio Workflow OEM version that is shipped with the "
+"SPE, the user management is handled by the SPE system. The SPE system will "
+"synchronise all users to Signavio Workflow. Within Signavio Workflow you "
+"will not be able to register any initial user nor invite more users."
+msgstr ""
+"Falls Sie die Signavio Workflow OEM Version verwenden, die Sie zusammen mit "
+"dem SPE erhalten haben, werden die Nutzer vom SPE System verwaltet. Das SPE "
+"System synchronisiert alle Nutzer mit Signavio Workflow. In Signavio "
+"Workflow selbst ist es in diesem Fall nicht möglich Nutzer einzuladen oder "
+"zu registrieren."
+
+#: ../../signavio.rst:71
+msgid ""
+"If you have purchased a standalone version of Signavio Workflow, you will be "
+"able to create an initial user and invite more users to Signavio Workflow. "
+"However, it is advised to create your Signavio Workflow organization by "
+"activating the approval workflow feature in the SPE. This way your SPE "
+"workspace and the Signavio Workflow organization will be linked "
+"automatically."
+msgstr ""
+"Falls Sie eine Standalone-Version von Signavio Workflow verwenden, können "
+"Sie den ersten Nutzer registrieren und weitere Nutzer einladen. Allerdings "
+"empfehlen wir, die erste Signavio Workflow-Organisation durch die "
+"Synchronisation mit dem SPE zu erstellen, indem Sie die Freigabe-Workflow-"
+"Funktion aktivieren. Hierdurch wird der SPE-Arbeitsbereich automatisch mit "
+"Ihrer Signavio Workflow-Organisation verbunden."

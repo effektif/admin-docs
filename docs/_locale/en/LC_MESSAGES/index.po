@@ -1,10 +1,10 @@
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-30 13:50+0100\n"
-"PO-Revision-Date: 2015-06-29 14:25+0100\n"
+"PO-Revision-Date: 2016-05-03 15:39+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
 "Language: en\n"
@@ -13,10 +13,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.6.9\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-
-#: ../../index.rst:2
-msgid "Effektif administrators documentation"
-msgstr "Effektif administrators documentation"
 
 #: ../../index.rst:22
 msgid "Contact and legal information"
@@ -46,10 +42,6 @@ msgstr "Fax:              030 / 856 21 54 - 19"
 msgid "Website"
 msgstr "Website"
 
-#: ../../index.rst:34
-msgid "http://www.effektif.com"
-msgstr "http://www.effektif.com"
-
 #: ../../index.rst:36
 msgid "Legal information"
 msgstr "Legal information"
@@ -72,11 +64,25 @@ msgstr "TIN:              27/048/09093"
 
 #: ../../index.rst:26
 msgid "Kurfürstenstraße 111"
-msgstr ""
+msgstr "Kurfürstenstraße 111"
 
 #: ../../index.rst:37
 msgid "CEO:              Gero Decker"
-msgstr ""
+msgstr "CEO:              Gero Decker"
+
+#: ../../index.rst:2
+msgid "Signavio Workflow administrators documentation"
+msgstr "Signavio Workflow administrators documentation"
+
+#: ../../index.rst:34
+msgid "http://www.signavio.com"
+msgstr "http://www.signavio.com"
+
+#~ msgid "Effektif administrators documentation"
+#~ msgstr "Effektif administrators documentation"
+
+#~ msgid "http://www.effektif.com"
+#~ msgstr "http://www.effektif.com"
 
 #~ msgid "Nürnberger Straße 8"
 #~ msgstr "Nürnberger Straße 8"

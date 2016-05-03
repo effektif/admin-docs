@@ -1,10 +1,10 @@
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-31 11:18+0100\n"
-"PO-Revision-Date: 2014-11-05 20:03+0100\n"
+"PO-Revision-Date: 2016-05-03 15:40+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
 "Language: en\n"
@@ -24,7 +24,7 @@ msgstr "MongoDB"
 
 #: ../../tooling.rst:16
 msgid "https://robomongo.org/"
-msgstr ""
+msgstr "https://robomongo.org/"
 
 #: ../../tooling.rst:25
 msgid ""
@@ -32,43 +32,33 @@ msgid ""
 "ensure the MongoDB configuration has either no value defined for ``bindIp`` "
 "or lists the IP address you are trying to connect to.*"
 msgstr ""
+"*Important: If you try to connect to your MongoDB from a remote system, "
+"ensure the MongoDB configuration has either no value defined for ``bindIp`` "
+"or lists the IP address you are trying to connect to.*"
 
 #: ../../tooling.rst:27
 msgid "Make sure your MongoDB server is running and open Robomongo."
-msgstr ""
-
-#: ../../tooling.rst:3
-msgid ""
-"This section lists some tools that might help you to administer and maintain"
-" your Effektif installation. Use them at your own discretion."
-msgstr ""
-
-#: ../../tooling.rst:10
-msgid ""
-"Robomongo is a good tool for managing your MongoDB installation. It is free "
-"and available for different operating systems. Use it at your own "
-"discretion. Please, be careful when you use a tool to manipulate the "
-"database. Effektif does not guarantee that any manipulated data can be "
-"restored. The tool can be downloaded from:"
-msgstr ""
+msgstr "Make sure your MongoDB server is running and open Robomongo."
 
 #: ../../tooling.rst:21
 msgid "Connecting to MongoDB using Robomongo"
-msgstr ""
+msgstr "Connecting to MongoDB using Robomongo"
 
 #: ../../tooling.rst:22
 msgid ""
 "This section shows how to connect to your MongoDB server using Robomongo. "
 "Note that MongoDB 3.2 requires you to use the latest version of Robomongo."
 msgstr ""
+"This section shows how to connect to your MongoDB server using Robomongo. "
+"Note that MongoDB 3.2 requires you to use the latest version of Robomongo."
 
 #: ../../tooling.rst:33
 msgid "In the upper-left corner, click the icon to open a new connection."
-msgstr ""
+msgstr "In the upper-left corner, click the icon to open a new connection."
 
 #: ../../tooling.rst:39
 msgid "Click, the *Create* link to set-up a new connection."
-msgstr ""
+msgstr "Click, the *Create* link to set-up a new connection."
 
 #: ../../tooling.rst:45
 msgid ""
@@ -76,30 +66,63 @@ msgid ""
 "address if you are connecting to a remote server, otherwise leave "
 "``localhost`` there."
 msgstr ""
+"In the dialog that opens up you can rename the connection. Change the "
+"address if you are connecting to a remote server, otherwise leave "
+"``localhost`` there."
+
+#: ../../tooling.rst:57
+msgid ""
+"If you click *Test*\\ , you should see a similar success message. Then click "
+"*Save*\\ ."
+msgstr ""
+"If you click *Test*\\ , you should see a similar success message. Then click "
+"*Save*\\ ."
+
+#: ../../tooling.rst:63
+msgid "Select the new item in the list and click *Connect*\\ ."
+msgstr "Select the new item in the list and click *Connect*\\ ."
+
+#: ../../tooling.rst:3
+msgid ""
+"This section lists some tools that might help you to administer and maintain "
+"your Signavio Workflow installation. Use them at your own discretion."
+msgstr ""
+"This section lists some tools that might help you to administer and maintain "
+"your Signavio Workflow installation. Use them at your own discretion."
+
+#: ../../tooling.rst:10
+msgid ""
+"Robomongo is a good tool for managing your MongoDB installation. It is free "
+"and available for different operating systems. Use it at your own "
+"discretion. Please, be careful when you use a tool to manipulate the "
+"database. Signavio Workflow does not guarantee that any manipulated data can "
+"be restored. The tool can be downloaded from:"
+msgstr ""
+"Robomongo is a good tool for managing your MongoDB installation. It is free "
+"and available for different operating systems. Use it at your own "
+"discretion. Please, be careful when you use a tool to manipulate the "
+"database. Signavio Workflow does not guarantee that any manipulated data can "
+"be restored. The tool can be downloaded from:"
 
 #: ../../tooling.rst:51
 msgid ""
 "If you enabled authorization for your MongoDB server, select the "
 "*Authentication* tab and activate the *Perform authentication* option. Then "
-"enter the *User Name* (``effektif``) and the *Password* you have chosen "
+"enter the *User Name* (``signavio``) and the *Password* you have chosen "
 "before."
 msgstr ""
-
-#: ../../tooling.rst:57
-msgid ""
-"If you click *Test*\\ , you should see a similar success message. Then click"
-" *Save*\\ ."
-msgstr ""
-
-#: ../../tooling.rst:63
-msgid "Select the new item in the list and click *Connect*\\ ."
-msgstr ""
+"If you enabled authorization for your MongoDB server, select the "
+"*Authentication* tab and activate the *Perform authentication* option. Then "
+"enter the *User Name* (``signavio``) and the *Password* you have chosen "
+"before."
 
 #: ../../tooling.rst:69
 msgid ""
-"You will see the connection in the left-hand panel and the two Effektif "
-"databases below it."
+"You will see the connection in the left-hand panel and the two Signavio "
+"Workflow databases below it."
 msgstr ""
+"You will see the connection in the left-hand panel and the two Signavio "
+"Workflow databases below it."
 
 #~ msgid ""
 #~ "This section lists some tools that might help you to administrate and "
@@ -109,66 +132,26 @@ msgstr ""
 #~ "maintain your Effektif installation. Use them at your own discretion."
 
 #~ msgid ""
-#~ "A good tool to manage your MongoDB installation is Robomongo. It is free and"
-#~ " available for different operating system. Use it at your own discretion. "
-#~ "Please, be careful when you use a tool to manipulate the database. Effektif "
-#~ "does not guarantee that any manipulated data can be restored. The tool can "
-#~ "be downloaded from this site:"
+#~ "A good tool to manage your MongoDB installation is Robomongo. It is free "
+#~ "and available for different operating system. Use it at your own "
+#~ "discretion. Please, be careful when you use a tool to manipulate the "
+#~ "database. Effektif does not guarantee that any manipulated data can be "
+#~ "restored. The tool can be downloaded from this site:"
 #~ msgstr ""
-#~ "A good tool to manage your MongoDB installation is Robomongo. It is free and"
-#~ " available for different operating system. Use it at your own discretion. "
-#~ "Please, be careful when you use a tool to manipulate the database. Effektif "
-#~ "does not guarantee that any manipulated data can be restored. The tool can "
-#~ "be downloaded from this site:"
-
-#~ msgid "Connect to MongoDB using Robomongo"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "This section will show you, how you can connect to your MongoDB server using"
-#~ " the GUI tool Robomongo. Be aware, MongoDB 3.2 requires you to use the "
-#~ "latest version of Robomongo."
-#~ msgstr ""
-
-#~ msgid "In the upper left corner click on the icon to open a new connection."
-#~ msgstr ""
-
-#~ msgid "Click on the link *Create* to setup a new connection."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "In the dialog that opens up you can rename the connection. Furthermore, "
-#~ "change the address if you are connecting to a remote server, otherwise leave"
-#~ " ``localhost`` there."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "If you enabled authorization for your MongoDB server, go to the tab "
-#~ "*Authentication* and activate the option *Perform authentication*\\ . Then "
-#~ "enter *User Name* (``effektif``) and the *Password* you have chosen before."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "If you click on *Test*\\ , you should see a similar success message. "
-#~ "Afterwards, click on *Save*\\ ."
-#~ msgstr ""
-
-#~ msgid "Select the new item in the list and click on *Connect*\\ ."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "You will see the connection in the left panel and below it the two Effektif "
-#~ "databases."
-#~ msgstr ""
+#~ "A good tool to manage your MongoDB installation is Robomongo. It is free "
+#~ "and available for different operating system. Use it at your own "
+#~ "discretion. Please, be careful when you use a tool to manipulate the "
+#~ "database. Effektif does not guarantee that any manipulated data can be "
+#~ "restored. The tool can be downloaded from this site:"
 
 #~ msgid "http://robomongo.org/"
 #~ msgstr "http://robomongo.org/"
 
 #~ msgid ""
-#~ "A good tool to manage your MongoDB installation is Robomongo. It is free and"
-#~ " available for different operating system. Use it at your own discretion. It"
-#~ " can be downloaded from this site:"
+#~ "A good tool to manage your MongoDB installation is Robomongo. It is free "
+#~ "and available for different operating system. Use it at your own "
+#~ "discretion. It can be downloaded from this site:"
 #~ msgstr ""
-#~ "A good tool to manage your MongoDB installation is Robomongo. It is free and"
-#~ " available for different operating system. Use it at your own discretion. It"
-#~ " can be downloaded from this site:"
+#~ "A good tool to manage your MongoDB installation is Robomongo. It is free "
+#~ "and available for different operating system. Use it at your own "
+#~ "discretion. It can be downloaded from this site:"

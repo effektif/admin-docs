@@ -13,7 +13,7 @@ Software components
 In order to setup and work with Signavio Workflow, several software components are necessary.
 
 Signavio Workflow system
-```````````````
+````````````````````````
 The Signavio Workflow system refers to the application that you will run on your server and that consists of a Java web archive (WAR) that is deployed on Tomcat and a MongoDB database.
 
 Apache Tomcat

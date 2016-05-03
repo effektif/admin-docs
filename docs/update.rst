@@ -2,7 +2,8 @@
 
 Updating Signavio Workflow
 ==========================
-This section will guide you through an update of your Signavio Workflow system. It assumes you have successfully installed an early version of Signavio Workflow. 
+This section will guide you through an update of your Signavio Workflow system. 
+It assumes you have successfully installed an early version of Signavio Workflow. 
 If you are installing Signavio Workflow for the first time, you can skip this chapter.
 
 First, check :ref:`update-notes` for additional information about the update to the latest version of Signavio Workflow before continuing.

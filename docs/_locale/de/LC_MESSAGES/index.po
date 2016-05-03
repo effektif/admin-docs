@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-30 13:50+0100\n"
-"PO-Revision-Date: 2016-03-08 18:45+0100\n"
+"PO-Revision-Date: 2016-05-03 15:45+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
 "Language: de\n"
@@ -13,10 +13,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.6.9\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-
-#: ../../index.rst:2
-msgid "Effektif administrators documentation"
-msgstr "Effektif Adminstratorenhandbuch"
 
 #: ../../index.rst:22
 msgid "Contact and legal information"
@@ -46,10 +42,6 @@ msgstr "Fax:              030 / 856 21 54 - 19"
 msgid "Website"
 msgstr "Internetauftritt"
 
-#: ../../index.rst:34
-msgid "http://www.effektif.com"
-msgstr "http://www.effektif.com"
-
 #: ../../index.rst:36
 msgid "Legal information"
 msgstr "Rechtliche Angaben"
@@ -78,20 +70,10 @@ msgstr "Kurfürstenstraße 111"
 msgid "CEO:              Gero Decker"
 msgstr "Geschäftsführer: Gero Decker"
 
-#~ msgid "Nürnberger Straße 8"
-#~ msgstr "Nürnberger Straße 8"
+#: ../../index.rst:2
+msgid "Signavio Workflow administrators documentation"
+msgstr "Signavio Workflow Administratorenhandbuch"
 
-#~ msgid "CEO:              Torben Schreiter"
-#~ msgstr "Geschäftsführer:\tTorben Schreiter"
-
-#~ msgid "Effektif GmbH"
-#~ msgstr "Effektif GmbH"
-
-#~ msgid "CEO:              Tom Baeyens"
-#~ msgstr "Geschäftsführer: Tom Baeyens"
-
-#~ msgid "VATIN:            DE290063301"
-#~ msgstr "Umsatzsteuer-ID: DE290063301"
-
-#~ msgid "TIN:              27/048/09069"
-#~ msgstr "Steuernummer: 27/048/09069"
+#: ../../index.rst:34
+msgid "http://www.signavio.com"
+msgstr "http://www.signavio.com"
