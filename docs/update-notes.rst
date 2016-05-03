@@ -3,8 +3,12 @@
 
 Update notes
 ============
-This section contains important information about Effektif system updates.
+This section contains important information about Signavio Workflow system updates.
 It lists changes to technical requirements for new versions and additional instructions for updates.
+
+Updating to Signavio Workflow 3.x
+---------------------------------
+Effektif has been renamed to Signavio Workflow. 
 
 Updating to Effektif 3.4
 ------------------------
