@@ -10,6 +10,8 @@ Updating to Signavio Workflow 3.x
 ---------------------------------
 Effektif has been renamed to Signavio Workflow. 
 
+Install Node.js to enable script tasks.
+
 Updating to Effektif 3.4
 ------------------------
 Effektif 3.4 requires several infrastructure changes.

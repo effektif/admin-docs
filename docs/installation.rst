@@ -437,6 +437,44 @@ You are advised to do regular backups of the MongoDB database to prevent a compl
 The :ref:`backup` section explains in detail how to set up backups for MongoDB properly. 
 The :ref:`restore` section explains how you can restore an older version of the user data from a backup.
 
+Installing Node.js
+------------------
+Node.js is a runtime environment for JavaScript which is used by Signavio Workflow to execute custom JavaScript tasks created by the user.
+
+*Important: You only need to install and configure Node.js if you purchased a version of Signavio Workflow which allows you to use JavaScript tasks.*
+
+Use LTS version
+
+Windows
+Download Windows Installer .msi as 32-bit or 64-bit depending on your OS
+https://nodejs.org/en/download/
+
+Debian
+https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions
+
+
+Installing the Signavio Workflow script server
+----------------------------------------------
+*Important: You only need to install and configure Node.js if you purchased a version of Signavio Workflow which allows you to use JavaScript tasks.*
+- Copy $WORKFLOW_HOME/nodejs/* to a local directory
+- Configure the url, port and log files
+- the script server can be started by running ``node server.js`` in the directory
+- 
+
+Windows
+- download NSSM http://nssm.cc/download
+- unzip the downloaded file and copy bin to your local directory C:\Program Files\NSSM
+- add the install directory to the system path
+- start cmd with admin privileges and execute ``nssm install ScriptServer``
+- add node.js as application
+- set the directory to the Signavio Script Server directory
+- add the argument ``server.js``
+- fill in an application name
+
+- start the script server with ``nssm start ScriptServer`` ...
+
+
+
 .. _configure-effektif:
 
 Configuring Signavio Workflow

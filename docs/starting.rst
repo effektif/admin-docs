@@ -20,6 +20,8 @@ Before starting Signavio Workflow, use the following checklist to make sure ever
     * MongoDB is configured
     * a MongoDB user for Signavio Workflow was created
 
+* TODO Node.js
+
 * the Signavio Workflow ROOT folder was copied into the Tomcat webapps directory
 * the Signavio Workflow license was copied to the correct directory
 * the Signavio Workflow configuration file was updated
