@@ -27,6 +27,10 @@ MongoDB is a document-oriented database system.
 It is the only database system that Signavio Workflow supports.
 You can find more detailed information in the `MongoDB documentation <https://docs.mongodb.org>`_.
 
+Node.js
+```````
+Node.js is a runtime environment for JavaScript which is used by Signavio Workflow to execute custom JavaScript tasks created by the user.
+
 Mail server (SMTP)
 ``````````````````
 The mail server is necessary to send notifications and invitation requests to users. 
@@ -45,10 +49,11 @@ Within this adminstrators guide several placeholders are used to increase the re
 
 .. tabularcolumns:: |p{4cm}|p{11cm}|
 
-==================  ==================
-``$WORKFLOW_HOME``  Refers to the directory that contains the unzipped content of the downloaded signavio-workflow-{version}.zip.
-``$TOMCAT_HOME``    Refers to the directory where your Apache Tomcat is installed. This directory contains the folders ``webapps`` and ``conf``\ . On Linux for example the directory might be located in ``/var/lib/tomcat8``\ .
-``$MONGO_HOME``     Refers to the directory where your MongoDB is installed.
-==================  ==================
+=======================	==================
+``$WORKFLOW_HOME``  	Refers to the directory that contains the unzipped content of the downloaded signavio-workflow-{version}.zip.
+``$TOMCAT_HOME``    	Refers to the directory where your Apache Tomcat is installed. This directory contains the folders ``webapps`` and ``conf``\ . On Linux for example the directory might be located in ``/var/lib/tomcat8``\ .
+``$MONGO_HOME``     	Refers to the directory where your MongoDB is installed.
+``$SCRIPT_ENGINE_HOME``	Refers to the directory where your Signavio Workflow Script Engine is installed.
+=======================	==================
 
 Those placeholders are used within example command line code. You need to replace those placeholders with the appropriate paths on your system.

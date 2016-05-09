@@ -60,6 +60,10 @@ The database server requires the following additional software:
 
 * MongoDB version 3.2.x
 
+The optional script engine requires the following additional software:
+
+* Node.js 4.x LTS
+
 .. _supported-browsers:
 
 Web browser
@@ -84,7 +88,8 @@ The directory will contain the following files:
     * mongod.conf - configuration file for Linux
     * mongod.cfg - configuration file for Windows
 
-* workflow - directory 
+* nodejs - directory that contains the script engine
+* webapps - directory 
 
     * ROOT - this directory contains the web application
 
@@ -443,25 +448,65 @@ Node.js is a runtime environment for JavaScript which is used by Signavio Workfl
 
 *Important: You only need to install and configure Node.js if you purchased a version of Signavio Workflow which allows you to use JavaScript tasks.*
 
-Use LTS version
+We recommend using the Node.js LTS (Long Term Support) version 4.x.
 
 Windows
-Download Windows Installer .msi as 32-bit or 64-bit depending on your OS
-https://nodejs.org/en/download/
+```````
+For Windows there is a comfortable installer to setup Node.js.
+
+#. Go to https://nodejs.org/en/download/
+#. Selected the LTS version.
+#. Download the *Windows Installer (.msi)* for your Windows version.
+#. Execute the downloaded installer and follow installation guide.
 
 Debian
+``````
+The Node.js site offers additional documentation for setting up Node.js on Debian using the package manager APT:
+
 https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions
 
-
-Installing the Signavio Workflow script server
+Installing the Signavio Workflow Script Engine
 ----------------------------------------------
-*Important: You only need to install and configure Node.js if you purchased a version of Signavio Workflow which allows you to use JavaScript tasks.*
-- Copy $WORKFLOW_HOME/nodejs/* to a local directory
-- Configure the url, port and log files
-- the script server can be started by running ``node server.js`` in the directory
-- 
+The Signavio Workflow Script Engine uses Node.js to execute JavaScript tasks within a workflow and an embedded HTTP server to communicate with the Signavio Workflow web application.
+
+*Important: You only need to install and configure the Script Engine if you purchased a version of Signavio Workflow which allows you to use JavaScript tasks.*
+
+In order to install the script engine, follow these instructions:
+
+#. Create new directory for script engine, e.g. ``C:\Program Files\Script Engine`` or ``/var/lib/script-engine``.
+
+    * We will refer to this directory as ``$SCRIPT_ENGINE_HOME``.
+
+#. Copy the content of the directory ``$WORKFLOW_HOME/nodejs/`` to your newly created directory.
+
+    * You should find the file ``server.js`` directly within your directory, e.g ``$SCRIPT_ENGINE_HOME/server.js``.
+
+#. Open ``$SCRIPT_ENGINE_HOME/configuration.js`` and edit the values for the port and log files.
+
+    * Ensure that the port for the script engine is not used by any other application.
+
+#. Add the URL of the script engine to Signavio Workflow configuration file, see :ref:`update-effektif-configuration` for more information.
+    
+    * If you run the script engine on the same machine as the web application and use the default port the URL will be ``http://localhost:8081``.
+
+The configuration file offers the following options:
+
+=====================   ==================================================================
+``port``                Defines the port the script engine will bind to and listen for incoming HTTP requests.
+``log`` ``file``        Defines the location and name of the script engine log file. You can an absolute or relative path. By default, the log files are stored in the same directory as the script engine.
+``log`` ``errorFile``   Defines the location and name of the script engine error log file.
+=====================   ==================================================================
+
+After the successful setup you can start the script engine by opening the ``$SCRIPT_ENGINE_HOME`` directory on a command line and executing the following command ::
+    
+    node server.js
+
+The script engine can be executed as shown above by running the command on a command line. 
+However, it might be useful for production systems to run the script engine as a service or daemon. 
+The following sub sections describe one possibility for each supported operating system which can be used the . 
 
 Windows
+```````
 - download NSSM http://nssm.cc/download
 - unzip the downloaded file and copy bin to your local directory C:\Program Files\NSSM
 - add the install directory to the system path
@@ -472,6 +517,9 @@ Windows
 - fill in an application name
 
 - start the script server with ``nssm start ScriptServer`` ...
+
+Debian
+``````
 
 
 
