@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Troubleshooting &mdash; Effektif administrators guide 2.27.2 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '2.27.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="top" title="Effektif administrators guide 2.27.2 documentation" href="index.html" />
+    <link rel="next" title="Appendix" href="appendix.html" />
+    <link rel="prev" title="Signavio integration" href="signavio.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="appendix.html" title="Appendix"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="signavio.html" title="Signavio integration"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Effektif administrators guide 2.27.2 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="troubleshooting">
+<h1>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="where-are-the-log-files">
+<h2>Where are the log files?<a class="headerlink" href="#where-are-the-log-files" title="Permalink to this headline">¶</a></h2>
+<p>There are multiple different log files that yield information in case of an error scenario. The following subsections will assist you in finding the log files for every part of the Effektif application. The most important one, regarding the Effektif system is the <tt class="docutils literal"><span class="pre">effektif.log</span></tt>. It will contain any application related log entries.</p>
+<div class="section" id="effektif">
+<h3>Effektif<a class="headerlink" href="#effektif" title="Permalink to this headline">¶</a></h3>
+<p>The Effektif log file effektif.log can be found in the location you configured in the logging configuration file <tt class="docutils literal"><span class="pre">$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes/logback.xml</span></tt>. This file contains the line:</p>
+<div class="highlight-python"><div class="highlight"><pre>&lt;property name=&quot;LOG_DIR&quot; value=&quot;/path/to/log&quot;/&gt;
+</pre></div>
+</div>
+<p>The value contains the directory of the log file. Besides the <tt class="docutils literal"><span class="pre">effektif.log</span></tt> the directory contains more log files for every day of the past 30 days the server was running. If you are looking for any information about incidents on a specific date, open the log file with the respective timestamp.</p>
+</div>
+<div class="section" id="mongodb">
+<h3>MongoDB<a class="headerlink" href="#mongodb" title="Permalink to this headline">¶</a></h3>
+<p>The MongoDB log file is configured by the logpath option. This is either defined in the MongoDB configuration file that you reference when starting MongoDB or directly as a start parameter of MongoDB. Anyway, the value of this parameter will tell you where to find the log file.</p>
+<p>On Linux, one default location where the log file can be found is <tt class="docutils literal"><span class="pre">/var/log/mongodb/mongodb.log</span></tt>. Whereas a default location for the configuration file is <tt class="docutils literal"><span class="pre">/etc/mongodb.conf</span></tt>. Be aware, these locations can change depending on the distribution and depend on how you have installed MongoDB.</p>
+<p>If you are using Windows and followed the instructions in this guide to setup MongoDB, you should find the log file in your MongoDB installation directory <tt class="docutils literal"><span class="pre">$MONGO_HOME\logs</span></tt>.</p>
+</div>
+<div class="section" id="tomcat">
+<h3>Tomcat<a class="headerlink" href="#tomcat" title="Permalink to this headline">¶</a></h3>
+<p>If not configured otherwise, the log files of the Apache Tomcat application server can be found either in the installation directory of the Tomcat <tt class="docutils literal"><span class="pre">$TOMCAT_HOME\logs</span></tt> (Windows) or a common log directory e.g. <tt class="docutils literal"><span class="pre">/var/log/tomcat7</span></tt> (Linux).</p>
+</div>
+</div>
+<div class="section" id="common-problems">
+<h2>Common problems<a class="headerlink" href="#common-problems" title="Permalink to this headline">¶</a></h2>
+<p>This section lists some common problems that can arise during the setup of the Effektif system and gives instructions on how to solve them.</p>
+<dl class="docutils">
+<dt>Problem:</dt>
+<dd>The Effektif site shows a HTTP Status 500 error including the message <tt class="docutils literal"><span class="pre">root</span> <span class="pre">cause</span> <span class="pre">java.lang.RuntimeException:</span> <span class="pre">Cannot</span> <span class="pre">find</span> <span class="pre">license.xml</span></tt>.</dd>
+<dt>Solution:</dt>
+<dd>You have not installed the Effektif license.xml at all or placed it in the wrong directory. Jump to section <a class="reference internal" href="installation.html#install-license"><em>Install the license file</em></a> to solve the issue.</dd>
+<dt>Problem:</dt>
+<dd>The Effektif site shows a HTTP Status 500 error including the message <tt class="docutils literal"><span class="pre">com/effektif/EffektifServlet</span> <span class="pre">:</span> <span class="pre">Unsupported</span> <span class="pre">major.minor</span> <span class="pre">version</span> <span class="pre">51.0</span> <span class="pre">(unable</span> <span class="pre">to</span> <span class="pre">load</span> <span class="pre">class</span> <span class="pre">com.effektif.EffektifServlet)</span></tt>.</dd>
+<dt>Solution:</dt>
+<dd><p class="first">The Tomcat server is using the wrong Java version. Effektif requires Java 7. Make sure you have installed the correct Java version. You can check your Java version by executing:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">java</span> <span class="o">-</span><span class="n">version</span>
+</pre></div>
+</div>
+<p class="last">Section <a class="reference internal" href="installation.html#install-java"><em>Install Java</em></a> explains how to install the correct Java version.</p>
+</dd>
+<dt>Problem:</dt>
+<dd>Executing a MongoDB command yields the error message <tt class="docutils literal"><span class="pre">errmsg:</span> <span class="pre">“unauthorized”</span></tt> or  <tt class="docutils literal"><span class="pre">errmsg:</span> <span class="pre">“auth</span> <span class="pre">fails”</span></tt>.</dd>
+<dt>Solution:</dt>
+<dd><p class="first">Either the username / password combination that is used to execute the command is wrong or the respective MongoDB user lacks some required roles.</p>
+<p>The first issue can be checked by executing:</p>
+<p>Windows: <tt class="docutils literal"><span class="pre">mongo.exe</span> <span class="pre">admin</span> <span class="pre">-u</span> <span class="pre">effektif</span> <span class="pre">-p</span> <span class="pre">&lt;yourEffektifUserPassword&gt;</span></tt></p>
+<p>Debian: <tt class="docutils literal"><span class="pre">mongo</span> <span class="pre">admin</span> <span class="pre">-u</span> <span class="pre">effektif</span> <span class="pre">-p</span> <span class="pre">&lt;yourEffektifUserPassword&gt;</span></tt></p>
+<p>If this command fails with the error message <tt class="docutils literal"><span class="pre">exception:</span> <span class="pre">login</span> <span class="pre">failed</span></tt> you know that your username / password combination is wrong. Please, make sure you spelled the username and password correctly.</p>
+<p class="last">In order to check the second issue, jump to section <a class="reference internal" href="installation.html#add-mongodb-user"><em>Add a database user for Effektif</em></a>. This section lists all necessary roles and explains how to verify that the Effektif user has all the required roles. Especially the restore and backup commands require certain roles to work properly.</p>
+</dd>
+<dt>Problem:</dt>
+<dd>Effektif does not start and the log file contains the error message <tt class="docutils literal"><span class="pre">INFO</span>&nbsp; <span class="pre">LockingDbExecutor</span> <span class="pre">Database</span> <span class="pre">is</span> <span class="pre">locked</span> <span class="pre">by</span> <span class="pre">another</span> <span class="pre">executor.</span> <span class="pre">Wait...</span></tt>.</dd>
+<dt>Solution:</dt>
+<dd><p class="first">The problem with the LockingDbExecutor arises when the application server is shutdown during the initialisation (update of licenses and migration of  database) before the lock can be released again. You have to manually remove the respective lock from the database. It is recommened to use a tool like Robomongo for this purpose. Section <a class="reference internal" href="tooling.html#tooling-mongodb"><em>MongoDB</em></a> explains how to retrieve Robomongo and in section <a class="reference internal" href="appendix.html#appendix-add-mongodb-user"><em>How to add the Effektif MongoDB user with Robomongo</em></a> you will find an explanation on how to setup a connection to your MongoDB.</p>
+<ol class="arabic simple">
+<li>Open Robomongo.</li>
+<li>Establish a connection to MongoDB.</li>
+<li>Open the content of the Effektif DB on the left side of the application.</li>
+<li>Under Collections you will find the table <tt class="docutils literal"><span class="pre">properties</span></tt>.</li>
+<li>A double click on <tt class="docutils literal"><span class="pre">properties</span></tt> shows all entries. In case of an error you will see three entries, if everything is normal there will be only two.</li>
+<li>Out of the three entries in the list, select the one that contains the value <tt class="docutils literal"><span class="pre">schema.lock</span></tt> for the key <tt class="docutils literal"><span class="pre">k</span></tt>.</li>
+<li>Use a right click to open the context menu for the respective entry and choose „Delete Document…“ to remove the entry.</li>
+</ol>
+<p class="last">IMPORTANT: Only the entry for <tt class="docutils literal"><span class="pre">schema.lock</span></tt> must be deleted. You are advised to create a backup of the database upfront.</p>
+</dd>
+</dl>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Troubleshooting</a><ul>
+<li><a class="reference internal" href="#where-are-the-log-files">Where are the log files?</a><ul>
+<li><a class="reference internal" href="#effektif">Effektif</a></li>
+<li><a class="reference internal" href="#mongodb">MongoDB</a></li>
+<li><a class="reference internal" href="#tomcat">Tomcat</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#common-problems">Common problems</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="signavio.html"
+                        title="previous chapter">Signavio integration</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="appendix.html"
+                        title="next chapter">Appendix</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="appendix.html" title="Appendix"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="signavio.html" title="Signavio integration"
+             >previous</a> |</li>
+        <li><a href="index.html">Effektif administrators guide 2.27.2 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, Christian Wiggert.
+    </div>
+  </body>
+</html>

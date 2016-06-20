@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Restore &mdash; Effektif administrators guide 2.27.2 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '2.27.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="top" title="Effektif administrators guide 2.27.2 documentation" href="index.html" />
+    <link rel="next" title="Tooling" href="tooling.html" />
+    <link rel="prev" title="Backup" href="backup.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="tooling.html" title="Tooling"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="backup.html" title="Backup"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Effektif administrators guide 2.27.2 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="restore">
+<span id="id1"></span><h1>Restore<a class="headerlink" href="#restore" title="Permalink to this headline">¶</a></h1>
+<p>Backups can be restored using MongoDB’s mongorestore. Similar to mongodump it is executed on the command line. For more detailed information on mongorestore see the official documentation:</p>
+<p><a class="reference external" href="http://docs.mongodb.org/v2.4/reference/program/mongorestore/">http://docs.mongodb.org/v2.4/reference/program/mongorestore/</a></p>
+<p>You will need to use the Effektif MongoDB user credentials again to overwrite the contents of the Effektif databases.</p>
+<p>We recommend running mongorestore with the parameter &#8211;drop which will remove every collection (table) from the database before it is restored.</p>
+<div class="section" id="windows">
+<h2>Windows<a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h2>
+<p>The mongorestore.exe can be found in your MongoDB installation directory: <tt class="docutils literal"><span class="pre">$MONGO_HOME\bin\mongorestore.exe</span></tt>. If you followed the instructions in this guide to setup the database, you can execute the following command on the command line:</p>
+<div class="highlight-python"><div class="highlight"><pre>C:\MongoDB\bin\mongorestore.exe --drop -u effektif -p &lt;EffektifUserPassword&gt; C:\path\to\dumps
+</pre></div>
+</div>
+<p>Replace the user credentials with the ones you have chosen during the setup and the directory with the one where you store your backups.</p>
+</div>
+<div class="section" id="debian">
+<h2>Debian<a class="headerlink" href="#debian" title="Permalink to this headline">¶</a></h2>
+<p>Using Debian, the command to restore a backup stored in /path/to/dump would look like this:</p>
+<div class="highlight-python"><div class="highlight"><pre>mongorestore --drop -u effektif -p &lt;EffektifUserPassword&gt; /path/to/dump
+</pre></div>
+</div>
+<p>As you can see, you have to fill in the credentials of the Effektif MongoDB user again. Furthermore, you need to specify where the backup is located.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Restore</a><ul>
+<li><a class="reference internal" href="#windows">Windows</a></li>
+<li><a class="reference internal" href="#debian">Debian</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="backup.html"
+                        title="previous chapter">Backup</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="tooling.html"
+                        title="next chapter">Tooling</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="tooling.html" title="Tooling"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="backup.html" title="Backup"
+             >previous</a> |</li>
+        <li><a href="index.html">Effektif administrators guide 2.27.2 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, Christian Wiggert.
+    </div>
+  </body>
+</html>

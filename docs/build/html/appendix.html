@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Appendix &mdash; Effektif administrators guide 2.27.2 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '2.27.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="top" title="Effektif administrators guide 2.27.2 documentation" href="index.html" />
+    <link rel="prev" title="Troubleshooting" href="troubleshooting.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="troubleshooting.html" title="Troubleshooting"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Effektif administrators guide 2.27.2 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="appendix">
+<h1>Appendix<a class="headerlink" href="#appendix" title="Permalink to this headline">¶</a></h1>
+<p>This chapter contains content to various topics which extend the descriptions in the administration guide.</p>
+<div class="section" id="how-to-add-the-effektif-mongodb-user-with-robomongo">
+<span id="appendix-add-mongodb-user"></span><h2>How to add the Effektif MongoDB user with Robomongo<a class="headerlink" href="#how-to-add-the-effektif-mongodb-user-with-robomongo" title="Permalink to this headline">¶</a></h2>
+<p>This section will show an alternative approach on how to create the Effektif database user in MongoDB instead of using the command line. For this approach we will use the free GUI application Robomongo to adminstrate MongoDB. See section <a class="reference internal" href="tooling.html#tooling-mongodb"><em>MongoDB</em></a> for more information on Robomongo and where to download it.</p>
+<p><em>Important: This methods works only if you execute Robomongo on the same system where your MongoDB server is already running. When authentication is turned on, MongoDB will only accept connections from localhost to create the initial user.</em></p>
+<p>Make sure your MongoDB server is running and open Robomongo.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/robo01.png"><img alt="_images/robo01.png" src="_images/robo01.png" /></a>
+<p class="caption">In the upper left corner click on the icon to open a new connection.</p>
+</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/robo02.png"><img alt="_images/robo02.png" src="_images/robo02.png" /></a>
+<p class="caption">Click on the link <em>Create</em> to setup a new connection.</p>
+</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/robo03.png"><img alt="_images/robo03.png" src="_images/robo03.png" /></a>
+<p class="caption">In the dialog that opens up you can rename the connection. Do not change the address and leave <tt class="docutils literal"><span class="pre">localhost</span></tt> there. The method explained in this guide will only work when you execute Robomongo on the same server that runs the MongoDB.</p>
+</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/robo04.png"><img alt="_images/robo04.png" src="_images/robo04.png" /></a>
+<p class="caption">Click on <em>Save</em> to create the new connection.</p>
+</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/robo05.png"><img alt="_images/robo05.png" src="_images/robo05.png" /></a>
+<p class="caption">Select the new item in the list and click on <em>Connect</em>.</p>
+</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/robo06.png"><img alt="_images/robo06.png" src="_images/robo06.png" /></a>
+<p class="caption">You will see the connection in the left panel. Open the folder <em>System</em> &gt; <em>admin</em> and select the folder <em>Users</em>.</p>
+</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/robo07.png"><img alt="_images/robo07.png" src="_images/robo07.png" /></a>
+<p class="caption">Right click on the folder <em>Users</em> and select the menu entry <em>Add Users…</em>.</p>
+</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/robo08.png"><img alt="_images/robo08.png" src="_images/robo08.png" /></a>
+<p class="caption">In the dialog enter the <em>Name</em> <tt class="docutils literal"><span class="pre">effektif</span></tt> and choose a password. Remember this password, you will have to fill it into the Effektif configuration file. Furthermore, select the four roles <tt class="docutils literal"><span class="pre">clusterAdmin</span></tt>, <tt class="docutils literal"><span class="pre">readWriteAnyDatabase</span></tt>, <tt class="docutils literal"><span class="pre">userAdminAnyDatabas</span></tt>, and <tt class="docutils literal"><span class="pre">dbAdminAnyDatabase</span></tt>. Eventually, click on <em>Save</em>. Your Effektif user has been created.</p>
+</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/robo09.png"><img alt="_images/robo09.png" src="_images/robo09.png" /></a>
+<p class="caption">Because you created a new user, the connection to the MongoDB server now requires a user name and a password. Right click on the connection (in this case <em>localhost</em>) in the left panel and select the menu entry <em>Disconnect</em>. Afterwards, click on the icon for a new connection.</p>
+</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/robo10.png"><img alt="_images/robo10.png" src="_images/robo10.png" /></a>
+<p class="caption">Select the connection you have created before and click on <em>edit</em>.</p>
+</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/robo12.png"><img alt="_images/robo12.png" src="_images/robo12.png" /></a>
+<p class="caption">Go to the tab <em>Authentication</em> and activate the option <em>Perform authentication</em>. Then enter <em>User Name</em> (<tt class="docutils literal"><span class="pre">effektif</span></tt>) and the <em>Password</em> you have chosen before. Finally, click on <em>Save</em>.</p>
+</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/robo13.png"><img alt="_images/robo13.png" src="_images/robo13.png" /></a>
+<p class="caption">The connection indicates now that it is using the configured user credentials. If you click on <em>Connect</em> now, your connection should work again.</p>
+</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/robo14.png"><img alt="_images/robo14.png" src="_images/robo14.png" /></a>
+<p class="caption">When you open the folders <em>System</em> &gt; <em>admin</em> &gt; <em>Users</em>, you will see the Effektif user, you have created before. If you select the user, do a right click and select the menu entry <em>Edit User</em>, you can verify the user was created with the four required roles.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Appendix</a><ul>
+<li><a class="reference internal" href="#how-to-add-the-effektif-mongodb-user-with-robomongo">How to add the Effektif MongoDB user with Robomongo</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="troubleshooting.html"
+                        title="previous chapter">Troubleshooting</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="troubleshooting.html" title="Troubleshooting"
+             >previous</a> |</li>
+        <li><a href="index.html">Effektif administrators guide 2.27.2 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, Christian Wiggert.
+    </div>
+  </body>
+</html>

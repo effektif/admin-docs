@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Signavio integration &mdash; Effektif administrators guide 2.27.2 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '2.27.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="top" title="Effektif administrators guide 2.27.2 documentation" href="index.html" />
+    <link rel="next" title="Troubleshooting" href="troubleshooting.html" />
+    <link rel="prev" title="Tooling" href="tooling.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="troubleshooting.html" title="Troubleshooting"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="tooling.html" title="Tooling"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Effektif administrators guide 2.27.2 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="signavio-integration">
+<span id="id1"></span><h1>Signavio integration<a class="headerlink" href="#signavio-integration" title="Permalink to this headline">¶</a></h1>
+<p>The Signavio integration with Effektif enables Signavio users to execute approval workflows for their process models using Effektif. In order to setup the integration properly, both systems, Signavio and Effektif, have to be installed. For information about installing Signavio refer to Signavio&#8217;s adminstration manual. In case both systems run on the same server, you need to set up two Tomcat instances.</p>
+<div class="section" id="setup">
+<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Make sure both systems are NOT running.</p>
+</li>
+<li><p class="first">Edit the Signavio configuration file <tt class="docutils literal"><span class="pre">ROOT/WEB-INF/classes/configuration.xml</span></tt> which can be found in the Tomcat that hosts the Signavio system.</p>
+<div class="highlight-python"><div class="highlight"><pre>&lt;effektif&gt;
+  &lt;effektifServerUrl&gt;http://your.effektif.domain:port&lt;/effektifServerUrl&gt;
+  &lt;effektifUserName&gt;system@signavio.com&lt;/effektifUserName&gt;
+  &lt;effektifUserPw&gt;yourpassword&lt;/effektifUserPw&gt;
+&lt;/effektif&gt;
+</pre></div>
+</div>
+</li>
+</ol>
+<table border="1" class="docutils">
+<colgroup>
+<col width="7%" />
+<col width="93%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">effektifServerUrl</span></tt></td>
+<td>Defines the URL under which your Effektif system is available.</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">effektifUserName</span></tt></td>
+<td>Defines the mail of the system user that will access the Effektif system. Make sure to use <tt class="docutils literal"><span class="pre">system&#64;signavio.com</span></tt> to ensure the integration to work properly. The value is already preconfigured. You do NOT have to create an account for this user in any of the systems.</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">effektifUserPw</span></tt></td>
+<td>Defines the password of the system user. Remember this password, you will need to set the exact same password in the Effektif configuration file.</td>
+</tr>
+</tbody>
+</table>
+<ol class="arabic" start="3">
+<li><p class="first">Edit the Effektif configuration file <tt class="docutils literal"><span class="pre">$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes/</span> <span class="pre">effektif-onpremise.properties</span></tt> and add / update the following entries.</p>
+<div class="highlight-python"><div class="highlight"><pre>effektif.com.effektif.model.service.signavio.SignavioAuthenticationProvider.
+    serviceBaseUrl=http://your.signavio.domain:port
+effektif.com.effektif.model.service.signavio.SignavioAuthenticationProvider.
+   clientId=com.effektif.oem
+effektif.com.effektif.model.service.signavio.SignavioAuthenticationProvider.
+   clientSecret=yourpassword
+</pre></div>
+</div>
+</li>
+</ol>
+<p>If you add any of the following properties to the configuration file, make sure to add the required prefix <tt class="docutils literal"><span class="pre">effektif.com.effektif.model.service.signavio.SignavioAuthenticationProvider.</span></tt> in front of the property key:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="8%" />
+<col width="92%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">serviceBaseUrl</span></tt></td>
+<td>Defines the URL under which your Signavio system is available.</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">clientId</span></tt></td>
+<td>Defines the ID the Effektif system uses to identify itself to the Signavio system. Make sure to use <tt class="docutils literal"><span class="pre">com.effektif.oem</span></tt> to ensure the integration to work properly. This value is already preconfigured.</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">clientSecret</span></tt></td>
+<td>Defines the password the Effektif system uses to identify itself to the Signavio system. Reuse the same password that you have set in the Signavio configuration file.</td>
+</tr>
+</tbody>
+</table>
+<ol class="arabic simple" start="4">
+<li>Start both systems.</li>
+<li>Activate the approval workflow feature within your Signavio workspace. Your Effektif organization will be setup automatically. For more information on how to activate the approval workflow, refer to Signavio&#8217;s user manual.</li>
+</ol>
+</div>
+<div class="section" id="user-management">
+<span id="signavio-user-management"></span><h2>User management<a class="headerlink" href="#user-management" title="Permalink to this headline">¶</a></h2>
+<p>In case you use the Effektif OEM version that is shipped with Signavio, the user management is handled by the Signavio system. The Signavio system will synchronise all Signavio users to Effektif. Within Effektif you will not be able to register any initial user nor invite more users.</p>
+<p>If you have purchased a standalone version of Effektif, you will be able to create an initial user and invite more users to Effektif. However, it is advised to create your Effektif organization by activating the approval workflow feature in Signavio. This way your Signavio workspace and the Effektif organization will be linked automatically.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Signavio integration</a><ul>
+<li><a class="reference internal" href="#setup">Setup</a></li>
+<li><a class="reference internal" href="#user-management">User management</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="tooling.html"
+                        title="previous chapter">Tooling</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="troubleshooting.html"
+                        title="next chapter">Troubleshooting</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="troubleshooting.html" title="Troubleshooting"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="tooling.html" title="Tooling"
+             >previous</a> |</li>
+        <li><a href="index.html">Effektif administrators guide 2.27.2 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, Christian Wiggert.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,182 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Signavio GmbH
+# This file is distributed under the same license as the Effektif
+# administrators guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Effektif administrators guide 3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-06-20 15:05+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 1.3\n"
+
+#: ../../optional.rst:2
+msgid "Optional configuration"
+msgstr ""
+
+#: ../../optional.rst:4
+msgid ""
+"This section provides instructions for optional configuration, which is "
+"not required for all installations."
+msgstr ""
+
+#: ../../optional.rst:7
+msgid "Single Sign-On using Windows and Kerberos/SPNEGO"
+msgstr ""
+
+#: ../../optional.rst:9
+msgid ""
+"Use this configuration to enable Single Sign-On (SSO) in a Windows "
+"environment that supports user authentication using `Kerberos "
+"<https://en.wikipedia.org/wiki/Kerberos_%28protocol%29>`_ and `SPNEGO "
+"<https://en.wikipedia.org/wiki/SPNEGO>`_."
+msgstr ""
+
+#: ../../optional.rst:11
+msgid "Before you start, check that you have the following pre-requisites."
+msgstr ""
+
+#: ../../optional.rst:13
+msgid "A Windows domain for authenticating users."
+msgstr ""
+
+#: ../../optional.rst:14
+msgid ""
+"A domain account for running Signavio Workflow - its username and "
+"password."
+msgstr ""
+
+#: ../../optional.rst:15
+msgid "Signavio Workflow is installed on a Windows Server that is on the domain."
+msgstr ""
+
+#: ../../optional.rst:17
+msgid "Configuring SSO in Apache Tomcat consists of the following steps."
+msgstr ""
+
+#: ../../optional.rst:19
+msgid "Install the SPNEGO library’s JAR file."
+msgstr ""
+
+#: ../../optional.rst:20
+msgid "Configure the SPNEGO SSO Servlet filter."
+msgstr ""
+
+#: ../../optional.rst:21
+msgid ""
+"Add the ``krb5.conf`` and ``login.conf`` configuration files to "
+"``$TOMCAT_HOME/``."
+msgstr ""
+
+#: ../../optional.rst:22
+msgid "Register Tomcat’s Service Principal Name (SPN)"
+msgstr ""
+
+#: ../../optional.rst:26
+msgid "Install the SPNEGO library"
+msgstr ""
+
+#: ../../optional.rst:28
+msgid ""
+"The SPNEGO library makes it possible to authenticate users by connecting "
+"to an Active Directory server."
+msgstr ""
+
+#: ../../optional.rst:30
+msgid "To install, copy two files to ``$TOMCAT_HOME/lib/``:"
+msgstr ""
+
+#: ../../optional.rst:39
+msgid "Configuring the SPNEGO SSO Servlet filter"
+msgstr ""
+
+#: ../../optional.rst:41
+msgid ""
+"The SSO Servlet filter uses Windows authentication to automatically log "
+"in when a user accesses Signavio Workflow."
+msgstr ""
+
+#: ../../optional.rst:43
+msgid ""
+"To configure, edit ``$TOMCAT_HOME/conf/web.xml`` and add the following "
+"lines immediately before the final line (``</web-app>``), from "
+"``optional/spnego/filter-configuration.xml``."
+msgstr ""
+
+#: ../../optional.rst:117
+msgid ""
+"Near the bottom, replace two occurrences of ``???`` with the domain "
+"account’s username and password, respectively."
+msgstr ""
+
+#: ../../optional.rst:121
+msgid "Adding SPNEGO configuration files"
+msgstr ""
+
+#: ../../optional.rst:123
+msgid "Copy ``krb5.conf`` to ``$TOMCAT_HOME/``, and edit the file:"
+msgstr ""
+
+#: ../../optional.rst:125
+msgid "replace ``ADTEST`` with the Windows domain name"
+msgstr ""
+
+#: ../../optional.rst:126
+msgid ""
+"replace ``123.45.6.7`` with the host name or IP address of the Active "
+"Directory server."
+msgstr ""
+
+#: ../../optional.rst:146
+msgid "Copy ``login.conf`` to ``$TOMCAT_HOME/``."
+msgstr ""
+
+#: ../../optional.rst:162
+msgid "Registering Tomcat’s Service Principal Name (SPN)"
+msgstr ""
+
+#: ../../optional.rst:166
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../optional.rst:168
+msgid ""
+"First follow the steps in the `SPNEGO Pre-flight checklist "
+"<http://spnego.sourceforge.net/pre_flight.html>`_. Run the ``HelloKDC`` "
+"connection test in the ``$TOMCAT_HOME/`` directory to use the "
+"``krb5.conf`` and ``login.conf`` you configured above."
+msgstr ""
+
+#: ../../optional.rst:171
+msgid ""
+"Note that in the `Pre-flight checklist`, the `Do we know the address of "
+"the KDC?` section recommends using the KDC host name instead of the IP "
+"address."
+msgstr ""
+
+#~ msgid "Pre-requisites"
+#~ msgstr ""
+
+#~ msgid "Apache Tomcat configuration summary"
+#~ msgstr ""
+
+#~ msgid "To install, copy ``spnego.jar`` to ``$TOMCAT_HOME/lib/``."
+#~ msgstr ""
+
+#~ msgid ""
+#~ msgstr ""
+
+#~ msgid "``optional/spnego/spnego.jar``"
+#~ msgstr ""
+
+#~ msgid "``optional/spnego/signavio-cfc.jar``"
+#~ msgstr ""
+
