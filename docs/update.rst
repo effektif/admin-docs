@@ -62,7 +62,7 @@ You can find those files in the directory ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/cl
 Simply copy the files mentioned above to another location, e.g. ``$TOMCAT_HOME/webapps``\ .
 
 If you installed the Signavio Workflow Script Engine, you modified the configuration file ``configuration.onpremise.js`` of the script engine as well.
-You can find the configuration file directly within the $SCRIPT_ENGINE_HOME directory. 
+You can find the configuration file directly within the ``$SCRIPT_ENGINE_HOME`` directory. 
 Please copy it as well to another location before you go on.
 
 .. _update-install-version:
@@ -71,10 +71,16 @@ Install a new version
 ---------------------
 In order to update the Signavio Workflow system, you have to replace the ``ROOT`` folder in ``$TOMCAT_HOME/webapps`` with the newer version you can find in the extracted directory ``$WORKFLOW_HOME/webapps``\ . 
 
-#. Delete the folder ``$TOMCAT_HOME/webapps/ROOT`` completely. 
-#. Copy the folder ``$WORKFLOW_HOME/webapps/ROOT`` to ``$TOMCAT_HOME/webapps``\ .
+#. Delete the directory ``$TOMCAT_HOME/webapps/ROOT`` completely. 
+#. Copy the directory ``$WORKFLOW_HOME/webapps/ROOT`` to ``$TOMCAT_HOME/webapps``\ .
 #. Copy the configuration files you have backed up in subsection :ref:`update-backup-configuration` back into the directory ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes``\ .
 #. If you have been provided with a new ``license.xml``\ , copy the file into ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes`` and replace the existing file. Otherwise, you can keep on using the old ``license.xml``\ .
+
+If you have installed the Signavio Workflow Script Engine, you need to update the content of the ``$SCRIPT_ENGINE_HOME`` directory with the newer version you can find in the extracted directory ``$WORKFLOW_HOME/nodejs``\ .
+
+#. Delete all files in the directory ``$SCRIPT_ENGINE_HOME``.
+#. Copy the content of the directory ``$WORKFLOW_HOME/nodejs`` to your ``$SCRIPT_ENGINE_HOME`` directory.
+#. Copy the configuration file ``configuration.onpremise.js`` you have backed up in subsection :ref:`update-backup-configuration` back into the directory ``$SCRIPT_ENGINE_HOME``.
 
 .. _update-revisit-configuration:
 
@@ -106,7 +112,8 @@ In order to restore an older version, you can follow the instructions in this ch
 #. Stop the Signavio Workflow system, see :ref:`update-stop-effektif`
 #. Restore an earlier back up that was taken while the old Signavio Workflow version was deployed. See chapter :ref:`restore` for more information on how to restore a backup.
 #. Backup the configuration files, see :ref:`update-backup-configuration`
-#. Install the older version in ``$TOMCAT_HOME/webapps``\ , see :ref:`update-install-version`
+#. Install the older version of the webapp in ``$TOMCAT_HOME/webapps``\ , see :ref:`update-install-version`
+#. Install the older version of the script engine in ``$SCRIPT_ENGINE_HOME``, see :ref:`update-install-version`
 #. Check the configuration files again, see :ref:`update-revisit-configuration`
 #. Start the Signavio Workflow system, see :ref:`starting-effektif`
 
