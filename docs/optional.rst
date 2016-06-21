@@ -58,14 +58,6 @@ To configure, edit ``$TOMCAT_HOME/conf/web.xml`` and add the following lines imm
 		<filter-name>SpnegoHttpFilter</filter-name>
 		<filter-class>net.sourceforge.spnego.SpnegoHttpFilter</filter-class>
 		<init-param>
-			<param-name>spnego.preauth.username</param-name>
-			<param-value>???</param-value>
-		</init-param>
-		<init-param>
-			<param-name>spnego.preauth.password</param-name>
-			<param-value>???</param-value>
-		</init-param>
-		<init-param>
 			<param-name>spnego.allow.basic</param-name>
 			<param-value>false</param-value>
 		</init-param>
