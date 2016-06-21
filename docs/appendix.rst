@@ -12,7 +12,7 @@ How to add the Effektif MongoDB user with Robomongo
 
 This section will show an alternative approach on how to create the Effektif database user in MongoDB instead of using the command line. For this approach we will use the free GUI application Robomongo to adminstrate MongoDB. See section :ref:`tooling-mongodb` for more information on Robomongo and where to download it.
 
-*Important: This methods works only if you execute Robomongo on the same system where your MongoDB server is already running. When authentication is turned on, MongoDB will only accept connections from localhost to create the initial user.*
+.. hint:: This methods works only if you execute Robomongo on the same system where your MongoDB server is already running. When authentication is turned on, MongoDB will only accept connections from localhost to create the initial user.
 
 Make sure your MongoDB server is running and open Robomongo.
 

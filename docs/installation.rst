@@ -15,7 +15,7 @@ Officially supported are the following operating systems:
 * Debian Stable Release 64-bit
 * Microsoft Windows Server 64-bit
 
-*Important: In general, it is possible to install Signavio Workflow on other Linux distributions. However, the installation process can differ from the following instructions and the Signavio team cannot offer official support in case of an installation problem.*
+.. important:: In general, it is possible to install Signavio Workflow on other Linux distributions. However, the installation process can differ from the following instructions and the Signavio team cannot offer official support in case of an installation problem.
 
 You are advised to use a 64-bit operating system in order to be able to assign more than 1.5GB of heap space to the Java VM. 
 Furthermore, MongoDB is limited to 2GB of content on 32-bit operating systems.
@@ -201,7 +201,7 @@ By default the Tomcat server will start up using port 8080 and 8005.
 Port 8080 is used for serving the Signavio Workflow web application. Port 8005 is used to shutdown the Tomcat instance. 
 You can change the port in the server.xml which is located in ``$TOMCAT_HOME/conf/server.xml``\ .
 
-*Important: If the server is running on any other port than port 80, your users will have to enter the port in the address line of the web browser, e.g. http://workflow.yourdomain.com:8080/\ .*
+.. hint:: If the server is running on any other port than port 80, your users will have to enter the port in the address line of the web browser, e.g. http://workflow.yourdomain.com:8080/\ .
 
 Locate the HTTP connector and change the value of port to your preferred port.
 Furthermore, make sure the connector contains the entry ``URIEnconding="UTF-8"``\ .
@@ -444,10 +444,9 @@ The :ref:`restore` section explains how you can restore an older version of the 
 
 Installing Node.js
 ------------------
+.. important:: You only need to install and configure Node.js if you purchased a version of Signavio Workflow which allows you to use JavaScript tasks.
+
 Node.js is a runtime environment for JavaScript which is used by Signavio Workflow to execute custom JavaScript tasks created by the user.
-
-*Important: You only need to install and configure Node.js if you purchased a version of Signavio Workflow which allows you to use JavaScript tasks.*
-
 We recommend using the Node.js LTS (Long Term Support) version 4.x.
 
 Windows
@@ -465,27 +464,32 @@ The Node.js site offers additional documentation for setting up Node.js on Debia
 
 https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions
 
+Please, make sure to install the LTS version of Node.js.
+
+:: _install-script-engine:
+
 Installing the Signavio Workflow Script Engine
 ----------------------------------------------
+.. important:: You only need to install and configure the Script Engine if you purchased a version of Signavio Workflow which allows you to use JavaScript tasks.
+
 The Signavio Workflow Script Engine uses Node.js to execute JavaScript tasks within a workflow and an embedded HTTP server to communicate with the Signavio Workflow web application.
-
-*Important: You only need to install and configure the Script Engine if you purchased a version of Signavio Workflow which allows you to use JavaScript tasks.*
-
+You can either install the Script Engine on the same machine as the Signavio Workflow web application or on a separate machine.
+However, if you use separate machine to run the script engine, you have to make sure the web application can connect over HTTP to the configured port of the script engine.
 In order to install the script engine, follow these instructions:
 
-#. Create new directory for script engine, e.g. ``C:\Program Files\Script Engine`` or ``/var/lib/script-engine``.
+#. Create new local directory for the script engine, e.g. ``C:\Program Files\Script Engine`` or ``/var/lib/script-engine``.
 
     * We will refer to this directory as ``$SCRIPT_ENGINE_HOME``.
 
 #. Copy the content of the directory ``$WORKFLOW_HOME/nodejs/`` to your newly created directory.
 
-    * You should find the file ``server.js`` directly within your directory, e.g ``$SCRIPT_ENGINE_HOME/server.js``.
+    * You should find the file ``server.js`` directly within your directory: ``$SCRIPT_ENGINE_HOME/server.js``.
 
-#. Open ``$SCRIPT_ENGINE_HOME/configuration.js`` and edit the values for the port and log files.
+#. Open ``$SCRIPT_ENGINE_HOME/configuration.onpremise.js`` and edit the values for the port and log files.
 
     * Ensure that the port for the script engine is not used by any other application.
 
-#. Add the URL of the script engine to Signavio Workflow configuration file, see :ref:`update-effektif-configuration` for more information.
+#. Add the URL of the script engine to the Signavio Workflow configuration file, see :ref:`update-effektif-configuration` for more information.
     
     * If you run the script engine on the same machine as the web application and use the default port the URL will be ``http://localhost:8081``.
 
@@ -501,27 +505,80 @@ After the successful setup you can start the script engine by opening the ``$SCR
     
     node server.js
 
+
+Wrapping the Script Engine into a service
+`````````````````````````````````````````
 The script engine can be executed as shown above by running the command on a command line. 
 However, it might be useful for production systems to run the script engine as a service or daemon. 
-The following sub sections describe one possibility for each supported operating system which can be used the . 
+The following sub sections describe one possibility for each supported operating system which can be used the accomplish this goal.
+Note, Signavio offers no support for any usage of third-party tools. 
+Use them at your discretion.
 
 Windows
-```````
-- download NSSM http://nssm.cc/download
-- unzip the downloaded file and copy bin to your local directory C:\Program Files\NSSM
-- add the install directory to the system path
-- start cmd with admin privileges and execute ``nssm install ScriptServer``
-- add node.js as application
-- set the directory to the Signavio Script Server directory
-- add the argument ``server.js``
-- fill in an application name
+^^^^^^^
+For Windows there are several software tools which allow you to wrap a script into a service and monitor the execution. 
+The `Non-Sucking Service Manager <http://nssm.cc/>`_ (NSSM) is such a free tool which allows you to wrap any executable into a Windows service.
 
-- start the script server with ``nssm start ScriptServer`` ...
+#. Download NSSM from http://nssm.cc/download
+#. Create a new local installation directory for NSSM, e.g. ``C:\Program Files\NSSM``.
+#. Unzip the downloaded file and copy either the 64-bit ``win64\nssm.exe`` or the 32-bit ``win32\nssm.exe`` file to your new local directory.
+#. Add the installation directory of NSSM to the environment variable ``PATH`` in the Windows system settings.
 
-Debian
-``````
+    * This is necessary to use the ``nssm`` executable on the command line without an absolute path.
 
+#. Open the command line ``CMD`` with adminstrator privileges.
+#. Execute ``nssm install script-engine``.
+#. The NSSM configuration dialog open
+#. In the *Application* tab fill in the following information:
 
+    * *Path*: the path to the Node.js .exe file, e.g. ``C:\Program Files\nodejs\node.exe``
+    * *Startup directory*: the value of ``$SCRIPT_ENGINE_HOME``, e.g. ``C:\Program Files\Script Engine``.
+    * *Arguments*: the exact value ``server.js``
+    .. image:: _static/images/nssm/nssm01.png
+        :align: center
+
+#. In the *Details* tab fill in the following information:
+
+    * *Display name*: the name of the service shown in ``services.msc``
+    * *Description*: a description which will help you to recognise the service
+    * *Startup type*: choose if the service shall start automatically on startup or if you want to start it manually
+    .. image:: _static/images/nssm/nssm02.png
+        :align: center    
+
+#. Fill in any other service configuration settings you deem appropriate for your system in the other tabs.
+#. Click on *Install service*.
+
+Now you can start the script engine with the following command: ::
+    
+    nssm start script-engine
+
+You can check the status of the script engine by executing: ::
+
+    nssm status script-engine
+
+In order to stop the script engine again, execute the following command: ::
+
+    nssm stop script-engine
+
+While it is running, you can open your browser and go to the URL you have configured for the script engine, by default this ``http://localhost:8081``.
+If the engine is running, you will a blank page with this content: ``{}``
+
+Besides using ``nssm`` on the command line, you will find a new service when you open the ``services.msc``.
+The script engine will show up under the name you configured as display name.
+You can start and stop the script engine from here as well.
+
+Linux
+^^^^^
+On Linux this task is usually accomplished with Init scripts using the respective Init system of your Linux distribution. 
+Because there are several different Init systems, Signavio will not provide a template.
+However, if you don't already have a template, you can find lots of matching templates for your Init system on the internet.
+
+As mentioned before, the script engine can be started from within ``$SCRIPT_ENGINE_HOME`` by executing: ::
+
+    node server.js
+
+You have to ensure your Init script starts the Node.js executable ``node`` and uses the JavaScript file ``$SCRIPT_ENGINE_HOME/server.js`` as an argument.
+Note, if you use a restricted user to execute the command, make sure the user has appropriate access to the ``$SCRIPT_ENGINE_HOME`` directory.
 
 .. _configure-effektif:
 
@@ -549,23 +606,25 @@ The configuration file is a property file that contains one configuration option
 Every line that starts with a ``#`` is commented out and will not be used.
 
 In general, the configuration allows to configure the base URL of the Signavio Workflow system, the mail server, the database connection and integrations with third party systems (e.g. Signavio).
+If you installed the Signavio Workflow Script Engine, you need to configure the URL to the script engine as well. As described in :ref:`install-script-engine` the URL derives from the domain (``localhost`` for the same machine) and port the script engine is running on. 
 
 .. tabularcolumns:: |p{6cm}|p{9cm}|
 
-=============================   =============================
-``effektif.baseUrl``            (Required) The IP address or server name (including the port) of the server running the Signavio Workflow Tomcat application server. E.g. http://workflow.yourdomain.com:8080\ . If the server is running on port 80, the port can be omitted.
-``effektif.smtp.host``          (Required) The IP address or server name of the outgoing email server.
-``effektif.smtp.port``          The port on which the outgoing SMTP server listens
-``effektif.smtp.ssl``           If SSL should be used ( true or false )
-``effektif.smtp.tls``           If TLS should be used ( true or false )
-``effektif.smtp.user``          The username for authentication
-``effektif.smtp.password``      The password for authentication
-``effektif.mail.from``          This email address is used as the sender when the Signavio Workflow system sends out notifications.
-``effektif.mongodb.servers``    A comma-separated list of MongoDB servers (hostnames). If you have MongodDB running on the same server as Tomcat, the default value of localhost is okay.
-``effektif.mongodb.username``   The Signavio Workflow MongoDB user name. If you created the user following the instructions in this guide, the name is ``signavio``.
-``effektif.mongodb.password``   The password of the Signavio Workflow MongoDB user. This is the password you defined during user creation.
-``effektif.mongodb.database``   The name of the database Signavio Workflow should use. The default value ``signavio`` is okay.
-=============================   =============================
+==================================  =============================
+``effektif.baseUrl``                (Required) The IP address or server name (including the port) of the server running the Signavio Workflow Tomcat application server. E.g. http://workflow.yourdomain.com:8080\ . If the server is running on port 80, the port can be omitted.
+``effektif.smtp.host``              (Required) The IP address or server name of the outgoing email server.
+``effektif.smtp.port``              The port on which the outgoing SMTP server listens
+``effektif.smtp.ssl``               If SSL should be used ( true or false )
+``effektif.smtp.tls``               If TLS should be used ( true or false )
+``effektif.smtp.user``              The username for authentication
+``effektif.smtp.password``          The password for authentication
+``effektif.mail.from``              This email address is used as the sender when the Signavio Workflow system sends out notifications.
+``effektif.mongodb.servers``        A comma-separated list of MongoDB servers (hostnames). If you have MongodDB running on the same server as Tomcat, the default value of localhost is okay.
+``effektif.mongodb.username``       The Signavio Workflow MongoDB user name. If you created the user following the instructions in this guide, the name is ``signavio``.
+``effektif.mongodb.password``       The password of the Signavio Workflow MongoDB user. This is the password you defined during user creation.
+``effektif.mongodb.database``       The name of the database Signavio Workflow should use. The default value ``signavio`` is okay.
+``effektif.javascript.server.url``  (Optional) The URL of the Signavio Workflow Script Engine, e.g. ``http://localhost:8081``\ .
+==================================  =============================
 
 The following properties are only relevant if your Signavio Workflow installation is connected to your Signavio installation. ::
 

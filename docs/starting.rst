@@ -20,8 +20,6 @@ Before starting Signavio Workflow, use the following checklist to make sure ever
     * MongoDB is configured
     * a MongoDB user for Signavio Workflow was created
 
-* TODO Node.js
-
 * the Signavio Workflow ROOT folder was copied into the Tomcat webapps directory
 * the Signavio Workflow license was copied to the correct directory
 * the Signavio Workflow configuration file was updated
@@ -31,6 +29,16 @@ Before starting Signavio Workflow, use the following checklist to make sure ever
     * the database connection is set
 
 * the Signavio Workflow log file is configured
+
+If your version includes the execution of JavaScript tasks:
+
+* Node.js is installed
+* the Signavio Workflow Script Engine is installed
+* the Signavio Workflow Script Engine is configured
+
+    * the port is set
+    * the log files are configured
+    * the script engine URL is configured in the Signavio Workflow configuration file
 
 If the system is integrated with the Signavio Process Editor check also the following points:
 
@@ -70,6 +78,15 @@ By default, this should be “Manual” which means you have to start the Tomcat
 You can change the type to “Automatic”. 
 Then the Tomcat server will start automatically each time you restart your Windows server.
 
+Script Engine
+^^^^^^^^^^^^^
+If you installed the script engine and wrapped it into a service, you can open the ``services.msc``, locate the Signavio Script Engine service and start it there.
+Otherwise open a command line, navigate to the $SCRIPT_ENGINE_HOME directory and execute: ::
+
+    node server.js
+
+Note, you cannot close the command line as long as the script engine is running.
+
 Debian
 ``````
 
@@ -108,6 +125,15 @@ Furthermore, you can check upon the status of the Tomcat and determine whether i
 
 The examples above show only the commands for Tomcat 8. However, if you use Tomcat 7, the same commands will work with the script ``/etc/init.d/tomcat7``\ .
 
+Script Engine
+^^^^^^^^^^^^^
+If you installed the script engine and setup an Init script, execute the respective start command for the Init script.
+Otherwise open a command line, navigate to the $SCRIPT_ENGINE_HOME directory and execute: ::
+
+    node server.js
+
+Note, you cannot close the command line as long as the script engine is running.
+
 Login to Signavio Workflow
 --------------------------
 When the Signavio Workflow system was started properly you can see the login screen by entering the URL of your Signavio Workflow installation in your browser. 
@@ -137,7 +163,7 @@ The authorization dialog is only shown the first time you use this method to log
 
     The Signavio authorization dialog
 
-*Important: You have to be logged in to the Signavio Process Editor in order to see the authorization dialog. Otherwise, you will be redirected to the Collaboration Portal.*
+.. hint:: You have to be logged in to the Signavio Process Editor in order to see the authorization dialog. Otherwise, you will be redirected to the Collaboration Portal.
 
 Create the initial user
 -----------------------

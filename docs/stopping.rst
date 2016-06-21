@@ -21,6 +21,11 @@ If you have registered MongoDB as a Windows service, you can stop the database i
 
 Or you run ``services.msc``\ , select MongoDB in the list of services and click on *Stop*\ .
 
+Script Engine
+^^^^^^^^^^^^^
+If you installed the script engine and wrapped it into a service, you can open the ``services.msc``, locate the Signavio Script Engine service and stop it there.
+If you are executing the script engine directly via command line, simply abort the process by pressing ``CTRL + C``.
+
 Debian
 ``````
 
@@ -42,3 +47,8 @@ This might require root privileges. ::
     /etc/init.d/mongod stop
 
 In earlier versions of MongoDB, e.g. 2.4.x, the script had a different name: ``/etc/init.d/mongodb``.
+
+Script Engine
+^^^^^^^^^^^^^
+If you installed the script engine and setup an Init script, execute the respective stop command for the Init script.
+If you are executing the script engine directly via command line, simply abort the process by pressing ``CTRL + C``.

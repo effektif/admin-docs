@@ -22,7 +22,7 @@ Connecting to MongoDB using Robomongo
 This section shows how to connect to your MongoDB server using Robomongo.
 Note that MongoDB 3.2 requires you to use the latest version of Robomongo.
 
-*Important: If you try to connect to your MongoDB from a remote system, ensure the MongoDB configuration has either no value defined for ``bindIp`` or lists the IP address you are trying to connect to.*
+.. important:: If you try to connect to your MongoDB from a remote system, ensure the MongoDB configuration has either no value defined for ``bindIp`` or lists the IP address you are trying to connect to.
 
 Make sure your MongoDB server is running and open Robomongo.
 

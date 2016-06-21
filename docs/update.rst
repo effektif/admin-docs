@@ -22,7 +22,8 @@ The directory will contain the following files:
     * mongod.conf - configuration file for Linux
     * mongod.cfg - configuration file for Windows
 
-* workflow - directory 
+* nodejs - directory that contains the script engine
+* webapps - directory 
 
     * ROOT - this directory contains the web application
 
@@ -33,6 +34,7 @@ Stop Signavio Workflow
 Before you can start with the update process you have to shutdown the Signavio Workflow system. 
 It is sufficient when you shutdown the Tomcat server Signavio Workflow is running on. 
 You don't have to shutdown the MongoDB server. 
+If you installed the Signavio Workflow Script Engine, you need to stop it as well.
 Refer to chapter :ref:`stopping` for information on how to stop Signavio Workflow.
 
 Backup MongoDB
@@ -59,14 +61,18 @@ You can find those files in the directory ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/cl
 
 Simply copy the files mentioned above to another location, e.g. ``$TOMCAT_HOME/webapps``\ .
 
+If you installed the Signavio Workflow Script Engine, you modified the configuration file ``configuration.onpremise.js`` of the script engine as well.
+You can find the configuration file directly within the $SCRIPT_ENGINE_HOME directory. 
+Please copy it as well to another location before you go on.
+
 .. _update-install-version:
 
 Install a new version
 ---------------------
-In order to update the Signavio Workflow system, you have to replace the ``ROOT`` folder in ``$TOMCAT_HOME/webapps`` with the newer version you can find in the extracted directory ``$WORKFLOW_HOME/workflow``\ . 
+In order to update the Signavio Workflow system, you have to replace the ``ROOT`` folder in ``$TOMCAT_HOME/webapps`` with the newer version you can find in the extracted directory ``$WORKFLOW_HOME/webapps``\ . 
 
 #. Delete the folder ``$TOMCAT_HOME/webapps/ROOT`` completely. 
-#. Copy the folder ``$WORKFLOW_HOME/workflow/ROOT`` to ``$TOMCAT_HOME/webapps``\ .
+#. Copy the folder ``$WORKFLOW_HOME/webapps/ROOT`` to ``$TOMCAT_HOME/webapps``\ .
 #. Copy the configuration files you have backed up in subsection :ref:`update-backup-configuration` back into the directory ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes``\ .
 #. If you have been provided with a new ``license.xml``\ , copy the file into ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes`` and replace the existing file. Otherwise, you can keep on using the old ``license.xml``\ .
 
