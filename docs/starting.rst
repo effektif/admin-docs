@@ -165,6 +165,8 @@ The authorization dialog is only shown the first time you use this method to log
 
 .. hint:: You have to be logged in to the Signavio Process Editor in order to see the authorization dialog. Otherwise, you will be redirected to the Collaboration Portal.
 
+.. _create-initial-user:
+
 Create the initial user
 -----------------------
 In case you purchased Signavio Workflow along with the Signavio Process Editor and want to setup the integration, you don't have to create the initial Signavio Workflow user manually. 
@@ -200,3 +202,6 @@ If one organisation invites another user the count of unused licenses in all org
 
 A user can be invited to multiple organisations. 
 If a user is part of two organisations, he will require two user licenses, one for each organisation he is part of.
+
+Besides the manual invitation of every user, the enterprise version of Signavio Workflow offers the possibility to synchronise users and groups with Active Directory.
+See :ref:`synchronise-users` for more information.
