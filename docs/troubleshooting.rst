@@ -18,6 +18,11 @@ This file contains the line: ::
 The value contains the directory of the log file. Besides the ``effektif.log`` the directory contains more log files for every day of the past 30 days the server was running. 
 If you are looking for any information about incidents on a specific date, open the log file with the respective timestamp.
 
+Script Engine
+`````````````
+The Signavio Workflow Script Engine log files have been configured in the configuration file ``$SCRIPT_ENGINE_HOME/configuration.onpremise.js``. 
+The values for the entries ``log`` ``file`` and ``log`` ``errorFile`` will tell you the name and location of the log files.
+
 MongoDB 
 ```````
 The MongoDB log file is configured by the logpath option. 
