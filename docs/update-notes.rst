@@ -6,11 +6,17 @@ Update notes
 This section contains important information about Signavio Workflow system updates.
 It lists changes to technical requirements for new versions and additional instructions for updates.
 
-Updating to Signavio Workflow 3.x
+Updating to Signavio Workflow 3.9
 ---------------------------------
-Effektif has been renamed to Signavio Workflow. 
+Effektif has been renamed to Signavio Workflow. Along with this change the colors of the default theme have changed as well. 
+You may notice the name of the database and database in the examples in this manual have been changed from ``effektif`` to ``signavio``. 
+You don't need to change any of the names in your production environment. 
+But keep in mind that you might have to adjust any examples in this manual to your actual naming.
 
-Install Node.js to enable script tasks.
+With the new version of Signavio Workflow you are now able to configure a Node.js server to execute script tasks in a workflow. 
+Note, you only need to configure this component if your version of Signavio Workflow supports script tasks. 
+In general, you can use script tasks only with a full version of Signavio Workflow and not as part of the Signavio Approval Workflow. 
+Refer to :ref:`install-script-engine` for more information on how to setup the Signavio Workflow Script Engine.
 
 Updating to Effektif 3.4
 ------------------------
