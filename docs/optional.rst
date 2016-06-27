@@ -129,8 +129,8 @@ To install, copy two files to ``$TOMCAT_HOME/lib/``:
 
 ::
 
-	optional/spnego/spnego.jar
-	optional/spnego/signavio-cfc.jar
+	$WORKFLOW_HOME/optional/spnego/spnego.jar
+	$WORKFLOW_HOME/optional/spnego/signavio-cfc.jar
 
 
 .. _configure-sso-filter:
