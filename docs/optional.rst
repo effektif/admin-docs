@@ -18,11 +18,11 @@ Before you can configure the synchronisation, check that you have the following 
 
 Configuring the synchronisation consists of the following steps.
 
-#. Create an Active Directory group which contains all Signavio Workflow users as members.
-#. Create an Active Directory group which contains all Signavio Workflow administrators as members.
-#. (Optional) Create an Active Directory group which contains all groups as members.
-#. Login to Signavio Workflow with your initial user.
-#. Open the *Organization settings* and go to the tab *LDAP*.
+#. Create an Active Directory group that contains all Signavio Workflow users as members.
+#. Create an Active Directory group that contains all Signavio Workflow administrators as members.
+#. (Optional) Create an Active Directory group that contains all groups as members.
+#. Log in to Signavio Workflow with your initial user.
+#. Open the *Organization settings* and select the *LDAP* tab.
 #. Create a new Active Directory configuration.
 #. Validate your configuration.
 #. Synchronise the users and groups.
@@ -31,27 +31,28 @@ Configuring the synchronisation consists of the following steps.
 Creating the Active Directory groups
 ````````````````````````````````````
 
-Active Directory users and groups which should be synchronised with Signavio Workflow are managed within the Active Directory by adding them to specific Active Directory groups. 
+Active Directory users and groups that should be synchronised with Signavio Workflow are managed within Active Directory by adding them to specific Active Directory groups. 
 There are two groups for users, one which contains all Signavio Workflow users and one which contains only administrators.
-All members of the adminstrator group need to be members of the user group as well.
+All members of the administrator group must be members of the user group as well.
 Nested groups are not supported.
 All users and administrators need to be direct members of their groups.
+
 The synchronisation will copy the attributes ``givenName``, ``sn``, ``mail``, ``dn``, ``objectGUID``, ``sAMAccountName`` and ``userPrincipalName``\ to the user in Signavio Workflow.
 It is required that every user has the ``mail`` attribute defined.
 
-Optionally, a third specific group, which contains all Active Directory groups that should be synchronised, can be defined.
+Optionally, you can define a third group that contains all Active Directory groups that should be synchronised.
 All members of this group should be Active Directory groups as well. 
 Again nested groups are not supported.
 Users must be direct members of the synchronised groups.
 The synchronisation will copy the attributes ``cn``, ``dn`` and ``objectGUID`` to the group in Signavio Workflow.
-Every member of a group which is not a Signavio Workflow user will be ignored.
+Every group member that is not a Signavio Workflow user will be ignored.
 
 
 Creating a new configuration
 ````````````````````````````
 
-In the LDAP configuration tab, click on *Create* to start the configuration.
-Then fill in the configuration details into the configuration form. 
+In the LDAP configuration tab, select *Create* to start the configuration.
+Enter the configuration details on the configuration form. 
 
 * *URL* - the location of your Active Directory server, e.g. ``ldap://adtest.local:389``\
 * *username* and *password* - the login credentials of the domain account
@@ -66,8 +67,8 @@ The last field of the configuration form will show you if the configuration was 
 Validating a configuration
 ``````````````````````````
 
-Before a synchronisation can be started, the configuration has to be validated.
-The validation checks the following parameters:
+Before synchronisation can start, the configuration must be validated.
+Validation includes the following checks.
 
 * Signavio Workflow can connect to the Active Directory.
 * The configured groups are proper Active Directory groups.
@@ -77,14 +78,14 @@ The validation checks the following parameters:
 * There are sufficient licenses.
 * (Optional) There are groups defined.
 
-Start the validation by clicking on *Validate*.
+Start the validation by selecting *Validate*.
 If the configuration is valid, the *Synchronise* button is enabled.
-If the configuration is not valid, a list with more detailed information will be shown.
-In that case fix any listed issue and run the configuration again.
+If the configuration is not valid, the page shows a list with more detailed information.
+In that case fix the issues and run the configuration again.
 
-Every time the configuration is changed, the validation must be executed again.
+Every time you change the configuration, the validation must be executed again.
 
-Note the validation might take several seconds depending on the number of users you want to synchronise and the perfomance of the Active Directory.
+Note the validation might take several seconds depending on the number of users you want to synchronise and the perfomance of the Active Directory server.
 
 
 Synchronising users and groups
@@ -95,7 +96,7 @@ Start the synchronisation by clicking on *Synchronise*.
 If the synchronisation was successful, you will see a report of the added / updated users and groups.
 If the synchronisation failed, a list with more detailed information will be shown.
 
-Note the validation might take several seconds up to minutes depending on the number of users you want to synchronise and the perfomance of the Active Directory.
+Note the validation might take several seconds or minutes depending on the number of users you want to synchronise and the perfomance of the Active Directory.
 
 
 Single Sign-On using Windows and Kerberos/SPNEGO
@@ -254,9 +255,9 @@ Registering Tomcat’s Service Principal Name (SPN)
 `````````````````````````````````````````````````
 
 The `SPN <https://msdn.microsoft.com/en-us/library/ms677949(v=vs.85).aspx>`_ is the identifier used by Kerberos authentication to associate a service instance with a service logon account.
-You will have to associate the domain account for Signavio Workflow with the fully qualified domain name (FQDN) of the service.
-Therefore, you should register a SPN for every possible alias of the service which includes the computer name of the server with and without domain name, as well as any other DNS entries which point to this server.
-In order to define a SPN, use ``setspn.exe`` which are part of the `Windows Support Tools <https://en.wikipedia.org/wiki/Windows_Support_Tools>`_\ .
+You will have to associate the domain account for Signavio Workflow with the service’s fully-qualified domain name (FQDN).
+Therefore, you should register a SPN for every possible alias of the service, including the computer name of the server with and without domain name, as well as any other DNS entries that point to this server.
+In order to define a SPN, use ``setspn.exe`` - part of the `Windows Support Tools <https://en.wikipedia.org/wiki/Windows_Support_Tools>`_\ .
 
 ::
 
@@ -303,6 +304,5 @@ Run the ``HelloKDC`` connection test in the ``$TOMCAT_HOME/`` directory to use t
 Note that in the `Pre-flight checklist`, the `Do we know the address of the KDC?` section recommends using the KDC host name instead of the IP address.
 
 
-If you have completed the setup described here and the SSO is still not working, please make sure you are accessing the web application from a different machine than the one that runs the Tomcat.
-Furthermore, check if the `Integrated Windows Authentication <https://en.wikipedia.org/wiki/Integrated_Windows_Authentication>`_ is activated and the Signavio Workflow system is a trusted service, for instance by adding the address to the local intranet.
-
+If you have completed the setup described here and the SSO is still not working, please make sure you are accessing the web application from a different machine than the one that runs the Tomcat server.
+Furthermore, check if `Integrated Windows Authentication <https://en.wikipedia.org/wiki/Integrated_Windows_Authentication>`_ is activated and the Signavio Workflow system is a trusted service, for instance by adding the address to the local intranet.
