@@ -141,7 +141,7 @@ Configuring the SPNEGO SSO Servlet filter
 
 The SSO Servlet filter uses Windows authentication to automatically log in when a user accesses Signavio Workflow.
 
-To configure, edit ``$TOMCAT_HOME/conf/web.xml`` and add the following lines immediately before the final line (``</web-app>``), from ``optional/spnego/filter-configuration.xml``.
+To configure, edit ``$TOMCAT_HOME/conf/web.xml`` and add the following lines immediately before the final line (``</web-app>``), from ``$WORKFLOW_HOME/optional/spnego/filter-configuration.xml``.
 
 ::
 

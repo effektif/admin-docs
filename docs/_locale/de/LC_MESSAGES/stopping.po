@@ -1,41 +1,60 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Signavio GmbH
+# This file is distributed under the same license as the Signavio Workflow
+# administrators guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-31 11:18+0100\n"
+"POT-Creation-Date: 2016-06-27 15:05+0200\n"
 "PO-Revision-Date: 2016-05-03 19:24+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
-"Language: de\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.9\n"
-"X-Poedit-SourceCharset: UTF-8\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../stopping.rst:4
+msgid "Stopping Signavio Workflow"
+msgstr "Signavio Workflow herunterfahren"
+
+#: ../../stopping.rst:5
+msgid ""
+"In order to stop the Signavio Workflow system completely, you have to "
+"stop the Tomcat application server and the MongoDB database. However, if "
+"you need to restart the Signavio Workflow system, it is sufficient to "
+"restart only the Tomcat server."
+msgstr ""
+"Stoppen Sie sowohl Tomcat als auch MongoDB, um Signavio Workflow "
+"herunterzufahren. Falls Sie Signavio Workflow neu starten möchten - zum "
+"Beispiel im Zuge eines Updates – ist es jedoch ausreichend lediglich den "
+"Tomcat neu zu starten."
 
 #: ../../stopping.rst:9
 msgid "Windows"
 msgstr "Windows"
 
-#: ../../stopping.rst:12 ../../stopping.rst:28
+#: ../../stopping.rst:12 ../../stopping.rst:33
 msgid "Tomcat"
 msgstr "Tomcat"
 
 #: ../../stopping.rst:13
 msgid ""
-"As already mentioned in the section :ref:`starting-effektif`\\ , the Tomcat "
-"configuration dialog offers a simple way to stop the Tomcat server. Simply "
-"open the Windows start menu, select ``Program Files\\Apache Tomcat"
-"\\Configure Tomcat``\\ , open the tab *General* and click the button *Stop*"
-"\\ ."
+"As already mentioned in the section :ref:`starting-effektif`\\ , the "
+"Tomcat configuration dialog offers a simple way to stop the Tomcat "
+"server. Simply open the Windows start menu, select ``Program "
+"Files\\Apache Tomcat\\Configure Tomcat``\\ , open the tab *General* and "
+"click the button *Stop*\\ ."
 msgstr ""
-"Wie bereits im Abschnitt :ref:`starting-effektif` erwähnt, können Sie Tomcat "
-"über dessen Konfigurationsoberfläche stoppen. Öffnen Sie hierzu im Windows "
-"Startmenü ``Programme\\Apache Tomcat\\Configure Tomcat``\\ , wechseln Sie "
-"zum Tab *General* klicken Sie auf *Stop*\\ ."
+"Wie bereits im Abschnitt :ref:`starting-effektif` erwähnt, können Sie "
+"Tomcat über dessen Konfigurationsoberfläche stoppen. Öffnen Sie hierzu im"
+" Windows Startmenü ``Programme\\Apache Tomcat\\Configure Tomcat``\\ , "
+"wechseln Sie zum Tab *General* klicken Sie auf *Stop*\\ ."
 
-#: ../../stopping.rst:17 ../../stopping.rst:38
+#: ../../stopping.rst:17 ../../stopping.rst:43
 msgid "MongoDB"
 msgstr "MongoDB"
 
@@ -46,70 +65,76 @@ msgid ""
 "privileges and execute: ::"
 msgstr ""
 "Falls Sie MongoDB wie empfohlen als Windows Service registriert haben, "
-"können Sie MongoDB entweder über  den folgenden Befehl auf der Kommandozeile "
-"(mit Administratorrechten) ausführen: ::"
+"können Sie MongoDB entweder über  den folgenden Befehl auf der "
+"Kommandozeile (mit Administratorrechten) ausführen: ::"
 
 #: ../../stopping.rst:22
 msgid ""
-"Or you run ``services.msc``\\ , select MongoDB in the list of services and "
-"click on *Stop*\\ ."
+"Or you run ``services.msc``\\ , select MongoDB in the list of services "
+"and click on *Stop*\\ ."
 msgstr ""
 "Oder Sie öffnen ``services.msc``\\ , wählen MongoDB in der Liste der "
 "Services aus und klicken auf die *Stopp*\\ -Schaltfläche in den "
 "Diensteigenschaften."
 
-#: ../../stopping.rst:25
+#: ../../stopping.rst:25 ../../stopping.rst:52
+msgid "Script Engine"
+msgstr ""
+
+#: ../../stopping.rst:26
+msgid ""
+"If you installed the script engine and wrapped it into a service, you can"
+" open the ``services.msc``, locate the Signavio Script Engine service and"
+" stop it there. If you are executing the script engine directly via "
+"command line, simply abort the process by pressing ``CTRL + C``."
+msgstr ""
+
+#: ../../stopping.rst:30
 msgid "Debian"
 msgstr "Debian"
 
-#: ../../stopping.rst:29
+#: ../../stopping.rst:34
 msgid ""
 "If you installed Tomcat using a packet manager, you can simply run the "
 "following command. This might require root privileges. ::"
 msgstr ""
-"Falls Sie Tomcat wie empfohlen über einen Paketmanager installiert haben, "
-"können Sie zum Stoppen den folgenden Befehl ausführen – eventuell erfordert "
-"dies Root-Rechte: ::"
-
-#: ../../stopping.rst:34
-msgid ""
-"The example above shows only the command for Tomcat 8. However, if you use "
-"Tomcat 7, the same command will work with the ``/etc/init.d/tomcat7`` script."
-msgstr ""
-"Die oben aufgeführten Beispiele zeigen nur die Kommandos für Tomcat 8. Wenn "
-"Sie jedoch Tomcat 7 verwenden, sollten die gleichen Kommandos mit dem Skript "
-"``/etc/init.d/tomcat7`` funktionieren."
+"Falls Sie Tomcat wie empfohlen über einen Paketmanager installiert haben,"
+" können Sie zum Stoppen den folgenden Befehl ausführen – eventuell "
+"erfordert dies Root-Rechte: ::"
 
 #: ../../stopping.rst:39
+msgid ""
+"The example above shows only the command for Tomcat 8. However, if you "
+"use Tomcat 7, the same command will work with the ``/etc/init.d/tomcat7``"
+" script."
+msgstr ""
+"Die oben aufgeführten Beispiele zeigen nur die Kommandos für Tomcat 8. "
+"Wenn Sie jedoch Tomcat 7 verwenden, sollten die gleichen Kommandos mit "
+"dem Skript ``/etc/init.d/tomcat7`` funktionieren."
+
+#: ../../stopping.rst:44
 msgid ""
 "If MongoDB was setup following the instructions in this guide, you can "
 "simply stop the MongoDB server by executing the following command. This "
 "might require root privileges. ::"
 msgstr ""
-"Falls Sie MongoDB wie empfohlen über einen Paketmanager installiert haben, "
-"lässt sich das Programm wie folgt über die Kommandozeile stoppen - eventuell "
-"erfordert dies Root-Rechte: ::"
+"Falls Sie MongoDB wie empfohlen über einen Paketmanager installiert "
+"haben, lässt sich das Programm wie folgt über die Kommandozeile stoppen -"
+" eventuell erfordert dies Root-Rechte: ::"
 
-#: ../../stopping.rst:44
+#: ../../stopping.rst:49
 msgid ""
-"In earlier versions of MongoDB, e.g. 2.4.x, the script had a different name: "
-"``/etc/init.d/mongodb``."
+"In earlier versions of MongoDB, e.g. 2.4.x, the script had a different "
+"name: ``/etc/init.d/mongodb``."
 msgstr ""
-"In früheren Version von MongoDB, z.B. 2.4.x, hatte das Skript einen anderen "
-"Namen: ``/etc/init.d/mongodb``"
+"In früheren Version von MongoDB, z.B. 2.4.x, hatte das Skript einen "
+"anderen Namen: ``/etc/init.d/mongodb``"
 
-#: ../../stopping.rst:4
-msgid "Stopping Signavio Workflow"
-msgstr "Signavio Workflow herunterfahren"
-
-#: ../../stopping.rst:5
+#: ../../stopping.rst:53
 msgid ""
-"In order to stop the Signavio Workflow system completely, you have to stop "
-"the Tomcat application server and the MongoDB database. However, if you need "
-"to restart the Signavio Workflow system, it is sufficient to restart only "
-"the Tomcat server."
+"If you installed the script engine and setup an Init script, execute the "
+"respective stop command for the Init script. If you are executing the "
+"script engine directly via command line, simply abort the process by "
+"pressing ``CTRL + C``."
 msgstr ""
-"Stoppen Sie sowohl Tomcat als auch MongoDB, um Signavio Workflow "
-"herunterzufahren. Falls Sie Signavio Workflow neu starten möchten - zum "
-"Beispiel im Zuge eines Updates – ist es jedoch ausreichend lediglich den "
-"Tomcat neu zu starten."
+

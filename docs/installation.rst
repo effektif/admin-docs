@@ -435,7 +435,7 @@ Windows
 For Windows there is a comfortable installer to setup Node.js.
 
 #. Go to https://nodejs.org/en/download/
-#. Selected the LTS version.
+#. Select the LTS version.
 #. Download the *Windows Installer (.msi)* for your Windows version.
 #. Execute the downloaded installer and follow installation guide.
 
@@ -455,7 +455,7 @@ Installing the Signavio Workflow Script Engine
 
 The Signavio Workflow Script Engine uses Node.js to execute JavaScript tasks within a workflow and an embedded HTTP server to communicate with the Signavio Workflow web application.
 You can either install the Script Engine on the same machine as the Signavio Workflow web application or on a separate machine.
-However, if you use separate machine to run the script engine, you have to make sure the web application can connect over HTTP to the configured port of the script engine.
+However, if you use a separate machine to run the script engine, you have to make sure the web application can connect over HTTP to the configured port of the script engine.
 In order to install the script engine, follow these instructions:
 
 #. Create new local directory for the script engine, e.g. ``C:\Program Files\Script Engine`` or ``/var/lib/script-engine``.
@@ -542,7 +542,7 @@ In order to stop the script engine again, execute the following command: ::
     nssm stop script-engine
 
 While it is running, you can open your browser and go to the URL you have configured for the script engine, by default this ``http://localhost:8081``.
-If the engine is running, you will a blank page with this content: ``{}``
+If the engine is running, you will see a blank page with this content: ``{}``
 
 Besides using ``nssm`` on the command line, you will find a new service when you open the ``services.msc``.
 The script engine will show up under the name you configured as display name.
