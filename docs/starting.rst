@@ -180,7 +180,7 @@ When the initial user registers, he will automatically create the first organisa
 In order to register, enter the URL of your Signavio Workflow installation in your browser. 
 You will see the login screen of Signavio Workflow.
 
-Click *register* in the lower right corner, fill in your email address and click *Register a new user*\ . 
+Click *Register a new account*, fill in your email address and click *Register a new user*\ . 
 You will then receive an email with a link to complete your registration. 
 After you have done that, your Signavio Workflow organisation is set up and you can go ahead and invite more users.
 
