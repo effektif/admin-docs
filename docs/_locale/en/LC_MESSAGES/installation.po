@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2016, Signavio GmbH
-# This file is distributed under the same license as the Effektif
+# This file is distributed under the same license as the Signavio Workflow
 # administrators guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
 #
@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-27 11:18+0200\n"
-"PO-Revision-Date: 2016-06-27 11:49+0100\n"
+"POT-Creation-Date: 2016-06-27 13:15+0200\n"
+"PO-Revision-Date: 2016-06-27 13:31+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
 "MIME-Version: 1.0\n"
@@ -2010,4 +2010,5 @@ msgstr ""
 "created which contains a timestamp in the filename similar to "
 "``effektif-2014-10-09.log``\\ . The most recent log entries can still be "
 "found in the file effektif.log. After 30 days, the log files will be removed "
-"automatically."
+"automatically.found in the file effektif.log. After 30 days, the log files "
+"will be removed automatically."

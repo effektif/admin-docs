@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Signavio GmbH
+# This file is distributed under the same license as the Signavio Workflow
+# administrators guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Signavio Workflow administrators guide 3.9\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-06-27 11:42+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../unpack.rst:2
+msgid "Unpack Signavio Workflow"
+msgstr ""
+
+#: ../../unpack.rst:3
+msgid ""
+"Unzip the signavio-workflow-{version}.zip to a directory of your choice, "
+"e.g. ``/yourlocation/signavio-workflow-{version}`` In the rest of this "
+"guide, we'll refer to the Signavio Workflow home directory as "
+"``$WORKFLOW_HOME``\\ . The directory will contain the following files:"
+msgstr ""
+
+#: ../../unpack.rst:7
+msgid "\\*.sh - Linux shell scripts"
+msgstr ""
+
+#: ../../unpack.rst:8
+msgid "db - directory that contains MongoDB configuration files"
+msgstr ""
+
+#: ../../unpack.rst:10
+msgid "mongod.conf - configuration file for Linux"
+msgstr ""
+
+#: ../../unpack.rst:11
+msgid "mongod.cfg - configuration file for Windows"
+msgstr ""
+
+#: ../../unpack.rst:13
+msgid "nodejs - directory that contains the script engine"
+msgstr ""
+
+#: ../../unpack.rst:14
+msgid "optional - directory that contains optional resources"
+msgstr ""
+
+#: ../../unpack.rst:16
+msgid "spnego - directory that contains resources to setup SSO with SPNEGO"
+msgstr ""
+
+#: ../../unpack.rst:18
+msgid "webapps - directory"
+msgstr ""
+
+#: ../../unpack.rst:20
+msgid "ROOT - this directory contains the web application"
+msgstr ""
+
+#: ../../unpack.rst:22
+msgid ""
+"On Linux systems you need to make the scripts executable with the "
+"``chmod`` command like this: ::"
+msgstr ""
+

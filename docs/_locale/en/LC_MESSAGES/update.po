@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2016, Signavio GmbH
-# This file is distributed under the same license as the Effektif
+# This file is distributed under the same license as the Signavio Workflow
 # administrators guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
 #
@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-27 11:01+0200\n"
-"PO-Revision-Date: 2016-06-27 13:13+0100\n"
+"POT-Creation-Date: 2016-06-27 13:30+0200\n"
+"PO-Revision-Date: 2016-06-27 13:32+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
 "MIME-Version: 1.0\n"
@@ -365,9 +365,14 @@ msgid ""
 "this chapter again. However, instead of creating a backup you should restore "
 "an older backup."
 msgstr ""
-"In order to restore an older version, you can follow the instructions in "
-"this chapter again. However, instead of creating a backup you should restore "
-"an older backup."
+"In case of exceptional problems you might want to restore an older version "
+"of Signavio Workflow. Be aware, if you revert Signavio Workflow to an older "
+"version, it is not guaranteed that you can keep on using your current "
+"database. The upgrade to a newer version can involve schema changes that "
+"render the database incompatible with older versions of Signavio Workflow. "
+"In this situation, the Signavio Workflow system will not start if it detects "
+"a newer version of the database schema which it doesn't support. This is the "
+"reason why you should create a backup before updating the system."
 
 #: ../../update.rst:96
 msgid ""
@@ -400,8 +405,8 @@ msgid ""
 "Install the older version of the webapp in ``$TOMCAT_HOME/webapps``\\ , see :"
 "ref:`update-install-version`"
 msgstr ""
-"Install the older version of the webapp in ``$TOMCAT_HOME/webapps``\\ , see :"
-"ref:`update-install-version`"
+"Install the older version in ``$TOMCAT_HOME/webapps``\\ , see :ref:`update-"
+"install-version`"
 
 #: ../../update.rst:101
 msgid ""
