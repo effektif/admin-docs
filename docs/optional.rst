@@ -311,6 +311,7 @@ Furthermore, check if `Integrated Windows Authentication <https://en.wikipedia.o
 If you see an error page with the following error message:
 
 ::
+
 	GSSException: Failure unspecified at GSS-API level (Mechanism level: Clock skew too great (37))
 
 The time difference between the computer accessing Signavio Workflow and the Kerberos server is bigger than 5 minutes. You will need to synchronise the time on all machines, e.g. by running ntp to fix the issue.

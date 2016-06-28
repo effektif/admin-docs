@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Effektif administrators guide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-27 15:04+0200\n"
+"POT-Creation-Date: 2016-06-28 13:40+0200\n"
 "PO-Revision-Date: 2016-06-27 13:32+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Signavo Workflow Dev <dev.effektif@signavio.com>\n"
@@ -614,6 +614,27 @@ msgstr ""
 "activated and the Signavio Workflow system is a trusted service, for "
 "instance by adding the address to the local intranet."
 
+#: ../../optional.rst:311
+msgid "If you see an error page with the following error message:"
+msgstr ""
+
+#: ../../optional.rst:317
+msgid ""
+"The time difference between the computer accessing Signavio Workflow and "
+"the Kerberos server is bigger than 5 minutes. You will need to "
+"synchronise the time on all machines, e.g. by running ntp to fix the "
+"issue."
+msgstr ""
+
 #~ msgid ""
+#~ msgstr ""
+
+#~ msgid "::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "GSSException: Failure unspecified at GSS-"
+#~ "API level (Mechanism level: Clock skew"
+#~ " too great (37))"
 #~ msgstr ""
 
