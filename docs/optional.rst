@@ -306,3 +306,11 @@ Note that in the `Pre-flight checklist`, the `Do we know the address of the KDC?
 
 If you have completed the setup described here and the SSO is still not working, please make sure you are accessing the web application from a different machine than the one that runs the Tomcat server.
 Furthermore, check if `Integrated Windows Authentication <https://en.wikipedia.org/wiki/Integrated_Windows_Authentication>`_ is activated and the Signavio Workflow system is a trusted service, for instance by adding the address to the local intranet.
+
+
+If you see an error page with the following error message:
+
+::
+	GSSException: Failure unspecified at GSS-API level (Mechanism level: Clock skew too great (37))
+
+The time difference between the computer accessing Signavio Workflow and the Kerberos server is bigger than 5 minutes. You will need to synchronise the time on all machines, e.g. by running ntp to fix the issue.
