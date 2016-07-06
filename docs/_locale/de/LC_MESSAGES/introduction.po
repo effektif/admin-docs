@@ -1,10 +1,10 @@
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-30 13:50+0100\n"
-"PO-Revision-Date: 2016-05-03 18:44+0100\n"
+"PO-Revision-Date: 2016-07-06 16:54+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
 "Language: de\n"
@@ -98,16 +98,16 @@ msgid ""
 "infrastructure. Signavio Workflow officially supports Microsoft Windows "
 "Server 64Bit and Debian Stable 64Bit."
 msgstr ""
-"Dieses Dokument beinhaltet das Signavio Workflow Administratorenhandbuch. Es"
-" enthält detaillierte Informationen und Anweisungen für die Installation von"
-" Signavio Workflow auf Ihren hauseigenen Server (oder auf der Infrastruktur "
+"Dieses Dokument beinhaltet das Signavio Workflow Administratorenhandbuch. Es "
+"enthält detaillierte Informationen und Anweisungen für die Installation von "
+"Signavio Workflow auf Ihren hauseigenen Server (oder auf der Infrastruktur "
 "eines Cloudanbieters Ihrer Wahl). Signavio Workflow unterstützt offiziell "
 "die Betriebssysteme Windows Server 64 Bit und Debian Stable 64 Bit."
 
 #: ../../introduction.rst:7
 msgid ""
-"It is possible to setup Signavio Workflow also on other Linux distributions."
-" However, the instructions in this manual are only tested for Debian. "
+"It is possible to setup Signavio Workflow also on other Linux distributions. "
+"However, the instructions in this manual are only tested for Debian. "
 "Probably, you will have to adjust the instructions to your system, but the "
 "used software should work on most distributions."
 msgstr ""
@@ -134,8 +134,8 @@ msgid ""
 "your server and that consists of a Java web archive (WAR) that is deployed "
 "on Tomcat and a MongoDB database."
 msgstr ""
-"Das Signavio Workflow-System ist eine Webanwendung, die als Java Web Archive"
-" (WAR) in einer Apache Tomcat Instanz eingesetzt wird und mit einem MongoDB "
+"Das Signavio Workflow-System ist eine Webanwendung, die als Java Web Archive "
+"(WAR) in einer Apache Tomcat Instanz eingesetzt wird und mit einem MongoDB "
 "Datenbanksystem verbunden wird."
 
 #: ../../introduction.rst:21
@@ -159,8 +159,8 @@ msgid ""
 msgstr ""
 "MongoDB ist ein Dokument-basiertes Datenbanksystem, das notwendig ist um "
 "Signavio Workflow auf dem Server erfolgreich auszuführen. Detaillierte "
-"Information erhalten Sie in der `MongoDB Dokumentation "
-"<https://docs.mongodb.org>`_."
+"Information erhalten Sie in der `MongoDB Dokumentation <https://docs.mongodb."
+"org>`_."
 
 #: ../../introduction.rst:41
 msgid ""
@@ -179,28 +179,33 @@ msgstr "``$WORKFLOW_HOME``"
 
 #: ../../introduction.rst:53
 msgid ""
-"Refers to the directory that contains the unzipped content of the downloaded"
-" signavio-workflow-{version}.zip."
+"Refers to the directory that contains the unzipped content of the downloaded "
+"signavio-workflow-{version}.zip."
 msgstr ""
 "Bezeichnet das Verzeichnis, das den entpackten Inhalt des bereitgestellten "
 "signavio-workflow-{version}.zip-Archives enthält."
 
 #: ../../introduction.rst:31
 msgid "Node.js"
-msgstr ""
+msgstr "Node.js"
 
 #: ../../introduction.rst:32
 msgid ""
 "Node.js is a runtime environment for JavaScript which is used by Signavio "
 "Workflow to execute custom JavaScript tasks created by the user."
 msgstr ""
+"Node.js ist eine Ausführungsumgebung für JavaScript, die von Signavio "
+"Workflow für die Ausführung von benutzerdefinierten JavaScript-Tasks genutzt "
+"wird."
 
 #: ../../introduction.rst:56
 msgid "``$SCRIPT_ENGINE_HOME``"
-msgstr ""
+msgstr "``$SCRIPT_ENGINE_HOME``"
 
 #: ../../introduction.rst:56
 msgid ""
 "Refers to the directory where your Signavio Workflow Script Engine is "
 "installed."
 msgstr ""
+"Bezeichnet das Verzeichnis, in dem die Signavio Workflow Script Engine "
+"installiert ist."

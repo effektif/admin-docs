@@ -4,119 +4,146 @@
 # administrators guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Signavio Workflow administrators guide 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-28 15:39+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2016-07-06 18:36+0200\n"
+"PO-Revision-Date: 2016-07-06 19:38+0100\n"
+"Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
+"Language-Team: Signavio Workflow Dev <dev.effektif@signavio.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.2.0\n"
+"Language: de\n"
+"X-Generator: Poedit 1.6.9\n"
 
 #: ../../optional.rst:2
 msgid "Optional configuration"
-msgstr ""
+msgstr "Optionale Konfiguration"
 
 #: ../../optional.rst:4
 msgid ""
-"This section provides instructions for optional configuration, which is "
-"not required for all installations."
+"This section provides instructions for optional configuration, which is not "
+"required for all installations."
 msgstr ""
+"In diesem Abschnitt werden optionale Konfigurationsmöglichkeiten "
+"beschrieben, die nicht für alle Installationen erforderlich sind."
 
 #: ../../optional.rst:9
 msgid "User and group synchronisation with Active Directory"
-msgstr ""
+msgstr "Nutzer- und Gruppensynchronisation mit Active Directory"
 
 #: ../../optional.rst:11
 msgid ""
 "The enterprise version of Signavio Workflow offers user and group "
-"synchronisation with an Active Directory Server using the LDAP V3 "
-"protocol."
+"synchronisation with an Active Directory Server using the LDAP V3 protocol."
 msgstr ""
+"Die Enterprise-Version von Signavio Workflow bietet die Nutzer- und "
+"Gruppensynchronisationen mit einem Active Directory Server unter der "
+"Verwendung des LDAP V3 Protokolls."
 
 #: ../../optional.rst:13
 msgid ""
 "Before you can configure the synchronisation, check that you have the "
 "following pre-requisites."
 msgstr ""
+"Bevor Sie mit der Konfiguration für die Synchronisation beginnen, überprüfen "
+"Sie ob die folgende Vorbedingungen erfüllt sind."
 
 #: ../../optional.rst:15
 msgid "Signavio Workflow is installed."
-msgstr ""
+msgstr "Signavio Workflow ist installiert."
 
 #: ../../optional.rst:16
 msgid ""
 "The first Signavio Workflow user is registered, see :ref:`create-initial-"
 "user`\\ ."
 msgstr ""
+"Der erste Signavio Workflow-Nutzer wurde registriert, vgl. :ref:`create-"
+"initial-user`\\ ."
 
 #: ../../optional.rst:17
 msgid ""
 "A domain account for querying the Active Directory - its username and "
 "password."
 msgstr ""
+"Ein Domänenkonto um Anfragen an das Active Directory zu stellen - Nutzername "
+"und Passwort"
 
 #: ../../optional.rst:19
 msgid "Configuring the synchronisation consists of the following steps."
-msgstr ""
+msgstr "Die Konfiguration der Synchronisation umfasst die folgenden Schritte."
 
 #: ../../optional.rst:21
 msgid ""
-"Create an Active Directory group that contains all Signavio Workflow "
-"users as members."
+"Create an Active Directory group that contains all Signavio Workflow users "
+"as members."
 msgstr ""
+"Legen Sie eine Active Directory-Gruppe an, welche alle Signavio Workflow-"
+"Nutzer als Mitglieder enthält."
 
 #: ../../optional.rst:22
 msgid ""
 "Create an Active Directory group that contains all Signavio Workflow "
 "administrators as members."
 msgstr ""
+"Legen Sie eine Active Directory-Gruppe an, welche alle Signavio Workflow-"
+"Administratoren als Mitglieder enthält."
 
 #: ../../optional.rst:23
 msgid ""
 "(Optional) Create an Active Directory group that contains all groups as "
 "members."
 msgstr ""
+"(Optional) Legen Sie eine Active Directory-Gruppe an, welche alle Gruppen "
+"als Mitglieder enthält."
 
 #: ../../optional.rst:24
 msgid "Log in to Signavio Workflow with your initial user."
-msgstr ""
+msgstr "Loggen Sie sich in Signavio Workflow mit dem initialen Nutzer ein."
 
 #: ../../optional.rst:25
 msgid "Open the *Organization settings* and select the *LDAP* tab."
 msgstr ""
+"Öffnen Sie die *Organisationseinstellungen* and wählen Sie den Tab *LDAP* "
+"aus."
 
 #: ../../optional.rst:26
 msgid "Create a new Active Directory configuration."
-msgstr ""
+msgstr "Erstellen Sie eine neue Active Directory-Konfiguration."
 
 #: ../../optional.rst:27
 msgid "Validate your configuration."
-msgstr ""
+msgstr "Validieren Sie Ihre Konfiguration."
 
 #: ../../optional.rst:28
 msgid "Synchronise the users and groups."
-msgstr ""
+msgstr "Synchronisieren Sie die Nutzer und Gruppen."
 
 #: ../../optional.rst:32
 msgid "Creating the Active Directory groups"
-msgstr ""
+msgstr "Active Directory-Gruppen erstellen"
 
 #: ../../optional.rst:34
 msgid ""
-"Active Directory users and groups that should be synchronised with "
-"Signavio Workflow are managed within Active Directory by adding them to "
-"specific Active Directory groups. There are two groups for users, one "
-"which contains all Signavio Workflow users and one which contains only "
-"administrators. All members of the administrator group must be members of"
-" the user group as well. Nested groups are not supported. All users and "
-"administrators need to be direct members of their groups."
+"Active Directory users and groups that should be synchronised with Signavio "
+"Workflow are managed within Active Directory by adding them to specific "
+"Active Directory groups. There are two groups for users, one which contains "
+"all Signavio Workflow users and one which contains only administrators. All "
+"members of the administrator group must be members of the user group as "
+"well. Nested groups are not supported. All users and administrators need to "
+"be direct members of their groups."
 msgstr ""
+"Active Directory-Nutzer und Gruppen, die mit Signavio Workflow "
+"synchronisiert werden sollen, werden innerhalb des Active Directory "
+"verwaltet, in dem sie zu speziellen Active Directory-Gruppen hinzugefügt "
+"werden. Es gibt zwei Gruppen für Nutzer. Die Erste enthält alle Signavio "
+"Workflow-Nutzer. Die zweite Gruppe enthält nur die Administratoren. Alle "
+"Mitglieder der Administratorengruppe müssen auch Mitglieder der Nutzergruppe "
+"sein. Geschachtelte Gruppen werden nicht unterstützt. Alle Nutzer und "
+"Administratoren müssen direkte Mitglieder Ihrer Gruppen sein."
 
 #: ../../optional.rst:40
 msgid ""
@@ -125,387 +152,495 @@ msgid ""
 "``userPrincipalName``\\ to the user in Signavio Workflow. It is required "
 "that every user has the ``mail`` attribute defined."
 msgstr ""
+"Die Synchronisation wird die Attribute  ``givenName``, ``sn``, ``mail``, "
+"``dn``, ``objectGUID``, ``sAMAccountName`` und ``userPrincipalName``\\ zu "
+"dem Nutzer in Signavio Workflow kopieren. Jeder Nutzer muss das Attribut "
+"``mail`` definiert haben."
 
 #: ../../optional.rst:43
 msgid ""
-"Optionally, you can define a third group that contains all Active "
-"Directory groups that should be synchronised. All members of this group "
-"should be Active Directory groups as well. Again nested groups are not "
-"supported. Users must be direct members of the synchronised groups. The "
-"synchronisation will copy the attributes ``cn``, ``dn`` and "
-"``objectGUID`` to the group in Signavio Workflow. Every group member that"
-" is not a Signavio Workflow user will be ignored."
+"Optionally, you can define a third group that contains all Active Directory "
+"groups that should be synchronised. All members of this group should be "
+"Active Directory groups as well. Again nested groups are not supported. "
+"Users must be direct members of the synchronised groups. The synchronisation "
+"will copy the attributes ``cn``, ``dn`` and ``objectGUID`` to the group in "
+"Signavio Workflow. Every group member that is not a Signavio Workflow user "
+"will be ignored."
 msgstr ""
+"Optional können Sie eine dritte Gruppe definieren, welche alle Active "
+"Directory-Gruppen enthält, die synchronisiert werden sollen. Alle Mitglieder "
+"dieser Gruppe sollten Active Directory-Gruppen sein. Auch hier werden "
+"geschachtelte Gruppen nicht unterstützt. Nutzer müssen direkte Mitglieder "
+"der synchronisierten Gruppen sein. Die Synchronisation wird die Attribute "
+"``cn``, ``dn`` und ``objectGUID`` zu der Gruppe in Signavio Workflow "
+"kopieren. Jedes Gruppenmitglied, das kein Nutzer in Signavio Workflow ist, "
+"wird ignoriert."
 
 #: ../../optional.rst:52
 msgid "Creating a new configuration"
-msgstr ""
+msgstr "Eine neue Konfiguration erstellen"
 
 #: ../../optional.rst:54
 msgid ""
-"In the LDAP configuration tab, select *Create* to start the "
-"configuration. Enter the configuration details on the configuration form."
+"In the LDAP configuration tab, select *Create* to start the configuration. "
+"Enter the configuration details on the configuration form."
 msgstr ""
+"Im Tab LDAP, wählen Sie *Erstellen* um mit der Konfiguration zu beginnen. "
+"Fügen Sie dann die entsprechenden Konfigurationsdetails in das Formular ein."
 
 #: ../../optional.rst:57
 msgid ""
-"*URL* - the location of your Active Directory server, e.g. "
-"``ldap://adtest.local:389``\\"
+"*URL* - the location of your Active Directory server, e.g. ``ldap://adtest."
+"local:389``\\"
 msgstr ""
+"*URL* - die Adresse des Active Directory Servers, z.B. ``ldap://adtest."
+"local:389``\\"
 
 #: ../../optional.rst:58
 msgid "*username* and *password* - the login credentials of the domain account"
-msgstr ""
+msgstr "*Nutzername* und *Passwort* - die Zugangsdaten des Domänenkontos"
 
 #: ../../optional.rst:59
 msgid ""
-"*User group DN* - the distinguished name (DN) of the Active Directory "
-"group which contains all users"
+"*User group DN* - the distinguished name (DN) of the Active Directory group "
+"which contains all users"
 msgstr ""
+"*DN der Nutzergruppe* - der Distinguished Name (DN) der Active Directory-"
+"Gruppe, die alle Nutzer enthält"
 
 #: ../../optional.rst:60
 msgid ""
-"*Admin group DN* - the DN of the Active Directory group which contains "
-"all administrators"
+"*Admin group DN* - the DN of the Active Directory group which contains all "
+"administrators"
 msgstr ""
+"*DN der Administratorengruppe* - der Distinguished Name (DN) der Active "
+"Directory-Gruppe, die alle Administratoren enthält"
 
 #: ../../optional.rst:61
 msgid ""
 "*Group group DN* - (optional) the DN of the Active Directory group which "
 "contains all groups"
 msgstr ""
+"*DN der Gruppe der Gruppen* - der Distinguished Name (DN) der Active "
+"Directory-Gruppe, die alle Gruppen enthält"
 
 #: ../../optional.rst:62
-msgid "*License* - the license that will be assigned to every synchronised user"
+msgid ""
+"*License* - the license that will be assigned to every synchronised user"
 msgstr ""
+"*Lizenz* - die Lizenz, die jedem synchronisierten Nutzer zugewiesen wird"
 
 #: ../../optional.rst:64
 msgid ""
-"The last field of the configuration form will show you if the "
-"configuration was already validated."
+"The last field of the configuration form will show you if the configuration "
+"was already validated."
 msgstr ""
+"Das letzte Feld des Konfigurationsformulars zeigt Ihnen an, ob die "
+"Konfiguration bereits validiert wurde."
 
 #: ../../optional.rst:68
 msgid "Validating a configuration"
-msgstr ""
+msgstr "Konfiguration validieren"
 
 #: ../../optional.rst:70
 msgid ""
 "Before synchronisation can start, the configuration must be validated. "
 "Validation includes the following checks."
 msgstr ""
+"Bevor die Synchronisation ausgeführt werden kann, muss die Konfiguration "
+"validiert werden. Die Validierung umfasst die folgenden Kontrollen."
 
 #: ../../optional.rst:73
 msgid "Signavio Workflow can connect to the Active Directory."
-msgstr ""
+msgstr "Signavio Workflow kann sich mit dem Active Directory verbinden."
 
 #: ../../optional.rst:74
 msgid "The configured groups are proper Active Directory groups."
-msgstr ""
+msgstr "Die konfigurierten Gruppen sind korrekte Active Directory-Gruppen"
 
 #: ../../optional.rst:75
 msgid "There is at least one user."
-msgstr ""
+msgstr "Es gibt wenigstens einen Nutzer."
 
 #: ../../optional.rst:76
 msgid "There is at least one administrator."
-msgstr ""
+msgstr "Es wenigstens einen Administrator."
 
 #: ../../optional.rst:77
 msgid "The users have the ``mail`` attribute defined."
-msgstr ""
+msgstr "Für die Nutzer ist das Attribute ``mail`` definiert."
 
 #: ../../optional.rst:78
 msgid "There are sufficient licenses."
-msgstr ""
+msgstr "Es gibt genügend Lizenzen."
 
 #: ../../optional.rst:79
 msgid "(Optional) There are groups defined."
-msgstr ""
+msgstr "(Optional) Die Gruppen sind festgelegt."
 
 #: ../../optional.rst:81
 msgid ""
-"Start the validation by selecting *Validate*. If the configuration is "
-"valid, the *Synchronise* button is enabled. If the configuration is not "
-"valid, the page shows a list with more detailed information. In that case"
-" fix the issues and run the configuration again."
+"Start the validation by selecting *Validate*. If the configuration is valid, "
+"the *Synchronise* button is enabled. If the configuration is not valid, the "
+"page shows a list with more detailed information. In that case fix the "
+"issues and run the validation again."
 msgstr ""
+"Starten Sie die Validierung, in dem Sie *Validieren* auswählen. Sobald die "
+"Konfiguration gültig ist, wird der Knopf *Synchronisieren* aktiviert. Wenn "
+"die Konfiguration ungültig ist, zeigt Ihnen die Seite eine Liste mit "
+"detaillierten Informationen an. In diesem Fall, beheben Sie die Probleme "
+"führen Sie die Validierung erneut aus."
 
 #: ../../optional.rst:86
 msgid ""
 "Every time you change the configuration, the validation must be executed "
 "again."
 msgstr ""
+"Jede Änderung der Konfiguration erfordert, dass die Validierung erneut "
+"ausgeführt werden muss."
 
 #: ../../optional.rst:88
 msgid ""
-"Note the validation might take several seconds depending on the number of"
-" users you want to synchronise and the perfomance of the Active Directory"
-" server."
+"Note the validation might take several seconds depending on the number of "
+"users you want to synchronise and the perfomance of the Active Directory "
+"server."
 msgstr ""
+"Beachten Sie, die Validierung kann einige Sekunden in Anspruch nehmen, "
+"abhängig von der Anzahl der Nutzer, die Sie synchronisieren möchten und der "
+"Performance Ihres Active Directory Servers."
 
 #: ../../optional.rst:92
 msgid "Synchronising users and groups"
-msgstr ""
+msgstr "Nutzer und Gruppen synchronisieren"
 
 #: ../../optional.rst:94
 msgid ""
 "If the configuration is valid, you can synchronise the users and groups. "
 "Start the synchronisation by clicking on *Synchronise*. If the "
-"synchronisation was successful, you will see a report of the added / "
-"updated users and groups. If the synchronisation failed, a list with more"
-" detailed information will be shown."
+"synchronisation was successful, you will see a report of the added / updated "
+"users and groups. If the synchronisation failed, a list with more detailed "
+"information will be shown."
 msgstr ""
+"Nutzer und Gruppen können synchronisiert werden, sobald die Konfiguration "
+"gültig ist. Starten Sie die Synchronisation, in dem Sie auf "
+"*Synchronisieren* klicken. Wenn die Synchronisation erfolgreich war, sehen "
+"Sie einen Bericht über die hinzugefügten / aktualisierten Nutzer und "
+"Gruppen. Wenn die Synchronisation nicht erfolgreich war, sehen Sie eine "
+"Liste mit detaillierteren Informationen."
 
 #: ../../optional.rst:99
 msgid ""
-"Note the validation might take several seconds or minutes depending on "
-"the number of users you want to synchronise and the perfomance of the "
-"Active Directory."
+"Note the synchronisation might take several seconds or minutes depending on "
+"the number of users you want to synchronise and the perfomance of the Active "
+"Directory."
 msgstr ""
+"Beachten Sie, die Synchronisation kann einige Sekunden oder Minuten in "
+"Anspruch nehmen, abhängig von der Anzahl der Nutzer, die Sie synchronisieren "
+"möchten und der Performance Ihres Active Directory Servers."
 
 #: ../../optional.rst:103
 msgid "Single Sign-On using Windows and Kerberos/SPNEGO"
-msgstr ""
+msgstr "Single Sign-On mit Windows und Kerberos/SPNEGO"
 
 #: ../../optional.rst:105
 msgid ""
 "Use this configuration to enable Single Sign-On (SSO) in a Windows "
-"environment that supports user authentication using `Kerberos "
-"<https://en.wikipedia.org/wiki/Kerberos_%28protocol%29>`_ and `SPNEGO "
-"<https://en.wikipedia.org/wiki/SPNEGO>`_."
+"environment that supports user authentication using `Kerberos <https://en."
+"wikipedia.org/wiki/Kerberos_%28protocol%29>`_ and `SPNEGO <https://en."
+"wikipedia.org/wiki/SPNEGO>`_."
 msgstr ""
+"Benutzen Sie diese Konfiguration um Single Sign-On (SSO) in einer Windows-"
+"Umgebung zu aktivieren, die eine Authentifizierung über `Kerberos <https://"
+"en.wikipedia.org/wiki/Kerberos_%28protocol%29>`_ und `SPNEGO <https://en."
+"wikipedia.org/wiki/SPNEGO>`_ unterstützt."
 
 #: ../../optional.rst:107
 msgid "Before you start, check that you have the following pre-requisites."
 msgstr ""
+"Bevor Sie beginnen, stellen Sie sicher, dass folgende Vorbedingungen erfüllt "
+"sind."
 
 #: ../../optional.rst:109
 msgid ""
 "Windows domain users added to Signavio Workflow, e.g. using LDAP "
 "synchronisation."
 msgstr ""
+"Windows Domänennutzer wurden zu Signavio Workflow hinzugefügt, z.B. mit der "
+"LDAP Synchronisation"
 
 #: ../../optional.rst:110
 msgid "A Windows domain for authenticating users."
-msgstr ""
+msgstr "Ein Windows Domänenkonto um die Nutzer zu authentifizieren."
 
 #: ../../optional.rst:111
 msgid ""
-"A domain account for running Signavio Workflow - its username and "
-"password."
+"A domain account for running Signavio Workflow - its username and password."
 msgstr ""
+"Ein Domänenkonto um Signavio Workflow auszuführen - Nutzername und Passwort"
 
 #: ../../optional.rst:112
-msgid "Signavio Workflow is installed on a Windows Server that is on the domain."
+msgid ""
+"Signavio Workflow is installed on a Windows Server that is on the domain."
 msgstr ""
+"Signavio Workflow ist auf einem Windows Server installiert, der sich in der "
+"Domäne befindet."
 
 #: ../../optional.rst:114
 msgid "Configuring SSO in Apache Tomcat consists of the following steps."
-msgstr ""
+msgstr "Die Konfiguration von SSO im Apache Tomcat umfasst folgende Schritte."
 
 #: ../../optional.rst:116
 msgid "Install the SPNEGO library’s JAR file."
-msgstr ""
+msgstr "Installieren Sie die JAR-Datei der SPNEGO Bibliothek."
 
 #: ../../optional.rst:117
 msgid "Configure the SPNEGO SSO Servlet filter."
-msgstr ""
+msgstr "Konfigurieren Sie den SPNEGO SSO Servlet Filter."
 
 #: ../../optional.rst:118
 msgid ""
-"Add the ``krb5.conf`` and ``login.conf`` configuration files to "
-"``$TOMCAT_HOME/``."
+"Add the ``krb5.conf`` and ``login.conf`` configuration files to ``"
+"$TOMCAT_HOME/``."
 msgstr ""
+"Fügen Sie die Konfigurationsdateien  ``krb5.conf`` und ``login.conf`` zu dem "
+"Verzeichnis ``$TOMCAT_HOME/`` hinzu."
 
 #: ../../optional.rst:119
 msgid "Register Tomcat’s Service Principal Name (SPN)"
-msgstr ""
+msgstr "Registrieren Sie Tomcat's Service Principal Name (SPN)"
 
 #: ../../optional.rst:120
 msgid "Configure Tomcat to be executed with a domain account."
-msgstr ""
+msgstr "Konfigurieren Sie, dass Tomcat mit einem Domänenkonto ausgeführt wird."
 
 #: ../../optional.rst:121
 msgid "Restart Tomcat."
-msgstr ""
+msgstr "Starten Sie Tomcat neu."
 
 #: ../../optional.rst:125
 msgid "Install the SPNEGO library"
-msgstr ""
+msgstr "SPNEGO Bibliothek installieren"
 
 #: ../../optional.rst:127
 msgid ""
-"The SPNEGO library makes it possible to authenticate users by connecting "
-"to an Active Directory server."
+"The SPNEGO library makes it possible to authenticate users by connecting to "
+"an Active Directory server."
 msgstr ""
+"Die SPNEGO Bibliothek ermöglicht die Authentifizierung von Nutzern durch ein "
+"Verbindung zu einem Active Directory Server."
 
 #: ../../optional.rst:129
 msgid "To install, copy two files to ``$TOMCAT_HOME/lib/``:"
 msgstr ""
+"Für die Installation kopieren Sie die zwei Dateien in das Verzeichnis ``"
+"$TOMCAT_HOME/lib/``:"
 
 #: ../../optional.rst:140
 msgid "Configuring the SPNEGO SSO Servlet filter"
-msgstr ""
+msgstr "SPNEGO SSO Servlet Filter konfigurieren"
 
 #: ../../optional.rst:142
 msgid ""
-"The SSO Servlet filter uses Windows authentication to automatically log "
-"in when a user accesses Signavio Workflow."
+"The SSO Servlet filter uses Windows authentication to automatically log in "
+"when a user accesses Signavio Workflow."
 msgstr ""
+"Der SSO Servlet Filter nutzt die Windows-Authentifizierung um Nutzer "
+"automatisch einzuloggen sobald sie auf Signavio Workflow zugreifen."
 
 #: ../../optional.rst:144
 msgid ""
-"To configure, edit ``$TOMCAT_HOME/conf/web.xml`` and add the following "
-"lines immediately before the final line (``</web-app>``), from "
-"``$WORKFLOW_HOME/optional/spnego/filter-configuration.xml``."
+"To configure, edit ``$TOMCAT_HOME/conf/web.xml`` and add the following lines "
+"immediately before the final line (``</web-app>``), from ``$WORKFLOW_HOME/"
+"optional/spnego/filter-configuration.xml``."
 msgstr ""
+"Für die Konfiguration passen Sie die ``$TOMCAT_HOME/conf/web.xml`` an. "
+"Kopieren Sie den Inhalt von ``$WORKFLOW_HOME/optional/spnego/filter-"
+"configuration.xml`` und fügen Sie Ihn direkt vor der letzten Zeile (``</web-"
+"app>``) hinzu."
 
 #: ../../optional.rst:210
 msgid ""
 "Near the bottom, replace two occurrences of ``???`` with the domain "
 "account’s username and password, respectively."
 msgstr ""
+"Ersetzen Sie die zwei Vorkommnisse von ``???`` nahe des Endes mit dem "
+"entsprechenden Nutzernamen und Passwort des Domänenkontos."
 
 #: ../../optional.rst:214
 msgid "Adding SPNEGO configuration files"
-msgstr ""
+msgstr "SPNEGO Konfigurationsdateien hinzufügen"
 
 #: ../../optional.rst:216
 msgid "Copy ``krb5.conf`` to ``$TOMCAT_HOME/``, and edit the file:"
 msgstr ""
+"Kopieren Sie ``krb5.conf`` in das Verzeichnis ``$TOMCAT_HOME/`` und passen "
+"Sie die Datei an:"
 
 #: ../../optional.rst:218
 msgid "replace four occurrences of ``ADTEST`` with the Windows domain name"
 msgstr ""
+"Ersetzen Sie alle Vorkommnisse von ``ADTEST`` mit dem Namen Ihrer Windows-"
+"Domäne."
 
 #: ../../optional.rst:219
 msgid ""
 "replace ``123.45.6.7`` with the host name or IP address of the Active "
 "Directory server."
 msgstr ""
+"Ersetzen Sie ``123.45.6.7`` mit dem Hostnamen oder der IP-Adresse des Active "
+"Directory Servers."
 
 #: ../../optional.rst:239
 msgid "Copy ``login.conf`` to ``$TOMCAT_HOME/``."
-msgstr ""
+msgstr "Kopieren Sie ``login.conf`` in das Verzeichnis ``$TOMCAT_HOME/``."
 
 #: ../../optional.rst:255
 msgid "Registering Tomcat’s Service Principal Name (SPN)"
-msgstr ""
+msgstr "Tomcat's Service Principal Name (SPN) registrieren"
 
 #: ../../optional.rst:257
 msgid ""
-"The `SPN <https://msdn.microsoft.com/en-"
-"us/library/ms677949(v=vs.85).aspx>`_ is the identifier used by Kerberos "
-"authentication to associate a service instance with a service logon "
-"account. You will have to associate the domain account for Signavio "
-"Workflow with the service’s fully-qualified domain name (FQDN). "
-"Therefore, you should register a SPN for every possible alias of the "
-"service, including the computer name of the server with and without "
-"domain name, as well as any other DNS entries that point to this server. "
-"In order to define a SPN, use ``setspn.exe`` - part of the `Windows "
-"Support Tools <https://en.wikipedia.org/wiki/Windows_Support_Tools>`_\\ ."
+"The `SPN <https://msdn.microsoft.com/en-us/library/ms677949(v=vs.85).aspx>`_ "
+"is the identifier used by Kerberos authentication to associate a service "
+"instance with a service logon account. You will have to associate the domain "
+"account for Signavio Workflow with the service’s fully-qualified domain name "
+"(FQDN). Therefore, you should register a SPN for every possible alias of the "
+"service, including the computer name of the server with and without domain "
+"name, as well as any other DNS entries that point to this server. In order "
+"to define a SPN, use ``setspn.exe`` - part of the `Windows Support Tools "
+"<https://en.wikipedia.org/wiki/Windows_Support_Tools>`_\\ ."
 msgstr ""
+"Der `SPN <https://msdn.microsoft.com/en-us/library/ms677949(v=vs.85).aspx>`_ "
+"ist der Bezeichner, der von der Kerberos-Authentifizierung genutzt wird, um "
+"eine Service-Instanz mit einem Service-Domänenkonto zu verknüpfen. Hierfür "
+"müssen Sie das Domänenkonto von Signavio Workflow mit dem Fully-Qualified "
+"Domain Name (FQDN) des Service verbinden. Sie sollten einen SPN für jeden "
+"möglichen Alias des Service anlegen. Dies umfasst den Namen des Servers mit "
+"und ohne Domänennamen, sowie alle DNS-Einträge, die auf den Server "
+"verweisen. Um einen SPN anzulegen, verwenden Sie ``setspn.exe`` - Teil der "
+"`Windows Support Tools <https://en.wikipedia.org/wiki/"
+"Windows_Support_Tools>`_\\ ."
 
 #: ../../optional.rst:266
 msgid ""
-"For example, our domain is called ``ADTEST.LOCAL``, the computer name of "
-"the server is ``VM-42``, Signavio Workflow will be available under the "
-"domain ``http://workflow.intranet:8080`` and the domain user account is "
+"For example, our domain is called ``ADTEST.LOCAL``, the computer name of the "
+"server is ``VM-42``, Signavio Workflow will be available under the domain "
+"``http://workflow.intranet:8080`` and the domain user account is "
 "``tomcat@adtest.local``\\ . Then we would have to register the following "
 "SPNs:"
 msgstr ""
+"In unserem Beispiel heißt die Domäne ``ADTEST.LOCAL``, der Computername des "
+"Servers lautet ``VM-42``, Signavio Workflow ist unter der Adresse ``http://"
+"workflow.intranet:8080`` verfügbar und das Domänenkonto heißt "
+"``tomcat@adtest.local``\\ . Daraus ergeben sich die folgenden SPNs:"
 
 #: ../../optional.rst:275
 msgid ""
-"For more information see the `Microsoft documentation "
-"<https://msdn.microsoft.com/en-us/library/cc281382.aspx>`_\\ ."
+"For more information see the `Microsoft documentation <https://msdn."
+"microsoft.com/en-us/library/cc281382.aspx>`_\\ ."
 msgstr ""
+"Weitere Information finden Sie in der `Microsoft Dokumentation <https://msdn."
+"microsoft.com/en-us/library/cc281382.aspx>`_\\ ."
 
 #: ../../optional.rst:278
 msgid ""
-"You can list all registered SPNs which are associated to a domain account"
-" with the following command:"
+"You can list all registered SPNs which are associated to a domain account "
+"with the following command:"
 msgstr ""
+"Mit dem folgenden Befehl können Sie alle registrierten SPNs, die mit einem "
+"Domänenkonto verknüpft sind, auflisten:"
 
 #: ../../optional.rst:286
 msgid "Configuring the Tomcat user"
-msgstr ""
+msgstr "Tomcat-Nutzer konfigurieren"
 
 #: ../../optional.rst:288
 msgid ""
 "By default the Tomcat application server is executed with a local system "
 "account. The SSO setup requires the Tomcat to be executed with a domain "
-"account. You should use the same domain account which you already "
-"configured in :ref:`configure-sso-filter`\\ ."
+"account. You should use the same domain account which you already configured "
+"in :ref:`configure-sso-filter`\\ ."
 msgstr ""
+"Standardmäßig wird der Tomcat Server mit einem lokalen Systemkonto "
+"ausgeführt. Für das SSO Setup ist es jedoch erforderlich Tomcat mit einem "
+"Domänenkonto auszuführen. Sie sollten das gleiche Domänenkonto verwenden, "
+"dass Sie bereits in :ref:`configure-sso-filter` konfiguriert haben."
 
 #: ../../optional.rst:292
 msgid "Open the Windows services dialogue ``services.msc``"
-msgstr ""
+msgstr "Öffnen Sie den Dialog für Windows-Dienste ``services.msc``\\ ."
 
 #: ../../optional.rst:293
 msgid "Select your Apache Tomcat service and open the properties"
 msgstr ""
+"Wählen Sie den Apache Tomcat Service aus und öffnen Sie die Eigenschaften."
 
 #: ../../optional.rst:294
 msgid "Select the *Log On* tab"
-msgstr ""
+msgstr "Wählen Sie den Tab *Anmelden* aus."
 
 #: ../../optional.rst:295
 msgid ""
-"Choose the option *This account* and fill in the domain account "
-"credentials"
+"Choose the option *This account* and fill in the domain account credentials"
 msgstr ""
+"Wählen Sie die Option *Dieses Konto* und tragen Sie die Zugangsdaten des "
+"Domänenkontos ein."
 
 #: ../../optional.rst:299
 msgid "Troubleshooting"
-msgstr ""
+msgstr "Troubleshooting"
 
 #: ../../optional.rst:301
 msgid ""
-"First follow the steps in the `SPNEGO Pre-flight checklist "
-"<http://spnego.sourceforge.net/pre_flight.html>`_. Run the ``HelloKDC`` "
-"connection test in the ``$TOMCAT_HOME/`` directory to use the "
-"``krb5.conf`` and ``login.conf`` you configured above."
+"First follow the steps in the `SPNEGO Pre-flight checklist <http://spnego."
+"sourceforge.net/pre_flight.html>`_. Run the ``HelloKDC`` connection test in "
+"the ``$TOMCAT_HOME/`` directory to use the ``krb5.conf`` and ``login.conf`` "
+"you configured above."
 msgstr ""
+"Folgen Sie zuerst den Anweisungen in der `SPNEGO Pre-flight Checkliste "
+"<http://spnego.sourceforge.net/pre_flight.html>`_. Führen Sie den "
+"``HelloKDC`` Verbindungstest im Verzeichnis ``$TOMCAT_HOME/`` aus und "
+"benutzen Sie dafür die Dateien ``krb5.conf`` und ``login.conf``, die Sie "
+"zuvor konfiguriert haben."
 
 #: ../../optional.rst:304
 msgid ""
-"Note that in the `Pre-flight checklist`, the `Do we know the address of "
-"the KDC?` section recommends using the KDC host name instead of the IP "
-"address."
+"Note that in the `Pre-flight checklist`, the `Do we know the address of the "
+"KDC?` section recommends using the KDC host name instead of the IP address."
 msgstr ""
+"Beachten Sie, in der `Pre-flight Checkliste`, der Absatz `Do we know the "
+"address of the KDC?` empfiehlt den Hostnamen des KDC zu verwenden statt der "
+"IP-Adresse."
 
 #: ../../optional.rst:307
 msgid ""
 "If you have completed the setup described here and the SSO is still not "
 "working, please make sure you are accessing the web application from a "
 "different machine than the one that runs the Tomcat server. Furthermore, "
-"check if `Integrated Windows Authentication "
-"<https://en.wikipedia.org/wiki/Integrated_Windows_Authentication>`_ is "
-"activated and the Signavio Workflow system is a trusted service, for "
-"instance by adding the address to the local intranet."
+"check if `Integrated Windows Authentication <https://en.wikipedia.org/wiki/"
+"Integrated_Windows_Authentication>`_ is activated and the Signavio Workflow "
+"system is a trusted service, for instance by adding the address to the local "
+"intranet."
 msgstr ""
+"Wenn Sie das hier beschriebene Setup vollständig durchlaufen haben und SSO "
+"trotzdem noch nicht funktioniert, stellen Sie bitte sicher, dass Sie von "
+"einem gesonderten Rechner auf die Webanwendung zugreifen und nicht direkt "
+"von dem Rechner, der den Tomcat Server ausführt. Stellen Sie weiterhin "
+"sicher, dass die `Integrierte Windows-Authentifizierung <https://en."
+"wikipedia.org/wiki/Integrated_Windows_Authentication>`_  aktiviert ist und "
+"Signavio Workflow zu den vertrauenswürdigen Diensten gehört, z.B. in dem Sie "
+"die Adresse zum lokalen Intranet hinzufügen."
 
 #: ../../optional.rst:311
 msgid "If you see an error page with the following error message:"
-msgstr ""
+msgstr "Wenn Sie eine Fehlerseite mit dem folgenden Fehler sehen:"
 
 #: ../../optional.rst:317
 msgid ""
-"The time difference between the computer accessing Signavio Workflow and "
-"the Kerberos server is bigger than 5 minutes. You will need to "
-"synchronise the time on all machines, e.g. by running ntp to fix the "
-"issue."
+"The time difference between the computer accessing Signavio Workflow and the "
+"Kerberos server is bigger than 5 minutes. You will need to synchronise the "
+"time on all machines, e.g. by running ntp to fix the issue."
 msgstr ""
-
-#~ msgid ""
-#~ msgstr ""
-
-#~ msgid "Login to Signavio Workflow with your initial user."
-#~ msgstr ""
-
-#~ msgid "Open the *Organization settings* and go to the tab *LDAP*."
-#~ msgstr ""
-
+"Der Zeitunterschied zwischen dem Computer, der auf Signavio Workflow "
+"zugreift und dem Kerberos Server ist größer als fünf Minuten. Sie müssen die "
+"Zeit zwischen allen Maschinen synchronisieren, z.B. in dem Sie ntp ausführen."

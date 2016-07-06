@@ -81,7 +81,7 @@ Validation includes the following checks.
 Start the validation by selecting *Validate*.
 If the configuration is valid, the *Synchronise* button is enabled.
 If the configuration is not valid, the page shows a list with more detailed information.
-In that case fix the issues and run the configuration again.
+In that case fix the issues and run the validation again.
 
 Every time you change the configuration, the validation must be executed again.
 
@@ -96,7 +96,7 @@ Start the synchronisation by clicking on *Synchronise*.
 If the synchronisation was successful, you will see a report of the added / updated users and groups.
 If the synchronisation failed, a list with more detailed information will be shown.
 
-Note the validation might take several seconds or minutes depending on the number of users you want to synchronise and the perfomance of the Active Directory.
+Note the synchronisation might take several seconds or minutes depending on the number of users you want to synchronise and the perfomance of the Active Directory.
 
 
 Single Sign-On using Windows and Kerberos/SPNEGO
