@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-27 15:05+0200\n"
-"PO-Revision-Date: 2016-06-28 17:54+0100\n"
+"POT-Creation-Date: 2016-07-06 11:47+0200\n"
+"PO-Revision-Date: 2016-07-06 15:55+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
 "MIME-Version: 1.0\n"
@@ -510,9 +510,9 @@ msgid ""
 "the configuration dialog by opening the Windows start menu and selecting "
 "``Program Files\\Apache Tomcat\\Configure Tomcat``\\ ."
 msgstr ""
-"Falls Sie Tomcat über den Windows Installer installiert haben, öffen Sie nun "
-"den Konfigurationsdialog über das ``Startmenü und Programme\\Apache Tomcat"
-"\\Configure Tomcat``\\ . "
+"Falls Sie Tomcat über den Windows Installer installiert haben, öffnen Sie "
+"nun den Konfigurationsdialog über das ``Startmenü und Programme\\Apache "
+"Tomcat\\Configure Tomcat``\\ . "
 
 #: ../../installation.rst:162
 msgid "The Java tab of the Tomcat configuration dialog"
@@ -1160,11 +1160,11 @@ msgstr ""
 
 #: ../../installation.rst:380
 msgid ""
-"Open the command cmd and go to your MongoDB\\bin directory, e.g. by "
+"Open the command line ``cmd`` and go to your MongoDB\\bin directory, e.g. by "
 "executing: ``cd C:\\MongoDB\\bin``"
 msgstr ""
-"Öffnen Sie im im Kommandozeilentool (“cmd”) dasVerzeichnis MongoDB\\bin, z."
-"B. in dem Sie das folgende Kommando ausführen: ``cd C:\\MongoDB\\bin``"
+"Öffnen Sie in der Kommandozeile ``cmd`` das Verzeichnis MongoDB\\bin, z.B. "
+"in dem Sie das folgende Kommando ausführen: ``cd C:\\MongoDB\\bin``"
 
 #: ../../installation.rst:381 ../../installation.rst:401
 msgid ""
@@ -1560,108 +1560,138 @@ msgid ""
 "Manager <http://nssm.cc/>`_ (NSSM) is such a free tool which allows you to "
 "wrap any executable into a Windows service."
 msgstr ""
+"Für Windows existieren mehrere Softwarelösungen, die es erlauben ein Skript "
+"als Service zu registrieren und die Ausführung zu überwachen. Der `Non-"
+"Sucking Service Manager <http://nssm.cc/>`_ (NSSM) ist ein entsprechendes "
+"Programm, welches es erlaubt beliebige ausführbare Dateien als Service zu "
+"registrieren."
 
 #: ../../installation.rst:503
 msgid "Download NSSM from http://nssm.cc/download"
-msgstr ""
+msgstr "Laden Sie NSSM von http://nssm.cc/download herunter"
 
 #: ../../installation.rst:504
 msgid ""
 "Create a new local installation directory for NSSM, e.g. ``C:\\Program Files"
 "\\NSSM``."
 msgstr ""
+"Legen Sie ein neues lokales Verzeichnis für NSSM an, z.B. ``C:\\Program Files"
+"\\NSSM``."
 
 #: ../../installation.rst:505
 msgid ""
 "Unzip the downloaded file and copy either the 64-bit ``win64\\nssm.exe`` or "
 "the 32-bit ``win32\\nssm.exe`` file to your new local directory."
 msgstr ""
+"Entpacken Sie die heruntergeladene Datei und kopieren Sie entweder die 64-"
+"Bit ``win64\\nssm.exe`` oder die 32-Bit ``win32\\nssm.exe`` Datei in Ihr "
+"neues lokales Verzeichnis."
 
 #: ../../installation.rst:506
 msgid ""
 "Add the installation directory of NSSM to the environment variable ``PATH`` "
 "in the Windows system settings."
 msgstr ""
+"Fügen Sie das Installationsverzeichnis von NSSM zu der Umgebungsvariable "
+"``PATH`` in den Windows Systemeinstellungen hinzu."
 
 #: ../../installation.rst:508
 msgid ""
 "This is necessary to use the ``nssm`` executable on the command line without "
 "an absolute path."
 msgstr ""
+"Dies ist notwendig um den ``nssm`` Befehl auf der Kommandozeile ohne "
+"absoluten Pfad ausführen zu können."
 
 #: ../../installation.rst:510
-msgid "Open the command line ``CMD`` with adminstrator privileges."
-msgstr ""
+msgid "Open the command line ``cmd`` with administrative privileges."
+msgstr "Öffnen Sie die Kommandozeile ``cmd`` mit Administratorrechten."
 
 #: ../../installation.rst:511
 msgid "Execute ``nssm install script-engine``."
-msgstr ""
+msgstr " Führen Sie ``nssm install script-engine`` aus."
 
 #: ../../installation.rst:512
 msgid "The NSSM configuration dialog open"
-msgstr ""
+msgstr "Der NSSM Konfigurationsdialog öffnet sich"
 
 #: ../../installation.rst:513
 msgid "In the *Application* tab fill in the following information:"
-msgstr ""
+msgstr "In dem Tab *Application* fügen Sie folgende Informationen hinzu:"
 
 #: ../../installation.rst:515
 msgid ""
 "*Path*: the path to the Node.js .exe file, e.g. ``C:\\Program Files\\nodejs"
 "\\node.exe``"
 msgstr ""
+"*Path*: der Pfad zu der Node.js .exe Datei, z.B. ``C:\\Program Files\\nodejs"
+"\\node.exe``"
 
 #: ../../installation.rst:516
 msgid ""
 "*Startup directory*: the value of ``$SCRIPT_ENGINE_HOME``, e.g. ``C:"
 "\\Program Files\\Script Engine``."
 msgstr ""
+"*Startup directory*: das richtige Verzeichnis von ``$SCRIPT_ENGINE_HOME``, z."
+"B. ``C:\\Program Files\\Script Engine``."
 
 #: ../../installation.rst:517
 msgid "*Arguments*: the exact value ``server.js``"
-msgstr ""
+msgstr "*Arguments*: der genaue Wert ``server.js``"
 
 #: ../../installation.rst:521
 msgid "In the *Details* tab fill in the following information:"
-msgstr ""
+msgstr "In dem Tab *Details* fügen Sie folgende Informationen hinzu:"
 
 #: ../../installation.rst:523
 msgid "*Display name*: the name of the service shown in ``services.msc``"
 msgstr ""
+"*Display name*: der Name des Service, welcher in  ``services.msc`` angezeigt "
+"wird"
 
 #: ../../installation.rst:524
 msgid ""
 "*Description*: a description which will help you to recognise the service"
 msgstr ""
+"*Description*: eine Beschreibung, die Ihnen dabei hilft den Service wieder "
+"zu erkennen"
 
 #: ../../installation.rst:525
 msgid ""
 "*Startup type*: choose if the service shall start automatically on startup "
 "or if you want to start it manually"
 msgstr ""
+"*Startup type*: wählen Sie ob der Service automatisch beim Systemstart oder "
+"manuell gestartet werden soll"
 
 #: ../../installation.rst:529
 msgid ""
 "Fill in any other service configuration settings you deem appropriate for "
 "your system in the other tabs."
 msgstr ""
+"Füllen Sie je nach Bedarf weitere Informationen in die anderen Tabs, die Sie "
+"für die Ausführung auf Ihrem System als notwendig erachten."
 
 #: ../../installation.rst:530
 msgid "Click on *Install service*."
-msgstr ""
+msgstr "Klicken Sie auf *Install service*."
 
 #: ../../installation.rst:532
 msgid "Now you can start the script engine with the following command: ::"
-msgstr ""
+msgstr "Nun können Sie die Script Engine mit dem folgenden Befehl starten: ::"
 
 #: ../../installation.rst:536
 msgid "You can check the status of the script engine by executing: ::"
 msgstr ""
+"Sie können den Status der Script Engine mit dem folgenden Befehl "
+"überprüfen: ::"
 
 #: ../../installation.rst:540
 msgid ""
 "In order to stop the script engine again, execute the following command: ::"
 msgstr ""
+"Um die Script Engine wieder zu stoppen, führen Sie den folgenden Befehl "
+"aus: ::"
 
 #: ../../installation.rst:544
 msgid ""
@@ -1669,6 +1699,11 @@ msgid ""
 "configured for the script engine, by default this ``http://localhost:8081``. "
 "If the engine is running, you will see a blank page with this content: ``{}``"
 msgstr ""
+"Solange die Script Engine ausgeführt wird, können Sie in Ihrem Browser die "
+"URL der Script Engine aufrufen, welche Sie in der Konfigurationsdatei "
+"festgelegt haben. Standardmäßig lautet die URL ``http://localhost:8081``. "
+"Wenn die Script Engine läuft, werden Sie eine leere Seite mit folgendem "
+"Inhalt sehen: ``{}``"
 
 #: ../../installation.rst:547
 msgid ""
@@ -1677,10 +1712,14 @@ msgid ""
 "you configured as display name. You can start and stop the script engine "
 "from here as well."
 msgstr ""
+"Als Alternative zu der Nutzung von ``nssm`` auf der Kommandozeile, können "
+"Sie die Script Engine auch über den Service in ``services.msc`` steuern und "
+"z.B. starten und stoppen. Die Script Engine wird unter dem Namen verfügbar "
+"sein, welchen Sie als Anzeigenamen konfiguriert haben."
 
 #: ../../installation.rst:552
 msgid "Linux"
-msgstr ""
+msgstr "Linux"
 
 #: ../../installation.rst:553
 msgid ""
@@ -1690,12 +1729,20 @@ msgid ""
 "you don't already have a template, you can find lots of matching templates "
 "for your Init system on the internet."
 msgstr ""
+"Auf Linux-Systemen wird diese Aufgabe meist durch Init-Skripte gelöst, die "
+"das Init-System der jeweiligen Distribution nutzen. Da es mehrere "
+"verschiedene Init-Systeme gibt, stellt Signavio kein Template für ein "
+"entsprechendes Skript zur Verfügung. Für den Fall, dass Sie selbst noch kein "
+"Template besitzen, finden Sie im Internet zahlreiche Beispiele für die "
+"verschiedenen Init-Systeme."
 
 #: ../../installation.rst:557
 msgid ""
 "As mentioned before, the script engine can be started from within ``"
 "$SCRIPT_ENGINE_HOME`` by executing: ::"
 msgstr ""
+"Wie bereits erwähnt, kann die Script Engine mit folgendem Befehl aus dem "
+"Verzeichnis ``$SCRIPT_ENGINE_HOME`` gestartet werden: ::"
 
 #: ../../installation.rst:561
 msgid ""
@@ -1705,6 +1752,11 @@ msgid ""
 "sure the user has appropriate access to the ``$SCRIPT_ENGINE_HOME`` "
 "directory."
 msgstr ""
+"Sie müssen sicher stellen, dass Ihr Init-Skript die Node.js Programmdatei "
+"``node`` startet und die JavaScript-Datei ``$SCRIPT_ENGINE_HOME/server.js`` "
+"als Argument nutzt. Beachten Sie, wenn Sie einen Nutzer mit eingeschränkten "
+"Rechten für die Ausführung nutzen, dann muss dieser entsprechenden Zugriff "
+"auf das ``$SCRIPT_ENGINE_HOME`` Verzeichnis haben."
 
 #: ../../installation.rst:567
 msgid "Configuring Signavio Workflow"
@@ -1770,6 +1822,13 @@ msgid ""
 "from the domain (``localhost`` for the same machine) and port the script "
 "engine is running on."
 msgstr ""
+"Die Konfigurationsdatei erlaubt die Konfiguration der Basis-URL, des Mail-"
+"Servers, der Datenbankverbindung und der Integration von Drittsystemen, zum "
+"Beispiel vom Signavio Process Editor. Insofern Sie die Signavio Workflow "
+"Script Engine installiert haben, müssen Sie zusätzlich die URL der Script "
+"Engine konfigurieren. Wie bereits in :ref:`install-script-engine` "
+"beschrieben, wird die URL aus der Domain (``localhost`` für die gleiche "
+"Maschine) und dem Port gebildet unter dem die Script Engine läuft."
 
 #: ../../installation.rst:595
 msgid "``effektif.baseUrl``"
@@ -1905,6 +1964,8 @@ msgid ""
 "(Optional) The URL of the Signavio Workflow Script Engine, e.g. ``http://"
 "localhost:8081``\\ ."
 msgstr ""
+"(Optional) Die URL der Signavio Workflow Script Engine, z.B. ``http://"
+"localhost:8081``\\ ."
 
 #: ../../installation.rst:610
 msgid ""
@@ -1994,28 +2055,4 @@ msgstr ""
 "jeden Tag ein neues Logfile mit einem entsprechenden Zeitstempel erstellt "
 "wird, zum Beispiel: ``effektif-2014-10-09.log``\\ . Die neuesten Einträge "
 "können zudem in der Datei effektif.log eingesehen werden. Logfiles, die "
-"älter als 30 Tage sind, werden automatisch gelöscht. "
-
-#~ msgid "workflow - directory"
-#~ msgstr "workflow - Verzeichnis"
-
-#~ msgid ""
-#~ "*Important: In general, it is possible to install Signavio Workflow on "
-#~ "other Linux distributions. However, the installation process can differ "
-#~ "from the following instructions and the Signavio team cannot offer "
-#~ "official support in case of an installation problem.*"
-#~ msgstr ""
-#~ "*Wichtig: Es stellt in der Regel kein Problem dar, Signavio Workflow auf "
-#~ "anderen Linux-Distributionen als Debian auszuführen. Der "
-#~ "Installationsvorgang kann jedoch von den unten stehenden Anweisungen "
-#~ "abweichen und das Signavio Team kann im Falle eines Installationsproblems "
-#~ "keinen offiziellen Support bereitstellen.*"
-
-#~ msgid ""
-#~ "In general, the configuration allows to configure the base URL of the "
-#~ "Signavio Workflow system, the mail server, the database connection and "
-#~ "integrations with third party systems (e.g. Signavio)."
-#~ msgstr ""
-#~ "Die Konfigurationsdatei erlaubt die Konfiguration der Basis-URL, des "
-#~ "Mailservers, der Datenbankverbindung und der Integration von "
-#~ "Drittsystemen, zum Beispiel von Signavio."
+"älter als 30 Tage sind, werden automatisch gelöscht."

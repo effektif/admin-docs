@@ -377,7 +377,7 @@ The following subsections will show you how to create the Signavio Workflow data
 Windows
 ^^^^^^^
 
-#. Open the command cmd and go to your MongoDB\bin directory, e.g. by executing: ``cd C:\MongoDB\bin``
+#. Open the command line ``cmd`` and go to your MongoDB\bin directory, e.g. by executing: ``cd C:\MongoDB\bin``
 #. If you have an admin user, create the Signavio Workflow user by executing: 
 
     * ``mongo.exe admin -u admin -p <enterYourAdminPasswordHere> --eval "db.createUser( { user: 'signavio', pwd: '<enterSignavioPasswordHere>', roles: ['dbAdminAnyDatabase', 'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )"``
@@ -507,7 +507,7 @@ The `Non-Sucking Service Manager <http://nssm.cc/>`_ (NSSM) is such a free tool 
 
     * This is necessary to use the ``nssm`` executable on the command line without an absolute path.
 
-#. Open the command line ``CMD`` with adminstrator privileges.
+#. Open the command line ``cmd`` with administrative privileges.
 #. Execute ``nssm install script-engine``.
 #. The NSSM configuration dialog open
 #. In the *Application* tab fill in the following information:
