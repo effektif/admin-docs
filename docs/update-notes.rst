@@ -8,8 +8,8 @@ It lists changes to technical requirements for new versions and additional instr
 
 Updating to Signavio Workflow 3.9
 ---------------------------------
-Effektif has been renamed to Signavio Workflow. Along with this change the colors of the default theme have changed as well. 
-You may notice the name of the database and database in the examples in this manual have been changed from ``effektif`` to ``signavio``. 
+Effektif has been renamed to Signavio Workflow. Along with this change, the colors of the default theme have changed as well. 
+You may notice the name of the database and database user in the examples in this manual have been changed from ``effektif`` to ``signavio``. 
 You don't need to change any of the names in your production environment. 
 But keep in mind that you might have to adjust any examples in this manual to your actual naming.
 

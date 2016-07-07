@@ -81,7 +81,7 @@ Then the Tomcat server will start automatically each time you restart your Windo
 Script Engine
 ^^^^^^^^^^^^^
 If you installed the script engine and wrapped it into a service, you can open the ``services.msc``, locate the Signavio Script Engine service and start it there.
-Otherwise open a command line, navigate to the $SCRIPT_ENGINE_HOME directory and execute: ::
+Otherwise open a command line, navigate to the ``$SCRIPT_ENGINE_HOME`` directory and execute: ::
 
     node server.js
 
@@ -128,7 +128,7 @@ The examples above show only the commands for Tomcat 8. However, if you use Tomc
 Script Engine
 ^^^^^^^^^^^^^
 If you installed the script engine and setup an Init script, execute the respective start command for the Init script.
-Otherwise open a command line, navigate to the $SCRIPT_ENGINE_HOME directory and execute: ::
+Otherwise open a command line, navigate to the ``$SCRIPT_ENGINE_HOME`` directory and execute: ::
 
     node server.js
 

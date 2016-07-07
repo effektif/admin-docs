@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2016, Signavio GmbH
-# This file is distributed under the same license as the Effektif
+# This file is distributed under the same license as the Signavio Workflow
 # administrators guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
 #
@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Effektif administrators guide 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-22 19:03+0200\n"
-"PO-Revision-Date: 2016-06-27 13:12+0100\n"
+"POT-Creation-Date: 2016-07-07 13:46+0200\n"
+"PO-Revision-Date: 2016-07-07 14:34+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif dev <dev@effektif.com>\n"
 "MIME-Version: 1.0\n"
@@ -39,19 +39,19 @@ msgstr "Updating to Signavio Workflow 3.9"
 
 #: ../../update-notes.rst:11
 msgid ""
-"Effektif has been renamed to Signavio Workflow. Along with this change the "
+"Effektif has been renamed to Signavio Workflow. Along with this change, the "
 "colors of the default theme have changed as well. You may notice the name of "
-"the database and database in the examples in this manual have been changed "
-"from ``effektif`` to ``signavio``. You don't need to change any of the names "
-"in your production environment. But keep in mind that you might have to "
-"adjust any examples in this manual to your actual naming."
+"the database and database user in the examples in this manual have been "
+"changed from ``effektif`` to ``signavio``. You don't need to change any of "
+"the names in your production environment. But keep in mind that you might "
+"have to adjust any examples in this manual to your actual naming."
 msgstr ""
-"Effektif has been renamed to Signavio Workflow. Along with this change the "
+"Effektif has been renamed to Signavio Workflow. Along with this change, the "
 "colors of the default theme have changed as well. You may notice the name of "
-"the database and database in the examples in this manual have been changed "
-"from ``effektif`` to ``signavio``. You don't need to change any of the names "
-"in your production environment. But keep in mind that you might have to "
-"adjust any examples in this manual to your actual naming."
+"the database and database user in the examples in this manual have been "
+"changed from ``effektif`` to ``signavio``. You don't need to change any of "
+"the names in your production environment. But keep in mind that you might "
+"have to adjust any examples in this manual to your actual naming."
 
 #: ../../update-notes.rst:16
 msgid ""
@@ -129,13 +129,13 @@ msgstr "Update MongoDB to MongoDB 3.2 (required)"
 msgid ""
 "Be aware, the update to Effektif 3.4 contains multiple changes in the "
 "underlying data schema which require several long running migrations. "
-"Depending on the size of your database, the migrations might take several"
-" seconds, or up to 20 minutes."
+"Depending on the size of your database, the migrations might take several "
+"seconds, or up to 20 minutes."
 msgstr ""
 "Be aware, the update to Effektif 3.4 contains multiple changes in the "
 "underlying data schema which require several long running migrations. "
-"Depending on the size of your database, the migrations might take several"
-" seconds, or up to 20 minutes."
+"Depending on the size of your database, the migrations might take several "
+"seconds, or up to 20 minutes."
 
 #: ../../update-notes.rst:43
 msgid "Updating Java and Tomcat"
@@ -400,4 +400,3 @@ msgid ""
 msgstr ""
 "Note: if you use Robomongo to access MongoDB, download the latest version in "
 "order to be able to connect to MongoDB 3.2."
-
