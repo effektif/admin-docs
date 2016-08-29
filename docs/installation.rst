@@ -455,18 +455,18 @@ Installing the Signavio Workflow Script Engine
 
 The Signavio Workflow Script Engine uses Node.js to execute JavaScript tasks within a workflow and an embedded HTTP server to communicate with the Signavio Workflow web application.
 You can either install the Script Engine on the same machine as the Signavio Workflow web application or on a separate machine.
-However, if you use a separate machine to run the script engine, you have to make sure the web application can connect over HTTP to the configured port of the script engine.
+However, if you use a separate machine to run the script engine, you have to make sure the web application can connect over HTTP to the configured port of the script engine and vice versa.
 In order to install the script engine, follow these instructions:
 
 #. Create new local directory for the script engine, e.g. ``C:\Program Files\Script Engine`` or ``/var/lib/script-engine``.
 
     * We will refer to this directory as ``$SCRIPT_ENGINE_HOME``.
 
-#. Copy the content of the directory ``$WORKFLOW_HOME/nodejs/`` to your newly created directory.
+#. Copy the content of the directory ``$WORKFLOW_HOME/script-engine/`` to your newly created directory.
 
     * You should find the file ``server.js`` directly within your directory: ``$SCRIPT_ENGINE_HOME/server.js``.
 
-#. Open ``$SCRIPT_ENGINE_HOME/configuration.onpremise.js`` and edit the values for the port and log files.
+#. Open ``$SCRIPT_ENGINE_HOME/configuration.onpremise.js`` and edit the values for the port, log files and Signavio Workflow URL.
 
     * Ensure that the port for the script engine is not used by any other application.
 
@@ -478,6 +478,7 @@ The configuration file offers the following options:
 
 =====================   ==================================================================
 ``port``                Defines the port the script engine will bind to and listen for incoming HTTP requests.
+``workflowUrl``         Defines the URL of the Signavio Workflow system (including port), e.g. ``http://localhost:8080``
 ``log`` ``file``        Defines the location and name of the script engine log file. You can an absolute or relative path. By default, the log files are stored in the same directory as the script engine.
 ``log`` ``errorFile``   Defines the location and name of the script engine error log file.
 =====================   ==================================================================

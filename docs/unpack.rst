@@ -10,7 +10,7 @@ The directory will contain the following files:
     * mongod.conf - configuration file for Linux
     * mongod.cfg - configuration file for Windows
 
-* nodejs - directory that contains the script engine
+* script-engine - directory that contains the script engine
 * optional - directory that contains optional resources
 	
 	* spnego - directory that contains resources to setup SSO with SPNEGO

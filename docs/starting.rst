@@ -37,6 +37,7 @@ If your version includes the execution of JavaScript tasks:
 * the Signavio Workflow Script Engine is configured
 
     * the port is set
+    * the Signavio Workflow URL is set
     * the log files are configured
     * the script engine URL is configured in the Signavio Workflow configuration file
 
