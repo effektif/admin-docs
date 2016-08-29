@@ -18,6 +18,8 @@ Note, you only need to configure this component if your version of Signavio Work
 In general, you can use script tasks only with a full version of Signavio Workflow and not as part of the Signavio Approval Workflow. 
 Refer to :ref:`install-script-engine` for more information on how to setup the Signavio Workflow Script Engine.
 
+If you update from a version prior to Effektif 3.4, please follow the instructions in the next section to update your Java, Tomcat and MongoDB version as well. You don't need to do an intermediate update to Effektif version 3.4 and can directly update to version 3.11 of Signavio Workflow.
+
 Updating to Effektif 3.4
 ------------------------
 Effektif 3.4 requires several infrastructure changes.
