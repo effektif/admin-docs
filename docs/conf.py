@@ -12,8 +12,7 @@
 # All configuration values have a default; values that are commented out
 # serve to show the default.
 
-import sys
-import os
+import sys, os, subprocess, shutil
 
 import effektif_sphinx_theme
 
@@ -23,6 +22,21 @@ def touch(name, times=None):
 
     with open(name, 'a'):
         os.utime(name, times)
+
+
+def clean_txts(path, language):
+    sys.path.append(path)
+    import clean_txts
+
+    if os.path.isdir('_build/html/_sources'):
+        shutil.rmtree('_build/html/_sources')
+
+    build_txt = subprocess.Popen(['sphinx-build', '-a', '-b', 'text','-D' 'language=' + language,\
+                                   '..', '../_build_txt'])
+    build_txt.wait()
+    clean_txts.clean()
+    shutil.move('../_build_txt/', '_build/html/_sources')
+
 
 def prepare(cwd, path, lang):
   sys.path.append(path)
