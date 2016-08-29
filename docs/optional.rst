@@ -215,7 +215,7 @@ Adding SPNEGO configuration files
 
 Copy ``krb5.conf`` to ``$TOMCAT_HOME/``, and edit the file:
 
-* replace four occurrences of ``ADTEST`` with the Windows domain name
+* replace five occurrences of ``ADTEST`` with the Windows domain name
 * replace ``123.45.6.7`` with the host name or IP address of the Active Directory server.
 
 ::
@@ -224,6 +224,7 @@ Copy ``krb5.conf`` to ``$TOMCAT_HOME/``, and edit the file:
 		default_tkt_enctypes = aes128-cts rc4-hmac des3-cbc-sha1 des-cbc-md5 des-cbc-crc
 		default_tgs_enctypes = aes128-cts rc4-hmac des3-cbc-sha1 des-cbc-md5 des-cbc-crc
 		permitted_enctypes   = aes128-cts rc4-hmac des3-cbc-sha1 des-cbc-md5 des-cbc-crc
+		default_realm = ADTEST.LOCAL
 
 	[realms]
 		ADTEST.LOCAL  = {
