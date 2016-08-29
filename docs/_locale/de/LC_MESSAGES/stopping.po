@@ -1,42 +1,49 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Signavio GmbH
+# This file is distributed under the same license as the Signavio Workflow
+# administrators guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-31 11:18+0100\n"
-"PO-Revision-Date: 2016-03-09 13:42+0100\n"
+"POT-Creation-Date: 2016-06-27 15:05+0200\n"
+"PO-Revision-Date: 2016-07-07 12:42+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
-"Language: de\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+"Language: de\n"
 "X-Generator: Poedit 1.6.9\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #: ../../stopping.rst:4
-msgid "Stopping Effektif"
-msgstr "Effektif herunterfahren"
+msgid "Stopping Signavio Workflow"
+msgstr "Signavio Workflow herunterfahren"
 
 #: ../../stopping.rst:5
 msgid ""
-"In order to stop the Effektif system completely, you have to stop the Tomcat "
-"application server and the MongoDB database. However, if you need to restart "
-"the Effektif system, it is sufficient to restart only the Tomcat server."
+"In order to stop the Signavio Workflow system completely, you have to stop "
+"the Tomcat application server and the MongoDB database. However, if you need "
+"to restart the Signavio Workflow system, it is sufficient to restart only "
+"the Tomcat server."
 msgstr ""
-"Stoppen Sie sowohl Tomcat als auch MongoDB, um Effektif herunterzufahren. "
-"Falls Sie Effektif neu starten möchten - zum Beispiel im Zuge eines Updates "
-"– ist es jedoch ausreichend lediglich Tomcat neu zu starten."
+"Stoppen Sie sowohl Tomcat als auch MongoDB, um Signavio Workflow "
+"herunterzufahren. Falls Sie Signavio Workflow neu starten möchten - zum "
+"Beispiel im Zuge eines Updates – ist es jedoch ausreichend lediglich den "
+"Tomcat neu zu starten."
 
-#: ../../stopping.rst:8
+#: ../../stopping.rst:9
 msgid "Windows"
 msgstr "Windows"
 
-#: ../../stopping.rst:11 ../../stopping.rst:26
+#: ../../stopping.rst:12 ../../stopping.rst:33
 msgid "Tomcat"
 msgstr "Tomcat"
 
-#: ../../stopping.rst:12
+#: ../../stopping.rst:13
 msgid ""
 "As already mentioned in the section :ref:`starting-effektif`\\ , the Tomcat "
 "configuration dialog offers a simple way to stop the Tomcat server. Simply "
@@ -49,11 +56,11 @@ msgstr ""
 "Startmenü ``Programme\\Apache Tomcat\\Configure Tomcat``\\ , wechseln Sie "
 "zum Tab *General* klicken Sie auf *Stop*\\ ."
 
-#: ../../stopping.rst:15 ../../stopping.rst:34
+#: ../../stopping.rst:17 ../../stopping.rst:43
 msgid "MongoDB"
 msgstr "MongoDB"
 
-#: ../../stopping.rst:16
+#: ../../stopping.rst:18
 msgid ""
 "If you have registered MongoDB as a Windows service, you can stop the "
 "database in two ways. Either you open the command line with adminstrator "
@@ -63,7 +70,7 @@ msgstr ""
 "können Sie MongoDB entweder über  den folgenden Befehl auf der Kommandozeile "
 "(mit Administratorrechten) ausführen: ::"
 
-#: ../../stopping.rst:20
+#: ../../stopping.rst:22
 msgid ""
 "Or you run ``services.msc``\\ , select MongoDB in the list of services and "
 "click on *Stop*\\ ."
@@ -72,11 +79,27 @@ msgstr ""
 "Services aus und klicken auf die *Stopp*\\ -Schaltfläche in den "
 "Diensteigenschaften."
 
-#: ../../stopping.rst:23
+#: ../../stopping.rst:25 ../../stopping.rst:52
+msgid "Script Engine"
+msgstr "Script Engine"
+
+#: ../../stopping.rst:26
+msgid ""
+"If you installed the script engine and wrapped it into a service, you can "
+"open the ``services.msc``, locate the Signavio Script Engine service and "
+"stop it there. If you are executing the script engine directly via command "
+"line, simply abort the process by pressing ``CTRL + C``."
+msgstr ""
+"Wenn Sie die Script Engine installiert und als Service registriert haben, "
+"können Sie ``services.msc`` öffnen und den Script Engine Service von dort "
+"stoppen. Wenn Sie die Script Engine direkt auf der Kommandozeile ausführen, "
+"können Sie den Prozess einfach mit ``STRG + C`` stoppen."
+
+#: ../../stopping.rst:30
 msgid "Debian"
 msgstr "Debian"
 
-#: ../../stopping.rst:27
+#: ../../stopping.rst:34
 msgid ""
 "If you installed Tomcat using a packet manager, you can simply run the "
 "following command. This might require root privileges. ::"
@@ -85,7 +108,7 @@ msgstr ""
 "können Sie zum Stoppen den folgenden Befehl ausführen – eventuell erfordert "
 "dies Root-Rechte: ::"
 
-#: ../../stopping.rst:31
+#: ../../stopping.rst:39
 msgid ""
 "The example above shows only the command for Tomcat 8. However, if you use "
 "Tomcat 7, the same command will work with the ``/etc/init.d/tomcat7`` script."
@@ -94,7 +117,7 @@ msgstr ""
 "Sie jedoch Tomcat 7 verwenden, sollten die gleichen Kommandos mit dem Skript "
 "``/etc/init.d/tomcat7`` funktionieren."
 
-#: ../../stopping.rst:35
+#: ../../stopping.rst:44
 msgid ""
 "If MongoDB was setup following the instructions in this guide, you can "
 "simply stop the MongoDB server by executing the following command. This "
@@ -104,7 +127,7 @@ msgstr ""
 "lässt sich das Programm wie folgt über die Kommandozeile stoppen - eventuell "
 "erfordert dies Root-Rechte: ::"
 
-#: ../../stopping.rst:39
+#: ../../stopping.rst:49
 msgid ""
 "In earlier versions of MongoDB, e.g. 2.4.x, the script had a different name: "
 "``/etc/init.d/mongodb``."
@@ -112,20 +135,14 @@ msgstr ""
 "In früheren Version von MongoDB, z.B. 2.4.x, hatte das Skript einen anderen "
 "Namen: ``/etc/init.d/mongodb``"
 
-#~ msgid ""
-#~ "If you installed Tomcat using a packet manager, you can simply run the "
-#~ "following command. Be aware, the execution might require root "
-#~ "privileges. ::"
-#~ msgstr ""
-#~ "Falls Sie Tomcat wie empfohlen über einen Paketmanager installiert haben, "
-#~ "können Sie zum Stoppen den folgenden Befehl ausführen – eventuell "
-#~ "erfordert dies Root-Rechte: ::"
-
-#~ msgid ""
-#~ "If MongoDB was setup following the instructions in this guide, you can "
-#~ "simply stop the MongoDB server by executing the following command. Be "
-#~ "aware, the execution might require root privileges. ::"
-#~ msgstr ""
-#~ "Falls Sie MongoDB wie empfohlen über einen Paketmanager installiert "
-#~ "haben, lässt sich das Programm wie folgt über die Kommandozeile stoppen - "
-#~ "eventuell erfordert dies Root-Rechte: ::"
+#: ../../stopping.rst:53
+msgid ""
+"If you installed the script engine and setup an Init script, execute the "
+"respective stop command for the Init script. If you are executing the script "
+"engine directly via command line, simply abort the process by pressing "
+"``CTRL + C``."
+msgstr ""
+"Wenn Sie die Script Engine installiert und ein Init-Skript aufgesetzt haben, "
+"stoppen Sie die Script Engine mit dem entsprechenden Befehl für das Init-"
+"Skript. Wenn Sie die Script Engine direkt auf der Kommandozeile ausführen, "
+"können Sie den Prozess einfach mit ``STRG + C`` stoppen."

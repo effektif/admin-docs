@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Signavio GmbH
+# This file is distributed under the same license as the Signavio Workflow
+# administrators guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Effektif administrators guide\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-29 15:28+0200\n"
+"PO-Revision-Date: 2016-08-29 15:37+0100\n"
+"Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
+"Language-Team: Signavio Workflow Dev <dev.effektif@signavio.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+"Language: en\n"
+"X-Generator: Poedit 1.6.9\n"
+
+#: ../../unpack.rst:2
+msgid "Unpack Signavio Workflow"
+msgstr "Unpack Signavio Workflow"
+
+#: ../../unpack.rst:3
+msgid ""
+"Unzip the signavio-workflow-{version}.zip to a directory of your choice, e."
+"g. ``/yourlocation/signavio-workflow-{version}`` In the rest of this guide, "
+"we'll refer to the Signavio Workflow home directory as ``$WORKFLOW_HOME``"
+"\\ . The directory will contain the following files:"
+msgstr ""
+"Unzip the signavio-workflow-{version}.zip to a directory of your choice, e."
+"g. ``/yourlocation/signavio-workflow-{version}`` In the rest of this guide, "
+"we'll refer to the Signavio Workflow home directory as ``$WORKFLOW_HOME``"
+"\\ . The directory will contain the following files:"
+
+#: ../../unpack.rst:7
+msgid "\\*.sh - Linux shell scripts"
+msgstr "\\*.sh - Linux shell scripts"
+
+#: ../../unpack.rst:8
+msgid "db - directory that contains MongoDB configuration files"
+msgstr "db - directory that contains MongoDB configuration files"
+
+#: ../../unpack.rst:10
+msgid "mongod.conf - configuration file for Linux"
+msgstr "mongod.conf - configuration file for Linux"
+
+#: ../../unpack.rst:11
+msgid "mongod.cfg - configuration file for Windows"
+msgstr "mongod.cfg - configuration file for Windows"
+
+#: ../../unpack.rst:13
+msgid "script-engine - directory that contains the script engine"
+msgstr "script-engine - directory that contains the script engine"
+
+#: ../../unpack.rst:14
+msgid "optional - directory that contains optional resources"
+msgstr "optional - directory that contains optional resources"
+
+#: ../../unpack.rst:16
+msgid "spnego - directory that contains resources to setup SSO with SPNEGO"
+msgstr "spnego - directory that contains resources to setup SSO with SPNEGO"
+
+#: ../../unpack.rst:18
+msgid "webapps - directory"
+msgstr "webapps - directory"
+
+#: ../../unpack.rst:20
+msgid "ROOT - this directory contains the web application"
+msgstr "ROOT - this directory contains the web application"
+
+#: ../../unpack.rst:22
+msgid ""
+"On Linux systems you need to make the scripts executable with the ``chmod`` "
+"command like this: ::"
+msgstr ""
+"On Linux systems you need to make the scripts executable with the ``chmod`` "
+"command like this: ::"

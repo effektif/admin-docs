@@ -1,120 +1,204 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Signavio GmbH
+# This file is distributed under the same license as the Signavio Workflow
+# administrators guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-27 11:13+0100\n"
-"PO-Revision-Date: 2016-03-08 18:43+0100\n"
+"POT-Creation-Date: 2016-08-29 16:03+0200\n"
+"PO-Revision-Date: 2016-08-29 16:10+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
-"Language: de\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+"Language: de\n"
 "X-Generator: Poedit 1.6.9\n"
-"X-Poedit-SourceCharset: UTF-8\n"
+
+#: ../../update.rst:4
+msgid "Updating Signavio Workflow"
+msgstr "Signavio Workflow aktualisieren"
 
 #: ../../update.rst:5
 msgid ""
-"This section will guide you through an update of your Effektif system. It "
-"assumes you have successfully installed an early version of Effektif. If you "
-"are installing Effektif for the first time, you can skip this chapter."
+"This section will guide you through an update of your Signavio Workflow "
+"system. It assumes you have successfully installed an early version of "
+"Signavio Workflow. If you are installing Signavio Workflow for the first "
+"time, you can skip this chapter."
 msgstr ""
 "Dieses Kapitel wird Sie schrittweise durch eine Aktualisierung Ihres "
-"Effektif-Systems führen. Hierbei wird angenommen, dass Sie bereits eine "
-"ältere Version von Effektif erfolgreich installiert haben. Wenn Sie Effektif "
-"zum ersten Mal installieren, können Sie dieses Kapitel überspringen."
+"Signavio Workflow-Systems führen. Hierbei wird angenommen, dass Sie bereits "
+"eine ältere Version von Signavio Workflow erfolgreich installiert haben. "
+"Wenn Sie Signavio Workflow zum ersten Mal installieren, können Sie dieses "
+"Kapitel überspringen."
 
-#: ../../update.rst:12
-msgid "Unpack Effektif"
-msgstr "Effektif entpacken"
-
-#: ../../update.rst:13
+#: ../../update.rst:9
 msgid ""
-"Unzip the effektif-{version}.zip to a directory of your choice, e.g. ``/"
-"yourlocation/effektif-{version}`` In the rest of this guide, we'll refer to "
-"the effektif home directory as ``$EFFEKTIF_HOME``\\ . The directory will "
-"contain the following files:"
+"First, check :ref:`update-notes` for additional information about the update "
+"to the latest version of Signavio Workflow before continuing."
 msgstr ""
-"Entpacken Sie das Archiv effektif-{version}.zip in einem Verzeichnis Ihrer "
-"Wahl, zum Beispiel: ``/yourlocation/effektif-{version}`` Dieses Verzeichnis "
-"wird im weiteren Text als ``$EFFEKTIF_HOME`` bezeichnet. Das Verzeichnis "
-"enthält die folgenden Dateien:"
+"Überprüfen Sie bitte zuerst ob :ref:`update-notes` weitere Hinweise zur "
+"Aktualisierung von Signavio Workflow auf die neueste Version enthält, bevor "
+"Sie weiterlesen."
 
-#: ../../update.rst:17
+#: ../../unpack.rst:2
+msgid "Unpack Signavio Workflow"
+msgstr "Signavio Workflow entpacken"
+
+#: ../../unpack.rst:3
+msgid ""
+"Unzip the signavio-workflow-{version}.zip to a directory of your choice, e."
+"g. ``/yourlocation/signavio-workflow-{version}`` In the rest of this guide, "
+"we'll refer to the Signavio Workflow home directory as ``$WORKFLOW_HOME``"
+"\\ . The directory will contain the following files:"
+msgstr ""
+"Entpacken Sie das Archiv signavio-workflow-{version}.zip in einem "
+"Verzeichnis Ihrer Wahl, zum Beispiel: ``/yourlocation/signavio-workflow-"
+"{version}`` Dieses Verzeichnis wird im weiteren Text als ``$WORKFLOW_HOME`` "
+"bezeichnet. Das Verzeichnis enthält die folgenden Dateien:"
+
+#: ../../unpack.rst:7
 msgid "\\*.sh - Linux shell scripts"
 msgstr "\\*.sh - Linux Shellskripte "
 
-#: ../../update.rst:18
+#: ../../unpack.rst:8
 msgid "db - directory that contains MongoDB configuration files"
 msgstr "db – Verzeichnis, das die MongoDB Konfigurationsdateien enthält"
 
-#: ../../update.rst:21
+#: ../../unpack.rst:10
+msgid "mongod.conf - configuration file for Linux"
+msgstr "mongod.conf – Konfigurationsdateien für Linux"
+
+#: ../../unpack.rst:11
 msgid "mongod.cfg - configuration file for Windows"
 msgstr "mongod.cfg - Konfigurationsdateien für Windows"
 
-#: ../../update.rst:23
-msgid "effektif - directory"
-msgstr "effektif - Verzeichnis "
+#: ../../unpack.rst:13
+msgid "script-engine - directory that contains the script engine"
+msgstr "script-engine - Verzeichnis, das die Dateien der Script Engine enthält"
 
-#: ../../update.rst:25
+#: ../../unpack.rst:14
+msgid "optional - directory that contains optional resources"
+msgstr "optional – Verzeichnis, das optional Ressourcen enthält"
+
+#: ../../unpack.rst:16
+msgid "spnego - directory that contains resources to setup SSO with SPNEGO"
+msgstr ""
+"spnego - Verzeichnis, das die Dateien enthält um SSO mit SPNEGO aufzusetzen"
+
+#: ../../unpack.rst:18
+msgid "webapps - directory"
+msgstr "webapps - Verzeichnis"
+
+#: ../../unpack.rst:20
 msgid "ROOT - this directory contains the web application"
 msgstr "ROOT - Verzeichnis, das die Webanwendung enthält"
 
-#: ../../update.rst:30
-msgid "Stop Effektif"
-msgstr "Effektif stoppen"
+#: ../../unpack.rst:22
+msgid ""
+"On Linux systems you need to make the scripts executable with the ``chmod`` "
+"command like this: ::"
+msgstr ""
+"Auf Linux-Systemen ist es notwendig, die Shell-Skripte ausführbar zu machen. "
+"Verwenden Sie hierfür den ``chmod``\\ -Befehl, wie zum Beispiel: ::"
 
-#: ../../update.rst:31
+#: ../../update.rst:18
+msgid "Stop Signavio Workflow"
+msgstr "Signavio Workflow stoppen"
+
+#: ../../update.rst:19
 msgid ""
 "Before you can start with the update process you have to shutdown the "
-"Effektif system. It is sufficient when you shutdown the Tomcat server "
-"Effektif is running on. You don't have to shutdown the MongoDB server. Refer "
-"to chapter :ref:`stopping` for information on how to stop Effektif."
+"Signavio Workflow system. It is sufficient when you shutdown the Tomcat "
+"server Signavio Workflow is running on. You don't have to shutdown the "
+"MongoDB server. If you installed the Signavio Workflow Script Engine, you "
+"need to stop it as well. Refer to chapter :ref:`stopping` for information on "
+"how to stop Signavio Workflow."
 msgstr ""
-"Bevor Sie mit der Aktualisierung des Effektif-Systems starten können, müssen "
-"Sie zunächst das Effektif-System herunterfahren. Es reicht aus, wenn Sie "
-"hierfür den Tomcat Server beenden, in welchem Effektif ausgeführt wird. Den "
-"MongoDB Server müssen Sie für die Aktualisierung nicht beenden. In Kapitel :"
-"ref:`stopping` finden Sie weitere Information darüber, wie Sie Effektif "
+"Bevor Sie mit der Aktualisierung des Signavio Workflow-Systems starten "
+"können, müssen Sie zunächst das Signavio Workflow-System herunterfahren. Es "
+"reicht aus, wenn Sie hierfür den Tomcat Server beenden, in welchem Signavio "
+"Workflow ausgeführt wird. Den MongoDB Server müssen Sie für die "
+"Aktualisierung nicht beenden. Insofern Sie die Signavio Workflow Script "
+"Engine installiert haben, müssen Sie diese auch stoppen. In Kapitel :ref:"
+"`stopping` finden Sie weitere Information darüber, wie Sie Signavio Workflow "
 "stoppen."
 
-#: ../../update.rst:34
+#: ../../update.rst:26
 msgid "Backup MongoDB"
 msgstr "Backup MongoDB"
 
-#: ../../update.rst:40
+#: ../../update.rst:27
+msgid ""
+"Updating Signavio Workflow to a newer version might involve changes in the "
+"database schema. Therefore, you are requested to backup the database before "
+"you go on. See chapter :ref:`backup` for more information on how to create a "
+"backup. Furthermore, the backup is necessary in case you have to revert "
+"Signavio Workflow to an older version, because changes of the database "
+"schema are in general not backward compatible. This means you cannot run an "
+"older version of Signavio Workflow with a database that was already migrated "
+"to a newer version."
+msgstr ""
+"Während der Aktualisierung von Signavio Workflow auf eine neuere Version "
+"kann es vorkommen, dass das Datenbankschema angepasst werden muss. "
+"Dementsprechend sollten Sie ein Backup der Datenbank anlegen, bevor Sie mit "
+"der Aktualisierung fortfahren. In Kapitel :ref:`backup` finden Sie mehr "
+"Informationen, wie Sie ein Backup mit MongoDB anlegen. Weiterhin ist das "
+"Backup notwendig für den Fall, dass Sie eine ältere Version von Signavio "
+"Workflow wieder herstellen müssen, denn ein verändertes Datenbankschema ist "
+"im Allgemeinen nicht abwärtskompatibel. Das bedeutet, dass Sie keine ältere "
+"Version von Signavio Workflow mit einer Datenbank betreiben können, die "
+"bereits auf ein neueres Schema migriert wurde."
+
+#: ../../update.rst:36
 msgid "Backup the configuration files"
 msgstr "Sichern der Konfigurationsdateien"
 
-#: ../../update.rst:41
+#: ../../update.rst:37
 msgid ""
 "During the first setup you have modified some configuration files and added "
-"the Effektif license file. In order to preserve those changes, you have to "
-"copy those files to another location before updating the Effektif system. "
-"You can find those files in the directory ``$TOMCAT_HOME/webapps/ROOT/WEB-"
-"INF/classes``\\ ."
+"the Signavio Workflow license file. In order to preserve those changes, you "
+"have to copy those files to another location before updating the Signavio "
+"Workflow system. You can find those files in the directory ``$TOMCAT_HOME/"
+"webapps/ROOT/WEB-INF/classes``\\ ."
 msgstr ""
 "Während der initialen Installation haben Sie einige Konfigurationsdateien "
-"bearbeitet und die Effektif Lizenzdatei installiert. Um diese Änderungen "
-"nicht zu verlieren, müssen die entsprechenden Konfigurationsdateien sichern "
-"und dafür an eine andere Stelle kopieren bevor Sie das Effektif-System "
-"aktualisieren. Sie finden die entsprechenden Dateien in dem Verzeichnis ``"
-"$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes``\\ ."
+"bearbeitet und die Signavio Workflow-Lizenzdatei installiert. Um diese "
+"Änderungen nicht zu verlieren, müssen die entsprechenden "
+"Konfigurationsdateien sichern und dafür an eine andere Stelle kopieren bevor "
+"Sie das Signavio Workflow-System aktualisieren. Sie finden die "
+"entsprechenden Dateien in dem Verzeichnis ``$TOMCAT_HOME/webapps/ROOT/WEB-"
+"INF/classes``\\ ."
+
+#: ../../update.rst:42
+msgid "``effektif-onpremise.properties``"
+msgstr "``effektif-onpremise.properties``"
+
+#: ../../update.rst:42
+msgid "Signavio Workflow configuration file"
+msgstr "Signavio Workflow-Konfigurationsdatei"
+
+#: ../../update.rst:43
+msgid "``logback.xml``"
+msgstr "``logback.xml``"
+
+#: ../../update.rst:43
+msgid "configuration file for Signavio Workflow logs"
+msgstr "Konfiguration der Signavio Workflow Logs"
 
 #: ../../update.rst:44
-msgid "Effektif configuration file"
-msgstr "Effektif Konfigurationsdatei"
+msgid "``license.xml``"
+msgstr "``license.xml``"
 
-#: ../../update.rst:45
-msgid "configuration file for Effektif logs"
-msgstr "Konfiguration der Effektif Logs"
+#: ../../update.rst:44
+msgid "Signavio Workflow license file"
+msgstr "Signavio Workflow-Lizenzdatei"
 
-#: ../../update.rst:46
-msgid "Effektif license file"
-msgstr "Effektif Lizenzdatei"
-
-#: ../../update.rst:49
+#: ../../update.rst:47
 msgid ""
 "Simply copy the files mentioned above to another location, e.g. ``"
 "$TOMCAT_HOME/webapps``\\ ."
@@ -122,23 +206,48 @@ msgstr ""
 "Kopieren Sie einfach die oben genannten Dateien in ein anderes Verzeichnis, "
 "z. B. ``$TOMCAT_HOME/webapps``\\ ."
 
-#: ../../update.rst:54
+#: ../../update.rst:49
+msgid ""
+"If you installed the Signavio Workflow Script Engine, you modified the "
+"configuration file ``configuration.onpremise.js`` of the script engine as "
+"well. You can find the configuration file directly within the ``"
+"$SCRIPT_ENGINE_HOME`` directory. Please copy it as well to another location "
+"before you go on."
+msgstr ""
+"Wenn Sie die Signavio Workflow Script Engine installiert haben, dann haben "
+"Sie auch die Konfigurationsdatei der Script Engine ``configuration.onpremise."
+"js`` angepasst. Sie finden die Konfigurationsdatei in dem Verzeichnis ``"
+"$SCRIPT_ENGINE_HOME``\\ . Bitte kopieren Sie diese Datei auch an eine andere "
+"Stelle, bevor Sie fort fahren."
+
+#: ../../update.rst:56
 msgid "Install a new version"
 msgstr "Eine neue Version installieren"
 
 #: ../../update.rst:57
-msgid "Delete the folder ``$TOMCAT_HOME/webapps/ROOT`` completely."
-msgstr "Löschen Sie den Ordner ``$TOMCAT_HOME/webapps/ROOT`` vollständig."
-
-#: ../../update.rst:58
 msgid ""
-"Copy the folder ``$EFFEKTIF_HOME/effektif/ROOT`` to ``$TOMCAT_HOME/webapps``"
-"\\ ."
+"In order to update the Signavio Workflow system, you have to replace the "
+"``ROOT`` folder in ``$TOMCAT_HOME/webapps`` with the newer version you can "
+"find in the extracted directory ``$WORKFLOW_HOME/webapps``\\ ."
 msgstr ""
-"Kopieren Sie den Ordner ``$EFFEKTIF_HOME/effektif/ROOT`` nach ``$TOMCAT_HOME/"
-"webapps``\\ ."
+"Um das Signavio Workflow-System zu aktualisieren, müssen Sie den Ordner "
+"``ROOT`` im Verzeichnis ``$TOMCAT_HOME/webapps`` durch die neuere Version "
+"ersetzen, welche sich in dem entpackten Verzeichnis ``$WORKFLOW_HOME/"
+"webapps`` befindet."
 
 #: ../../update.rst:59
+msgid "Delete the directory ``$TOMCAT_HOME/webapps/ROOT`` completely."
+msgstr "Löschen Sie den Ordner ``$TOMCAT_HOME/webapps/ROOT`` vollständig."
+
+#: ../../update.rst:60
+msgid ""
+"Copy the directory ``$WORKFLOW_HOME/webapps/ROOT`` to ``$TOMCAT_HOME/"
+"webapps``\\ ."
+msgstr ""
+"Kopieren Sie den Ordner ``$WORKFLOW_HOME/webapps/ROOT`` nach ``$TOMCAT_HOME/"
+"webapps``\\ ."
+
+#: ../../update.rst:61
 msgid ""
 "Copy the configuration files you have backed up in subsection :ref:`update-"
 "backup-configuration` back into the directory ``$TOMCAT_HOME/webapps/ROOT/"
@@ -148,7 +257,7 @@ msgstr ""
 "backup-configuration` gesichert haben, zurück in das Verzeichnis ``"
 "$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes``\\ ."
 
-#: ../../update.rst:60
+#: ../../update.rst:62
 msgid ""
 "If you have been provided with a new ``license.xml``\\ , copy the file into "
 "``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes`` and replace the existing file. "
@@ -160,53 +269,117 @@ msgstr ""
 "neue ``license.xml`` erhalten haben, können Sie weiterhin die alte Datei "
 "verwenden."
 
-#: ../../update.rst:65
+#: ../../update.rst:64
+msgid ""
+"If you have installed the Signavio Workflow Script Engine, you need to "
+"update the content of the ``$SCRIPT_ENGINE_HOME`` directory with the newer "
+"version you can find in the extracted directory ``$WORKFLOW_HOME/nodejs``\\ ."
+msgstr ""
+"Wenn Sie die Signavio Workflow Script Engine installiert haben, müssen Sie "
+"den Inhalt des Verzeichnis ``$SCRIPT_ENGINE_HOME`` durch die neuere Version "
+"in dem Verzeichnis  ``$WORKFLOW_HOME/nodejs`` ersetzen."
+
+#: ../../update.rst:66
+msgid "Delete all files in the directory ``$SCRIPT_ENGINE_HOME``."
+msgstr "Löschen Sie alle Dateien im Verzeichnis ``$SCRIPT_ENGINE_HOME``."
+
+#: ../../update.rst:67
+msgid ""
+"Copy the content of the directory ``$WORKFLOW_HOME/nodejs`` to your ``"
+"$SCRIPT_ENGINE_HOME`` directory."
+msgstr ""
+"Kopieren Sie den Inhalt des Verzeichnisses `$WORKFLOW_HOME/nodejs`` in Ihr ``"
+"$SCRIPT_ENGINE_HOME`` Verzeichnis."
+
+#: ../../update.rst:68
+msgid ""
+"Copy the configuration file ``configuration.onpremise.js`` you have backed "
+"up in subsection :ref:`update-backup-configuration` back into the directory "
+"``$SCRIPT_ENGINE_HOME``."
+msgstr ""
+"Kopieren Sie die Konfigurationsdatei  ``configuration.onpremise.js``, die "
+"Sie in Abschnitt :ref:`update-backup-configuration` gesichert haben, zurück "
+"in das Verzeichnis ``$SCRIPT_ENGINE_HOME``\\ ."
+
+#: ../../update.rst:73
 msgid "Revisit the configuration files"
 msgstr "Konfigurationsdateien anpassen"
 
-#: ../../update.rst:70
-msgid "Start Effektif"
-msgstr "Effektif starten"
-
-#: ../../update.rst:71
+#: ../../update.rst:74
 msgid ""
-"When you have successfully installed the new Effektif version and verified "
-"that the configuration files are up-to-date, you can restart the Effektif "
-"system. Refer to chapter :ref:`starting-effektif` for more information on "
-"how to start Effektif."
+"After upgrading to a newer version, it might be necessary to update existing "
+"configuration files and add, remove, or modify some values. Refer to "
+"section :ref:`configure-effektif` and make sure your Signavio Workflow "
+"configuration file is up-to-date before starting the system again."
 msgstr ""
-"Sobald Sie die neue Version von Effektif erfolgreich installiert und "
-"sichergestellt haben, dass die Konfiguration auf dem neuesten Stand ist, "
-"können Sie das Effektif-System wieder starten. Kapitel :ref:`starting-"
-"effektif` gibt Ihnen weitere Information, wie Sie Effektif starten."
+"Wenn das System auf eine neuere Version gebracht wird, kann es notwendig "
+"sein, die existierenden Konfigurationsdateien erneut anzupassen und "
+"entsprechende Werte hinzuzufügen, anzupassen oder zu entfernen. Konsultieren "
+"Sie hierfür erneut Abschnitt :ref:`configure-effektif` und stellen Sie "
+"sicher, dass Ihre Signavio Workflow-Konfiguration auf dem neuesten Stand ist "
+"bevor Sie das System wieder hochfahren."
 
-#: ../../update.rst:76
+#: ../../update.rst:78
+msgid "Start Signavio Workflow"
+msgstr "Signavio Workflow starten"
+
+#: ../../update.rst:79
+msgid ""
+"When you have successfully installed the new Signavio Workflow version and "
+"verified that the configuration files are up-to-date, you can restart the "
+"Signavio Workflow system. Refer to chapter :ref:`starting-effektif` for more "
+"information on how to start Signavio Workflow."
+msgstr ""
+"Sobald Sie die neue Version von Signavio Workflow erfolgreich installiert "
+"und sichergestellt haben, dass die Konfiguration auf dem neuesten Stand ist, "
+"können Sie das Signavio Workflow-System wieder starten. Kapitel :ref:"
+"`starting-effektif` gibt Ihnen weitere Information, wie Sie Signavio "
+"Workflow starten."
+
+#: ../../update.rst:82
+msgid ""
+"During the first startup the Signavio Workflow system will migrate the "
+"database if there are any outstanding schema changes. Therefore, the startup "
+"might take a short while depending on the size of your database. If the "
+"system doesn't become available again within minutes, please check the "
+"Signavio Workflow log file for any new error reports."
+msgstr ""
+"Während der initialen Installation haben Sie einige Konfigurationsdateien "
+"bearbeitet und die Signavio Workflow-Lizenzdatei installiert. Um diese "
+"Änderungen nicht zu verlieren, müssen die entsprechenden "
+"Konfigurationsdateien sichern und dafür an eine andere Stelle kopieren bevor "
+"Sie das Signavio Workflow-System aktualisieren. Sie finden die "
+"entsprechenden Dateien in dem Verzeichnis ``$TOMCAT_HOME/webapps/ROOT/WEB-"
+"INF/classes``\\ ."
+
+#: ../../update.rst:87
 msgid "Restore an older version"
 msgstr "Eine ältere Version wieder herstellen"
 
-#: ../../update.rst:77
+#: ../../update.rst:88
 msgid ""
 "In case of exceptional problems you might want to restore an older version "
-"of Effektif. Be aware, if you revert Effektif to an older version, it is not "
-"guaranteed that you can keep on using your current database. The upgrade to "
-"a newer version can involve schema changes that render the database "
-"incompatible with older versions of Effektif. In this situation, the "
-"Effektif system will not start if it detects a newer version of the database "
-"schema which it doesn't support. This is the reason why you should create a "
-"backup before updating the system."
+"of Signavio Workflow. Be aware, if you revert Signavio Workflow to an older "
+"version, it is not guaranteed that you can keep on using your current "
+"database. The upgrade to a newer version can involve schema changes that "
+"render the database incompatible with older versions of Signavio Workflow. "
+"In this situation, the Signavio Workflow system will not start if it detects "
+"a newer version of the database schema which it doesn't support. This is the "
+"reason why you should create a backup before updating the system."
 msgstr ""
 "Im Falle eines außergewöhnlichen Fehlers kann es notwendig sein, das System "
-"wieder auf eine ältere Version von Effektif zurückzusetzen. Seien Sie sich "
-"bitte bewusst, dass es keine Garantie gibt, dass Sie eine ältere Version von "
-"Effektif mit der aktuellen Datenbank betreiben können. Die Aktualisierung "
-"von Effektif auf eine neuere Version kann Änderungen im Datenbankschema nach "
-"sich ziehen, die wiederum die Datenbank inkompatibel zu älteren Versionen "
-"von Effektif machen. In diesen Situation wird das Effektif-System nicht "
-"starten, wenn es eine neuere Datenbankversion als die vom System "
-"unterstützte Version erkennt. Aus diesem Grund sollten Sie vor jeder "
-"Aktualisierung ein Backup der Datenbank anlegen."
+"wieder auf eine ältere Version von Signavio Workflow zurückzusetzen. Seien "
+"Sie sich bitte bewusst, dass es keine Garantie gibt, dass Sie eine ältere "
+"Version von Signavio Workflow mit der aktuellen Datenbank betreiben können. "
+"Die Aktualisierung von Signavio Workflow auf eine neuere Version kann "
+"Änderungen im Datenbankschema nach sich ziehen, die wiederum die Datenbank "
+"inkompatibel zu älteren Versionen von Signavio Workflow machen. In diesen "
+"Situation wird das Signavio Workflow-System nicht starten, wenn es eine "
+"neuere Datenbankversion als die vom System unterstützte Version erkennt. Aus "
+"diesem Grund sollten Sie vor jeder Aktualisierung ein Backup der Datenbank "
+"anlegen."
 
-#: ../../update.rst:79
+#: ../../update.rst:94
 msgid ""
 "In order to restore an older version, you can follow the instructions in "
 "this chapter again. However, instead of creating a backup you should restore "
@@ -216,182 +389,68 @@ msgstr ""
 "Anweisungen in diesem Kapitel folgen. Jedoch statt ein Backup anzulegen, "
 "müssen Sie nun ein zuvor erstelltes Backup wieder herstellen."
 
-#: ../../update.rst:81
-msgid "Unpack the older version of Effektif, see :ref:`update-unpack-effektif`"
-msgstr ""
-"Entpacken Sie die ältere Version von Effektif, vgl. :ref:`update-unpack-"
-"effektif`"
-
-#: ../../update.rst:82
-msgid "Stop the Effektif system, see :ref:`update-stop-effektif`"
-msgstr "Stoppen Sie das Effektif-System, vgl. :ref:`update-stop-effektif`"
-
-#: ../../update.rst:83
+#: ../../update.rst:96
 msgid ""
-"Restore an earlier back up that was taken while the old Effektif version was "
-"deployed. See chapter :ref:`restore` for more information on how to restore "
-"a backup."
+"Unpack the older version of Signavio Workflow, see :ref:`update-unpack-"
+"effektif`"
+msgstr ""
+"Entpacken Sie die ältere Version von Signavio Workflow, vgl. :ref:`update-"
+"unpack-effektif`"
+
+#: ../../update.rst:97
+msgid "Stop the Signavio Workflow system, see :ref:`update-stop-effektif`"
+msgstr ""
+"Stoppen Sie das Signavio Workflow-System, vgl. :ref:`update-stop-effektif`"
+
+#: ../../update.rst:98
+msgid ""
+"Restore an earlier back up that was taken while the old Signavio Workflow "
+"version was deployed. See chapter :ref:`restore` for more information on how "
+"to restore a backup."
 msgstr ""
 "Stellen Sie nun ein Backup der Datenbank wieder her, welches erstellt wurde, "
-"während die alte Effektif Version installiert war. Im Kapitel :ref:`restore` "
-"finden Sie weitere Hinweise, wie Sie ein Backup wieder herstellen können."
+"während die alte Signavio Workflow Version installiert war. Im Kapitel :ref:"
+"`restore` finden Sie weitere Hinweise, wie Sie ein Backup wieder herstellen "
+"können."
 
-#: ../../update.rst:84
+#: ../../update.rst:99
 msgid "Backup the configuration files, see :ref:`update-backup-configuration`"
 msgstr ""
 "Sichern Sie die Konfigurationsdateien, vgl. :ref:`update-backup-"
 "configuration`"
 
-#: ../../update.rst:85
+#: ../../update.rst:100
 msgid ""
-"Install the older version in ``$TOMCAT_HOME/webapps``\\ , see :ref:`update-"
-"install-version`"
+"Install the older version of the webapp in ``$TOMCAT_HOME/webapps``\\ , see :"
+"ref:`update-install-version`"
 msgstr ""
-"Installieren Sie die ältere Version von Effektif in ``$TOMCAT_HOME/webapps``"
-"\\ , vgl. :ref:`update-install-version`"
+"Installieren Sie die ältere Version der Webanwendung in ``$TOMCAT_HOME/"
+"webapps``\\ , vgl. :ref:`update-install-version`"
 
-#: ../../update.rst:86
+#: ../../update.rst:101
+msgid ""
+"Install the older version of the script engine in ``$SCRIPT_ENGINE_HOME``, "
+"see :ref:`update-install-version`"
+msgstr ""
+"Installieren Sie die ältere Version der Script Engine in ``"
+"$SCRIPT_ENGINE_HOME``\\ , vgl. :ref:`update-install-version`"
+
+#: ../../update.rst:102
 msgid ""
 "Check the configuration files again, see :ref:`update-revisit-configuration`"
 msgstr ""
 "Überprüfen Sie die Konfigurationsdateien erneut, vgl. :ref:`update-revisit-"
 "configuration`"
 
-#: ../../update.rst:87
-msgid "Start the Effektif system, see :ref:`starting-effektif`"
-msgstr "Starten Sie das Effektif-System, vgl. :ref:`starting-effektif`"
-
-#: ../../update.rst:89
-msgid ""
-"Now, the Effektif system should be running with the older version again."
-msgstr "Jetzt sollte das Effektif-System wieder mit der alten Version laufen."
-
-#: ../../update.rst:55
-msgid ""
-"In order to update the Effektif system, you have to replace the ``ROOT`` "
-"folder in ``$TOMCAT_HOME/webapps`` with the newer version you can find in "
-"the extracted directory ``$EFFEKTIF_HOME/effektif``\\ ."
+#: ../../update.rst:103
+msgid "Start the Signavio Workflow system, see :ref:`starting-effektif`"
 msgstr ""
-"Um das Effektif-System zu aktualisieren, müssen Sie den Ordner ``ROOT`` im "
-"Verzeichnis ``$TOMCAT_HOME/webapps`` durch die neuere Version ersetzen, "
-"welche sich in dem entpackten Verzeichnis ``$EFFEKTIF_HOME/effektif`` "
-"befindet."
+"Starten Sie das Signavio Workflow-System, vgl. :ref:`starting-effektif`"
 
-#: ../../update.rst:35
+#: ../../update.rst:105
 msgid ""
-"Updating Effektif to a newer version might involve changes in the database "
-"schema. Therefore, you are requested to backup the database before you go "
-"on. See chapter :ref:`backup` for more information on how to create a "
-"backup. Furthermore, the backup is necessary in case you have to revert "
-"Effektif to an older version, because changes of the database schema are in "
-"general not backward compatible. This means you cannot run an older version "
-"of Effektif with a database that was already migrated to a newer version."
+"Now, the Signavio Workflow system should be running with the older version "
+"again."
 msgstr ""
-"Während der Aktualisierung von Effektif auf eine neuere Version kann es "
-"vorkommen, dass das Datenbankschema angepasst werden muss. Dementsprechend "
-"sollten Sie ein Backup der Datenbank anlegen, bevor Sie mit der "
-"Aktualisierung fortfahren. In Kapitel :ref:`backup` finden Sie mehr "
-"Informationen, wie Sie ein Backup mit MongoDB anlegen. Weiterhin ist das "
-"Backup notwendig für den Fall, dass Sie eine ältere Version von Effektif "
-"wieder herstellen müssen, denn ein verändertes Datenbankschema ist im "
-"Allgemeinen nicht abwärtskompatibel. Das bedeutet, dass Sie keine ältere "
-"Version von Effektif mit einer Datenbank betreiben können, die bereits auf "
-"ein neueres Schema migriert wurde."
-
-#: ../../update.rst:44
-msgid "``effektif-onpremise.properties``"
-msgstr "``effektif-onpremise.properties``"
-
-#: ../../update.rst:45
-msgid "``logback.xml``"
-msgstr "``logback.xml``"
-
-#: ../../update.rst:46
-msgid "``license.xml``"
-msgstr "``license.xml``"
-
-#: ../../update.rst:73
-msgid ""
-"During the first startup the Effektif system will migrate the database if "
-"there are any outstanding schema changes. Therefore, the startup might take "
-"a short while depending on the size of your database. If the system doesn't "
-"become available again within minutes, please check the Effektif log file "
-"for any new error reports."
-msgstr ""
-"Während des ersten Starts von Effektif wird die Datenbank migriert, insofern "
-"es Änderungen im Datenbankschema gibt. Deswegen kann der Start etwas länger "
-"dauern, abhängig von der Größe Ihrer Datenbank. Wenn das System jedoch nicht "
-"innerhalb von Minuten wieder verfügbar wird, überprüfen Sie bitte die "
-"Effektif-Logdateien auf neue Fehlermeldungen."
-
-#: ../../update.rst:4
-msgid "Updating Effektif"
-msgstr "Effektif aktualisieren"
-
-#: ../../update.rst:7
-msgid ""
-"First, check :ref:`update-notes` for additional information about the update "
-"to the latest version of Effektif before continuing."
-msgstr ""
-"Überprüfen Sie bitte zuerst ob :ref:`update-notes` weitere Hinweise zur "
-"Aktualisierung von Effektif auf die neueste Version enthält, bevor Sie "
-"weiterlesen."
-
-#: ../../update.rst:20
-msgid "mongod.conf - configuration file for Linux"
-msgstr "mongod.conf – Konfigurationsdateien für Linux"
-
-#: ../../update.rst:66
-msgid ""
-"After upgrading to a newer version, it might be necessary to update existing "
-"configuration files and add, remove, or modify some values. Refer to "
-"section :ref:`configure-effektif` and make sure your Effektif configuration "
-"file is up-to-date before starting the system again."
-msgstr ""
-"Wenn das System auf eine neuere Version gebracht wird, kann es notwendig "
-"sein, die existierenden Konfigurationsdateien erneut anzupassen und "
-"entsprechende Werte hinzuzufügen, anzupassen oder zu entfernen. Konsultieren "
-"Sie hierfür erneut Abschnitt :ref:`configure-effektif` und stellen Sie "
-"sicher, dass Ihre Effektif Konfiguration auf dem neuesten Stand ist bevor "
-"Sie das System wieder hochfahren."
-
-#~ msgid "Update"
-#~ msgstr "Aktualisieren"
-
-#~ msgid "mongodb.conf - configuration file for Linux"
-#~ msgstr "mongodb.conf – Konfigurationsdateien für Linux"
-
-#~ msgid ""
-#~ "Upon upgrading to a newer version, it might be necessary to update "
-#~ "existing configuration files and add, remove, or modify some values. "
-#~ "Therefore, it necessary that you refer to section :ref:`configure-"
-#~ "effektif` and make sure your Effektif configuration file is up-to-date "
-#~ "before starting the system again."
-#~ msgstr ""
-#~ "Wenn das System auf eine neuere Version gebracht wird, kann es notwendig "
-#~ "sein, die existierenden Konfigurationsdateien erneut anzupassen und "
-#~ "entsprechend Werte hinzuzufügen, anzupassen oder zu entfernen. "
-#~ "Konsultieren Sie hierfür erneut Abschnitt :ref:`configure-effektif` und "
-#~ "stellen Sie sicher, dass Ihre Effektif Konfiguration auf dem neuesten "
-#~ "Stand ist bevor Sie das System wieder hochfahren."
-
-#~ msgid ""
-#~ "Updating Effektif to a newer version might involve changes in the "
-#~ "database schema. Therefore, you are requested to backup the database "
-#~ "before you go on. See chapter :ref:`backup` for more information on how "
-#~ "to create a backup."
-#~ msgstr ""
-#~ "Während der Aktualisierung von Effektif auf eine neuere Version kann es "
-#~ "vorkommen, dass das Datenbankschema angepasst werden muss. "
-#~ "Dementsprechend sollten Sie ein Backup der Datenbank anlegen, bevor Sie "
-#~ "mit der Aktualisierung fortfahren. In Kapitel :ref:`backup` finden Sie "
-#~ "mehr Informationen, wie Sie ein Backup mit MongoDB anlegen."
-
-#~ msgid "effektif-onpremise.properties"
-#~ msgstr "effektif-onpremise.properties"
-
-#~ msgid "logback.xml"
-#~ msgstr "logback.xml"
-
-#~ msgid "license.xml"
-#~ msgstr "license.xml"
+"Jetzt sollte das Signavio Workflow-System wieder mit der alten Version "
+"laufen."

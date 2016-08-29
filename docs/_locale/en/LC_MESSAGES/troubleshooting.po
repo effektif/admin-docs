@@ -1,18 +1,23 @@
-# 
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Signavio GmbH
+# This file is distributed under the same license as the Effektif
+# administrators guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-31 11:18+0100\n"
-"PO-Revision-Date: 2015-06-16 15:26+0100\n"
+"POT-Creation-Date: 2016-06-22 19:03+0200\n"
+"PO-Revision-Date: 2016-06-27 13:11+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
-"Language: en\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+"Language: en\n"
 "X-Generator: Poedit 1.6.9\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #: ../../troubleshooting.rst:2
 msgid "Troubleshooting"
@@ -25,62 +30,106 @@ msgstr "Where are the log files?"
 #: ../../troubleshooting.rst:6
 msgid ""
 "There are multiple different log files that yield information in case of an "
-"error scenario. The following subsections will assist you in finding the log"
-" files for every part of the Effektif application. The most important one, "
-"regarding the Effektif system is the ``effektif.log``\\ . It will contain "
-"any application related log entries."
+"error scenario. The following subsections will assist you in finding the log "
+"files for every part of the Signavio Workflow application. The most "
+"important one, regarding the Signavio Workflow system is the ``effektif.log``"
+"\\ . It will contain any application related log entries."
 msgstr ""
 "There are multiple different log files that yield information in case of an "
-"error scenario. The following subsections will assist you in finding the log"
-" files for every part of the Effektif application. The most important one, "
-"regarding the Effektif system is the ``effektif.log``\\ . It will contain "
-"any application related log entries."
+"error scenario. The following subsections will assist you in finding the log "
+"files for every part of the Signavio Workflow application. The most "
+"important one, regarding the Signavio Workflow system is the ``effektif.log``"
+"\\ . It will contain any application related log entries."
 
-#: ../../troubleshooting.rst:9
-msgid "Effektif"
-msgstr "Effektif"
+#: ../../troubleshooting.rst:12
+msgid "Signavio Workflow"
+msgstr "Signavio Workflow"
 
-#: ../../troubleshooting.rst:10
+#: ../../troubleshooting.rst:13
 msgid ""
-"The Effektif log file effektif.log can be found in the location you "
-"configured in the logging configuration file ``$TOMCAT_HOME/webapps/ROOT"
-"/WEB-INF/classes/logback.xml``\\ . This file contains the line: ::"
+"The Signavio Workflow log file effektif.log can be found in the location you "
+"configured in the logging configuration file ``$TOMCAT_HOME/webapps/ROOT/WEB-"
+"INF/classes/logback.xml``\\ . This file contains the line: ::"
 msgstr ""
-"The Effektif log file effektif.log can be found in the location you "
-"configured in the logging configuration file ``$TOMCAT_HOME/webapps/ROOT"
-"/WEB-INF/classes/logback.xml``\\ . This file contains the line: ::"
-
-#: ../../troubleshooting.rst:14
-msgid ""
-"The value contains the directory of the log file. Besides the "
-"``effektif.log`` the directory contains more log files for every day of the "
-"past 30 days the server was running. If you are looking for any information "
-"about incidents on a specific date, open the log file with the respective "
-"timestamp."
-msgstr ""
-"The value contains the directory of the log file. Besides the "
-"``effektif.log`` the directory contains more log files for every day of the "
-"past 30 days the server was running. If you are looking for any information "
-"about incidents on a specific date, open the log file with the respective "
-"timestamp."
-
-#: ../../troubleshooting.rst:17
-msgid "MongoDB"
-msgstr "MongoDB"
+"The Signavio Workflow log file effektif.log can be found in the location you "
+"configured in the logging configuration file ``$TOMCAT_HOME/webapps/ROOT/WEB-"
+"INF/classes/logback.xml``\\ . This file contains the line: ::"
 
 #: ../../troubleshooting.rst:18
 msgid ""
-"The MongoDB log file is configured by the logpath option. This is either "
-"defined in the MongoDB configuration file that you reference when starting "
-"MongoDB or directly as a start parameter of MongoDB. Anyway, the value of "
-"this parameter will tell you where to find the log file."
+"The value contains the directory of the log file. Besides the "
+"``effektif.log`` the directory contains more log files for every day of "
+"the past 30 days the server was running. If you are looking for any "
+"information about incidents on a specific date, open the log file with "
+"the respective timestamp."
 msgstr ""
-"The MongoDB log file is configured by the logpath option. This is either "
-"defined in the MongoDB configuration file that you reference when starting "
-"MongoDB or directly as a start parameter of MongoDB. Anyway, the value of "
-"this parameter will tell you where to find the log file."
+"The value contains the directory of the log file. Besides the "
+"``effektif.log`` the directory contains more log files for every day of "
+"the past 30 days the server was running. If you are looking for any "
+"information about incidents on a specific date, open the log file with "
+"the respective timestamp."
 
 #: ../../troubleshooting.rst:22
+msgid "Script Engine"
+msgstr "Script Engine"
+
+#: ../../troubleshooting.rst:23
+msgid ""
+"The Signavio Workflow Script Engine log files have been configured in the "
+"configuration file ``$SCRIPT_ENGINE_HOME/configuration.onpremise.js``. The "
+"values for the entries ``log`` ``file`` and ``log`` ``errorFile`` will tell "
+"you the name and location of the log files."
+msgstr ""
+"The Signavio Workflow Script Engine log files have been configured in the "
+"configuration file ``$SCRIPT_ENGINE_HOME/configuration.onpremise.js``. The "
+"values for the entries ``log`` ``file`` and ``log`` ``errorFile`` will tell "
+"you the name and location of the log files."
+
+#: ../../troubleshooting.rst:27
+msgid "MongoDB"
+msgstr "MongoDB"
+
+#: ../../troubleshooting.rst:28
+msgid ""
+"The MongoDB log file is configured by the logpath option. This is either "
+"defined in the MongoDB configuration file that you reference when "
+"starting MongoDB or directly as a start parameter of MongoDB. Anyway, the"
+" value of this parameter will tell you where to find the log file."
+msgstr ""
+"The MongoDB log file is configured by the logpath option. This is either "
+"defined in the MongoDB configuration file that you reference when "
+"starting MongoDB or directly as a start parameter of MongoDB. Anyway, the"
+" value of this parameter will tell you where to find the log file."
+
+#: ../../troubleshooting.rst:32
+msgid ""
+"On Linux, one default location where the log file can be found is "
+"``/var/log/mongodb/mongodb.log``\\ . Whereas default locations for the "
+"configuration file are ``/etc/mongodb.conf`` or ``/etc/mongod.conf``\\ . "
+"These locations can change depending on the distribution and depend on "
+"how you have installed MongoDB."
+msgstr ""
+"On Linux, one default location where the log file can be found is "
+"``/var/log/mongodb/mongodb.log``\\ . Whereas default locations for the "
+"configuration file are ``/etc/mongodb.conf`` or ``/etc/mongod.conf``\\ . "
+"These locations can change depending on the distribution and depend on "
+"how you have installed MongoDB."
+
+#: ../../troubleshooting.rst:32
+msgid ""
+"On Linux, one default location where the log file can be found is ``/var/log/"
+"mongodb/mongodb.log``\\ . Whereas default locations for the configuration "
+"file are ``/etc/mongodb.conf`` or ``/etc/mongod.conf``\\ . These locations "
+"can change depending on the distribution and depend on how you have "
+"installed MongoDB."
+msgstr ""
+"On Linux, one default location where the log file can be found is ``/var/log/"
+"mongodb/mongodb.log``\\ . Whereas default locations for the configuration "
+"file are ``/etc/mongodb.conf`` or ``/etc/mongod.conf``\\ . These locations "
+"can change depending on the distribution and depend on how you have "
+"installed MongoDB."
+
+#: ../../troubleshooting.rst:36
 msgid ""
 "If you are using Windows and followed the instructions in this guide to "
 "setup MongoDB, you should find the log file in your MongoDB installation "
@@ -90,152 +139,251 @@ msgstr ""
 "setup MongoDB, you should find the log file in your MongoDB installation "
 "directory ``$MONGO_HOME\\logs``\\ ."
 
-#: ../../troubleshooting.rst:25
+#: ../../troubleshooting.rst:39
 msgid "Tomcat"
 msgstr "Tomcat"
 
-#: ../../troubleshooting.rst:26
+#: ../../troubleshooting.rst:40
 msgid ""
-"If not configured otherwise, the log files of the Apache Tomcat application "
-"server can be found either in the installation directory of the Tomcat "
-"``$TOMCAT_HOME\\logs`` (Windows) or a common log directory e.g. "
-"``/var/log/tomcat7`` (Linux)."
+"If not configured otherwise, the log files of the Apache Tomcat "
+"application server can be found either in the installation directory of "
+"the Tomcat ``$TOMCAT_HOME\\logs`` (Windows) or a common log directory "
+"e.g. ``/var/log/tomcat7`` (Linux)."
 msgstr ""
-"If not configured otherwise, the log files of the Apache Tomcat application "
-"server can be found either in the installation directory of the Tomcat "
-"``$TOMCAT_HOME\\logs`` (Windows) or a common log directory e.g. "
-"``/var/log/tomcat7`` (Linux)."
+"If not configured otherwise, the log files of the Apache Tomcat "
+"application server can be found either in the installation directory of "
+"the Tomcat ``$TOMCAT_HOME\\logs`` (Windows) or a common log directory "
+"e.g. ``/var/log/tomcat7`` (Linux)."
 
-#: ../../troubleshooting.rst:29
+#: ../../troubleshooting.rst:43
 msgid "Common problems"
 msgstr "Common problems"
 
-#: ../../troubleshooting.rst:30
+#: ../../troubleshooting.rst:44
 msgid ""
-"This section lists some common problems that can arise during the setup of "
-"the Effektif system and gives instructions on how to solve them."
+"This section lists some common problems that can arise during the setup "
+"of the Signavio Workflow system and gives instructions on how to solve "
+"them."
 msgstr ""
-"This section lists some common problems that can arise during the setup of "
-"the Effektif system and gives instructions on how to solve them."
+"This section lists some common problems that can arise during the setup "
+"of the Signavio Workflow system and gives instructions on how to solve "
+"them."
 
-#: ../../troubleshooting.rst:33 ../../troubleshooting.rst:39
-#: ../../troubleshooting.rst:49 ../../troubleshooting.rst:67
+#: ../../troubleshooting.rst:47 ../../troubleshooting.rst:53
+#: ../../troubleshooting.rst:63 ../../troubleshooting.rst:81
 msgid "Problem:"
 msgstr "Problem:"
 
-#: ../../troubleshooting.rst:33
+#: ../../troubleshooting.rst:47
 msgid ""
-"The Effektif site shows a HTTP Status 500 error including the message ``root"
-" cause java.lang.RuntimeException: Cannot find license.xml``\\ ."
+"The Signavio Workflow site shows a HTTP Status 500 error including the "
+"message ``root cause java.lang.RuntimeException: Cannot find "
+"license.xml``\\ ."
 msgstr ""
-"The Effektif site shows a HTTP Status 500 error including the message ``root"
-" cause java.lang.RuntimeException: Cannot find license.xml``\\ ."
+"The Signavio Workflow site shows a HTTP Status 500 error including the "
+"message ``root cause java.lang.RuntimeException: Cannot find "
+"license.xml``\\ ."
 
-#: ../../troubleshooting.rst:36 ../../troubleshooting.rst:46
-#: ../../troubleshooting.rst:64 ../../troubleshooting.rst:82
+#: ../../troubleshooting.rst:50 ../../troubleshooting.rst:60
+#: ../../troubleshooting.rst:78 ../../troubleshooting.rst:96
 msgid "Solution:"
 msgstr "Solution:"
 
-#: ../../troubleshooting.rst:39
+#: ../../troubleshooting.rst:50
 msgid ""
-"The Effektif site shows a HTTP Status 500 error including the message "
-"``com/effektif/EffektifServlet : Unsupported major.minor version 51.0 "
-"(unable to load class com.effektif.EffektifServlet)``\\ ."
+"You have not installed the Signavio Workflow license.xml at all or placed"
+" it in the wrong directory. See :ref:`install-license` to solve the "
+"issue."
 msgstr ""
-"The Effektif site shows a HTTP Status 500 error including the message "
-"``com/effektif/EffektifServlet : Unsupported major.minor version 51.0 "
-"(unable to load class com.effektif.EffektifServlet)``\\ ."
+"You have not installed the Signavio Workflow license.xml at all or placed"
+" it in the wrong directory. See :ref:`install-license` to solve the "
+"issue."
 
-#: ../../troubleshooting.rst:42
+#: ../../troubleshooting.rst:53
 msgid ""
-"The Tomcat server is using the wrong Java version. Effektif requires Java 7."
-" Make sure you have installed the correct Java version. You can check your "
-"Java version by executing: ::"
+"The Signavio Workflow site shows a HTTP Status 500 error including the "
+"message ``com/effektif/EffektifServlet : Unsupported major.minor version "
+"51.0 (unable to load class com.effektif.EffektifServlet)``\\ ."
 msgstr ""
-"The Tomcat server is using the wrong Java version. Effektif requires Java 7."
-" Make sure you have installed the correct Java version. You can check your "
-"Java version by executing: ::"
-
-#: ../../troubleshooting.rst:49
-msgid ""
-"Executing a MongoDB command yields the error message ``errmsg: "
-"“unauthorized”`` or  ``errmsg: “auth fails”``\\ ."
-msgstr ""
-"Executing a MongoDB command yields the error message ``errmsg: "
-"“unauthorized”`` or  ``errmsg: “auth fails”``\\ ."
-
-#: ../../troubleshooting.rst:52
-msgid ""
-"Either the username / password combination that is used to execute the "
-"command is wrong or the respective MongoDB user lacks some required roles."
-msgstr ""
-"Either the username / password combination that is used to execute the "
-"command is wrong or the respective MongoDB user lacks some required roles."
-
-#: ../../troubleshooting.rst:54
-msgid "The first issue can be checked by executing:"
-msgstr "The first issue can be checked by executing:"
+"The Signavio Workflow site shows a HTTP Status 500 error including the "
+"message ``com/effektif/EffektifServlet : Unsupported major.minor version "
+"51.0 (unable to load class com.effektif.EffektifServlet)``\\ ."
 
 #: ../../troubleshooting.rst:56
-msgid "Windows: ``mongo.exe admin -u effektif -p <yourEffektifUserPassword>``"
+msgid ""
+"The Tomcat server is using the wrong Java version. Signavio Workflow "
+"requires Java 8. Make sure you have installed the correct Java version. "
+"You can check your Java version by executing: ::"
 msgstr ""
-"Windows: ``mongo.exe admin -u effektif -p <yourEffektifUserPassword>``"
-
-#: ../../troubleshooting.rst:58
-msgid "Debian: ``mongo admin -u effektif -p <yourEffektifUserPassword>``"
-msgstr "Debian: ``mongo admin -u effektif -p <yourEffektifUserPassword>``"
+"The Tomcat server is using the wrong Java version. Signavio Workflow "
+"requires Java 8. Make sure you have installed the correct Java version. "
+"You can check your Java version by executing: ::"
 
 #: ../../troubleshooting.rst:60
 msgid ""
-"If this command fails with the error message ``exception: login failed`` you"
-" know that your username / password combination is wrong. Please, make sure "
-"you spelled the username and password correctly."
+"The :ref:`install-java` section explains how to install the correct Java "
+"version."
 msgstr ""
-"If this command fails with the error message ``exception: login failed`` you"
-" know that your username / password combination is wrong. Please, make sure "
-"you spelled the username and password correctly."
+"The :ref:`install-java` section explains how to install the correct Java "
+"version."
 
-#: ../../troubleshooting.rst:67
+#: ../../troubleshooting.rst:63
 msgid ""
-"Effektif does not start and the log file contains the error message ``INFO  "
-"LockingDbExecutor Database is locked by another executor. Wait...``."
+"Executing a MongoDB command yields the error message ``errmsg: "
+"“unauthorized”`` or  ``errmsg: “auth fails”``\\ ."
 msgstr ""
-"Effektif does not start and the log file contains the error message ``INFO  "
-"LockingDbExecutor Database is locked by another executor. Wait...``."
+"Executing a MongoDB command yields the error message ``errmsg: "
+"“unauthorized”`` or  ``errmsg: “auth fails”``\\ ."
 
-#: ../../troubleshooting.rst:75
+#: ../../troubleshooting.rst:66
+msgid ""
+"Either the username / password combination that is used to execute the "
+"command is wrong or the respective MongoDB user lacks some required "
+"roles."
+msgstr ""
+"Either the username / password combination that is used to execute the "
+"command is wrong or the respective MongoDB user lacks some required "
+"roles."
+
+#: ../../troubleshooting.rst:68
+msgid "The first issue can be checked by executing:"
+msgstr "The first issue can be checked by executing:"
+
+#: ../../troubleshooting.rst:70
+msgid "Windows: ``mongo.exe admin -u signavio -p <yourSignavioUserPassword>``"
+msgstr "Windows: ``mongo.exe admin -u signavio -p <yourSignavioUserPassword>``"
+
+#: ../../troubleshooting.rst:72
+msgid "Debian: ``mongo admin -u signavio -p <yourSignavioUserPassword>``"
+msgstr "Debian: ``mongo admin -u signavio -p <yourSignavioUserPassword>``"
+
+#: ../../troubleshooting.rst:74
+msgid ""
+"If this command fails with the error message ``exception: login failed`` "
+"you know that your username / password combination is wrong. Please, make"
+" sure you spelled the username and password correctly."
+msgstr ""
+"If this command fails with the error message ``exception: login failed`` "
+"you know that your username / password combination is wrong. Please, make"
+" sure you spelled the username and password correctly."
+
+#: ../../troubleshooting.rst:47 ../../troubleshooting.rst:53
+#: ../../troubleshooting.rst:63 ../../troubleshooting.rst:81
+msgid "Problem:"
+msgstr "Problem:"
+
+#: ../../troubleshooting.rst:47
+msgid ""
+"In order to check the second issue, see the :ref:`add-mongodb-user` "
+"section. This section lists all necessary roles and explains how to "
+"verify that the Signavio Workflow user has all the required roles. "
+"Especially the restore and backup commands require certain roles to work "
+"properly."
+msgstr ""
+"In order to check the second issue, see the :ref:`add-mongodb-user` "
+"section. This section lists all necessary roles and explains how to "
+"verify that the Signavio Workflow user has all the required roles. "
+"Especially the restore and backup commands require certain roles to work "
+"properly."
+
+#: ../../troubleshooting.rst:50 ../../troubleshooting.rst:60
+#: ../../troubleshooting.rst:78 ../../troubleshooting.rst:96
+msgid "Solution:"
+msgstr "Solution:"
+
+#: ../../troubleshooting.rst:50
+msgid ""
+"Signavio Workflow does not start and the log file contains the error "
+"message ``INFO  LockingDbExecutor Database is locked by another executor."
+" Wait...``."
+msgstr ""
+"Signavio Workflow does not start and the log file contains the error "
+"message ``INFO  LockingDbExecutor Database is locked by another executor."
+" Wait...``."
+
+#: ../../troubleshooting.rst:53
+msgid ""
+"The problem with the LockingDbExecutor arises when the application server"
+" is shut down during the initialisation (update of licenses and migration"
+" of  database) before the lock can be released again. You have to "
+"manually remove the lock from the database. We recommend using a tool "
+"like Robomongo for this purpose. The :ref:`tooling-mongodb` section "
+"explains how to install Robomongo and set-up a connection to your "
+"MongoDB."
+msgstr ""
+"The problem with the LockingDbExecutor arises when the application server"
+" is shut down during the initialisation (update of licenses and migration"
+" of  database) before the lock can be released again. You have to "
+"manually remove the lock from the database. We recommend using a tool "
+"like Robomongo for this purpose. The :ref:`tooling-mongodb` section "
+"explains how to install Robomongo and set-up a connection to your "
+"MongoDB."
+
+#: ../../troubleshooting.rst:89
 msgid "Open Robomongo."
 msgstr "Open Robomongo."
 
+#: ../../troubleshooting.rst:56
+msgid ""
+"Open the content of the Signavio Workflow DB on the left side of the "
+"application."
+msgstr ""
+"Open the content of the Signavio Workflow DB on the left side of the "
+"application."
+
+#: ../../troubleshooting.rst:60
+msgid ""
+"The :ref:`install-java` section explains how to install the correct Java "
+"version."
+msgstr ""
+"The :ref:`install-java` section explains how to install the correct Java "
+"version."
+
+#: ../../troubleshooting.rst:63
+msgid ""
+"Executing a MongoDB command yields the error message ``errmsg: "
+"“unauthorized”`` or  ``errmsg: “auth fails”``\\ ."
+msgstr ""
+"Executing a MongoDB command yields the error message ``errmsg: "
+"“unauthorized”`` or  ``errmsg: “auth fails”``\\ ."
+
+#: ../../troubleshooting.rst:66
+msgid ""
+"Either the username / password combination that is used to execute the "
+"command is wrong or the respective MongoDB user lacks some required roles."
+msgstr ""
+"Either the username / password combination that is used to execute the "
+"command is wrong or the respective MongoDB user lacks some required roles."
+
+#: ../../troubleshooting.rst:68
+msgid "The first issue can be checked by executing:"
+msgstr "The first issue can be checked by executing:"
+
+#: ../../troubleshooting.rst:70
+msgid "Windows: ``mongo.exe admin -u signavio -p <yourSignavioUserPassword>``"
+msgstr "Windows: ``mongo.exe admin -u signavio -p <yourSignavioUserPassword>``"
+
+#: ../../troubleshooting.rst:72
+msgid "Debian: ``mongo admin -u signavio -p <yourSignavioUserPassword>``"
+msgstr "Debian: ``mongo admin -u signavio -p <yourSignavioUserPassword>``"
+
+#: ../../troubleshooting.rst:74
+msgid ""
+"If this command fails with the error message ``exception: login failed`` you "
+"know that your username / password combination is wrong. Please, make sure "
+"you spelled the username and password correctly."
+msgstr ""
+"If this command fails with the error message ``exception: login failed`` you "
+"know that your username / password combination is wrong. Please, make sure "
+"you spelled the username and password correctly."
+
 #: ../../troubleshooting.rst:76
-msgid "Establish a connection to MongoDB."
-msgstr "Establish a connection to MongoDB."
-
-#: ../../troubleshooting.rst:77
 msgid ""
-"Open the content of the Effektif DB on the left side of the application."
+"Out of the three entries in the list, select the one that contains the "
+"value ``schema.lock`` for the key ``k``."
 msgstr ""
-"Open the content of the Effektif DB on the left side of the application."
-
-#: ../../troubleshooting.rst:78
-msgid "Under Collections you will find the table ``properties``."
-msgstr "Under Collections you will find the table ``properties``."
-
-#: ../../troubleshooting.rst:79
-msgid ""
-"A double click on ``properties`` shows all entries. In case of an error you "
-"will see three entries, if everything is normal there will be only two."
-msgstr ""
-"A double click on ``properties`` shows all entries. In case of an error you "
-"will see three entries, if everything is normal there will be only two."
-
-#: ../../troubleshooting.rst:80
-msgid ""
-"Out of the three entries in the list, select the one that contains the value"
-" ``schema.lock`` for the key ``k``."
-msgstr ""
-"Out of the three entries in the list, select the one that contains the value"
-" ``schema.lock`` for the key ``k``."
+"Out of the three entries in the list, select the one that contains the "
+"value ``schema.lock`` for the key ``k``."
 
 #: ../../troubleshooting.rst:81
 msgid ""
@@ -245,120 +393,71 @@ msgstr ""
 "Use a right click to open the context menu for the respective entry and "
 "choose „Delete Document…“ to remove the entry."
 
-#: ../../troubleshooting.rst:83
+#: ../../troubleshooting.rst:84
 msgid ""
-"IMPORTANT: Only the entry for ``schema.lock`` must be deleted. You are "
-"advised to create a backup of the database upfront."
-msgstr ""
-"IMPORTANT: Only the entry for ``schema.lock`` must be deleted. You are "
-"advised to create a backup of the database upfront."
-
-#: ../../troubleshooting.rst:70
-msgid ""
-"The problem with the LockingDbExecutor arises when the application server is"
-" shut down during the initialisation (update of licenses and migration of  "
-"database) before the lock can be released again. You have to manually remove"
-" the lock from the database. We recommend using a tool like Robomongo for "
+"The problem with the LockingDbExecutor arises when the application server is "
+"shut down during the initialisation (update of licenses and migration of  "
+"database) before the lock can be released again. You have to manually remove "
+"the lock from the database. We recommend using a tool like Robomongo for "
 "this purpose. The :ref:`tooling-mongodb` section explains how to install "
 "Robomongo and set-up a connection to your MongoDB."
 msgstr ""
+"The problem with the LockingDbExecutor arises when the application server is "
+"shut down during the initialisation (update of licenses and migration of  "
+"database) before the lock can be released again. You have to manually remove "
+"the lock from the database. We recommend using a tool like Robomongo for "
+"this purpose. The :ref:`tooling-mongodb` section explains how to install "
+"Robomongo and set-up a connection to your MongoDB."
 
-#: ../../troubleshooting.rst:36
+#: ../../troubleshooting.rst:89
+msgid "Open Robomongo."
+msgstr "Open Robomongo."
+
+#: ../../troubleshooting.rst:90
+msgid "Establish a connection to MongoDB."
+msgstr "Establish a connection to MongoDB."
+
+#: ../../troubleshooting.rst:91
 msgid ""
-"You have not installed the Effektif license.xml at all or placed it in the "
-"wrong directory. See :ref:`install-license` to solve the issue."
+"IMPORTANT: Only the entry for ``schema.lock`` must be deleted. You are "
+"advised to create a backup of the database upfront."
 msgstr ""
+"IMPORTANT: Only the entry for ``schema.lock`` must be deleted. You are "
+"advised to create a backup of the database upfront."
 
-#: ../../troubleshooting.rst:46
+#: ../../troubleshooting.rst:92
+msgid "Under Collections you will find the table ``properties``."
+msgstr "Under Collections you will find the table ``properties``."
+
+#: ../../troubleshooting.rst:93
 msgid ""
-"The :ref:`install-java` section explains how to install the correct Java "
-"version."
+"A double click on ``properties`` shows all entries. In case of an error you "
+"will see three entries, if everything is normal there will be only two."
 msgstr ""
+"A double click on ``properties`` shows all entries. In case of an error you "
+"will see three entries, if everything is normal there will be only two."
 
-#: ../../troubleshooting.rst:62
+#: ../../troubleshooting.rst:94
 msgid ""
-"In order to check the second issue, see the :ref:`add-mongodb-user` section."
-" This section lists all necessary roles and explains how to verify that the "
-"Effektif user has all the required roles. Especially the restore and backup "
-"commands require certain roles to work properly."
+"Out of the three entries in the list, select the one that contains the value "
+"``schema.lock`` for the key ``k``."
 msgstr ""
+"Out of the three entries in the list, select the one that contains the value "
+"``schema.lock`` for the key ``k``."
 
-#: ../../troubleshooting.rst:20
+#: ../../troubleshooting.rst:95
 msgid ""
-"On Linux, one default location where the log file can be found is "
-"``/var/log/mongodb/mongodb.log``\\ . Whereas default locations for the "
-"configuration file are ``/etc/mongodb.conf`` or ``/etc/mongod.conf``\\ . "
-"These locations can change depending on the distribution and depend on how "
-"you have installed MongoDB."
+"Use a right click to open the context menu for the respective entry and "
+"choose „Delete Document…“ to remove the entry."
 msgstr ""
+"Use a right click to open the context menu for the respective entry and "
+"choose „Delete Document…“ to remove the entry."
 
-#~ msgid ""
-#~ "On Linux, one default location where the log file can be found is "
-#~ "``/var/log/mongodb/mongodb.log``\\ . Whereas a default location for the "
-#~ "configuration file is ``/etc/mongodb.conf``\\ . These locations can change "
-#~ "depending on the distribution and depend on how you have installed MongoDB."
-#~ msgstr ""
+#: ../../troubleshooting.rst:97
+msgid ""
+"IMPORTANT: Only the entry for ``schema.lock`` must be deleted. You are "
+"advised to create a backup of the database upfront."
+msgstr ""
+"IMPORTANT: Only the entry for ``schema.lock`` must be deleted. You are "
+"advised to create a backup of the database upfront."
 
-#~ msgid ""
-#~ "On Linux, one default location where the log file can be found is "
-#~ "``/var/log/mongodb/mongodb.log``\\ . Whereas a default location for the "
-#~ "configuration file is ``/etc/mongodb.conf``\\ . Be aware, these locations "
-#~ "can change depending on the distribution and depend on how you have "
-#~ "installed MongoDB."
-#~ msgstr ""
-#~ "On Linux, one default location where the log file can be found is "
-#~ "``/var/log/mongodb/mongodb.log``\\ . Whereas a default location for the "
-#~ "configuration file is ``/etc/mongodb.conf``\\ . Be aware, these locations "
-#~ "can change depending on the distribution and depend on how you have "
-#~ "installed MongoDB."
-
-#~ msgid ""
-#~ "You have not installed the Effektif license.xml at all or placed it in the "
-#~ "wrong directory. Jump to section :ref:`install-license` to solve the issue."
-#~ msgstr ""
-#~ "You have not installed the Effektif license.xml at all or placed it in the "
-#~ "wrong directory. Jump to section :ref:`install-license` to solve the issue."
-
-#~ msgid ""
-#~ "Section :ref:`install-java` explains how to install the correct Java "
-#~ "version."
-#~ msgstr ""
-#~ "Section :ref:`install-java` explains how to install the correct Java "
-#~ "version."
-
-#~ msgid ""
-#~ "In order to check the second issue, jump to section :ref:`add-mongodb-"
-#~ "user`\\ . This section lists all necessary roles and explains how to verify "
-#~ "that the Effektif user has all the required roles. Especially the restore "
-#~ "and backup commands require certain roles to work properly."
-#~ msgstr ""
-#~ "In order to check the second issue, jump to section :ref:`add-mongodb-"
-#~ "user`\\ . This section lists all necessary roles and explains how to verify "
-#~ "that the Effektif user has all the required roles. Especially the restore "
-#~ "and backup commands require certain roles to work properly."
-
-#~ msgid ""
-#~ "The problem with the LockingDbExecutor arises when the application server is"
-#~ " shutdown during the initialisation (update of licenses and migration of  "
-#~ "database) before the lock can be released again. You have to manually remove"
-#~ " the respective lock from the database. It is recommened to use a tool like "
-#~ "Robomongo for this purpose. Section :ref:`tooling-mongodb` explains how to "
-#~ "retrieve Robomongo and setup a connection to your MongoDB."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "The problem with the LockingDbExecutor arises when the application server is"
-#~ " shutdown during the initialisation (update of licenses and migration of  "
-#~ "database) before the lock can be released again. You have to manually remove"
-#~ " the respective lock from the database. It is recommened to use a tool like "
-#~ "Robomongo for this purpose. Section :ref:`tooling-mongodb` explains how to "
-#~ "retrieve Robomongo and in section :ref:`appendix-add-mongodb-user` you will "
-#~ "find an explanation on how to setup a connection to your MongoDB."
-#~ msgstr ""
-#~ "The problem with the LockingDbExecutor arises when the application server is"
-#~ " shutdown during the initialisation (update of licenses and migration of  "
-#~ "database) before the lock can be released again. You have to manually remove"
-#~ " the respective lock from the database. It is recommened to use a tool like "
-#~ "Robomongo for this purpose. Section :ref:`tooling-mongodb` explains how to "
-#~ "retrieve Robomongo and in section :ref:`appendix-add-mongodb-user` you will "
-#~ "find an explanation on how to setup a connection to your MongoDB."

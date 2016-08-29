@@ -1,11 +1,12 @@
-Effektif administrators documentation
-=====================================
+Signavio Workflow administrators documentation
+==============================================
 
 .. toctree::
     :maxdepth: 2
    
     introduction
     installation
+    optional
     update-notes
     update
     starting
@@ -31,7 +32,7 @@ Contact and legal information
 | Fax:              030 / 856 21 54 - 19
 
 | Website
-| http://www.effektif.com
+| http://www.signavio.com
 
 | Legal information
 | CEO:              Gero Decker
