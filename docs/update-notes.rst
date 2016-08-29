@@ -6,8 +6,8 @@ Update notes
 This section contains important information about Signavio Workflow system updates.
 It lists changes to technical requirements for new versions and additional instructions for updates.
 
-Updating to Signavio Workflow 3.9
----------------------------------
+Updating to Signavio Workflow 3.11
+----------------------------------
 Effektif has been renamed to Signavio Workflow. Along with this change, the colors of the default theme have changed as well. 
 You may notice the name of the database and database user in the examples in this manual have been changed from ``effektif`` to ``signavio``. 
 You don't need to change any of the names in your production environment. 
