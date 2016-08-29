@@ -11,12 +11,15 @@ Compatibility list
 ------------------
 Due to changes in the communication protocol, you are required to use a compatible version of the SPE in combination with your Signavio Workflow system. 
 The following table shows the compatible versions of Signavio Workflow and SPE.
+You are free to update both systems in any order. 
+Please ensure that nobody is working on the systems while you update them.
 
 =========================   ===============================
 Signavio Workflow version   Signavio Process Editor version
 2.22.6                      8.3 - 8.6
 2.27.4 - 2.32.7             9.2.1 - 9.3
-3.4.7                       9.7
+3.4.x                       9.7
+3.11.x                      10.3
 =========================   ===============================
 
 Setup
