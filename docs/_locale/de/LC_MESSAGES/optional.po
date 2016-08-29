@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Signavio Workflow administrators guide 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-06 18:36+0200\n"
-"PO-Revision-Date: 2016-07-06 19:38+0100\n"
+"POT-Creation-Date: 2016-08-29 16:03+0200\n"
+"PO-Revision-Date: 2016-08-29 16:07+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Signavio Workflow Dev <dev.effektif@signavio.com>\n"
 "MIME-Version: 1.0\n"
@@ -477,7 +477,7 @@ msgstr ""
 "Sie die Datei an:"
 
 #: ../../optional.rst:218
-msgid "replace four occurrences of ``ADTEST`` with the Windows domain name"
+msgid "replace five occurrences of ``ADTEST`` with the Windows domain name"
 msgstr ""
 "Ersetzen Sie alle Vorkommnisse von ``ADTEST`` mit dem Namen Ihrer Windows-"
 "Domäne."
@@ -490,15 +490,15 @@ msgstr ""
 "Ersetzen Sie ``123.45.6.7`` mit dem Hostnamen oder der IP-Adresse des Active "
 "Directory Servers."
 
-#: ../../optional.rst:239
+#: ../../optional.rst:240
 msgid "Copy ``login.conf`` to ``$TOMCAT_HOME/``."
 msgstr "Kopieren Sie ``login.conf`` in das Verzeichnis ``$TOMCAT_HOME/``."
 
-#: ../../optional.rst:255
+#: ../../optional.rst:256
 msgid "Registering Tomcat’s Service Principal Name (SPN)"
 msgstr "Tomcat's Service Principal Name (SPN) registrieren"
 
-#: ../../optional.rst:257
+#: ../../optional.rst:258
 msgid ""
 "The `SPN <https://msdn.microsoft.com/en-us/library/ms677949(v=vs.85).aspx>`_ "
 "is the identifier used by Kerberos authentication to associate a service "
@@ -521,7 +521,7 @@ msgstr ""
 "`Windows Support Tools <https://en.wikipedia.org/wiki/"
 "Windows_Support_Tools>`_\\ ."
 
-#: ../../optional.rst:266
+#: ../../optional.rst:267
 msgid ""
 "For example, our domain is called ``ADTEST.LOCAL``, the computer name of the "
 "server is ``VM-42``, Signavio Workflow will be available under the domain "
@@ -534,7 +534,7 @@ msgstr ""
 "workflow.intranet:8080`` verfügbar und das Domänenkonto heißt "
 "``tomcat@adtest.local``\\ . Daraus ergeben sich die folgenden SPNs:"
 
-#: ../../optional.rst:275
+#: ../../optional.rst:276
 msgid ""
 "For more information see the `Microsoft documentation <https://msdn."
 "microsoft.com/en-us/library/cc281382.aspx>`_\\ ."
@@ -542,7 +542,7 @@ msgstr ""
 "Weitere Information finden Sie in der `Microsoft Dokumentation <https://msdn."
 "microsoft.com/en-us/library/cc281382.aspx>`_\\ ."
 
-#: ../../optional.rst:278
+#: ../../optional.rst:279
 msgid ""
 "You can list all registered SPNs which are associated to a domain account "
 "with the following command:"
@@ -550,11 +550,11 @@ msgstr ""
 "Mit dem folgenden Befehl können Sie alle registrierten SPNs, die mit einem "
 "Domänenkonto verknüpft sind, auflisten:"
 
-#: ../../optional.rst:286
+#: ../../optional.rst:287
 msgid "Configuring the Tomcat user"
 msgstr "Tomcat-Nutzer konfigurieren"
 
-#: ../../optional.rst:288
+#: ../../optional.rst:289
 msgid ""
 "By default the Tomcat application server is executed with a local system "
 "account. The SSO setup requires the Tomcat to be executed with a domain "
@@ -566,31 +566,31 @@ msgstr ""
 "Domänenkonto auszuführen. Sie sollten das gleiche Domänenkonto verwenden, "
 "dass Sie bereits in :ref:`configure-sso-filter` konfiguriert haben."
 
-#: ../../optional.rst:292
+#: ../../optional.rst:293
 msgid "Open the Windows services dialogue ``services.msc``"
 msgstr "Öffnen Sie den Dialog für Windows-Dienste ``services.msc``\\ ."
 
-#: ../../optional.rst:293
+#: ../../optional.rst:294
 msgid "Select your Apache Tomcat service and open the properties"
 msgstr ""
 "Wählen Sie den Apache Tomcat Service aus und öffnen Sie die Eigenschaften."
 
-#: ../../optional.rst:294
+#: ../../optional.rst:295
 msgid "Select the *Log On* tab"
 msgstr "Wählen Sie den Tab *Anmelden* aus."
 
-#: ../../optional.rst:295
+#: ../../optional.rst:296
 msgid ""
 "Choose the option *This account* and fill in the domain account credentials"
 msgstr ""
 "Wählen Sie die Option *Dieses Konto* und tragen Sie die Zugangsdaten des "
 "Domänenkontos ein."
 
-#: ../../optional.rst:299
+#: ../../optional.rst:300
 msgid "Troubleshooting"
 msgstr "Troubleshooting"
 
-#: ../../optional.rst:301
+#: ../../optional.rst:302
 msgid ""
 "First follow the steps in the `SPNEGO Pre-flight checklist <http://spnego."
 "sourceforge.net/pre_flight.html>`_. Run the ``HelloKDC`` connection test in "
@@ -603,7 +603,7 @@ msgstr ""
 "benutzen Sie dafür die Dateien ``krb5.conf`` und ``login.conf``, die Sie "
 "zuvor konfiguriert haben."
 
-#: ../../optional.rst:304
+#: ../../optional.rst:305
 msgid ""
 "Note that in the `Pre-flight checklist`, the `Do we know the address of the "
 "KDC?` section recommends using the KDC host name instead of the IP address."
@@ -612,7 +612,7 @@ msgstr ""
 "address of the KDC?` empfiehlt den Hostnamen des KDC zu verwenden statt der "
 "IP-Adresse."
 
-#: ../../optional.rst:307
+#: ../../optional.rst:308
 msgid ""
 "If you have completed the setup described here and the SSO is still not "
 "working, please make sure you are accessing the web application from a "
@@ -631,11 +631,11 @@ msgstr ""
 "Signavio Workflow zu den vertrauenswürdigen Diensten gehört, z.B. in dem Sie "
 "die Adresse zum lokalen Intranet hinzufügen."
 
-#: ../../optional.rst:311
+#: ../../optional.rst:312
 msgid "If you see an error page with the following error message:"
 msgstr "Wenn Sie eine Fehlerseite mit dem folgenden Fehler sehen:"
 
-#: ../../optional.rst:317
+#: ../../optional.rst:318
 msgid ""
 "The time difference between the computer accessing Signavio Workflow and the "
 "Kerberos server is bigger than 5 minutes. You will need to synchronise the "

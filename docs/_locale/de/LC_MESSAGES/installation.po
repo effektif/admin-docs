@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-06 11:47+0200\n"
-"PO-Revision-Date: 2016-07-06 15:55+0100\n"
+"POT-Creation-Date: 2016-08-29 16:03+0200\n"
+"PO-Revision-Date: 2016-08-29 16:07+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
 "MIME-Version: 1.0\n"
@@ -277,8 +277,8 @@ msgid "mongod.cfg - configuration file for Windows"
 msgstr "mongod.cfg - Konfigurationsdateien für Windows"
 
 #: ../../unpack.rst:13
-msgid "nodejs - directory that contains the script engine"
-msgstr "nodejs - Verzeichnis, das die Dateien der Script Engine enthält"
+msgid "script-engine - directory that contains the script engine"
+msgstr "script-engine - Verzeichnis, das die Dateien der Script Engine enthält"
 
 #: ../../unpack.rst:14
 msgid "optional - directory that contains optional resources"
@@ -361,7 +361,7 @@ msgstr ""
 
 #: ../../installation.rst:106 ../../installation.rst:155
 #: ../../installation.rst:236 ../../installation.rst:378
-#: ../../installation.rst:434 ../../installation.rst:499
+#: ../../installation.rst:434 ../../installation.rst:500
 msgid "Windows"
 msgstr "Windows"
 
@@ -1407,8 +1407,8 @@ msgid ""
 "on the same machine as the Signavio Workflow web application or on a "
 "separate machine. However, if you use a separate machine to run the script "
 "engine, you have to make sure the web application can connect over HTTP to "
-"the configured port of the script engine. In order to install the script "
-"engine, follow these instructions:"
+"the configured port of the script engine and vice versa. In order to install "
+"the script engine, follow these instructions:"
 msgstr ""
 "Die Signavio Workflow Script Engine benutzt Node.js um JavaScript-Tasks "
 "innerhalb eines Workflows auszuführen, sowie einen eingebetteten HTTP Server "
@@ -1417,8 +1417,8 @@ msgstr ""
 "Webanwendung installieren oder auf einer separaten Maschine. Insofern Sie "
 "eine separate Maschine benutzen, stellen Sie bitte sicher, dass die "
 "Webanwendung über HTTP auf den konfigurierten Port der Script Engine "
-"zugreifen kann. Folgen Sie diesen Schritten, um die Script Engine zu "
-"installieren:"
+"zugreifen kann und umgekehrt. Folgen Sie diesen Schritten, um die Script "
+"Engine zu installieren:"
 
 #: ../../installation.rst:461
 msgid ""
@@ -1436,11 +1436,11 @@ msgstr ""
 
 #: ../../installation.rst:465
 msgid ""
-"Copy the content of the directory ``$WORKFLOW_HOME/nodejs/`` to your newly "
-"created directory."
+"Copy the content of the directory ``$WORKFLOW_HOME/script-engine/`` to your "
+"newly created directory."
 msgstr ""
-"Kopieren Sie den Inhalt des Verzeichnisses ``$WORKFLOW_HOME/nodejs/`` in Ihr "
-"neu angelegtes Verzeichnis."
+"Kopieren Sie den Inhalt des Verzeichnisses ``$WORKFLOW_HOME/script-engine/`` "
+"in Ihr neu angelegtes Verzeichnis."
 
 #: ../../installation.rst:467
 msgid ""
@@ -1453,10 +1453,10 @@ msgstr ""
 #: ../../installation.rst:469
 msgid ""
 "Open ``$SCRIPT_ENGINE_HOME/configuration.onpremise.js`` and edit the values "
-"for the port and log files."
+"for the port, log files and Signavio Workflow URL."
 msgstr ""
 "Öffnen Sie ``$SCRIPT_ENGINE_HOME/configuration.onpremise.js`` und passen Sie "
-"die Werte für den Port und die Log-Dateien an."
+"die Werte für den Port, die Log-Dateien und die Signavio Workflow URL an."
 
 #: ../../installation.rst:471
 msgid ""
@@ -1501,10 +1501,22 @@ msgstr ""
 "HTTP Anfragen wartet."
 
 #: ../../installation.rst:481
+msgid "``workflowUrl``"
+msgstr "``workflowUrl``"
+
+#: ../../installation.rst:481
+msgid ""
+"Defines the URL of the Signavio Workflow system (including port), e.g. "
+"``http://localhost:8080``"
+msgstr ""
+"Legt die URL fest, unter welcher das Signavio Workflow System erreichbar ist "
+"(inklusive Port), z.B. ``http://localhost:8080``."
+
+#: ../../installation.rst:482
 msgid "``log`` ``file``"
 msgstr "``log`` ``file``"
 
-#: ../../installation.rst:481
+#: ../../installation.rst:482
 msgid ""
 "Defines the location and name of the script engine log file. You can an "
 "absolute or relative path. By default, the log files are stored in the same "
@@ -1514,15 +1526,15 @@ msgstr ""
 "absoluten oder relativen Pfad angeben. Standardmäßig werden die Log-Dateien "
 "im Verzeichnis der Script Engine abgelegt."
 
-#: ../../installation.rst:482
+#: ../../installation.rst:483
 msgid "``log`` ``errorFile``"
 msgstr "``log`` ``errorFile``"
 
-#: ../../installation.rst:482
+#: ../../installation.rst:483
 msgid "Defines the location and name of the script engine error log file."
 msgstr "Legt den Ort und Namen der Script Engine Fehler-Log-Datei fest."
 
-#: ../../installation.rst:485
+#: ../../installation.rst:486
 msgid ""
 "After the successful setup you can start the script engine by opening the ``"
 "$SCRIPT_ENGINE_HOME`` directory on a command line and executing the "
@@ -1532,11 +1544,11 @@ msgstr ""
 "dem Sie das Verzeichnis ``$SCRIPT_ENGINE_HOME`` auf der Kommandozeile öffnen "
 "und folgenden Befehl ausführen ::"
 
-#: ../../installation.rst:491
+#: ../../installation.rst:492
 msgid "Wrapping the Script Engine into a service"
 msgstr "Die Script Engine als Service registrieren"
 
-#: ../../installation.rst:492
+#: ../../installation.rst:493
 msgid ""
 "The script engine can be executed as shown above by running the command on a "
 "command line. However, it might be useful for production systems to run the "
@@ -1553,7 +1565,7 @@ msgstr ""
 "keinen Support für die Nutzung von Software von Drittanbietern. Nutzen Sie "
 "diese deshalb auf eigene Verantwortung."
 
-#: ../../installation.rst:500
+#: ../../installation.rst:501
 msgid ""
 "For Windows there are several software tools which allow you to wrap a "
 "script into a service and monitor the execution. The `Non-Sucking Service "
@@ -1566,11 +1578,11 @@ msgstr ""
 "Programm, welches es erlaubt beliebige ausführbare Dateien als Service zu "
 "registrieren."
 
-#: ../../installation.rst:503
+#: ../../installation.rst:504
 msgid "Download NSSM from http://nssm.cc/download"
 msgstr "Laden Sie NSSM von http://nssm.cc/download herunter"
 
-#: ../../installation.rst:504
+#: ../../installation.rst:505
 msgid ""
 "Create a new local installation directory for NSSM, e.g. ``C:\\Program Files"
 "\\NSSM``."
@@ -1578,7 +1590,7 @@ msgstr ""
 "Legen Sie ein neues lokales Verzeichnis für NSSM an, z.B. ``C:\\Program Files"
 "\\NSSM``."
 
-#: ../../installation.rst:505
+#: ../../installation.rst:506
 msgid ""
 "Unzip the downloaded file and copy either the 64-bit ``win64\\nssm.exe`` or "
 "the 32-bit ``win32\\nssm.exe`` file to your new local directory."
@@ -1587,7 +1599,7 @@ msgstr ""
 "Bit ``win64\\nssm.exe`` oder die 32-Bit ``win32\\nssm.exe`` Datei in Ihr "
 "neues lokales Verzeichnis."
 
-#: ../../installation.rst:506
+#: ../../installation.rst:507
 msgid ""
 "Add the installation directory of NSSM to the environment variable ``PATH`` "
 "in the Windows system settings."
@@ -1595,7 +1607,7 @@ msgstr ""
 "Fügen Sie das Installationsverzeichnis von NSSM zu der Umgebungsvariable "
 "``PATH`` in den Windows Systemeinstellungen hinzu."
 
-#: ../../installation.rst:508
+#: ../../installation.rst:509
 msgid ""
 "This is necessary to use the ``nssm`` executable on the command line without "
 "an absolute path."
@@ -1603,23 +1615,23 @@ msgstr ""
 "Dies ist notwendig um den ``nssm`` Befehl auf der Kommandozeile ohne "
 "absoluten Pfad ausführen zu können."
 
-#: ../../installation.rst:510
+#: ../../installation.rst:511
 msgid "Open the command line ``cmd`` with administrative privileges."
 msgstr "Öffnen Sie die Kommandozeile ``cmd`` mit Administratorrechten."
 
-#: ../../installation.rst:511
+#: ../../installation.rst:512
 msgid "Execute ``nssm install script-engine``."
 msgstr " Führen Sie ``nssm install script-engine`` aus."
 
-#: ../../installation.rst:512
+#: ../../installation.rst:513
 msgid "The NSSM configuration dialog open"
 msgstr "Der NSSM Konfigurationsdialog öffnet sich"
 
-#: ../../installation.rst:513
+#: ../../installation.rst:514
 msgid "In the *Application* tab fill in the following information:"
 msgstr "In dem Tab *Application* fügen Sie folgende Informationen hinzu:"
 
-#: ../../installation.rst:515
+#: ../../installation.rst:516
 msgid ""
 "*Path*: the path to the Node.js .exe file, e.g. ``C:\\Program Files\\nodejs"
 "\\node.exe``"
@@ -1627,7 +1639,7 @@ msgstr ""
 "*Path*: der Pfad zu der Node.js .exe Datei, z.B. ``C:\\Program Files\\nodejs"
 "\\node.exe``"
 
-#: ../../installation.rst:516
+#: ../../installation.rst:517
 msgid ""
 "*Startup directory*: the value of ``$SCRIPT_ENGINE_HOME``, e.g. ``C:"
 "\\Program Files\\Script Engine``."
@@ -1635,28 +1647,28 @@ msgstr ""
 "*Startup directory*: das richtige Verzeichnis von ``$SCRIPT_ENGINE_HOME``, z."
 "B. ``C:\\Program Files\\Script Engine``."
 
-#: ../../installation.rst:517
+#: ../../installation.rst:518
 msgid "*Arguments*: the exact value ``server.js``"
 msgstr "*Arguments*: der genaue Wert ``server.js``"
 
-#: ../../installation.rst:521
+#: ../../installation.rst:522
 msgid "In the *Details* tab fill in the following information:"
 msgstr "In dem Tab *Details* fügen Sie folgende Informationen hinzu:"
 
-#: ../../installation.rst:523
+#: ../../installation.rst:524
 msgid "*Display name*: the name of the service shown in ``services.msc``"
 msgstr ""
 "*Display name*: der Name des Service, welcher in  ``services.msc`` angezeigt "
 "wird"
 
-#: ../../installation.rst:524
+#: ../../installation.rst:525
 msgid ""
 "*Description*: a description which will help you to recognise the service"
 msgstr ""
 "*Description*: eine Beschreibung, die Ihnen dabei hilft den Service wieder "
 "zu erkennen"
 
-#: ../../installation.rst:525
+#: ../../installation.rst:526
 msgid ""
 "*Startup type*: choose if the service shall start automatically on startup "
 "or if you want to start it manually"
@@ -1664,7 +1676,7 @@ msgstr ""
 "*Startup type*: wählen Sie ob der Service automatisch beim Systemstart oder "
 "manuell gestartet werden soll"
 
-#: ../../installation.rst:529
+#: ../../installation.rst:530
 msgid ""
 "Fill in any other service configuration settings you deem appropriate for "
 "your system in the other tabs."
@@ -1672,28 +1684,28 @@ msgstr ""
 "Füllen Sie je nach Bedarf weitere Informationen in die anderen Tabs, die Sie "
 "für die Ausführung auf Ihrem System als notwendig erachten."
 
-#: ../../installation.rst:530
+#: ../../installation.rst:531
 msgid "Click on *Install service*."
 msgstr "Klicken Sie auf *Install service*."
 
-#: ../../installation.rst:532
+#: ../../installation.rst:533
 msgid "Now you can start the script engine with the following command: ::"
 msgstr "Nun können Sie die Script Engine mit dem folgenden Befehl starten: ::"
 
-#: ../../installation.rst:536
+#: ../../installation.rst:537
 msgid "You can check the status of the script engine by executing: ::"
 msgstr ""
 "Sie können den Status der Script Engine mit dem folgenden Befehl "
 "überprüfen: ::"
 
-#: ../../installation.rst:540
+#: ../../installation.rst:541
 msgid ""
 "In order to stop the script engine again, execute the following command: ::"
 msgstr ""
 "Um die Script Engine wieder zu stoppen, führen Sie den folgenden Befehl "
 "aus: ::"
 
-#: ../../installation.rst:544
+#: ../../installation.rst:545
 msgid ""
 "While it is running, you can open your browser and go to the URL you have "
 "configured for the script engine, by default this ``http://localhost:8081``. "
@@ -1705,7 +1717,7 @@ msgstr ""
 "Wenn die Script Engine läuft, werden Sie eine leere Seite mit folgendem "
 "Inhalt sehen: ``{}``"
 
-#: ../../installation.rst:547
+#: ../../installation.rst:548
 msgid ""
 "Besides using ``nssm`` on the command line, you will find a new service when "
 "you open the ``services.msc``. The script engine will show up under the name "
@@ -1717,11 +1729,11 @@ msgstr ""
 "z.B. starten und stoppen. Die Script Engine wird unter dem Namen verfügbar "
 "sein, welchen Sie als Anzeigenamen konfiguriert haben."
 
-#: ../../installation.rst:552
+#: ../../installation.rst:553
 msgid "Linux"
 msgstr "Linux"
 
-#: ../../installation.rst:553
+#: ../../installation.rst:554
 msgid ""
 "On Linux this task is usually accomplished with Init scripts using the "
 "respective Init system of your Linux distribution. Because there are several "
@@ -1736,7 +1748,7 @@ msgstr ""
 "Template besitzen, finden Sie im Internet zahlreiche Beispiele für die "
 "verschiedenen Init-Systeme."
 
-#: ../../installation.rst:557
+#: ../../installation.rst:558
 msgid ""
 "As mentioned before, the script engine can be started from within ``"
 "$SCRIPT_ENGINE_HOME`` by executing: ::"
@@ -1744,7 +1756,7 @@ msgstr ""
 "Wie bereits erwähnt, kann die Script Engine mit folgendem Befehl aus dem "
 "Verzeichnis ``$SCRIPT_ENGINE_HOME`` gestartet werden: ::"
 
-#: ../../installation.rst:561
+#: ../../installation.rst:562
 msgid ""
 "You have to ensure your Init script starts the Node.js executable ``node`` "
 "and uses the JavaScript file ``$SCRIPT_ENGINE_HOME/server.js`` as an "
@@ -1758,15 +1770,15 @@ msgstr ""
 "Rechten für die Ausführung nutzen, dann muss dieser entsprechenden Zugriff "
 "auf das ``$SCRIPT_ENGINE_HOME`` Verzeichnis haben."
 
-#: ../../installation.rst:567
+#: ../../installation.rst:568
 msgid "Configuring Signavio Workflow"
 msgstr "Signavio Workflow konfigurieren"
 
-#: ../../installation.rst:572
+#: ../../installation.rst:573
 msgid "Install the license file"
 msgstr "Lizenzinstallation"
 
-#: ../../installation.rst:573
+#: ../../installation.rst:574
 msgid ""
 "Along with the Signavio Workflow application you have received the Signavio "
 "Workflow license file license.xml. Before you can start the Signavio "
@@ -1781,11 +1793,11 @@ msgstr ""
 "Workflow überprüft die Datei wenn das System startet und stellt die "
 "entsprechenden Lizenzen zur Verfügung."
 
-#: ../../installation.rst:581
+#: ../../installation.rst:582
 msgid "Update the Signavio Workflow configuration file"
 msgstr "Die Signavio Workflow Konfigurationsdatei aktualisieren"
 
-#: ../../installation.rst:582
+#: ../../installation.rst:583
 msgid ""
 "Before you can start Signavio Workflow for the first time, you need to "
 "configure some mandatory properties in the Signavio Workflow configuration "
@@ -1801,7 +1813,7 @@ msgstr ""
 "befindet sich nun unter ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes/effektif-"
 "onpremise.properties``\\ ."
 
-#: ../../installation.rst:586
+#: ../../installation.rst:587
 msgid ""
 "The configuration file is a property file that contains one configuration "
 "option per line and key and value are separated by a ``=``. Every line that "
@@ -1812,7 +1824,7 @@ msgstr ""
 "Jede Zeile die mit einer Raute „#“ beginnt, ist auskommentiert und wird "
 "nicht berücksichtigt."
 
-#: ../../installation.rst:589
+#: ../../installation.rst:590
 msgid ""
 "In general, the configuration allows to configure the base URL of the "
 "Signavio Workflow system, the mail server, the database connection and "
@@ -1830,11 +1842,11 @@ msgstr ""
 "beschrieben, wird die URL aus der Domain (``localhost`` für die gleiche "
 "Maschine) und dem Port gebildet unter dem die Script Engine läuft."
 
-#: ../../installation.rst:595
+#: ../../installation.rst:596
 msgid "``effektif.baseUrl``"
 msgstr "``effektif.baseUrl``"
 
-#: ../../installation.rst:595
+#: ../../installation.rst:596
 msgid ""
 "(Required) The IP address or server name (including the port) of the server "
 "running the Signavio Workflow Tomcat application server. E.g. http://"
@@ -1846,59 +1858,59 @@ msgstr ""
 "com:8080 Falls der Server auf Port 80 läuft, kann auf die Angabe des Ports "
 "verzichtet werden."
 
-#: ../../installation.rst:596
+#: ../../installation.rst:597
 msgid "``effektif.smtp.host``"
 msgstr "``effektif.smtp.host``"
 
-#: ../../installation.rst:596
+#: ../../installation.rst:597
 msgid "(Required) The IP address or server name of the outgoing email server."
 msgstr "(Pflichtvariable) Die IP-Addresse oder der Servername des Emailservers"
 
-#: ../../installation.rst:597
+#: ../../installation.rst:598
 msgid "``effektif.smtp.port``"
 msgstr "``effektif.smtp.port``"
 
-#: ../../installation.rst:597
+#: ../../installation.rst:598
 msgid "The port on which the outgoing SMTP server listens"
 msgstr "Der Port des Emailservers"
 
-#: ../../installation.rst:598
+#: ../../installation.rst:599
 msgid "``effektif.smtp.ssl``"
 msgstr "``effektif.smtp.ssl``"
 
-#: ../../installation.rst:598
+#: ../../installation.rst:599
 msgid "If SSL should be used ( true or false )"
 msgstr "Ob SSL verwendet werden soll ( true oder false )"
 
-#: ../../installation.rst:599
+#: ../../installation.rst:600
 msgid "``effektif.smtp.tls``"
 msgstr "``effektif.smtp.tls``"
 
-#: ../../installation.rst:599
+#: ../../installation.rst:600
 msgid "If TLS should be used ( true or false )"
 msgstr "Ob TLS verwendet werden soll ( true or false )"
 
-#: ../../installation.rst:600
+#: ../../installation.rst:601
 msgid "``effektif.smtp.user``"
 msgstr "``effektif.smtp.user``"
 
-#: ../../installation.rst:600
+#: ../../installation.rst:601
 msgid "The username for authentication"
 msgstr "Der Nutzername zur Authentifizierung am Emailserver"
 
-#: ../../installation.rst:601
+#: ../../installation.rst:602
 msgid "``effektif.smtp.password``"
 msgstr "``effektif.smtp.password``"
 
-#: ../../installation.rst:601
+#: ../../installation.rst:602
 msgid "The password for authentication"
 msgstr "Das Passwort zur Authentifizierung am Emailserver"
 
-#: ../../installation.rst:602
+#: ../../installation.rst:603
 msgid "``effektif.mail.from``"
 msgstr "``effektif.mail.from``"
 
-#: ../../installation.rst:602
+#: ../../installation.rst:603
 msgid ""
 "This email address is used as the sender when the Signavio Workflow system "
 "sends out notifications."
@@ -1906,11 +1918,11 @@ msgstr ""
 "Die Sender-E-Mail-Adresse von Signavio Workflow-Benachrichtigungen und "
 "Einladungen."
 
-#: ../../installation.rst:603
+#: ../../installation.rst:604
 msgid "``effektif.mongodb.servers``"
 msgstr "``effektif.mongodb.servers``"
 
-#: ../../installation.rst:603
+#: ../../installation.rst:604
 msgid ""
 "A comma-separated list of MongoDB servers (hostnames). If you have MongodDB "
 "running on the same server as Tomcat, the default value of localhost is okay."
@@ -1919,11 +1931,11 @@ msgstr ""
 "der Maschine läuft, auf der Tomcat die Effektif-Webanwendung zur Verfügung "
 "stellt, kann der Standardwert localhost beibehalten werden."
 
-#: ../../installation.rst:604
+#: ../../installation.rst:605
 msgid "``effektif.mongodb.username``"
 msgstr "``effektif.mongodb.username``"
 
-#: ../../installation.rst:604
+#: ../../installation.rst:605
 msgid ""
 "The Signavio Workflow MongoDB user name. If you created the user following "
 "the instructions in this guide, the name is ``signavio``."
@@ -1931,11 +1943,11 @@ msgstr ""
 "Der Signavio Workflow MongoDB Nutzername. Falls Sie den Nutzer entsprechend "
 "der Anweisungen erstellt haben, ist der name ``signavio`` ."
 
-#: ../../installation.rst:605
+#: ../../installation.rst:606
 msgid "``effektif.mongodb.password``"
 msgstr "``effektif.mongodb.password``"
 
-#: ../../installation.rst:605
+#: ../../installation.rst:606
 msgid ""
 "The password of the Signavio Workflow MongoDB user. This is the password you "
 "defined during user creation."
@@ -1943,11 +1955,11 @@ msgstr ""
 "Das Passwort des MongoDB Nutzers, das bei der Erstellung des Nutzers "
 "definiert wurde."
 
-#: ../../installation.rst:606
+#: ../../installation.rst:607
 msgid "``effektif.mongodb.database``"
 msgstr "``effektif.mongodb.database``"
 
-#: ../../installation.rst:606
+#: ../../installation.rst:607
 msgid ""
 "The name of the database Signavio Workflow should use. The default value "
 "``signavio`` is okay."
@@ -1955,11 +1967,11 @@ msgstr ""
 "Der Name der Datenbank, die von Signavio Workflow verwendet werden soll. Der "
 "Standardwert ``signavio`` kann beibehalten werden."
 
-#: ../../installation.rst:607
+#: ../../installation.rst:608
 msgid "``effektif.javascript.server.url``"
 msgstr "``effektif.javascript.server.url``"
 
-#: ../../installation.rst:607
+#: ../../installation.rst:608
 msgid ""
 "(Optional) The URL of the Signavio Workflow Script Engine, e.g. ``http://"
 "localhost:8081``\\ ."
@@ -1967,7 +1979,7 @@ msgstr ""
 "(Optional) Die URL der Signavio Workflow Script Engine, z.B. ``http://"
 "localhost:8081``\\ ."
 
-#: ../../installation.rst:610
+#: ../../installation.rst:611
 msgid ""
 "The following properties are only relevant if your Signavio Workflow "
 "installation is connected to your Signavio installation. ::"
@@ -1975,7 +1987,7 @@ msgstr ""
 "Die folgenden Eigenschaften sind nur relevant, falls Signavio Workflow mit "
 "Ihrer Signavio-Installation verbunden werden soll: ::"
 
-#: ../../installation.rst:619
+#: ../../installation.rst:620
 msgid ""
 "See :ref:`signavio-integration` for more information on how to set up the "
 "integration."
@@ -1983,11 +1995,11 @@ msgstr ""
 "Weitere Details zur Signavio-Integration erhalten Sie im Kapitel :ref:"
 "`signavio-integration`\\ ."
 
-#: ../../installation.rst:622
+#: ../../installation.rst:623
 msgid "Configure logging"
 msgstr "Logging konfigurieren"
 
-#: ../../installation.rst:623
+#: ../../installation.rst:624
 msgid ""
 "The Signavio Workflow system has its own application log file ``effektif."
 "log``\\ . You need to define the directory where this log file is stored. "
@@ -2000,7 +2012,7 @@ msgstr ""
 "logback.xml``\\ . Öffnen Sie die datei und passen Sie die folgende Zeile "
 "an: ::"
 
-#: ../../installation.rst:630
+#: ../../installation.rst:631
 msgid ""
 "The value should contain an absolute path. Make sure the user executing "
 "Tomcat has the required read / write permissions for the directory."
@@ -2009,7 +2021,7 @@ msgstr ""
 "der Nutzer, der Tomcat ausführt Lese- und Schreibzugriff auf das "
 "entsprechende Verzeichnis hat."
 
-#: ../../installation.rst:633
+#: ../../installation.rst:634
 msgid ""
 "On Windows it necessary to escape all \"\\\\\". An example value could like "
 "this: ``\"C:\\\\Logs\\\\Signavio\"``\\ ."
@@ -2017,7 +2029,7 @@ msgstr ""
 "Unter Windows ist es notwendig, alle \"\\\\\" zu escapen, sodass sich zum "
 "Beispiel der folgende Wert ergibt: ``\"C:\\\\Logs\\\\Signavio\"``\\ ."
 
-#: ../../installation.rst:635
+#: ../../installation.rst:636
 msgid ""
 "This configuration file also enables you to change the log level in this "
 "file. By default, the log level is INFO. However, in a scenario where you "
@@ -2029,11 +2041,11 @@ msgstr ""
 "Troubleshooting Support benötigen, ist es sinnvoll, das Loglevel auf DEBUG "
 "zu erhöhen. Hierfür muss die folgende Zeile angepasst werden: ::"
 
-#: ../../installation.rst:642
+#: ../../installation.rst:643
 msgid "Change it to: ::"
 msgstr "Der geänderte Eintrag sollte wie folgt aussehen: ::"
 
-#: ../../installation.rst:646
+#: ../../installation.rst:647
 msgid ""
 "You will need to restart the Tomcat server for the changes to take effect. "
 "You can find more detailed information on how to start the Tomcat server in "
@@ -2043,7 +2055,7 @@ msgstr ""
 "nächste Abschnitt gibt Ihnen detailliertere Hinweise, wie sie den Tomcat "
 "server starten können."
 
-#: ../../installation.rst:649
+#: ../../installation.rst:650
 msgid ""
 "The log file is configured to do a roll over. Every day, a new log file is "
 "created which contains a timestamp in the filename similar to "

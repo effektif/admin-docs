@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-07 09:23+0200\n"
-"PO-Revision-Date: 2016-07-07 12:35+0100\n"
+"POT-Creation-Date: 2016-08-29 16:03+0200\n"
+"PO-Revision-Date: 2016-08-29 16:09+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
 "MIME-Version: 1.0\n"
@@ -124,10 +124,14 @@ msgid "the port is set"
 msgstr "Der Port ist gesetzt."
 
 #: ../../starting.rst:40
+msgid "the Signavio Workflow URL is set"
+msgstr "Die Signavio Workflow URL ist konfiguriert."
+
+#: ../../starting.rst:41
 msgid "the log files are configured"
 msgstr "Die Log-Datei ist konfiguriert."
 
-#: ../../starting.rst:41
+#: ../../starting.rst:42
 msgid ""
 "the script engine URL is configured in the Signavio Workflow configuration "
 "file"
@@ -135,7 +139,7 @@ msgstr ""
 "Die URL der Script Engine ist in der Signavio Workflow-Konfigurationsdatei "
 "festgelegt."
 
-#: ../../starting.rst:43
+#: ../../starting.rst:44
 msgid ""
 "If the system is integrated with the Signavio Process Editor check also the "
 "following points:"
@@ -143,12 +147,12 @@ msgstr ""
 "Überprüfen Sie die folgenden Punkte, falls Signavio Workflow mit dem "
 "Signavio Process Editor intergriert sein soll:"
 
-#: ../../starting.rst:45
+#: ../../starting.rst:46
 msgid "Signavio Workflow and Signavio Process Editor have compatible versions"
 msgstr ""
 "Signavio Workflow und Signavio Process Editor haben kompatible Versionen."
 
-#: ../../starting.rst:46
+#: ../../starting.rst:47
 msgid ""
 "Signavio Workflow is configured in the Signavio Process Editor configuration."
 "xml"
@@ -156,7 +160,7 @@ msgstr ""
 "Signavio Workflow ist in der Signavio Process Editor-Konfigurationsdatei "
 "configuration.xml konfiguriert."
 
-#: ../../starting.rst:47
+#: ../../starting.rst:48
 msgid ""
 "Signavio Process Editor is configured in the Signavio Workflow configuration "
 "file"
@@ -164,11 +168,11 @@ msgstr ""
 "Signavio Process Editor ist in der Signavio Workflow Konfigurationsdatei "
 "konfiguriert."
 
-#: ../../starting.rst:50
+#: ../../starting.rst:51
 msgid "Start Signavio Workflow"
 msgstr "Signavio Workflow starten"
 
-#: ../../starting.rst:51
+#: ../../starting.rst:52
 msgid ""
 "After completing the installation as described above, both the MongoDB "
 "database and the Tomcat application server must be started for Signavio "
@@ -179,15 +183,15 @@ msgstr ""
 "notwendig MongoDB und Tomcat zu starten, um Signavio Workflow erfolgreich "
 "auszuführen."
 
-#: ../../starting.rst:55
+#: ../../starting.rst:56
 msgid "Windows"
 msgstr "Windows"
 
-#: ../../starting.rst:58 ../../starting.rst:94
+#: ../../starting.rst:59 ../../starting.rst:95
 msgid "MongoDB"
 msgstr "MongoDB"
 
-#: ../../starting.rst:59
+#: ../../starting.rst:60
 msgid ""
 "If you followed the instructions in this guide and registered a service for "
 "MongoDB, you can simply start the MongoDB server by opening a command line "
@@ -197,7 +201,7 @@ msgstr ""
 "Windows Service registriert haben, können Sie den MongoDB Server einfach "
 "über die Kommandozeile mit dem folgenden Befehl ausführen: ::"
 
-#: ../../starting.rst:63
+#: ../../starting.rst:64
 msgid ""
 "The registration also defined the startup type of the MongoDB service as "
 "“Automatic” which means it will start automatically if you restart the "
@@ -211,11 +215,11 @@ msgstr ""
 "Benutzeroberfläche ( ``services.msc`` ) gestartet, gestoppt und konfiguriert "
 "werden."
 
-#: ../../starting.rst:68 ../../starting.rst:111
+#: ../../starting.rst:69 ../../starting.rst:112
 msgid "Tomcat"
 msgstr "Tomcat"
 
-#: ../../starting.rst:69
+#: ../../starting.rst:70
 msgid ""
 "Assuming you installed Tomcat using the Windows service installer, you can "
 "open the Tomcat configuration dialog again by opening the Windows start menu "
@@ -228,7 +232,7 @@ msgstr ""
 "auswählen. Im Tab “General” befinden sich die Schaltflächen zum Starten und "
 "Stoppen des Tomcats."
 
-#: ../../starting.rst:76
+#: ../../starting.rst:77
 msgid ""
 "Furthermore, you have the option to define the startup type of the service. "
 "By default, this should be “Manual” which means you have to start the Tomcat "
@@ -242,11 +246,11 @@ msgstr ""
 "„Automatic“ zu ändern, damit Ihre Effektif Anwendung nach einem Reboot des "
 "Betriebssystems automatisch wieder läuft."
 
-#: ../../starting.rst:82 ../../starting.rst:129
+#: ../../starting.rst:83 ../../starting.rst:130
 msgid "Script Engine"
 msgstr "Script Engine"
 
-#: ../../starting.rst:83
+#: ../../starting.rst:84
 msgid ""
 "If you installed the script engine and wrapped it into a service, you can "
 "open the ``services.msc``, locate the Signavio Script Engine service and "
@@ -258,7 +262,7 @@ msgstr ""
 "starten. Ansonsten öffnen Sie die Kommandozeile, navigieren Sie zum "
 "Verzeichnis ``$SCRIPT_ENGINE_HOME`` und führen Sie folgenden Befehl aus: ::"
 
-#: ../../starting.rst:88 ../../starting.rst:135
+#: ../../starting.rst:89 ../../starting.rst:136
 msgid ""
 "Note, you cannot close the command line as long as the script engine is "
 "running."
@@ -266,11 +270,11 @@ msgstr ""
 "Beachten Sie, dass Sie die Kommandozeile nicht beenden können, solange die "
 "Script Engine ausgeführt wird."
 
-#: ../../starting.rst:91
+#: ../../starting.rst:92
 msgid "Debian"
 msgstr "Debian"
 
-#: ../../starting.rst:95
+#: ../../starting.rst:96
 msgid ""
 "If you followed the instructions in this guide to setup MongoDB using a "
 "packet manager, some additional scripts have been installed that allow you "
@@ -282,14 +286,14 @@ msgstr ""
 "Befehl auf der Kommandozeile starten. Für die Ausführung benötigen Sie evtl. "
 "Root-Rechte. ::"
 
-#: ../../starting.rst:100
+#: ../../starting.rst:101
 msgid ""
 "If MongoDB is already running, you can restart the database by executing: ::"
 msgstr ""
 "Falls MongoDB bereits läuft, können Sie den Service mit folgendem Befehl "
 "neustarten: ::"
 
-#: ../../starting.rst:104
+#: ../../starting.rst:105
 msgid ""
 "In order to determine whether MongoDB is running or not, you can check upon "
 "the status with the following command: ::"
@@ -297,7 +301,7 @@ msgstr ""
 "Um den Status von MongoDB herauszufinden und zu prüfen ob der Service läuft "
 "oder nicht, führen Sie folgenden Befehl aus: ::"
 
-#: ../../starting.rst:108
+#: ../../starting.rst:109
 msgid ""
 "Be aware, in earlier versions of MongoDB, e.g. 2.4.x, the scripts had a "
 "different name ``/etc/init.d/mongodb``."
@@ -305,7 +309,7 @@ msgstr ""
 "Beachten Sie, in früheren Versionen von MongoDB, z.B. 2.4.x, hatten die "
 "Skripte einen anderen Namen ``/etc/init.d/mongodb``\\ ."
 
-#: ../../starting.rst:112
+#: ../../starting.rst:113
 msgid ""
 "The recommended way to install Tomcat is to use a packet manager. Installing "
 "Tomcat under Debian with APT will install additional scripts to start, stop "
@@ -317,12 +321,12 @@ msgstr ""
 "hinterlegt. Zum Starten kann der folgende Befehl verwendet werden – "
 "eventuell sind Root-Rechte erforderlich: ::"
 
-#: ../../starting.rst:118
+#: ../../starting.rst:119
 msgid ""
 "You can restart the Tomcat server if it is already running by executing: ::"
 msgstr "Sie können Tomcat mit folgendem Befehl neustarten: ::"
 
-#: ../../starting.rst:122
+#: ../../starting.rst:123
 msgid ""
 "Furthermore, you can check upon the status of the Tomcat and determine "
 "whether it is running or not with the following command: ::"
@@ -330,7 +334,7 @@ msgstr ""
 "Außerdem können Sie den aktuellen Status von Tomcat mit folgenden Befehl "
 "überprüfen und so herausfinden, ob der Server läuft: ::"
 
-#: ../../starting.rst:126
+#: ../../starting.rst:127
 msgid ""
 "The examples above show only the commands for Tomcat 8. However, if you use "
 "Tomcat 7, the same commands will work with the script ``/etc/init.d/tomcat7``"
@@ -340,7 +344,7 @@ msgstr ""
 "Sie jedoch Tomcat 7 verwenden, sollten die gleichen Kommandos mit dem Skript "
 "``/etc/init.d/tomcat7`` funktionieren."
 
-#: ../../starting.rst:130
+#: ../../starting.rst:131
 msgid ""
 "If you installed the script engine and setup an Init script, execute the "
 "respective start command for the Init script. Otherwise open a command line, "
@@ -351,11 +355,11 @@ msgstr ""
 "Skript. Ansonsten öffnen Sie die Kommandozeile, navigieren Sie zum "
 "Verzeichnis ``$SCRIPT_ENGINE_HOME`` und führen Sie folgenden Befehl aus: ::"
 
-#: ../../starting.rst:138
+#: ../../starting.rst:139
 msgid "Login to Signavio Workflow"
 msgstr "In Signavio Workflow einloggen"
 
-#: ../../starting.rst:139
+#: ../../starting.rst:140
 msgid ""
 "When the Signavio Workflow system was started properly you can see the login "
 "screen by entering the URL of your Signavio Workflow installation in your "
@@ -369,11 +373,11 @@ msgstr ""
 "Signavio Workflow-Versionen. Die Login-Maske der Standalone-Version enthält "
 "Eingabemöglichkeiten für Nutzername und Passwort und sieht wie folgt aus:"
 
-#: ../../starting.rst:146
+#: ../../starting.rst:147
 msgid "The default Signavio Workflow login screen"
 msgstr "Die Standard Signavio Workflow Login-Maske"
 
-#: ../../starting.rst:148
+#: ../../starting.rst:149
 msgid ""
 "If you purchased Signavio Workflow along with the Signavio Process Editor, "
 "you will see a login screen with one button. You can login to Signavio "
@@ -387,11 +391,11 @@ msgstr ""
 "Abschnitt :ref:`signavio-user-management` dieses Handbuchs finden Sie "
 "detaillierte Anweisungen zur Nutzererstellung für diesen Fall."
 
-#: ../../starting.rst:155
+#: ../../starting.rst:156
 msgid "The Signavio login screen"
 msgstr "Die Signavio Login-Maske"
 
-#: ../../starting.rst:157
+#: ../../starting.rst:158
 msgid ""
 "When you click *Log in with Signavio account*\\ , you will be redirected to "
 "the Signavio Process Editor and asked to authorize the access of Signavio "
@@ -404,11 +408,11 @@ msgstr ""
 "Workflow bestätigen müssen. Diese Bestätigung ist selbstverständlich nur im "
 "Zuge des ersten Logins notwendig."
 
-#: ../../starting.rst:164
+#: ../../starting.rst:165
 msgid "The Signavio authorization dialog"
 msgstr "Der Autorisierungsdialog in Signavio"
 
-#: ../../starting.rst:166
+#: ../../starting.rst:167
 msgid ""
 "You have to be logged in to the Signavio Process Editor in order to see the "
 "authorization dialog. Otherwise, you will be redirected to the Collaboration "
@@ -418,11 +422,11 @@ msgstr ""
 "angemeldet sein. Ansonsten werden Sie zum Signavio Collaboration Portal "
 "weitergeleitet."
 
-#: ../../starting.rst:171
+#: ../../starting.rst:172
 msgid "Create the initial user"
 msgstr "Den ersten Nutzer erstellen"
 
-#: ../../starting.rst:172
+#: ../../starting.rst:173
 msgid ""
 "In case you purchased Signavio Workflow along with the Signavio Process "
 "Editor and want to setup the integration, you don't have to create the "
@@ -435,7 +439,7 @@ msgstr ""
 "Fall für weitere Informationen in den Abschnitt :ref:`signavio-user-"
 "management`\\ , um weitere Informationen zu erhalten."
 
-#: ../../starting.rst:175
+#: ../../starting.rst:176
 msgid ""
 "Signavio Workflow users are organized in organisations. There is a maximum "
 "amount of organisations that can be registered on an on-premise system. You "
@@ -449,7 +453,7 @@ msgstr ""
 "Wenn der erste Nutzer erstellt wird, wird mit ihm automatisch eine "
 "Organisation erstellt."
 
-#: ../../starting.rst:180
+#: ../../starting.rst:181
 msgid ""
 "In order to register, enter the URL of your Signavio Workflow installation "
 "in your browser. You will see the login screen of Signavio Workflow."
@@ -457,7 +461,7 @@ msgstr ""
 "Rufen Sie die URL Ihrer Signavio Workflow-Installation im Browser auf, um "
 "den ersten Nutzer anzulegen."
 
-#: ../../starting.rst:183
+#: ../../starting.rst:184
 msgid ""
 "Click *Register a new account*, fill in your email address and click "
 "*Register a new user*\\ . You will then receive an email with a link to "
@@ -470,7 +474,7 @@ msgstr ""
 "Link können Sie die Registrierung abschließen. Nun ist Ihre Signavio "
 "Workflow-Organisation angelegt und Sie können weitere Nutzer registrieren."
 
-#: ../../starting.rst:187
+#: ../../starting.rst:188
 msgid ""
 "Every time a user registers using the register link on the login screen, a "
 "new organisation is created until the maximum amount is reached. In general, "
@@ -483,11 +487,11 @@ msgstr ""
 "Ihrem Arbeitsbereich hinaus einladen, sodass diese Ihrer Organisation "
 "hinzugefügt werden. Der folgende Abschnitt beschreibt diese Vorgehensweise."
 
-#: ../../starting.rst:192
+#: ../../starting.rst:193
 msgid "Invite other users"
 msgstr "Weitere Nutzer einladen"
 
-#: ../../starting.rst:193
+#: ../../starting.rst:194
 msgid ""
 "In case this is an integrated installation with the Signavio Process Editor, "
 "please jump to section :ref:`signavio-integration` for setting up "
@@ -497,7 +501,7 @@ msgstr ""
 "erstanden haben und daher beide System integrieren möchten, wechseln Sie für "
 "weitere Informationen in den Abschnitt :ref:`signavio-integration`\\ ."
 
-#: ../../starting.rst:195
+#: ../../starting.rst:196
 msgid ""
 "To invite other users, go to the organization configuration panel. That's "
 "located in the dropdown under your name in the top right corner named "
@@ -519,7 +523,7 @@ msgstr ""
 "einlädt, schränkt dies also die Zahl der auf dem System zu Verfügung "
 "stehenden Nutzerlizenzen organisationsübergreifend ein."
 
-#: ../../starting.rst:203
+#: ../../starting.rst:204
 msgid ""
 "A user can be invited to multiple organisations. If a user is part of two "
 "organisations, he will require two user licenses, one for each organisation "
@@ -530,7 +534,7 @@ msgstr ""
 "falls ein Nutzer in zwei Organisationen existiert, benötigt er also zwei "
 "Lizenzen."
 
-#: ../../starting.rst:206
+#: ../../starting.rst:207
 msgid ""
 "Besides the manual invitation of every user, the enterprise version of "
 "Signavio Workflow offers the possibility to synchronise users and groups "
