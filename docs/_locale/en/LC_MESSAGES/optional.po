@@ -8,17 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Effektif administrators guide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-06 18:36+0200\n"
-"PO-Revision-Date: 2016-07-06 19:40+0100\n"
+"POT-Creation-Date: 2016-08-29 15:28+0200\n"
+"PO-Revision-Date: 2016-08-29 15:36+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Signavo Workflow Dev <dev.effektif@signavio.com>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.2.0\n"
 "Language: en\n"
 "X-Generator: Poedit 1.6.9\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #: ../../optional.rst:2
 msgid "Optional configuration"
@@ -464,8 +463,8 @@ msgid "Copy ``krb5.conf`` to ``$TOMCAT_HOME/``, and edit the file:"
 msgstr "Copy ``krb5.conf`` to ``$TOMCAT_HOME/``, and edit the file:"
 
 #: ../../optional.rst:218
-msgid "replace four occurrences of ``ADTEST`` with the Windows domain name"
-msgstr "replace four occurrences of ``ADTEST`` with the Windows domain name"
+msgid "replace five occurrences of ``ADTEST`` with the Windows domain name"
+msgstr "replace five occurrences of ``ADTEST`` with the Windows domain name"
 
 #: ../../optional.rst:219
 msgid ""
@@ -475,15 +474,15 @@ msgstr ""
 "replace ``123.45.6.7`` with the host name or IP address of the Active "
 "Directory server."
 
-#: ../../optional.rst:239
+#: ../../optional.rst:240
 msgid "Copy ``login.conf`` to ``$TOMCAT_HOME/``."
 msgstr "Copy ``login.conf`` to ``$TOMCAT_HOME/``."
 
-#: ../../optional.rst:255
+#: ../../optional.rst:256
 msgid "Registering Tomcat’s Service Principal Name (SPN)"
 msgstr "Registering Tomcat’s Service Principal Name (SPN)"
 
-#: ../../optional.rst:257
+#: ../../optional.rst:258
 msgid ""
 "The `SPN <https://msdn.microsoft.com/en-us/library/ms677949(v=vs.85).aspx>`_ "
 "is the identifier used by Kerberos authentication to associate a service "
@@ -505,7 +504,7 @@ msgstr ""
 "to define a SPN, use ``setspn.exe`` - part of the `Windows Support Tools "
 "<https://en.wikipedia.org/wiki/Windows_Support_Tools>`_\\ ."
 
-#: ../../optional.rst:266
+#: ../../optional.rst:267
 msgid ""
 "For example, our domain is called ``ADTEST.LOCAL``, the computer name of the "
 "server is ``VM-42``, Signavio Workflow will be available under the domain "
@@ -519,7 +518,7 @@ msgstr ""
 "``tomcat@adtest.local``\\ . Then we would have to register the following "
 "SPNs:"
 
-#: ../../optional.rst:275
+#: ../../optional.rst:276
 msgid ""
 "For more information see the `Microsoft documentation <https://msdn."
 "microsoft.com/en-us/library/cc281382.aspx>`_\\ ."
@@ -527,7 +526,7 @@ msgstr ""
 "For more information see the `Microsoft documentation <https://msdn."
 "microsoft.com/en-us/library/cc281382.aspx>`_\\ ."
 
-#: ../../optional.rst:278
+#: ../../optional.rst:279
 msgid ""
 "You can list all registered SPNs which are associated to a domain account "
 "with the following command:"
@@ -535,11 +534,11 @@ msgstr ""
 "You can list all registered SPNs which are associated to a domain account "
 "with the following command:"
 
-#: ../../optional.rst:286
+#: ../../optional.rst:287
 msgid "Configuring the Tomcat user"
 msgstr "Configuring the Tomcat user"
 
-#: ../../optional.rst:288
+#: ../../optional.rst:289
 msgid ""
 "By default the Tomcat application server is executed with a local system "
 "account. The SSO setup requires the Tomcat to be executed with a domain "
@@ -551,29 +550,29 @@ msgstr ""
 "account. You should use the same domain account which you already configured "
 "in :ref:`configure-sso-filter`\\ ."
 
-#: ../../optional.rst:292
+#: ../../optional.rst:293
 msgid "Open the Windows services dialogue ``services.msc``"
 msgstr "Open the Windows services dialogue ``services.msc``"
 
-#: ../../optional.rst:293
+#: ../../optional.rst:294
 msgid "Select your Apache Tomcat service and open the properties"
 msgstr "Select your Apache Tomcat service and open the properties"
 
-#: ../../optional.rst:294
+#: ../../optional.rst:295
 msgid "Select the *Log On* tab"
 msgstr "Select the *Log On* tab"
 
-#: ../../optional.rst:295
+#: ../../optional.rst:296
 msgid ""
 "Choose the option *This account* and fill in the domain account credentials"
 msgstr ""
 "Choose the option *This account* and fill in the domain account credentials"
 
-#: ../../optional.rst:299
+#: ../../optional.rst:300
 msgid "Troubleshooting"
 msgstr "Troubleshooting"
 
-#: ../../optional.rst:301
+#: ../../optional.rst:302
 msgid ""
 "First follow the steps in the `SPNEGO Pre-flight checklist <http://spnego."
 "sourceforge.net/pre_flight.html>`_. Run the ``HelloKDC`` connection test in "
@@ -585,7 +584,7 @@ msgstr ""
 "the ``$TOMCAT_HOME/`` directory to use the ``krb5.conf`` and ``login.conf`` "
 "you configured above."
 
-#: ../../optional.rst:304
+#: ../../optional.rst:305
 msgid ""
 "Note that in the `Pre-flight checklist`, the `Do we know the address of the "
 "KDC?` section recommends using the KDC host name instead of the IP address."
@@ -593,7 +592,7 @@ msgstr ""
 "Note that in the `Pre-flight checklist`, the `Do we know the address of the "
 "KDC?` section recommends using the KDC host name instead of the IP address."
 
-#: ../../optional.rst:307
+#: ../../optional.rst:308
 msgid ""
 "If you have completed the setup described here and the SSO is still not "
 "working, please make sure you are accessing the web application from a "
@@ -611,11 +610,11 @@ msgstr ""
 "system is a trusted service, for instance by adding the address to the local "
 "intranet."
 
-#: ../../optional.rst:311
+#: ../../optional.rst:312
 msgid "If you see an error page with the following error message:"
 msgstr "If you see an error page with the following error message:"
 
-#: ../../optional.rst:317
+#: ../../optional.rst:318
 msgid ""
 "The time difference between the computer accessing Signavio Workflow and the "
 "Kerberos server is bigger than 5 minutes. You will need to synchronise the "

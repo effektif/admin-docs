@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Effektif administrators guide 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-07 13:46+0200\n"
-"PO-Revision-Date: 2016-07-07 14:34+0100\n"
+"POT-Creation-Date: 2016-08-29 15:28+0200\n"
+"PO-Revision-Date: 2016-08-29 15:38+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif dev <dev@effektif.com>\n"
 "MIME-Version: 1.0\n"
@@ -34,8 +34,8 @@ msgstr ""
 "additional instructions for updates."
 
 #: ../../update-notes.rst:10
-msgid "Updating to Signavio Workflow 3.9"
-msgstr "Updating to Signavio Workflow 3.9"
+msgid "Updating to Signavio Workflow 3.11"
+msgstr "Updating to Signavio Workflow 3.11"
 
 #: ../../update-notes.rst:11
 msgid ""
