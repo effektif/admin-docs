@@ -25,8 +25,13 @@ Signavio Workflow version   Signavio Process Editor version
 Setup
 -----
 1. Make sure both systems are NOT running.
-2. Edit the Signavio configuration file ``ROOT/WEB-INF/classes/configuration.xml`` which can be found in the Tomcat that hosts the SPE system. ::
-    
+2. Edit the Signavio configuration file, which can be found in the Tomcat that hosts the SPE system at the following path:
+
+  * version 9.3 and earlier: ``WEBAPPS/ROOT/WEB-INF/classes/configuration.xml``
+
+  * version 9.7 and later: ``CONF/configuration.xml``
+  ::
+
     <effektif>  
       <effektifServerUrl>http://your.workflow.domain:port</effektifServerUrl>
       <effektifUserName>system@signavio.com</effektifUserName>
