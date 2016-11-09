@@ -46,7 +46,7 @@ Setup
 ``effektifUserPw``      Defines the password of the system user. Remember this password, you will need to set the exact same password in the Signavio Workflow configuration file.
 =====================   =====================
 
-3. Edit the Signavio Workflow configuration file ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes/ effektif-onpremise.properties`` and add / update the following entries. ::
+3. Edit the Signavio Workflow configuration file ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes/effektif-onpremise.properties`` and add / update the following entries. ::
 
     effektif.com.effektif.model.service.signavio.SignavioAuthenticationProvider.
         serviceBaseUrl=http://your.signavio.domain:port
