@@ -6,6 +6,15 @@ Update notes
 This section contains important information about Signavio Workflow system updates.
 It lists changes to technical requirements for new versions and additional instructions for updates.
 
+.. IMPORTANT::
+	If you skip one or more versions of Signavio Workflow during the update, please read the update notes for the versions you are skipping as well. You should start with the oldest version which is newer than your currently running version of Signavio Workflow.
+
+Updating to Signavio Workflow 3.15
+----------------------------------
+If you use Signavio Workflow in combination with the Signavio Process Editor, you must update the Signavio Process Editor to version 10.8.
+
+If you update from a version prior to Signavio Workflow 3.11, please follow the instructions in the next sections version by version, starting with the oldest version to ensure a successful update.
+
 Updating to Signavio Workflow 3.11
 ----------------------------------
 Effektif has been renamed to Signavio Workflow. Along with this change, the colors of the default theme have changed as well. 

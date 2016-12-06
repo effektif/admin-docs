@@ -20,6 +20,7 @@ Signavio Workflow version   Signavio Process Editor version
 2.27.4 - 2.32.7             9.2.1 - 9.3
 3.4.x                       9.7
 3.11.x                      10.3
+3.15.x                      10.8
 =========================   ===============================
 
 Setup
