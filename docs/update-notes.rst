@@ -13,7 +13,7 @@ Updating to Signavio Workflow 3.15
 ----------------------------------
 If you use Signavio Workflow in combination with the Signavio Process Editor, you must update the Signavio Process Editor to version 10.8.
 
-To update from a version prior to Signavio Workflow 3.11, first follow the instructions for :ref:`update-3-4`.
+To update from a version prior to Signavio Workflow 3.11, first follow the instructions in the next sections version by version, starting with the oldest version which is higher than your currently installed version.
 
 Updating to Signavio Workflow 3.11
 ----------------------------------
@@ -28,8 +28,6 @@ In general, you can use script tasks only with a full version of Signavio Workfl
 Refer to :ref:`install-script-engine` for more information on how to setup the Signavio Workflow Script Engine.
 
 If you update from a version prior to Effektif 3.4, please follow the instructions in the next section to update your Java, Tomcat and MongoDB version as well. You don't need to do an intermediate update to Effektif version 3.4 and can directly update to version 3.11 of Signavio Workflow.
-
-.. _update-3-4:
 
 Updating to Effektif 3.4
 ------------------------
