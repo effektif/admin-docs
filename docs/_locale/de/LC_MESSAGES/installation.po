@@ -2,14 +2,14 @@
 # Copyright (C) 2016, Signavio GmbH
 # This file is distributed under the same license as the Signavio Workflow
 # administrators guide package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-29 16:03+0200\n"
-"PO-Revision-Date: 2016-08-29 16:07+0100\n"
+"POT-Creation-Date: 2017-02-23 17:46+0100\n"
+"PO-Revision-Date: 2017-02-23 17:53+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
 "MIME-Version: 1.0\n"
@@ -203,16 +203,16 @@ msgid "The database server requires the following additional software:"
 msgstr "Der Datenbankserver benötigt die folgende Software:"
 
 #: ../../installation.rst:61
-msgid "MongoDB version 3.2.x"
-msgstr "MongoDB Version 3.2.x"
+msgid "MongoDB version 3.2.x or higher"
+msgstr "MongoDB Version 3.2.x oder höher"
 
 #: ../../installation.rst:63
 msgid "The optional script engine requires the following additional software:"
 msgstr "Die optionale Script Engine benötigt folgende zusätzliche Software:"
 
 #: ../../installation.rst:65
-msgid "Node.js 4.x LTS"
-msgstr "Node.js 4.x LTS"
+msgid "Node.js 6.x LTS"
+msgstr "Node.js 6.x LTS"
 
 #: ../../installation.rst:70
 msgid "Web browser"
@@ -629,15 +629,15 @@ msgstr "MongoDB installieren"
 msgid ""
 "MongoDB is currently the only database system that Signavio Workflow "
 "supports. If you already have an infrastructure that can provide a MongoDB "
-"version 3.2.x instance, simply create a new instance for Signavio Workflow "
-"and skip to :ref:`configure-mongodb`. Otherwise continue with the "
+"version 3.2.x (or 3.4.x) instance, simply create a new instance for Signavio "
+"Workflow and skip to :ref:`configure-mongodb`. Otherwise continue with the "
 "installation instructions."
 msgstr ""
 "MongoDB ist das einizge Datenbanksystem, das momentan von Signavio Workflow "
-"unterstützt wird. Falls Sie bereits ein MongoDB 3.2.x System zur Verfügung "
-"stehen haben, können Sie einfach eine neue Instanz für Signavio Workflow "
-"erstellen und zum Abschnitt :ref:`configure-mongodb` springen. Folgen Sie "
-"andernfalls den folgenden Anweisungen."
+"unterstützt wird. Falls Sie bereits ein MongoDB 3.2.x (oder 3.4.x) System "
+"zur Verfügung stehen haben, können Sie einfach eine neue Instanz für "
+"Signavio Workflow erstellen und zum Abschnitt :ref:`configure-mongodb` "
+"springen. Folgen Sie andernfalls den folgenden Anweisungen."
 
 #: ../../installation.rst:214
 msgid ""
@@ -1334,11 +1334,11 @@ msgstr ""
 msgid ""
 "Node.js is a runtime environment for JavaScript which is used by Signavio "
 "Workflow to execute custom JavaScript tasks created by the user. We "
-"recommend using the Node.js LTS (Long Term Support) version 4.x."
+"recommend using the Node.js LTS (Long Term Support) version 6.x."
 msgstr ""
 "Node.js ist eine Ausführungsumgebung für JavaScript, welche von Signavio "
 "Workflow genutzt wird, um benutzerdefinierte JavaScript-Tasks auszuführen. "
-"Wir empfehlen Node.js LTS (Long Term Support) Version 4.x zu verwenden."
+"Wir empfehlen Node.js LTS (Long Term Support) Version 6.x zu verwenden."
 
 #: ../../installation.rst:435
 msgid "For Windows there is a comfortable installer to setup Node.js."
@@ -1919,10 +1919,22 @@ msgstr ""
 "Einladungen."
 
 #: ../../installation.rst:604
+msgid "``effektif.mail.feedback``"
+msgstr "``effektif.mail.feedback``"
+
+#: ../../installation.rst:604
+msgid ""
+"This email address will receive all feedback which is sent using the "
+"feedback functionality in the application."
+msgstr ""
+"Diese E-Mail-Adresse erhält alle Feedback-Nachrichten, welche über die "
+"integrierte Feedback-Funktion in der Anwendung gesendet werden."
+
+#: ../../installation.rst:605
 msgid "``effektif.mongodb.servers``"
 msgstr "``effektif.mongodb.servers``"
 
-#: ../../installation.rst:604
+#: ../../installation.rst:605
 msgid ""
 "A comma-separated list of MongoDB servers (hostnames). If you have MongodDB "
 "running on the same server as Tomcat, the default value of localhost is okay."
@@ -1931,11 +1943,11 @@ msgstr ""
 "der Maschine läuft, auf der Tomcat die Effektif-Webanwendung zur Verfügung "
 "stellt, kann der Standardwert localhost beibehalten werden."
 
-#: ../../installation.rst:605
+#: ../../installation.rst:606
 msgid "``effektif.mongodb.username``"
 msgstr "``effektif.mongodb.username``"
 
-#: ../../installation.rst:605
+#: ../../installation.rst:606
 msgid ""
 "The Signavio Workflow MongoDB user name. If you created the user following "
 "the instructions in this guide, the name is ``signavio``."
@@ -1943,11 +1955,11 @@ msgstr ""
 "Der Signavio Workflow MongoDB Nutzername. Falls Sie den Nutzer entsprechend "
 "der Anweisungen erstellt haben, ist der name ``signavio`` ."
 
-#: ../../installation.rst:606
+#: ../../installation.rst:607
 msgid "``effektif.mongodb.password``"
 msgstr "``effektif.mongodb.password``"
 
-#: ../../installation.rst:606
+#: ../../installation.rst:607
 msgid ""
 "The password of the Signavio Workflow MongoDB user. This is the password you "
 "defined during user creation."
@@ -1955,11 +1967,11 @@ msgstr ""
 "Das Passwort des MongoDB Nutzers, das bei der Erstellung des Nutzers "
 "definiert wurde."
 
-#: ../../installation.rst:607
+#: ../../installation.rst:608
 msgid "``effektif.mongodb.database``"
 msgstr "``effektif.mongodb.database``"
 
-#: ../../installation.rst:607
+#: ../../installation.rst:608
 msgid ""
 "The name of the database Signavio Workflow should use. The default value "
 "``signavio`` is okay."
@@ -1967,11 +1979,11 @@ msgstr ""
 "Der Name der Datenbank, die von Signavio Workflow verwendet werden soll. Der "
 "Standardwert ``signavio`` kann beibehalten werden."
 
-#: ../../installation.rst:608
+#: ../../installation.rst:609
 msgid "``effektif.javascript.server.url``"
 msgstr "``effektif.javascript.server.url``"
 
-#: ../../installation.rst:608
+#: ../../installation.rst:609
 msgid ""
 "(Optional) The URL of the Signavio Workflow Script Engine, e.g. ``http://"
 "localhost:8081``\\ ."
@@ -1979,7 +1991,7 @@ msgstr ""
 "(Optional) Die URL der Signavio Workflow Script Engine, z.B. ``http://"
 "localhost:8081``\\ ."
 
-#: ../../installation.rst:611
+#: ../../installation.rst:612
 msgid ""
 "The following properties are only relevant if your Signavio Workflow "
 "installation is connected to your Signavio installation. ::"
@@ -1987,7 +1999,7 @@ msgstr ""
 "Die folgenden Eigenschaften sind nur relevant, falls Signavio Workflow mit "
 "Ihrer Signavio-Installation verbunden werden soll: ::"
 
-#: ../../installation.rst:620
+#: ../../installation.rst:621
 msgid ""
 "See :ref:`signavio-integration` for more information on how to set up the "
 "integration."
@@ -1995,11 +2007,11 @@ msgstr ""
 "Weitere Details zur Signavio-Integration erhalten Sie im Kapitel :ref:"
 "`signavio-integration`\\ ."
 
-#: ../../installation.rst:623
+#: ../../installation.rst:624
 msgid "Configure logging"
 msgstr "Logging konfigurieren"
 
-#: ../../installation.rst:624
+#: ../../installation.rst:625
 msgid ""
 "The Signavio Workflow system has its own application log file ``effektif."
 "log``\\ . You need to define the directory where this log file is stored. "
@@ -2012,7 +2024,7 @@ msgstr ""
 "logback.xml``\\ . Öffnen Sie die datei und passen Sie die folgende Zeile "
 "an: ::"
 
-#: ../../installation.rst:631
+#: ../../installation.rst:632
 msgid ""
 "The value should contain an absolute path. Make sure the user executing "
 "Tomcat has the required read / write permissions for the directory."
@@ -2021,7 +2033,7 @@ msgstr ""
 "der Nutzer, der Tomcat ausführt Lese- und Schreibzugriff auf das "
 "entsprechende Verzeichnis hat."
 
-#: ../../installation.rst:634
+#: ../../installation.rst:635
 msgid ""
 "On Windows it necessary to escape all \"\\\\\". An example value could like "
 "this: ``\"C:\\\\Logs\\\\Signavio\"``\\ ."
@@ -2029,7 +2041,7 @@ msgstr ""
 "Unter Windows ist es notwendig, alle \"\\\\\" zu escapen, sodass sich zum "
 "Beispiel der folgende Wert ergibt: ``\"C:\\\\Logs\\\\Signavio\"``\\ ."
 
-#: ../../installation.rst:636
+#: ../../installation.rst:637
 msgid ""
 "This configuration file also enables you to change the log level in this "
 "file. By default, the log level is INFO. However, in a scenario where you "
@@ -2041,11 +2053,11 @@ msgstr ""
 "Troubleshooting Support benötigen, ist es sinnvoll, das Loglevel auf DEBUG "
 "zu erhöhen. Hierfür muss die folgende Zeile angepasst werden: ::"
 
-#: ../../installation.rst:643
+#: ../../installation.rst:644
 msgid "Change it to: ::"
 msgstr "Der geänderte Eintrag sollte wie folgt aussehen: ::"
 
-#: ../../installation.rst:647
+#: ../../installation.rst:648
 msgid ""
 "You will need to restart the Tomcat server for the changes to take effect. "
 "You can find more detailed information on how to start the Tomcat server in "
@@ -2055,7 +2067,7 @@ msgstr ""
 "nächste Abschnitt gibt Ihnen detailliertere Hinweise, wie sie den Tomcat "
 "server starten können."
 
-#: ../../installation.rst:650
+#: ../../installation.rst:651
 msgid ""
 "The log file is configured to do a roll over. Every day, a new log file is "
 "created which contains a timestamp in the filename similar to "
@@ -2068,3 +2080,16 @@ msgstr ""
 "wird, zum Beispiel: ``effektif-2014-10-09.log``\\ . Die neuesten Einträge "
 "können zudem in der Datei effektif.log eingesehen werden. Logfiles, die "
 "älter als 30 Tage sind, werden automatisch gelöscht."
+
+#~ msgid ""
+#~ "MongoDB is currently the only database system that Signavio Workflow "
+#~ "supports. If you already have an infrastructure that can provide a "
+#~ "MongoDB version 3.2.x instance, simply create a new instance for Signavio "
+#~ "Workflow and skip to :ref:`configure-mongodb`. Otherwise continue with "
+#~ "the installation instructions."
+#~ msgstr ""
+#~ "MongoDB ist das einizge Datenbanksystem, das momentan von Signavio "
+#~ "Workflow unterstützt wird. Falls Sie bereits ein MongoDB 3.2.x System zur "
+#~ "Verfügung stehen haben, können Sie einfach eine neue Instanz für Signavio "
+#~ "Workflow erstellen und zum Abschnitt :ref:`configure-mongodb` springen. "
+#~ "Folgen Sie andernfalls den folgenden Anweisungen."

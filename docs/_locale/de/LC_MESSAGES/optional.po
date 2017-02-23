@@ -2,14 +2,14 @@
 # Copyright (C) 2016, Signavio GmbH
 # This file is distributed under the same license as the Signavio Workflow
 # administrators guide package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Signavio Workflow administrators guide 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-29 16:03+0200\n"
-"PO-Revision-Date: 2016-08-29 16:07+0100\n"
+"POT-Creation-Date: 2017-02-23 17:46+0100\n"
+"PO-Revision-Date: 2017-02-23 18:04+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Signavio Workflow Dev <dev.effektif@signavio.com>\n"
 "MIME-Version: 1.0\n"
@@ -644,3 +644,42 @@ msgstr ""
 "Der Zeitunterschied zwischen dem Computer, der auf Signavio Workflow "
 "zugreift und dem Kerberos Server ist größer als fünf Minuten. Sie müssen die "
 "Zeit zwischen allen Maschinen synchronisieren, z.B. in dem Sie ntp ausführen."
+
+#: ../../optional.rst:321
+msgid ""
+"Additionally, you can check the log files in ``$TOMCAT_HOME/logs`` for "
+"further error messages. These error messages may offer hints about why the "
+"SSO set-up is failing."
+msgstr ""
+"Zusätzlich können Sie auch die Log-Dateien im Verzeichnis ``$TOMCAT_HOME/"
+"logs`` auf Fehlernachrichten überprüfen. Diese Fehlernachrichten können "
+"weitere Hinweise enthalten, warum Ihr SSO Setup nicht funktioniert."
+
+#: ../../optional.rst:324
+msgid ""
+"If the log files contain the error message ``Request header is too large``, "
+"the size of the Kerberos tickets issued by your KDC and sent in the request "
+"header are too large for the default Tomcat settings. You have to set the "
+"``maxHttpHeaderSize`` option in the Tomcat ``server.xml``."
+msgstr ""
+"Wenn die Log-Dateien die Fehlernachricht ``Request header is too large`` "
+"enthalten, dann sind die Kerberos-Tickets, die von Ihrem KDC ausgegeben und "
+"im Anfrage-Header versendet werden, zu groß für die Tomcat-"
+"Standardeinstellungen. Sie müssen zusätzlich die Option "
+"``maxHttpHeaderSize`` in der Tomcat ``server.xml`` setzen."
+
+#: ../../optional.rst:327
+msgid "Open ``$TOMCAT_HOME/conf/server.xml``"
+msgstr "Öffnen Sie ``$TOMCAT_HOME/conf/server.xml``"
+
+#: ../../optional.rst:328
+msgid "Locate the ``Connector`` configuration in the file"
+msgstr "Finden Sie den Konfigurationseintrag ``Connector`` in der Datei"
+
+#: ../../optional.rst:329
+msgid "Add the value ``maxHttpHeaderSize=\"65536\"`` ::"
+msgstr "Fügen Sie den Wert ``maxHttpHeaderSize=\"65536\"`` hinzu ::"
+
+#: ../../optional.rst:333
+msgid "Save the file and restart Tomcat"
+msgstr "Speichern Sie die Datei und starten Sie den Tomcat neu"
