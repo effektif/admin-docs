@@ -316,3 +316,18 @@ If you see an error page with the following error message:
 	GSSException: Failure unspecified at GSS-API level (Mechanism level: Clock skew too great (37))
 
 The time difference between the computer accessing Signavio Workflow and the Kerberos server is bigger than 5 minutes. You will need to synchronise the time on all machines, e.g. by running ntp to fix the issue.
+
+
+Additionally, you can check the log files in ``$TOMCAT_HOME/logs`` for further error messages. 
+These error messages may offer hints about why the SSO set-up is failing.
+
+If the log files contain the error message ``Request header is too large``, the size of the Kerberos tickets issued by your KDC and sent in the request header are too large for the default Tomcat settings.
+You have to set the ``maxHttpHeaderSize`` option in the Tomcat ``server.xml``.
+
+#. Open ``$TOMCAT_HOME/conf/server.xml``
+#. Locate the ``Connector`` configuration in the file
+#. Add the value ``maxHttpHeaderSize="65536"`` :: 
+
+	<Connector port="8080" maxHttpHeaderSize="65536" protocol="HTTP/1.1" ... />
+
+#. Save the file and restart Tomcat
