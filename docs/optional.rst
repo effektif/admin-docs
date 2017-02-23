@@ -319,10 +319,10 @@ The time difference between the computer accessing Signavio Workflow and the Ker
 
 
 Additionally, you can check the log files in ``$TOMCAT_HOME/logs`` for further error messages. 
-This directory contains multiple different log files which can contain hints why the SSO setup is failing.
+These error messages may offer hints about why the SSO set-up is failing.
 
-If the log files contain the error message ``Request header is too large``, the size of the Kerberos tickets issued by your KDC and send in the request header is too large for the default Tomcat settings.
-You have to set the option ``maxHttpHeaderSize`` in the Tomcat ``server.xml``.
+If the log files contain the error message ``Request header is too large``, the size of the Kerberos tickets issued by your KDC and sent in the request header are too large for the default Tomcat settings.
+You have to set the ``maxHttpHeaderSize`` option in the Tomcat ``server.xml``.
 
 #. Open ``$TOMCAT_HOME/conf/server.xml``
 #. Locate the ``Connector`` configuration in the file
