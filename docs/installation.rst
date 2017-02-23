@@ -601,6 +601,7 @@ If you installed the Signavio Workflow Script Engine, you need to configure the 
 ``effektif.smtp.user``              The username for authentication
 ``effektif.smtp.password``          The password for authentication
 ``effektif.mail.from``              This email address is used as the sender when the Signavio Workflow system sends out notifications.
+``effektif.mail.feedback``          This email address will receive all feedback which is sent using the feedback functionality in the application.
 ``effektif.mongodb.servers``        A comma-separated list of MongoDB servers (hostnames). If you have MongodDB running on the same server as Tomcat, the default value of localhost is okay.
 ``effektif.mongodb.username``       The Signavio Workflow MongoDB user name. If you created the user following the instructions in this guide, the name is ``signavio``.
 ``effektif.mongodb.password``       The password of the Signavio Workflow MongoDB user. This is the password you defined during user creation.
