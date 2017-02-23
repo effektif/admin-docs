@@ -58,11 +58,11 @@ The application server requires the following additional software:
 
 The database server requires the following additional software:
 
-* MongoDB version 3.2.x
+* MongoDB version 3.2.x or higher
 
 The optional script engine requires the following additional software:
 
-* Node.js 4.x LTS
+* Node.js 6.x LTS
 
 .. _supported-browsers:
 
@@ -208,7 +208,7 @@ Running it in parallel with another application that requires to run as the ROOT
 Installing MongoDB
 ------------------
 MongoDB is currently the only database system that Signavio Workflow supports.
-If you already have an infrastructure that can provide a MongoDB version 3.2.x instance, simply create a new instance for Signavio Workflow and skip to :ref:`configure-mongodb`.
+If you already have an infrastructure that can provide a MongoDB version 3.2.x (or 3.4.x) instance, simply create a new instance for Signavio Workflow and skip to :ref:`configure-mongodb`.
 Otherwise continue with the installation instructions.
 
 General information about installing MongoDB on different operating systems can be found at:
@@ -428,7 +428,7 @@ Installing Node.js
 .. important:: You only need to install and configure Node.js if you purchased a version of Signavio Workflow which allows you to use JavaScript tasks.
 
 Node.js is a runtime environment for JavaScript which is used by Signavio Workflow to execute custom JavaScript tasks created by the user.
-We recommend using the Node.js LTS (Long Term Support) version 4.x.
+We recommend using the Node.js LTS (Long Term Support) version 6.x.
 
 Windows
 ```````
