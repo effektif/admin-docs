@@ -12,7 +12,7 @@ https://docs.mongodb.org/manual/tutorial/backup-and-restore-tools/#binary-bson-d
 Make sure the MongoDB server is running when you want to execute mongodump. 
 If not stated otherwise via command line parameters, mongodump will try to backup data from the locally running mongod service.
 
-You will need to use the Signavio Workflow MongoDB user credentials again to access the data of the Signavio Workflow database. 
+You will need to use the Signavio Workflow Accelerator MongoDB user credentials again to access the data of the Workflow Accelerator database. 
 If you are using another MongoDB user to perform the backups, make sure he has the necessary roles. 
 For the backups, the user needs to access all databases and the user data. 
 The user should have the following roles:
@@ -40,7 +40,7 @@ If you followed the instructions within this guide to setup MongoDB, the command
     C:\MongoDB\bin\mongodump.exe -u signavio -p <SignavioUserPassword> -o C:\path\to\dumps
 
 In the example above, adjust the location of your MongoDB installation accordingly. 
-The parameter -u defines the username and -p the password of the Signavio Workflow MongoDB user, replace them with your chosen values. 
+The parameter -u defines the username and -p the password of the Workflow Accelerator MongoDB user, replace them with your chosen values. 
 The parameter -o specifies the output directory.
 
 Debian
@@ -49,7 +49,7 @@ If you followed the instructions within this guide to setup MongoDB, then ``mong
 
     mongodump -u signavio -p <SignavioUserPassword> -o /path/to/dumps 
 
-The parameter -u defines the username and -p the password of the Signavio Workflow MongoDB user, replace them with your chosen values. 
+The parameter -u defines the username and -p the password of the Workflow Accelerator MongoDB user, replace them with your chosen values. 
 The parameter -o specifies the output directory, in this case /path/to/dumps. 
 Make sure the executing user has the required privileges to write to the output folder.
 

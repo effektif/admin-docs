@@ -14,7 +14,7 @@ language = 'de'
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'SignavioWorkflowadministratorsguide.tex', u'Signavio Workflow Administratorenhandbuch',
+  ('index', 'SignavioWorkflowadministratorsguide.tex', u'Signavio Workflow Accelerator Administratorenhandbuch',
    u'Signavio GmbH', 'manual'),
 ]
 

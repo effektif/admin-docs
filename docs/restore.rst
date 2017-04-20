@@ -8,7 +8,7 @@ For more detailed information, see the official ``mongorestore`` documentation:
 
 https://docs.mongodb.org/manual/reference/program/mongorestore
 
-You will need to use the Signavio Workflow MongoDB user credentials again to overwrite the contents of the Signavio Workflow databases.
+You will need to use the Signavio Workflow Accelerator MongoDB user credentials again to overwrite the contents of the Workflow Accelerator databases.
 
 We recommend running mongorestore with the parameter --drop which will remove every collection (table) from the database before it is restored.
 
@@ -27,4 +27,4 @@ Using Debian, the command to restore a backup stored in /path/to/dump would look
 
     mongorestore --drop -u signavio -p <SignavioUserPassword> /path/to/dump
 
-As you can see, you have to fill in the credentials of the Signavio Workflow MongoDB user again. Furthermore, you need to specify where the backup is located.
+As you can see, you have to fill in the credentials of the Workflow Accelerator MongoDB user again. Furthermore, you need to specify where the backup is located.

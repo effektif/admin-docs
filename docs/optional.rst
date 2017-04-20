@@ -8,20 +8,20 @@ This section provides instructions for optional configuration, which is not requ
 User and group synchronisation with Active Directory
 ----------------------------------------------------
 
-The enterprise version of Signavio Workflow offers user and group synchronisation with an Active Directory Server using the LDAP V3 protocol.
+The enterprise version of Signavio Workflow Accelerator offers user and group synchronisation with an Active Directory Server using the LDAP V3 protocol.
 
 Before you can configure the synchronisation, check that you have the following pre-requisites.
 
-* Signavio Workflow is installed.
-* The first Signavio Workflow user is registered, see :ref:`create-initial-user`\ .
+* Workflow Accelerator is installed.
+* The first Workflow Accelerator user is registered, see :ref:`create-initial-user`\ .
 * A domain account for querying the Active Directory - its username and password.
 
 Configuring the synchronisation consists of the following steps.
 
-#. Create an Active Directory group that contains all Signavio Workflow users as members.
-#. Create an Active Directory group that contains all Signavio Workflow administrators as members.
+#. Create an Active Directory group that contains all Workflow Accelerator users as members.
+#. Create an Active Directory group that contains all Workflow Accelerator administrators as members.
 #. (Optional) Create an Active Directory group that contains all groups as members.
-#. Log in to Signavio Workflow with your initial user.
+#. Log in to Workflow Accelerator with your initial user.
 #. Open the *Organization settings* and select the *LDAP* tab.
 #. Create a new Active Directory configuration.
 #. Validate your configuration.
@@ -31,21 +31,21 @@ Configuring the synchronisation consists of the following steps.
 Creating the Active Directory groups
 ````````````````````````````````````
 
-Active Directory users and groups that should be synchronised with Signavio Workflow are managed within Active Directory by adding them to specific Active Directory groups. 
-There are two groups for users, one which contains all Signavio Workflow users and one which contains only administrators.
+Active Directory users and groups that should be synchronised with Workflow Accelerator are managed within Active Directory by adding them to specific Active Directory groups. 
+There are two groups for users, one which contains all Workflow Accelerator users and one which contains only administrators.
 All members of the administrator group must be members of the user group as well.
 Nested groups are not supported.
 All users and administrators need to be direct members of their groups.
 
-The synchronisation will copy the attributes ``givenName``, ``sn``, ``mail``, ``dn``, ``objectGUID``, ``sAMAccountName`` and ``userPrincipalName``\ to the user in Signavio Workflow.
+The synchronisation will copy the attributes ``givenName``, ``sn``, ``mail``, ``dn``, ``objectGUID``, ``sAMAccountName`` and ``userPrincipalName``\ to the user in Workflow Accelerator.
 It is required that every user has the ``mail`` attribute defined.
 
 Optionally, you can define a third group that contains all Active Directory groups that should be synchronised.
 All members of this group should be Active Directory groups as well. 
 Again nested groups are not supported.
 Users must be direct members of the synchronised groups.
-The synchronisation will copy the attributes ``cn``, ``dn`` and ``objectGUID`` to the group in Signavio Workflow.
-Every group member that is not a Signavio Workflow user will be ignored.
+The synchronisation will copy the attributes ``cn``, ``dn`` and ``objectGUID`` to the group in Workflow Accelerator.
+Every group member that is not a Workflow Accelerator user will be ignored.
 
 
 Creating a new configuration
@@ -70,7 +70,7 @@ Validating a configuration
 Before synchronisation can start, the configuration must be validated.
 Validation includes the following checks.
 
-* Signavio Workflow can connect to the Active Directory.
+* Workflow Accelerator can connect to the Active Directory.
 * The configured groups are proper Active Directory groups.
 * There is at least one user.
 * There is at least one administrator.
@@ -106,10 +106,10 @@ Use this configuration to enable Single Sign-On (SSO) in a Windows environment t
 
 Before you start, check that you have the following pre-requisites.
 
-* Windows domain users added to Signavio Workflow, e.g. using LDAP synchronisation.
+* Windows domain users added to Workflow Accelerator, e.g. using LDAP synchronisation.
 * A Windows domain for authenticating users.
-* A domain account for running Signavio Workflow - its username and password.
-* Signavio Workflow is installed on a Windows Server that is on the domain.
+* A domain account for running Workflow Accelerator - its username and password.
+* Workflow Accelerator is installed on a Windows Server that is on the domain.
 
 Configuring SSO in Apache Tomcat consists of the following steps.
 
@@ -139,7 +139,7 @@ To install, copy two files to ``$TOMCAT_HOME/lib/``:
 Configuring the SPNEGO SSO Servlet filter
 `````````````````````````````````````````
 
-The SSO Servlet filter uses Windows authentication to automatically log in when a user accesses Signavio Workflow.
+The SSO Servlet filter uses Windows authentication to automatically log in when a user accesses Workflow Accelerator.
 
 To configure, edit ``$TOMCAT_HOME/conf/web.xml`` and add the following lines immediately before the final line (``</web-app>``), from ``$WORKFLOW_HOME/optional/spnego/filter-configuration.xml``.
 
@@ -256,7 +256,7 @@ Registering Tomcat’s Service Principal Name (SPN)
 `````````````````````````````````````````````````
 
 The `SPN <https://msdn.microsoft.com/en-us/library/ms677949(v=vs.85).aspx>`_ is the identifier used by Kerberos authentication to associate a service instance with a service logon account.
-You will have to associate the domain account for Signavio Workflow with the service’s fully-qualified domain name (FQDN).
+You will have to associate the domain account for Workflow Accelerator with the service’s fully-qualified domain name (FQDN).
 Therefore, you should register a SPN for every possible alias of the service, including the computer name of the server with and without domain name, as well as any other DNS entries that point to this server.
 In order to define a SPN, use ``setspn.exe`` - part of the `Windows Support Tools <https://en.wikipedia.org/wiki/Windows_Support_Tools>`_\ .
 
@@ -264,7 +264,7 @@ In order to define a SPN, use ``setspn.exe`` - part of the `Windows Support Tool
 
 	setspn.exe -A HTTP/computer-name.domain-name domain-user-account
 
-For example, our domain is called ``ADTEST.LOCAL``, the computer name of the server is ``VM-42``, Signavio Workflow will be available under the domain ``http://workflow.intranet:8080`` and the domain user account is ``tomcat@adtest.local``\ .
+For example, our domain is called ``ADTEST.LOCAL``, the computer name of the server is ``VM-42``, Workflow Accelerator will be available under the domain ``http://workflow.intranet:8080`` and the domain user account is ``tomcat@adtest.local``\ .
 Then we would have to register the following SPNs:
 
 ::
@@ -306,7 +306,7 @@ Note that in the `Pre-flight checklist`, the `Do we know the address of the KDC?
 
 
 If you have completed the setup described here and the SSO is still not working, please make sure you are accessing the web application from a different machine than the one that runs the Tomcat server.
-Furthermore, check if `Integrated Windows Authentication <https://en.wikipedia.org/wiki/Integrated_Windows_Authentication>`_ is activated and the Signavio Workflow system is a trusted service, for instance by adding the address to the local intranet.
+Furthermore, check if `Integrated Windows Authentication <https://en.wikipedia.org/wiki/Integrated_Windows_Authentication>`_ is activated and the Workflow Accelerator system is a trusted service, for instance by adding the address to the local intranet.
 
 
 If you see an error page with the following error message:
@@ -315,7 +315,7 @@ If you see an error page with the following error message:
 
 	GSSException: Failure unspecified at GSS-API level (Mechanism level: Clock skew too great (37))
 
-The time difference between the computer accessing Signavio Workflow and the Kerberos server is bigger than 5 minutes. You will need to synchronise the time on all machines, e.g. by running ntp to fix the issue.
+The time difference between the computer accessing Workflow Accelerator and the Kerberos server is bigger than 5 minutes. You will need to synchronise the time on all machines, e.g. by running ntp to fix the issue.
 
 
 Additionally, you can check the log files in ``$TOMCAT_HOME/logs`` for further error messages. 

@@ -1,14 +1,14 @@
 .. _starting-effektif:
 
-Starting Signavio Workflow
-==========================
-If you have finished the setup successfully, you can go on and start the Signavio Workflow application. 
+Starting Signavio Workflow Accelerator
+======================================
+If you have finished the setup successfully, you can go on and start the Workflow Accelerator application. 
 You can use the checklist in the next subsection to verify you didn’t forget anything. 
-The following subsection explains how to start Signavio Workflow on different operating systems.
+The following subsection explains how to start Workflow Accelerator on different operating systems.
 
 Checklist
 ---------
-Before starting Signavio Workflow, use the following checklist to make sure everything is setup properly.
+Before starting Workflow Accelerator, use the following checklist to make sure everything is setup properly.
 
 * Oracle Java 8 is installed
 * Apache Tomcat 7 or 8 is installed
@@ -18,38 +18,38 @@ Before starting Signavio Workflow, use the following checklist to make sure ever
 * MongoDB is installed
     
     * MongoDB is configured
-    * a MongoDB user for Signavio Workflow was created
+    * a MongoDB user for Workflow Accelerator was created
 
-* the Signavio Workflow ROOT folder was copied into the Tomcat webapps directory
-* the Signavio Workflow license was copied to the correct directory
-* the Signavio Workflow configuration file was updated
+* the Workflow Accelerator ROOT folder was copied into the Tomcat webapps directory
+* the Workflow Accelerator license was copied to the correct directory
+* the Workflow Accelerator configuration file was updated
 
     * the base URL is set
     * the mail configuration is set
     * the database connection is set
 
-* the Signavio Workflow log file is configured
+* the Workflow Accelerator log file is configured
 
 If your version includes the execution of JavaScript tasks:
 
 * Node.js is installed
-* the Signavio Workflow Script Engine is installed
-* the Signavio Workflow Script Engine is configured
+* the Workflow Accelerator Script Engine is installed
+* the Workflow Accelerator Script Engine is configured
 
     * the port is set
-    * the Signavio Workflow URL is set
+    * the Workflow Accelerator URL is set
     * the log files are configured
-    * the script engine URL is configured in the Signavio Workflow configuration file
+    * the script engine URL is configured in the Workflow Accelerator configuration file
 
-If the system is integrated with the Signavio Process Editor check also the following points:
+If the system is integrated with the Signavio Process Manager check also the following points:
 
-* Signavio Workflow and Signavio Process Editor have compatible versions
-* Signavio Workflow is configured in the Signavio Process Editor configuration.xml
-* Signavio Process Editor is configured in the Signavio Workflow configuration file
+* Workflow Accelerator and Signavio Process Manager have compatible versions
+* Workflow Accelerator is configured in the Signavio Process Manager configuration.xml
+* Signavio Process Manager is configured in the Workflow Accelerator configuration file
 
-Start Signavio Workflow
------------------------
-After completing the installation as described above, both the MongoDB database and the Tomcat application server must be started for Signavio Workflow to run properly. 
+Start Workflow Accelerator
+--------------------------
+After completing the installation as described above, both the MongoDB database and the Tomcat application server must be started for Workflow Accelerator to run properly. 
 This section will give you more details on how to start them.
 
 Windows
@@ -135,19 +135,19 @@ Otherwise open a command line, navigate to the ``$SCRIPT_ENGINE_HOME`` directory
 
 Note, you cannot close the command line as long as the script engine is running.
 
-Login to Signavio Workflow
---------------------------
-When the Signavio Workflow system was started properly you can see the login screen by entering the URL of your Signavio Workflow installation in your browser. 
+Login to Workflow Accelerator
+-----------------------------
+When the Workflow Accelerator system was started properly you can see the login screen by entering the URL of your Workflow Accelerator installation in your browser. 
 There are different versions of the login screen. 
-If you purchased an Signavio Workflow standalone version, you will see a form that requires an email address and a password to login.
+If you purchased an Workflow Accelerator standalone version, you will see a form that requires an email address and a password to login.
  
 .. figure:: _static/images/login.png
     :align: center
 
-    The default Signavio Workflow login screen
+    The default Workflow Accelerator login screen
 
-If you purchased Signavio Workflow along with the Signavio Process Editor, you will see a login screen with one button. 
-You can login to Signavio Workflow using your Signavio Process Editor account as soon as the Signavio Workflow users have been set up. 
+If you purchased Workflow Accelerator along with the Signavio Process Manager, you will see a login screen with one button. 
+You can login to Workflow Accelerator using your Signavio Process Manager account as soon as the Workflow Accelerator users have been set up. 
 Jump to section :ref:`signavio-user-management` for more information on how to set up the users. 
 
 .. figure:: _static/images/signavio_login.png
@@ -155,8 +155,8 @@ Jump to section :ref:`signavio-user-management` for more information on how to s
 
     The Signavio login screen
 
-When you click *Log in with Signavio account*\ , you will be redirected to the Signavio Process Editor and asked to authorize the access of Signavio Workflow. 
-When you click on *Grant*\ , you will be redirected back to Signavio Workflow and automatically logged in. 
+When you click *Log in with Signavio account*\ , you will be redirected to the Signavio Process Manager and asked to authorize the access of Workflow Accelerator. 
+When you click on *Grant*\ , you will be redirected back to Workflow Accelerator and automatically logged in. 
 The authorization dialog is only shown the first time you use this method to login.
 
 .. figure:: _static/images/authorization.png
@@ -164,26 +164,26 @@ The authorization dialog is only shown the first time you use this method to log
 
     The Signavio authorization dialog
 
-.. hint:: You have to be logged in to the Signavio Process Editor in order to see the authorization dialog. Otherwise, you will be redirected to the Collaboration Portal.
+.. hint:: You have to be logged in to the Signavio Process Manager in order to see the authorization dialog. Otherwise, you will be redirected to the Collaboration Portal.
 
 .. _create-initial-user:
 
 Create the initial user
 -----------------------
-In case you purchased Signavio Workflow along with the Signavio Process Editor and want to setup the integration, you don't have to create the initial Signavio Workflow user manually. 
+In case you purchased Workflow Accelerator along with the Signavio Process Manager and want to setup the integration, you don't have to create the initial Workflow Accelerator user manually. 
 Please jump to section :ref:`signavio-user-management` for more information.
 
-Signavio Workflow users are organized in organisations. 
+Workflow Accelerator users are organized in organisations. 
 There is a maximum amount of organisations that can be registered on an on-premise system. 
 You will find the maximum number of available organisations in your license file. 
 When the initial user registers, he will automatically create the first organisation.
 
-In order to register, enter the URL of your Signavio Workflow installation in your browser. 
-You will see the login screen of Signavio Workflow.
+In order to register, enter the URL of your Workflow Accelerator installation in your browser. 
+You will see the login screen of Workflow Accelerator.
 
 Click *Register a new account*, fill in your email address and click *Register a new user*\ . 
 You will then receive an email with a link to complete your registration. 
-After you have done that, your Signavio Workflow organisation is set up and you can go ahead and invite more users.
+After you have done that, your Workflow Accelerator organisation is set up and you can go ahead and invite more users.
 
 Every time a user registers using the register link on the login screen, a new organisation is created until the maximum amount is reached. 
 In general, you will create one organisation and invite other users to join this organisation. 
@@ -191,7 +191,7 @@ The next subsection explains how to invite users.
 
 Invite other users
 ------------------
-In case this is an integrated installation with the Signavio Process Editor, please jump to section :ref:`signavio-integration` for setting up synchronization of users.
+In case this is an integrated installation with the Signavio Process Manager, please jump to section :ref:`signavio-integration` for setting up synchronization of users.
 
 To invite other users, go to the organization configuration panel. 
 That's located in the dropdown under your name in the top right corner named *Organization settings*\ . 
@@ -204,5 +204,5 @@ If one organisation invites another user the count of unused licenses in all org
 A user can be invited to multiple organisations. 
 If a user is part of two organisations, he will require two user licenses, one for each organisation he is part of.
 
-Besides the manual invitation of every user, the enterprise version of Signavio Workflow offers the possibility to synchronise users and groups with Active Directory.
+Besides the manual invitation of every user, the enterprise version of Workflow Accelerator offers the possibility to synchronise users and groups with Active Directory.
 See :ref:`synchronise-users` for more information.
