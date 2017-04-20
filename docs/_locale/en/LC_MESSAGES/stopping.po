@@ -1,15 +1,15 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2016, Signavio GmbH
-# This file is distributed under the same license as the Effektif
-# administrators guide package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+# Copyright (C) 2017, Signavio GmbH
+# This file is distributed under the same license as the Signavio Workflow
+# Accelerator administrators guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-22 19:03+0200\n"
-"PO-Revision-Date: 2016-06-27 13:10+0100\n"
+"POT-Creation-Date: 2017-04-20 16:01+0200\n"
+"PO-Revision-Date: 2017-04-20 16:17+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
 "MIME-Version: 1.0\n"
@@ -20,20 +20,20 @@ msgstr ""
 "X-Generator: Poedit 1.6.9\n"
 
 #: ../../stopping.rst:4
-msgid "Stopping Signavio Workflow"
-msgstr "Stopping Signavio Workflow"
+msgid "Stopping Signavio Workflow Accelerator"
+msgstr "Stopping Signavio Workflow Accelerator"
 
 #: ../../stopping.rst:5
 msgid ""
-"In order to stop the Signavio Workflow system completely, you have to stop "
-"the Tomcat application server and the MongoDB database. However, if you need "
-"to restart the Signavio Workflow system, it is sufficient to restart only "
-"the Tomcat server."
+"In order to stop the Workflow Accelerator system completely, you have to "
+"stop the Tomcat application server and the MongoDB database. However, if you "
+"need to restart the Workflow Accelerator system, it is sufficient to restart "
+"only the Tomcat server."
 msgstr ""
-"In order to stop the Signavio Workflow system completely, you have to stop "
-"the Tomcat application server and the MongoDB database. However, if you need "
-"to restart the Signavio Workflow system, it is sufficient to restart only "
-"the Tomcat server."
+"In order to stop the Workflow Accelerator system completely, you have to "
+"stop the Tomcat application server and the MongoDB database. However, if you "
+"need to restart the Workflow Accelerator system, it is sufficient to restart "
+"only the Tomcat server."
 
 #: ../../stopping.rst:9
 msgid "Windows"
@@ -45,17 +45,17 @@ msgstr "Tomcat"
 
 #: ../../stopping.rst:13
 msgid ""
-"As already mentioned in the section :ref:`starting-effektif`\\ , the "
-"Tomcat configuration dialog offers a simple way to stop the Tomcat "
-"server. Simply open the Windows start menu, select ``Program "
-"Files\\Apache Tomcat\\Configure Tomcat``\\ , open the tab *General* and "
-"click the button *Stop*\\ ."
+"As already mentioned in the section :ref:`starting-effektif`\\ , the Tomcat "
+"configuration dialog offers a simple way to stop the Tomcat server. Simply "
+"open the Windows start menu, select ``Program Files\\Apache Tomcat"
+"\\Configure Tomcat``\\ , open the tab *General* and click the button *Stop*"
+"\\ ."
 msgstr ""
-"As already mentioned in the section :ref:`starting-effektif`\\ , the "
-"Tomcat configuration dialog offers a simple way to stop the Tomcat "
-"server. Simply open the Windows start menu, select ``Program "
-"Files\\Apache Tomcat\\Configure Tomcat``\\ , open the tab *General* and "
-"click the button *Stop*\\ ."
+"As already mentioned in the section :ref:`starting-effektif`\\ , the Tomcat "
+"configuration dialog offers a simple way to stop the Tomcat server. Simply "
+"open the Windows start menu, select ``Program Files\\Apache Tomcat"
+"\\Configure Tomcat``\\ , open the tab *General* and click the button *Stop*"
+"\\ ."
 
 #: ../../stopping.rst:17 ../../stopping.rst:43
 msgid "MongoDB"
@@ -73,11 +73,11 @@ msgstr ""
 
 #: ../../stopping.rst:22
 msgid ""
-"Or you run ``services.msc``\\ , select MongoDB in the list of services "
-"and click on *Stop*\\ ."
+"Or you run ``services.msc``\\ , select MongoDB in the list of services and "
+"click on *Stop*\\ ."
 msgstr ""
-"Or you run ``services.msc``\\ , select MongoDB in the list of services "
-"and click on *Stop*\\ ."
+"Or you run ``services.msc``\\ , select MongoDB in the list of services and "
+"click on *Stop*\\ ."
 
 #: ../../stopping.rst:25 ../../stopping.rst:52
 msgid "Script Engine"
@@ -109,13 +109,11 @@ msgstr ""
 
 #: ../../stopping.rst:39
 msgid ""
-"The example above shows only the command for Tomcat 8. However, if you "
-"use Tomcat 7, the same command will work with the ``/etc/init.d/tomcat7``"
-" script."
+"The example above shows only the command for Tomcat 8. However, if you use "
+"Tomcat 7, the same command will work with the ``/etc/init.d/tomcat7`` script."
 msgstr ""
-"The example above shows only the command for Tomcat 8. However, if you "
-"use Tomcat 7, the same command will work with the ``/etc/init.d/tomcat7``"
-" script."
+"The example above shows only the command for Tomcat 8. However, if you use "
+"Tomcat 7, the same command will work with the ``/etc/init.d/tomcat7`` script."
 
 #: ../../stopping.rst:44
 msgid ""
@@ -129,8 +127,8 @@ msgstr ""
 
 #: ../../stopping.rst:49
 msgid ""
-"In earlier versions of MongoDB, e.g. 2.4.x, the script had a different "
-"name: ``/etc/init.d/mongodb``."
+"In earlier versions of MongoDB, e.g. 2.4.x, the script had a different name: "
+"``/etc/init.d/mongodb``."
 msgstr ""
 "In earlier versions of MongoDB, e.g. 2.4.x, the script had a different name: "
 "``/etc/init.d/mongodb``."
@@ -146,4 +144,3 @@ msgstr ""
 "respective stop command for the Init script. If you are executing the script "
 "engine directly via command line, simply abort the process by pressing "
 "``CTRL + C``."
-

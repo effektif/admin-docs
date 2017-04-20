@@ -1,15 +1,15 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2016, Signavio GmbH
+# Copyright (C) 2017, Signavio GmbH
 # This file is distributed under the same license as the Signavio Workflow
-# administrators guide package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+# Accelerator administrators guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Effektif administrators guide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-29 15:28+0200\n"
-"PO-Revision-Date: 2016-08-29 15:37+0100\n"
+"POT-Creation-Date: 2017-04-20 16:01+0200\n"
+"PO-Revision-Date: 2017-04-20 16:18+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Signavio Workflow Dev <dev.effektif@signavio.com>\n"
 "MIME-Version: 1.0\n"
@@ -20,19 +20,19 @@ msgstr ""
 "X-Generator: Poedit 1.6.9\n"
 
 #: ../../unpack.rst:2
-msgid "Unpack Signavio Workflow"
-msgstr "Unpack Signavio Workflow"
+msgid "Unpack Signavio Workflow Accelerator"
+msgstr "Unpack Signavio Workflow Accelerator"
 
 #: ../../unpack.rst:3
 msgid ""
 "Unzip the signavio-workflow-{version}.zip to a directory of your choice, e."
 "g. ``/yourlocation/signavio-workflow-{version}`` In the rest of this guide, "
-"we'll refer to the Signavio Workflow home directory as ``$WORKFLOW_HOME``"
+"we'll refer to the Workflow Accelerator home directory as ``$WORKFLOW_HOME``"
 "\\ . The directory will contain the following files:"
 msgstr ""
 "Unzip the signavio-workflow-{version}.zip to a directory of your choice, e."
 "g. ``/yourlocation/signavio-workflow-{version}`` In the rest of this guide, "
-"we'll refer to the Signavio Workflow home directory as ``$WORKFLOW_HOME``"
+"we'll refer to the Workflow Accelerator home directory as ``$WORKFLOW_HOME``"
 "\\ . The directory will contain the following files:"
 
 #: ../../unpack.rst:7

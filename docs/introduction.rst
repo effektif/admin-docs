@@ -13,7 +13,7 @@ Software components
 In order to setup and work with Workflow Accelerator, several software components are necessary.
 
 Workflow Accelerator system
-````````````````````````
+```````````````````````````
 The Workflow Accelerator system refers to the application that you will run on your server and that consists of a Java web archive (WAR) that is deployed on Tomcat and a MongoDB database.
 
 Apache Tomcat

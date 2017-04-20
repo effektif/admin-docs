@@ -1,15 +1,15 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2016, Signavio GmbH
+# Copyright (C) 2017, Signavio GmbH
 # This file is distributed under the same license as the Signavio Workflow
-# administrators guide package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+# Accelerator administrators guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Effektif administrators guide 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-06 22:08+0100\n"
-"PO-Revision-Date: 2016-12-06 22:11+0100\n"
+"POT-Creation-Date: 2017-04-20 16:01+0200\n"
+"PO-Revision-Date: 2017-04-20 16:20+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif dev <dev@effektif.com>\n"
 "MIME-Version: 1.0\n"
@@ -25,25 +25,25 @@ msgstr "Update notes"
 
 #: ../../update-notes.rst:6
 msgid ""
-"This section contains important information about Signavio Workflow system "
-"updates. It lists changes to technical requirements for new versions and "
-"additional instructions for updates."
+"This section contains important information about Signavio Workflow "
+"Accelerator system updates. It lists changes to technical requirements for "
+"new versions and additional instructions for updates."
 msgstr ""
-"This section contains important information about Signavio Workflow system "
-"updates. It lists changes to technical requirements for new versions and "
-"additional instructions for updates."
+"This section contains important information about Signavio Workflow "
+"Accelerator system updates. It lists changes to technical requirements for "
+"new versions and additional instructions for updates."
 
 #: ../../update-notes.rst:10
 msgid ""
-"If you skip one or more versions of Signavio Workflow during the update, "
+"If you skip one or more versions of Workflow Accelerator during the update, "
 "please follow the update notes for the versions you are skipping as well. "
 "You should start with the oldest version which is newer than your currently "
-"installed version of Signavio Workflow."
+"installed version of Workflow Accelerator."
 msgstr ""
-"If you skip one or more versions of Signavio Workflow during the update, "
+"If you skip one or more versions of Workflow Accelerator during the update, "
 "please follow the update notes for the versions you are skipping as well. "
 "You should start with the oldest version which is newer than your currently "
-"installed version of Signavio Workflow."
+"installed version of Workflow Accelerator."
 
 #: ../../update-notes.rst:13
 msgid "Updating to Signavio Workflow 3.15"
