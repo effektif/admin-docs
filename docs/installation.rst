@@ -58,7 +58,7 @@ The application server requires the following additional software:
 
 The database server requires the following additional software:
 
-* MongoDB version 3.2.x or higher
+* MongoDB version 3.4.x or higher
 
 The optional script engine requires the following additional software:
 
@@ -208,12 +208,12 @@ Running it in parallel with another application that requires to run as the ROOT
 Installing MongoDB
 ------------------
 MongoDB is currently the only database system that Workflow Accelerator supports.
-If you already have an infrastructure that can provide a MongoDB version 3.2.x (or 3.4.x) instance, simply create a new instance for Workflow Accelerator and skip to :ref:`configure-mongodb`.
+If you already have an infrastructure that can provide a MongoDB version 3.4.x instance, simply create a new instance for Workflow Accelerator and skip to :ref:`configure-mongodb`.
 Otherwise continue with the installation instructions.
 
 General information about installing MongoDB on different operating systems can be found at:
 
-https://docs.mongodb.org/manual/installation/
+https://docs.mongodb.com/manual/installation/
 
 There are two versions of MongoDB, *MongoDB Community Edition* and *MongoDB Enterprise*. 
 *MongoDB Community Edition* can be used free of charge even in a commercial context, whereas *MongoDB Enterprise* is a commercial product that offers additional tooling and support.
@@ -227,10 +227,7 @@ Remarks for downloading the binaries
 ````````````````````````````````````
 You can find a version of MongoDB for your operating system here: 
 
-https://www.mongodb.org/downloads
-
-Please, make sure to download the 64-bit version of MongoDB.
-The 32-bit version is limited to 2GB of stored content and cannot therefore be used in production systems.
+https://www.mongodb.com/download-center
 
 Windows
 ```````
@@ -240,7 +237,7 @@ If you are using any version older than Windows Server 2008 R2, you have to down
 
 You can find more details about installing MongoDB on Windows in the documentation:
 
-https://docs.mongodb.org/manual/tutorial/install-mongodb-on-windows/
+https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/
 
 When you finished downloading MongoDB follow the next steps:
 
