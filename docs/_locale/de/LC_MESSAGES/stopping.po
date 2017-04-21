@@ -1,15 +1,15 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2016, Signavio GmbH
+# Copyright (C) 2017, Signavio GmbH
 # This file is distributed under the same license as the Signavio Workflow
-# administrators guide package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+# Accelerator administrators guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-27 15:05+0200\n"
-"PO-Revision-Date: 2016-07-07 12:42+0100\n"
+"POT-Creation-Date: 2017-04-20 16:23+0200\n"
+"PO-Revision-Date: 2017-04-21 10:30+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
 "MIME-Version: 1.0\n"
@@ -20,18 +20,18 @@ msgstr ""
 "X-Generator: Poedit 1.6.9\n"
 
 #: ../../stopping.rst:4
-msgid "Stopping Signavio Workflow"
-msgstr "Signavio Workflow herunterfahren"
+msgid "Stopping Signavio Workflow Accelerator"
+msgstr "Signavio Workflow Accelerator herunterfahren"
 
 #: ../../stopping.rst:5
 msgid ""
-"In order to stop the Signavio Workflow system completely, you have to stop "
-"the Tomcat application server and the MongoDB database. However, if you need "
-"to restart the Signavio Workflow system, it is sufficient to restart only "
-"the Tomcat server."
+"In order to stop the Workflow Accelerator system completely, you have to "
+"stop the Tomcat application server and the MongoDB database. However, if you "
+"need to restart the Workflow Accelerator system, it is sufficient to restart "
+"only the Tomcat server."
 msgstr ""
-"Stoppen Sie sowohl Tomcat als auch MongoDB, um Signavio Workflow "
-"herunterzufahren. Falls Sie Signavio Workflow neu starten möchten - zum "
+"Stoppen Sie sowohl Tomcat als auch MongoDB, um Workflow Accelerator "
+"herunterzufahren. Falls Sie Workflow Accelerator neu starten möchten - zum "
 "Beispiel im Zuge eines Updates – ist es jedoch ausreichend lediglich den "
 "Tomcat neu zu starten."
 

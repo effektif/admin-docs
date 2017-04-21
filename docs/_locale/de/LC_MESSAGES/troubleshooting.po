@@ -1,15 +1,15 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2016, Signavio GmbH
+# Copyright (C) 2017, Signavio GmbH
 # This file is distributed under the same license as the Signavio Workflow
-# administrators guide package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+# Accelerator administrators guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-27 15:05+0200\n"
-"PO-Revision-Date: 2016-07-07 12:44+0100\n"
+"POT-Creation-Date: 2017-04-20 16:23+0200\n"
+"PO-Revision-Date: 2017-04-21 10:34+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
 "MIME-Version: 1.0\n"
@@ -31,9 +31,9 @@ msgstr "Wo sind die Logdateien?"
 msgid ""
 "There are multiple different log files that yield information in case of an "
 "error scenario. The following subsections will assist you in finding the log "
-"files for every part of the Signavio Workflow application. The most "
-"important one, regarding the Signavio Workflow system is the ``effektif.log``"
-"\\ . It will contain any application related log entries."
+"files for every part of the Signavio Workflow Accelerator application. The "
+"most important one, regarding the Workflow Accelerator system is the "
+"``effektif.log``\\ . It will contain any application related log entries."
 msgstr ""
 "In Fallen von technischen Problemen können Sie verschiedene Logdateien "
 "einsehen. Der folgende Abschnitt erläutert, wo Sie die Logdateien finden. "
@@ -41,19 +41,19 @@ msgstr ""
 "Anwendungsbezogenen Logeinträge."
 
 #: ../../troubleshooting.rst:12
-msgid "Signavio Workflow"
-msgstr "Signavio Workflow"
+msgid "Workflow Accelerator"
+msgstr "Workflow Accelerator"
 
 #: ../../troubleshooting.rst:13
 msgid ""
-"The Signavio Workflow log file effektif.log can be found in the location you "
-"configured in the logging configuration file ``$TOMCAT_HOME/webapps/ROOT/WEB-"
-"INF/classes/logback.xml``\\ . This file contains the line: ::"
+"The Workflow Accelerator log file effektif.log can be found in the location "
+"you configured in the logging configuration file ``$TOMCAT_HOME/webapps/ROOT/"
+"WEB-INF/classes/logback.xml``\\ . This file contains the line: ::"
 msgstr ""
-"Die Signavio Workflow-Logdatei effektif.log kann in dem Verzeichnis gefunden "
-"werden, das Sie in der Konfigurationsdatei ``$TOMCAT_HOME/webapps/ROOT/WEB-"
-"INF/classes/logback.xml`` eingetragen haben. Die Konfigurationsdatei enthält "
-"den Eintrag: ::"
+"Die Workflow Accelerator-Logdatei effektif.log kann in dem Verzeichnis "
+"gefunden werden, das Sie in der Konfigurationsdatei ``$TOMCAT_HOME/webapps/"
+"ROOT/WEB-INF/classes/logback.xml`` eingetragen haben. Die "
+"Konfigurationsdatei enthält den Eintrag: ::"
 
 #: ../../troubleshooting.rst:18
 msgid ""
@@ -74,12 +74,12 @@ msgstr "Script Engine"
 
 #: ../../troubleshooting.rst:23
 msgid ""
-"The Signavio Workflow Script Engine log files have been configured in the "
+"The Workflow Accelerator Script Engine log files have been configured in the "
 "configuration file ``$SCRIPT_ENGINE_HOME/configuration.onpremise.js``. The "
 "values for the entries ``log`` ``file`` and ``log`` ``errorFile`` will tell "
 "you the name and location of the log files."
 msgstr ""
-"Die Signavio Workflow Script Engine Log-Dateien wurden in der "
+"Die Workflow Accelerator Script Engine Log-Dateien wurden in der "
 "Konfigurationsdatei ``$SCRIPT_ENGINE_HOME/configuration.onpremise.js`` "
 "konfiguriert. Die Werte für die Einträge ``log`` ``file`` und ``log`` "
 "``errorFile`` nennen Ihnen die Namen der Log-Dateien."
@@ -146,10 +146,11 @@ msgstr "Häufige Fehler"
 #: ../../troubleshooting.rst:44
 msgid ""
 "This section lists some common problems that can arise during the setup of "
-"the Signavio Workflow system and gives instructions on how to solve them."
+"the Workflow Accelerator system and gives instructions on how to solve them."
 msgstr ""
 "In diesem Abschnitt sind häufige Fehler, die im Zuge der Betreibung von "
-"Signavio Workflow auftreten können, zusammen mit Lösungsansätzen aufgeführt:"
+"Workflow Accelerator auftreten können, zusammen mit Lösungsansätzen "
+"aufgeführt:"
 
 #: ../../troubleshooting.rst:47 ../../troubleshooting.rst:53
 #: ../../troubleshooting.rst:63 ../../troubleshooting.rst:81
@@ -158,11 +159,11 @@ msgstr "Problem:"
 
 #: ../../troubleshooting.rst:47
 msgid ""
-"The Signavio Workflow site shows a HTTP Status 500 error including the "
+"The Workflow Accelerator site shows a HTTP Status 500 error including the "
 "message ``root cause java.lang.RuntimeException: Cannot find license.xml``"
 "\\ ."
 msgstr ""
-"Die Signavio Workflow-Seite zeigt einen HTTP Status 500 Error mit der "
+"Die Workflow Accelerator-Seite zeigt einen HTTP Status 500 Error mit der "
 "folgenden Fehlermeldung an: ``root cause java.lang.RuntimeException: Cannot "
 "find license.xml``\\ ."
 
@@ -173,31 +174,31 @@ msgstr "Lösung:"
 
 #: ../../troubleshooting.rst:50
 msgid ""
-"You have not installed the Signavio Workflow license.xml at all or placed it "
-"in the wrong directory. See :ref:`install-license` to solve the issue."
+"You have not installed the Workflow Accelerator license.xml at all or placed "
+"it in the wrong directory. See :ref:`install-license` to solve the issue."
 msgstr ""
-"Sie haben die Signavio Workflow-Lizenzdatei license.xml nicht eingespielt "
+"Sie haben die Workflow Accelerator-Lizenzdatei license.xml nicht eingespielt "
 "oder an einen falschen Ort gelegt. Lesen Sie den Abschnitt :ref:`install-"
 "license` um das Problem zu beheben."
 
 #: ../../troubleshooting.rst:53
 msgid ""
-"The Signavio Workflow site shows a HTTP Status 500 error including the "
+"The Workflow Accelerator site shows a HTTP Status 500 error including the "
 "message ``com/effektif/EffektifServlet : Unsupported major.minor version "
 "51.0 (unable to load class com.effektif.EffektifServlet)``\\ ."
 msgstr ""
-"Die Signavio Workflow-Seite zeigt einen HTTP Status 500 Error mit der "
+"Die Workflow Accelerator-Seite zeigt einen HTTP Status 500 Error mit der "
 "folgenden Fehlermeldung an: ``com/effektif/EffektifServlet : Unsupported "
 "major.minor version 51.0 (unable to load class com.effektif."
 "EffektifServlet)``\\ ."
 
 #: ../../troubleshooting.rst:56
 msgid ""
-"The Tomcat server is using the wrong Java version. Signavio Workflow "
+"The Tomcat server is using the wrong Java version. Workflow Accelerator "
 "requires Java 8. Make sure you have installed the correct Java version. You "
 "can check your Java version by executing: ::"
 msgstr ""
-"Der Tomcat Server verwendet die falsche Java-Version. Signavio Workflow "
+"Der Tomcat Server verwendet die falsche Java-Version. Workflow Accelerator "
 "benötigt Java 8. Stellen Sie sicher, dass Sie die korrekte Java-Version "
 "installiert haben. Sie können Ihre Java-Version überprüfen, indem Sie den "
 "folgenden Befehl ausführen: ::"
@@ -254,7 +255,7 @@ msgstr ""
 msgid ""
 "In order to check the second issue, see the :ref:`add-mongodb-user` section. "
 "This section lists all necessary roles and explains how to verify that the "
-"Signavio Workflow user has all the required roles. Especially the restore "
+"Workflow Accelerator user has all the required roles. Especially the restore "
 "and backup commands require certain roles to work properly."
 msgstr ""
 "Die zweite Fehlerursache können Sie überprüfen, indem Sie zum :ref:`add-"
@@ -265,10 +266,11 @@ msgstr ""
 
 #: ../../troubleshooting.rst:81
 msgid ""
-"Signavio Workflow does not start and the log file contains the error message "
-"``INFO  LockingDbExecutor Database is locked by another executor. Wait...``."
+"Workflow Accelerator does not start and the log file contains the error "
+"message ``INFO  LockingDbExecutor Database is locked by another executor. "
+"Wait...``."
 msgstr ""
-"Signavio Workflow startet nicht und die Logdatei enthält folgende "
+"Workflow Accelerator startet nicht und die Logdatei enthält folgende "
 "Fehlermeldung: ``INFO  LockingDbExecutor Database is locked by another "
 "executor. Wait...``."
 
@@ -299,10 +301,10 @@ msgstr "Stellen Sie eine Verbindung zu MongoDB her."
 
 #: ../../troubleshooting.rst:91
 msgid ""
-"Open the content of the Signavio Workflow DB on the left side of the "
+"Open the content of the Workflow Accelerator DB on the left side of the "
 "application."
 msgstr ""
-"Klappen Sie auf der linken Seite den Inhalt der Signavio Workflow DB auf."
+"Klappen Sie auf der linken Seite den Inhalt der Workflow Accelerator DB auf."
 
 #: ../../troubleshooting.rst:92
 msgid "Under Collections you will find the table ``properties``."
