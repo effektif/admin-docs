@@ -1,34 +1,124 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, Signavio GmbH
+# This file is distributed under the same license as the Signavio Workflow
+# Accelerator administrators guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-30 13:50+0100\n"
-"PO-Revision-Date: 2016-07-06 16:54+0100\n"
+"POT-Creation-Date: 2017-04-20 16:23+0200\n"
+"PO-Revision-Date: 2017-04-20 17:15+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
-"Language: de\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+"Language: de\n"
 "X-Generator: Poedit 1.6.9\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #: ../../introduction.rst:2
 msgid "Introduction"
 msgstr "Einleitung"
 
+#: ../../introduction.rst:3
+msgid ""
+"This is the Signavio Workflow Accelerator administration manual. It will "
+"provide you with information to setup the Workflow Accelerator system on "
+"your own server infrastructure. Workflow Accelerator officially supports "
+"Microsoft Windows Server 64Bit and Debian Stable 64Bit."
+msgstr ""
+"Dieses Dokument beinhaltet das Signavio Workflow Accelerator "
+"Administratorenhandbuch. Es enthält detaillierte Informationen und "
+"Anweisungen für die Installation von Workflow Accelerator auf Ihrem "
+"hauseigenen Server (oder auf der Infrastruktur eines Cloudanbieters Ihrer "
+"Wahl). Workflow Accelerator unterstützt offiziell die Betriebssysteme "
+"Windows Server 64 Bit und Debian Stable 64 Bit."
+
+#: ../../introduction.rst:7
+msgid ""
+"It is possible to setup Workflow Accelerator also on other Linux "
+"distributions. However, the instructions in this manual are only tested for "
+"Debian. Probably, you will have to adjust the instructions to your system, "
+"but the used software should work on most distributions."
+msgstr ""
+"Es ist jedoch möglich, Workflow Accelerator auf weiteren Linux-"
+"Distributionen zu installieren. Die Linux-Beispiele in den "
+"Installationsanweisungen sind jedoch auf Debian zugeschnitten und können bei "
+"anderen Linux-Distributionen abweichen."
+
 #: ../../introduction.rst:12
 msgid "Software components"
 msgstr "Software-Komponenten"
+
+#: ../../introduction.rst:13
+msgid ""
+"In order to setup and work with Workflow Accelerator, several software "
+"components are necessary."
+msgstr ""
+"Um Workflow Acceleratorzu installieren und mit Workflow Accelerator zu "
+"arbeiten, werden mehrere Software-Komponenten benötigt."
+
+#: ../../introduction.rst:16
+msgid "Workflow Accelerator system"
+msgstr "Workflow Accelerator-System"
+
+#: ../../introduction.rst:17
+msgid ""
+"The Workflow Accelerator system refers to the application that you will run "
+"on your server and that consists of a Java web archive (WAR) that is "
+"deployed on Tomcat and a MongoDB database."
+msgstr ""
+"Das Workflow Accelerator-System ist eine Webanwendung, die als Java Web "
+"Archive (WAR) in einer Apache Tomcat-Instanz eingesetzt wird und mit einem "
+"MongoDB-Datenbanksystem verbunden wird."
 
 #: ../../introduction.rst:20
 msgid "Apache Tomcat"
 msgstr "Apache Tomcat"
 
+#: ../../introduction.rst:21
+msgid ""
+"The Apache Tomcat is an application server that hosts the Workflow "
+"Accelerator web application. The Workflow Accelerator web application serves "
+"the Workflow Accelerator application to the users’ browser and it also "
+"includes the backend of the Workflow Accelerator system."
+msgstr ""
+"Apache Tomcat ist ein Applikationsserver, in dem die Workflow Accelerator-"
+"Webanwendung bereitgestellt wird. Durch die Workflow Accelerator-"
+"Webanwendung werden die Front End-Applikationsdateien für die Browser der "
+"Nutzer verfügbar gemacht und über Request Handler mit der im Tomcat "
+"ausgeführten Back End-Anwendung verbunden."
+
 #: ../../introduction.rst:25
 msgid "MongoDB"
 msgstr "MongoDB"
+
+#: ../../introduction.rst:26
+msgid ""
+"MongoDB is a document-oriented database system. It is the only database "
+"system that Workflow Accelerator supports. You can find more detailed "
+"information in the `MongoDB documentation <https://docs.mongodb.org>`_."
+msgstr ""
+"MongoDB ist ein Dokument-basiertes Datenbanksystem, das notwendig ist um "
+"Workflow Accelerator auf dem Server erfolgreich auszuführen. Detaillierte "
+"Information erhalten Sie in der `MongoDB Dokumentation <https://docs.mongodb."
+"org>`_."
+
+#: ../../introduction.rst:31
+msgid "Node.js"
+msgstr "Node.js"
+
+#: ../../introduction.rst:32
+msgid ""
+"Node.js is a runtime environment for JavaScript which is used by Workflow "
+"Accelerator to execute custom JavaScript tasks created by the user."
+msgstr ""
+"Node.js ist eine Ausführungsumgebung für JavaScript, die von Workflow "
+"Accelerator für die Ausführung von benutzerdefinierten JavaScript-Tasks "
+"genutzt wird."
 
 #: ../../introduction.rst:35
 msgid "Mail server (SMTP)"
@@ -47,6 +137,17 @@ msgstr ""
 msgid "Web browser"
 msgstr "Webbrowser"
 
+#: ../../introduction.rst:41
+msgid ""
+"Workflow Accelerator runs as a web application. The user interface can be "
+"accessed using a modern web browser. More details about the supported "
+"browsers can be found in the section :ref:`supported-browsers`\\ ."
+msgstr ""
+"Da es sich bei Workflow Accelerator um eine Webanwendung handelt, wird die "
+"Nutzeroberfläche über einen Webbrowser aufgerufen. Hierfür können gängige "
+"moderne Webbrowser verwendet werden. Details zu den unterstützten Browsern "
+"finden Sie im Abschnitt :ref:`supported-browsers`\\ ."
+
 #: ../../introduction.rst:46
 msgid "Naming conventions"
 msgstr "Platzhalter"
@@ -58,120 +159,6 @@ msgid ""
 msgstr ""
 "Um die Verständlichkeit zu verbessern, werden in diesem "
 "Administratorenhandbuch die folgenden Platzhalter verwendet: "
-
-#: ../../introduction.rst:59
-msgid ""
-"Those placeholders are used within example command line code. You need to "
-"replace those placeholders with the appropriate paths on your system."
-msgstr ""
-"Diese Platzhalter werden in den Kommandozeilen-Beispielen verwendet. Um die "
-"Kommandos auszuführen, müssen die Platzhalter durch die entsprechenden "
-"Verzeichnispfade ersetzt werden."
-
-#: ../../introduction.rst:54
-msgid "``$TOMCAT_HOME``"
-msgstr "``$TOMCAT_HOME``"
-
-#: ../../introduction.rst:55
-msgid "``$MONGO_HOME``"
-msgstr "``$MONGO_HOME``"
-
-#: ../../introduction.rst:55
-msgid "Refers to the directory where your MongoDB is installed."
-msgstr ""
-"Bezeichnet das Verzeichnis, in dem Ihre MongoDB Instanz installiert ist."
-
-#: ../../introduction.rst:54
-msgid ""
-"Refers to the directory where your Apache Tomcat is installed. This "
-"directory contains the folders ``webapps`` and ``conf``\\ . On Linux for "
-"example the directory might be located in ``/var/lib/tomcat8``\\ ."
-msgstr ""
-"Bezeichnet das Verzeichnis, in dem Ihre Apache Tomcat Instanz installiert "
-"ist. Das Verzeichnis enthält die Ordner ``webapps`` und ``conf``\\ . Unter "
-"Linux findet man das Verzeichnis z.B. in ``/var/lib/tomcat8``\\ ."
-
-#: ../../introduction.rst:3
-msgid ""
-"This is the Signavio Workflow administration manual. It will provide you "
-"with information to setup the Signavio Workflow system on your own server "
-"infrastructure. Signavio Workflow officially supports Microsoft Windows "
-"Server 64Bit and Debian Stable 64Bit."
-msgstr ""
-"Dieses Dokument beinhaltet das Signavio Workflow Administratorenhandbuch. Es "
-"enthält detaillierte Informationen und Anweisungen für die Installation von "
-"Signavio Workflow auf Ihren hauseigenen Server (oder auf der Infrastruktur "
-"eines Cloudanbieters Ihrer Wahl). Signavio Workflow unterstützt offiziell "
-"die Betriebssysteme Windows Server 64 Bit und Debian Stable 64 Bit."
-
-#: ../../introduction.rst:7
-msgid ""
-"It is possible to setup Signavio Workflow also on other Linux distributions. "
-"However, the instructions in this manual are only tested for Debian. "
-"Probably, you will have to adjust the instructions to your system, but the "
-"used software should work on most distributions."
-msgstr ""
-"Es ist jedoch möglich, Signavio Workflow auf weiteren Linux-Distributionen "
-"zu installieren. Die Linux-Beispiele in den Installationsanweisungen sind "
-"jedoch auf Debian zugeschnitten und können bei anderen Linux-Distributionen "
-"abweichen."
-
-#: ../../introduction.rst:13
-msgid ""
-"In order to setup and work with Signavio Workflow, several software "
-"components are necessary."
-msgstr ""
-"Um Signavio Workflow zu installieren und mit Signavio Workflow zu arbeiten, "
-"werden mehrere Software-Komponenten benötigt."
-
-#: ../../introduction.rst:16
-msgid "Signavio Workflow system"
-msgstr "Signavio Workflow-System"
-
-#: ../../introduction.rst:17
-msgid ""
-"The Signavio Workflow system refers to the application that you will run on "
-"your server and that consists of a Java web archive (WAR) that is deployed "
-"on Tomcat and a MongoDB database."
-msgstr ""
-"Das Signavio Workflow-System ist eine Webanwendung, die als Java Web Archive "
-"(WAR) in einer Apache Tomcat Instanz eingesetzt wird und mit einem MongoDB "
-"Datenbanksystem verbunden wird."
-
-#: ../../introduction.rst:21
-msgid ""
-"The Apache Tomcat is an application server that hosts the Signavio Workflow "
-"web application. The Signavio Workflow web application serves the Signavio "
-"Workflow application to the users’ browser and it also includes the backend "
-"of the Signavio Workflow system."
-msgstr ""
-"Apache Tomcat ist ein Applikationsserver, in dem die Signavio Workflow "
-"Webanwendung bereitgestellt wird. Durch die Signavio Workflow Webanwendung "
-"werden die Front End-Applikationsdateien für die Browser der Nutzer "
-"verfügbar gemacht und über Request Handler mit der im Tomcat ausgeführten "
-"Back End-Anwendung verbunden."
-
-#: ../../introduction.rst:26
-msgid ""
-"MongoDB is a document-oriented database system. It is the only database "
-"system that Signavio Workflow supports. You can find more detailed "
-"information in the `MongoDB documentation <https://docs.mongodb.org>`_."
-msgstr ""
-"MongoDB ist ein Dokument-basiertes Datenbanksystem, das notwendig ist um "
-"Signavio Workflow auf dem Server erfolgreich auszuführen. Detaillierte "
-"Information erhalten Sie in der `MongoDB Dokumentation <https://docs.mongodb."
-"org>`_."
-
-#: ../../introduction.rst:41
-msgid ""
-"Signavio Workflow runs as a web application. The user interface can be "
-"accessed using a modern web browser. More details about the supported "
-"browsers can be found in the section :ref:`supported-browsers`\\ ."
-msgstr ""
-"Da es sich bei Signavio Workflow um eine Webanwendung handelt, wird die "
-"Nutzeroberfläche über einen Webbrowser aufgerufen. Hierfür können gängige "
-"moderne Webbrowser verwendet werden. Details zu den unterstützten Browsern "
-"finden Sie im Abschnitt :ref:`supported-browsers`\\ ."
 
 #: ../../introduction.rst:53
 msgid "``$WORKFLOW_HOME``"
@@ -185,18 +172,28 @@ msgstr ""
 "Bezeichnet das Verzeichnis, das den entpackten Inhalt des bereitgestellten "
 "signavio-workflow-{version}.zip-Archives enthält."
 
-#: ../../introduction.rst:31
-msgid "Node.js"
-msgstr "Node.js"
+#: ../../introduction.rst:54
+msgid "``$TOMCAT_HOME``"
+msgstr "``$TOMCAT_HOME``"
 
-#: ../../introduction.rst:32
+#: ../../introduction.rst:54
 msgid ""
-"Node.js is a runtime environment for JavaScript which is used by Signavio "
-"Workflow to execute custom JavaScript tasks created by the user."
+"Refers to the directory where your Apache Tomcat is installed. This "
+"directory contains the folders ``webapps`` and ``conf``\\ . On Linux for "
+"example the directory might be located in ``/var/lib/tomcat8``\\ ."
 msgstr ""
-"Node.js ist eine Ausführungsumgebung für JavaScript, die von Signavio "
-"Workflow für die Ausführung von benutzerdefinierten JavaScript-Tasks genutzt "
-"wird."
+"Bezeichnet das Verzeichnis, in dem Ihre Apache Tomcat Instanz installiert "
+"ist. Das Verzeichnis enthält die Ordner ``webapps`` und ``conf``\\ . Unter "
+"Linux findet man das Verzeichnis z.B. in ``/var/lib/tomcat8``\\ ."
+
+#: ../../introduction.rst:55
+msgid "``$MONGO_HOME``"
+msgstr "``$MONGO_HOME``"
+
+#: ../../introduction.rst:55
+msgid "Refers to the directory where your MongoDB is installed."
+msgstr ""
+"Bezeichnet das Verzeichnis, in dem Ihre MongoDB Instanz installiert ist."
 
 #: ../../introduction.rst:56
 msgid "``$SCRIPT_ENGINE_HOME``"
@@ -204,8 +201,17 @@ msgstr "``$SCRIPT_ENGINE_HOME``"
 
 #: ../../introduction.rst:56
 msgid ""
-"Refers to the directory where your Signavio Workflow Script Engine is "
+"Refers to the directory where your Workflow Accelerator Script Engine is "
 "installed."
 msgstr ""
-"Bezeichnet das Verzeichnis, in dem die Signavio Workflow Script Engine "
+"Bezeichnet das Verzeichnis, in dem die Workflow Accelerator Script Engine "
 "installiert ist."
+
+#: ../../introduction.rst:59
+msgid ""
+"Those placeholders are used within example command line code. You need to "
+"replace those placeholders with the appropriate paths on your system."
+msgstr ""
+"Diese Platzhalter werden in den Kommandozeilen-Beispielen verwendet. Um die "
+"Kommandos auszuführen, müssen die Platzhalter durch die entsprechenden "
+"Verzeichnispfade ersetzt werden."

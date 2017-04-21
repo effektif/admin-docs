@@ -1,5 +1,5 @@
-Signavio Workflow administrators documentation
-==============================================
+Signavio Workflow Accelerator administrators documentation
+==========================================================
 
 .. toctree::
     :maxdepth: 2

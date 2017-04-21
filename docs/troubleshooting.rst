@@ -4,13 +4,13 @@ Troubleshooting
 Where are the log files?
 ------------------------
 There are multiple different log files that yield information in case of an error scenario. 
-The following subsections will assist you in finding the log files for every part of the Signavio Workflow application. 
-The most important one, regarding the Signavio Workflow system is the ``effektif.log``\ . 
+The following subsections will assist you in finding the log files for every part of the Signavio Workflow Accelerator application. 
+The most important one, regarding the Workflow Accelerator system is the ``effektif.log``\ . 
 It will contain any application related log entries.
 
-Signavio Workflow
-`````````````````
-The Signavio Workflow log file effektif.log can be found in the location you configured in the logging configuration file ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes/logback.xml``\ . 
+Workflow Accelerator
+````````````````````
+The Workflow Accelerator log file effektif.log can be found in the location you configured in the logging configuration file ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes/logback.xml``\ . 
 This file contains the line: ::
 
     <property name="LOG_DIR" value="/path/to/log"/>
@@ -20,7 +20,7 @@ If you are looking for any information about incidents on a specific date, open 
 
 Script Engine
 `````````````
-The Signavio Workflow Script Engine log files have been configured in the configuration file ``$SCRIPT_ENGINE_HOME/configuration.onpremise.js``. 
+The Workflow Accelerator Script Engine log files have been configured in the configuration file ``$SCRIPT_ENGINE_HOME/configuration.onpremise.js``. 
 The values for the entries ``log`` ``file`` and ``log`` ``errorFile`` will tell you the name and location of the log files.
 
 MongoDB 
@@ -41,19 +41,19 @@ If not configured otherwise, the log files of the Apache Tomcat application serv
 
 Common problems
 ---------------
-This section lists some common problems that can arise during the setup of the Signavio Workflow system and gives instructions on how to solve them.
+This section lists some common problems that can arise during the setup of the Workflow Accelerator system and gives instructions on how to solve them.
 
 Problem:
-    The Signavio Workflow site shows a HTTP Status 500 error including the message ``root cause java.lang.RuntimeException: Cannot find license.xml``\ . 
+    The Workflow Accelerator site shows a HTTP Status 500 error including the message ``root cause java.lang.RuntimeException: Cannot find license.xml``\ . 
 
 Solution: 
-    You have not installed the Signavio Workflow license.xml at all or placed it in the wrong directory. See :ref:`install-license` to solve the issue.
+    You have not installed the Workflow Accelerator license.xml at all or placed it in the wrong directory. See :ref:`install-license` to solve the issue.
 
 Problem:
-    The Signavio Workflow site shows a HTTP Status 500 error including the message ``com/effektif/EffektifServlet : Unsupported major.minor version 51.0 (unable to load class com.effektif.EffektifServlet)``\ .
+    The Workflow Accelerator site shows a HTTP Status 500 error including the message ``com/effektif/EffektifServlet : Unsupported major.minor version 51.0 (unable to load class com.effektif.EffektifServlet)``\ .
 
 Solution:
-    The Tomcat server is using the wrong Java version. Signavio Workflow requires Java 8. Make sure you have installed the correct Java version. You can check your Java version by executing: ::
+    The Tomcat server is using the wrong Java version. Workflow Accelerator requires Java 8. Make sure you have installed the correct Java version. You can check your Java version by executing: ::
 
         java -version
 
@@ -74,11 +74,11 @@ Solution:
     If this command fails with the error message ``exception: login failed`` you know that your username / password combination is wrong. Please, make sure you spelled the username and password correctly.
 
     In order to check the second issue, see the :ref:`add-mongodb-user` section.
-    This section lists all necessary roles and explains how to verify that the Signavio Workflow user has all the required roles.
+    This section lists all necessary roles and explains how to verify that the Workflow Accelerator user has all the required roles.
     Especially the restore and backup commands require certain roles to work properly.
 
 Problem:
-    Signavio Workflow does not start and the log file contains the error message ``INFO  LockingDbExecutor Database is locked by another executor. Wait...``.
+    Workflow Accelerator does not start and the log file contains the error message ``INFO  LockingDbExecutor Database is locked by another executor. Wait...``.
 
 Solution:
     The problem with the LockingDbExecutor arises when the application server is shut down during the initialisation (update of licenses and migration of  database) before the lock can be released again. 
@@ -88,7 +88,7 @@ Solution:
 
     1. Open Robomongo.
     2. Establish a connection to MongoDB.
-    3. Open the content of the Signavio Workflow DB on the left side of the application.
+    3. Open the content of the Workflow Accelerator DB on the left side of the application.
     4. Under Collections you will find the table ``properties``.
     5. A double click on ``properties`` shows all entries. In case of an error you will see three entries, if everything is normal there will be only two.
     6. Out of the three entries in the list, select the one that contains the value ``schema.lock`` for the key ``k``.

@@ -1,15 +1,15 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2016, Signavio GmbH
+# Copyright (C) 2017, Signavio GmbH
 # This file is distributed under the same license as the Signavio Workflow
-# administrators guide package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+# Accelerator administrators guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Effektif administrators guide 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-06 22:12+0100\n"
-"PO-Revision-Date: 2016-12-06 22:33+0100\n"
+"POT-Creation-Date: 2017-04-20 16:23+0200\n"
+"PO-Revision-Date: 2017-04-21 10:36+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif Dev <dev@effektif.com>\n"
 "MIME-Version: 1.0\n"
@@ -25,27 +25,27 @@ msgstr "Aktualisierungshinweise"
 
 #: ../../update-notes.rst:6
 msgid ""
-"This section contains important information about Signavio Workflow system "
-"updates. It lists changes to technical requirements for new versions and "
-"additional instructions for updates."
+"This section contains important information about Signavio Workflow "
+"Accelerator system updates. It lists changes to technical requirements for "
+"new versions and additional instructions for updates."
 msgstr ""
 "Dieser Abschnitt enthält wichtige Information für Signavio Workflow "
-"Systemaktualisierungen. Es werden sowohl Änderungen hinsichtlich technischer "
-"Voraussetzungen aufgelistet als auch zusätzliche Anweisungen für die "
-"Aktualisierung bereit gestellt."
+"Accelerator Systemaktualisierungen. Es werden sowohl Änderungen hinsichtlich "
+"technischer Voraussetzungen aufgelistet als auch zusätzliche Anweisungen für "
+"die Aktualisierung bereit gestellt."
 
 #: ../../update-notes.rst:10
 msgid ""
-"If you skip one or more versions of Signavio Workflow during the update, "
+"If you skip one or more versions of Workflow Accelerator during the update, "
 "please follow the update notes for the versions you are skipping as well. "
 "You should start with the oldest version which is newer than your currently "
-"installed version of Signavio Workflow."
+"installed version of Workflow Accelerator."
 msgstr ""
-"Wenn Sie bei der Aktualisierung von Signavio Workflow eine oder mehrere "
+"Wenn Sie bei der Aktualisierung von Workflow Accelerator eine oder mehrere "
 "Versionen überspringen, ist es notwendig dass Sie auch die "
 "Aktualisierungshinweise für die übersprungenen Versionen lesen und befolgen. "
 "Starten Sie mit den Hinweisen für die älteste Version, die neuer als Ihre "
-"derzeit installierte Version von Signavio Workflow ist."
+"derzeit installierte Version von Workflow Accelerator ist."
 
 #: ../../update-notes.rst:13
 msgid "Updating to Signavio Workflow 3.15"
@@ -474,6 +474,3 @@ msgid ""
 msgstr ""
 "Beachten Sie bitte, Sie müssen die neueste Version von Robomongo verwenden, "
 "um sich mit einer MongoDB 3.2 Instanz verbinden zu können."
-
-#~ msgid "Effektif has been renamed to Signavio Workflow."
-#~ msgstr "Effektif wurde in Signavio Workflow umbenannt."

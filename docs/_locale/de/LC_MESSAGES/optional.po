@@ -1,15 +1,15 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2016, Signavio GmbH
+# Copyright (C) 2017, Signavio GmbH
 # This file is distributed under the same license as the Signavio Workflow
-# administrators guide package.
+# Accelerator administrators guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Signavio Workflow administrators guide 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-23 17:46+0100\n"
-"PO-Revision-Date: 2017-02-23 18:04+0100\n"
+"POT-Creation-Date: 2017-04-20 16:23+0200\n"
+"PO-Revision-Date: 2017-04-20 18:01+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Signavio Workflow Dev <dev.effektif@signavio.com>\n"
 "MIME-Version: 1.0\n"
@@ -37,11 +37,12 @@ msgstr "Nutzer- und Gruppensynchronisation mit Active Directory"
 
 #: ../../optional.rst:11
 msgid ""
-"The enterprise version of Signavio Workflow offers user and group "
-"synchronisation with an Active Directory Server using the LDAP V3 protocol."
+"The enterprise version of Signavio Workflow Accelerator offers user and "
+"group synchronisation with an Active Directory Server using the LDAP V3 "
+"protocol."
 msgstr ""
-"Die Enterprise-Version von Signavio Workflow bietet die Nutzer- und "
-"Gruppensynchronisationen mit einem Active Directory Server unter der "
+"Die Enterprise-Version von Signavio Workflow Accelerator bietet die Nutzer- "
+"und Gruppensynchronisationen mit einem Active Directory Server unter der "
 "Verwendung des LDAP V3 Protokolls."
 
 #: ../../optional.rst:13
@@ -53,15 +54,15 @@ msgstr ""
 "Sie ob die folgende Vorbedingungen erfüllt sind."
 
 #: ../../optional.rst:15
-msgid "Signavio Workflow is installed."
-msgstr "Signavio Workflow ist installiert."
+msgid "Workflow Accelerator is installed."
+msgstr "Workflow Accelerator ist installiert."
 
 #: ../../optional.rst:16
 msgid ""
-"The first Signavio Workflow user is registered, see :ref:`create-initial-"
+"The first Workflow Accelerator user is registered, see :ref:`create-initial-"
 "user`\\ ."
 msgstr ""
-"Der erste Signavio Workflow-Nutzer wurde registriert, vgl. :ref:`create-"
+"Der erste Workflow Accelerator-Nutzer wurde registriert, vgl. :ref:`create-"
 "initial-user`\\ ."
 
 #: ../../optional.rst:17
@@ -78,18 +79,18 @@ msgstr "Die Konfiguration der Synchronisation umfasst die folgenden Schritte."
 
 #: ../../optional.rst:21
 msgid ""
-"Create an Active Directory group that contains all Signavio Workflow users "
-"as members."
+"Create an Active Directory group that contains all Workflow Accelerator "
+"users as members."
 msgstr ""
-"Legen Sie eine Active Directory-Gruppe an, welche alle Signavio Workflow-"
+"Legen Sie eine Active Directory-Gruppe an, welche alle Workflow Accelerator-"
 "Nutzer als Mitglieder enthält."
 
 #: ../../optional.rst:22
 msgid ""
-"Create an Active Directory group that contains all Signavio Workflow "
+"Create an Active Directory group that contains all Workflow Accelerator "
 "administrators as members."
 msgstr ""
-"Legen Sie eine Active Directory-Gruppe an, welche alle Signavio Workflow-"
+"Legen Sie eine Active Directory-Gruppe an, welche alleWorkflow Accelerator-"
 "Administratoren als Mitglieder enthält."
 
 #: ../../optional.rst:23
@@ -101,8 +102,8 @@ msgstr ""
 "als Mitglieder enthält."
 
 #: ../../optional.rst:24
-msgid "Log in to Signavio Workflow with your initial user."
-msgstr "Loggen Sie sich in Signavio Workflow mit dem initialen Nutzer ein."
+msgid "Log in to Workflow Accelerator with your initial user."
+msgstr "Loggen Sie sich in Workflow Accelerator mit dem initialen Nutzer ein."
 
 #: ../../optional.rst:25
 msgid "Open the *Organization settings* and select the *LDAP* tab."
@@ -128,19 +129,19 @@ msgstr "Active Directory-Gruppen erstellen"
 
 #: ../../optional.rst:34
 msgid ""
-"Active Directory users and groups that should be synchronised with Signavio "
-"Workflow are managed within Active Directory by adding them to specific "
+"Active Directory users and groups that should be synchronised with Workflow "
+"Accelerator are managed within Active Directory by adding them to specific "
 "Active Directory groups. There are two groups for users, one which contains "
-"all Signavio Workflow users and one which contains only administrators. All "
-"members of the administrator group must be members of the user group as "
+"all Workflow Accelerator users and one which contains only administrators. "
+"All members of the administrator group must be members of the user group as "
 "well. Nested groups are not supported. All users and administrators need to "
 "be direct members of their groups."
 msgstr ""
-"Active Directory-Nutzer und Gruppen, die mit Signavio Workflow "
+"Active Directory-Nutzer und Gruppen, die mit Workflow Accelerator "
 "synchronisiert werden sollen, werden innerhalb des Active Directory "
 "verwaltet, in dem sie zu speziellen Active Directory-Gruppen hinzugefügt "
-"werden. Es gibt zwei Gruppen für Nutzer. Die Erste enthält alle Signavio "
-"Workflow-Nutzer. Die zweite Gruppe enthält nur die Administratoren. Alle "
+"werden. Es gibt zwei Gruppen für Nutzer. Die Erste enthält alle Workflow "
+"Accelerator-Nutzer. Die zweite Gruppe enthält nur die Administratoren. Alle "
 "Mitglieder der Administratorengruppe müssen auch Mitglieder der Nutzergruppe "
 "sein. Geschachtelte Gruppen werden nicht unterstützt. Alle Nutzer und "
 "Administratoren müssen direkte Mitglieder Ihrer Gruppen sein."
@@ -149,12 +150,12 @@ msgstr ""
 msgid ""
 "The synchronisation will copy the attributes ``givenName``, ``sn``, "
 "``mail``, ``dn``, ``objectGUID``, ``sAMAccountName`` and "
-"``userPrincipalName``\\ to the user in Signavio Workflow. It is required "
+"``userPrincipalName``\\ to the user in Workflow Accelerator. It is required "
 "that every user has the ``mail`` attribute defined."
 msgstr ""
 "Die Synchronisation wird die Attribute  ``givenName``, ``sn``, ``mail``, "
 "``dn``, ``objectGUID``, ``sAMAccountName`` und ``userPrincipalName``\\ zu "
-"dem Nutzer in Signavio Workflow kopieren. Jeder Nutzer muss das Attribut "
+"dem Nutzer in Workflow Accelerator kopieren. Jeder Nutzer muss das Attribut "
 "``mail`` definiert haben."
 
 #: ../../optional.rst:43
@@ -164,17 +165,17 @@ msgid ""
 "Active Directory groups as well. Again nested groups are not supported. "
 "Users must be direct members of the synchronised groups. The synchronisation "
 "will copy the attributes ``cn``, ``dn`` and ``objectGUID`` to the group in "
-"Signavio Workflow. Every group member that is not a Signavio Workflow user "
-"will be ignored."
+"Workflow Accelerator. Every group member that is not a Workflow Accelerator "
+"user will be ignored."
 msgstr ""
 "Optional können Sie eine dritte Gruppe definieren, welche alle Active "
 "Directory-Gruppen enthält, die synchronisiert werden sollen. Alle Mitglieder "
 "dieser Gruppe sollten Active Directory-Gruppen sein. Auch hier werden "
 "geschachtelte Gruppen nicht unterstützt. Nutzer müssen direkte Mitglieder "
 "der synchronisierten Gruppen sein. Die Synchronisation wird die Attribute "
-"``cn``, ``dn`` und ``objectGUID`` zu der Gruppe in Signavio Workflow "
-"kopieren. Jedes Gruppenmitglied, das kein Nutzer in Signavio Workflow ist, "
-"wird ignoriert."
+"``cn``, ``dn`` und ``objectGUID`` zu der Gruppe in Workflow Accelerator "
+"kopieren. Jedes Gruppenmitglied, das kein Nutzer in Workflow Accelerator "
+"ist, wird ignoriert."
 
 #: ../../optional.rst:52
 msgid "Creating a new configuration"
@@ -251,8 +252,8 @@ msgstr ""
 "validiert werden. Die Validierung umfasst die folgenden Kontrollen."
 
 #: ../../optional.rst:73
-msgid "Signavio Workflow can connect to the Active Directory."
-msgstr "Signavio Workflow kann sich mit dem Active Directory verbinden."
+msgid "Workflow Accelerator can connect to the Active Directory."
+msgstr "Workflow Accelerator kann sich mit dem Active Directory verbinden."
 
 #: ../../optional.rst:74
 msgid "The configured groups are proper Active Directory groups."
@@ -362,11 +363,11 @@ msgstr ""
 
 #: ../../optional.rst:109
 msgid ""
-"Windows domain users added to Signavio Workflow, e.g. using LDAP "
+"Windows domain users added to Workflow Accelerator, e.g. using LDAP "
 "synchronisation."
 msgstr ""
-"Windows Domänennutzer wurden zu Signavio Workflow hinzugefügt, z.B. mit der "
-"LDAP Synchronisation"
+"Windows Domänennutzer wurden zu Workflow Accelerator hinzugefügt, z.B. mit "
+"der LDAP Synchronisation"
 
 #: ../../optional.rst:110
 msgid "A Windows domain for authenticating users."
@@ -374,16 +375,18 @@ msgstr "Ein Windows Domänenkonto um die Nutzer zu authentifizieren."
 
 #: ../../optional.rst:111
 msgid ""
-"A domain account for running Signavio Workflow - its username and password."
+"A domain account for running Workflow Accelerator - its username and "
+"password."
 msgstr ""
-"Ein Domänenkonto um Signavio Workflow auszuführen - Nutzername und Passwort"
+"Ein Domänenkonto um Workflow Accelerator auszuführen - Nutzername und "
+"Passwort"
 
 #: ../../optional.rst:112
 msgid ""
-"Signavio Workflow is installed on a Windows Server that is on the domain."
+"Workflow Accelerator is installed on a Windows Server that is on the domain."
 msgstr ""
-"Signavio Workflow ist auf einem Windows Server installiert, der sich in der "
-"Domäne befindet."
+"Workflow Accelerator ist auf einem Windows Server installiert, der sich in "
+"der Domäne befindet."
 
 #: ../../optional.rst:114
 msgid "Configuring SSO in Apache Tomcat consists of the following steps."
@@ -442,10 +445,10 @@ msgstr "SPNEGO SSO Servlet Filter konfigurieren"
 #: ../../optional.rst:142
 msgid ""
 "The SSO Servlet filter uses Windows authentication to automatically log in "
-"when a user accesses Signavio Workflow."
+"when a user accesses Workflow Accelerator."
 msgstr ""
 "Der SSO Servlet Filter nutzt die Windows-Authentifizierung um Nutzer "
-"automatisch einzuloggen sobald sie auf Signavio Workflow zugreifen."
+"automatisch einzuloggen sobald sie auf Workflow Accelerator zugreifen."
 
 #: ../../optional.rst:144
 msgid ""
@@ -503,17 +506,17 @@ msgid ""
 "The `SPN <https://msdn.microsoft.com/en-us/library/ms677949(v=vs.85).aspx>`_ "
 "is the identifier used by Kerberos authentication to associate a service "
 "instance with a service logon account. You will have to associate the domain "
-"account for Signavio Workflow with the service’s fully-qualified domain name "
-"(FQDN). Therefore, you should register a SPN for every possible alias of the "
-"service, including the computer name of the server with and without domain "
-"name, as well as any other DNS entries that point to this server. In order "
-"to define a SPN, use ``setspn.exe`` - part of the `Windows Support Tools "
-"<https://en.wikipedia.org/wiki/Windows_Support_Tools>`_\\ ."
+"account for Workflow Accelerator with the service’s fully-qualified domain "
+"name (FQDN). Therefore, you should register a SPN for every possible alias "
+"of the service, including the computer name of the server with and without "
+"domain name, as well as any other DNS entries that point to this server. In "
+"order to define a SPN, use ``setspn.exe`` - part of the `Windows Support "
+"Tools <https://en.wikipedia.org/wiki/Windows_Support_Tools>`_\\ ."
 msgstr ""
 "Der `SPN <https://msdn.microsoft.com/en-us/library/ms677949(v=vs.85).aspx>`_ "
 "ist der Bezeichner, der von der Kerberos-Authentifizierung genutzt wird, um "
 "eine Service-Instanz mit einem Service-Domänenkonto zu verknüpfen. Hierfür "
-"müssen Sie das Domänenkonto von Signavio Workflow mit dem Fully-Qualified "
+"müssen Sie das Domänenkonto von Workflow Accelerator mit dem Fully-Qualified "
 "Domain Name (FQDN) des Service verbinden. Sie sollten einen SPN für jeden "
 "möglichen Alias des Service anlegen. Dies umfasst den Namen des Servers mit "
 "und ohne Domänennamen, sowie alle DNS-Einträge, die auf den Server "
@@ -524,14 +527,14 @@ msgstr ""
 #: ../../optional.rst:267
 msgid ""
 "For example, our domain is called ``ADTEST.LOCAL``, the computer name of the "
-"server is ``VM-42``, Signavio Workflow will be available under the domain "
+"server is ``VM-42``, Workflow Accelerator will be available under the domain "
 "``http://workflow.intranet:8080`` and the domain user account is "
 "``tomcat@adtest.local``\\ . Then we would have to register the following "
 "SPNs:"
 msgstr ""
 "In unserem Beispiel heißt die Domäne ``ADTEST.LOCAL``, der Computername des "
-"Servers lautet ``VM-42``, Signavio Workflow ist unter der Adresse ``http://"
-"workflow.intranet:8080`` verfügbar und das Domänenkonto heißt "
+"Servers lautet ``VM-42``, Workflow Accelerator ist unter der Adresse "
+"``http://workflow.intranet:8080`` verfügbar und das Domänenkonto heißt "
 "``tomcat@adtest.local``\\ . Daraus ergeben sich die folgenden SPNs:"
 
 #: ../../optional.rst:276
@@ -618,9 +621,9 @@ msgid ""
 "working, please make sure you are accessing the web application from a "
 "different machine than the one that runs the Tomcat server. Furthermore, "
 "check if `Integrated Windows Authentication <https://en.wikipedia.org/wiki/"
-"Integrated_Windows_Authentication>`_ is activated and the Signavio Workflow "
-"system is a trusted service, for instance by adding the address to the local "
-"intranet."
+"Integrated_Windows_Authentication>`_ is activated and the Workflow "
+"Accelerator system is a trusted service, for instance by adding the address "
+"to the local intranet."
 msgstr ""
 "Wenn Sie das hier beschriebene Setup vollständig durchlaufen haben und SSO "
 "trotzdem noch nicht funktioniert, stellen Sie bitte sicher, dass Sie von "
@@ -628,8 +631,8 @@ msgstr ""
 "von dem Rechner, der den Tomcat Server ausführt. Stellen Sie weiterhin "
 "sicher, dass die `Integrierte Windows-Authentifizierung <https://en."
 "wikipedia.org/wiki/Integrated_Windows_Authentication>`_  aktiviert ist und "
-"Signavio Workflow zu den vertrauenswürdigen Diensten gehört, z.B. in dem Sie "
-"die Adresse zum lokalen Intranet hinzufügen."
+"Workflow Accelerator zu den vertrauenswürdigen Diensten gehört, z.B. in dem "
+"Sie die Adresse zum lokalen Intranet hinzufügen."
 
 #: ../../optional.rst:312
 msgid "If you see an error page with the following error message:"
@@ -637,11 +640,11 @@ msgstr "Wenn Sie eine Fehlerseite mit dem folgenden Fehler sehen:"
 
 #: ../../optional.rst:318
 msgid ""
-"The time difference between the computer accessing Signavio Workflow and the "
-"Kerberos server is bigger than 5 minutes. You will need to synchronise the "
-"time on all machines, e.g. by running ntp to fix the issue."
+"The time difference between the computer accessing Workflow Accelerator and "
+"the Kerberos server is bigger than 5 minutes. You will need to synchronise "
+"the time on all machines, e.g. by running ntp to fix the issue."
 msgstr ""
-"Der Zeitunterschied zwischen dem Computer, der auf Signavio Workflow "
+"Der Zeitunterschied zwischen dem Computer, der auf Workflow Accelerator "
 "zugreift und dem Kerberos Server ist größer als fünf Minuten. Sie müssen die "
 "Zeit zwischen allen Maschinen synchronisieren, z.B. in dem Sie ntp ausführen."
 

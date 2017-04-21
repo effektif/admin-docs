@@ -77,8 +77,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Signavio Workflow administrators guide'
-copyright = u'2016, Signavio GmbH'
+project = u'Signavio Workflow Accelerator administrators guide'
+copyright = u'2017, Signavio GmbH'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -254,7 +254,7 @@ latex_logo = '_static/images/Signavio-Logo-CMYK.eps'
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'workflowadministratorsguide', u'Signavio Workflow adminstrators guide',
+    ('index', 'workflowadministratorsguide', u'Signavio Workflow Accelerator adminstrators guide',
      [u'Christian Wiggert'], 1)
 ]
 
@@ -268,8 +268,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'workflowadministratorsguide', u'Signavio Workflow adminstrators guide',
-   u'Christian Wiggert', 'Signavio Workflow admin guide', '',
+  ('index', 'workflowadministratorsguide', u'Signavio Workflow Accelerator adminstrators guide',
+   u'Christian Wiggert', 'Signavio Workflow Accelerator admin guide', '',
    'Miscellaneous'),
 ]
 

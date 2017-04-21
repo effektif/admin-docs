@@ -1,15 +1,15 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2016, Signavio GmbH
+# Copyright (C) 2017, Signavio GmbH
 # This file is distributed under the same license as the Signavio Workflow
-# administrators guide package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+# Accelerator administrators guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-27 15:05+0200\n"
-"PO-Revision-Date: 2016-07-07 12:42+0100\n"
+"POT-Creation-Date: 2017-04-20 16:23+0200\n"
+"PO-Revision-Date: 2017-04-21 10:30+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
 "MIME-Version: 1.0\n"
@@ -26,11 +26,12 @@ msgstr "Tooling"
 #: ../../tooling.rst:3
 msgid ""
 "This section lists some tools that might help you to administer and maintain "
-"your Signavio Workflow installation. Use them at your own discretion."
+"your Signavio Workflow Accelerator installation. Use them at your own "
+"discretion."
 msgstr ""
 "Dieses Kapitel listet einige Werkzeuge auf, die Ihnen dabei helfen können "
-"Ihre Signavio Workflow-Installation zu verwalten und zu warten. Nutzen Sie "
-"die entsprechenden Werkzeuge auf Ihre eigene Verantwortung."
+"Ihre Signavio Workflow Accelerator-Installation zu verwalten und zu warten. "
+"Nutzen Sie die entsprechenden Werkzeuge auf Ihre eigene Verantwortung."
 
 #: ../../tooling.rst:9
 msgid "MongoDB"
@@ -41,14 +42,14 @@ msgid ""
 "Robomongo is a good tool for managing your MongoDB installation. It is free "
 "and available for different operating systems. Use it at your own "
 "discretion. Please, be careful when you use a tool to manipulate the "
-"database. Signavio Workflow does not guarantee that any manipulated data can "
-"be restored. The tool can be downloaded from:"
+"database. Workflow Accelerator does not guarantee that any manipulated data "
+"can be restored. The tool can be downloaded from:"
 msgstr ""
 "Robomongo ist ein gutes Tool zur Verwaltung Ihrer MongoDB Installation. Es "
 "ist kostenfrei und für die gängigen Betriebssysteme verfügbar. Gehen Sie "
 "jedoch vorsichtig bei der Nutzung vor – beim eigenständigen Manipulieren der "
 "Datenbank kann es bei fahrlässiger Vorgehensweise natürlich vorkommen, dass "
-"Daten beschädigt werden, ohne dass das Signavio Workflow-System eine "
+"Daten beschädigt werden, ohne dass das Workflow Accelerator-System eine "
 "Wiederherstellung garantieren kann. Das Tool kann unter dem folgenden Link "
 "heruntergeladen werden:"
 
@@ -135,8 +136,8 @@ msgstr ""
 
 #: ../../tooling.rst:69
 msgid ""
-"You will see the connection in the left-hand panel and the two Signavio "
-"Workflow databases below it."
+"You will see the connection in the left-hand panel and the two Workflow "
+"Accelerator databases below it."
 msgstr ""
 "Sie sehen die hergestellte Verbindung in der linken Anzeige und darunter die "
-"zwei Signavio Workflow-Datenbanken."
+"zwei Workflow Accelerator-Datenbanken."

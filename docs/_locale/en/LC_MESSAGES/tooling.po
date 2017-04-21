@@ -1,34 +1,59 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, Signavio GmbH
+# This file is distributed under the same license as the Signavio Workflow
+# Accelerator administrators guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-31 11:18+0100\n"
-"PO-Revision-Date: 2016-06-27 13:10+0100\n"
+"POT-Creation-Date: 2017-04-20 16:01+0200\n"
+"PO-Revision-Date: 2017-04-20 16:18+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
-"Language: en\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+"Language: en\n"
 "X-Generator: Poedit 1.6.9\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #: ../../tooling.rst:2
 msgid "Tooling"
 msgstr "Tooling"
 
+#: ../../tooling.rst:3
+msgid ""
+"This section lists some tools that might help you to administer and maintain "
+"your Signavio Workflow Accelerator installation. Use them at your own "
+"discretion."
+msgstr ""
+"This section lists some tools that might help you to administer and maintain "
+"your Signavio Workflow Accelerator installation. Use them at your own "
+"discretion."
+
 #: ../../tooling.rst:9
 msgid "MongoDB"
 msgstr "MongoDB"
 
+#: ../../tooling.rst:10
+msgid ""
+"Robomongo is a good tool for managing your MongoDB installation. It is free "
+"and available for different operating systems. Use it at your own "
+"discretion. Please, be careful when you use a tool to manipulate the "
+"database. Workflow Accelerator does not guarantee that any manipulated data "
+"can be restored. The tool can be downloaded from:"
+msgstr ""
+"Robomongo is a good tool for managing your MongoDB installation. It is free "
+"and available for different operating systems. Use it at your own "
+"discretion. Please, be careful when you use a tool to manipulate the "
+"database. Workflow Accelerator does not guarantee that any manipulated data "
+"can be restored. The tool can be downloaded from:"
+
 #: ../../tooling.rst:16
 msgid "https://robomongo.org/"
 msgstr "https://robomongo.org/"
-
-#: ../../tooling.rst:27
-msgid "Make sure your MongoDB server is running and open Robomongo."
-msgstr "Make sure your MongoDB server is running and open Robomongo."
 
 #: ../../tooling.rst:21
 msgid "Connecting to MongoDB using Robomongo"
@@ -41,6 +66,20 @@ msgid ""
 msgstr ""
 "This section shows how to connect to your MongoDB server using Robomongo. "
 "Note that MongoDB 3.2 requires you to use the latest version of Robomongo."
+
+#: ../../tooling.rst:25
+msgid ""
+"If you try to connect to your MongoDB from a remote system, ensure the "
+"MongoDB configuration has either no value defined for ``bindIp`` or lists "
+"the IP address you are trying to connect to."
+msgstr ""
+"If you try to connect to your MongoDB from a remote system, ensure the "
+"MongoDB configuration has either no value defined for ``bindIp`` or lists "
+"the IP address you are trying to connect to."
+
+#: ../../tooling.rst:27
+msgid "Make sure your MongoDB server is running and open Robomongo."
+msgstr "Make sure your MongoDB server is running and open Robomongo."
 
 #: ../../tooling.rst:33
 msgid "In the upper-left corner, click the icon to open a new connection."
@@ -60,40 +99,6 @@ msgstr ""
 "address if you are connecting to a remote server, otherwise leave "
 "``localhost`` there."
 
-#: ../../tooling.rst:57
-msgid ""
-"If you click *Test*\\ , you should see a similar success message. Then click "
-"*Save*\\ ."
-msgstr ""
-"If you click *Test*\\ , you should see a similar success message. Then click "
-"*Save*\\ ."
-
-#: ../../tooling.rst:63
-msgid "Select the new item in the list and click *Connect*\\ ."
-msgstr "Select the new item in the list and click *Connect*\\ ."
-
-#: ../../tooling.rst:3
-msgid ""
-"This section lists some tools that might help you to administer and maintain "
-"your Signavio Workflow installation. Use them at your own discretion."
-msgstr ""
-"This section lists some tools that might help you to administer and maintain "
-"your Signavio Workflow installation. Use them at your own discretion."
-
-#: ../../tooling.rst:10
-msgid ""
-"Robomongo is a good tool for managing your MongoDB installation. It is free "
-"and available for different operating systems. Use it at your own "
-"discretion. Please, be careful when you use a tool to manipulate the "
-"database. Signavio Workflow does not guarantee that any manipulated data can "
-"be restored. The tool can be downloaded from:"
-msgstr ""
-"Robomongo is a good tool for managing your MongoDB installation. It is free "
-"and available for different operating systems. Use it at your own "
-"discretion. Please, be careful when you use a tool to manipulate the "
-"database. Signavio Workflow does not guarantee that any manipulated data can "
-"be restored. The tool can be downloaded from:"
-
 #: ../../tooling.rst:51
 msgid ""
 "If you enabled authorization for your MongoDB server, select the "
@@ -106,61 +111,22 @@ msgstr ""
 "enter the *User Name* (``signavio``) and the *Password* you have chosen "
 "before."
 
+#: ../../tooling.rst:57
+msgid ""
+"If you click *Test*\\ , you should see a similar success message. Then click "
+"*Save*\\ ."
+msgstr ""
+"If you click *Test*\\ , you should see a similar success message. Then click "
+"*Save*\\ ."
+
+#: ../../tooling.rst:63
+msgid "Select the new item in the list and click *Connect*\\ ."
+msgstr "Select the new item in the list and click *Connect*\\ ."
+
 #: ../../tooling.rst:69
 msgid ""
-"You will see the connection in the left-hand panel and the two Signavio "
-"Workflow databases below it."
+"You will see the connection in the left-hand panel and the two Workflow "
+"Accelerator databases below it."
 msgstr ""
-"You will see the connection in the left-hand panel and the two Signavio "
-"Workflow databases below it."
-
-#: ../../tooling.rst:25
-msgid ""
-"If you try to connect to your MongoDB from a remote system, ensure the "
-"MongoDB configuration has either no value defined for ``bindIp`` or lists "
-"the IP address you are trying to connect to."
-msgstr ""
-"If you try to connect to your MongoDB from a remote system, ensure the "
-"MongoDB configuration has either no value defined for ``bindIp`` or lists "
-"the IP address you are trying to connect to."
-
-#~ msgid ""
-#~ "*Important: If you try to connect to your MongoDB from a remote system, "
-#~ "ensure the MongoDB configuration has either no value defined for "
-#~ "``bindIp`` or lists the IP address you are trying to connect to.*"
-#~ msgstr ""
-#~ "*Important: If you try to connect to your MongoDB from a remote system, "
-#~ "ensure the MongoDB configuration has either no value defined for "
-#~ "``bindIp`` or lists the IP address you are trying to connect to.*"
-
-#~ msgid ""
-#~ "This section lists some tools that might help you to administrate and "
-#~ "maintain your Effektif installation. Use them at your own discretion."
-#~ msgstr ""
-#~ "This section lists some tools that might help you to administrate and "
-#~ "maintain your Effektif installation. Use them at your own discretion."
-
-#~ msgid ""
-#~ "A good tool to manage your MongoDB installation is Robomongo. It is free "
-#~ "and available for different operating system. Use it at your own "
-#~ "discretion. Please, be careful when you use a tool to manipulate the "
-#~ "database. Effektif does not guarantee that any manipulated data can be "
-#~ "restored. The tool can be downloaded from this site:"
-#~ msgstr ""
-#~ "A good tool to manage your MongoDB installation is Robomongo. It is free "
-#~ "and available for different operating system. Use it at your own "
-#~ "discretion. Please, be careful when you use a tool to manipulate the "
-#~ "database. Effektif does not guarantee that any manipulated data can be "
-#~ "restored. The tool can be downloaded from this site:"
-
-#~ msgid "http://robomongo.org/"
-#~ msgstr "http://robomongo.org/"
-
-#~ msgid ""
-#~ "A good tool to manage your MongoDB installation is Robomongo. It is free "
-#~ "and available for different operating system. Use it at your own "
-#~ "discretion. It can be downloaded from this site:"
-#~ msgstr ""
-#~ "A good tool to manage your MongoDB installation is Robomongo. It is free "
-#~ "and available for different operating system. Use it at your own "
-#~ "discretion. It can be downloaded from this site:"
+"You will see the connection in the left-hand panel and the two Workflow "
+"Accelerator databases below it."

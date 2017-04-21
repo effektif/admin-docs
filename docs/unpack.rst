@@ -1,7 +1,7 @@
-Unpack Signavio Workflow
-------------------------
+Unpack Signavio Workflow Accelerator
+------------------------------------
 Unzip the signavio-workflow-{version}.zip to a directory of your choice, e.g. ``/yourlocation/signavio-workflow-{version}``
-In the rest of this guide, we'll refer to the Signavio Workflow home directory as ``$WORKFLOW_HOME``\ .
+In the rest of this guide, we'll refer to the Workflow Accelerator home directory as ``$WORKFLOW_HOME``\ .
 The directory will contain the following files:
 
 * \*.sh - Linux shell scripts 

@@ -3,11 +3,11 @@
 
 Update notes
 ============
-This section contains important information about Signavio Workflow system updates.
+This section contains important information about Signavio Workflow Accelerator system updates.
 It lists changes to technical requirements for new versions and additional instructions for updates.
 
 .. IMPORTANT::
-	If you skip one or more versions of Signavio Workflow during the update, please follow the update notes for the versions you are skipping as well. You should start with the oldest version which is newer than your currently installed version of Signavio Workflow.
+	If you skip one or more versions of Workflow Accelerator during the update, please follow the update notes for the versions you are skipping as well. You should start with the oldest version which is newer than your currently installed version of Workflow Accelerator.
 
 Updating to Signavio Workflow 3.15
 ----------------------------------

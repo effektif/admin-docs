@@ -1,21 +1,21 @@
-Installing Signavio Workflow
-============================
-This section will guide you through the setup of Signavio Workflow. 
+Installing Signavio Workflow Accelerator
+========================================
+This section will guide you through the setup of Workflow Accelerator. 
 Simply follow the subsections step by step. 
-If you have already installed Signavio Workflow and want to update the system to a newer version, you can skip this chapter.
+If you have already installed Workflow Accelerator and want to update the system to a newer version, you can skip this chapter.
 
 System requirements
 -------------------
 
 Operating system
 ````````````````
-The Signavio Workflow system can be deployed on different operating systems. 
+The Workflow Accelerator system can be deployed on different operating systems. 
 Officially supported are the following operating systems:
 
 * Debian Stable Release 64-bit
 * Microsoft Windows Server 64-bit
 
-.. important:: In general, it is possible to install Signavio Workflow on other Linux distributions. However, the installation process can differ from the following instructions and the Signavio team cannot offer official support in case of an installation problem.
+.. important:: In general, it is possible to install Workflow Accelerator on other Linux distributions. However, the installation process can differ from the following instructions and the Signavio team cannot offer official support in case of an installation problem.
 
 You are advised to use a 64-bit operating system in order to be able to assign more than 1.5GB of heap space to the Java VM. 
 Furthermore, MongoDB is limited to 2GB of content on 32-bit operating systems.
@@ -24,7 +24,7 @@ Hardware requirements
 `````````````````````
 The described installation in this adminstration guide will setup the database and the application server on the same system. 
 However, it is also possible to setup the database and application server on separate systems. 
-For instance, if you already have an infrastructure that provides MongoDB instances for different applications, you can simply reuse your infrastructure and just create another database for Signavio Workflow.
+For instance, if you already have an infrastructure that provides MongoDB instances for different applications, you can simply reuse your infrastructure and just create another database for Workflow Accelerator.
 
 The minimal hardware requirements for the combined system of application and database server are:
 
@@ -32,7 +32,7 @@ The minimal hardware requirements for the combined system of application and dat
 * 4 core CPU
 * 50 GB disk space
 
-The required disk space depends on how you will use Signavio Workflow. 
+The required disk space depends on how you will use Workflow Accelerator. 
 50 GB should be sufficient disk space for most scenarios. 
 However, if you plan on using a lot of file uploads in your processes the required disk space depends largely on the number and size of the uploaded files.
 
@@ -41,12 +41,12 @@ If you plan on storing the backups on the same server, you should add more.
 
 Other systems
 `````````````
-The Signavio Workflow system relies on a SMTP mail server to send notifications and invite users. 
+The Workflow Accelerator system relies on a SMTP mail server to send notifications and invite users. 
 You can simply reuse any existing mail server in your organization that supports access via SMTP. 
 
 Software requirements
 `````````````````````
-In order to run Signavio Workflow on your server, you will need to install some additional software. 
+In order to run Workflow Accelerator on your server, you will need to install some additional software. 
 Depending on your deployment strategy (combined or separate system for application and database), you have to install the following required software either on the same server or the respective separate servers. 
 
 The following sections contain detailed instructions on how to install and configure the additional software components.
@@ -68,7 +68,7 @@ The optional script engine requires the following additional software:
 
 Web browser
 ```````````
-A current web browser is necessary on every client that shall display the Signavio Workflow user interface. 
+A current web browser is necessary on every client that shall display the Workflow Accelerator user interface. 
 The following list shows the supported web browsers and versions:
 
 * Google Chrome 23 or newer
@@ -82,7 +82,7 @@ The following list shows the supported web browsers and versions:
 
 Installing Java
 ---------------
-The application server requires a Java runtime environment in order to execute Signavio Workflow’s Java backend.
+The application server requires a Java runtime environment in order to execute Workflow Accelerator’s Java backend.
 You must install Java 8 64-bit on the application server. 
 Download an installation package for your operating system here:
 
@@ -92,8 +92,8 @@ https://www.java.com/en/download/manual.jsp
 
 Installing Tomcat
 -----------------
-The Java backend of the Signavio Workflow system is executed using Apache Tomcat.
-Signavio Workflow supports Apache Tomcat 64-bit versions 7 and 8.
+The Java backend of the Workflow Accelerator system is executed using Apache Tomcat.
+Workflow Accelerator supports Apache Tomcat 64-bit versions 7 and 8.
 We recommend using the newer version Tomcat 8. 
 
 You can download the latest installation files for different operating systems from the following site:
@@ -121,7 +121,7 @@ On Debian, you can use the Advanced Packaging Tool (APT) and execute one of the 
 
 Configuring Tomcat
 ------------------
-This section will point the configuration options that are required to run Signavio Workflow. 
+This section will point the configuration options that are required to run Workflow Accelerator. 
 However, Tomcat offers more configuration options that can be found in the official documentation:
 
 http://tomcat.apache.org/tomcat-8.0-doc/
@@ -179,7 +179,7 @@ In case you have created a new ``setenv.sh`` file, you have to make sure it is e
 Setup the Tomcat connector
 ``````````````````````````
 By default the Tomcat server will start up using port 8080 and 8005. 
-Port 8080 is used for serving the Signavio Workflow web application. Port 8005 is used to shutdown the Tomcat instance. 
+Port 8080 is used for serving the Workflow Accelerator web application. Port 8005 is used to shutdown the Tomcat instance. 
 You can change the port in the server.xml which is located in ``$TOMCAT_HOME/conf/server.xml``\ .
 
 .. hint:: If the server is running on any other port than port 80, your users will have to enter the port in the address line of the web browser, e.g. http://workflow.yourdomain.com:8080/\ .
@@ -195,20 +195,20 @@ For example, the connector could look like this:
         redirectPort="8443" 
         URIEncoding="UTF-8" />
 
-Installing the Signavio Workflow web application
-------------------------------------------------
-The Signavio Workflow web application, which can be found in the directory ``$WORKFLOW_HOME/workflow/ROOT``, needs to be copied to the Tomcat’s ``webapps`` directory.
+Installing the Workflow Accelerator web application
+---------------------------------------------------
+The Workflow Accelerator web application, which can be found in the directory ``$WORKFLOW_HOME/workflow/ROOT``, needs to be copied to the Tomcat’s ``webapps`` directory.
 Remove any files and directories that are located in ``$TOMCAT_HOME/webapps`` and copy the ``ROOT`` directory to ``$TOMCAT_HOME/webapps/``\ .
 
-The Signavio Workflow application needs to run as the ROOT application in the Tomcat.
+The Workflow Accelerator application needs to run as the ROOT application in the Tomcat.
 Running it in parallel with another application that requires to run as the ROOT application in the same Tomcat is currently not possible.
 
 .. _install-mongodb:
 
 Installing MongoDB
 ------------------
-MongoDB is currently the only database system that Signavio Workflow supports.
-If you already have an infrastructure that can provide a MongoDB version 3.2.x (or 3.4.x) instance, simply create a new instance for Signavio Workflow and skip to :ref:`configure-mongodb`.
+MongoDB is currently the only database system that Workflow Accelerator supports.
+If you already have an infrastructure that can provide a MongoDB version 3.2.x (or 3.4.x) instance, simply create a new instance for Workflow Accelerator and skip to :ref:`configure-mongodb`.
 Otherwise continue with the installation instructions.
 
 General information about installing MongoDB on different operating systems can be found at:
@@ -217,7 +217,7 @@ https://docs.mongodb.org/manual/installation/
 
 There are two versions of MongoDB, *MongoDB Community Edition* and *MongoDB Enterprise*. 
 *MongoDB Community Edition* can be used free of charge even in a commercial context, whereas *MongoDB Enterprise* is a commercial product that offers additional tooling and support.
-You can use either version with Signavio Workflow.
+You can use either version with Workflow Accelerator.
 
 In case you are using Linux, you have the possibilities to install MongoDB using either a package manager like ``apt-get`` or downloading the binaries directly. 
 It is recommened to use the package manager because it will also setup scripts that allow you to start and stop the server easily. 
@@ -296,7 +296,7 @@ or ::
     sudo /etc/init.d/mongod stop
 
 The server will use the default configuration file ``/etc/mongod.conf``\ . 
-See the next subsection for more information on how to configure MongoDB for Signavio Workflow and create the required user. 
+See the next subsection for more information on how to configure MongoDB for Workflow Accelerator and create the required user. 
 Note that the installation probably already started the MongoDB server. 
 You will need to restart the MongoDB server after you edit the configuration.
 
@@ -349,9 +349,9 @@ For more configuration options, see https://docs.mongodb.org/manual/reference/co
 
 .. _add-mongodb-user:
 
-Add a database user for Signavio Workflow
-`````````````````````````````````````````
-Signavio Workflow requires a MongoDB user in the admin database that has the following roles:
+Add a database user for Workflow Accelerator
+````````````````````````````````````````````
+Workflow Accelerator requires a MongoDB user in the admin database that has the following roles:
 
 .. tabularcolumns:: |p{5cm}|p{10cm}|
 
@@ -362,9 +362,9 @@ Signavio Workflow requires a MongoDB user in the admin database that has the fol
 ``userAdminAnyDatabase``    This role is required for backups.
 ========================    ========================
 
-The user will access the databases for Signavio Workflow. 
-Signavio Workflow will create two databases, one for the user and workflow data, and one for uploaded files. 
-The name of the first database can be configured in the Signavio Workflow configuration file. The name of the second database is derived from the name of the first one by adding “-files”. For instance, if you define the database name “signavio”, the databases “signavio” and “signavio-files” will be created.
+The user will access the databases for Workflow Accelerator. 
+Workflow Accelerator will create two databases, one for the user and workflow data, and one for uploaded files. 
+The name of the first database can be configured in the Workflow Accelerator configuration file. The name of the second database is derived from the name of the first one by adding “-files”. For instance, if you define the database name “signavio”, the databases “signavio” and “signavio-files” will be created.
 
 In general, if you want to create a new user in MongoDB you will need to authenticate with an existing user that has the role userAdmin or userAdminAnyDatabase. 
 There is an exception for a fresh MongoDB setup. 
@@ -372,24 +372,24 @@ It will allow you to create the first user from localhost without any authentica
 The following examples will show you how to create a new user using the credentials of an admin user and how to do it without any credentials in case of a new MongoDB.
 
 In order to add a new user to MongoDB, the MongoDB server has to be running. 
-The following subsections will show you how to create the Signavio Workflow database user using the command line. 
+The following subsections will show you how to create the Workflow Accelerator database user using the command line. 
 
 Windows
 ^^^^^^^
 
 #. Open the command line ``cmd`` and go to your MongoDB\bin directory, e.g. by executing: ``cd C:\MongoDB\bin``
-#. If you have an admin user, create the Signavio Workflow user by executing: 
+#. If you have an admin user, create the Workflow Accelerator user by executing: 
 
     * ``mongo.exe admin -u admin -p <enterYourAdminPasswordHere> --eval "db.createUser( { user: 'signavio', pwd: '<enterSignavioPasswordHere>', roles: ['dbAdminAnyDatabase', 'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )"``
     * Replace <enterAdminPasswordHere> with the password, you have defined for the admin user.
-    * Replace <enterSignavioPasswordHere> with the password for the new Signavio Workflow user. As you can see the user name is signavio.
+    * Replace <enterSignavioPasswordHere> with the password for the new Workflow Accelerator user. As you can see the user name is signavio.
 
-#. If you have a new MongoDB and no admin user, create the Signavio Workflow user by executing:
+#. If you have a new MongoDB and no admin user, create the Workflow Accelerator user by executing:
     
     * ``mongo.exe admin --eval "db.createUser( { user: 'signavio', pwd: '<enterSignavioPasswordHere>', roles: ['dbAdminAnyDatabase', 'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )"``
-    * Replace <enterSignavioPasswordHere> with the password for the new Signavio Workflow user. As you can see the user name is signavio.
+    * Replace <enterSignavioPasswordHere> with the password for the new Workflow Accelerator user. As you can see the user name is signavio.
 
-#. You can verify the creation of the new Signavio Workflow user by executing:
+#. You can verify the creation of the new Workflow Accelerator user by executing:
     
     * ``mongo.exe admin -u signavio -p <enterSignavioPasswordHere> --eval "db.getUser('signavio');"``
     * On the command line you will see the user information including the four assigned roles.
@@ -398,36 +398,36 @@ Debian
 ^^^^^^
 If you have installed MongoDB using a package manager, the binaries should be available on the path. Otherwise, open the directory with the MongoDB binary files and follow the instructions.
 
-#. If you have an admin user, create the Signavio Workflow user by executing: 
+#. If you have an admin user, create the Workflow Accelerator user by executing: 
 
     * ``mongo admin -u admin -p <enterYourAdminPasswordHere> --eval "db.createUser( { user: 'signavio', pwd: '<enterSignavioPasswordHere>', roles: ['dbAdminAnyDatabase', 'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )"``
     * Replace <enterAdminPasswordHere> with the password, you have defined for the admin user.
-    * Replace <enterSignavioPasswordHere> with the password for the new Signavio Workflow user. As you can see the user name is signavio.
+    * Replace <enterSignavioPasswordHere> with the password for the new Workflow Accelerator user. As you can see the user name is signavio.
 
-#. If you have a new MongoDB and no admin user, create the Signavio Workflow user by executing:
+#. If you have a new MongoDB and no admin user, create the Workflow Accelerator user by executing:
     
     * ``mongo admin --eval "db.createUser( { user: 'signavio', pwd: '<enterSignavioPasswordHere>', roles: ['dbAdminAnyDatabase', 'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )"``
-    * Replace <enterSignavioPasswordHere> with the password for the new Signavio Workflow user. As you can see the user name is signavio.
+    * Replace <enterSignavioPasswordHere> with the password for the new Workflow Accelerator user. As you can see the user name is signavio.
 
-#. You can verify the creation of the new Signavio Workflow user by executing:
+#. You can verify the creation of the new Workflow Accelerator user by executing:
     
     * ``mongo admin -u signavio -p <enterSignavioPasswordHere> --eval "db.getUser('signavio');"``
     * On the command line you will see the user information including the four assigned roles.
 
-Once the Signavio Workflow user is created, its credentials have to be added to the Signavio Workflow configuration file to the ``effektif.mongodb.username`` and ``effektif.mongodb.password`` properties. 
+Once the Workflow Accelerator user is created, its credentials have to be added to the Workflow Accelerator configuration file to the ``effektif.mongodb.username`` and ``effektif.mongodb.password`` properties. 
 Section :ref:`update-effektif-configuration` explains how to update the configuration file.
 
 Backup and restore
 ``````````````````
-You are advised to do regular backups of the MongoDB database to prevent a complete data loss in case of a system failure. The Signavio Workflow system will NOT backup the user data on its own. 
+You are advised to do regular backups of the MongoDB database to prevent a complete data loss in case of a system failure. The Workflow Accelerator system will NOT backup the user data on its own. 
 The :ref:`backup` section explains in detail how to set up backups for MongoDB properly. 
 The :ref:`restore` section explains how you can restore an older version of the user data from a backup.
 
 Installing Node.js
 ------------------
-.. important:: You only need to install and configure Node.js if you purchased a version of Signavio Workflow which allows you to use JavaScript tasks.
+.. important:: You only need to install and configure Node.js if you purchased a version of Workflow Accelerator which allows you to use JavaScript tasks.
 
-Node.js is a runtime environment for JavaScript which is used by Signavio Workflow to execute custom JavaScript tasks created by the user.
+Node.js is a runtime environment for JavaScript which is used by Workflow Accelerator to execute custom JavaScript tasks created by the user.
 We recommend using the Node.js LTS (Long Term Support) version 6.x.
 
 Windows
@@ -449,12 +449,12 @@ Please, make sure to install the LTS version of Node.js.
 
 .. _install-script-engine:
 
-Installing the Signavio Workflow Script Engine
-----------------------------------------------
-.. important:: You only need to install and configure the Script Engine if you purchased a version of Signavio Workflow which allows you to use JavaScript tasks.
+Installing the Workflow Accelerator Script Engine
+-------------------------------------------------
+.. important:: You only need to install and configure the Script Engine if you purchased a version of Workflow Accelerator which allows you to use JavaScript tasks.
 
-The Signavio Workflow Script Engine uses Node.js to execute JavaScript tasks within a workflow and an embedded HTTP server to communicate with the Signavio Workflow web application.
-You can either install the Script Engine on the same machine as the Signavio Workflow web application or on a separate machine.
+The Workflow Accelerator Script Engine uses Node.js to execute JavaScript tasks within a workflow and an embedded HTTP server to communicate with the Workflow Accelerator web application.
+You can either install the Script Engine on the same machine as the Workflow Accelerator web application or on a separate machine.
 However, if you use a separate machine to run the script engine, you have to make sure the web application can connect over HTTP to the configured port of the script engine and vice versa.
 In order to install the script engine, follow these instructions:
 
@@ -466,11 +466,11 @@ In order to install the script engine, follow these instructions:
 
     * You should find the file ``server.js`` directly within your directory: ``$SCRIPT_ENGINE_HOME/server.js``.
 
-#. Open ``$SCRIPT_ENGINE_HOME/configuration.onpremise.js`` and edit the values for the port, log files and Signavio Workflow URL.
+#. Open ``$SCRIPT_ENGINE_HOME/configuration.onpremise.js`` and edit the values for the port, log files and Workflow Accelerator URL.
 
     * Ensure that the port for the script engine is not used by any other application.
 
-#. Add the URL of the script engine to the Signavio Workflow configuration file, see :ref:`update-effektif-configuration` for more information.
+#. Add the URL of the script engine to the Workflow Accelerator configuration file, see :ref:`update-effektif-configuration` for more information.
     
     * If you run the script engine on the same machine as the web application and use the default port the URL will be ``http://localhost:8081``.
 
@@ -478,7 +478,7 @@ The configuration file offers the following options:
 
 =====================   ==================================================================
 ``port``                Defines the port the script engine will bind to and listen for incoming HTTP requests.
-``workflowUrl``         Defines the URL of the Signavio Workflow system (including port), e.g. ``http://localhost:8080``
+``workflowUrl``         Defines the URL of the Workflow Accelerator system (including port), e.g. ``http://localhost:8080``
 ``log`` ``file``        Defines the location and name of the script engine log file. You can an absolute or relative path. By default, the log files are stored in the same directory as the script engine.
 ``log`` ``errorFile``   Defines the location and name of the script engine error log file.
 =====================   ==================================================================
@@ -564,52 +564,52 @@ Note, if you use a restricted user to execute the command, make sure the user ha
 
 .. _configure-effektif:
 
-Configuring Signavio Workflow
------------------------------
+Configuring Workflow Accelerator
+--------------------------------
 
 .. _install-license:
 
 Install the license file
 ````````````````````````
-Along with the Signavio Workflow application you have received the Signavio Workflow license file license.xml. 
-Before you can start the Signavio Workflow system, you have to add the license file to the application.
+Along with the Workflow Accelerator application you have received the Workflow Accelerator license file license.xml. 
+Before you can start the Workflow Accelerator system, you have to add the license file to the application.
 Therefore, copy the license file into the directory ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes``\ . 
-The Signavio Workflow system will check your license file on startup and setup the defined number of licenses.
+The Workflow Accelerator system will check your license file on startup and setup the defined number of licenses.
 
 .. _update-effektif-configuration:
 
-Update the Signavio Workflow configuration file
-```````````````````````````````````````````````
-Before you can start Signavio Workflow for the first time, you need to configure some mandatory properties in the Signavio Workflow configuration file. 
-Make sure you have copied the Signavio Workflow web application to the Tomcat’s webapps directory before continuing. 
+Update the Workflow Accelerator configuration file
+```````````````````````````````````````````````````
+Before you can start Workflow Accelerator for the first time, you need to configure some mandatory properties in the Workflow Accelerator configuration file. 
+Make sure you have copied the Workflow Accelerator web application to the Tomcat’s webapps directory before continuing. 
 The configuration file can be found here ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes/effektif-onpremise.properties``\ . 
 
 The configuration file is a property file that contains one configuration option per line and key and value are separated by a ``=``.
 Every line that starts with a ``#`` is commented out and will not be used.
 
-In general, the configuration allows to configure the base URL of the Signavio Workflow system, the mail server, the database connection and integrations with third party systems (e.g. Signavio).
-If you installed the Signavio Workflow Script Engine, you need to configure the URL to the script engine as well. As described in :ref:`install-script-engine` the URL derives from the domain (``localhost`` for the same machine) and port the script engine is running on. 
+In general, the configuration allows to configure the base URL of the Workflow Accelerator system, the mail server, the database connection and integrations with third party systems (e.g. Signavio).
+If you installed the Workflow Accelerator Script Engine, you need to configure the URL to the script engine as well. As described in :ref:`install-script-engine` the URL derives from the domain (``localhost`` for the same machine) and port the script engine is running on. 
 
 .. tabularcolumns:: |p{6cm}|p{9cm}|
 
 ==================================  =============================
-``effektif.baseUrl``                (Required) The IP address or server name (including the port) of the server running the Signavio Workflow Tomcat application server. E.g. http://workflow.yourdomain.com:8080\ . If the server is running on port 80, the port can be omitted.
+``effektif.baseUrl``                (Required) The IP address or server name (including the port) of the server running the Workflow Accelerator Tomcat application server. E.g. http://workflow.yourdomain.com:8080\ . If the server is running on port 80, the port can be omitted.
 ``effektif.smtp.host``              (Required) The IP address or server name of the outgoing email server.
 ``effektif.smtp.port``              The port on which the outgoing SMTP server listens
 ``effektif.smtp.ssl``               If SSL should be used ( true or false )
 ``effektif.smtp.tls``               If TLS should be used ( true or false )
 ``effektif.smtp.user``              The username for authentication
 ``effektif.smtp.password``          The password for authentication
-``effektif.mail.from``              This email address is used as the sender when the Signavio Workflow system sends out notifications.
+``effektif.mail.from``              This email address is used as the sender when the Workflow Accelerator system sends out notifications.
 ``effektif.mail.feedback``          This email address will receive all feedback which is sent using the feedback functionality in the application.
 ``effektif.mongodb.servers``        A comma-separated list of MongoDB servers (hostnames). If you have MongodDB running on the same server as Tomcat, the default value of localhost is okay.
-``effektif.mongodb.username``       The Signavio Workflow MongoDB user name. If you created the user following the instructions in this guide, the name is ``signavio``.
-``effektif.mongodb.password``       The password of the Signavio Workflow MongoDB user. This is the password you defined during user creation.
-``effektif.mongodb.database``       The name of the database Signavio Workflow should use. The default value ``signavio`` is okay.
-``effektif.javascript.server.url``  (Optional) The URL of the Signavio Workflow Script Engine, e.g. ``http://localhost:8081``\ .
+``effektif.mongodb.username``       The Workflow Accelerator MongoDB user name. If you created the user following the instructions in this guide, the name is ``signavio``.
+``effektif.mongodb.password``       The password of the Workflow Accelerator MongoDB user. This is the password you defined during user creation.
+``effektif.mongodb.database``       The name of the database Workflow Accelerator should use. The default value ``signavio`` is okay.
+``effektif.javascript.server.url``  (Optional) The URL of the Workflow Accelerator Script Engine, e.g. ``http://localhost:8081``\ .
 ==================================  =============================
 
-The following properties are only relevant if your Signavio Workflow installation is connected to your Signavio installation. ::
+The following properties are only relevant if your Workflow Accelerator installation is connected to your Signavio installation. ::
 
     effektif.com.effektif.model.service.signavio.SignavioAuthenticationProvider.
         serviceBaseUrl
@@ -622,7 +622,7 @@ See :ref:`signavio-integration` for more information on how to set up the integr
 
 Configure logging
 `````````````````
-The Signavio Workflow system has its own application log file ``effektif.log``\ . 
+The Workflow Accelerator system has its own application log file ``effektif.log``\ . 
 You need to define the directory where this log file is stored. 
 The directory is specified in the file ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes/logback.xml``\ . 
 Open the file and update the following line: ::

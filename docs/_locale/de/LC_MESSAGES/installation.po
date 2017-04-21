@@ -1,15 +1,15 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2016, Signavio GmbH
+# Copyright (C) 2017, Signavio GmbH
 # This file is distributed under the same license as the Signavio Workflow
-# administrators guide package.
+# Accelerator administrators guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-23 17:46+0100\n"
-"PO-Revision-Date: 2017-02-23 17:53+0100\n"
+"POT-Creation-Date: 2017-04-20 16:23+0200\n"
+"PO-Revision-Date: 2017-04-20 17:08+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
 "MIME-Version: 1.0\n"
@@ -20,21 +20,12 @@ msgstr ""
 "X-Generator: Poedit 1.6.9\n"
 
 #: ../../installation.rst:2
-msgid "Installing Signavio Workflow"
-msgstr "Signavio Workflow installieren"
+msgid "Installing Signavio Workflow Accelerator"
+msgstr "Signavio Workflow Accelerator installieren"
 
 #: ../../installation.rst:3
-msgid ""
-"This section will guide you through the setup of Signavio Workflow. Simply "
-"follow the subsections step by step. If you have already installed Signavio "
-"Workflow and want to update the system to a newer version, you can skip this "
-"chapter."
-msgstr ""
-"Dieses Kapitel behandelt die Installation von Signavio Workflow. Folgen Sie "
-"den detaillierten Beschreibungen und Anweisungen einfach Schritt für "
-"Schritt. Wenn Sie Signavio Workflow bereits installiert haben und das System "
-"auf eine neuere Version aktualisieren möchten, dann können Sie dieses "
-"Kapitel überspringen."
+msgid "This section will guide you through the setup of Workflow Accelerator. Simply follow the subsections step by step. If you have already installed Workflow Accelerator and want to update the system to a newer version, you can skip this chapter."
+msgstr "Dieses Kapitel behandelt die Installation von Workflow Accelerator. Folgen Sie den detaillierten Beschreibungen und Anweisungen einfach Schritt für Schritt. Wenn Sie Workflow Accelerator bereits installiert haben und das System auf eine neuere Version aktualisieren möchten, dann können Sie dieses Kapitel überspringen."
 
 #: ../../installation.rst:8
 msgid "System requirements"
@@ -45,13 +36,8 @@ msgid "Operating system"
 msgstr "Betriebssystem"
 
 #: ../../installation.rst:12
-msgid ""
-"The Signavio Workflow system can be deployed on different operating systems. "
-"Officially supported are the following operating systems:"
-msgstr ""
-"Das Signavio Workflow System kann auf verschiedenen Betriebssystemen "
-"bereitgestellt werden. Offiziell werden die folgenden Betriebssysteme "
-"unterstützt:"
+msgid "The Workflow Accelerator system can be deployed on different operating systems. Officially supported are the following operating systems:"
+msgstr "Das Workflow Accelerator System kann auf verschiedenen Betriebssystemen bereitgestellt werden. Offiziell werden die folgenden Betriebssysteme unterstützt:"
 
 #: ../../installation.rst:15
 msgid "Debian Stable Release 64-bit"
@@ -62,54 +48,24 @@ msgid "Microsoft Windows Server 64-bit"
 msgstr "Microsoft Windows Server 64-Bit"
 
 #: ../../installation.rst:18
-msgid ""
-"In general, it is possible to install Signavio Workflow on other Linux "
-"distributions. However, the installation process can differ from the "
-"following instructions and the Signavio team cannot offer official support "
-"in case of an installation problem."
-msgstr ""
-"Es stellt in der Regel kein Problem dar, Signavio Workflow auf anderen Linux-"
-"Distributionen als Debian auszuführen. Der Installationsvorgang kann jedoch "
-"von den unten stehenden Anweisungen abweichen und das Signavio Team kann im "
-"Falle eines Installationsproblems keinen offiziellen Support bereitstellen."
+msgid "In general, it is possible to install Workflow Accelerator on other Linux distributions. However, the installation process can differ from the following instructions and the Signavio team cannot offer official support in case of an installation problem."
+msgstr "Es stellt in der Regel kein Problem dar, Workflow Accelerator auf anderen Linux-Distributionen als Debian auszuführen. Der Installationsvorgang kann jedoch von den unten stehenden Anweisungen abweichen und das Signavio Team kann im Falle eines Installationsproblems keinen offiziellen Support bereitstellen."
 
 #: ../../installation.rst:20
-msgid ""
-"You are advised to use a 64-bit operating system in order to be able to "
-"assign more than 1.5GB of heap space to the Java VM. Furthermore, MongoDB is "
-"limited to 2GB of content on 32-bit operating systems."
-msgstr ""
-"Bitte verwenden Sie ein 64-Bit Betriebssystem, damit der Java VM mehr als "
-"1.5GB Heap Space zugewiesen werden können. Zudem ist die Speicherkapazität "
-"von MongoDB auf 32-Bit Systemen auf 2GB begrenzt."
+msgid "You are advised to use a 64-bit operating system in order to be able to assign more than 1.5GB of heap space to the Java VM. Furthermore, MongoDB is limited to 2GB of content on 32-bit operating systems."
+msgstr "Bitte verwenden Sie ein 64-Bit Betriebssystem, damit der Java VM mehr als 1.5GB Heap Space zugewiesen werden können. Zudem ist die Speicherkapazität von MongoDB auf 32-Bit Systemen auf 2GB begrenzt."
 
 #: ../../installation.rst:24
 msgid "Hardware requirements"
 msgstr "Hardwareanforderungen"
 
 #: ../../installation.rst:25
-msgid ""
-"The described installation in this adminstration guide will setup the "
-"database and the application server on the same system. However, it is also "
-"possible to setup the database and application server on separate systems. "
-"For instance, if you already have an infrastructure that provides MongoDB "
-"instances for different applications, you can simply reuse your "
-"infrastructure and just create another database for Signavio Workflow."
-msgstr ""
-"In den vorliegenden Installationsanweisungen werden Datenbank und "
-"Webanwendung auf der selben Maschine aufgesetzt. Es ist jedoch möglich, "
-"Webanwendung und Datenbank auf verschiedenen Systemen zu installieren, zum "
-"Beispiel, falls Sie über eine Maschine MongoDB Datenbanken für verschiedene "
-"Anwendungen bereitstellen und dort auch eine Datenbank für Signavio Workflow "
-"erstellen möchten."
+msgid "The described installation in this adminstration guide will setup the database and the application server on the same system. However, it is also possible to setup the database and application server on separate systems. For instance, if you already have an infrastructure that provides MongoDB instances for different applications, you can simply reuse your infrastructure and just create another database for Workflow Accelerator."
+msgstr "In den vorliegenden Installationsanweisungen werden Datenbank und Webanwendung auf der selben Maschine aufgesetzt. Es ist jedoch möglich, Webanwendung und Datenbank auf verschiedenen Systemen zu installieren, zum Beispiel, falls Sie über eine Maschine MongoDB Datenbanken für verschiedene Anwendungen bereitstellen und dort auch eine Datenbank für Workflow Accelerator erstellen möchten."
 
 #: ../../installation.rst:29
-msgid ""
-"The minimal hardware requirements for the combined system of application and "
-"database server are:"
-msgstr ""
-"Die minimalen Hardwareanforderungen für Webanwendung und Datenbank zusammen "
-"sind wie folgt:"
+msgid "The minimal hardware requirements for the combined system of application and database server are:"
+msgstr "Die minimalen Hardwareanforderungen für Webanwendung und Datenbank zusammen sind wie folgt:"
 
 #: ../../installation.rst:31
 msgid "8 GB RAM"
@@ -124,67 +80,32 @@ msgid "50 GB disk space"
 msgstr "50 GB Festplattenspeicherplatz"
 
 #: ../../installation.rst:35
-msgid ""
-"The required disk space depends on how you will use Signavio Workflow. 50 GB "
-"should be sufficient disk space for most scenarios. However, if you plan on "
-"using a lot of file uploads in your processes the required disk space "
-"depends largely on the number and size of the uploaded files."
-msgstr ""
-"Der notwendige Festplattenspeicherplatz hängt stark vom Anwendungsszenario "
-"ab. 50GB reichen in aller Regel aus. Falls Sie jedoch vorhaben, viele und "
-"umfangreiche Dateien im Kontext der Prozessausführung hochzuladen, kann es "
-"selbstverständlich vorkommen, dass die notwendige Festplattenkapazität 50GB "
-"überschreitet."
+msgid "The required disk space depends on how you will use Workflow Accelerator. 50 GB should be sufficient disk space for most scenarios. However, if you plan on using a lot of file uploads in your processes the required disk space depends largely on the number and size of the uploaded files."
+msgstr "Der notwendige Festplattenspeicherplatz hängt stark vom Anwendungsszenario ab. 50GB reichen in aller Regel aus. Falls Sie jedoch vorhaben, viele und umfangreiche Dateien im Kontext der Prozessausführung hochzuladen, kann es selbstverständlich vorkommen, dass die notwendige Festplattenkapazität 50GB überschreitet."
 
 #: ../../installation.rst:39
-msgid ""
-"Note that the required disk space does not include the space necessary for "
-"backups. If you plan on storing the backups on the same server, you should "
-"add more."
-msgstr ""
-"Berücksichtigen Sie zudem Backup-Kapazität, insbesondere wenn Sie ein Backup "
-"auf dem selben Server speichern möchten."
+msgid "Note that the required disk space does not include the space necessary for backups. If you plan on storing the backups on the same server, you should add more."
+msgstr "Berücksichtigen Sie zudem Backup-Kapazität, insbesondere wenn Sie ein Backup auf dem selben Server speichern möchten."
 
 #: ../../installation.rst:43
 msgid "Other systems"
 msgstr "Weitere Systeme"
 
 #: ../../installation.rst:44
-msgid ""
-"The Signavio Workflow system relies on a SMTP mail server to send "
-"notifications and invite users. You can simply reuse any existing mail "
-"server in your organization that supports access via SMTP."
-msgstr ""
-"Das Signavio Workflow System benötigt eine Verbindung zu einem SMTP "
-"Emailserver, um Benachrichtigungen und Einlandungen an Nutzer zu versenden. "
-"In der Regel können Sie einen bereits existierenden Mailserver Ihrer "
-"Organisation verwenden."
+msgid "The Workflow Accelerator system relies on a SMTP mail server to send notifications and invite users. You can simply reuse any existing mail server in your organization that supports access via SMTP."
+msgstr "Das Workflow Accelerator System benötigt eine Verbindung zu einem SMTP Emailserver, um Benachrichtigungen und Einlandungen an Nutzer zu versenden. In der Regel können Sie einen bereits existierenden Mailserver Ihrer Organisation verwenden."
 
 #: ../../installation.rst:48
 msgid "Software requirements"
 msgstr "Softwareanforderungen"
 
 #: ../../installation.rst:49
-msgid ""
-"In order to run Signavio Workflow on your server, you will need to install "
-"some additional software. Depending on your deployment strategy (combined or "
-"separate system for application and database), you have to install the "
-"following required software either on the same server or the respective "
-"separate servers."
-msgstr ""
-"Um Signavio Workflow auf Ihrem Server ausführen zu können, ist es notwendig "
-"weitere Software zu installieren (beziehungsweise installiert zu haben). "
-"Abhängig von Ihrem Installationsvorhaben ist es notwendig die unten "
-"aufgeführte Software auf dem Server, beziehungsweise den Servern, zu "
-"installieren."
+msgid "In order to run Workflow Accelerator on your server, you will need to install some additional software. Depending on your deployment strategy (combined or separate system for application and database), you have to install the following required software either on the same server or the respective separate servers."
+msgstr "Um Workflow Accelerator auf Ihrem Server ausführen zu können, ist es notwendig weitere Software zu installieren (beziehungsweise installiert zu haben). Abhängig von Ihrem Installationsvorhaben ist es notwendig die unten aufgeführte Software auf dem Server, beziehungsweise den Servern, zu installieren."
 
 #: ../../installation.rst:52
-msgid ""
-"The following sections contain detailed instructions on how to install and "
-"configure the additional software components."
-msgstr ""
-"Die nachfolgenden Kapitel enthalten detaillierte Installations- und "
-"Konfigurationsanweisungen für die zusätzliche Software."
+msgid "The following sections contain detailed instructions on how to install and configure the additional software components."
+msgstr "Die nachfolgenden Kapitel enthalten detaillierte Installations- und Konfigurationsanweisungen für die zusätzliche Software."
 
 #: ../../installation.rst:54
 msgid "The application server requires the following additional software:"
@@ -219,14 +140,8 @@ msgid "Web browser"
 msgstr "Webbrowser"
 
 #: ../../installation.rst:71
-msgid ""
-"A current web browser is necessary on every client that shall display the "
-"Signavio Workflow user interface. The following list shows the supported web "
-"browsers and versions:"
-msgstr ""
-"Ein relative aktueller Webbrowser auf den Nutzer-PCs ist notwendig, um "
-"Signavio Workflow aufrufen zu können. Die folgenden Browser werden "
-"unterstützt:"
+msgid "A current web browser is necessary on every client that shall display the Workflow Accelerator user interface. The following list shows the supported web browsers and versions:"
+msgstr "Ein relative aktueller Webbrowser auf den Nutzer-PCs ist notwendig, um Workflow Accelerator aufrufen zu können. Die folgenden Browser werden unterstützt:"
 
 #: ../../installation.rst:74
 msgid "Google Chrome 23 or newer"
@@ -245,20 +160,12 @@ msgid "Apple Safari 5 or newer"
 msgstr "Apple Safari 5 oder neuer"
 
 #: ../../unpack.rst:2
-msgid "Unpack Signavio Workflow"
-msgstr "Signavio Workflow entpacken"
+msgid "Unpack Signavio Workflow Accelerator"
+msgstr "Workflow Accelerator entpacken"
 
 #: ../../unpack.rst:3
-msgid ""
-"Unzip the signavio-workflow-{version}.zip to a directory of your choice, e."
-"g. ``/yourlocation/signavio-workflow-{version}`` In the rest of this guide, "
-"we'll refer to the Signavio Workflow home directory as ``$WORKFLOW_HOME``"
-"\\ . The directory will contain the following files:"
-msgstr ""
-"Entpacken Sie das Archiv signavio-workflow-{version}.zip in einem "
-"Verzeichnis Ihrer Wahl, zum Beispiel: ``/yourlocation/signavio-workflow-"
-"{version}`` Dieses Verzeichnis wird im weiteren Text als ``$WORKFLOW_HOME`` "
-"bezeichnet. Das Verzeichnis enthält die folgenden Dateien:"
+msgid "Unzip the signavio-workflow-{version}.zip to a directory of your choice, e.g. ``/yourlocation/signavio-workflow-{version}`` In the rest of this guide, we'll refer to the Workflow Accelerator home directory as ``$WORKFLOW_HOME``\\ . The directory will contain the following files:"
+msgstr "Entpacken Sie das Archiv signavio-workflow-{version}.zip in einem Verzeichnis Ihrer Wahl, zum Beispiel: ``/yourlocation/signavio-workflow-{version}`` Dieses Verzeichnis wird im weiteren Text als ``$WORKFLOW_HOME`` bezeichnet. Das Verzeichnis enthält die folgenden Dateien:"
 
 #: ../../unpack.rst:7
 msgid "\\*.sh - Linux shell scripts"
@@ -286,8 +193,7 @@ msgstr "optional – Verzeichnis, das optional Ressourcen enthält"
 
 #: ../../unpack.rst:16
 msgid "spnego - directory that contains resources to setup SSO with SPNEGO"
-msgstr ""
-"spnego - Verzeichnis, das die Dateien enthält um SSO mit SPNEGO aufzusetzen"
+msgstr "spnego - Verzeichnis, das die Dateien enthält um SSO mit SPNEGO aufzusetzen"
 
 #: ../../unpack.rst:18
 msgid "webapps - directory"
@@ -298,27 +204,16 @@ msgid "ROOT - this directory contains the web application"
 msgstr "ROOT - Verzeichnis, das die Webanwendung enthält"
 
 #: ../../unpack.rst:22
-msgid ""
-"On Linux systems you need to make the scripts executable with the ``chmod`` "
-"command like this: ::"
-msgstr ""
-"Auf Linuxsystemen ist es notwendig, die Shellskripte ausführbar zu machen. "
-"Verwenden Sie hierfür den ``chmod``\\ -Befehl, wie zum Beispiel: ::"
+msgid "On Linux systems you need to make the scripts executable with the ``chmod`` command like this: ::"
+msgstr "Auf Linuxsystemen ist es notwendig, die Shellskripte ausführbar zu machen. Verwenden Sie hierfür den ``chmod``\\ -Befehl, wie zum Beispiel: ::"
 
 #: ../../installation.rst:84
 msgid "Installing Java"
 msgstr "Java installieren"
 
 #: ../../installation.rst:85
-msgid ""
-"The application server requires a Java runtime environment in order to "
-"execute Signavio Workflow’s Java backend. You must install Java 8 64-bit on "
-"the application server. Download an installation package for your operating "
-"system here:"
-msgstr ""
-"Der Anwendungsserver benötigt eine Java Ausführungsumgebung, um das Java-"
-"Back End von Signavio Workflow auszuführen. Installieren Sie daher Java 8 64-"
-"Bit für Ihr Betriebssystem. Die entsprechenden Dateien erhalten Sie hier:"
+msgid "The application server requires a Java runtime environment in order to execute Workflow Accelerator’s Java backend. You must install Java 8 64-bit on the application server. Download an installation package for your operating system here:"
+msgstr "Der Anwendungsserver benötigt eine Java Ausführungsumgebung, um das Java-Back End von Workflow Accelerator auszuführen. Installieren Sie daher Java 8 64-Bit für Ihr Betriebssystem. Die entsprechenden Dateien erhalten Sie hier:"
 
 #: ../../installation.rst:89
 msgid "https://www.java.com/en/download/manual.jsp"
@@ -329,35 +224,20 @@ msgid "Installing Tomcat"
 msgstr "Tomcat installieren"
 
 #: ../../installation.rst:95
-msgid ""
-"The Java backend of the Signavio Workflow system is executed using Apache "
-"Tomcat. Signavio Workflow supports Apache Tomcat 64-bit versions 7 and 8. We "
-"recommend using the newer version Tomcat 8."
-msgstr ""
-"Das Java Back End von Signavio Workflow wird im Apache Tomcat Webserver "
-"ausgeführt. Signavio Workflow unterstützt die Apache Tomcat 64-Bit Versionen "
-"7 und 8. Wir empfehlen die Nutzung der neueren Version Tomcat 8."
+msgid "The Java backend of the Workflow Accelerator system is executed using Apache Tomcat. Workflow Accelerator supports Apache Tomcat 64-bit versions 7 and 8. We recommend using the newer version Tomcat 8."
+msgstr "Das Java Back End von Workflow Accelerator wird im Apache Tomcat Webserver ausgeführt. Workflow Accelerator unterstützt die Apache Tomcat 64-Bit Versionen 7 und 8. Wir empfehlen die Nutzung der neueren Version Tomcat 8."
 
 #: ../../installation.rst:99
-msgid ""
-"You can download the latest installation files for different operating "
-"systems from the following site:"
-msgstr ""
-"Die Tomcat-Installationsdateien erhalten Sie für verschiedene "
-"Betriebssysteme hier:"
+msgid "You can download the latest installation files for different operating systems from the following site:"
+msgstr "Die Tomcat-Installationsdateien erhalten Sie für verschiedene Betriebssysteme hier:"
 
 #: ../../installation.rst:101
 msgid "http://tomcat.apache.org/download-80.cgi"
 msgstr "http://tomcat.apache.org/download-80.cgi"
 
 #: ../../installation.rst:103
-msgid ""
-"In general, please make sure the user executing the Tomcat has read/write "
-"permissions for the ``$TOMCAT_HOME/webapps`` directory and its sub-"
-"directories."
-msgstr ""
-"Stellen Sie bitte sicher, dass der Tomcat Lese- und Schreibrechte im "
-"Verzeichnis ``$TOMCAT_HOME/webapps`` und den enthaltenen Ordnern hat."
+msgid "In general, please make sure the user executing the Tomcat has read/write permissions for the ``$TOMCAT_HOME/webapps`` directory and its sub-directories."
+msgstr "Stellen Sie bitte sicher, dass der Tomcat Lese- und Schreibrechte im Verzeichnis ``$TOMCAT_HOME/webapps`` und den enthaltenen Ordnern hat."
 
 #: ../../installation.rst:106 ../../installation.rst:155
 #: ../../installation.rst:236 ../../installation.rst:378
@@ -366,28 +246,12 @@ msgid "Windows"
 msgstr "Windows"
 
 #: ../../installation.rst:107
-msgid ""
-"If you are using a Windows system, the download site offers a Windows "
-"Service Installer (“32-bit/64-bit Windows Service Installer”). This "
-"installer will install the Apache Tomcat as a Windows service which can be "
-"started, stopped and configured over a graphical user interface. The service "
-"installer is the recommended way for Windows users to install the Tomcat "
-"server. Please, make sure you execute the installer with administrator "
-"privileges."
-msgstr ""
-"Für Windows lässt sich auf der Tomcat-Seite ein Windows Service Installer "
-"(“32-bit/64-bit Windows Service Installer”) herunterladen. Dieser Installer "
-"richtet Apache Tomcat als Windows Service ein, der über eine "
-"Desktopanwendung gestartet, gestoppt und weitgehend konfiguriert werden "
-"kann. Führen Sie den Installer mit Administratorrechten aus."
+msgid "If you are using a Windows system, the download site offers a Windows Service Installer (“32-bit/64-bit Windows Service Installer”). This installer will install the Apache Tomcat as a Windows service which can be started, stopped and configured over a graphical user interface. The service installer is the recommended way for Windows users to install the Tomcat server. Please, make sure you execute the installer with administrator privileges."
+msgstr "Für Windows lässt sich auf der Tomcat-Seite ein Windows Service Installer (“32-bit/64-bit Windows Service Installer”) herunterladen. Dieser Installer richtet Apache Tomcat als Windows Service ein, der über eine Desktopanwendung gestartet, gestoppt und weitgehend konfiguriert werden kann. Führen Sie den Installer mit Administratorrechten aus."
 
 #: ../../installation.rst:112
-msgid ""
-"Furthermore, it is recommended to install the Apache Tomcat into a root "
-"directory on ``C:\\``\\ ."
-msgstr ""
-"Es wird empfohlen, Apache Tomcat in einem root-Ordner unter ``C:\\`` zu "
-"installieren."
+msgid "Furthermore, it is recommended to install the Apache Tomcat into a root directory on ``C:\\``\\ ."
+msgstr "Es wird empfohlen, Apache Tomcat in einem root-Ordner unter ``C:\\`` zu installieren."
 
 #: ../../installation.rst:115 ../../installation.rst:168
 #: ../../installation.rst:278 ../../installation.rst:398
@@ -396,28 +260,16 @@ msgid "Debian"
 msgstr "Debian"
 
 #: ../../installation.rst:116
-msgid ""
-"If you are using Linux, consider installing Apache Tomcat using a package "
-"manager. On Debian, you can use the Advanced Packaging Tool (APT) and "
-"execute one of the following commands: ::"
-msgstr ""
-"Unter Linux ist es empfehlenswert, Apache Tomcat über den Paketmanager zu "
-"installieren. Unter Debian bietet sich das Advanced Packaging Tool (APT) "
-"an: ::"
+msgid "If you are using Linux, consider installing Apache Tomcat using a package manager. On Debian, you can use the Advanced Packaging Tool (APT) and execute one of the following commands: ::"
+msgstr "Unter Linux ist es empfehlenswert, Apache Tomcat über den Paketmanager zu installieren. Unter Debian bietet sich das Advanced Packaging Tool (APT) an: ::"
 
 #: ../../installation.rst:123
 msgid "Configuring Tomcat"
 msgstr "Tomcat konfigurieren"
 
 #: ../../installation.rst:124
-msgid ""
-"This section will point the configuration options that are required to run "
-"Signavio Workflow. However, Tomcat offers more configuration options that "
-"can be found in the official documentation:"
-msgstr ""
-"Dieser Abschnitt beschreibt die Konfigurationseinstellungen, die notwendig "
-"sind, um Signavio Workflow auszuführen. Weitere Einstellungen, die Sie "
-"eventuell vornehmen möchten, finden Sie hier:"
+msgid "This section will point the configuration options that are required to run Workflow Accelerator. However, Tomcat offers more configuration options that can be found in the official documentation:"
+msgstr "Dieser Abschnitt beschreibt die Konfigurationseinstellungen, die notwendig sind, um Workflow Accelerator auszuführen. Weitere Einstellungen, die Sie eventuell vornehmen möchten, finden Sie hier:"
 
 #: ../../installation.rst:127
 msgid "http://tomcat.apache.org/tomcat-8.0-doc/"
@@ -428,13 +280,8 @@ msgid "Java options"
 msgstr "Java-Optionen"
 
 #: ../../installation.rst:131
-msgid ""
-"There are some Java options that need to be configured before starting the "
-"Tomcat server. These options are configured using the ``JAVA_OPTS`` "
-"environment variable. It should contain the following values:"
-msgstr ""
-"Die folgenden Java-Optionen müssen über die ``JAVA_OPTS`` Umgebungsvariable "
-"gesetzt werden, bevor Tomcat gestartet wird:"
+msgid "There are some Java options that need to be configured before starting the Tomcat server. These options are configured using the ``JAVA_OPTS`` environment variable. It should contain the following values:"
+msgstr "Die folgenden Java-Optionen müssen über die ``JAVA_OPTS`` Umgebungsvariable gesetzt werden, bevor Tomcat gestartet wird:"
 
 #: ../../installation.rst:136
 msgid "``-Xms1536m``"
@@ -450,8 +297,7 @@ msgstr "``-Xmx2048m``"
 
 #: ../../installation.rst:138
 msgid "maximum RAM, should be at least 2GB but more is recommended"
-msgstr ""
-"maximaler RAM, sollte mindestens 2GB betragen, mehr ist jedoch empfehlenswert"
+msgstr "maximaler RAM, sollte mindestens 2GB betragen, mehr ist jedoch empfehlenswert"
 
 #: ../../installation.rst:140
 msgid "``-Dfile.encoding=UTF-8``"
@@ -478,212 +324,84 @@ msgid "maximum permanent generation space in MB"
 msgstr "maximaler “Permantent Generation Space” in MB"
 
 #: ../../installation.rst:147
-msgid ""
-"In order to allocate sufficient RAM to the Tomcat server you have to set the "
-"``Xms`` and ``Xmx`` options, followed by the number of MB allocated and a "
-"literal ``m``. ``Xms`` defines the initial/minimum amount of RAM that is "
-"used and ``Xmx`` the allowed maximum. You are advised to allocate at least "
-"2GB of RAM to the Tomcat. However, it is recommended to use more RAM. For "
-"example, if you want to assign 4GB of maximum RAM the option would be ``-"
-"Xmx4096m``\\ ."
-msgstr ""
-"Um ausreichend RAM für Tomcat zur Verfügung zu stellen, müssen die ``Xms`` "
-"und ``Xmx``\\ -Optionen gesetzt werden, gefolgt von der MB-Anzahl und dem "
-"Buchstaben ``m``\\ . ``Xms`` definiert den minimalen RAM, ``Xmx`` den "
-"maximalen RAM. Es sollten mindestens 2GB RAM zugewiesen werden, mehr ist "
-"jedoch empfehlenswert. Wenn Sie z.B. 4GB maximalen RAM zuweisen möchten, "
-"würde die Option wie folgt aussehen: ``-Xmx4096m``"
+msgid "In order to allocate sufficient RAM to the Tomcat server you have to set the ``Xms`` and ``Xmx`` options, followed by the number of MB allocated and a literal ``m``. ``Xms`` defines the initial/minimum amount of RAM that is used and ``Xmx`` the allowed maximum. You are advised to allocate at least 2GB of RAM to the Tomcat. However, it is recommended to use more RAM. For example, if you want to assign 4GB of maximum RAM the option would be ``-Xmx4096m``\\ ."
+msgstr "Um ausreichend RAM für Tomcat zur Verfügung zu stellen, müssen die ``Xms`` und ``Xmx``\\ -Optionen gesetzt werden, gefolgt von der MB-Anzahl und dem Buchstaben ``m``\\ . ``Xms`` definiert den minimalen RAM, ``Xmx`` den maximalen RAM. Es sollten mindestens 2GB RAM zugewiesen werden, mehr ist jedoch empfehlenswert. Wenn Sie z.B. 4GB maximalen RAM zuweisen möchten, würde die Option wie folgt aussehen: ``-Xmx4096m``"
 
 #: ../../installation.rst:152
-msgid ""
-"The values for the permanent generation space have to be increased as well, "
-"these are defined by the values ``-XX:PermSize=128m`` and ``-XX:"
-"MaxPermSize=256m``\\ ."
-msgstr ""
-"Zudem müssen die Werte für den “Permantent Generation Space” erhöht werden. "
-"Hierfür sind die Variablen ``-XX:PermSize=128m`` und ``-XX:"
-"MaxPermSize=256m`` zu setzen."
+msgid "The values for the permanent generation space have to be increased as well, these are defined by the values ``-XX:PermSize=128m`` and ``-XX:MaxPermSize=256m``\\ ."
+msgstr "Zudem müssen die Werte für den “Permantent Generation Space” erhöht werden. Hierfür sind die Variablen ``-XX:PermSize=128m`` und ``-XX:MaxPermSize=256m`` zu setzen."
 
 #: ../../installation.rst:156
-msgid ""
-"If you installed Tomcat using the Windows service installer, you can open "
-"the configuration dialog by opening the Windows start menu and selecting "
-"``Program Files\\Apache Tomcat\\Configure Tomcat``\\ ."
-msgstr ""
-"Falls Sie Tomcat über den Windows Installer installiert haben, öffnen Sie "
-"nun den Konfigurationsdialog über das ``Startmenü und Programme\\Apache "
-"Tomcat\\Configure Tomcat``\\ . "
+msgid "If you installed Tomcat using the Windows service installer, you can open the configuration dialog by opening the Windows start menu and selecting ``Program Files\\Apache Tomcat\\Configure Tomcat``\\ ."
+msgstr "Falls Sie Tomcat über den Windows Installer installiert haben, öffnen Sie nun den Konfigurationsdialog über das ``Startmenü und Programme\\Apache Tomcat\\Configure Tomcat``\\ . "
 
 #: ../../installation.rst:162
 msgid "The Java tab of the Tomcat configuration dialog"
 msgstr "Das Java-Tab in Tomcats Konfigurationsdialog"
 
 #: ../../installation.rst:164
-msgid ""
-"The tab Java offers the possibility to set the options and define the memory "
-"pool (minimum and maximum RAM usage). Fill in the values for Xms and Xmx "
-"into the fields for memory pool and add the other options to the text area "
-"labeled as Java Options."
-msgstr ""
-"Das \"Java-Tab\" ermöglicht es nun, die entsprechenden Optionen zu setzen. "
-"Minimaler und maximaler RAM-Zuweisung werden unter “Initial memory pool” und "
-"“Maximum memory pool” definiert. Fügen Sie die verbleibenden Option in das "
-"Textfeld \"Java Options\" ein."
+msgid "The tab Java offers the possibility to set the options and define the memory pool (minimum and maximum RAM usage). Fill in the values for Xms and Xmx into the fields for memory pool and add the other options to the text area labeled as Java Options."
+msgstr "Das \"Java-Tab\" ermöglicht es nun, die entsprechenden Optionen zu setzen. Minimaler und maximaler RAM-Zuweisung werden unter “Initial memory pool” und “Maximum memory pool” definiert. Fügen Sie die verbleibenden Option in das Textfeld \"Java Options\" ein."
 
 #: ../../installation.rst:169
-msgid ""
-"One way to define the ``JAVA_OPTS`` under Debian and other Linux "
-"distributions is to create the file ``setenv.sh`` in the Tomcat ``/bin/`` "
-"directory. This directory contains also other files like the ``catalina.sh``"
-"\\ , the ``startup.sh`` or the ``shutdown.sh`` und is for instance located "
-"in ``/usr/share/tomcat8`` or a similar directory. Simply create or extend "
-"any existing setenv.sh file and add the line for ``the JAVA_OPTS``\\ : ::"
-msgstr ""
-"Unter Debian und anderen Linux-Distributionen können die ``JAVA_OPTS`` "
-"gesetzt werden, indem Sie die Datei ``setenv.sh`` im Verzeichnis Tomcat ``/"
-"bin/`` erstellen. In diesem Verzeichnis befinden sich zudem Datein wie "
-"``catalina.sh``\\ , ``startup.sh`` und ``shutdown.sh`` und der Pfad ist zum "
-"Beispiel ``/usr/share/tomcat8`` oder vergleichbar. Erstellen Sie einfach die "
-"Datei ``setenv.sh`` (oder öffen Sie die bestehende Datei) und fügen Sie eine "
-"Zeile für die ``JAVA_OPTS`` hinzu: ::"
+msgid "One way to define the ``JAVA_OPTS`` under Debian and other Linux distributions is to create the file ``setenv.sh`` in the Tomcat ``/bin/`` directory. This directory contains also other files like the ``catalina.sh``\\ , the ``startup.sh`` or the ``shutdown.sh`` und is for instance located in ``/usr/share/tomcat8`` or a similar directory. Simply create or extend any existing setenv.sh file and add the line for ``the JAVA_OPTS``\\ : ::"
+msgstr "Unter Debian und anderen Linux-Distributionen können die ``JAVA_OPTS`` gesetzt werden, indem Sie die Datei ``setenv.sh`` im Verzeichnis Tomcat ``/bin/`` erstellen. In diesem Verzeichnis befinden sich zudem Datein wie ``catalina.sh``\\ , ``startup.sh`` und ``shutdown.sh`` und der Pfad ist zum Beispiel ``/usr/share/tomcat8`` oder vergleichbar. Erstellen Sie einfach die Datei ``setenv.sh`` (oder öffen Sie die bestehende Datei) und fügen Sie eine Zeile für die ``JAVA_OPTS`` hinzu: ::"
 
 #: ../../installation.rst:175
-msgid ""
-"In case you have created a new ``setenv.sh`` file, you have to make sure it "
-"is executable using the ``chmod`` command: ::"
-msgstr ""
-"Wenn Sie eine neue ``setenv.sh``-Datei erstellt haben, müssen Sie diese noch "
-"ausführbar machen. Verwenden Sie hierfür den ``chmod``\\-Befehl: ::"
+msgid "In case you have created a new ``setenv.sh`` file, you have to make sure it is executable using the ``chmod`` command: ::"
+msgstr "Wenn Sie eine neue ``setenv.sh``-Datei erstellt haben, müssen Sie diese noch ausführbar machen. Verwenden Sie hierfür den ``chmod``\\-Befehl: ::"
 
 #: ../../installation.rst:180
 msgid "Setup the Tomcat connector"
 msgstr "Erstellen des Tomcat Connectors"
 
 #: ../../installation.rst:181
-msgid ""
-"By default the Tomcat server will start up using port 8080 and 8005. Port "
-"8080 is used for serving the Signavio Workflow web application. Port 8005 is "
-"used to shutdown the Tomcat instance. You can change the port in the server."
-"xml which is located in ``$TOMCAT_HOME/conf/server.xml``\\ ."
-msgstr ""
-"Tomcat läuft standardmäßig auf den Ports 8080 und 8005, wobei Port 8080 die "
-"Signavio Workflow Webanwendung bereitstellt und Port 8005 zum Herunterfahren "
-"der Tomcat-Instanz verwendet wird. Die Ports können in der Datei server.xml "
-"geändert werden, die im Verzeichnis ``$TOMCAT_HOME/conf/server.xml`` zu "
-"finden ist."
+msgid "By default the Tomcat server will start up using port 8080 and 8005. Port 8080 is used for serving the Workflow Accelerator web application. Port 8005 is used to shutdown the Tomcat instance. You can change the port in the server.xml which is located in ``$TOMCAT_HOME/conf/server.xml``\\ ."
+msgstr "Tomcat läuft standardmäßig auf den Ports 8080 und 8005, wobei Port 8080 die Workflow Accelerator Webanwendung bereitstellt und Port 8005 zum Herunterfahren der Tomcat-Instanz verwendet wird. Die Ports können in der Datei server.xml geändert werden, die im Verzeichnis ``$TOMCAT_HOME/conf/server.xml`` zu finden ist."
 
 #: ../../installation.rst:185
-msgid ""
-"If the server is running on any other port than port 80, your users will "
-"have to enter the port in the address line of the web browser, e.g. http://"
-"workflow.yourdomain.com:8080/\\ ."
-msgstr ""
-"Falls der Webserver auf einen anderen Port als Port 80 läuft, muss der Port "
-"in der Adressleiste des Browsers referenziert werden, zum Beispiel wie in: "
-"http://workflow.yourdomain.com:8080/\\."
+msgid "If the server is running on any other port than port 80, your users will have to enter the port in the address line of the web browser, e.g. http://workflow.yourdomain.com:8080/\\ ."
+msgstr "Falls der Webserver auf einen anderen Port als Port 80 läuft, muss der Port in der Adressleiste des Browsers referenziert werden, zum Beispiel wie in: http://workflow.yourdomain.com:8080/\\."
 
 #: ../../installation.rst:187
-msgid ""
-"Locate the HTTP connector and change the value of port to your preferred "
-"port. Furthermore, make sure the connector contains the entry ``URIEnconding="
-"\"UTF-8\"``\\ . For example, the connector could look like this:"
-msgstr ""
-"Machen Sie den HTTP Connector in der server.xml-Datei ausfindig und passen "
-"Sie den Wert für den Port nach Ihren Belieben an. Stellen Sie zudem sicher, "
-"dass der Connector den Eintrag ``URIEnconding=”UTF-8“``\\ . Der Connector "
-"könnte z.B. so aussehen:"
+msgid "Locate the HTTP connector and change the value of port to your preferred port. Furthermore, make sure the connector contains the entry ``URIEnconding=\"UTF-8\"``\\ . For example, the connector could look like this:"
+msgstr "Machen Sie den HTTP Connector in der server.xml-Datei ausfindig und passen Sie den Wert für den Port nach Ihren Belieben an. Stellen Sie zudem sicher, dass der Connector den Eintrag ``URIEnconding=”UTF-8“``\\ . Der Connector könnte z.B. so aussehen:"
 
 #: ../../installation.rst:199
-msgid "Installing the Signavio Workflow web application"
-msgstr "Installieren der Signavio Workflow Webanwendung"
+msgid "Installing the Workflow Accelerator web application"
+msgstr "Installieren der Workflow Accelerator Webanwendung"
 
 #: ../../installation.rst:200
-msgid ""
-"The Signavio Workflow web application, which can be found in the directory ``"
-"$WORKFLOW_HOME/workflow/ROOT``, needs to be copied to the Tomcat’s "
-"``webapps`` directory. Remove any files and directories that are located in "
-"``$TOMCAT_HOME/webapps`` and copy the ``ROOT`` directory to ``$TOMCAT_HOME/"
-"webapps/``\\ ."
-msgstr ""
-"Die Signavio Workflow Webanwendung, die sich im Ordner ``$WORKFLOW_HOME/"
-"workflow/ROOT`` befindet, muss in den ``webapps``\\ -Ordner des Tomcats "
-"kopiert werden. Entfernen Sie daher alle Dateien aus dem Verzeichnis ``"
-"$TOMCAT_HOME/webapps`` und kopieren Sie den Ordner ``ROOT`` nach ``"
-"$TOMCAT_HOME/webapps/``\\ ."
+msgid "The Workflow Accelerator web application, which can be found in the directory ``$WORKFLOW_HOME/workflow/ROOT``, needs to be copied to the Tomcat’s ``webapps`` directory. Remove any files and directories that are located in ``$TOMCAT_HOME/webapps`` and copy the ``ROOT`` directory to ``$TOMCAT_HOME/webapps/``\\ ."
+msgstr "Die Workflow Accelerator Webanwendung, die sich im Ordner ``$WORKFLOW_HOME/workflow/ROOT`` befindet, muss in den ``webapps``\\ -Ordner des Tomcats kopiert werden. Entfernen Sie daher alle Dateien aus dem Verzeichnis ``$TOMCAT_HOME/webapps`` und kopieren Sie den Ordner ``ROOT`` nach ``$TOMCAT_HOME/webapps/``\\ ."
 
 #: ../../installation.rst:203
-msgid ""
-"The Signavio Workflow application needs to run as the ROOT application in "
-"the Tomcat. Running it in parallel with another application that requires to "
-"run as the ROOT application in the same Tomcat is currently not possible."
-msgstr ""
-"Signavio Workflow muss als ROOT-Anwendung im Tomcat ausgeführt werden. Daher "
-"ist es momentan nicht möglich, eine andere Anwendung, die ebenfalls als ROOT-"
-"Anwendung ausgeführt werden muss, im selben Tomcat auszuführen."
+msgid "The Workflow Accelerator application needs to run as the ROOT application in the Tomcat. Running it in parallel with another application that requires to run as the ROOT application in the same Tomcat is currently not possible."
+msgstr "Workflow Accelerator muss als ROOT-Anwendung im Tomcat ausgeführt werden. Daher ist es momentan nicht möglich, eine andere Anwendung, die ebenfalls als ROOT-Anwendung ausgeführt werden muss, im selben Tomcat auszuführen."
 
 #: ../../installation.rst:209
 msgid "Installing MongoDB"
 msgstr "MongoDB installieren"
 
 #: ../../installation.rst:210
-msgid ""
-"MongoDB is currently the only database system that Signavio Workflow "
-"supports. If you already have an infrastructure that can provide a MongoDB "
-"version 3.2.x (or 3.4.x) instance, simply create a new instance for Signavio "
-"Workflow and skip to :ref:`configure-mongodb`. Otherwise continue with the "
-"installation instructions."
-msgstr ""
-"MongoDB ist das einizge Datenbanksystem, das momentan von Signavio Workflow "
-"unterstützt wird. Falls Sie bereits ein MongoDB 3.2.x (oder 3.4.x) System "
-"zur Verfügung stehen haben, können Sie einfach eine neue Instanz für "
-"Signavio Workflow erstellen und zum Abschnitt :ref:`configure-mongodb` "
-"springen. Folgen Sie andernfalls den folgenden Anweisungen."
+msgid "MongoDB is currently the only database system that Workflow Accelerator supports. If you already have an infrastructure that can provide a MongoDB version 3.2.x (or 3.4.x) instance, simply create a new instance for Workflow Accelerator and skip to :ref:`configure-mongodb`. Otherwise continue with the installation instructions."
+msgstr "MongoDB ist das einizge Datenbanksystem, das momentan von Workflow Accelerator unterstützt wird. Falls Sie bereits ein MongoDB 3.2.x (oder 3.4.x) System zur Verfügung stehen haben, können Sie einfach eine neue Instanz für Workflow Accelerator erstellen und zum Abschnitt :ref:`configure-mongodb` springen. Folgen Sie andernfalls den folgenden Anweisungen."
 
 #: ../../installation.rst:214
-msgid ""
-"General information about installing MongoDB on different operating systems "
-"can be found at:"
-msgstr ""
-"Allgemeine Informationen zur Installation von MongoDB 2.4.x erhalten Sie "
-"hier:"
+msgid "General information about installing MongoDB on different operating systems can be found at:"
+msgstr "Allgemeine Informationen zur Installation von MongoDB 2.4.x erhalten Sie hier:"
 
 #: ../../installation.rst:216
 msgid "https://docs.mongodb.org/manual/installation/"
 msgstr "https://docs.mongodb.org/manual/installation/"
 
 #: ../../installation.rst:218
-msgid ""
-"There are two versions of MongoDB, *MongoDB Community Edition* and *MongoDB "
-"Enterprise*. *MongoDB Community Edition* can be used free of charge even in "
-"a commercial context, whereas *MongoDB Enterprise* is a commercial product "
-"that offers additional tooling and support. You can use either version with "
-"Signavio Workflow."
-msgstr ""
-"Es gibt zwei Versionen von MongoDB, *MongoDB Community Edition* und *MongoDB "
-"Enterprise*. *MongoDB Community Edition* kann kostenfrei auch in einem "
-"kommerziellen Umfeld genutzt werden, wohingegen *MongoDB Enterprise* ein "
-"kommerzielles Produkt ist, welches zusätzliche technische Unterstützung und "
-"Support bietet. Für Signavio Workflow können Sie beide Versionen verwenden."
+msgid "There are two versions of MongoDB, *MongoDB Community Edition* and *MongoDB Enterprise*. *MongoDB Community Edition* can be used free of charge even in a commercial context, whereas *MongoDB Enterprise* is a commercial product that offers additional tooling and support. You can use either version with Workflow Accelerator."
+msgstr "Es gibt zwei Versionen von MongoDB, *MongoDB Community Edition* und *MongoDB Enterprise*. *MongoDB Community Edition* kann kostenfrei auch in einem kommerziellen Umfeld genutzt werden, wohingegen *MongoDB Enterprise* ein kommerzielles Produkt ist, welches zusätzliche technische Unterstützung und Support bietet. Für Workflow Accelerator können Sie beide Versionen verwenden."
 
 #: ../../installation.rst:222
-msgid ""
-"In case you are using Linux, you have the possibilities to install MongoDB "
-"using either a package manager like ``apt-get`` or downloading the binaries "
-"directly. It is recommened to use the package manager because it will also "
-"setup scripts that allow you to start and stop the server easily. However, "
-"you have to make sure the correct version is installed. :ref:`install-"
-"mongodb-debian` explains in more details how to setup MongoDB on Debian and "
-"might work as an example for other Linux distributions."
-msgstr ""
-"Falls Sie Linux verwenden, können Sie entweder einen Paketmanager wie APT "
-"zum Download von MongoDB verwenden oder die Binary-Dateien direkt "
-"herunterladen. Wir empfehlen den Download über einen Paketmanager, da "
-"hiermit zudem Skripts zum Starten und Stoppen der Anwendung automatisch "
-"heruntergeladen und konfiguriert werden. Stellen Sie jedoch sicher, dass Sie "
-"die korrekte Version von MongoDB installiert haben. Der Abschnitt :ref:"
-"`install-mongodb-debian` erklärt genauer wie MongoDB unter Debian "
-"installiert werden kann und kann als Beispiel für andere Linux-"
-"Distributionen dienen."
+msgid "In case you are using Linux, you have the possibilities to install MongoDB using either a package manager like ``apt-get`` or downloading the binaries directly. It is recommened to use the package manager because it will also setup scripts that allow you to start and stop the server easily. However, you have to make sure the correct version is installed. :ref:`install-mongodb-debian` explains in more details how to setup MongoDB on Debian and might work as an example for other Linux distributions."
+msgstr "Falls Sie Linux verwenden, können Sie entweder einen Paketmanager wie APT zum Download von MongoDB verwenden oder die Binary-Dateien direkt herunterladen. Wir empfehlen den Download über einen Paketmanager, da hiermit zudem Skripts zum Starten und Stoppen der Anwendung automatisch heruntergeladen und konfiguriert werden. Stellen Sie jedoch sicher, dass Sie die korrekte Version von MongoDB installiert haben. Der Abschnitt :ref:`install-mongodb-debian` erklärt genauer wie MongoDB unter Debian installiert werden kann und kann als Beispiel für andere Linux-Distributionen dienen."
 
 #: ../../installation.rst:227
 msgid "Remarks for downloading the binaries"
@@ -698,33 +416,16 @@ msgid "https://www.mongodb.org/downloads"
 msgstr "https://www.mongodb.org/downloads"
 
 #: ../../installation.rst:232
-msgid ""
-"Please, make sure to download the 64-bit version of MongoDB. The 32-bit "
-"version is limited to 2GB of stored content and cannot therefore be used in "
-"production systems."
-msgstr ""
-"Stellen Sie sicher, dass Sie die 64-Bit Version von MongoDB herunterladen. "
-"In der 32-Bit Version ist die Speicherkapazität auf 2GB begrenzt, sodass "
-"eine Verwendung für Produktivsysteme nicht sinnvoll ist."
+msgid "Please, make sure to download the 64-bit version of MongoDB. The 32-bit version is limited to 2GB of stored content and cannot therefore be used in production systems."
+msgstr "Stellen Sie sicher, dass Sie die 64-Bit Version von MongoDB herunterladen. In der 32-Bit Version ist die Speicherkapazität auf 2GB begrenzt, sodass eine Verwendung für Produktivsysteme nicht sinnvoll ist."
 
 #: ../../installation.rst:237
-msgid ""
-"Windows requires you to download the binaries. Consider the remarks of the "
-"last subsection when doing so. If you are using any version older than "
-"Windows Server 2008 R2, you have to download the 64-bit legacy release."
-msgstr ""
-"Unter Windows ist es notwendig, die Binär-Dateien herunterzuladen. "
-"Berücksichtigen Sie die oben stehenden Anmerkungen zur Bit Version (64-Bit). "
-"Falls Sie eine ältere Windows-Version als Windows Server 2008 R2 verwenden, "
-"laden Sie das 64-Bit Legacy Release herunter."
+msgid "Windows requires you to download the binaries. Consider the remarks of the last subsection when doing so. If you are using any version older than Windows Server 2008 R2, you have to download the 64-bit legacy release."
+msgstr "Unter Windows ist es notwendig, die Binär-Dateien herunterzuladen. Berücksichtigen Sie die oben stehenden Anmerkungen zur Bit Version (64-Bit). Falls Sie eine ältere Windows-Version als Windows Server 2008 R2 verwenden, laden Sie das 64-Bit Legacy Release herunter."
 
 #: ../../installation.rst:241
-msgid ""
-"You can find more details about installing MongoDB on Windows in the "
-"documentation:"
-msgstr ""
-"Weitere Details zur Installation von MongoDB unter Windows finden Sie hier "
-"in der MongoDB Dokumenation:"
+msgid "You can find more details about installing MongoDB on Windows in the documentation:"
+msgstr "Weitere Details zur Installation von MongoDB unter Windows finden Sie hier in der MongoDB Dokumenation:"
 
 #: ../../installation.rst:243
 msgid "https://docs.mongodb.org/manual/tutorial/install-mongodb-on-windows/"
@@ -732,263 +433,123 @@ msgstr "https://docs.mongodb.org/manual/tutorial/install-mongodb-on-windows/"
 
 #: ../../installation.rst:245
 msgid "When you finished downloading MongoDB follow the next steps:"
-msgstr ""
-"Folgen Sie diesen Schritten, nachdem Sie MongoDB heruntergeladen haben:"
+msgstr "Folgen Sie diesen Schritten, nachdem Sie MongoDB heruntergeladen haben:"
 
 #: ../../installation.rst:247
-msgid ""
-"Start the installation by double-clicking the downloaded MongoDB ``.msi`` "
-"and following the instructions."
-msgstr ""
-"Starten Sie die Installation indem Sie doppelt auf die heruntergeladene "
-"MongoDB ``.msi`` klicken und folgen Sie den Anweisungen."
+msgid "Start the installation by double-clicking the downloaded MongoDB ``.msi`` and following the instructions."
+msgstr "Starten Sie die Installation indem Sie doppelt auf die heruntergeladene MongoDB ``.msi`` klicken und folgen Sie den Anweisungen."
 
 #: ../../installation.rst:249
-msgid ""
-"You can select another install directory, e.g. ``C:\\MongoDB``, if you "
-"choose the *Custom* installation option."
-msgstr ""
-"Sie können ein anderes Installationsverzeichnis auswählen, z.B. ``C:"
-"\\MongoDB``\\ , wenn Sie die *Custom* Installationsoption auswählen."
+msgid "You can select another install directory, e.g. ``C:\\MongoDB``, if you choose the *Custom* installation option."
+msgstr "Sie können ein anderes Installationsverzeichnis auswählen, z.B. ``C:\\MongoDB``\\ , wenn Sie die *Custom* Installationsoption auswählen."
 
 #: ../../installation.rst:251
-msgid ""
-"Create a data directory for the MongoDB files, e.g. ``C:\\MongoDB\\data``\\ ."
-msgstr ""
-"Erstellen Sie ein Datenverzeichnis für die MongoDB-Dateien, zum Beispiel: "
-"``C:\\MongoDB\\data``\\ . "
+msgid "Create a data directory for the MongoDB files, e.g. ``C:\\MongoDB\\data``\\ ."
+msgstr "Erstellen Sie ein Datenverzeichnis für die MongoDB-Dateien, zum Beispiel: ``C:\\MongoDB\\data``\\ . "
 
 #: ../../installation.rst:253
-msgid ""
-"This directory will need the most disk space. Make sure the drive has "
-"sufficient disk space."
-msgstr ""
-"Dieses Verzeichnis wird einen Großteil des benötigten Festplattenspeichers "
-"verwenden. Stellen Sie daher sicher, dass das Laufwerk genügend "
-"Speicehrplatz zur Verfügung stellt."
+msgid "This directory will need the most disk space. Make sure the drive has sufficient disk space."
+msgstr "Dieses Verzeichnis wird einen Großteil des benötigten Festplattenspeichers verwenden. Stellen Sie daher sicher, dass das Laufwerk genügend Speicehrplatz zur Verfügung stellt."
 
 #: ../../installation.rst:255
-msgid ""
-"Create a logs directory for the MongoDB log files, e.g. ``C:\\MongoDB\\logs``"
-"\\ ."
-msgstr ""
-"Erstellen Sie ein Verzeichnis für die MongoDB Log-Dateien, zum Beispiel ``C:"
-"\\MongoDB\\logs``\\ ."
+msgid "Create a logs directory for the MongoDB log files, e.g. ``C:\\MongoDB\\logs``\\ ."
+msgstr "Erstellen Sie ein Verzeichnis für die MongoDB Log-Dateien, zum Beispiel ``C:\\MongoDB\\logs``\\ ."
 
 #: ../../installation.rst:256
-msgid ""
-"Copy the file ``$WORKFLOW_HOME\\db\\mongod.cfg`` to your MongoDB directory "
-"``C:\\MongoDB\\mongod.cfg`` and edit the file."
-msgstr ""
-"Kopieren Sie die Konfigurationsdatei aus ``$WORKFLOW_HOME\\db\\mongod.cfg`` "
-"in das MongoDB-Verzeichnis ``C:\\MongoDB\\mongod.cfg`` und bearbeiten Sie "
-"die Datei."
+msgid "Copy the file ``$WORKFLOW_HOME\\db\\mongod.cfg`` to your MongoDB directory ``C:\\MongoDB\\mongod.cfg`` and edit the file."
+msgstr "Kopieren Sie die Konfigurationsdatei aus ``$WORKFLOW_HOME\\db\\mongod.cfg`` in das MongoDB-Verzeichnis ``C:\\MongoDB\\mongod.cfg`` und bearbeiten Sie die Datei."
 
 #: ../../installation.rst:258
-msgid ""
-"The ``dbPath`` under ``storage`` must contain the absolute path to the data "
-"directory, e.g. ``C:\\MongoDB\\data``\\ ."
-msgstr ""
-"Die Variable ``dbPath`` unter ``storage`` muss den absoluten Pfad zum "
-"Datenverzeichnis enthalten, zum Beispiel ``C:\\MongoDB\\data``\\ ."
+msgid "The ``dbPath`` under ``storage`` must contain the absolute path to the data directory, e.g. ``C:\\MongoDB\\data``\\ ."
+msgstr "Die Variable ``dbPath`` unter ``storage`` muss den absoluten Pfad zum Datenverzeichnis enthalten, zum Beispiel ``C:\\MongoDB\\data``\\ ."
 
 #: ../../installation.rst:259
-msgid ""
-"The ``path`` under ``systemLog`` must contain the absolute path to the log "
-"file, e.g. ``C:\\MongoDB\\logs\\mongodb.log``\\ . The log file will be "
-"created once MongoDB is started."
-msgstr ""
-"Die Variable ``path`` unter ``systemLog`` muss den absoluten Pfad zum "
-"Logverzeichnis enthalten, zum Beispiel ``C:\\MongoDB\\logs\\mongodb.log``"
-"\\ . Die Logdatei wird beim Starten von MongoDB erstellt (beziehungsweise, "
-"falls vorhanden, ergänzt)."
+msgid "The ``path`` under ``systemLog`` must contain the absolute path to the log file, e.g. ``C:\\MongoDB\\logs\\mongodb.log``\\ . The log file will be created once MongoDB is started."
+msgstr "Die Variable ``path`` unter ``systemLog`` muss den absoluten Pfad zum Logverzeichnis enthalten, zum Beispiel ``C:\\MongoDB\\logs\\mongodb.log``\\ . Die Logdatei wird beim Starten von MongoDB erstellt (beziehungsweise, falls vorhanden, ergänzt)."
 
 #: ../../installation.rst:260
-msgid ""
-"The configuration file needs to be in a valid `YAML <http://yaml.org>`_ "
-"format. You can use an online checker like `YAML Lint <http://www.yamllint."
-"com/>`_ to verify the validity."
-msgstr ""
-"Die Konfigurationsdatei muss einem gültigen `YAML <http://yaml.org>`_ Format "
-"entsprechen. Sie können einen Online Checker wie `YAML Lint <http://www."
-"yamllint.com/>`_ verwenden, um das Format zu überprüfen."
+msgid "The configuration file needs to be in a valid `YAML <http://yaml.org>`_ format. You can use an online checker like `YAML Lint <http://www.yamllint.com/>`_ to verify the validity."
+msgstr "Die Konfigurationsdatei muss einem gültigen `YAML <http://yaml.org>`_ Format entsprechen. Sie können einen Online Checker wie `YAML Lint <http://www.yamllint.com/>`_ verwenden, um das Format zu überprüfen."
 
 #: ../../installation.rst:261
-msgid ""
-"See :ref:`configure-mongodb` for more information about the other "
-"configuration values."
-msgstr ""
-"Im Abschnitt :ref:`configure-mongodb` werden weitere Konfigurationsoptionen "
-"beschrieben."
+msgid "See :ref:`configure-mongodb` for more information about the other configuration values."
+msgstr "Im Abschnitt :ref:`configure-mongodb` werden weitere Konfigurationsoptionen beschrieben."
 
 #: ../../installation.rst:263
-msgid ""
-"Open the command line ``cmd`` with administrative privileges and execute the "
-"following command. Make sure to use absolute paths and replace them with the "
-"matching ones on your system."
-msgstr ""
-"Öffnen Sie das Windows Kommandozeilentool ``cmd`` mit Administratorenrechten "
-"und führen Sie das folgende Kommando aus. Stellen Sie dabei sicher, dass die "
-"Pfade den von Ihnen konfigurierten absoluten Pfaden entsprechen."
+msgid "Open the command line ``cmd`` with administrative privileges and execute the following command. Make sure to use absolute paths and replace them with the matching ones on your system."
+msgstr "Öffnen Sie das Windows Kommandozeilentool ``cmd`` mit Administratorenrechten und führen Sie das folgende Kommando aus. Stellen Sie dabei sicher, dass die Pfade den von Ihnen konfigurierten absoluten Pfaden entsprechen."
 
 #: ../../installation.rst:265
-msgid ""
-"``C:\\MongoDB\\bin\\mongod.exe --config C:\\MongoDB\\mongod.cfg --install``"
-msgstr ""
-"``C:\\MongoDB\\bin\\mongod.exe --config C:\\MongoDB\\mongod.cfg --install``"
+msgid "``C:\\MongoDB\\bin\\mongod.exe --config C:\\MongoDB\\mongod.cfg --install``"
+msgstr "``C:\\MongoDB\\bin\\mongod.exe --config C:\\MongoDB\\mongod.cfg --install``"
 
 #: ../../installation.rst:266
-msgid ""
-"The command line should tell you that the service MongoDB was properly "
-"created."
-msgstr ""
-"Das Kommandozeilentool sollte Ihnen bestätigen, dass der MongoDB Service "
-"erfolgreich registriert wurde."
+msgid "The command line should tell you that the service MongoDB was properly created."
+msgstr "Das Kommandozeilentool sollte Ihnen bestätigen, dass der MongoDB Service erfolgreich registriert wurde."
 
 #: ../../installation.rst:267
-msgid ""
-"You can unregister the service again by executing: ``C:\\MongoDB\\bin"
-"\\mongod.exe --remove``"
-msgstr ""
-"Mit dem folgenden Befehl können Sie den Service wieder entfernen: ``C:"
-"\\MongoDB\\bin\\mongod.exe --remove``"
+msgid "You can unregister the service again by executing: ``C:\\MongoDB\\bin\\mongod.exe --remove``"
+msgstr "Mit dem folgenden Befehl können Sie den Service wieder entfernen: ``C:\\MongoDB\\bin\\mongod.exe --remove``"
 
 #: ../../installation.rst:268
-msgid ""
-"The registered service should start MongoDB automatically on startup of "
-"Windows."
-msgstr ""
-"Der Service wird MongoDB nach dem Starten von Windows automatisch ausführen."
+msgid "The registered service should start MongoDB automatically on startup of Windows."
+msgstr "Der Service wird MongoDB nach dem Starten von Windows automatisch ausführen."
 
 #: ../../installation.rst:270
-msgid ""
-"You can now start MongoDB by executing the following command: ``net start "
-"MongoDB``"
-msgstr ""
-"Mit dem folgenden Befehl können Sie MongoDB nun direkt ausführen: ``net "
-"start MongoDB``"
+msgid "You can now start MongoDB by executing the following command: ``net start MongoDB``"
+msgstr "Mit dem folgenden Befehl können Sie MongoDB nun direkt ausführen: ``net start MongoDB``"
 
 #: ../../installation.rst:272
 msgid "You can stop MongoDB by calling: ``net stop MongoDB``"
 msgstr "Der folgende Befehl stoppt MongoDB: ``net stop MongoDB``"
 
 #: ../../installation.rst:273
-msgid ""
-"The service is also listed in the services window that can be opened by "
-"running ``services.msc``\\ ."
-msgstr ""
-"Der MongoDB Service ist nun auch unter der Serviceverwaltung gelistet, die "
-"über ``services.msc`` aufgerufen werden kann."
+msgid "The service is also listed in the services window that can be opened by running ``services.msc``\\ ."
+msgstr "Der MongoDB Service ist nun auch unter der Serviceverwaltung gelistet, die über ``services.msc`` aufgerufen werden kann."
 
 #: ../../installation.rst:279
-msgid ""
-"If you are installing MongoDB on a Debian system, you are advised to use the "
-"method described in the MongoDB configuration:"
-msgstr ""
-"Falls Sie MongoDB unter Debian installieren, halten Sie sich bitte an die "
-"folgenden Anweisungen: "
+msgid "If you are installing MongoDB on a Debian system, you are advised to use the method described in the MongoDB configuration:"
+msgstr "Falls Sie MongoDB unter Debian installieren, halten Sie sich bitte an die folgenden Anweisungen: "
 
 #: ../../installation.rst:281
 msgid "https://docs.mongodb.org/manual/tutorial/install-mongodb-on-debian/"
 msgstr "https://docs.mongodb.org/manual/tutorial/install-mongodb-on-debian/"
 
 #: ../../installation.rst:283
-msgid ""
-"For convenience, the script ``$WORKFLOW_HOME/mongodb.install.debian.sh`` "
-"wraps the necessary commands for installing the correct version of MongoDB "
-"on *Debian 7 Wheezy* using ``apt-get``. Simply execute it from the command "
-"line by opening ``$WORKFLOW_HOME`` and calling: ::"
-msgstr ""
-"Das Skript ``$WORKFLOW_HOME/mongodb.install.debian.sh`` enthält alle "
-"notwendigen Befehle, um die richtige Version von MongoDB über APT auf "
-"*Debian 7 Wheezy* zu installieren. Führen Sie das Skript aus, indem Sie in "
-"das Verzeichnis ``$WORKFLOW_HOME`` wechseln und den folgenden Befehl "
-"ausführen: ::"
+msgid "For convenience, the script ``$WORKFLOW_HOME/mongodb.install.debian.sh`` wraps the necessary commands for installing the correct version of MongoDB on *Debian 7 Wheezy* using ``apt-get``. Simply execute it from the command line by opening ``$WORKFLOW_HOME`` and calling: ::"
+msgstr "Das Skript ``$WORKFLOW_HOME/mongodb.install.debian.sh`` enthält alle notwendigen Befehle, um die richtige Version von MongoDB über APT auf *Debian 7 Wheezy* zu installieren. Führen Sie das Skript aus, indem Sie in das Verzeichnis ``$WORKFLOW_HOME`` wechseln und den folgenden Befehl ausführen: ::"
 
 #: ../../installation.rst:288
-msgid ""
-"This will add the MongoDB repositories to your package sources and install "
-"the version 3.2.x of MongoDB. Note that this script only works with Debian 7 "
-"Wheezy. You can now simply start and stop the MongoDB server by calling ::"
-msgstr ""
-"Hierdurch werden die MongoDB Repositories zu Ihren Package Sources "
-"hinzugefügt und Version 3.2.x von MongoDB installiert. Nun können Sie "
-"MongoDB mit den folgenden Befehlen stoppen und starten: ::"
+msgid "This will add the MongoDB repositories to your package sources and install the version 3.2.x of MongoDB. Note that this script only works with Debian 7 Wheezy. You can now simply start and stop the MongoDB server by calling ::"
+msgstr "Hierdurch werden die MongoDB Repositories zu Ihren Package Sources hinzugefügt und Version 3.2.x von MongoDB installiert. Nun können Sie MongoDB mit den folgenden Befehlen stoppen und starten: ::"
 
 #: ../../installation.rst:294
 msgid "or ::"
 msgstr "oder ::"
 
 #: ../../installation.rst:298
-msgid ""
-"The server will use the default configuration file ``/etc/mongod.conf``\\ . "
-"See the next subsection for more information on how to configure MongoDB for "
-"Signavio Workflow and create the required user. Note that the installation "
-"probably already started the MongoDB server. You will need to restart the "
-"MongoDB server after you edit the configuration."
-msgstr ""
-"Der Server greift dabei auf die Standardkonfiguration in der Datei unter ``/"
-"etc/mongod.conf`` zurück. Der nächste Abschnitt enthält detaillierte "
-"Informationen zur Konfiguration und Nutzererstellung von MongoDB. Beachten "
-"Sie, dass MongoDB nach der Installation wahrscheinlich schon gestartet "
-"wurde. Stellen Sie sicher, dass Sie MongoDB nach Änderungen in der "
-"Konfiguration neu starten."
+msgid "The server will use the default configuration file ``/etc/mongod.conf``\\ . See the next subsection for more information on how to configure MongoDB for Workflow Accelerator and create the required user. Note that the installation probably already started the MongoDB server. You will need to restart the MongoDB server after you edit the configuration."
+msgstr "Der Server greift dabei auf die Standardkonfiguration in der Datei unter ``/etc/mongod.conf`` zurück. Der nächste Abschnitt enthält detaillierte Informationen zur Konfiguration und Nutzererstellung von MongoDB. Beachten Sie, dass MongoDB nach der Installation wahrscheinlich schon gestartet wurde. Stellen Sie sicher, dass Sie MongoDB nach Änderungen in der Konfiguration neu starten."
 
 #: ../../installation.rst:306
 msgid "Configuring MongoDB"
 msgstr "MongoDB konfigurieren"
 
 #: ../../installation.rst:307
-msgid ""
-"In order to run MongoDB properly, some configuration options have to be "
-"defined. The easiest solution is to create a configuration file and link "
-"this configuration file when starting MongoDB with the ``--config`` option. "
-"The MongoDB configuration uses the `YAML <http://yaml.org>`_ format, you can "
-"use an online checker like `YAML Lint <http://www.yamllint.com/>`_ to verify "
-"that your configuration file has the proper format."
-msgstr ""
-"Um MongoDB ordnungsgemäß auszuführen, müssen einige "
-"Konfigurationseinstellungen gesetzt werden. Der einfachste Weg die "
-"Konfiguration vorzunehmen, ist eine Konfigurationsdatei zu erstellen und "
-"diese beim Starten von MongoDB über die ``--config`` Option zu verlinken. "
-"Die MongoDB Konfiguration nutzt das `YAML <http://yaml.org>`_ Format. Sie "
-"können einen Online Checker wie `YAML Lint <http://www.yamllint.com/>`_ "
-"verwenden, um das Format Ihrer Konfigurationsdatei zu überprüfen."
+msgid "In order to run MongoDB properly, some configuration options have to be defined. The easiest solution is to create a configuration file and link this configuration file when starting MongoDB with the ``--config`` option. The MongoDB configuration uses the `YAML <http://yaml.org>`_ format, you can use an online checker like `YAML Lint <http://www.yamllint.com/>`_ to verify that your configuration file has the proper format."
+msgstr "Um MongoDB ordnungsgemäß auszuführen, müssen einige Konfigurationseinstellungen gesetzt werden. Der einfachste Weg die Konfiguration vorzunehmen, ist eine Konfigurationsdatei zu erstellen und diese beim Starten von MongoDB über die ``--config`` Option zu verlinken. Die MongoDB Konfiguration nutzt das `YAML <http://yaml.org>`_ Format. Sie können einen Online Checker wie `YAML Lint <http://www.yamllint.com/>`_ verwenden, um das Format Ihrer Konfigurationsdatei zu überprüfen."
 
 #: ../../installation.rst:311
-msgid ""
-"If you installed MongoDB under Windows using the method in the last section, "
-"you have already copied the predefined configuration file and adjusted the "
-"values for ``dbPath`` and ``systemLog`` ``path`` to your system. Then your "
-"configuration file already contains all necessary values."
-msgstr ""
-"Falls Sie MongoDB unter Windows wie oben beschrieben installiert haben, "
-"haben Sie bereits eine Konfigurationsdatei erstellt und die Werte für "
-"``dbPath`` und ``systemLog`` ``path`` angepasst, sodass sie die richtigen "
-"Werte enthält."
+msgid "If you installed MongoDB under Windows using the method in the last section, you have already copied the predefined configuration file and adjusted the values for ``dbPath`` and ``systemLog`` ``path`` to your system. Then your configuration file already contains all necessary values."
+msgstr "Falls Sie MongoDB unter Windows wie oben beschrieben installiert haben, haben Sie bereits eine Konfigurationsdatei erstellt und die Werte für ``dbPath`` und ``systemLog`` ``path`` angepasst, sodass sie die richtigen Werte enthält."
 
 #: ../../installation.rst:313
-msgid ""
-"If you installed MongoDB under Linux using ``apt-get``, e.g. by following "
-"the instructions in the last section, there should be a ``/etc/mongod.conf`` "
-"configuration file. Edit this configuration file. The ``dbPath``, "
-"``systemLog`` ``path`` properties should already be defined. It is "
-"recommened to set the ``logAppend`` property to ``true`` and the "
-"``authorization`` property to ``enabled``."
-msgstr ""
-"Falls Sie MongoDB unter Linux wie oben beschrieben mit APT installiert "
-"haben, befindet sich eine Konfigurationsdatei unter ``/etc/mongod.conf``\\ . "
-"Bearbeiten Sie diese Datei. Die Parameter ``dbPath`` und ``systemLog`` "
-"``path`` sollten bereits definiert sein. Wir empfehlen die Variablen "
-"``logAppend`` auf ``true`` und ``authorization`` auf ``enabled`` zu setzen."
+msgid "If you installed MongoDB under Linux using ``apt-get``, e.g. by following the instructions in the last section, there should be a ``/etc/mongod.conf`` configuration file. Edit this configuration file. The ``dbPath``, ``systemLog`` ``path`` properties should already be defined. It is recommened to set the ``logAppend`` property to ``true`` and the ``authorization`` property to ``enabled``."
+msgstr "Falls Sie MongoDB unter Linux wie oben beschrieben mit APT installiert haben, befindet sich eine Konfigurationsdatei unter ``/etc/mongod.conf``\\ . Bearbeiten Sie diese Datei. Die Parameter ``dbPath`` und ``systemLog`` ``path`` sollten bereits definiert sein. Wir empfehlen die Variablen ``logAppend`` auf ``true`` und ``authorization`` auf ``enabled`` zu setzen."
 
 #: ../../installation.rst:316
-msgid ""
-"In any other case make sure the configuration file contains the following "
-"properties. ::"
-msgstr ""
-"Stellen Sie im Falle einer abweichenden Installationsprozedur sicher, dass "
-"die folgenden Einträge korrekt gesetzt sind: ::"
+msgid "In any other case make sure the configuration file contains the following properties. ::"
+msgstr "Stellen Sie im Falle einer abweichenden Installationsprozedur sicher, dass die folgenden Einträge korrekt gesetzt sind: ::"
 
 #: ../../installation.rst:330
 msgid "``dbPath``"
@@ -1011,75 +572,36 @@ msgid "``logAppend``"
 msgstr "``logAppend``"
 
 #: ../../installation.rst:334
-msgid ""
-"Indicates that new logs will be appended to an existing log file after "
-"restarting the server, if set to true."
-msgstr ""
-"Falls auf “true” gesetzt, werden nach einem Neustart von MongoDB die neuen "
-"Logeinträge falls möglich an ein bereits bestehendes Logfile angefügt."
+msgid "Indicates that new logs will be appended to an existing log file after restarting the server, if set to true."
+msgstr "Falls auf “true” gesetzt, werden nach einem Neustart von MongoDB die neuen Logeinträge falls möglich an ein bereits bestehendes Logfile angefügt."
 
 #: ../../installation.rst:336
 msgid "``authorization``"
 msgstr "``authorization``"
 
 #: ../../installation.rst:336
-msgid ""
-"(optional) Turns authentication on, if set to ``enabled``. It is advised to "
-"turn authentication on in case the MongoDB instance can be accessed over the "
-"network."
-msgstr ""
-"(optional) Aktiviert Authentifizierung. Dieser Parameter sollte unbedingt "
-"auf ``enabled`` gesetzt werden, falls es möglich ist, auf MongoDB über ein "
-"Netzwerk zuzugreifen. Dies hängt von Ihren Administrationseinstellungen/"
-"Firewalleinstellungen ab."
+msgid "(optional) Turns authentication on, if set to ``enabled``. It is advised to turn authentication on in case the MongoDB instance can be accessed over the network."
+msgstr "(optional) Aktiviert Authentifizierung. Dieser Parameter sollte unbedingt auf ``enabled`` gesetzt werden, falls es möglich ist, auf MongoDB über ein Netzwerk zuzugreifen. Dies hängt von Ihren Administrationseinstellungen/Firewalleinstellungen ab."
 
 #: ../../installation.rst:339
-msgid ""
-"If you have installed MongoDB on Debian using a package manager, the default "
-"configuration file will probably contain the following entry: ::"
-msgstr ""
-"Wenn Sie MongoDB auf Debian über einen Paketmanager installiert haben, wird "
-"die Standardkonfigurationsdatei wahrscheinlich den folgenden Eintrag "
-"enthalten: ::"
+msgid "If you have installed MongoDB on Debian using a package manager, the default configuration file will probably contain the following entry: ::"
+msgstr "Wenn Sie MongoDB auf Debian über einen Paketmanager installiert haben, wird die Standardkonfigurationsdatei wahrscheinlich den folgenden Eintrag enthalten: ::"
 
 #: ../../installation.rst:344
-msgid ""
-"This setting tells MongoDB to only bind to the local interface and reject "
-"remote connections. If you plan to install MongoDB and Tomcat on different "
-"machines, you must update this setting and either remove it or add the IP "
-"interface MongoDB should bind to, in order to listen for incoming "
-"connections. This value can contain a comma separated list of IPs and should "
-"NOT contain the IP address of the application server."
-msgstr ""
-"Diese Einstellung definiert für MongoDB sich nur an die lokale "
-"Netzwerkschnittstelle zu binden und Verbindungen von anderen Maschinen zu "
-"ignorieren. Wenn Sie vorhaben MongoDB und Tomcat auf verschiedenen Maschinen "
-"zu installieren, müssen Sie diese Einstellung anpassen und sie entweder "
-"entfernen oder die IP-Schnittstelle angeben, auf welche sich die MongoDB "
-"verbinden soll, um eingehende Verbindungen entgegen zu nehmen. Dieser Wert "
-"kann eine kommagetrennte Liste von IPs enthalten und sollte NICHT die IP des "
-"Anwendungsservers enthalten."
+msgid "This setting tells MongoDB to only bind to the local interface and reject remote connections. If you plan to install MongoDB and Tomcat on different machines, you must update this setting and either remove it or add the IP interface MongoDB should bind to, in order to listen for incoming connections. This value can contain a comma separated list of IPs and should NOT contain the IP address of the application server."
+msgstr "Diese Einstellung definiert für MongoDB sich nur an die lokale Netzwerkschnittstelle zu binden und Verbindungen von anderen Maschinen zu ignorieren. Wenn Sie vorhaben MongoDB und Tomcat auf verschiedenen Maschinen zu installieren, müssen Sie diese Einstellung anpassen und sie entweder entfernen oder die IP-Schnittstelle angeben, auf welche sich die MongoDB verbinden soll, um eingehende Verbindungen entgegen zu nehmen. Dieser Wert kann eine kommagetrennte Liste von IPs enthalten und sollte NICHT die IP des Anwendungsservers enthalten."
 
 #: ../../installation.rst:348
-msgid ""
-"For more configuration options, see https://docs.mongodb.org/manual/"
-"reference/configuration-options/\\ ."
-msgstr ""
-"Weitere Konfigurationsoptionen können Sie entsprechend der folgenden "
-"Dokumentation setzen: https://docs.mongodb.org/manual/reference/"
-"configuration-options/\\ ."
+msgid "For more configuration options, see https://docs.mongodb.org/manual/reference/configuration-options/\\ ."
+msgstr "Weitere Konfigurationsoptionen können Sie entsprechend der folgenden Dokumentation setzen: https://docs.mongodb.org/manual/reference/configuration-options/\\ ."
 
 #: ../../installation.rst:353
-msgid "Add a database user for Signavio Workflow"
-msgstr "Einen Datenbanknutzer für Signavio Workflow hinzufügen"
+msgid "Add a database user for Workflow Accelerator"
+msgstr "Einen Datenbanknutzer für Workflow Accelerator hinzufügen"
 
 #: ../../installation.rst:354
-msgid ""
-"Signavio Workflow requires a MongoDB user in the admin database that has the "
-"following roles:"
-msgstr ""
-"Signavio Workflow benötigt einen MongoDB-Nutzer, der in der "
-"Administrationsdatenbank die folgenden Rollen innehat:"
+msgid "Workflow Accelerator requires a MongoDB user in the admin database that has the following roles:"
+msgstr "Workflow Accelerator benötigt einen MongoDB-Nutzer, der in der Administrationsdatenbank die folgenden Rollen innehat:"
 
 #: ../../installation.rst:359
 msgid "``dbAdminAnyDatabase``"
@@ -1094,15 +616,8 @@ msgid "``clusterAdmin``"
 msgstr "``clusterAdmin``"
 
 #: ../../installation.rst:361
-msgid ""
-"This role will allow you to list all databases. This becomes necessary if "
-"you plan on using the user credentials when editing any database content "
-"with a tool like Robomongo. Furthermore, it is necessary for creating "
-"backups."
-msgstr ""
-"Diese Rolle erlaubt es, alle Datenbanken aufzuführen. Dies ist notwendig für "
-"Backups und falls ein Tool wie Robomongo für den Zugriff auf mehrere "
-"Datenbanken genutzt werden soll."
+msgid "This role will allow you to list all databases. This becomes necessary if you plan on using the user credentials when editing any database content with a tool like Robomongo. Furthermore, it is necessary for creating backups."
+msgstr "Diese Rolle erlaubt es, alle Datenbanken aufzuführen. Dies ist notwendig für Backups und falls ein Tool wie Robomongo für den Zugriff auf mehrere Datenbanken genutzt werden soll."
 
 #: ../../installation.rst:362
 msgid "``userAdminAnyDatabase``"
@@ -1113,238 +628,101 @@ msgid "This role is required for backups."
 msgstr "Diese Rolle wird für Backups benötigt."
 
 #: ../../installation.rst:365
-msgid ""
-"The user will access the databases for Signavio Workflow. Signavio Workflow "
-"will create two databases, one for the user and workflow data, and one for "
-"uploaded files. The name of the first database can be configured in the "
-"Signavio Workflow configuration file. The name of the second database is "
-"derived from the name of the first one by adding “-files”. For instance, if "
-"you define the database name “signavio”, the databases “signavio” and "
-"“signavio-files” will be created."
-msgstr ""
-"Der Nutzer greift für Signavio Workflow auf die Datenbank zu. Signavio "
-"Workflow erstellt zwei Datenbanken, eine für Nutzer- und Workflow-Daten und "
-"eine Weitere für hochgeladene Dateien. Der Name der ersten Datenbank kann in "
-"der Signavio Workflow-Konfigurationsdatei konfiguriert werden. Der zweite "
-"Name ist vom ersten Namen abgeleitet, indem die Endung „-files“ ergänzt "
-"wird. Nennen Sie Ihre erste Datenbank „signavio“, so heißt die zweite "
-"Datenbank „signavio-files“."
+msgid "The user will access the databases for Workflow Accelerator. Workflow Accelerator will create two databases, one for the user and workflow data, and one for uploaded files. The name of the first database can be configured in the Workflow Accelerator configuration file. The name of the second database is derived from the name of the first one by adding “-files”. For instance, if you define the database name “signavio”, the databases “signavio” and “signavio-files” will be created."
+msgstr "Der Nutzer greift für Workflow Accelerator auf die Datenbank zu. Workflow Accelerator erstellt zwei Datenbanken, eine für Nutzer- und Workflow-Daten und eine Weitere für hochgeladene Dateien. Der Name der ersten Datenbank kann in der Workflow Accelerator-Konfigurationsdatei konfiguriert werden. Der zweite Name ist vom ersten Namen abgeleitet, indem die Endung „-files“ ergänzt wird. Nennen Sie Ihre erste Datenbank „signavio“, so heißt die zweite Datenbank „signavio-files“."
 
 #: ../../installation.rst:369
-msgid ""
-"In general, if you want to create a new user in MongoDB you will need to "
-"authenticate with an existing user that has the role userAdmin or "
-"userAdminAnyDatabase. There is an exception for a fresh MongoDB setup. It "
-"will allow you to create the first user from localhost without any "
-"authentication. The following examples will show you how to create a new "
-"user using the credentials of an admin user and how to do it without any "
-"credentials in case of a new MongoDB."
-msgstr ""
-"Wenn Sie einen neuen Nutzer In MongoDB erstellen wollen, müssen Sie sich mit "
-"einem Nutzer mit der Rolle userAdmin oder userAdminAnyDatabase in MongoDB "
-"anmelden. Eine Ausnahme stellt die Installation eines neuen MongoDB-Systems "
-"dar, dass Ihnen ermöglicht einen neuen Nutzer ohne vorherige "
-"Authentifizierung zu erstellen. Im Folgenden wird ein neuer MongoDB-Nutzer "
-"sowohl über einen Administratorennutzer als auch als Teil einer neuen "
-"MongoDB-Installation erstellt."
+msgid "In general, if you want to create a new user in MongoDB you will need to authenticate with an existing user that has the role userAdmin or userAdminAnyDatabase. There is an exception for a fresh MongoDB setup. It will allow you to create the first user from localhost without any authentication. The following examples will show you how to create a new user using the credentials of an admin user and how to do it without any credentials in case of a new MongoDB."
+msgstr "Wenn Sie einen neuen Nutzer In MongoDB erstellen wollen, müssen Sie sich mit einem Nutzer mit der Rolle userAdmin oder userAdminAnyDatabase in MongoDB anmelden. Eine Ausnahme stellt die Installation eines neuen MongoDB-Systems dar, dass Ihnen ermöglicht einen neuen Nutzer ohne vorherige Authentifizierung zu erstellen. Im Folgenden wird ein neuer MongoDB-Nutzer sowohl über einen Administratorennutzer als auch als Teil einer neuen MongoDB-Installation erstellt."
 
 #: ../../installation.rst:374
-msgid ""
-"In order to add a new user to MongoDB, the MongoDB server has to be running. "
-"The following subsections will show you how to create the Signavio Workflow "
-"database user using the command line."
-msgstr ""
-"Um einen MongoDB-Nutzer zu erstellen, muss MongoDB gestartet worden sein. "
-"Die folgenden Unterabschnitte beschreiben, wie Sie den Signavio Workflow "
-"Datenbanknutzer mit Hilfe der Kommandozeile anlegen können. "
+msgid "In order to add a new user to MongoDB, the MongoDB server has to be running. The following subsections will show you how to create the Workflow Accelerator database user using the command line."
+msgstr "Um einen MongoDB-Nutzer zu erstellen, muss MongoDB gestartet worden sein. Die folgenden Unterabschnitte beschreiben, wie Sie den Workflow Accelerator Datenbanknutzer mit Hilfe der Kommandozeile anlegen können. "
 
 #: ../../installation.rst:380
-msgid ""
-"Open the command line ``cmd`` and go to your MongoDB\\bin directory, e.g. by "
-"executing: ``cd C:\\MongoDB\\bin``"
-msgstr ""
-"Öffnen Sie in der Kommandozeile ``cmd`` das Verzeichnis MongoDB\\bin, z.B. "
-"in dem Sie das folgende Kommando ausführen: ``cd C:\\MongoDB\\bin``"
+msgid "Open the command line ``cmd`` and go to your MongoDB\\bin directory, e.g. by executing: ``cd C:\\MongoDB\\bin``"
+msgstr "Öffnen Sie in der Kommandozeile ``cmd`` das Verzeichnis MongoDB\\bin, z.B. in dem Sie das folgende Kommando ausführen: ``cd C:\\MongoDB\\bin``"
 
 #: ../../installation.rst:381 ../../installation.rst:401
-msgid ""
-"If you have an admin user, create the Signavio Workflow user by executing:"
-msgstr ""
-"Falls Sie einen Administratorennutzer angelegt haben, erstellen Sie den "
-"neuen Nutzer wie folgt:"
+msgid "If you have an admin user, create the Workflow Accelerator user by executing:"
+msgstr "Falls Sie einen Administratorennutzer angelegt haben, erstellen Sie den neuen Nutzer wie folgt:"
 
 #: ../../installation.rst:383
-msgid ""
-"``mongo.exe admin -u admin -p <enterYourAdminPasswordHere> --eval \"db."
-"createUser( { user: 'signavio', pwd: '<enterSignavioPasswordHere>', roles: "
-"['dbAdminAnyDatabase', 'readWriteAnyDatabase', 'clusterAdmin', "
-"'userAdminAnyDatabase'] } )\"``"
-msgstr ""
-"``mongo.exe admin -u admin -p <enterYourAdminPasswordHere> --eval \"db."
-"createUser( { user: 'signavio', pwd: '<enterSignavioPasswordHere>', roles: "
-"['dbAdminAnyDatabase', 'readWriteAnyDatabase', 'clusterAdmin', "
-"'userAdminAnyDatabase'] } )\"``"
+msgid "``mongo.exe admin -u admin -p <enterYourAdminPasswordHere> --eval \"db.createUser( { user: 'signavio', pwd: '<enterSignavioPasswordHere>', roles: ['dbAdminAnyDatabase', 'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )\"``"
+msgstr "``mongo.exe admin -u admin -p <enterYourAdminPasswordHere> --eval \"db.createUser( { user: 'signavio', pwd: '<enterSignavioPasswordHere>', roles: ['dbAdminAnyDatabase', 'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )\"``"
 
 #: ../../installation.rst:384 ../../installation.rst:404
-msgid ""
-"Replace <enterAdminPasswordHere> with the password, you have defined for the "
-"admin user."
+msgid "Replace <enterAdminPasswordHere> with the password, you have defined for the admin user."
 msgstr "Ersetzen Sie <enterAdminPasswordHere> mit dem Administratorenpasswort."
 
 #: ../../installation.rst:385 ../../installation.rst:390
 #: ../../installation.rst:405 ../../installation.rst:410
-msgid ""
-"Replace <enterSignavioPasswordHere> with the password for the new Signavio "
-"Workflow user. As you can see the user name is signavio."
-msgstr ""
-"Ersetzen Sie <enterSignavioPasswordHere> mit dem Passwort des neuen Nutzers. "
-"Der Nutzername ist signavio."
+msgid "Replace <enterSignavioPasswordHere> with the password for the new Workflow Accelerator user. As you can see the user name is signavio."
+msgstr "Ersetzen Sie <enterSignavioPasswordHere> mit dem Passwort des neuen Nutzers. Der Nutzername ist signavio."
 
 #: ../../installation.rst:387 ../../installation.rst:407
-msgid ""
-"If you have a new MongoDB and no admin user, create the Signavio Workflow "
-"user by executing:"
-msgstr ""
-"Falls Sie ein neues MongoDB System ohne Administratorennutzer aufgesetzt "
-"haben, führen Sie den folgenden Befehl aus:"
+msgid "If you have a new MongoDB and no admin user, create the Workflow Accelerator user by executing:"
+msgstr "Falls Sie ein neues MongoDB System ohne Administratorennutzer aufgesetzt haben, führen Sie den folgenden Befehl aus:"
 
 #: ../../installation.rst:389
-msgid ""
-"``mongo.exe admin --eval \"db.createUser( { user: 'signavio', pwd: "
-"'<enterSignavioPasswordHere>', roles: ['dbAdminAnyDatabase', "
-"'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )\"``"
-msgstr ""
-"``mongo.exe admin --eval \"db.createUser( { user: 'signavio', pwd: "
-"'<enterSignavioPasswordHere>', roles: ['dbAdminAnyDatabase', "
-"'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )\"``"
+msgid "``mongo.exe admin --eval \"db.createUser( { user: 'signavio', pwd: '<enterSignavioPasswordHere>', roles: ['dbAdminAnyDatabase', 'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )\"``"
+msgstr "``mongo.exe admin --eval \"db.createUser( { user: 'signavio', pwd: '<enterSignavioPasswordHere>', roles: ['dbAdminAnyDatabase', 'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )\"``"
 
 #: ../../installation.rst:392 ../../installation.rst:412
-msgid ""
-"You can verify the creation of the new Signavio Workflow user by executing:"
-msgstr ""
-"Um die Erstellung des Nutzers zu verifizieren, führen Sie den folgenden "
-"Befehl aus:"
+msgid "You can verify the creation of the new Workflow Accelerator user by executing:"
+msgstr "Um die Erstellung des Nutzers zu verifizieren, führen Sie den folgenden Befehl aus:"
 
 #: ../../installation.rst:394
-msgid ""
-"``mongo.exe admin -u signavio -p <enterSignavioPasswordHere> --eval \"db."
-"getUser('signavio');\"``"
-msgstr ""
-"``mongo.exe admin -u signavio -p <enterSignavioPasswordHere> --eval \"db."
-"getUser('signavio');\"``"
+msgid "``mongo.exe admin -u signavio -p <enterSignavioPasswordHere> --eval \"db.getUser('signavio');\"``"
+msgstr "``mongo.exe admin -u signavio -p <enterSignavioPasswordHere> --eval \"db.getUser('signavio');\"``"
 
 #: ../../installation.rst:395 ../../installation.rst:415
-msgid ""
-"On the command line you will see the user information including the four "
-"assigned roles."
-msgstr ""
-"Die Kommandozeile wird den Nutzer und die vier assoziierten Rollen anzeigen."
+msgid "On the command line you will see the user information including the four assigned roles."
+msgstr "Die Kommandozeile wird den Nutzer und die vier assoziierten Rollen anzeigen."
 
 #: ../../installation.rst:399
-msgid ""
-"If you have installed MongoDB using a package manager, the binaries should "
-"be available on the path. Otherwise, open the directory with the MongoDB "
-"binary files and follow the instructions."
-msgstr ""
-"Falls Sie MongoDB über einen Paketmanager installiert haben, werden die "
-"entsprechenden Anwendungen in die Linux-Standardpfade installiert weshalb "
-"sie ohne weitere Pfadangabe überall verfügbar sind. Öffnen Sie andernfalls "
-"einfach das Verzeichnis mit den Binaries, um dort die unten aufgeführten "
-"Befehle auszuführen."
+msgid "If you have installed MongoDB using a package manager, the binaries should be available on the path. Otherwise, open the directory with the MongoDB binary files and follow the instructions."
+msgstr "Falls Sie MongoDB über einen Paketmanager installiert haben, werden die entsprechenden Anwendungen in die Linux-Standardpfade installiert weshalb sie ohne weitere Pfadangabe überall verfügbar sind. Öffnen Sie andernfalls einfach das Verzeichnis mit den Binaries, um dort die unten aufgeführten Befehle auszuführen."
 
 #: ../../installation.rst:403
-msgid ""
-"``mongo admin -u admin -p <enterYourAdminPasswordHere> --eval \"db."
-"createUser( { user: 'signavio', pwd: '<enterSignavioPasswordHere>', roles: "
-"['dbAdminAnyDatabase', 'readWriteAnyDatabase', 'clusterAdmin', "
-"'userAdminAnyDatabase'] } )\"``"
-msgstr ""
-"``mongo admin -u admin -p <enterYourAdminPasswordHere> --eval \"db."
-"createUser( { user: 'signavio', pwd: '<enterSignavioPasswordHere>', roles: "
-"['dbAdminAnyDatabase', 'readWriteAnyDatabase', 'clusterAdmin', "
-"'userAdminAnyDatabase'] } )\"``"
+msgid "``mongo admin -u admin -p <enterYourAdminPasswordHere> --eval \"db.createUser( { user: 'signavio', pwd: '<enterSignavioPasswordHere>', roles: ['dbAdminAnyDatabase', 'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )\"``"
+msgstr "``mongo admin -u admin -p <enterYourAdminPasswordHere> --eval \"db.createUser( { user: 'signavio', pwd: '<enterSignavioPasswordHere>', roles: ['dbAdminAnyDatabase', 'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )\"``"
 
 #: ../../installation.rst:409
-msgid ""
-"``mongo admin --eval \"db.createUser( { user: 'signavio', pwd: "
-"'<enterSignavioPasswordHere>', roles: ['dbAdminAnyDatabase', "
-"'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )\"``"
-msgstr ""
-"``mongo admin --eval \"db.createUser( { user: 'signavio', pwd: "
-"'<enterSignavioPasswordHere>', roles: ['dbAdminAnyDatabase', "
-"'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )\"``"
+msgid "``mongo admin --eval \"db.createUser( { user: 'signavio', pwd: '<enterSignavioPasswordHere>', roles: ['dbAdminAnyDatabase', 'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )\"``"
+msgstr "``mongo admin --eval \"db.createUser( { user: 'signavio', pwd: '<enterSignavioPasswordHere>', roles: ['dbAdminAnyDatabase', 'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )\"``"
 
 #: ../../installation.rst:414
-msgid ""
-"``mongo admin -u signavio -p <enterSignavioPasswordHere> --eval \"db."
-"getUser('signavio');\"``"
-msgstr ""
-"``mongo admin -u signavio -p <enterSignavioPasswordHere> --eval \"db."
-"getUser('signavio');\"``"
+msgid "``mongo admin -u signavio -p <enterSignavioPasswordHere> --eval \"db.getUser('signavio');\"``"
+msgstr "``mongo admin -u signavio -p <enterSignavioPasswordHere> --eval \"db.getUser('signavio');\"``"
 
 #: ../../installation.rst:417
-msgid ""
-"Once the Signavio Workflow user is created, its credentials have to be added "
-"to the Signavio Workflow configuration file to the ``effektif.mongodb."
-"username`` and ``effektif.mongodb.password`` properties. Section :ref:"
-"`update-effektif-configuration` explains how to update the configuration "
-"file."
-msgstr ""
-"Sobald der Signavio Workflow-Nutzer erstellt wurde, müssen die Credentials "
-"in der Signavio Workflow-Konfigurationsdatei unter der Variable ``effektif."
-"mongodb.username`` und ``effektif.mongodb.password`` hinterlegt werden. Das "
-"Kapitel :ref:`update-effektif-configuration` beschreibt die Anpassung der "
-"Konfigurationsdatei."
+msgid "Once the Workflow Accelerator user is created, its credentials have to be added to the Workflow Accelerator configuration file to the ``effektif.mongodb.username`` and ``effektif.mongodb.password`` properties. Section :ref:`update-effektif-configuration` explains how to update the configuration file."
+msgstr "Sobald der Workflow Accelerator-Nutzer erstellt wurde, müssen die Credentials in der Workflow Accelerator-Konfigurationsdatei unter der Variable ``effektif.mongodb.username`` und ``effektif.mongodb.password`` hinterlegt werden. Das Kapitel :ref:`update-effektif-configuration` beschreibt die Anpassung der Konfigurationsdatei."
 
 #: ../../installation.rst:421
 msgid "Backup and restore"
 msgstr "Backup und Wiederherstellung"
 
 #: ../../installation.rst:422
-msgid ""
-"You are advised to do regular backups of the MongoDB database to prevent a "
-"complete data loss in case of a system failure. The Signavio Workflow system "
-"will NOT backup the user data on its own. The :ref:`backup` section explains "
-"in detail how to set up backups for MongoDB properly. The :ref:`restore` "
-"section explains how you can restore an older version of the user data from "
-"a backup."
-msgstr ""
-"Es wird Ihnen angeraten regelmäßige Backups der MongoDB Datenbank anzulegen "
-"um einen kompletten Datenverlust im Falle es Systemfehlers zu vermeiden. Das "
-"Signavio Workflow System legt allein KEINE Backups der Nutzerdaten an. "
-"Kapitel :ref:`backup` beschreibt detailliert wie Sie Backups mit MongoDB "
-"anlegen können. In Kapitel :ref:`restore` wird Ihnen zusätzlich erklärt, wie "
-"Sie Backups verwenden um ältere Versionen der Nutzerdaten wieder "
-"herzustellen."
+msgid "You are advised to do regular backups of the MongoDB database to prevent a complete data loss in case of a system failure. The Workflow Accelerator system will NOT backup the user data on its own. The :ref:`backup` section explains in detail how to set up backups for MongoDB properly. The :ref:`restore` section explains how you can restore an older version of the user data from a backup."
+msgstr "Es wird Ihnen angeraten regelmäßige Backups der MongoDB Datenbank anzulegen um einen kompletten Datenverlust im Falle es Systemfehlers zu vermeiden. Das Workflow Accelerator System legt allein KEINE Backups der Nutzerdaten an. Kapitel :ref:`backup` beschreibt detailliert wie Sie Backups mit MongoDB anlegen können. In Kapitel :ref:`restore` wird Ihnen zusätzlich erklärt, wie Sie Backups verwenden um ältere Versionen der Nutzerdaten wieder herzustellen."
 
 #: ../../installation.rst:427
 msgid "Installing Node.js"
 msgstr "Node.js installieren"
 
 #: ../../installation.rst:428
-msgid ""
-"You only need to install and configure Node.js if you purchased a version of "
-"Signavio Workflow which allows you to use JavaScript tasks."
-msgstr ""
-"Sie müssen Node.js nur installieren und konfigurieren, wenn Sie eine Version "
-"von Signavio Workflow erworben haben, welche die Ausführung von JavaScript-"
-"Tasks ermöglicht."
+msgid "You only need to install and configure Node.js if you purchased a version of Workflow Accelerator which allows you to use JavaScript tasks."
+msgstr "Sie müssen Node.js nur installieren und konfigurieren, wenn Sie eine Version von Workflow Accelerator erworben haben, welche die Ausführung von JavaScript-Tasks ermöglicht."
 
 #: ../../installation.rst:430
-msgid ""
-"Node.js is a runtime environment for JavaScript which is used by Signavio "
-"Workflow to execute custom JavaScript tasks created by the user. We "
-"recommend using the Node.js LTS (Long Term Support) version 6.x."
-msgstr ""
-"Node.js ist eine Ausführungsumgebung für JavaScript, welche von Signavio "
-"Workflow genutzt wird, um benutzerdefinierte JavaScript-Tasks auszuführen. "
-"Wir empfehlen Node.js LTS (Long Term Support) Version 6.x zu verwenden."
+msgid "Node.js is a runtime environment for JavaScript which is used by Workflow Accelerator to execute custom JavaScript tasks created by the user. We recommend using the Node.js LTS (Long Term Support) version 6.x."
+msgstr "Node.js ist eine Ausführungsumgebung für JavaScript, welche von Workflow Accelerator genutzt wird, um benutzerdefinierte JavaScript-Tasks auszuführen. Wir empfehlen Node.js LTS (Long Term Support) Version 6.x zu verwenden."
 
 #: ../../installation.rst:435
 msgid "For Windows there is a comfortable installer to setup Node.js."
-msgstr ""
-"Unter Windows kann Node.js einfach per Installationsprogramm installiert "
-"werden."
+msgstr "Unter Windows kann Node.js einfach per Installationsprogramm installiert werden."
 
 #: ../../installation.rst:437
 msgid "Go to https://nodejs.org/en/download/"
@@ -1356,133 +734,67 @@ msgstr "Wählen Sie die LTS Version aus."
 
 #: ../../installation.rst:439
 msgid "Download the *Windows Installer (.msi)* for your Windows version."
-msgstr ""
-"Laden Sie den *Windows Installer (.msi)* für Ihre Windows-Version herunter."
+msgstr "Laden Sie den *Windows Installer (.msi)* für Ihre Windows-Version herunter."
 
 #: ../../installation.rst:440
 msgid "Execute the downloaded installer and follow installation guide."
-msgstr ""
-"Führen Sie das heruntergeladene Installationsprogramm aus und folgen Sie den "
-"Installationsanweisungen."
+msgstr "Führen Sie das heruntergeladene Installationsprogramm aus und folgen Sie den Installationsanweisungen."
 
 #: ../../installation.rst:444
-msgid ""
-"The Node.js site offers additional documentation for setting up Node.js on "
-"Debian using the package manager APT:"
-msgstr ""
-"Die Node.js-Seite bietet zusätzliche Information für die Installation von "
-"Node.js unter Debian mit Hilfe des Paketmanagers APT an:"
+msgid "The Node.js site offers additional documentation for setting up Node.js on Debian using the package manager APT:"
+msgstr "Die Node.js-Seite bietet zusätzliche Information für die Installation von Node.js unter Debian mit Hilfe des Paketmanagers APT an:"
 
 #: ../../installation.rst:446
-msgid ""
-"https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-"
-"linux-distributions"
-msgstr ""
-"https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-"
-"linux-distributions"
+msgid "https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions"
+msgstr "https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions"
 
 #: ../../installation.rst:448
 msgid "Please, make sure to install the LTS version of Node.js."
-msgstr ""
-"Bitte stellen Sie sicher, dass Sie die LTS-Version von Node.js installieren."
+msgstr "Bitte stellen Sie sicher, dass Sie die LTS-Version von Node.js installieren."
 
 #: ../../installation.rst:453
-msgid "Installing the Signavio Workflow Script Engine"
-msgstr "Signavio Workflow Script Engine installieren"
+msgid "Installing the Workflow Accelerator Script Engine"
+msgstr "Workflow Accelerator Script Engine installieren"
 
 #: ../../installation.rst:454
-msgid ""
-"You only need to install and configure the Script Engine if you purchased a "
-"version of Signavio Workflow which allows you to use JavaScript tasks."
-msgstr ""
-"Sie müssen die Script Engine nur installieren und konfigurieren, wenn Sie "
-"eine Version von Signavio Workflow erworben haben, welche die Ausführung von "
-"JavaScript-Tasks ermöglicht."
+msgid "You only need to install and configure the Script Engine if you purchased a version of Workflow Accelerator which allows you to use JavaScript tasks."
+msgstr "Sie müssen die Script Engine nur installieren und konfigurieren, wenn Sie eine Version von Workflow Accelerator erworben haben, welche die Ausführung von JavaScript-Tasks ermöglicht."
 
 #: ../../installation.rst:456
-msgid ""
-"The Signavio Workflow Script Engine uses Node.js to execute JavaScript tasks "
-"within a workflow and an embedded HTTP server to communicate with the "
-"Signavio Workflow web application. You can either install the Script Engine "
-"on the same machine as the Signavio Workflow web application or on a "
-"separate machine. However, if you use a separate machine to run the script "
-"engine, you have to make sure the web application can connect over HTTP to "
-"the configured port of the script engine and vice versa. In order to install "
-"the script engine, follow these instructions:"
-msgstr ""
-"Die Signavio Workflow Script Engine benutzt Node.js um JavaScript-Tasks "
-"innerhalb eines Workflows auszuführen, sowie einen eingebetteten HTTP Server "
-"um mit der Signavio Workflow Webanwendung zu kommunizieren. Sie können die "
-"Script Engine entweder auf der gleichen Maschine wie die Signavio Workflow "
-"Webanwendung installieren oder auf einer separaten Maschine. Insofern Sie "
-"eine separate Maschine benutzen, stellen Sie bitte sicher, dass die "
-"Webanwendung über HTTP auf den konfigurierten Port der Script Engine "
-"zugreifen kann und umgekehrt. Folgen Sie diesen Schritten, um die Script "
-"Engine zu installieren:"
+msgid "The Workflow Accelerator Script Engine uses Node.js to execute JavaScript tasks within a workflow and an embedded HTTP server to communicate with the Workflow Accelerator web application. You can either install the Script Engine on the same machine as the Workflow Accelerator web application or on a separate machine. However, if you use a separate machine to run the script engine, you have to make sure the web application can connect over HTTP to the configured port of the script engine and vice versa. In order to install the script engine, follow these instructions:"
+msgstr "Die Workflow Accelerator Script Engine benutzt Node.js um JavaScript-Tasks innerhalb eines Workflows auszuführen, sowie einen eingebetteten HTTP Server um mit der Workflow Accelerator-Webanwendung zu kommunizieren. Sie können die Script Engine entweder auf der gleichen Maschine wie die Workflow Accelerator-Webanwendung installieren oder auf einer separaten Maschine. Insofern Sie eine separate Maschine benutzen, stellen Sie bitte sicher, dass die Webanwendung über HTTP auf den konfigurierten Port der Script Engine zugreifen kann und umgekehrt. Folgen Sie diesen Schritten, um die Script Engine zu installieren:"
 
 #: ../../installation.rst:461
-msgid ""
-"Create new local directory for the script engine, e.g. ``C:\\Program Files"
-"\\Script Engine`` or ``/var/lib/script-engine``."
-msgstr ""
-"Legen Sie ein neues lokales Verzeichnis für die Script Engine an, z.B. ``C:"
-"\\Program Files\\Script Engine`` oder ``/var/lib/script-engine``."
+msgid "Create new local directory for the script engine, e.g. ``C:\\Program Files\\Script Engine`` or ``/var/lib/script-engine``."
+msgstr "Legen Sie ein neues lokales Verzeichnis für die Script Engine an, z.B. ``C:\\Program Files\\Script Engine`` oder ``/var/lib/script-engine``."
 
 #: ../../installation.rst:463
 msgid "We will refer to this directory as ``$SCRIPT_ENGINE_HOME``."
-msgstr ""
-"Im folgenden wird dieses Verzeichnis als ``$SCRIPT_ENGINE_HOME`` "
-"referenziert."
+msgstr "Im folgenden wird dieses Verzeichnis als ``$SCRIPT_ENGINE_HOME`` referenziert."
 
 #: ../../installation.rst:465
-msgid ""
-"Copy the content of the directory ``$WORKFLOW_HOME/script-engine/`` to your "
-"newly created directory."
-msgstr ""
-"Kopieren Sie den Inhalt des Verzeichnisses ``$WORKFLOW_HOME/script-engine/`` "
-"in Ihr neu angelegtes Verzeichnis."
+msgid "Copy the content of the directory ``$WORKFLOW_HOME/script-engine/`` to your newly created directory."
+msgstr "Kopieren Sie den Inhalt des Verzeichnisses ``$WORKFLOW_HOME/script-engine/`` in Ihr neu angelegtes Verzeichnis."
 
 #: ../../installation.rst:467
-msgid ""
-"You should find the file ``server.js`` directly within your directory: ``"
-"$SCRIPT_ENGINE_HOME/server.js``."
-msgstr ""
-"Die Datei ``server.js`` sollte sich direkt in Ihrem Verzeichnis befinden:  ``"
-"$SCRIPT_ENGINE_HOME/server.js``."
+msgid "You should find the file ``server.js`` directly within your directory: ``$SCRIPT_ENGINE_HOME/server.js``."
+msgstr "Die Datei ``server.js`` sollte sich direkt in Ihrem Verzeichnis befinden:  ``$SCRIPT_ENGINE_HOME/server.js``."
 
 #: ../../installation.rst:469
-msgid ""
-"Open ``$SCRIPT_ENGINE_HOME/configuration.onpremise.js`` and edit the values "
-"for the port, log files and Signavio Workflow URL."
-msgstr ""
-"Öffnen Sie ``$SCRIPT_ENGINE_HOME/configuration.onpremise.js`` und passen Sie "
-"die Werte für den Port, die Log-Dateien und die Signavio Workflow URL an."
+msgid "Open ``$SCRIPT_ENGINE_HOME/configuration.onpremise.js`` and edit the values for the port, log files and Workflow Accelerator URL."
+msgstr "Öffnen Sie ``$SCRIPT_ENGINE_HOME/configuration.onpremise.js`` und passen Sie die Werte für den Port, die Log-Dateien und die Workflow Accelerator URL an."
 
 #: ../../installation.rst:471
-msgid ""
-"Ensure that the port for the script engine is not used by any other "
-"application."
-msgstr ""
-"Stellen Sie sicher, dass der Port für die Script Engine nicht bereits von "
-"einer anderen Anwendung genutzt wird."
+msgid "Ensure that the port for the script engine is not used by any other application."
+msgstr "Stellen Sie sicher, dass der Port für die Script Engine nicht bereits von einer anderen Anwendung genutzt wird."
 
 #: ../../installation.rst:473
-msgid ""
-"Add the URL of the script engine to the Signavio Workflow configuration "
-"file, see :ref:`update-effektif-configuration` for more information."
-msgstr ""
-"Fügen Sie die URL der Script Engine zu der Signavio Workflow "
-"Konfigurationsdatei hinzu, vgl. :ref:`update-effektif-configuration` für "
-"weitere Informationen."
+msgid "Add the URL of the script engine to the Workflow Accelerator configuration file, see :ref:`update-effektif-configuration` for more information."
+msgstr "Fügen Sie die URL der Script Engine zu der Workflow Accelerator-Konfigurationsdatei hinzu, vgl. :ref:`update-effektif-configuration` für weitere Informationen."
 
 #: ../../installation.rst:475
-msgid ""
-"If you run the script engine on the same machine as the web application and "
-"use the default port the URL will be ``http://localhost:8081``."
-msgstr ""
-"Wenn Sie die Script Engine auf der gleichen Maschine ausführen wie die "
-"Webanwendung und den Standardport benutzen, dann lautet die URL ``http://"
-"localhost:8081``."
+msgid "If you run the script engine on the same machine as the web application and use the default port the URL will be ``http://localhost:8081``."
+msgstr "Wenn Sie die Script Engine auf der gleichen Maschine ausführen wie die Webanwendung und den Standardport benutzen, dann lautet die URL ``http://localhost:8081``."
 
 #: ../../installation.rst:477
 msgid "The configuration file offers the following options:"
@@ -1493,38 +805,24 @@ msgid "``port``"
 msgstr "``port``"
 
 #: ../../installation.rst:480
-msgid ""
-"Defines the port the script engine will bind to and listen for incoming HTTP "
-"requests."
-msgstr ""
-"Legt den Port fest, an den sich die Script Engine bindet und auf eingehende "
-"HTTP Anfragen wartet."
+msgid "Defines the port the script engine will bind to and listen for incoming HTTP requests."
+msgstr "Legt den Port fest, an den sich die Script Engine bindet und auf eingehende HTTP Anfragen wartet."
 
 #: ../../installation.rst:481
 msgid "``workflowUrl``"
 msgstr "``workflowUrl``"
 
 #: ../../installation.rst:481
-msgid ""
-"Defines the URL of the Signavio Workflow system (including port), e.g. "
-"``http://localhost:8080``"
-msgstr ""
-"Legt die URL fest, unter welcher das Signavio Workflow System erreichbar ist "
-"(inklusive Port), z.B. ``http://localhost:8080``."
+msgid "Defines the URL of the Workflow Accelerator system (including port), e.g. ``http://localhost:8080``"
+msgstr "Legt die URL fest, unter welcher das Workflow Accelerator System erreichbar ist (inklusive Port), z.B. ``http://localhost:8080``."
 
 #: ../../installation.rst:482
 msgid "``log`` ``file``"
 msgstr "``log`` ``file``"
 
 #: ../../installation.rst:482
-msgid ""
-"Defines the location and name of the script engine log file. You can an "
-"absolute or relative path. By default, the log files are stored in the same "
-"directory as the script engine."
-msgstr ""
-"Legt den Ort und Namen der Script Engine Log-Datei fest. Sie können einen "
-"absoluten oder relativen Pfad angeben. Standardmäßig werden die Log-Dateien "
-"im Verzeichnis der Script Engine abgelegt."
+msgid "Defines the location and name of the script engine log file. You can an absolute or relative path. By default, the log files are stored in the same directory as the script engine."
+msgstr "Legt den Ort und Namen der Script Engine Log-Datei fest. Sie können einen absoluten oder relativen Pfad angeben. Standardmäßig werden die Log-Dateien im Verzeichnis der Script Engine abgelegt."
 
 #: ../../installation.rst:483
 msgid "``log`` ``errorFile``"
@@ -1535,85 +833,46 @@ msgid "Defines the location and name of the script engine error log file."
 msgstr "Legt den Ort und Namen der Script Engine Fehler-Log-Datei fest."
 
 #: ../../installation.rst:486
-msgid ""
-"After the successful setup you can start the script engine by opening the ``"
-"$SCRIPT_ENGINE_HOME`` directory on a command line and executing the "
-"following command ::"
-msgstr ""
-"Nach der erfolgreichen Installation können Sie die Script Engine starten, in "
-"dem Sie das Verzeichnis ``$SCRIPT_ENGINE_HOME`` auf der Kommandozeile öffnen "
-"und folgenden Befehl ausführen ::"
+msgid "After the successful setup you can start the script engine by opening the ``$SCRIPT_ENGINE_HOME`` directory on a command line and executing the following command ::"
+msgstr "Nach der erfolgreichen Installation können Sie die Script Engine starten, in dem Sie das Verzeichnis ``$SCRIPT_ENGINE_HOME`` auf der Kommandozeile öffnen und folgenden Befehl ausführen ::"
 
 #: ../../installation.rst:492
 msgid "Wrapping the Script Engine into a service"
 msgstr "Die Script Engine als Service registrieren"
 
 #: ../../installation.rst:493
-msgid ""
-"The script engine can be executed as shown above by running the command on a "
-"command line. However, it might be useful for production systems to run the "
-"script engine as a service or daemon. The following sub sections describe "
-"one possibility for each supported operating system which can be used the "
-"accomplish this goal. Note, Signavio offers no support for any usage of "
-"third-party tools. Use them at your discretion."
-msgstr ""
-"Die Script Engine kann, wie oben beschrieben, mit der Ausführung eines "
-"Befehls auf der Kommandozeile gestartet werden. Für Produktivsysteme ist es "
-"jedoch sinnvoll die Script Engine als Service oder Daemon zu betreiben. Der "
-"folgende Abschnitt zeigt für jedes unterstützte Betriebssystem eine "
-"Möglichkeit um dieses Ziel zu erreichen. Beachten Sie, Signavio bietet "
-"keinen Support für die Nutzung von Software von Drittanbietern. Nutzen Sie "
-"diese deshalb auf eigene Verantwortung."
+msgid "The script engine can be executed as shown above by running the command on a command line. However, it might be useful for production systems to run the script engine as a service or daemon. The following sub sections describe one possibility for each supported operating system which can be used the accomplish this goal. Note, Signavio offers no support for any usage of third-party tools. Use them at your discretion."
+msgstr "Die Script Engine kann, wie oben beschrieben, mit der Ausführung eines Befehls auf der Kommandozeile gestartet werden. Für Produktivsysteme ist es jedoch sinnvoll die Script Engine als Service oder Daemon zu betreiben. Der folgende Abschnitt zeigt für jedes unterstützte Betriebssystem eine Möglichkeit um dieses Ziel zu erreichen. Beachten Sie, Signavio bietet keinen Support für die Nutzung von Software von Drittanbietern. Nutzen Sie diese deshalb auf eigene Verantwortung."
 
 #: ../../installation.rst:501
-msgid ""
-"For Windows there are several software tools which allow you to wrap a "
-"script into a service and monitor the execution. The `Non-Sucking Service "
-"Manager <http://nssm.cc/>`_ (NSSM) is such a free tool which allows you to "
-"wrap any executable into a Windows service."
-msgstr ""
-"Für Windows existieren mehrere Softwarelösungen, die es erlauben ein Skript "
-"als Service zu registrieren und die Ausführung zu überwachen. Der `Non-"
-"Sucking Service Manager <http://nssm.cc/>`_ (NSSM) ist ein entsprechendes "
-"Programm, welches es erlaubt beliebige ausführbare Dateien als Service zu "
-"registrieren."
+msgid "For Windows there are several software tools which allow you to wrap a script into a service and monitor the execution. The `Non-Sucking Service Manager <http://nssm.cc/>`_ (NSSM) is such a free tool which allows you to wrap any executable into a Windows service."
+msgstr "Für Windows existieren mehrere Softwarelösungen, die es erlauben ein Skript als Service zu registrieren und die Ausführung zu überwachen. Der `Non-Sucking Service Manager <http://nssm.cc/>`_ (NSSM) ist ein entsprechendes Programm, welches es erlaubt beliebige ausführbare Dateien als Service zu registrieren."
 
 #: ../../installation.rst:504
 msgid "Download NSSM from http://nssm.cc/download"
 msgstr "Laden Sie NSSM von http://nssm.cc/download herunter"
 
 #: ../../installation.rst:505
-msgid ""
-"Create a new local installation directory for NSSM, e.g. ``C:\\Program Files"
-"\\NSSM``."
-msgstr ""
-"Legen Sie ein neues lokales Verzeichnis für NSSM an, z.B. ``C:\\Program Files"
-"\\NSSM``."
+msgid "Create a new local installation directory for NSSM, e.g. ``C:\\Program Files\\NSSM``."
+msgstr "Legen Sie ein neues lokales Verzeichnis für NSSM an, z.B. ``C:\\Program Files\\NSSM``."
 
 #: ../../installation.rst:506
 msgid ""
-"Unzip the downloaded file and copy either the 64-bit ``win64\\nssm.exe`` or "
-"the 32-bit ``win32\\nssm.exe`` file to your new local directory."
+"Unzip the downloaded file and copy either the 64-bit ``win64\\n"
+"ssm.exe`` or the 32-bit ``win32\\n"
+"ssm.exe`` file to your new local directory."
 msgstr ""
-"Entpacken Sie die heruntergeladene Datei und kopieren Sie entweder die 64-"
-"Bit ``win64\\nssm.exe`` oder die 32-Bit ``win32\\nssm.exe`` Datei in Ihr "
-"neues lokales Verzeichnis."
+"Entpacken Sie die heruntergeladene Datei und kopieren Sie entweder die 64-Bit ``win64\\n"
+"ssm.exe`` oder die 32-Bit ``win32\\n"
+"ssm.exe`` Datei in Ihr neues lokales Verzeichnis."
 
 #: ../../installation.rst:507
-msgid ""
-"Add the installation directory of NSSM to the environment variable ``PATH`` "
-"in the Windows system settings."
-msgstr ""
-"Fügen Sie das Installationsverzeichnis von NSSM zu der Umgebungsvariable "
-"``PATH`` in den Windows Systemeinstellungen hinzu."
+msgid "Add the installation directory of NSSM to the environment variable ``PATH`` in the Windows system settings."
+msgstr "Fügen Sie das Installationsverzeichnis von NSSM zu der Umgebungsvariable ``PATH`` in den Windows Systemeinstellungen hinzu."
 
 #: ../../installation.rst:509
-msgid ""
-"This is necessary to use the ``nssm`` executable on the command line without "
-"an absolute path."
-msgstr ""
-"Dies ist notwendig um den ``nssm`` Befehl auf der Kommandozeile ohne "
-"absoluten Pfad ausführen zu können."
+msgid "This is necessary to use the ``nssm`` executable on the command line without an absolute path."
+msgstr "Dies ist notwendig um den ``nssm`` Befehl auf der Kommandozeile ohne absoluten Pfad ausführen zu können."
 
 #: ../../installation.rst:511
 msgid "Open the command line ``cmd`` with administrative privileges."
@@ -1633,19 +892,17 @@ msgstr "In dem Tab *Application* fügen Sie folgende Informationen hinzu:"
 
 #: ../../installation.rst:516
 msgid ""
-"*Path*: the path to the Node.js .exe file, e.g. ``C:\\Program Files\\nodejs"
-"\\node.exe``"
+"*Path*: the path to the Node.js .exe file, e.g. ``C:\\Program Files\\n"
+"odejs\\n"
+"ode.exe``"
 msgstr ""
-"*Path*: der Pfad zu der Node.js .exe Datei, z.B. ``C:\\Program Files\\nodejs"
-"\\node.exe``"
+"*Path*: der Pfad zu der Node.js .exe Datei, z.B. ``C:\\Program Files\\n"
+"odejs\\n"
+"ode.exe``"
 
 #: ../../installation.rst:517
-msgid ""
-"*Startup directory*: the value of ``$SCRIPT_ENGINE_HOME``, e.g. ``C:"
-"\\Program Files\\Script Engine``."
-msgstr ""
-"*Startup directory*: das richtige Verzeichnis von ``$SCRIPT_ENGINE_HOME``, z."
-"B. ``C:\\Program Files\\Script Engine``."
+msgid "*Startup directory*: the value of ``$SCRIPT_ENGINE_HOME``, e.g. ``C:\\Program Files\\Script Engine``."
+msgstr "*Startup directory*: das richtige Verzeichnis von ``$SCRIPT_ENGINE_HOME``, z.B. ``C:\\Program Files\\Script Engine``."
 
 #: ../../installation.rst:518
 msgid "*Arguments*: the exact value ``server.js``"
@@ -1657,32 +914,19 @@ msgstr "In dem Tab *Details* fügen Sie folgende Informationen hinzu:"
 
 #: ../../installation.rst:524
 msgid "*Display name*: the name of the service shown in ``services.msc``"
-msgstr ""
-"*Display name*: der Name des Service, welcher in  ``services.msc`` angezeigt "
-"wird"
+msgstr "*Display name*: der Name des Service, welcher in  ``services.msc`` angezeigt wird"
 
 #: ../../installation.rst:525
-msgid ""
-"*Description*: a description which will help you to recognise the service"
-msgstr ""
-"*Description*: eine Beschreibung, die Ihnen dabei hilft den Service wieder "
-"zu erkennen"
+msgid "*Description*: a description which will help you to recognise the service"
+msgstr "*Description*: eine Beschreibung, die Ihnen dabei hilft den Service wieder zu erkennen"
 
 #: ../../installation.rst:526
-msgid ""
-"*Startup type*: choose if the service shall start automatically on startup "
-"or if you want to start it manually"
-msgstr ""
-"*Startup type*: wählen Sie ob der Service automatisch beim Systemstart oder "
-"manuell gestartet werden soll"
+msgid "*Startup type*: choose if the service shall start automatically on startup or if you want to start it manually"
+msgstr "*Startup type*: wählen Sie ob der Service automatisch beim Systemstart oder manuell gestartet werden soll"
 
 #: ../../installation.rst:530
-msgid ""
-"Fill in any other service configuration settings you deem appropriate for "
-"your system in the other tabs."
-msgstr ""
-"Füllen Sie je nach Bedarf weitere Informationen in die anderen Tabs, die Sie "
-"für die Ausführung auf Ihrem System als notwendig erachten."
+msgid "Fill in any other service configuration settings you deem appropriate for your system in the other tabs."
+msgstr "Füllen Sie je nach Bedarf weitere Informationen in die anderen Tabs, die Sie für die Ausführung auf Ihrem System als notwendig erachten."
 
 #: ../../installation.rst:531
 msgid "Click on *Install service*."
@@ -1694,169 +938,71 @@ msgstr "Nun können Sie die Script Engine mit dem folgenden Befehl starten: ::"
 
 #: ../../installation.rst:537
 msgid "You can check the status of the script engine by executing: ::"
-msgstr ""
-"Sie können den Status der Script Engine mit dem folgenden Befehl "
-"überprüfen: ::"
+msgstr "Sie können den Status der Script Engine mit dem folgenden Befehl überprüfen: ::"
 
 #: ../../installation.rst:541
-msgid ""
-"In order to stop the script engine again, execute the following command: ::"
-msgstr ""
-"Um die Script Engine wieder zu stoppen, führen Sie den folgenden Befehl "
-"aus: ::"
+msgid "In order to stop the script engine again, execute the following command: ::"
+msgstr "Um die Script Engine wieder zu stoppen, führen Sie den folgenden Befehl aus: ::"
 
 #: ../../installation.rst:545
-msgid ""
-"While it is running, you can open your browser and go to the URL you have "
-"configured for the script engine, by default this ``http://localhost:8081``. "
-"If the engine is running, you will see a blank page with this content: ``{}``"
-msgstr ""
-"Solange die Script Engine ausgeführt wird, können Sie in Ihrem Browser die "
-"URL der Script Engine aufrufen, welche Sie in der Konfigurationsdatei "
-"festgelegt haben. Standardmäßig lautet die URL ``http://localhost:8081``. "
-"Wenn die Script Engine läuft, werden Sie eine leere Seite mit folgendem "
-"Inhalt sehen: ``{}``"
+msgid "While it is running, you can open your browser and go to the URL you have configured for the script engine, by default this ``http://localhost:8081``. If the engine is running, you will see a blank page with this content: ``{}``"
+msgstr "Solange die Script Engine ausgeführt wird, können Sie in Ihrem Browser die URL der Script Engine aufrufen, welche Sie in der Konfigurationsdatei festgelegt haben. Standardmäßig lautet die URL ``http://localhost:8081``. Wenn die Script Engine läuft, werden Sie eine leere Seite mit folgendem Inhalt sehen: ``{}``"
 
 #: ../../installation.rst:548
-msgid ""
-"Besides using ``nssm`` on the command line, you will find a new service when "
-"you open the ``services.msc``. The script engine will show up under the name "
-"you configured as display name. You can start and stop the script engine "
-"from here as well."
-msgstr ""
-"Als Alternative zu der Nutzung von ``nssm`` auf der Kommandozeile, können "
-"Sie die Script Engine auch über den Service in ``services.msc`` steuern und "
-"z.B. starten und stoppen. Die Script Engine wird unter dem Namen verfügbar "
-"sein, welchen Sie als Anzeigenamen konfiguriert haben."
+msgid "Besides using ``nssm`` on the command line, you will find a new service when you open the ``services.msc``. The script engine will show up under the name you configured as display name. You can start and stop the script engine from here as well."
+msgstr "Als Alternative zu der Nutzung von ``nssm`` auf der Kommandozeile, können Sie die Script Engine auch über den Service in ``services.msc`` steuern und z.B. starten und stoppen. Die Script Engine wird unter dem Namen verfügbar sein, welchen Sie als Anzeigenamen konfiguriert haben."
 
 #: ../../installation.rst:553
 msgid "Linux"
 msgstr "Linux"
 
 #: ../../installation.rst:554
-msgid ""
-"On Linux this task is usually accomplished with Init scripts using the "
-"respective Init system of your Linux distribution. Because there are several "
-"different Init systems, Signavio will not provide a template. However, if "
-"you don't already have a template, you can find lots of matching templates "
-"for your Init system on the internet."
-msgstr ""
-"Auf Linux-Systemen wird diese Aufgabe meist durch Init-Skripte gelöst, die "
-"das Init-System der jeweiligen Distribution nutzen. Da es mehrere "
-"verschiedene Init-Systeme gibt, stellt Signavio kein Template für ein "
-"entsprechendes Skript zur Verfügung. Für den Fall, dass Sie selbst noch kein "
-"Template besitzen, finden Sie im Internet zahlreiche Beispiele für die "
-"verschiedenen Init-Systeme."
+msgid "On Linux this task is usually accomplished with Init scripts using the respective Init system of your Linux distribution. Because there are several different Init systems, Signavio will not provide a template. However, if you don't already have a template, you can find lots of matching templates for your Init system on the internet."
+msgstr "Auf Linux-Systemen wird diese Aufgabe meist durch Init-Skripte gelöst, die das Init-System der jeweiligen Distribution nutzen. Da es mehrere verschiedene Init-Systeme gibt, stellt Signavio kein Template für ein entsprechendes Skript zur Verfügung. Für den Fall, dass Sie selbst noch kein Template besitzen, finden Sie im Internet zahlreiche Beispiele für die verschiedenen Init-Systeme."
 
 #: ../../installation.rst:558
-msgid ""
-"As mentioned before, the script engine can be started from within ``"
-"$SCRIPT_ENGINE_HOME`` by executing: ::"
-msgstr ""
-"Wie bereits erwähnt, kann die Script Engine mit folgendem Befehl aus dem "
-"Verzeichnis ``$SCRIPT_ENGINE_HOME`` gestartet werden: ::"
+msgid "As mentioned before, the script engine can be started from within ``$SCRIPT_ENGINE_HOME`` by executing: ::"
+msgstr "Wie bereits erwähnt, kann die Script Engine mit folgendem Befehl aus dem Verzeichnis ``$SCRIPT_ENGINE_HOME`` gestartet werden: ::"
 
 #: ../../installation.rst:562
-msgid ""
-"You have to ensure your Init script starts the Node.js executable ``node`` "
-"and uses the JavaScript file ``$SCRIPT_ENGINE_HOME/server.js`` as an "
-"argument. Note, if you use a restricted user to execute the command, make "
-"sure the user has appropriate access to the ``$SCRIPT_ENGINE_HOME`` "
-"directory."
-msgstr ""
-"Sie müssen sicher stellen, dass Ihr Init-Skript die Node.js Programmdatei "
-"``node`` startet und die JavaScript-Datei ``$SCRIPT_ENGINE_HOME/server.js`` "
-"als Argument nutzt. Beachten Sie, wenn Sie einen Nutzer mit eingeschränkten "
-"Rechten für die Ausführung nutzen, dann muss dieser entsprechenden Zugriff "
-"auf das ``$SCRIPT_ENGINE_HOME`` Verzeichnis haben."
+msgid "You have to ensure your Init script starts the Node.js executable ``node`` and uses the JavaScript file ``$SCRIPT_ENGINE_HOME/server.js`` as an argument. Note, if you use a restricted user to execute the command, make sure the user has appropriate access to the ``$SCRIPT_ENGINE_HOME`` directory."
+msgstr "Sie müssen sicher stellen, dass Ihr Init-Skript die Node.js Programmdatei ``node`` startet und die JavaScript-Datei ``$SCRIPT_ENGINE_HOME/server.js`` als Argument nutzt. Beachten Sie, wenn Sie einen Nutzer mit eingeschränkten Rechten für die Ausführung nutzen, dann muss dieser entsprechenden Zugriff auf das ``$SCRIPT_ENGINE_HOME`` Verzeichnis haben."
 
 #: ../../installation.rst:568
-msgid "Configuring Signavio Workflow"
-msgstr "Signavio Workflow konfigurieren"
+msgid "Configuring Workflow Accelerator"
+msgstr "Workflow Accelerator konfigurieren"
 
 #: ../../installation.rst:573
 msgid "Install the license file"
 msgstr "Lizenzinstallation"
 
 #: ../../installation.rst:574
-msgid ""
-"Along with the Signavio Workflow application you have received the Signavio "
-"Workflow license file license.xml. Before you can start the Signavio "
-"Workflow system, you have to add the license file to the application. "
-"Therefore, copy the license file into the directory ``$TOMCAT_HOME/webapps/"
-"ROOT/WEB-INF/classes``\\ . The Signavio Workflow system will check your "
-"license file on startup and setup the defined number of licenses."
-msgstr ""
-"Mit der Signavio Workflow-Anwendung haben Sie die Lizenzdatei license.xml "
-"erhalten. Bevor Sie das System starten können, fügen Sie die Lizenzdatei in "
-"das Verzeichnis ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes`` ein. Signavio "
-"Workflow überprüft die Datei wenn das System startet und stellt die "
-"entsprechenden Lizenzen zur Verfügung."
+msgid "Along with the Workflow Accelerator application you have received the Workflow Accelerator license file license.xml. Before you can start the Workflow Accelerator system, you have to add the license file to the application. Therefore, copy the license file into the directory ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes``\\ . The Workflow Accelerator system will check your license file on startup and setup the defined number of licenses."
+msgstr "Mit der Workflow Accelerator-Anwendung haben Sie die Lizenzdatei license.xml erhalten. Bevor Sie das System starten können, fügen Sie die Lizenzdatei in das Verzeichnis ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes`` ein. Workflow Accelerator überprüft die Datei wenn das System startet und stellt die entsprechenden Lizenzen zur Verfügung."
 
 #: ../../installation.rst:582
-msgid "Update the Signavio Workflow configuration file"
-msgstr "Die Signavio Workflow Konfigurationsdatei aktualisieren"
+msgid "Update the Workflow Accelerator configuration file"
+msgstr "Die Workflow Accelerator-Konfigurationsdatei aktualisieren"
 
 #: ../../installation.rst:583
-msgid ""
-"Before you can start Signavio Workflow for the first time, you need to "
-"configure some mandatory properties in the Signavio Workflow configuration "
-"file. Make sure you have copied the Signavio Workflow web application to the "
-"Tomcat’s webapps directory before continuing. The configuration file can be "
-"found here ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes/effektif-onpremise."
-"properties``\\ ."
-msgstr ""
-"Bevor Signavio Workflow zum ersten Mal gestartet werden kann, müssen einige "
-"Variablen in der Signavio Workflow Konfigurationsdatei gesetzt werden."
-"Stellen Sie sicher, dass Sie die Signavio Workflow Webanwendung in das "
-"webapps-Verzeichnis des Tomcats kopiert haben. Die Konfigurationsdatei "
-"befindet sich nun unter ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes/effektif-"
-"onpremise.properties``\\ ."
+msgid "Before you can start Workflow Accelerator for the first time, you need to configure some mandatory properties in the Workflow Accelerator configuration file. Make sure you have copied the Workflow Accelerator web application to the Tomcat’s webapps directory before continuing. The configuration file can be found here ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes/effektif-onpremise.properties``\\ ."
+msgstr "Bevor Workflow Accelerator zum ersten Mal gestartet werden kann, müssen einige Variablen in der Workflow Accelerator-Konfigurationsdatei gesetzt werden.Stellen Sie sicher, dass Sie die Workflow Accelerator-Webanwendung in das webapps-Verzeichnis des Tomcats kopiert haben. Die Konfigurationsdatei befindet sich nun unter ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes/effektif-onpremise.properties``\\ ."
 
 #: ../../installation.rst:587
-msgid ""
-"The configuration file is a property file that contains one configuration "
-"option per line and key and value are separated by a ``=``. Every line that "
-"starts with a ``#`` is commented out and will not be used."
-msgstr ""
-"Die Konfigurationsdatei ist ein „Property File“, welches eine "
-"Konfigurationsvariable pro Zeile als “=”-separiertes Key-Value-Paar enthält. "
-"Jede Zeile die mit einer Raute „#“ beginnt, ist auskommentiert und wird "
-"nicht berücksichtigt."
+msgid "The configuration file is a property file that contains one configuration option per line and key and value are separated by a ``=``. Every line that starts with a ``#`` is commented out and will not be used."
+msgstr "Die Konfigurationsdatei ist ein „Property File“, welches eine Konfigurationsvariable pro Zeile als “=”-separiertes Key-Value-Paar enthält. Jede Zeile die mit einer Raute „#“ beginnt, ist auskommentiert und wird nicht berücksichtigt."
 
 #: ../../installation.rst:590
-msgid ""
-"In general, the configuration allows to configure the base URL of the "
-"Signavio Workflow system, the mail server, the database connection and "
-"integrations with third party systems (e.g. Signavio). If you installed the "
-"Signavio Workflow Script Engine, you need to configure the URL to the script "
-"engine as well. As described in :ref:`install-script-engine` the URL derives "
-"from the domain (``localhost`` for the same machine) and port the script "
-"engine is running on."
-msgstr ""
-"Die Konfigurationsdatei erlaubt die Konfiguration der Basis-URL, des Mail-"
-"Servers, der Datenbankverbindung und der Integration von Drittsystemen, zum "
-"Beispiel vom Signavio Process Editor. Insofern Sie die Signavio Workflow "
-"Script Engine installiert haben, müssen Sie zusätzlich die URL der Script "
-"Engine konfigurieren. Wie bereits in :ref:`install-script-engine` "
-"beschrieben, wird die URL aus der Domain (``localhost`` für die gleiche "
-"Maschine) und dem Port gebildet unter dem die Script Engine läuft."
+msgid "In general, the configuration allows to configure the base URL of the Workflow Accelerator system, the mail server, the database connection and integrations with third party systems (e.g. Signavio). If you installed the Workflow Accelerator Script Engine, you need to configure the URL to the script engine as well. As described in :ref:`install-script-engine` the URL derives from the domain (``localhost`` for the same machine) and port the script engine is running on."
+msgstr "Die Konfigurationsdatei erlaubt die Konfiguration der Basis-URL, des Mail-Servers, der Datenbankverbindung und der Integration von Drittsystemen, zum Beispiel vom Signavio Process Manager. Insofern Sie die Workflow Accelerator Script Engine installiert haben, müssen Sie zusätzlich die URL der Script Engine konfigurieren. Wie bereits in :ref:`install-script-engine` beschrieben, wird die URL aus der Domain (``localhost`` für die gleiche Maschine) und dem Port gebildet unter dem die Script Engine läuft."
 
 #: ../../installation.rst:596
 msgid "``effektif.baseUrl``"
 msgstr "``effektif.baseUrl``"
 
 #: ../../installation.rst:596
-msgid ""
-"(Required) The IP address or server name (including the port) of the server "
-"running the Signavio Workflow Tomcat application server. E.g. http://"
-"workflow.yourdomain.com:8080\\ . If the server is running on port 80, the "
-"port can be omitted."
-msgstr ""
-"(Pflichtvariable) Die IP-Adresse oder der Servername (inkl. Port) der "
-"Signavio Workflow Webanwendung, zum Beispiel: http://workflow.yourdomain."
-"com:8080 Falls der Server auf Port 80 läuft, kann auf die Angabe des Ports "
-"verzichtet werden."
+msgid "(Required) The IP address or server name (including the port) of the server running the Workflow Accelerator Tomcat application server. E.g. http://workflow.yourdomain.com:8080\\ . If the server is running on port 80, the port can be omitted."
+msgstr "(Pflichtvariable) Die IP-Adresse oder der Servername (inkl. Port) der Workflow Accelerator-Webanwendung, zum Beispiel: http://workflow.yourdomain.com:8080 Falls der Server auf Port 80 läuft, kann auf die Angabe des Ports verzichtet werden."
 
 #: ../../installation.rst:597
 msgid "``effektif.smtp.host``"
@@ -1911,185 +1057,93 @@ msgid "``effektif.mail.from``"
 msgstr "``effektif.mail.from``"
 
 #: ../../installation.rst:603
-msgid ""
-"This email address is used as the sender when the Signavio Workflow system "
-"sends out notifications."
-msgstr ""
-"Die Sender-E-Mail-Adresse von Signavio Workflow-Benachrichtigungen und "
-"Einladungen."
+msgid "This email address is used as the sender when the Workflow Accelerator system sends out notifications."
+msgstr "Die Sender-E-Mail-Adresse von Workflow Accelerator-Benachrichtigungen und Einladungen."
 
 #: ../../installation.rst:604
 msgid "``effektif.mail.feedback``"
 msgstr "``effektif.mail.feedback``"
 
 #: ../../installation.rst:604
-msgid ""
-"This email address will receive all feedback which is sent using the "
-"feedback functionality in the application."
-msgstr ""
-"Diese E-Mail-Adresse erhält alle Feedback-Nachrichten, welche über die "
-"integrierte Feedback-Funktion in der Anwendung gesendet werden."
+msgid "This email address will receive all feedback which is sent using the feedback functionality in the application."
+msgstr "Diese E-Mail-Adresse erhält alle Feedback-Nachrichten, welche über die integrierte Feedback-Funktion in der Anwendung gesendet werden."
 
 #: ../../installation.rst:605
 msgid "``effektif.mongodb.servers``"
 msgstr "``effektif.mongodb.servers``"
 
 #: ../../installation.rst:605
-msgid ""
-"A comma-separated list of MongoDB servers (hostnames). If you have MongodDB "
-"running on the same server as Tomcat, the default value of localhost is okay."
-msgstr ""
-"Eine kommagetrennte List von MongoDB-Servern (Hostnamen). Falls MongoDB auf "
-"der Maschine läuft, auf der Tomcat die Effektif-Webanwendung zur Verfügung "
-"stellt, kann der Standardwert localhost beibehalten werden."
+msgid "A comma-separated list of MongoDB servers (hostnames). If you have MongodDB running on the same server as Tomcat, the default value of localhost is okay."
+msgstr "Eine kommagetrennte List von MongoDB-Servern (Hostnamen). Falls MongoDB auf der Maschine läuft, auf der Tomcat die Effektif-Webanwendung zur Verfügung stellt, kann der Standardwert localhost beibehalten werden."
 
 #: ../../installation.rst:606
 msgid "``effektif.mongodb.username``"
 msgstr "``effektif.mongodb.username``"
 
 #: ../../installation.rst:606
-msgid ""
-"The Signavio Workflow MongoDB user name. If you created the user following "
-"the instructions in this guide, the name is ``signavio``."
-msgstr ""
-"Der Signavio Workflow MongoDB Nutzername. Falls Sie den Nutzer entsprechend "
-"der Anweisungen erstellt haben, ist der name ``signavio`` ."
+msgid "The Workflow Accelerator MongoDB user name. If you created the user following the instructions in this guide, the name is ``signavio``."
+msgstr "Der Workflow Accelerator-MongoDB-Nutzername. Falls Sie den Nutzer entsprechend der Anweisungen erstellt haben, ist der name ``signavio`` ."
 
 #: ../../installation.rst:607
 msgid "``effektif.mongodb.password``"
 msgstr "``effektif.mongodb.password``"
 
 #: ../../installation.rst:607
-msgid ""
-"The password of the Signavio Workflow MongoDB user. This is the password you "
-"defined during user creation."
-msgstr ""
-"Das Passwort des MongoDB Nutzers, das bei der Erstellung des Nutzers "
-"definiert wurde."
+msgid "The password of the Workflow Accelerator MongoDB user. This is the password you defined during user creation."
+msgstr "Das Passwort des MongoDB Nutzers, das bei der Erstellung des Nutzers definiert wurde."
 
 #: ../../installation.rst:608
 msgid "``effektif.mongodb.database``"
 msgstr "``effektif.mongodb.database``"
 
 #: ../../installation.rst:608
-msgid ""
-"The name of the database Signavio Workflow should use. The default value "
-"``signavio`` is okay."
-msgstr ""
-"Der Name der Datenbank, die von Signavio Workflow verwendet werden soll. Der "
-"Standardwert ``signavio`` kann beibehalten werden."
+msgid "The name of the database Workflow Accelerator should use. The default value ``signavio`` is okay."
+msgstr "Der Name der Datenbank, die von Workflow Accelerator verwendet werden soll. Der Standardwert ``signavio`` kann beibehalten werden."
 
 #: ../../installation.rst:609
 msgid "``effektif.javascript.server.url``"
 msgstr "``effektif.javascript.server.url``"
 
 #: ../../installation.rst:609
-msgid ""
-"(Optional) The URL of the Signavio Workflow Script Engine, e.g. ``http://"
-"localhost:8081``\\ ."
-msgstr ""
-"(Optional) Die URL der Signavio Workflow Script Engine, z.B. ``http://"
-"localhost:8081``\\ ."
+msgid "(Optional) The URL of the Workflow Accelerator Script Engine, e.g. ``http://localhost:8081``\\ ."
+msgstr "(Optional) Die URL der Workflow Accelerator Script Engine, z.B. ``http://localhost:8081``\\ ."
 
 #: ../../installation.rst:612
-msgid ""
-"The following properties are only relevant if your Signavio Workflow "
-"installation is connected to your Signavio installation. ::"
-msgstr ""
-"Die folgenden Eigenschaften sind nur relevant, falls Signavio Workflow mit "
-"Ihrer Signavio-Installation verbunden werden soll: ::"
+msgid "The following properties are only relevant if your Workflow Accelerator installation is connected to your Signavio installation. ::"
+msgstr "Die folgenden Eigenschaften sind nur relevant, falls Workflow Accelerator mit Ihrer Process Manager-Installation verbunden werden soll: ::"
 
 #: ../../installation.rst:621
-msgid ""
-"See :ref:`signavio-integration` for more information on how to set up the "
-"integration."
-msgstr ""
-"Weitere Details zur Signavio-Integration erhalten Sie im Kapitel :ref:"
-"`signavio-integration`\\ ."
+msgid "See :ref:`signavio-integration` for more information on how to set up the integration."
+msgstr "Weitere Details zur Signavio-Integration erhalten Sie im Kapitel :ref:`signavio-integration`\\ ."
 
 #: ../../installation.rst:624
 msgid "Configure logging"
 msgstr "Logging konfigurieren"
 
 #: ../../installation.rst:625
-msgid ""
-"The Signavio Workflow system has its own application log file ``effektif."
-"log``\\ . You need to define the directory where this log file is stored. "
-"The directory is specified in the file ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/"
-"classes/logback.xml``\\ . Open the file and update the following line: ::"
-msgstr ""
-"Das Signavio Workflow System hat mit ``effektif.log`` ein eigenes Logfile. "
-"Das Verzeichnis, in dem das Logfile gespeichert wird, kann in der folgenden "
-"Datei konfiguriert werden: ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes/"
-"logback.xml``\\ . Öffnen Sie die datei und passen Sie die folgende Zeile "
-"an: ::"
+msgid "The Workflow Accelerator system has its own application log file ``effektif.log``\\ . You need to define the directory where this log file is stored. The directory is specified in the file ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes/logback.xml``\\ . Open the file and update the following line: ::"
+msgstr "Das Workflow Accelerator-System hat mit ``effektif.log`` ein eigenes Logfile. Das Verzeichnis, in dem das Logfile gespeichert wird, kann in der folgenden Datei konfiguriert werden: ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes/logback.xml``\\ . Öffnen Sie die datei und passen Sie die folgende Zeile an: ::"
 
 #: ../../installation.rst:632
-msgid ""
-"The value should contain an absolute path. Make sure the user executing "
-"Tomcat has the required read / write permissions for the directory."
-msgstr ""
-"Der Wert sollte einen absoluten Pfad darstellen. Stellen Sie sicher, dass "
-"der Nutzer, der Tomcat ausführt Lese- und Schreibzugriff auf das "
-"entsprechende Verzeichnis hat."
+msgid "The value should contain an absolute path. Make sure the user executing Tomcat has the required read / write permissions for the directory."
+msgstr "Der Wert sollte einen absoluten Pfad darstellen. Stellen Sie sicher, dass der Nutzer, der Tomcat ausführt Lese- und Schreibzugriff auf das entsprechende Verzeichnis hat."
 
 #: ../../installation.rst:635
-msgid ""
-"On Windows it necessary to escape all \"\\\\\". An example value could like "
-"this: ``\"C:\\\\Logs\\\\Signavio\"``\\ ."
-msgstr ""
-"Unter Windows ist es notwendig, alle \"\\\\\" zu escapen, sodass sich zum "
-"Beispiel der folgende Wert ergibt: ``\"C:\\\\Logs\\\\Signavio\"``\\ ."
+msgid "On Windows it necessary to escape all \"\\\\\". An example value could like this: ``\"C:\\\\Logs\\\\Signavio\"``\\ ."
+msgstr "Unter Windows ist es notwendig, alle \"\\\\\" zu escapen, sodass sich zum Beispiel der folgende Wert ergibt: ``\"C:\\\\Logs\\\\Signavio\"``\\ ."
 
 #: ../../installation.rst:637
-msgid ""
-"This configuration file also enables you to change the log level in this "
-"file. By default, the log level is INFO. However, in a scenario where you "
-"require official support, you will be asked to set the log level to DEBUG. "
-"In order to so, update the following: ::"
-msgstr ""
-"In der Konfigurationsdatei können Sie zudem das Loglevel festlegen. "
-"Standardmäßig ist das Loglevel INFO. Falls Sie zum Beispiel beim "
-"Troubleshooting Support benötigen, ist es sinnvoll, das Loglevel auf DEBUG "
-"zu erhöhen. Hierfür muss die folgende Zeile angepasst werden: ::"
+msgid "This configuration file also enables you to change the log level in this file. By default, the log level is INFO. However, in a scenario where you require official support, you will be asked to set the log level to DEBUG. In order to so, update the following: ::"
+msgstr "In der Konfigurationsdatei können Sie zudem das Loglevel festlegen. Standardmäßig ist das Loglevel INFO. Falls Sie zum Beispiel beim Troubleshooting Support benötigen, ist es sinnvoll, das Loglevel auf DEBUG zu erhöhen. Hierfür muss die folgende Zeile angepasst werden: ::"
 
 #: ../../installation.rst:644
 msgid "Change it to: ::"
 msgstr "Der geänderte Eintrag sollte wie folgt aussehen: ::"
 
 #: ../../installation.rst:648
-msgid ""
-"You will need to restart the Tomcat server for the changes to take effect. "
-"You can find more detailed information on how to start the Tomcat server in "
-"the next section."
-msgstr ""
-"Sie müssen Ihren Tomcat neustarten, damit die Änderunge aktiv werden. Der "
-"nächste Abschnitt gibt Ihnen detailliertere Hinweise, wie sie den Tomcat "
-"server starten können."
+msgid "You will need to restart the Tomcat server for the changes to take effect. You can find more detailed information on how to start the Tomcat server in the next section."
+msgstr "Sie müssen Ihren Tomcat neustarten, damit die Änderunge aktiv werden. Der nächste Abschnitt gibt Ihnen detailliertere Hinweise, wie sie den Tomcat server starten können."
 
 #: ../../installation.rst:651
-msgid ""
-"The log file is configured to do a roll over. Every day, a new log file is "
-"created which contains a timestamp in the filename similar to "
-"``effektif-2014-10-09.log``\\ . The most recent log entries can still be "
-"found in the file effektif.log. After 30 days, the log files will be removed "
-"automatically."
-msgstr ""
-"Die Logdatei ist für einen „Roll Over“ konfiguriert. Dies bedeutet, das "
-"jeden Tag ein neues Logfile mit einem entsprechenden Zeitstempel erstellt "
-"wird, zum Beispiel: ``effektif-2014-10-09.log``\\ . Die neuesten Einträge "
-"können zudem in der Datei effektif.log eingesehen werden. Logfiles, die "
-"älter als 30 Tage sind, werden automatisch gelöscht."
-
-#~ msgid ""
-#~ "MongoDB is currently the only database system that Signavio Workflow "
-#~ "supports. If you already have an infrastructure that can provide a "
-#~ "MongoDB version 3.2.x instance, simply create a new instance for Signavio "
-#~ "Workflow and skip to :ref:`configure-mongodb`. Otherwise continue with "
-#~ "the installation instructions."
-#~ msgstr ""
-#~ "MongoDB ist das einizge Datenbanksystem, das momentan von Signavio "
-#~ "Workflow unterstützt wird. Falls Sie bereits ein MongoDB 3.2.x System zur "
-#~ "Verfügung stehen haben, können Sie einfach eine neue Instanz für Signavio "
-#~ "Workflow erstellen und zum Abschnitt :ref:`configure-mongodb` springen. "
-#~ "Folgen Sie andernfalls den folgenden Anweisungen."
+msgid "The log file is configured to do a roll over. Every day, a new log file is created which contains a timestamp in the filename similar to ``effektif-2014-10-09.log``\\ . The most recent log entries can still be found in the file effektif.log. After 30 days, the log files will be removed automatically."
+msgstr "Die Logdatei ist für einen „Roll Over“ konfiguriert. Dies bedeutet, das jeden Tag ein neues Logfile mit einem entsprechenden Zeitstempel erstellt wird, zum Beispiel: ``effektif-2014-10-09.log``\\ . Die neuesten Einträge können zudem in der Datei effektif.log eingesehen werden. Logfiles, die älter als 30 Tage sind, werden automatisch gelöscht."

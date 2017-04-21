@@ -1,15 +1,15 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2016, Signavio GmbH
+# Copyright (C) 2017, Signavio GmbH
 # This file is distributed under the same license as the Signavio Workflow
-# administrators guide package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+# Accelerator administrators guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-29 15:28+0200\n"
-"PO-Revision-Date: 2016-08-29 15:37+0100\n"
+"POT-Creation-Date: 2017-04-20 16:01+0200\n"
+"PO-Revision-Date: 2017-04-20 16:16+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
 "MIME-Version: 1.0\n"
@@ -20,20 +20,20 @@ msgstr ""
 "X-Generator: Poedit 1.6.9\n"
 
 #: ../../starting.rst:4
-msgid "Starting Signavio Workflow"
-msgstr "Starting Signavio Workflow"
+msgid "Starting Signavio Workflow Accelerator"
+msgstr "Starting Signavio Workflow Accelerator"
 
 #: ../../starting.rst:5
 msgid ""
 "If you have finished the setup successfully, you can go on and start the "
-"Signavio Workflow application. You can use the checklist in the next "
+"Workflow Accelerator application. You can use the checklist in the next "
 "subsection to verify you didn’t forget anything. The following subsection "
-"explains how to start Signavio Workflow on different operating systems."
+"explains how to start Workflow Accelerator on different operating systems."
 msgstr ""
 "If you have finished the setup successfully, you can go on and start the "
-"Signavio Workflow application. You can use the checklist in the next "
+"Workflow Accelerator application. You can use the checklist in the next "
 "subsection to verify you didn’t forget anything. The following subsection "
-"explains how to start Signavio Workflow on different operating systems."
+"explains how to start Workflow Accelerator on different operating systems."
 
 #: ../../starting.rst:10
 msgid "Checklist"
@@ -41,11 +41,11 @@ msgstr "Checklist"
 
 #: ../../starting.rst:11
 msgid ""
-"Before starting Signavio Workflow, use the following checklist to make sure "
-"everything is setup properly."
+"Before starting Workflow Accelerator, use the following checklist to make "
+"sure everything is setup properly."
 msgstr ""
-"Before starting Signavio Workflow, use the following checklist to make sure "
-"everything is setup properly."
+"Before starting Workflow Accelerator, use the following checklist to make "
+"sure everything is setup properly."
 
 #: ../../starting.rst:13
 msgid "Oracle Java 8 is installed"
@@ -68,24 +68,24 @@ msgid "MongoDB is configured"
 msgstr "MongoDB is configured"
 
 #: ../../starting.rst:21
-msgid "a MongoDB user for Signavio Workflow was created"
-msgstr "a MongoDB user for Signavio Workflow was created"
+msgid "a MongoDB user for Workflow Accelerator was created"
+msgstr "a MongoDB user for Workflow Accelerator was created"
 
 #: ../../starting.rst:23
 msgid ""
-"the Signavio Workflow ROOT folder was copied into the Tomcat webapps "
+"the Workflow Accelerator ROOT folder was copied into the Tomcat webapps "
 "directory"
 msgstr ""
-"the Signavio Workflow ROOT folder was copied into the Tomcat webapps "
+"the Workflow Accelerator ROOT folder was copied into the Tomcat webapps "
 "directory"
 
 #: ../../starting.rst:24
-msgid "the Signavio Workflow license was copied to the correct directory"
-msgstr "the Signavio Workflow license was copied to the correct directory"
+msgid "the Workflow Accelerator license was copied to the correct directory"
+msgstr "the Workflow Accelerator license was copied to the correct directory"
 
 #: ../../starting.rst:25
-msgid "the Signavio Workflow configuration file was updated"
-msgstr "the Signavio Workflow configuration file was updated"
+msgid "the Workflow Accelerator configuration file was updated"
+msgstr "the Workflow Accelerator configuration file was updated"
 
 #: ../../starting.rst:27
 msgid "the base URL is set"
@@ -100,8 +100,8 @@ msgid "the database connection is set"
 msgstr "the database connection is set"
 
 #: ../../starting.rst:31
-msgid "the Signavio Workflow log file is configured"
-msgstr "the Signavio Workflow log file is configured"
+msgid "the Workflow Accelerator log file is configured"
+msgstr "the Workflow Accelerator log file is configured"
 
 #: ../../starting.rst:33
 msgid "If your version includes the execution of JavaScript tasks:"
@@ -112,20 +112,20 @@ msgid "Node.js is installed"
 msgstr "Node.js is installed"
 
 #: ../../starting.rst:36
-msgid "the Signavio Workflow Script Engine is installed"
-msgstr "the Signavio Workflow Script Engine is installed"
+msgid "the Workflow Accelerator Script Engine is installed"
+msgstr "the Workflow Accelerator Script Engine is installed"
 
 #: ../../starting.rst:37
-msgid "the Signavio Workflow Script Engine is configured"
-msgstr "the Signavio Workflow Script Engine is configured"
+msgid "the Workflow Accelerator Script Engine is configured"
+msgstr "the Workflow Accelerator Script Engine is configured"
 
 #: ../../starting.rst:39
 msgid "the port is set"
 msgstr "the port is set"
 
 #: ../../starting.rst:40
-msgid "the Signavio Workflow URL is set"
-msgstr "the Signavio Workflow URL is set"
+msgid "the Workflow Accelerator URL is set"
+msgstr "the Workflow Accelerator URL is set"
 
 #: ../../starting.rst:41
 msgid "the log files are configured"
@@ -133,55 +133,57 @@ msgstr "the log files are configured"
 
 #: ../../starting.rst:42
 msgid ""
-"the script engine URL is configured in the Signavio Workflow configuration "
-"file"
+"the script engine URL is configured in the Workflow Accelerator "
+"configuration file"
 msgstr ""
-"the script engine URL is configured in the Signavio Workflow configuration "
-"file"
+"the script engine URL is configured in the Workflow Accelerator "
+"configuration file"
 
 #: ../../starting.rst:44
 msgid ""
-"If the system is integrated with the Signavio Process Editor check also the "
+"If the system is integrated with the Signavio Process Manager check also the "
 "following points:"
 msgstr ""
-"If the system is integrated with the Signavio Process Editor check also the "
+"If the system is integrated with the Signavio Process Manager check also the "
 "following points:"
 
 #: ../../starting.rst:46
-msgid "Signavio Workflow and Signavio Process Editor have compatible versions"
-msgstr "Signavio Workflow and Signavio Process Editor have compatible versions"
+msgid ""
+"Workflow Accelerator and Signavio Process Manager have compatible versions"
+msgstr ""
+"Workflow Accelerator and Signavio Process Manager have compatible versions"
 
 #: ../../starting.rst:47
 msgid ""
-"Signavio Workflow is configured in the Signavio Process Editor configuration."
-"xml"
+"Workflow Accelerator is configured in the Signavio Process Manager "
+"configuration.xml"
 msgstr ""
-"Signavio Workflow is configured in the Signavio Process Editor configuration."
-"xml"
+"Workflow Accelerator is configured in the Signavio Process Manager "
+"configuration.xml"
 
 #: ../../starting.rst:48
 msgid ""
-"Signavio Process Editor is configured in the Signavio Workflow configuration "
-"file"
+"Signavio Process Manager is configured in the Workflow Accelerator "
+"configuration file"
 msgstr ""
-"Signavio Process Editor is configured in the Signavio Workflow configuration "
-"file"
+"Signavio Process Manager is configured in the Workflow Accelerator "
+"configuration file"
 
 #: ../../starting.rst:51
-msgid "Start Signavio Workflow"
-msgstr "Start Signavio Workflow"
+msgid "Start Workflow Accelerator"
+msgstr "Start Workflow Accelerator"
 
 #: ../../starting.rst:52
 msgid ""
 "After completing the installation as described above, both the MongoDB "
-"database and the Tomcat application server must be started for Signavio "
-"Workflow to run properly. This section will give you more details on how to "
-"start them."
+"database and the Tomcat application server must be started for Workflow "
+"Accelerator to run properly. This section will give you more details on how "
+"to start them."
 msgstr ""
 "After completing the installation as described above, both the MongoDB "
-"database and the Tomcat application server must be started for Signavio "
-"Workflow to run properly. This section will give you more details on how to "
-"start them."
+"database and the Tomcat application server must be started for Workflow "
+"Accelerator to run properly. This section will give you more details on how "
+"to start them."
 
 #: ../../starting.rst:56
 msgid "Windows"
@@ -354,40 +356,40 @@ msgstr ""
 "navigate to the ``$SCRIPT_ENGINE_HOME`` directory and execute: ::"
 
 #: ../../starting.rst:139
-msgid "Login to Signavio Workflow"
-msgstr "Login to Signavio Workflow"
+msgid "Login to Workflow Accelerator"
+msgstr "Login to Workflow Accelerator"
 
 #: ../../starting.rst:140
 msgid ""
-"When the Signavio Workflow system was started properly you can see the login "
-"screen by entering the URL of your Signavio Workflow installation in your "
-"browser. There are different versions of the login screen. If you purchased "
-"an Signavio Workflow standalone version, you will see a form that requires "
-"an email address and a password to login."
+"When the Workflow Accelerator system was started properly you can see the "
+"login screen by entering the URL of your Workflow Accelerator installation "
+"in your browser. There are different versions of the login screen. If you "
+"purchased an Workflow Accelerator standalone version, you will see a form "
+"that requires an email address and a password to login."
 msgstr ""
-"When the Signavio Workflow system was started properly you can see the login "
-"screen by entering the URL of your Signavio Workflow installation in your "
-"browser. There are different versions of the login screen. If you purchased "
-"an Signavio Workflow standalone version, you will see a form that requires "
-"an email address and a password to login."
+"When the Workflow Accelerator system was started properly you can see the "
+"login screen by entering the URL of your Workflow Accelerator installation "
+"in your browser. There are different versions of the login screen. If you "
+"purchased an Workflow Accelerator standalone version, you will see a form "
+"that requires an email address and a password to login."
 
 #: ../../starting.rst:147
-msgid "The default Signavio Workflow login screen"
-msgstr "The default Signavio Workflow login screen"
+msgid "The default Workflow Accelerator login screen"
+msgstr "The default Workflow Accelerator login screen"
 
 #: ../../starting.rst:149
 msgid ""
-"If you purchased Signavio Workflow along with the Signavio Process Editor, "
-"you will see a login screen with one button. You can login to Signavio "
-"Workflow using your Signavio Process Editor account as soon as the Signavio "
-"Workflow users have been set up. Jump to section :ref:`signavio-user-"
-"management` for more information on how to set up the users."
+"If you purchased Workflow Accelerator along with the Signavio Process "
+"Manager, you will see a login screen with one button. You can login to "
+"Workflow Accelerator using your Signavio Process Manager account as soon as "
+"the Workflow Accelerator users have been set up. Jump to section :ref:"
+"`signavio-user-management` for more information on how to set up the users."
 msgstr ""
-"If you purchased Signavio Workflow along with the Signavio Process Editor, "
-"you will see a login screen with one button. You can login to Signavio "
-"Workflow using your Signavio Process Editor account as soon as the Signavio "
-"Workflow users have been set up. Jump to section :ref:`signavio-user-"
-"management` for more information on how to set up the users."
+"If you purchased Workflow Accelerator along with the Signavio Process "
+"Manager, you will see a login screen with one button. You can login to "
+"Workflow Accelerator using your Signavio Process Manager account as soon as "
+"the Workflow Accelerator users have been set up. Jump to section :ref:"
+"`signavio-user-management` for more information on how to set up the users."
 
 #: ../../starting.rst:156
 msgid "The Signavio login screen"
@@ -396,16 +398,16 @@ msgstr "The Signavio login screen"
 #: ../../starting.rst:158
 msgid ""
 "When you click *Log in with Signavio account*\\ , you will be redirected to "
-"the Signavio Process Editor and asked to authorize the access of Signavio "
-"Workflow. When you click on *Grant*\\ , you will be redirected back to "
-"Signavio Workflow and automatically logged in. The authorization dialog is "
-"only shown the first time you use this method to login."
+"the Signavio Process Manager and asked to authorize the access of Workflow "
+"Accelerator. When you click on *Grant*\\ , you will be redirected back to "
+"Workflow Accelerator and automatically logged in. The authorization dialog "
+"is only shown the first time you use this method to login."
 msgstr ""
 "When you click *Log in with Signavio account*\\ , you will be redirected to "
-"the Signavio Process Editor and asked to authorize the access of Signavio "
-"Workflow. When you click on *Grant*\\ , you will be redirected back to "
-"Signavio Workflow and automatically logged in. The authorization dialog is "
-"only shown the first time you use this method to login."
+"the Signavio Process Manager and asked to authorize the access of Workflow "
+"Accelerator. When you click on *Grant*\\ , you will be redirected back to "
+"Workflow Accelerator and automatically logged in. The authorization dialog "
+"is only shown the first time you use this method to login."
 
 #: ../../starting.rst:165
 msgid "The Signavio authorization dialog"
@@ -413,11 +415,11 @@ msgstr "The Signavio authorization dialog"
 
 #: ../../starting.rst:167
 msgid ""
-"You have to be logged in to the Signavio Process Editor in order to see the "
+"You have to be logged in to the Signavio Process Manager in order to see the "
 "authorization dialog. Otherwise, you will be redirected to the Collaboration "
 "Portal."
 msgstr ""
-"You have to be logged in to the Signavio Process Editor in order to see the "
+"You have to be logged in to the Signavio Process Manager in order to see the "
 "authorization dialog. Otherwise, you will be redirected to the Collaboration "
 "Portal."
 
@@ -427,49 +429,53 @@ msgstr "Create the initial user"
 
 #: ../../starting.rst:173
 msgid ""
-"In case you purchased Signavio Workflow along with the Signavio Process "
-"Editor and want to setup the integration, you don't have to create the "
-"initial Signavio Workflow user manually. Please jump to section :ref:"
+"In case you purchased Workflow Accelerator along with the Signavio Process "
+"Manager and want to setup the integration, you don't have to create the "
+"initial Workflow Accelerator user manually. Please jump to section :ref:"
 "`signavio-user-management` for more information."
 msgstr ""
-"In case you purchased Signavio Workflow along with the Signavio Process "
-"Editor and want to setup the integration, you don't have to create the "
-"initial Signavio Workflow user manually. Please jump to section :ref:"
+"In case you purchased Workflow Accelerator along with the Signavio Process "
+"Manager and want to setup the integration, you don't have to create the "
+"initial Workflow Accelerator user manually. Please jump to section :ref:"
 "`signavio-user-management` for more information."
 
 #: ../../starting.rst:176
 msgid ""
-"Signavio Workflow users are organized in organisations. There is a maximum "
-"amount of organisations that can be registered on an on-premise system. You "
-"will find the maximum number of available organisations in your license "
-"file. When the initial user registers, he will automatically create the "
-"first organisation."
+"Workflow Accelerator users are organized in organisations. There is a "
+"maximum amount of organisations that can be registered on an on-premise "
+"system. You will find the maximum number of available organisations in your "
+"license file. When the initial user registers, he will automatically create "
+"the first organisation."
 msgstr ""
-"Signavio Workflow users are organized in organisations. There is a maximum "
-"amount of organisations that can be registered on an on-premise system. You "
-"will find the maximum number of available organisations in your license "
-"file. When the initial user registers, he will automatically create the "
-"first organisation."
+"Workflow Accelerator users are organized in organisations. There is a "
+"maximum amount of organisations that can be registered on an on-premise "
+"system. You will find the maximum number of available organisations in your "
+"license file. When the initial user registers, he will automatically create "
+"the first organisation."
 
 #: ../../starting.rst:181
 msgid ""
-"In order to register, enter the URL of your Signavio Workflow installation "
-"in your browser. You will see the login screen of Signavio Workflow."
+"In order to register, enter the URL of your Workflow Accelerator "
+"installation in your browser. You will see the login screen of Workflow "
+"Accelerator."
 msgstr ""
-"In order to register, enter the URL of your Signavio Workflow installation "
-"in your browser. You will see the login screen of Signavio Workflow."
+"In order to register, enter the URL of your Workflow Accelerator "
+"installation in your browser. You will see the login screen of Workflow "
+"Accelerator."
 
 #: ../../starting.rst:184
 msgid ""
 "Click *Register a new account*, fill in your email address and click "
 "*Register a new user*\\ . You will then receive an email with a link to "
-"complete your registration. After you have done that, your Signavio Workflow "
-"organisation is set up and you can go ahead and invite more users."
+"complete your registration. After you have done that, your Workflow "
+"Accelerator organisation is set up and you can go ahead and invite more "
+"users."
 msgstr ""
 "Click *Register a new account*, fill in your email address and click "
 "*Register a new user*\\ . You will then receive an email with a link to "
-"complete your registration. After you have done that, your Signavio Workflow "
-"organisation is set up and you can go ahead and invite more users."
+"complete your registration. After you have done that, your Workflow "
+"Accelerator organisation is set up and you can go ahead and invite more "
+"users."
 
 #: ../../starting.rst:188
 msgid ""
@@ -489,12 +495,12 @@ msgstr "Invite other users"
 
 #: ../../starting.rst:194
 msgid ""
-"In case this is an integrated installation with the Signavio Process Editor, "
-"please jump to section :ref:`signavio-integration` for setting up "
+"In case this is an integrated installation with the Signavio Process "
+"Manager, please jump to section :ref:`signavio-integration` for setting up "
 "synchronization of users."
 msgstr ""
-"In case this is an integrated installation with the Signavio Process Editor, "
-"please jump to section :ref:`signavio-integration` for setting up "
+"In case this is an integrated installation with the Signavio Process "
+"Manager, please jump to section :ref:`signavio-integration` for setting up "
 "synchronization of users."
 
 #: ../../starting.rst:196
@@ -532,9 +538,9 @@ msgstr ""
 #: ../../starting.rst:207
 msgid ""
 "Besides the manual invitation of every user, the enterprise version of "
-"Signavio Workflow offers the possibility to synchronise users and groups "
+"Workflow Accelerator offers the possibility to synchronise users and groups "
 "with Active Directory. See :ref:`synchronise-users` for more information."
 msgstr ""
 "Besides the manual invitation of every user, the enterprise version of "
-"Signavio Workflow offers the possibility to synchronise users and groups "
+"Workflow Accelerator offers the possibility to synchronise users and groups "
 "with Active Directory. See :ref:`synchronise-users` for more information."

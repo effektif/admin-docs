@@ -1,6 +1,6 @@
 Tooling
 =======
-This section lists some tools that might help you to administer and maintain your Signavio Workflow installation.
+This section lists some tools that might help you to administer and maintain your Signavio Workflow Accelerator installation.
 Use them at your own discretion.
 
 .. _tooling-mongodb:
@@ -11,7 +11,7 @@ Robomongo is a good tool for managing your MongoDB installation.
 It is free and available for different operating systems.
 Use it at your own discretion.
 Please, be careful when you use a tool to manipulate the database. 
-Signavio Workflow does not guarantee that any manipulated data can be restored. The tool can be downloaded from:
+Workflow Accelerator does not guarantee that any manipulated data can be restored. The tool can be downloaded from:
 
 https://robomongo.org/
 
@@ -66,4 +66,4 @@ Make sure your MongoDB server is running and open Robomongo.
     :align: center
     :scale: 70%
 
-    You will see the connection in the left-hand panel and the two Signavio Workflow databases below it.
+    You will see the connection in the left-hand panel and the two Workflow Accelerator databases below it.

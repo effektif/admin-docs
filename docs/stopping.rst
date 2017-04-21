@@ -1,9 +1,9 @@
 .. _stopping:
 
-Stopping Signavio Workflow
-==========================
-In order to stop the Signavio Workflow system completely, you have to stop the Tomcat application server and the MongoDB database. 
-However, if you need to restart the Signavio Workflow system, it is sufficient to restart only the Tomcat server.
+Stopping Signavio Workflow Accelerator
+======================================
+In order to stop the Workflow Accelerator system completely, you have to stop the Tomcat application server and the MongoDB database. 
+However, if you need to restart the Workflow Accelerator system, it is sufficient to restart only the Tomcat server.
 
 Windows
 ```````
