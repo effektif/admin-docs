@@ -18,14 +18,13 @@ If you use Workflow Accelerator in combination with Signavio Process Manager, yo
 	To update Workflow Accelerator from a version prior to 3.11, you MUST first update the system to version 3.15 before you can update to version 3.22. 
 	Download `Signavio Workflow 3.15 <https://download.signavio.com/onpremise/latest/workflow/signavio-workflow-v3.15.11.zip>`_ and follow the respective previous update instructions, before you continue with this section.
 
-Besides the application update you are also advised to update your MongoDB instance.
+As well as upgrading the application, you should upgrade MongoDB.
 See the following section for more information.
 
 Updating MongoDB
 ````````````````
 Workflow Accelerator 3.22 now supports the latest version of MongoDB (3.4.x) which comes with improved performance and functionality.
-You are advised to update your instance of MongoDB to version 3.4.
-Future releases of Workflow Accelerator will use the extended functionality and assume version 3.4 is in use.
+You should upgrade to MongoDB version 3.4, as Workflow Accelerator releases will require it.
 
 You can only update to MongoDB 3.4 if you are currently using version 3.2.
 The official MongoDB documentation contains for more information about the update:
@@ -40,15 +39,15 @@ To update your standalone MongoDB 3.2 to version 3.4 follow these steps:
 #. Uninstall MongoDB 3.2.x, but ensure you don't delete the data directory and configuration file of your database as well as the backup!
 #. Install MongoDB 3.4.x.
 
-	* You can find a suitable version for your OS in the MongoDB download center: https://www.mongodb.com/download-center
+	* You can find a suitable version for your operating system in the MongoDB download center: https://www.mongodb.com/download-center
 
-#. *Windows only:* Open the command line ``cmd`` with administrative privileges and execute the following command. Make sure to use absolute paths and replace them with the matching ones on your system.
+#. *Windows only:* Open the command line ``cmd`` with administrative privileges and execute the following command. Make sure to use absolute paths and replace them with the matching paths on your system.
 
     * ``C:\MongoDB\bin\mongod.exe --config C:\MongoDB\mongod.cfg --install``
     * The referenced configuration file is the one you have created previously for the old version of MongoDB and should still be in the same location.
 
 #. Start the new MongoDB instance.
-#. Enable new functionality for version 3.4 by executing the following command on command line
+#. Enable new functionality for version 3.4 by executing the following command on the command line.
 
 Windows
 ~~~~~~~
@@ -59,12 +58,12 @@ Windows
 
 #. Execute the following command:
 
-	* Replace ``<enterYourUserHere>`` with your MongoDB user, e.g. ``signavio``
-	* Replace ``<enterYourPasswordHere>`` with your MongoDB user password
+	* Replace ``<username>`` with your MongoDB user, e.g. ``signavio``
+	* Replace ``<password>`` with your MongoDB user password
 
 ::
 
-	mongo.exe admin -u <enterYourUserHere> -p <enterYourPasswordHere> --eval "db.adminCommand( { setFeatureCompatibilityVersion: '3.4' } )"
+	mongo.exe admin -u <username> -p <password> --eval "db.adminCommand( { setFeatureCompatibilityVersion: '3.4' } )"
 
 
 Debian
@@ -72,12 +71,12 @@ Debian
 #. Open a command line
 #. Execute the following command: 
 
-	* Replace ``<enterYourUserHere>`` with your MongoDB user, e.g. ``signavio``
-	* Replace ``<enterYourPasswordHere>`` with your MongoDB user password 
+	* Replace ``<username>`` with your MongoDB user, e.g. ``signavio``
+	* Replace ``<password>`` with your MongoDB user password 
 
 ::
 
-	mongo admin -u <enterYourUserHere> -p <enterYourPasswordHere> --eval "db.adminCommand( { setFeatureCompatibilityVersion: '3.4' } )"
+	mongo admin -u <username> -p <password> --eval "db.adminCommand( { setFeatureCompatibilityVersion: '3.4' } )"
 
 
 You finished the MongoDB update successfully.
