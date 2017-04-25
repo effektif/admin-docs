@@ -9,18 +9,21 @@ It lists changes to technical requirements for new versions and additional instr
 .. IMPORTANT::
 	If you skip one or more versions of Workflow Accelerator during the update, please follow the update notes for the versions you are skipping as well. You should start with the oldest version which is newer than your currently installed version of Workflow Accelerator.
 
-Updating to Signavio Workflow Accelerator 3.21
+Updating to Signavio Workflow Accelerator 3.22
 ----------------------------------------------
 Signavio Workflow has been renamed to Signavio Workflow Accelerator.
 If you use Workflow Accelerator in combination with Signavio Process Manager, you must update Process Manager to version 10.15.
 
 .. important:: 
-	To update Workflow Accelerator from a version prior to 3.11, you MUST first update the system to version 3.15 before you can update to version 3.21. 
-	Follow the respective previous update instructions, before you continue with this section.
+	To update Workflow Accelerator from a version prior to 3.11, you MUST first update the system to version 3.15 before you can update to version 3.22. 
+	Download `Signavio Workflow 3.15 <https://download.signavio.com/onpremise/latest/workflow/signavio-workflow-v3.15.11.zip>`_ and follow the respective previous update instructions, before you continue with this section.
+
+Besides the application update you are also advised to update your MongoDB instance.
+See the following section for more information.
 
 Updating MongoDB
 ````````````````
-Workflow Accelerator 3.21 now supports the latest version of MongoDB (3.4.x) which comes with improved performance and functionality.
+Workflow Accelerator 3.22 now supports the latest version of MongoDB (3.4.x) which comes with improved performance and functionality.
 You are advised to update your instance of MongoDB to version 3.4.
 Future releases of Workflow Accelerator will use the extended functionality and assume version 3.4 is in use.
 

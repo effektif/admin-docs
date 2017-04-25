@@ -21,6 +21,7 @@ Workflow Accelerator version  Process Manager version
 3.4.x                         9.7
 3.11.x                        10.3
 3.15.x                        10.8
+3.22.x                        10.15
 ============================  =======================
 
 Setup
