@@ -9,6 +9,79 @@ It lists changes to technical requirements for new versions and additional instr
 .. IMPORTANT::
 	If you skip one or more versions of Workflow Accelerator during the update, please follow the update notes for the versions you are skipping as well. You should start with the oldest version which is newer than your currently installed version of Workflow Accelerator.
 
+Updating to Signavio Workflow Accelerator 3.22
+----------------------------------------------
+Signavio Workflow has been renamed to Signavio Workflow Accelerator.
+If you use Workflow Accelerator in combination with Signavio Process Manager, you must update Process Manager to version 10.15.
+
+.. important:: 
+	To update Workflow Accelerator from a version prior to 3.11, you MUST first update the system to version 3.15 before you can update to version 3.22. 
+	Download `Signavio Workflow 3.15 <https://download.signavio.com/onpremise/latest/workflow/signavio-workflow-v3.15.11.zip>`_ and follow the respective previous update instructions, before you continue with this section.
+
+As well as upgrading the application, you should upgrade MongoDB.
+See the following section for more information.
+
+Updating MongoDB
+````````````````
+Workflow Accelerator 3.22 now supports the latest version of MongoDB (3.4.x) which comes with improved performance and functionality.
+You should upgrade to MongoDB version 3.4, as Workflow Accelerator releases will require it.
+
+You can only update to MongoDB 3.4 if you are currently using version 3.2.
+The official MongoDB documentation contains for more information about the update:
+https://docs.mongodb.com/manual/release-notes/3.4-upgrade-standalone/
+
+To update your standalone MongoDB 3.2 to version 3.4 follow these steps:
+
+#. Stop the Tomcat application server - see :ref:`stopping`.
+#. Create a backup of your database using ``mongodump`` - see :ref:`backup`.
+#. Stop MongoDB - see :ref:`stopping`.
+#. *Windows only:* manually remove the created MongoDB service by executing ``$MONGO_HOME\bin\mongod.exe --remove`` with administrator privileges on the command line ``cmd``
+#. Uninstall MongoDB 3.2.x, but ensure you don't delete the data directory and configuration file of your database as well as the backup!
+#. Install MongoDB 3.4.x.
+
+	* You can find a suitable version for your operating system in the MongoDB download center: https://www.mongodb.com/download-center
+
+#. *Windows only:* Open the command line ``cmd`` with administrative privileges and execute the following command. Make sure to use absolute paths and replace them with the matching paths on your system.
+
+    * ``C:\MongoDB\bin\mongod.exe --config C:\MongoDB\mongod.cfg --install``
+    * The referenced configuration file is the one you have created previously for the old version of MongoDB and should still be in the same location.
+
+#. Start the new MongoDB instance.
+#. Enable new functionality for version 3.4 by executing the following command on the command line.
+
+Windows
+~~~~~~~
+#. Open a command line with administrative privileges
+#. Navigate to the MongoDB bin directory
+
+	* For example ``C:\MongoDB\bin``
+
+#. Execute the following command:
+
+	* Replace ``<username>`` with your MongoDB user, e.g. ``signavio``
+	* Replace ``<password>`` with your MongoDB user password
+
+::
+
+	mongo.exe admin -u <username> -p <password> --eval "db.adminCommand( { setFeatureCompatibilityVersion: '3.4' } )"
+
+
+Debian
+~~~~~~
+#. Open a command line
+#. Execute the following command: 
+
+	* Replace ``<username>`` with your MongoDB user, e.g. ``signavio``
+	* Replace ``<password>`` with your MongoDB user password 
+
+::
+
+	mongo admin -u <username> -p <password> --eval "db.adminCommand( { setFeatureCompatibilityVersion: '3.4' } )"
+
+
+You finished the MongoDB update successfully.
+
+
 Updating to Signavio Workflow 3.15
 ----------------------------------
 If you use Signavio Workflow in combination with the Signavio Process Editor, you must update the Signavio Process Editor to version 10.8.
