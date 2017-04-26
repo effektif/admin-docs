@@ -44,9 +44,11 @@ MongoDB
 If MongoDB was setup following the instructions in this guide, you can simply stop the MongoDB server by executing the following command. 
 This might require root privileges. ::
 
-    /etc/init.d/mongod stop
+    sudo service mongod stop
 
-In earlier versions of MongoDB, e.g. 2.4.x, the script had a different name: ``/etc/init.d/mongodb``.
+In earlier versions of MongoDB, e.g. 2.4.x, the script had a different name: ``/etc/init.d/mongodb``. ::
+
+	/etc/init.d/mongodb stop
 
 Script Engine
 ^^^^^^^^^^^^^

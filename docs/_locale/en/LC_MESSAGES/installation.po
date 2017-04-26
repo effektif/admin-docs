@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-21 16:48+0200\n"
-"PO-Revision-Date: 2017-04-25 19:06+0100\n"
+"POT-Creation-Date: 2017-04-26 20:15+0200\n"
+"PO-Revision-Date: 2017-04-26 20:16+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
 "MIME-Version: 1.0\n"
@@ -24,16 +24,8 @@ msgid "Installing Signavio Workflow Accelerator"
 msgstr "Installing Signavio Workflow Accelerator"
 
 #: ../../installation.rst:3
-msgid ""
-"This section will guide you through the setup of Workflow Accelerator. "
-"Simply follow the subsections step by step. If you have already installed "
-"Workflow Accelerator and want to update the system to a newer version, you "
-"can skip this chapter."
-msgstr ""
-"This section will guide you through the setup of Workflow Accelerator. "
-"Simply follow the subsections step by step. If you have already installed "
-"Workflow Accelerator and want to update the system to a newer version, you "
-"can skip this chapter."
+msgid "This section will guide you through the setup of Workflow Accelerator. Simply follow the subsections step by step. If you have already installed Workflow Accelerator and want to update the system to a newer version, you can skip this chapter."
+msgstr "This section will guide you through the setup of Workflow Accelerator. Simply follow the subsections step by step. If you have already installed Workflow Accelerator and want to update the system to a newer version, you can skip this chapter."
 
 #: ../../installation.rst:8
 msgid "System requirements"
@@ -44,12 +36,8 @@ msgid "Operating system"
 msgstr "Operating system"
 
 #: ../../installation.rst:12
-msgid ""
-"The Workflow Accelerator system can be deployed on different operating "
-"systems. Officially supported are the following operating systems:"
-msgstr ""
-"The Workflow Accelerator system can be deployed on different operating "
-"systems. Officially supported are the following operating systems:"
+msgid "The Workflow Accelerator system can be deployed on different operating systems. Officially supported are the following operating systems:"
+msgstr "The Workflow Accelerator system can be deployed on different operating systems. Officially supported are the following operating systems:"
 
 #: ../../installation.rst:15
 msgid "Debian Stable Release 64-bit"
@@ -60,54 +48,24 @@ msgid "Microsoft Windows Server 64-bit"
 msgstr "Microsoft Windows Server 64-bit"
 
 #: ../../installation.rst:18
-msgid ""
-"In general, it is possible to install Workflow Accelerator on other Linux "
-"distributions. However, the installation process can differ from the "
-"following instructions and the Signavio team cannot offer official support "
-"in case of an installation problem."
-msgstr ""
-"In general, it is possible to install Workflow Accelerator on other Linux "
-"distributions. However, the installation process can differ from the "
-"following instructions and the Signavio team cannot offer official support "
-"in case of an installation problem."
+msgid "In general, it is possible to install Workflow Accelerator on other Linux distributions. However, the installation process can differ from the following instructions and the Signavio team cannot offer official support in case of an installation problem."
+msgstr "In general, it is possible to install Workflow Accelerator on other Linux distributions. However, the installation process can differ from the following instructions and the Signavio team cannot offer official support in case of an installation problem."
 
 #: ../../installation.rst:20
-msgid ""
-"You are advised to use a 64-bit operating system in order to be able to "
-"assign more than 1.5GB of heap space to the Java VM. Furthermore, MongoDB is "
-"limited to 2GB of content on 32-bit operating systems."
-msgstr ""
-"You are advised to use a 64-bit operating system in order to be able to "
-"assign more than 1.5GB of heap space to the Java VM. Furthermore, MongoDB is "
-"limited to 2GB of content on 32-bit operating systems."
+msgid "You are advised to use a 64-bit operating system in order to be able to assign more than 1.5GB of heap space to the Java VM. Furthermore, MongoDB is limited to 2GB of content on 32-bit operating systems."
+msgstr "You are advised to use a 64-bit operating system in order to be able to assign more than 1.5GB of heap space to the Java VM. Furthermore, MongoDB is limited to 2GB of content on 32-bit operating systems."
 
 #: ../../installation.rst:24
 msgid "Hardware requirements"
 msgstr "Hardware requirements"
 
 #: ../../installation.rst:25
-msgid ""
-"The described installation in this adminstration guide will setup the "
-"database and the application server on the same system. However, it is also "
-"possible to setup the database and application server on separate systems. "
-"For instance, if you already have an infrastructure that provides MongoDB "
-"instances for different applications, you can simply reuse your "
-"infrastructure and just create another database for Workflow Accelerator."
-msgstr ""
-"The described installation in this adminstration guide will setup the "
-"database and the application server on the same system. However, it is also "
-"possible to setup the database and application server on separate systems. "
-"For instance, if you already have an infrastructure that provides MongoDB "
-"instances for different applications, you can simply reuse your "
-"infrastructure and just create another database for Workflow Accelerator."
+msgid "The described installation in this adminstration guide will setup the database and the application server on the same system. However, it is also possible to setup the database and application server on separate systems. For instance, if you already have an infrastructure that provides MongoDB instances for different applications, you can simply reuse your infrastructure and just create another database for Workflow Accelerator."
+msgstr "The described installation in this adminstration guide will setup the database and the application server on the same system. However, it is also possible to setup the database and application server on separate systems. For instance, if you already have an infrastructure that provides MongoDB instances for different applications, you can simply reuse your infrastructure and just create another database for Workflow Accelerator."
 
 #: ../../installation.rst:29
-msgid ""
-"The minimal hardware requirements for the combined system of application and "
-"database server are:"
-msgstr ""
-"The minimal hardware requirements for the combined system of application and "
-"database server are:"
+msgid "The minimal hardware requirements for the combined system of application and database server are:"
+msgstr "The minimal hardware requirements for the combined system of application and database server are:"
 
 #: ../../installation.rst:31
 msgid "8 GB RAM"
@@ -122,66 +80,32 @@ msgid "50 GB disk space"
 msgstr "50 GB disk space"
 
 #: ../../installation.rst:35
-msgid ""
-"The required disk space depends on how you will use Workflow Accelerator. 50 "
-"GB should be sufficient disk space for most scenarios. However, if you plan "
-"on using a lot of file uploads in your processes the required disk space "
-"depends largely on the number and size of the uploaded files."
-msgstr ""
-"The required disk space depends on how you will use Workflow Accelerator. 50 "
-"GB should be sufficient disk space for most scenarios. However, if you plan "
-"on using a lot of file uploads in your processes the required disk space "
-"depends largely on the number and size of the uploaded files."
+msgid "The required disk space depends on how you will use Workflow Accelerator. 50 GB should be sufficient disk space for most scenarios. However, if you plan on using a lot of file uploads in your processes the required disk space depends largely on the number and size of the uploaded files."
+msgstr "The required disk space depends on how you will use Workflow Accelerator. 50 GB should be sufficient disk space for most scenarios. However, if you plan on using a lot of file uploads in your processes the required disk space depends largely on the number and size of the uploaded files."
 
 #: ../../installation.rst:39
-msgid ""
-"Note that the required disk space does not include the space necessary for "
-"backups. If you plan on storing the backups on the same server, you should "
-"add more."
-msgstr ""
-"Note that the required disk space does not include the space necessary for "
-"backups. If you plan on storing the backups on the same server, you should "
-"add more."
+msgid "Note that the required disk space does not include the space necessary for backups. If you plan on storing the backups on the same server, you should add more."
+msgstr "Note that the required disk space does not include the space necessary for backups. If you plan on storing the backups on the same server, you should add more."
 
 #: ../../installation.rst:43
 msgid "Other systems"
 msgstr "Other systems"
 
 #: ../../installation.rst:44
-msgid ""
-"The Workflow Accelerator system relies on a SMTP mail server to send "
-"notifications and invite users. You can simply reuse any existing mail "
-"server in your organization that supports access via SMTP."
-msgstr ""
-"The Workflow Accelerator system relies on a SMTP mail server to send "
-"notifications and invite users. You can simply reuse any existing mail "
-"server in your organization that supports access via SMTP."
+msgid "The Workflow Accelerator system relies on a SMTP mail server to send notifications and invite users. You can simply reuse any existing mail server in your organization that supports access via SMTP."
+msgstr "The Workflow Accelerator system relies on a SMTP mail server to send notifications and invite users. You can simply reuse any existing mail server in your organization that supports access via SMTP."
 
 #: ../../installation.rst:48
 msgid "Software requirements"
 msgstr "Software requirements"
 
 #: ../../installation.rst:49
-msgid ""
-"In order to run Workflow Accelerator on your server, you will need to "
-"install some additional software. Depending on your deployment strategy "
-"(combined or separate system for application and database), you have to "
-"install the following required software either on the same server or the "
-"respective separate servers."
-msgstr ""
-"In order to run Workflow Accelerator on your server, you will need to "
-"install some additional software. Depending on your deployment strategy "
-"(combined or separate system for application and database), you have to "
-"install the following required software either on the same server or the "
-"respective separate servers."
+msgid "In order to run Workflow Accelerator on your server, you will need to install some additional software. Depending on your deployment strategy (combined or separate system for application and database), you have to install the following required software either on the same server or the respective separate servers."
+msgstr "In order to run Workflow Accelerator on your server, you will need to install some additional software. Depending on your deployment strategy (combined or separate system for application and database), you have to install the following required software either on the same server or the respective separate servers."
 
 #: ../../installation.rst:52
-msgid ""
-"The following sections contain detailed instructions on how to install and "
-"configure the additional software components."
-msgstr ""
-"The following sections contain detailed instructions on how to install and "
-"configure the additional software components."
+msgid "The following sections contain detailed instructions on how to install and configure the additional software components."
+msgstr "The following sections contain detailed instructions on how to install and configure the additional software components."
 
 #: ../../installation.rst:54
 msgid "The application server requires the following additional software:"
@@ -216,14 +140,8 @@ msgid "Web browser"
 msgstr "Web browser"
 
 #: ../../installation.rst:71
-msgid ""
-"A current web browser is necessary on every client that shall display the "
-"Workflow Accelerator user interface. The following list shows the supported "
-"web browsers and versions:"
-msgstr ""
-"A current web browser is necessary on every client that shall display the "
-"Workflow Accelerator user interface. The following list shows the supported "
-"web browsers and versions:"
+msgid "A current web browser is necessary on every client that shall display the Workflow Accelerator user interface. The following list shows the supported web browsers and versions:"
+msgstr "A current web browser is necessary on every client that shall display the Workflow Accelerator user interface. The following list shows the supported web browsers and versions:"
 
 #: ../../installation.rst:74
 msgid "Google Chrome 23 or newer"
@@ -246,16 +164,8 @@ msgid "Unpack Signavio Workflow Accelerator"
 msgstr "Unpack Signavio Workflow Accelerator"
 
 #: ../../unpack.rst:3
-msgid ""
-"Unzip the signavio-workflow-{version}.zip to a directory of your choice, e."
-"g. ``/yourlocation/signavio-workflow-{version}`` In the rest of this guide, "
-"we'll refer to the Workflow Accelerator home directory as ``$WORKFLOW_HOME``"
-"\\ . The directory will contain the following files:"
-msgstr ""
-"Unzip the signavio-workflow-{version}.zip to a directory of your choice, e."
-"g. ``/yourlocation/signavio-workflow-{version}`` In the rest of this guide, "
-"we'll refer to the Workflow Accelerator home directory as ``$WORKFLOW_HOME``"
-"\\ . The directory will contain the following files:"
+msgid "Unzip the signavio-workflow-{version}.zip to a directory of your choice, e.g. ``/yourlocation/signavio-workflow-{version}`` In the rest of this guide, we'll refer to the Workflow Accelerator home directory as ``$WORKFLOW_HOME``\\ . The directory will contain the following files:"
+msgstr "Unzip the signavio-workflow-{version}.zip to a directory of your choice, e.g. ``/yourlocation/signavio-workflow-{version}`` In the rest of this guide, we'll refer to the Workflow Accelerator home directory as ``$WORKFLOW_HOME``\\ . The directory will contain the following files:"
 
 #: ../../unpack.rst:7
 msgid "\\*.sh - Linux shell scripts"
@@ -294,28 +204,16 @@ msgid "ROOT - this directory contains the web application"
 msgstr "ROOT - this directory contains the web application"
 
 #: ../../unpack.rst:22
-msgid ""
-"On Linux systems you need to make the scripts executable with the ``chmod`` "
-"command like this: ::"
-msgstr ""
-"On Linux systems you need to make the scripts executable with the ``chmod`` "
-"command like this: ::"
+msgid "On Linux systems you need to make the scripts executable with the ``chmod`` command like this: ::"
+msgstr "On Linux systems you need to make the scripts executable with the ``chmod`` command like this: ::"
 
 #: ../../installation.rst:84
 msgid "Installing Java"
 msgstr "Installing Java"
 
 #: ../../installation.rst:85
-msgid ""
-"The application server requires a Java runtime environment in order to "
-"execute Workflow Accelerator’s Java backend. You must install Java 8 64-bit "
-"on the application server. Download an installation package for your "
-"operating system here:"
-msgstr ""
-"The application server requires a Java runtime environment in order to "
-"execute Workflow Accelerator’s Java backend. You must install Java 8 64-bit "
-"on the application server. Download an installation package for your "
-"operating system here:"
+msgid "The application server requires a Java runtime environment in order to execute Workflow Accelerator’s Java backend. You must install Java 8 64-bit on the application server. Download an installation package for your operating system here:"
+msgstr "The application server requires a Java runtime environment in order to execute Workflow Accelerator’s Java backend. You must install Java 8 64-bit on the application server. Download an installation package for your operating system here:"
 
 #: ../../installation.rst:89
 msgid "https://www.java.com/en/download/manual.jsp"
@@ -326,98 +224,52 @@ msgid "Installing Tomcat"
 msgstr "Installing Tomcat"
 
 #: ../../installation.rst:95
-msgid ""
-"The Java backend of the Workflow Accelerator system is executed using Apache "
-"Tomcat. Workflow Accelerator supports Apache Tomcat 64-bit versions 7 and 8. "
-"We recommend using the newer version Tomcat 8."
-msgstr ""
-"The Java backend of the Workflow Accelerator system is executed using Apache "
-"Tomcat. Workflow Accelerator supports Apache Tomcat 64-bit versions 7 and 8. "
-"We recommend using the newer version Tomcat 8."
+msgid "The Java backend of the Workflow Accelerator system is executed using Apache Tomcat. Workflow Accelerator supports Apache Tomcat 64-bit versions 7 and 8. We recommend using the newer version Tomcat 8."
+msgstr "The Java backend of the Workflow Accelerator system is executed using Apache Tomcat. Workflow Accelerator supports Apache Tomcat 64-bit versions 7 and 8. We recommend using the newer version Tomcat 8."
 
 #: ../../installation.rst:99
-msgid ""
-"You can download the latest installation files for different operating "
-"systems from the following site:"
-msgstr ""
-"You can download the latest installation files for different operating "
-"systems from the following site:"
+msgid "You can download the latest installation files for different operating systems from the following site:"
+msgstr "You can download the latest installation files for different operating systems from the following site:"
 
 #: ../../installation.rst:101
 msgid "http://tomcat.apache.org/download-80.cgi"
 msgstr "http://tomcat.apache.org/download-80.cgi"
 
 #: ../../installation.rst:103
-msgid ""
-"In general, please make sure the user executing the Tomcat has read/write "
-"permissions for the ``$TOMCAT_HOME/webapps`` directory and its sub-"
-"directories."
-msgstr ""
-"In general, please make sure the user executing the Tomcat has read/write "
-"permissions for the ``$TOMCAT_HOME/webapps`` directory and its sub-"
-"directories."
+msgid "In general, please make sure the user executing the Tomcat has read/write permissions for the ``$TOMCAT_HOME/webapps`` directory and its sub-directories."
+msgstr "In general, please make sure the user executing the Tomcat has read/write permissions for the ``$TOMCAT_HOME/webapps`` directory and its sub-directories."
 
 #: ../../installation.rst:106 ../../installation.rst:155
-#: ../../installation.rst:233 ../../installation.rst:375
-#: ../../installation.rst:431 ../../installation.rst:497
+#: ../../installation.rst:233 ../../installation.rst:376
+#: ../../installation.rst:432 ../../installation.rst:498
 msgid "Windows"
 msgstr "Windows"
 
 #: ../../installation.rst:107
-msgid ""
-"If you are using a Windows system, the download site offers a Windows "
-"Service Installer (“32-bit/64-bit Windows Service Installer”). This "
-"installer will install the Apache Tomcat as a Windows service which can be "
-"started, stopped and configured over a graphical user interface. The service "
-"installer is the recommended way for Windows users to install the Tomcat "
-"server. Please, make sure you execute the installer with administrator "
-"privileges."
-msgstr ""
-"If you are using a Windows system, the download site offers a Windows "
-"Service Installer (“32-bit/64-bit Windows Service Installer”). This "
-"installer will install the Apache Tomcat as a Windows service which can be "
-"started, stopped and configured over a graphical user interface. The service "
-"installer is the recommended way for Windows users to install the Tomcat "
-"server. Please, make sure you execute the installer with administrator "
-"privileges."
+msgid "If you are using a Windows system, the download site offers a Windows Service Installer (“32-bit/64-bit Windows Service Installer”). This installer will install the Apache Tomcat as a Windows service which can be started, stopped and configured over a graphical user interface. The service installer is the recommended way for Windows users to install the Tomcat server. Please, make sure you execute the installer with administrator privileges."
+msgstr "If you are using a Windows system, the download site offers a Windows Service Installer (“32-bit/64-bit Windows Service Installer”). This installer will install the Apache Tomcat as a Windows service which can be started, stopped and configured over a graphical user interface. The service installer is the recommended way for Windows users to install the Tomcat server. Please, make sure you execute the installer with administrator privileges."
 
 #: ../../installation.rst:112
-msgid ""
-"Furthermore, it is recommended to install the Apache Tomcat into a root "
-"directory on ``C:\\``\\ ."
-msgstr ""
-"Furthermore, it is recommended to install the Apache Tomcat into a root "
-"directory on ``C:\\``\\ ."
+msgid "Furthermore, it is recommended to install the Apache Tomcat into a root directory on ``C:\\``\\ ."
+msgstr "Furthermore, it is recommended to install the Apache Tomcat into a root directory on ``C:\\``\\ ."
 
 #: ../../installation.rst:115 ../../installation.rst:168
-#: ../../installation.rst:275 ../../installation.rst:395
-#: ../../installation.rst:440
+#: ../../installation.rst:275 ../../installation.rst:396
+#: ../../installation.rst:441
 msgid "Debian"
 msgstr "Debian"
 
 #: ../../installation.rst:116
-msgid ""
-"If you are using Linux, consider installing Apache Tomcat using a package "
-"manager. On Debian, you can use the Advanced Packaging Tool (APT) and "
-"execute one of the following commands: ::"
-msgstr ""
-"If you are using Linux, consider installing Apache Tomcat using a package "
-"manager. On Debian, you can use the Advanced Packaging Tool (APT) and "
-"execute one of the following commands: ::"
+msgid "If you are using Linux, consider installing Apache Tomcat using a package manager. On Debian, you can use the Advanced Packaging Tool (APT) and execute one of the following commands: ::"
+msgstr "If you are using Linux, consider installing Apache Tomcat using a package manager. On Debian, you can use the Advanced Packaging Tool (APT) and execute one of the following commands: ::"
 
 #: ../../installation.rst:123
 msgid "Configuring Tomcat"
 msgstr "Configuring Tomcat"
 
 #: ../../installation.rst:124
-msgid ""
-"This section will point the configuration options that are required to run "
-"Workflow Accelerator. However, Tomcat offers more configuration options that "
-"can be found in the official documentation:"
-msgstr ""
-"This section will point the configuration options that are required to run "
-"Workflow Accelerator. However, Tomcat offers more configuration options that "
-"can be found in the official documentation:"
+msgid "This section will point the configuration options that are required to run Workflow Accelerator. However, Tomcat offers more configuration options that can be found in the official documentation:"
+msgstr "This section will point the configuration options that are required to run Workflow Accelerator. However, Tomcat offers more configuration options that can be found in the official documentation:"
 
 #: ../../installation.rst:127
 msgid "http://tomcat.apache.org/tomcat-8.0-doc/"
@@ -428,14 +280,8 @@ msgid "Java options"
 msgstr "Java options"
 
 #: ../../installation.rst:131
-msgid ""
-"There are some Java options that need to be configured before starting the "
-"Tomcat server. These options are configured using the ``JAVA_OPTS`` "
-"environment variable. It should contain the following values:"
-msgstr ""
-"There are some Java options that need to be configured before starting the "
-"Tomcat server. These options are configured using the ``JAVA_OPTS`` "
-"environment variable. It should contain the following values:"
+msgid "There are some Java options that need to be configured before starting the Tomcat server. These options are configured using the ``JAVA_OPTS`` environment variable. It should contain the following values:"
+msgstr "There are some Java options that need to be configured before starting the Tomcat server. These options are configured using the ``JAVA_OPTS`` environment variable. It should contain the following values:"
 
 #: ../../installation.rst:136
 msgid "``-Xms1536m``"
@@ -478,208 +324,84 @@ msgid "maximum permanent generation space in MB"
 msgstr "maximum permanent generation space in MB"
 
 #: ../../installation.rst:147
-msgid ""
-"In order to allocate sufficient RAM to the Tomcat server you have to set the "
-"``Xms`` and ``Xmx`` options, followed by the number of MB allocated and a "
-"literal ``m``. ``Xms`` defines the initial/minimum amount of RAM that is "
-"used and ``Xmx`` the allowed maximum. You are advised to allocate at least "
-"2GB of RAM to the Tomcat. However, it is recommended to use more RAM. For "
-"example, if you want to assign 4GB of maximum RAM the option would be ``-"
-"Xmx4096m``\\ ."
-msgstr ""
-"In order to allocate sufficient RAM to the Tomcat server you have to set the "
-"``Xms`` and ``Xmx`` options, followed by the number of MB allocated and a "
-"literal ``m``. ``Xms`` defines the initial/minimum amount of RAM that is "
-"used and ``Xmx`` the allowed maximum. You are advised to allocate at least "
-"2GB of RAM to the Tomcat. However, it is recommended to use more RAM. For "
-"example, if you want to assign 4GB of maximum RAM the option would be ``-"
-"Xmx4096m``\\ ."
+msgid "In order to allocate sufficient RAM to the Tomcat server you have to set the ``Xms`` and ``Xmx`` options, followed by the number of MB allocated and a literal ``m``. ``Xms`` defines the initial/minimum amount of RAM that is used and ``Xmx`` the allowed maximum. You are advised to allocate at least 2GB of RAM to the Tomcat. However, it is recommended to use more RAM. For example, if you want to assign 4GB of maximum RAM the option would be ``-Xmx4096m``\\ ."
+msgstr "In order to allocate sufficient RAM to the Tomcat server you have to set the ``Xms`` and ``Xmx`` options, followed by the number of MB allocated and a literal ``m``. ``Xms`` defines the initial/minimum amount of RAM that is used and ``Xmx`` the allowed maximum. You are advised to allocate at least 2GB of RAM to the Tomcat. However, it is recommended to use more RAM. For example, if you want to assign 4GB of maximum RAM the option would be ``-Xmx4096m``\\ ."
 
 #: ../../installation.rst:152
-msgid ""
-"The values for the permanent generation space have to be increased as well, "
-"these are defined by the values ``-XX:PermSize=128m`` and ``-XX:"
-"MaxPermSize=256m``\\ ."
-msgstr ""
-"The values for the permanent generation space have to be increased as well, "
-"these are defined by the values ``-XX:PermSize=128m`` and ``-XX:"
-"MaxPermSize=256m``\\ ."
+msgid "The values for the permanent generation space have to be increased as well, these are defined by the values ``-XX:PermSize=128m`` and ``-XX:MaxPermSize=256m``\\ ."
+msgstr "The values for the permanent generation space have to be increased as well, these are defined by the values ``-XX:PermSize=128m`` and ``-XX:MaxPermSize=256m``\\ ."
 
 #: ../../installation.rst:156
-msgid ""
-"If you installed Tomcat using the Windows service installer, you can open "
-"the configuration dialog by opening the Windows start menu and selecting "
-"``Program Files\\Apache Tomcat\\Configure Tomcat``\\ ."
-msgstr ""
-"If you installed Tomcat using the Windows service installer, you can open "
-"the configuration dialog by opening the Windows start menu and selecting "
-"``Program Files\\Apache Tomcat\\Configure Tomcat``\\ ."
+msgid "If you installed Tomcat using the Windows service installer, you can open the configuration dialog by opening the Windows start menu and selecting ``Program Files\\Apache Tomcat\\Configure Tomcat``\\ ."
+msgstr "If you installed Tomcat using the Windows service installer, you can open the configuration dialog by opening the Windows start menu and selecting ``Program Files\\Apache Tomcat\\Configure Tomcat``\\ ."
 
 #: ../../installation.rst:162
 msgid "The Java tab of the Tomcat configuration dialog"
 msgstr "The Java tab of the Tomcat configuration dialog"
 
 #: ../../installation.rst:164
-msgid ""
-"The tab Java offers the possibility to set the options and define the memory "
-"pool (minimum and maximum RAM usage). Fill in the values for Xms and Xmx "
-"into the fields for memory pool and add the other options to the text area "
-"labeled as Java Options."
-msgstr ""
-"The tab Java offers the possibility to set the options and define the memory "
-"pool (minimum and maximum RAM usage). Fill in the values for Xms and Xmx "
-"into the fields for memory pool and add the other options to the text area "
-"labeled as Java Options."
+msgid "The tab Java offers the possibility to set the options and define the memory pool (minimum and maximum RAM usage). Fill in the values for Xms and Xmx into the fields for memory pool and add the other options to the text area labeled as Java Options."
+msgstr "The tab Java offers the possibility to set the options and define the memory pool (minimum and maximum RAM usage). Fill in the values for Xms and Xmx into the fields for memory pool and add the other options to the text area labeled as Java Options."
 
 #: ../../installation.rst:169
-msgid ""
-"One way to define the ``JAVA_OPTS`` under Debian and other Linux "
-"distributions is to create the file ``setenv.sh`` in the Tomcat ``/bin/`` "
-"directory. This directory contains also other files like the ``catalina.sh``"
-"\\ , the ``startup.sh`` or the ``shutdown.sh`` und is for instance located "
-"in ``/usr/share/tomcat8`` or a similar directory. Simply create or extend "
-"any existing setenv.sh file and add the line for ``the JAVA_OPTS``\\ : ::"
-msgstr ""
-"One way to define the ``JAVA_OPTS`` under Debian and other Linux "
-"distributions is to create the file ``setenv.sh`` in the Tomcat ``/bin/`` "
-"directory. This directory contains also other files like the ``catalina.sh``"
-"\\ , the ``startup.sh`` or the ``shutdown.sh`` und is for instance located "
-"in ``/usr/share/tomcat8`` or a similar directory. Simply create or extend "
-"any existing setenv.sh file and add the line for ``the JAVA_OPTS``\\ : ::"
+msgid "One way to define the ``JAVA_OPTS`` under Debian and other Linux distributions is to create the file ``setenv.sh`` in the Tomcat ``/bin/`` directory. This directory contains also other files like the ``catalina.sh``\\ , the ``startup.sh`` or the ``shutdown.sh`` und is for instance located in ``/usr/share/tomcat8`` or a similar directory. Simply create or extend any existing setenv.sh file and add the line for ``the JAVA_OPTS``\\ : ::"
+msgstr "One way to define the ``JAVA_OPTS`` under Debian and other Linux distributions is to create the file ``setenv.sh`` in the Tomcat ``/bin/`` directory. This directory contains also other files like the ``catalina.sh``\\ , the ``startup.sh`` or the ``shutdown.sh`` und is for instance located in ``/usr/share/tomcat8`` or a similar directory. Simply create or extend any existing setenv.sh file and add the line for ``the JAVA_OPTS``\\ : ::"
 
 #: ../../installation.rst:175
-msgid ""
-"In case you have created a new ``setenv.sh`` file, you have to make sure it "
-"is executable using the ``chmod`` command: ::"
-msgstr ""
-"In case you have created a new ``setenv.sh`` file, you have to make sure it "
-"is executable using the ``chmod`` command: ::"
+msgid "In case you have created a new ``setenv.sh`` file, you have to make sure it is executable using the ``chmod`` command: ::"
+msgstr "In case you have created a new ``setenv.sh`` file, you have to make sure it is executable using the ``chmod`` command: ::"
 
 #: ../../installation.rst:180
 msgid "Setup the Tomcat connector"
 msgstr "Setup the Tomcat connector"
 
 #: ../../installation.rst:181
-msgid ""
-"By default the Tomcat server will start up using port 8080 and 8005. Port "
-"8080 is used for serving the Workflow Accelerator web application. Port 8005 "
-"is used to shutdown the Tomcat instance. You can change the port in the "
-"server.xml which is located in ``$TOMCAT_HOME/conf/server.xml``\\ ."
-msgstr ""
-"By default the Tomcat server will start up using port 8080 and 8005. Port "
-"8080 is used for serving the Workflow Accelerator web application. Port 8005 "
-"is used to shutdown the Tomcat instance. You can change the port in the "
-"server.xml which is located in ``$TOMCAT_HOME/conf/server.xml``\\ ."
+msgid "By default the Tomcat server will start up using port 8080 and 8005. Port 8080 is used for serving the Workflow Accelerator web application. Port 8005 is used to shutdown the Tomcat instance. You can change the port in the server.xml which is located in ``$TOMCAT_HOME/conf/server.xml``\\ ."
+msgstr "By default the Tomcat server will start up using port 8080 and 8005. Port 8080 is used for serving the Workflow Accelerator web application. Port 8005 is used to shutdown the Tomcat instance. You can change the port in the server.xml which is located in ``$TOMCAT_HOME/conf/server.xml``\\ ."
 
 #: ../../installation.rst:185
-msgid ""
-"If the server is running on any other port than port 80, your users will "
-"have to enter the port in the address line of the web browser, e.g. http://"
-"workflow.yourdomain.com:8080/\\ ."
-msgstr ""
-"If the server is running on any other port than port 80, your users will "
-"have to enter the port in the address line of the web browser, e.g. http://"
-"workflow.yourdomain.com:8080/\\ ."
+msgid "If the server is running on any other port than port 80, your users will have to enter the port in the address line of the web browser, e.g. http://workflow.yourdomain.com:8080/\\ ."
+msgstr "If the server is running on any other port than port 80, your users will have to enter the port in the address line of the web browser, e.g. http://workflow.yourdomain.com:8080/\\ ."
 
 #: ../../installation.rst:187
-msgid ""
-"Locate the HTTP connector and change the value of port to your preferred "
-"port. Furthermore, make sure the connector contains the entry ``URIEnconding="
-"\"UTF-8\"``\\ . For example, the connector could look like this:"
-msgstr ""
-"Locate the HTTP connector and change the value of port to your preferred "
-"port. Furthermore, make sure the connector contains the entry ``URIEnconding="
-"\"UTF-8\"``\\ . For example, the connector could look like this:"
+msgid "Locate the HTTP connector and change the value of port to your preferred port. Furthermore, make sure the connector contains the entry ``URIEnconding=\"UTF-8\"``\\ . For example, the connector could look like this:"
+msgstr "Locate the HTTP connector and change the value of port to your preferred port. Furthermore, make sure the connector contains the entry ``URIEnconding=\"UTF-8\"``\\ . For example, the connector could look like this:"
 
 #: ../../installation.rst:199
 msgid "Installing the Workflow Accelerator web application"
 msgstr "Installing the Workflow Accelerator web application"
 
 #: ../../installation.rst:200
-msgid ""
-"The Workflow Accelerator web application, which can be found in the "
-"directory ``$WORKFLOW_HOME/workflow/ROOT``, needs to be copied to the "
-"Tomcat’s ``webapps`` directory. Remove any files and directories that are "
-"located in ``$TOMCAT_HOME/webapps`` and copy the ``ROOT`` directory to ``"
-"$TOMCAT_HOME/webapps/``\\ ."
-msgstr ""
-"The Workflow Accelerator web application, which can be found in the "
-"directory ``$WORKFLOW_HOME/workflow/ROOT``, needs to be copied to the "
-"Tomcat’s ``webapps`` directory. Remove any files and directories that are "
-"located in ``$TOMCAT_HOME/webapps`` and copy the ``ROOT`` directory to ``"
-"$TOMCAT_HOME/webapps/``\\ ."
+msgid "The Workflow Accelerator web application, which can be found in the directory ``$WORKFLOW_HOME/workflow/ROOT``, needs to be copied to the Tomcat’s ``webapps`` directory. Remove any files and directories that are located in ``$TOMCAT_HOME/webapps`` and copy the ``ROOT`` directory to ``$TOMCAT_HOME/webapps/``\\ ."
+msgstr "The Workflow Accelerator web application, which can be found in the directory ``$WORKFLOW_HOME/workflow/ROOT``, needs to be copied to the Tomcat’s ``webapps`` directory. Remove any files and directories that are located in ``$TOMCAT_HOME/webapps`` and copy the ``ROOT`` directory to ``$TOMCAT_HOME/webapps/``\\ ."
 
 #: ../../installation.rst:203
-msgid ""
-"The Workflow Accelerator application needs to run as the ROOT application in "
-"the Tomcat. Running it in parallel with another application that requires to "
-"run as the ROOT application in the same Tomcat is currently not possible."
-msgstr ""
-"The Workflow Accelerator application needs to run as the ROOT application in "
-"the Tomcat. Running it in parallel with another application that requires to "
-"run as the ROOT application in the same Tomcat is currently not possible."
+msgid "The Workflow Accelerator application needs to run as the ROOT application in the Tomcat. Running it in parallel with another application that requires to run as the ROOT application in the same Tomcat is currently not possible."
+msgstr "The Workflow Accelerator application needs to run as the ROOT application in the Tomcat. Running it in parallel with another application that requires to run as the ROOT application in the same Tomcat is currently not possible."
 
 #: ../../installation.rst:209
 msgid "Installing MongoDB"
 msgstr "Installing MongoDB"
 
 #: ../../installation.rst:210
-msgid ""
-"MongoDB is currently the only database system that Workflow Accelerator "
-"supports. If you already have an infrastructure that can provide a MongoDB "
-"version 3.4.x instance, simply create a new instance for Workflow "
-"Accelerator and skip to :ref:`configure-mongodb`. Otherwise continue with "
-"the installation instructions."
-msgstr ""
-"MongoDB is currently the only database system that Workflow Accelerator "
-"supports. If you already have an infrastructure that can provide a MongoDB "
-"version 3.4.x instance, simply create a new instance for Workflow "
-"Accelerator and skip to :ref:`configure-mongodb`. Otherwise continue with "
-"the installation instructions."
+msgid "MongoDB is currently the only database system that Workflow Accelerator supports. If you already have an infrastructure that can provide a MongoDB version 3.4.x instance, simply create a new instance for Workflow Accelerator and skip to :ref:`configure-mongodb`. Otherwise continue with the installation instructions."
+msgstr "MongoDB is currently the only database system that Workflow Accelerator supports. If you already have an infrastructure that can provide a MongoDB version 3.4.x instance, simply create a new instance for Workflow Accelerator and skip to :ref:`configure-mongodb`. Otherwise continue with the installation instructions."
 
 #: ../../installation.rst:214
-msgid ""
-"General information about installing MongoDB on different operating systems "
-"can be found at:"
-msgstr ""
-"General information about installing MongoDB on different operating systems "
-"can be found at:"
+msgid "General information about installing MongoDB on different operating systems can be found at:"
+msgstr "General information about installing MongoDB on different operating systems can be found at:"
 
 #: ../../installation.rst:216
 msgid "https://docs.mongodb.com/manual/installation/"
 msgstr "https://docs.mongodb.com/manual/installation/"
 
 #: ../../installation.rst:218
-msgid ""
-"There are two versions of MongoDB, *MongoDB Community Edition* and *MongoDB "
-"Enterprise*. *MongoDB Community Edition* can be used free of charge even in "
-"a commercial context, whereas *MongoDB Enterprise* is a commercial product "
-"that offers additional tooling and support. You can use either version with "
-"Workflow Accelerator."
-msgstr ""
-"There are two versions of MongoDB, *MongoDB Community Edition* and *MongoDB "
-"Enterprise*. *MongoDB Community Edition* can be used free of charge even in "
-"a commercial context, whereas *MongoDB Enterprise* is a commercial product "
-"that offers additional tooling and support. You can use either version with "
-"Workflow Accelerator."
+msgid "There are two versions of MongoDB, *MongoDB Community Edition* and *MongoDB Enterprise*. *MongoDB Community Edition* can be used free of charge even in a commercial context, whereas *MongoDB Enterprise* is a commercial product that offers additional tooling and support. You can use either version with Workflow Accelerator."
+msgstr "There are two versions of MongoDB, *MongoDB Community Edition* and *MongoDB Enterprise*. *MongoDB Community Edition* can be used free of charge even in a commercial context, whereas *MongoDB Enterprise* is a commercial product that offers additional tooling and support. You can use either version with Workflow Accelerator."
 
 #: ../../installation.rst:222
-msgid ""
-"In case you are using Linux, you have the possibilities to install MongoDB "
-"using either a package manager like ``apt-get`` or downloading the binaries "
-"directly. It is recommened to use the package manager because it will also "
-"setup scripts that allow you to start and stop the server easily. However, "
-"you have to make sure the correct version is installed. :ref:`install-"
-"mongodb-debian` explains in more details how to setup MongoDB on Debian and "
-"might work as an example for other Linux distributions."
-msgstr ""
-"In case you are using Linux, you have the possibilities to install MongoDB "
-"using either a package manager like ``apt-get`` or downloading the binaries "
-"directly. It is recommened to use the package manager because it will also "
-"setup scripts that allow you to start and stop the server easily. However, "
-"you have to make sure the correct version is installed. :ref:`install-"
-"mongodb-debian` explains in more details how to setup MongoDB on Debian and "
-"might work as an example for other Linux distributions."
+msgid "In case you are using Linux, you have the possibilities to install MongoDB using either a package manager like ``apt-get`` or downloading the binaries directly. It is recommened to use the package manager because it will also setup scripts that allow you to start and stop the server easily. However, you have to make sure the correct version is installed. :ref:`install-mongodb-debian` explains in more details how to setup MongoDB on Debian and might work as an example for other Linux distributions."
+msgstr "In case you are using Linux, you have the possibilities to install MongoDB using either a package manager like ``apt-get`` or downloading the binaries directly. It is recommened to use the package manager because it will also setup scripts that allow you to start and stop the server easily. However, you have to make sure the correct version is installed. :ref:`install-mongodb-debian` explains in more details how to setup MongoDB on Debian and might work as an example for other Linux distributions."
 
 #: ../../installation.rst:227
 msgid "Remarks for downloading the binaries"
@@ -694,22 +416,12 @@ msgid "https://www.mongodb.com/download-center"
 msgstr "https://www.mongodb.com/download-center"
 
 #: ../../installation.rst:234
-msgid ""
-"Windows requires you to download the binaries. Consider the remarks of the "
-"last subsection when doing so. If you are using any version older than "
-"Windows Server 2008 R2, you have to download the 64-bit legacy release."
-msgstr ""
-"Windows requires you to download the binaries. Consider the remarks of the "
-"last subsection when doing so. If you are using any version older than "
-"Windows Server 2008 R2, you have to download the 64-bit legacy release."
+msgid "Windows requires you to download the binaries. Consider the remarks of the last subsection when doing so. If you are using any version older than Windows Server 2008 R2, you have to download the 64-bit legacy release."
+msgstr "Windows requires you to download the binaries. Consider the remarks of the last subsection when doing so. If you are using any version older than Windows Server 2008 R2, you have to download the 64-bit legacy release."
 
 #: ../../installation.rst:238
-msgid ""
-"You can find more details about installing MongoDB on Windows in the "
-"documentation:"
-msgstr ""
-"You can find more details about installing MongoDB on Windows in the "
-"documentation:"
+msgid "You can find more details about installing MongoDB on Windows in the documentation:"
+msgstr "You can find more details about installing MongoDB on Windows in the documentation:"
 
 #: ../../installation.rst:240
 msgid "https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/"
@@ -720,1335 +432,714 @@ msgid "When you finished downloading MongoDB follow the next steps:"
 msgstr "When you finished downloading MongoDB follow the next steps:"
 
 #: ../../installation.rst:244
-msgid ""
-"Start the installation by double-clicking the downloaded MongoDB ``.msi`` "
-"and following the instructions."
-msgstr ""
-"Start the installation by double-clicking the downloaded MongoDB ``.msi`` "
-"and following the instructions."
+msgid "Start the installation by double-clicking the downloaded MongoDB ``.msi`` and following the instructions."
+msgstr "Start the installation by double-clicking the downloaded MongoDB ``.msi`` and following the instructions."
 
 #: ../../installation.rst:246
-msgid ""
-"You can select another install directory, e.g. ``C:\\MongoDB``, if you "
-"choose the *Custom* installation option."
-msgstr ""
-"You can select another install directory, e.g. ``C:\\MongoDB``, if you "
-"choose the *Custom* installation option."
+msgid "You can select another install directory, e.g. ``C:\\MongoDB``, if you choose the *Custom* installation option."
+msgstr "You can select another install directory, e.g. ``C:\\MongoDB``, if you choose the *Custom* installation option."
 
 #: ../../installation.rst:248
-msgid ""
-"Create a data directory for the MongoDB files, e.g. ``C:\\MongoDB\\data``\\ ."
-msgstr ""
-"Create a data directory for the MongoDB files, e.g. ``C:\\MongoDB\\data``\\ ."
+msgid "Create a data directory for the MongoDB files, e.g. ``C:\\MongoDB\\data``\\ ."
+msgstr "Create a data directory for the MongoDB files, e.g. ``C:\\MongoDB\\data``\\ ."
 
 #: ../../installation.rst:250
-msgid ""
-"This directory will need the most disk space. Make sure the drive has "
-"sufficient disk space."
-msgstr ""
-"This directory will need the most disk space. Make sure the drive has "
-"sufficient disk space."
+msgid "This directory will need the most disk space. Make sure the drive has sufficient disk space."
+msgstr "This directory will need the most disk space. Make sure the drive has sufficient disk space."
 
 #: ../../installation.rst:252
-msgid ""
-"Create a logs directory for the MongoDB log files, e.g. ``C:\\MongoDB\\logs``"
-"\\ ."
-msgstr ""
-"Create a logs directory for the MongoDB log files, e.g. ``C:\\MongoDB\\logs``"
-"\\ ."
+msgid "Create a logs directory for the MongoDB log files, e.g. ``C:\\MongoDB\\logs``\\ ."
+msgstr "Create a logs directory for the MongoDB log files, e.g. ``C:\\MongoDB\\logs``\\ ."
 
 #: ../../installation.rst:253
-msgid ""
-"Copy the file ``$WORKFLOW_HOME\\db\\mongod.cfg`` to your MongoDB directory "
-"``C:\\MongoDB\\mongod.cfg`` and edit the file."
-msgstr ""
-"Copy the file ``$WORKFLOW_HOME\\db\\mongod.cfg`` to your MongoDB directory "
-"``C:\\MongoDB\\mongod.cfg`` and edit the file."
+msgid "Copy the file ``$WORKFLOW_HOME\\db\\mongod.cfg`` to your MongoDB directory ``C:\\MongoDB\\mongod.cfg`` and edit the file."
+msgstr "Copy the file ``$WORKFLOW_HOME\\db\\mongod.cfg`` to your MongoDB directory ``C:\\MongoDB\\mongod.cfg`` and edit the file."
 
 #: ../../installation.rst:255
-msgid ""
-"The ``dbPath`` under ``storage`` must contain the absolute path to the data "
-"directory, e.g. ``C:\\MongoDB\\data``\\ ."
-msgstr ""
-"The ``dbPath`` under ``storage`` must contain the absolute path to the data "
-"directory, e.g. ``C:\\MongoDB\\data``\\ ."
+msgid "The ``dbPath`` under ``storage`` must contain the absolute path to the data directory, e.g. ``C:\\MongoDB\\data``\\ ."
+msgstr "The ``dbPath`` under ``storage`` must contain the absolute path to the data directory, e.g. ``C:\\MongoDB\\data``\\ ."
 
 #: ../../installation.rst:256
-msgid ""
-"The ``path`` under ``systemLog`` must contain the absolute path to the log "
-"file, e.g. ``C:\\MongoDB\\logs\\mongodb.log``\\ . The log file will be "
-"created once MongoDB is started."
-msgstr ""
-"The ``path`` under ``systemLog`` must contain the absolute path to the log "
-"file, e.g. ``C:\\MongoDB\\logs\\mongodb.log``\\ . The log file will be "
-"created once MongoDB is started."
+msgid "The ``path`` under ``systemLog`` must contain the absolute path to the log file, e.g. ``C:\\MongoDB\\logs\\mongodb.log``\\ . The log file will be created once MongoDB is started."
+msgstr "The ``path`` under ``systemLog`` must contain the absolute path to the log file, e.g. ``C:\\MongoDB\\logs\\mongodb.log``\\ . The log file will be created once MongoDB is started."
 
 #: ../../installation.rst:257
-msgid ""
-"The configuration file needs to be in a valid `YAML <http://yaml.org>`_ "
-"format. You can use an online checker like `YAML Lint <http://www.yamllint."
-"com/>`_ to verify the validity."
-msgstr ""
-"The configuration file needs to be in a valid `YAML <http://yaml.org>`_ "
-"format. You can use an online checker like `YAML Lint <http://www.yamllint."
-"com/>`_ to verify the validity."
+msgid "The configuration file needs to be in a valid `YAML <http://yaml.org>`_ format. You can use an online checker like `YAML Lint <http://www.yamllint.com/>`_ to verify the validity."
+msgstr "The configuration file needs to be in a valid `YAML <http://yaml.org>`_ format. You can use an online checker like `YAML Lint <http://www.yamllint.com/>`_ to verify the validity."
 
 #: ../../installation.rst:258
-msgid ""
-"See :ref:`configure-mongodb` for more information about the other "
-"configuration values."
-msgstr ""
-"See :ref:`configure-mongodb` for more information about the other "
-"configuration values."
+msgid "See :ref:`configure-mongodb` for more information about the other configuration values."
+msgstr "See :ref:`configure-mongodb` for more information about the other configuration values."
 
 #: ../../installation.rst:260
-msgid ""
-"Open the command line ``cmd`` with administrative privileges and execute the "
-"following command. Make sure to use absolute paths and replace them with the "
-"matching ones on your system."
-msgstr ""
-"Open the command line ``cmd`` with administrative privileges and execute the "
-"following command. Make sure to use absolute paths and replace them with the "
-"matching ones on your system."
+msgid "Open the command line ``cmd`` with administrative privileges and execute the following command. Make sure to use absolute paths and replace them with the matching ones on your system."
+msgstr "Open the command line ``cmd`` with administrative privileges and execute the following command. Make sure to use absolute paths and replace them with the matching ones on your system."
 
 #: ../../installation.rst:262
-msgid ""
-"``C:\\MongoDB\\bin\\mongod.exe --config C:\\MongoDB\\mongod.cfg --install``"
-msgstr ""
-"``C:\\MongoDB\\bin\\mongod.exe --config C:\\MongoDB\\mongod.cfg --install``"
+msgid "``C:\\MongoDB\\bin\\mongod.exe --config C:\\MongoDB\\mongod.cfg --install``"
+msgstr "``C:\\MongoDB\\bin\\mongod.exe --config C:\\MongoDB\\mongod.cfg --install``"
 
 #: ../../installation.rst:263
-msgid ""
-"The command line should tell you that the service MongoDB was properly "
-"created."
-msgstr ""
-"The command line should tell you that the service MongoDB was properly "
-"created."
+msgid "The command line should tell you that the service MongoDB was properly created."
+msgstr "The command line should tell you that the service MongoDB was properly created."
 
 #: ../../installation.rst:264
-msgid ""
-"You can unregister the service again by executing: ``C:\\MongoDB\\bin"
-"\\mongod.exe --remove``"
-msgstr ""
-"You can unregister the service again by executing: ``C:\\MongoDB\\bin"
-"\\mongod.exe --remove``"
+msgid "You can unregister the service again by executing: ``C:\\MongoDB\\bin\\mongod.exe --remove``"
+msgstr "You can unregister the service again by executing: ``C:\\MongoDB\\bin\\mongod.exe --remove``"
 
 #: ../../installation.rst:265
-msgid ""
-"The registered service should start MongoDB automatically on startup of "
-"Windows."
-msgstr ""
-"The registered service should start MongoDB automatically on startup of "
-"Windows."
+msgid "The registered service should start MongoDB automatically on startup of Windows."
+msgstr "The registered service should start MongoDB automatically on startup of Windows."
 
 #: ../../installation.rst:267
-msgid ""
-"You can now start MongoDB by executing the following command: ``net start "
-"MongoDB``"
-msgstr ""
-"You can now start MongoDB by executing the following command: ``net start "
-"MongoDB``"
+msgid "You can now start MongoDB by executing the following command: ``net start MongoDB``"
+msgstr "You can now start MongoDB by executing the following command: ``net start MongoDB``"
 
 #: ../../installation.rst:269
 msgid "You can stop MongoDB by calling: ``net stop MongoDB``"
 msgstr "You can stop MongoDB by calling: ``net stop MongoDB``"
 
 #: ../../installation.rst:270
-msgid ""
-"The service is also listed in the services window that can be opened by "
-"running ``services.msc``\\ ."
-msgstr ""
-"The service is also listed in the services window that can be opened by "
-"running ``services.msc``\\ ."
+msgid "The service is also listed in the services window that can be opened by running ``services.msc``\\ ."
+msgstr "The service is also listed in the services window that can be opened by running ``services.msc``\\ ."
 
 #: ../../installation.rst:276
-msgid ""
-"If you are installing MongoDB on a Debian system, you are advised to use the "
-"method described in the MongoDB configuration:"
-msgstr ""
-"If you are installing MongoDB on a Debian system, you are advised to use the "
-"method described in the MongoDB configuration:"
+msgid "If you are installing MongoDB on a Debian system, you are advised to use the method described in the MongoDB configuration:"
+msgstr "If you are installing MongoDB on a Debian system, you are advised to use the method described in the MongoDB configuration:"
 
 #: ../../installation.rst:278
-msgid "https://docs.mongodb.org/manual/tutorial/install-mongodb-on-debian/"
-msgstr "https://docs.mongodb.org/manual/tutorial/install-mongodb-on-debian/"
+msgid "https://docs.mongodb.com/manual/tutorial/install-mongodb-on-debian/"
+msgstr "https://docs.mongodb.com/manual/tutorial/install-mongodb-on-debian/"
 
 #: ../../installation.rst:280
-msgid ""
-"For convenience, the script ``$WORKFLOW_HOME/mongodb.install.debian.sh`` "
-"wraps the necessary commands for installing the correct version of MongoDB "
-"on *Debian 7 Wheezy* using ``apt-get``. Simply execute it from the command "
-"line by opening ``$WORKFLOW_HOME`` and calling: ::"
-msgstr ""
-"For convenience, the script ``$WORKFLOW_HOME/mongodb.install.debian.sh`` "
-"wraps the necessary commands for installing the correct version of MongoDB "
-"on *Debian 7 Wheezy* using ``apt-get``. Simply execute it from the command "
-"line by opening ``$WORKFLOW_HOME`` and calling: ::"
+msgid "For convenience, the script ``$WORKFLOW_HOME/mongodb.install.debian.sh`` wraps the necessary commands for installing the correct version of MongoDB on *Debian 8 Jessie* using ``apt-get``. Simply execute it from the command line by opening ``$WORKFLOW_HOME`` and calling: ::"
+msgstr "For convenience, the script ``$WORKFLOW_HOME/mongodb.install.debian.sh`` wraps the necessary commands for installing the correct version of MongoDB on *Debian 8 Jessie* using ``apt-get``. Simply execute it from the command line by opening ``$WORKFLOW_HOME`` and calling: ::"
 
 #: ../../installation.rst:285
-msgid ""
-"This will add the MongoDB repositories to your package sources and install "
-"the version 3.2.x of MongoDB. Note that this script only works with Debian 7 "
-"Wheezy. You can now simply start and stop the MongoDB server by calling ::"
-msgstr ""
-"This will add the MongoDB repositories to your package sources and install "
-"the version 3.2.x of MongoDB. Note that this script only works with Debian 7 "
-"Wheezy. You can now simply start and stop the MongoDB server by calling ::"
+msgid "This will add the MongoDB repositories to your package sources and install the version 3.4.x of MongoDB. Note that this script only works with Debian 8 Jessie. The official documentation offers instructions for Debian 7 Wheezy as well. You can now simply start and stop the MongoDB server by calling ::"
+msgstr "This will add the MongoDB repositories to your package sources and install the version 3.4.x of MongoDB. Note that this script only works with Debian 8 Jessie. The official documentation offers instructions for Debian 7 Wheezy as well. You can now simply start and stop the MongoDB server by calling ::"
 
-#: ../../installation.rst:291
+#: ../../installation.rst:292
 msgid "or ::"
 msgstr "or ::"
 
-#: ../../installation.rst:295
-msgid ""
-"The server will use the default configuration file ``/etc/mongod.conf``\\ . "
-"See the next subsection for more information on how to configure MongoDB for "
-"Workflow Accelerator and create the required user. Note that the "
-"installation probably already started the MongoDB server. You will need to "
-"restart the MongoDB server after you edit the configuration."
-msgstr ""
-"The server will use the default configuration file ``/etc/mongod.conf``\\ . "
-"See the next subsection for more information on how to configure MongoDB for "
-"Workflow Accelerator and create the required user. Note that the "
-"installation probably already started the MongoDB server. You will need to "
-"restart the MongoDB server after you edit the configuration."
+#: ../../installation.rst:296
+msgid "The server will use the default configuration file ``/etc/mongod.conf``\\ . See the next subsection for more information on how to configure MongoDB for Workflow Accelerator and create the required user. Note that the installation probably already started the MongoDB server. You will need to restart the MongoDB server after you edit the configuration."
+msgstr "The server will use the default configuration file ``/etc/mongod.conf``\\ . See the next subsection for more information on how to configure MongoDB for Workflow Accelerator and create the required user. Note that the installation probably already started the MongoDB server. You will need to restart the MongoDB server after you edit the configuration."
 
-#: ../../installation.rst:303
+#: ../../installation.rst:304
 msgid "Configuring MongoDB"
 msgstr "Configuring MongoDB"
 
-#: ../../installation.rst:304
-msgid ""
-"In order to run MongoDB properly, some configuration options have to be "
-"defined. The easiest solution is to create a configuration file and link "
-"this configuration file when starting MongoDB with the ``--config`` option. "
-"The MongoDB configuration uses the `YAML <http://yaml.org>`_ format, you can "
-"use an online checker like `YAML Lint <http://www.yamllint.com/>`_ to verify "
-"that your configuration file has the proper format."
-msgstr ""
-"In order to run MongoDB properly, some configuration options have to be "
-"defined. The easiest solution is to create a configuration file and link "
-"this configuration file when starting MongoDB with the ``--config`` option. "
-"The MongoDB configuration uses the `YAML <http://yaml.org>`_ format, you can "
-"use an online checker like `YAML Lint <http://www.yamllint.com/>`_ to verify "
-"that your configuration file has the proper format."
+#: ../../installation.rst:305
+msgid "In order to run MongoDB properly, some configuration options have to be defined. The easiest solution is to create a configuration file and link this configuration file when starting MongoDB with the ``--config`` option. The MongoDB configuration uses the `YAML <http://yaml.org>`_ format, you can use an online checker like `YAML Lint <http://www.yamllint.com/>`_ to verify that your configuration file has the proper format."
+msgstr "In order to run MongoDB properly, some configuration options have to be defined. The easiest solution is to create a configuration file and link this configuration file when starting MongoDB with the ``--config`` option. The MongoDB configuration uses the `YAML <http://yaml.org>`_ format, you can use an online checker like `YAML Lint <http://www.yamllint.com/>`_ to verify that your configuration file has the proper format."
 
-#: ../../installation.rst:308
-msgid ""
-"If you installed MongoDB under Windows using the method in the last section, "
-"you have already copied the predefined configuration file and adjusted the "
-"values for ``dbPath`` and ``systemLog`` ``path`` to your system. Then your "
-"configuration file already contains all necessary values."
-msgstr ""
-"If you installed MongoDB under Windows using the method in the last section, "
-"you have already copied the predefined configuration file and adjusted the "
-"values for ``dbPath`` and ``systemLog`` ``path`` to your system. Then your "
-"configuration file already contains all necessary values."
+#: ../../installation.rst:309
+msgid "If you installed MongoDB under Windows using the method in the last section, you have already copied the predefined configuration file and adjusted the values for ``dbPath`` and ``systemLog`` ``path`` to your system. Then your configuration file already contains all necessary values."
+msgstr "If you installed MongoDB under Windows using the method in the last section, you have already copied the predefined configuration file and adjusted the values for ``dbPath`` and ``systemLog`` ``path`` to your system. Then your configuration file already contains all necessary values."
 
-#: ../../installation.rst:310
-msgid ""
-"If you installed MongoDB under Linux using ``apt-get``, e.g. by following "
-"the instructions in the last section, there should be a ``/etc/mongod.conf`` "
-"configuration file. Edit this configuration file. The ``dbPath``, "
-"``systemLog`` ``path`` properties should already be defined. It is "
-"recommened to set the ``logAppend`` property to ``true`` and the "
-"``authorization`` property to ``enabled``."
-msgstr ""
-"If you installed MongoDB under Linux using ``apt-get``, e.g. by following "
-"the instructions in the last section, there should be a ``/etc/mongod.conf`` "
-"configuration file. Edit this configuration file. The ``dbPath``, "
-"``systemLog`` ``path`` properties should already be defined. It is "
-"recommened to set the ``logAppend`` property to ``true`` and the "
-"``authorization`` property to ``enabled``."
+#: ../../installation.rst:311
+msgid "If you installed MongoDB under Linux using ``apt-get``, e.g. by following the instructions in the last section, there should be a ``/etc/mongod.conf`` configuration file. Edit this configuration file. The ``dbPath``, ``systemLog`` ``path`` properties should already be defined. It is recommened to set the ``logAppend`` property to ``true`` and the ``authorization`` property to ``enabled``."
+msgstr "If you installed MongoDB under Linux using ``apt-get``, e.g. by following the instructions in the last section, there should be a ``/etc/mongod.conf`` configuration file. Edit this configuration file. The ``dbPath``, ``systemLog`` ``path`` properties should already be defined. It is recommened to set the ``logAppend`` property to ``true`` and the ``authorization`` property to ``enabled``."
 
-#: ../../installation.rst:313
-msgid ""
-"In any other case make sure the configuration file contains the following "
-"properties. ::"
-msgstr ""
-"In any other case make sure the configuration file contains the following "
-"properties. ::"
+#: ../../installation.rst:314
+msgid "In any other case make sure the configuration file contains the following properties. ::"
+msgstr "In any other case make sure the configuration file contains the following properties. ::"
 
-#: ../../installation.rst:327
+#: ../../installation.rst:328
 msgid "``dbPath``"
 msgstr "``dbPath``"
 
-#: ../../installation.rst:327
+#: ../../installation.rst:328
 msgid "Defines the directory where the database files are stored."
 msgstr "Defines the directory where the database files are stored."
 
-#: ../../installation.rst:329
+#: ../../installation.rst:330
 msgid "``path``"
 msgstr "``path``"
 
-#: ../../installation.rst:329
+#: ../../installation.rst:330
 msgid "Defines the file that will contain the logging output."
 msgstr "Defines the file that will contain the logging output."
 
-#: ../../installation.rst:331
+#: ../../installation.rst:332
 msgid "``logAppend``"
 msgstr "``logAppend``"
 
-#: ../../installation.rst:331
-msgid ""
-"Indicates that new logs will be appended to an existing log file after "
-"restarting the server, if set to true."
-msgstr ""
-"Indicates that new logs will be appended to an existing log file after "
-"restarting the server, if set to true."
+#: ../../installation.rst:332
+msgid "Indicates that new logs will be appended to an existing log file after restarting the server, if set to true."
+msgstr "Indicates that new logs will be appended to an existing log file after restarting the server, if set to true."
 
-#: ../../installation.rst:333
+#: ../../installation.rst:334
 msgid "``authorization``"
 msgstr "``authorization``"
 
-#: ../../installation.rst:333
-msgid ""
-"(optional) Turns authentication on, if set to ``enabled``. It is advised to "
-"turn authentication on in case the MongoDB instance can be accessed over the "
-"network."
-msgstr ""
-"(optional) Turns authentication on, if set to ``enabled``. It is advised to "
-"turn authentication on in case the MongoDB instance can be accessed over the "
-"network."
+#: ../../installation.rst:334
+msgid "(optional) Turns authentication on, if set to ``enabled``. It is advised to turn authentication on in case the MongoDB instance can be accessed over the network."
+msgstr "(optional) Turns authentication on, if set to ``enabled``. It is advised to turn authentication on in case the MongoDB instance can be accessed over the network."
 
-#: ../../installation.rst:336
-msgid ""
-"If you have installed MongoDB on Debian using a package manager, the default "
-"configuration file will probably contain the following entry: ::"
-msgstr ""
-"If you have installed MongoDB on Debian using a package manager, the default "
-"configuration file will probably contain the following entry: ::"
+#: ../../installation.rst:337
+msgid "If you have installed MongoDB on Debian using a package manager, the default configuration file will probably contain the following entry: ::"
+msgstr "If you have installed MongoDB on Debian using a package manager, the default configuration file will probably contain the following entry: ::"
 
-#: ../../installation.rst:341
-msgid ""
-"This setting tells MongoDB to only bind to the local interface and reject "
-"remote connections. If you plan to install MongoDB and Tomcat on different "
-"machines, you must update this setting and either remove it or add the IP "
-"interface MongoDB should bind to, in order to listen for incoming "
-"connections. This value can contain a comma separated list of IPs and should "
-"NOT contain the IP address of the application server."
-msgstr ""
-"This setting tells MongoDB to only bind to the local interface and reject "
-"remote connections. If you plan to install MongoDB and Tomcat on different "
-"machines, you must update this setting and either remove it or add the IP "
-"interface MongoDB should bind to, in order to listen for incoming "
-"connections. This value can contain a comma separated list of IPs and should "
-"NOT contain the IP address of the application server."
+#: ../../installation.rst:342
+msgid "This setting tells MongoDB to only bind to the local interface and reject remote connections. If you plan to install MongoDB and Tomcat on different machines, you must update this setting and either remove it or add the IP interface MongoDB should bind to, in order to listen for incoming connections. This value can contain a comma separated list of IPs and should NOT contain the IP address of the application server."
+msgstr "This setting tells MongoDB to only bind to the local interface and reject remote connections. If you plan to install MongoDB and Tomcat on different machines, you must update this setting and either remove it or add the IP interface MongoDB should bind to, in order to listen for incoming connections. This value can contain a comma separated list of IPs and should NOT contain the IP address of the application server."
 
-#: ../../installation.rst:345
-msgid ""
-"For more configuration options, see https://docs.mongodb.org/manual/"
-"reference/configuration-options/\\ ."
-msgstr ""
-"For more configuration options, see https://docs.mongodb.org/manual/"
-"reference/configuration-options/\\ ."
+#: ../../installation.rst:346
+msgid "For more configuration options, see https://docs.mongodb.com/manual/reference/configuration-options/\\ ."
+msgstr "For more configuration options, see https://docs.mongodb.com/manual/reference/configuration-options/\\ ."
 
-#: ../../installation.rst:350
+#: ../../installation.rst:351
 msgid "Add a database user for Workflow Accelerator"
 msgstr "Add a database user for Workflow Accelerator"
 
-#: ../../installation.rst:351
-msgid ""
-"Workflow Accelerator requires a MongoDB user in the admin database that has "
-"the following roles:"
-msgstr ""
-"Workflow Accelerator requires a MongoDB user in the admin database that has "
-"the following roles:"
+#: ../../installation.rst:352
+msgid "Workflow Accelerator requires a MongoDB user in the admin database that has the following roles:"
+msgstr "Workflow Accelerator requires a MongoDB user in the admin database that has the following roles:"
 
-#: ../../installation.rst:356
+#: ../../installation.rst:357
 msgid "``dbAdminAnyDatabase``"
 msgstr "``dbAdminAnyDatabase``"
 
-#: ../../installation.rst:357
+#: ../../installation.rst:358
 msgid "``readWriteAnyDatabase``"
 msgstr "``readWriteAnyDatabase``"
 
-#: ../../installation.rst:358
+#: ../../installation.rst:359
 msgid "``clusterAdmin``"
 msgstr "``clusterAdmin``"
 
-#: ../../installation.rst:358
-msgid ""
-"This role will allow you to list all databases. This becomes necessary if "
-"you plan on using the user credentials when editing any database content "
-"with a tool like Robomongo. Furthermore, it is necessary for creating "
-"backups."
-msgstr ""
-"This role will allow you to list all databases. This becomes necessary if "
-"you plan on using the user credentials when editing any database content "
-"with a tool like Robomongo. Furthermore, it is necessary for creating "
-"backups."
-
 #: ../../installation.rst:359
+msgid "This role will allow you to list all databases. This becomes necessary if you plan on using the user credentials when editing any database content with a tool like Robomongo. Furthermore, it is necessary for creating backups."
+msgstr "This role will allow you to list all databases. This becomes necessary if you plan on using the user credentials when editing any database content with a tool like Robomongo. Furthermore, it is necessary for creating backups."
+
+#: ../../installation.rst:360
 msgid "``userAdminAnyDatabase``"
 msgstr "``userAdminAnyDatabase``"
 
-#: ../../installation.rst:359
+#: ../../installation.rst:360
 msgid "This role is required for backups."
 msgstr "This role is required for backups."
 
-#: ../../installation.rst:362
-msgid ""
-"The user will access the databases for Workflow Accelerator. Workflow "
-"Accelerator will create two databases, one for the user and workflow data, "
-"and one for uploaded files. The name of the first database can be configured "
-"in the Workflow Accelerator configuration file. The name of the second "
-"database is derived from the name of the first one by adding “-files”. For "
-"instance, if you define the database name “signavio”, the databases "
-"“signavio” and “signavio-files” will be created."
-msgstr ""
-"The user will access the databases for Workflow Accelerator. Workflow "
-"Accelerator will create two databases, one for the user and workflow data, "
-"and one for uploaded files. The name of the first database can be configured "
-"in the Workflow Accelerator configuration file. The name of the second "
-"database is derived from the name of the first one by adding “-files”. For "
-"instance, if you define the database name “signavio”, the databases "
-"“signavio” and “signavio-files” will be created."
+#: ../../installation.rst:363
+msgid "The user will access the databases for Workflow Accelerator. Workflow Accelerator will create two databases, one for the user and workflow data, and one for uploaded files. The name of the first database can be configured in the Workflow Accelerator configuration file. The name of the second database is derived from the name of the first one by adding “-files”. For instance, if you define the database name “signavio”, the databases “signavio” and “signavio-files” will be created."
+msgstr "The user will access the databases for Workflow Accelerator. Workflow Accelerator will create two databases, one for the user and workflow data, and one for uploaded files. The name of the first database can be configured in the Workflow Accelerator configuration file. The name of the second database is derived from the name of the first one by adding “-files”. For instance, if you define the database name “signavio”, the databases “signavio” and “signavio-files” will be created."
 
-#: ../../installation.rst:366
-msgid ""
-"In general, if you want to create a new user in MongoDB you will need to "
-"authenticate with an existing user that has the role userAdmin or "
-"userAdminAnyDatabase. There is an exception for a fresh MongoDB setup. It "
-"will allow you to create the first user from localhost without any "
-"authentication. The following examples will show you how to create a new "
-"user using the credentials of an admin user and how to do it without any "
-"credentials in case of a new MongoDB."
-msgstr ""
-"In general, if you want to create a new user in MongoDB you will need to "
-"authenticate with an existing user that has the role userAdmin or "
-"userAdminAnyDatabase. There is an exception for a fresh MongoDB setup. It "
-"will allow you to create the first user from localhost without any "
-"authentication. The following examples will show you how to create a new "
-"user using the credentials of an admin user and how to do it without any "
-"credentials in case of a new MongoDB."
+#: ../../installation.rst:367
+msgid "In general, if you want to create a new user in MongoDB you will need to authenticate with an existing user that has the role userAdmin or userAdminAnyDatabase. There is an exception for a fresh MongoDB setup. It will allow you to create the first user from localhost without any authentication. The following examples will show you how to create a new user using the credentials of an admin user and how to do it without any credentials in case of a new MongoDB."
+msgstr "In general, if you want to create a new user in MongoDB you will need to authenticate with an existing user that has the role userAdmin or userAdminAnyDatabase. There is an exception for a fresh MongoDB setup. It will allow you to create the first user from localhost without any authentication. The following examples will show you how to create a new user using the credentials of an admin user and how to do it without any credentials in case of a new MongoDB."
 
-#: ../../installation.rst:371
-msgid ""
-"In order to add a new user to MongoDB, the MongoDB server has to be running. "
-"The following subsections will show you how to create the Workflow "
-"Accelerator database user using the command line."
-msgstr ""
-"In order to add a new user to MongoDB, the MongoDB server has to be running. "
-"The following subsections will show you how to create the Workflow "
-"Accelerator database user using the command line."
+#: ../../installation.rst:372
+msgid "In order to add a new user to MongoDB, the MongoDB server has to be running. The following subsections will show you how to create the Workflow Accelerator database user using the command line."
+msgstr "In order to add a new user to MongoDB, the MongoDB server has to be running. The following subsections will show you how to create the Workflow Accelerator database user using the command line."
 
-#: ../../installation.rst:377
-msgid ""
-"Open the command line ``cmd`` and go to your MongoDB\\bin directory, e.g. by "
-"executing: ``cd C:\\MongoDB\\bin``"
-msgstr ""
-"Open the command line ``cmd`` and go to your MongoDB\\bin directory, e.g. by "
-"executing: ``cd C:\\MongoDB\\bin``"
+#: ../../installation.rst:378
+msgid "Open the command line ``cmd`` and go to your MongoDB\\bin directory, e.g. by executing: ``cd C:\\MongoDB\\bin``"
+msgstr "Open the command line ``cmd`` and go to your MongoDB\\bin directory, e.g. by executing: ``cd C:\\MongoDB\\bin``"
 
-#: ../../installation.rst:378 ../../installation.rst:398
-msgid ""
-"If you have an admin user, create the Workflow Accelerator user by executing:"
-msgstr ""
-"If you have an admin user, create the Workflow Accelerator user by executing:"
+#: ../../installation.rst:379 ../../installation.rst:399
+msgid "If you have an admin user, create the Workflow Accelerator user by executing:"
+msgstr "If you have an admin user, create the Workflow Accelerator user by executing:"
 
-#: ../../installation.rst:380
-msgid ""
-"``mongo.exe admin -u admin -p <enterYourAdminPasswordHere> --eval \"db."
-"createUser( { user: 'signavio', pwd: '<enterSignavioPasswordHere>', roles: "
-"['dbAdminAnyDatabase', 'readWriteAnyDatabase', 'clusterAdmin', "
-"'userAdminAnyDatabase'] } )\"``"
-msgstr ""
-"``mongo.exe admin -u admin -p <enterYourAdminPasswordHere> --eval \"db."
-"createUser( { user: 'signavio', pwd: '<enterSignavioPasswordHere>', roles: "
-"['dbAdminAnyDatabase', 'readWriteAnyDatabase', 'clusterAdmin', "
-"'userAdminAnyDatabase'] } )\"``"
+#: ../../installation.rst:381
+msgid "``mongo.exe admin -u admin -p <enterYourAdminPasswordHere> --eval \"db.createUser( { user: 'signavio', pwd: '<enterSignavioPasswordHere>', roles: ['dbAdminAnyDatabase', 'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )\"``"
+msgstr "``mongo.exe admin -u admin -p <enterYourAdminPasswordHere> --eval \"db.createUser( { user: 'signavio', pwd: '<enterSignavioPasswordHere>', roles: ['dbAdminAnyDatabase', 'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )\"``"
 
-#: ../../installation.rst:381 ../../installation.rst:401
-msgid ""
-"Replace <enterAdminPasswordHere> with the password, you have defined for the "
-"admin user."
-msgstr ""
-"Replace <enterAdminPasswordHere> with the password, you have defined for the "
-"admin user."
+#: ../../installation.rst:382 ../../installation.rst:402
+msgid "Replace <enterAdminPasswordHere> with the password, you have defined for the admin user."
+msgstr "Replace <enterAdminPasswordHere> with the password, you have defined for the admin user."
 
-#: ../../installation.rst:382 ../../installation.rst:387
-#: ../../installation.rst:402 ../../installation.rst:407
-msgid ""
-"Replace <enterSignavioPasswordHere> with the password for the new Workflow "
-"Accelerator user. As you can see the user name is signavio."
-msgstr ""
-"Replace <enterSignavioPasswordHere> with the password for the new Workflow "
-"Accelerator user. As you can see the user name is signavio."
+#: ../../installation.rst:383 ../../installation.rst:388
+#: ../../installation.rst:403 ../../installation.rst:408
+msgid "Replace <enterSignavioPasswordHere> with the password for the new Workflow Accelerator user. As you can see the user name is signavio."
+msgstr "Replace <enterSignavioPasswordHere> with the password for the new Workflow Accelerator user. As you can see the user name is signavio."
 
-#: ../../installation.rst:384 ../../installation.rst:404
-msgid ""
-"If you have a new MongoDB and no admin user, create the Workflow Accelerator "
-"user by executing:"
-msgstr ""
-"If you have a new MongoDB and no admin user, create the Workflow Accelerator "
-"user by executing:"
+#: ../../installation.rst:385 ../../installation.rst:405
+msgid "If you have a new MongoDB and no admin user, create the Workflow Accelerator user by executing:"
+msgstr "If you have a new MongoDB and no admin user, create the Workflow Accelerator user by executing:"
 
-#: ../../installation.rst:386
-msgid ""
-"``mongo.exe admin --eval \"db.createUser( { user: 'signavio', pwd: "
-"'<enterSignavioPasswordHere>', roles: ['dbAdminAnyDatabase', "
-"'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )\"``"
-msgstr ""
-"``mongo.exe admin --eval \"db.createUser( { user: 'signavio', pwd: "
-"'<enterSignavioPasswordHere>', roles: ['dbAdminAnyDatabase', "
-"'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )\"``"
+#: ../../installation.rst:387
+msgid "``mongo.exe admin --eval \"db.createUser( { user: 'signavio', pwd: '<enterSignavioPasswordHere>', roles: ['dbAdminAnyDatabase', 'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )\"``"
+msgstr "``mongo.exe admin --eval \"db.createUser( { user: 'signavio', pwd: '<enterSignavioPasswordHere>', roles: ['dbAdminAnyDatabase', 'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )\"``"
 
-#: ../../installation.rst:389 ../../installation.rst:409
-msgid ""
-"You can verify the creation of the new Workflow Accelerator user by "
-"executing:"
-msgstr ""
-"You can verify the creation of the new Workflow Accelerator user by "
-"executing:"
+#: ../../installation.rst:390 ../../installation.rst:410
+msgid "You can verify the creation of the new Workflow Accelerator user by executing:"
+msgstr "You can verify the creation of the new Workflow Accelerator user by executing:"
 
-#: ../../installation.rst:391
-msgid ""
-"``mongo.exe admin -u signavio -p <enterSignavioPasswordHere> --eval \"db."
-"getUser('signavio');\"``"
-msgstr ""
-"``mongo.exe admin -u signavio -p <enterSignavioPasswordHere> --eval \"db."
-"getUser('signavio');\"``"
+#: ../../installation.rst:392
+msgid "``mongo.exe admin -u signavio -p <enterSignavioPasswordHere> --eval \"db.getUser('signavio');\"``"
+msgstr "``mongo.exe admin -u signavio -p <enterSignavioPasswordHere> --eval \"db.getUser('signavio');\"``"
 
-#: ../../installation.rst:392 ../../installation.rst:412
-msgid ""
-"On the command line you will see the user information including the four "
-"assigned roles."
-msgstr ""
-"On the command line you will see the user information including the four "
-"assigned roles."
+#: ../../installation.rst:393 ../../installation.rst:413
+msgid "On the command line you will see the user information including the four assigned roles."
+msgstr "On the command line you will see the user information including the four assigned roles."
 
-#: ../../installation.rst:396
-msgid ""
-"If you have installed MongoDB using a package manager, the binaries should "
-"be available on the path. Otherwise, open the directory with the MongoDB "
-"binary files and follow the instructions."
-msgstr ""
-"If you have installed MongoDB using a package manager, the binaries should "
-"be available on the path. Otherwise, open the directory with the MongoDB "
-"binary files and follow the instructions."
+#: ../../installation.rst:397
+msgid "If you have installed MongoDB using a package manager, the binaries should be available on the path. Otherwise, open the directory with the MongoDB binary files and follow the instructions."
+msgstr "If you have installed MongoDB using a package manager, the binaries should be available on the path. Otherwise, open the directory with the MongoDB binary files and follow the instructions."
 
-#: ../../installation.rst:400
-msgid ""
-"``mongo admin -u admin -p <enterYourAdminPasswordHere> --eval \"db."
-"createUser( { user: 'signavio', pwd: '<enterSignavioPasswordHere>', roles: "
-"['dbAdminAnyDatabase', 'readWriteAnyDatabase', 'clusterAdmin', "
-"'userAdminAnyDatabase'] } )\"``"
-msgstr ""
-"``mongo admin -u admin -p <enterYourAdminPasswordHere> --eval \"db."
-"createUser( { user: 'signavio', pwd: '<enterSignavioPasswordHere>', roles: "
-"['dbAdminAnyDatabase', 'readWriteAnyDatabase', 'clusterAdmin', "
-"'userAdminAnyDatabase'] } )\"``"
+#: ../../installation.rst:401
+msgid "``mongo admin -u admin -p <enterYourAdminPasswordHere> --eval \"db.createUser( { user: 'signavio', pwd: '<enterSignavioPasswordHere>', roles: ['dbAdminAnyDatabase', 'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )\"``"
+msgstr "``mongo admin -u admin -p <enterYourAdminPasswordHere> --eval \"db.createUser( { user: 'signavio', pwd: '<enterSignavioPasswordHere>', roles: ['dbAdminAnyDatabase', 'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )\"``"
 
-#: ../../installation.rst:406
-msgid ""
-"``mongo admin --eval \"db.createUser( { user: 'signavio', pwd: "
-"'<enterSignavioPasswordHere>', roles: ['dbAdminAnyDatabase', "
-"'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )\"``"
-msgstr ""
-"``mongo admin --eval \"db.createUser( { user: 'signavio', pwd: "
-"'<enterSignavioPasswordHere>', roles: ['dbAdminAnyDatabase', "
-"'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )\"``"
+#: ../../installation.rst:407
+msgid "``mongo admin --eval \"db.createUser( { user: 'signavio', pwd: '<enterSignavioPasswordHere>', roles: ['dbAdminAnyDatabase', 'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )\"``"
+msgstr "``mongo admin --eval \"db.createUser( { user: 'signavio', pwd: '<enterSignavioPasswordHere>', roles: ['dbAdminAnyDatabase', 'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )\"``"
 
-#: ../../installation.rst:411
-msgid ""
-"``mongo admin -u signavio -p <enterSignavioPasswordHere> --eval \"db."
-"getUser('signavio');\"``"
-msgstr ""
-"``mongo admin -u signavio -p <enterSignavioPasswordHere> --eval \"db."
-"getUser('signavio');\"``"
+#: ../../installation.rst:412
+msgid "``mongo admin -u signavio -p <enterSignavioPasswordHere> --eval \"db.getUser('signavio');\"``"
+msgstr "``mongo admin -u signavio -p <enterSignavioPasswordHere> --eval \"db.getUser('signavio');\"``"
 
-#: ../../installation.rst:414
-msgid ""
-"Once the Workflow Accelerator user is created, its credentials have to be "
-"added to the Workflow Accelerator configuration file to the ``effektif."
-"mongodb.username`` and ``effektif.mongodb.password`` properties. Section :"
-"ref:`update-effektif-configuration` explains how to update the configuration "
-"file."
-msgstr ""
-"Once the Workflow Accelerator user is created, its credentials have to be "
-"added to the Workflow Accelerator configuration file to the ``effektif."
-"mongodb.username`` and ``effektif.mongodb.password`` properties. Section :"
-"ref:`update-effektif-configuration` explains how to update the configuration "
-"file."
+#: ../../installation.rst:415
+msgid "Once the Workflow Accelerator user is created, its credentials have to be added to the Workflow Accelerator configuration file to the ``effektif.mongodb.username`` and ``effektif.mongodb.password`` properties. Section :ref:`update-effektif-configuration` explains how to update the configuration file."
+msgstr "Once the Workflow Accelerator user is created, its credentials have to be added to the Workflow Accelerator configuration file to the ``effektif.mongodb.username`` and ``effektif.mongodb.password`` properties. Section :ref:`update-effektif-configuration` explains how to update the configuration file."
 
-#: ../../installation.rst:418
+#: ../../installation.rst:419
 msgid "Backup and restore"
 msgstr "Backup and restore"
 
-#: ../../installation.rst:419
-msgid ""
-"You are advised to do regular backups of the MongoDB database to prevent a "
-"complete data loss in case of a system failure. The Workflow Accelerator "
-"system will NOT backup the user data on its own. The :ref:`backup` section "
-"explains in detail how to set up backups for MongoDB properly. The :ref:"
-"`restore` section explains how you can restore an older version of the user "
-"data from a backup."
-msgstr ""
-"You are advised to do regular backups of the MongoDB database to prevent a "
-"complete data loss in case of a system failure. The Workflow Accelerator "
-"system will NOT backup the user data on its own. The :ref:`backup` section "
-"explains in detail how to set up backups for MongoDB properly. The :ref:"
-"`restore` section explains how you can restore an older version of the user "
-"data from a backup."
+#: ../../installation.rst:420
+msgid "You are advised to do regular backups of the MongoDB database to prevent a complete data loss in case of a system failure. The Workflow Accelerator system will NOT backup the user data on its own. The :ref:`backup` section explains in detail how to set up backups for MongoDB properly. The :ref:`restore` section explains how you can restore an older version of the user data from a backup."
+msgstr "You are advised to do regular backups of the MongoDB database to prevent a complete data loss in case of a system failure. The Workflow Accelerator system will NOT backup the user data on its own. The :ref:`backup` section explains in detail how to set up backups for MongoDB properly. The :ref:`restore` section explains how you can restore an older version of the user data from a backup."
 
-#: ../../installation.rst:424
+#: ../../installation.rst:425
 msgid "Installing Node.js"
 msgstr "Installing Node.js"
 
-#: ../../installation.rst:425
-msgid ""
-"You only need to install and configure Node.js if you purchased a version of "
-"Workflow Accelerator which allows you to use JavaScript tasks."
-msgstr ""
-"You only need to install and configure Node.js if you purchased a version of "
-"Workflow Accelerator which allows you to use JavaScript tasks."
+#: ../../installation.rst:426
+msgid "You only need to install and configure Node.js if you purchased a version of Workflow Accelerator which allows you to use JavaScript tasks."
+msgstr "You only need to install and configure Node.js if you purchased a version of Workflow Accelerator which allows you to use JavaScript tasks."
 
-#: ../../installation.rst:427
-msgid ""
-"Node.js is a runtime environment for JavaScript which is used by Workflow "
-"Accelerator to execute custom JavaScript tasks created by the user. We "
-"recommend using the Node.js LTS (Long Term Support) version 6.x."
-msgstr ""
-"Node.js is a runtime environment for JavaScript which is used by Workflow "
-"Accelerator to execute custom JavaScript tasks created by the user. We "
-"recommend using the Node.js LTS (Long Term Support) version 6.x."
+#: ../../installation.rst:428
+msgid "Node.js is a runtime environment for JavaScript which is used by Workflow Accelerator to execute custom JavaScript tasks created by the user. We recommend using the Node.js LTS (Long Term Support) version 6.x."
+msgstr "Node.js is a runtime environment for JavaScript which is used by Workflow Accelerator to execute custom JavaScript tasks created by the user. We recommend using the Node.js LTS (Long Term Support) version 6.x."
 
-#: ../../installation.rst:432
+#: ../../installation.rst:433
 msgid "For Windows there is a comfortable installer to setup Node.js."
 msgstr "For Windows there is a comfortable installer to setup Node.js."
 
-#: ../../installation.rst:434
+#: ../../installation.rst:435
 msgid "Go to https://nodejs.org/en/download/"
 msgstr "Go to https://nodejs.org/en/download/"
 
-#: ../../installation.rst:435
+#: ../../installation.rst:436
 msgid "Select the LTS version."
 msgstr "Select the LTS version."
 
-#: ../../installation.rst:436
+#: ../../installation.rst:437
 msgid "Download the *Windows Installer (.msi)* for your Windows version."
 msgstr "Download the *Windows Installer (.msi)* for your Windows version."
 
-#: ../../installation.rst:437
+#: ../../installation.rst:438
 msgid "Execute the downloaded installer and follow installation guide."
 msgstr "Execute the downloaded installer and follow installation guide."
 
-#: ../../installation.rst:441
-msgid ""
-"The Node.js site offers additional documentation for setting up Node.js on "
-"Debian using the package manager APT:"
-msgstr ""
-"The Node.js site offers additional documentation for setting up Node.js on "
-"Debian using the package manager APT:"
+#: ../../installation.rst:442
+msgid "The Node.js site offers additional documentation for setting up Node.js on Debian using the package manager APT:"
+msgstr "The Node.js site offers additional documentation for setting up Node.js on Debian using the package manager APT:"
 
-#: ../../installation.rst:443
-msgid ""
-"https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-"
-"linux-distributions"
-msgstr ""
-"https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-"
-"linux-distributions"
+#: ../../installation.rst:444
+msgid "https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions"
+msgstr "https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions"
 
-#: ../../installation.rst:445
+#: ../../installation.rst:446
 msgid "Please, make sure to install the LTS version of Node.js."
 msgstr "Please, make sure to install the LTS version of Node.js."
 
-#: ../../installation.rst:450
+#: ../../installation.rst:451
 msgid "Installing the Workflow Accelerator Script Engine"
 msgstr "Installing the Workflow Accelerator Script Engine"
 
-#: ../../installation.rst:451
-msgid ""
-"You only need to install and configure the Script Engine if you purchased a "
-"version of Workflow Accelerator which allows you to use JavaScript tasks."
-msgstr ""
-"You only need to install and configure the Script Engine if you purchased a "
-"version of Workflow Accelerator which allows you to use JavaScript tasks."
+#: ../../installation.rst:452
+msgid "You only need to install and configure the Script Engine if you purchased a version of Workflow Accelerator which allows you to use JavaScript tasks."
+msgstr "You only need to install and configure the Script Engine if you purchased a version of Workflow Accelerator which allows you to use JavaScript tasks."
 
-#: ../../installation.rst:453
-msgid ""
-"The Workflow Accelerator Script Engine uses Node.js to execute JavaScript "
-"tasks within a workflow and an embedded HTTP server to communicate with the "
-"Workflow Accelerator web application. You can either install the Script "
-"Engine on the same machine as the Workflow Accelerator web application or on "
-"a separate machine. However, if you use a separate machine to run the script "
-"engine, you have to make sure the web application can connect over HTTP to "
-"the configured port of the script engine and vice versa. In order to install "
-"the script engine, follow these instructions:"
-msgstr ""
-"The Workflow Accelerator Script Engine uses Node.js to execute JavaScript "
-"tasks within a workflow and an embedded HTTP server to communicate with the "
-"Workflow Accelerator web application. You can either install the Script "
-"Engine on the same machine as the Workflow Accelerator web application or on "
-"a separate machine. However, if you use a separate machine to run the script "
-"engine, you have to make sure the web application can connect over HTTP to "
-"the configured port of the script engine and vice versa. In order to install "
-"the script engine, follow these instructions:"
+#: ../../installation.rst:454
+msgid "The Workflow Accelerator Script Engine uses Node.js to execute JavaScript tasks within a workflow and an embedded HTTP server to communicate with the Workflow Accelerator web application. You can either install the Script Engine on the same machine as the Workflow Accelerator web application or on a separate machine. However, if you use a separate machine to run the script engine, you have to make sure the web application can connect over HTTP to the configured port of the script engine and vice versa. In order to install the script engine, follow these instructions:"
+msgstr "The Workflow Accelerator Script Engine uses Node.js to execute JavaScript tasks within a workflow and an embedded HTTP server to communicate with the Workflow Accelerator web application. You can either install the Script Engine on the same machine as the Workflow Accelerator web application or on a separate machine. However, if you use a separate machine to run the script engine, you have to make sure the web application can connect over HTTP to the configured port of the script engine and vice versa. In order to install the script engine, follow these instructions:"
 
-#: ../../installation.rst:458
-msgid ""
-"Create new local directory for the script engine, e.g. ``C:\\Program Files"
-"\\Script Engine`` or ``/var/lib/script-engine``."
-msgstr ""
-"Create new local directory for the script engine, e.g. ``C:\\Program Files"
-"\\Script Engine`` or ``/var/lib/script-engine``."
+#: ../../installation.rst:459
+msgid "Create new local directory for the script engine, e.g. ``C:\\Program Files\\Script Engine`` or ``/var/lib/script-engine``."
+msgstr "Create new local directory for the script engine, e.g. ``C:\\Program Files\\Script Engine`` or ``/var/lib/script-engine``."
 
-#: ../../installation.rst:460
+#: ../../installation.rst:461
 msgid "We will refer to this directory as ``$SCRIPT_ENGINE_HOME``."
 msgstr "We will refer to this directory as ``$SCRIPT_ENGINE_HOME``."
 
-#: ../../installation.rst:462
-msgid ""
-"Copy the content of the directory ``$WORKFLOW_HOME/script-engine/`` to your "
-"newly created directory."
-msgstr ""
-"Copy the content of the directory ``$WORKFLOW_HOME/script-engine/`` to your "
-"newly created directory."
+#: ../../installation.rst:463
+msgid "Copy the content of the directory ``$WORKFLOW_HOME/script-engine/`` to your newly created directory."
+msgstr "Copy the content of the directory ``$WORKFLOW_HOME/script-engine/`` to your newly created directory."
 
-#: ../../installation.rst:464
-msgid ""
-"You should find the file ``server.js`` directly within your directory: ``"
-"$SCRIPT_ENGINE_HOME/server.js``."
-msgstr ""
-"You should find the file ``server.js`` directly within your directory: ``"
-"$SCRIPT_ENGINE_HOME/server.js``."
+#: ../../installation.rst:465
+msgid "You should find the file ``server.js`` directly within your directory: ``$SCRIPT_ENGINE_HOME/server.js``."
+msgstr "You should find the file ``server.js`` directly within your directory: ``$SCRIPT_ENGINE_HOME/server.js``."
 
-#: ../../installation.rst:466
-msgid ""
-"Open ``$SCRIPT_ENGINE_HOME/configuration.onpremise.js`` and edit the values "
-"for the port, log files and Workflow Accelerator URL."
-msgstr ""
-"Open ``$SCRIPT_ENGINE_HOME/configuration.onpremise.js`` and edit the values "
-"for the port, log files and Workflow Accelerator URL."
+#: ../../installation.rst:467
+msgid "Open ``$SCRIPT_ENGINE_HOME/configuration.onpremise.js`` and edit the values for the port, log files and Workflow Accelerator URL."
+msgstr "Open ``$SCRIPT_ENGINE_HOME/configuration.onpremise.js`` and edit the values for the port, log files and Workflow Accelerator URL."
 
-#: ../../installation.rst:468
-msgid ""
-"Ensure that the port for the script engine is not used by any other "
-"application."
-msgstr ""
-"Ensure that the port for the script engine is not used by any other "
-"application."
+#: ../../installation.rst:469
+msgid "Ensure that the port for the script engine is not used by any other application."
+msgstr "Ensure that the port for the script engine is not used by any other application."
 
-#: ../../installation.rst:470
-msgid ""
-"Add the URL of the script engine to the Workflow Accelerator configuration "
-"file, see :ref:`update-effektif-configuration` for more information."
-msgstr ""
-"Add the URL of the script engine to the Workflow Accelerator configuration "
-"file, see :ref:`update-effektif-configuration` for more information."
+#: ../../installation.rst:471
+msgid "Add the URL of the script engine to the Workflow Accelerator configuration file, see :ref:`update-effektif-configuration` for more information."
+msgstr "Add the URL of the script engine to the Workflow Accelerator configuration file, see :ref:`update-effektif-configuration` for more information."
 
-#: ../../installation.rst:472
-msgid ""
-"If you run the script engine on the same machine as the web application and "
-"use the default port the URL will be ``http://localhost:8081``."
-msgstr ""
-"If you run the script engine on the same machine as the web application and "
-"use the default port the URL will be ``http://localhost:8081``."
+#: ../../installation.rst:473
+msgid "If you run the script engine on the same machine as the web application and use the default port the URL will be ``http://localhost:8081``."
+msgstr "If you run the script engine on the same machine as the web application and use the default port the URL will be ``http://localhost:8081``."
 
-#: ../../installation.rst:474
+#: ../../installation.rst:475
 msgid "The configuration file offers the following options:"
 msgstr "The configuration file offers the following options:"
 
-#: ../../installation.rst:477
+#: ../../installation.rst:478
 msgid "``port``"
 msgstr "``port``"
 
-#: ../../installation.rst:477
-msgid ""
-"Defines the port the script engine will bind to and listen for incoming HTTP "
-"requests."
-msgstr ""
-"Defines the port the script engine will bind to and listen for incoming HTTP "
-"requests."
-
 #: ../../installation.rst:478
+msgid "Defines the port the script engine will bind to and listen for incoming HTTP requests."
+msgstr "Defines the port the script engine will bind to and listen for incoming HTTP requests."
+
+#: ../../installation.rst:479
 msgid "``workflowUrl``"
 msgstr "``workflowUrl``"
 
-#: ../../installation.rst:478
-msgid ""
-"Defines the URL of the Workflow Accelerator system (including port), e.g. "
-"``http://localhost:8080``"
-msgstr ""
-"Defines the URL of the Workflow Accelerator system (including port), e.g. "
-"``http://localhost:8080``"
-
 #: ../../installation.rst:479
+msgid "Defines the URL of the Workflow Accelerator system (including port), e.g. ``http://localhost:8080``"
+msgstr "Defines the URL of the Workflow Accelerator system (including port), e.g. ``http://localhost:8080``"
+
+#: ../../installation.rst:480
 msgid "``log`` ``file``"
 msgstr "``log`` ``file``"
 
-#: ../../installation.rst:479
-msgid ""
-"Defines the location and name of the script engine log file. You can an "
-"absolute or relative path. By default, the log files are stored in the same "
-"directory as the script engine."
-msgstr ""
-"Defines the location and name of the script engine log file. You can an "
-"absolute or relative path. By default, the log files are stored in the same "
-"directory as the script engine."
-
 #: ../../installation.rst:480
+msgid "Defines the location and name of the script engine log file. You can an absolute or relative path. By default, the log files are stored in the same directory as the script engine."
+msgstr "Defines the location and name of the script engine log file. You can an absolute or relative path. By default, the log files are stored in the same directory as the script engine."
+
+#: ../../installation.rst:481
 msgid "``log`` ``errorFile``"
 msgstr "``log`` ``errorFile``"
 
-#: ../../installation.rst:480
+#: ../../installation.rst:481
 msgid "Defines the location and name of the script engine error log file."
 msgstr "Defines the location and name of the script engine error log file."
 
-#: ../../installation.rst:483
-msgid ""
-"After the successful setup you can start the script engine by opening the ``"
-"$SCRIPT_ENGINE_HOME`` directory on a command line and executing the "
-"following command ::"
-msgstr ""
-"After the successful setup you can start the script engine by opening the ``"
-"$SCRIPT_ENGINE_HOME`` directory on a command line and executing the "
-"following command ::"
+#: ../../installation.rst:484
+msgid "After the successful setup you can start the script engine by opening the ``$SCRIPT_ENGINE_HOME`` directory on a command line and executing the following command ::"
+msgstr "After the successful setup you can start the script engine by opening the ``$SCRIPT_ENGINE_HOME`` directory on a command line and executing the following command ::"
 
-#: ../../installation.rst:489
+#: ../../installation.rst:490
 msgid "Wrapping the Script Engine into a service"
 msgstr "Wrapping the Script Engine into a service"
 
-#: ../../installation.rst:490
-msgid ""
-"The script engine can be executed as shown above by running the command on a "
-"command line. However, it might be useful for production systems to run the "
-"script engine as a service or daemon. The following sub sections describe "
-"one possibility for each supported operating system which can be used the "
-"accomplish this goal. Note, Signavio offers no support for any usage of "
-"third-party tools. Use them at your discretion."
-msgstr ""
-"The script engine can be executed as shown above by running the command on a "
-"command line. However, it might be useful for production systems to run the "
-"script engine as a service or daemon. The following sub sections describe "
-"one possibility for each supported operating system which can be used the "
-"accomplish this goal. Note, Signavio offers no support for any usage of "
-"third-party tools. Use them at your discretion."
+#: ../../installation.rst:491
+msgid "The script engine can be executed as shown above by running the command on a command line. However, it might be useful for production systems to run the script engine as a service or daemon. The following sub sections describe one possibility for each supported operating system which can be used the accomplish this goal. Note, Signavio offers no support for any usage of third-party tools. Use them at your discretion."
+msgstr "The script engine can be executed as shown above by running the command on a command line. However, it might be useful for production systems to run the script engine as a service or daemon. The following sub sections describe one possibility for each supported operating system which can be used the accomplish this goal. Note, Signavio offers no support for any usage of third-party tools. Use them at your discretion."
 
-#: ../../installation.rst:498
-msgid ""
-"For Windows there are several software tools which allow you to wrap a "
-"script into a service and monitor the execution. The `Non-Sucking Service "
-"Manager <http://nssm.cc/>`_ (NSSM) is such a free tool which allows you to "
-"wrap any executable into a Windows service."
-msgstr ""
-"For Windows there are several software tools which allow you to wrap a "
-"script into a service and monitor the execution. The `Non-Sucking Service "
-"Manager <http://nssm.cc/>`_ (NSSM) is such a free tool which allows you to "
-"wrap any executable into a Windows service."
+#: ../../installation.rst:499
+msgid "For Windows there are several software tools which allow you to wrap a script into a service and monitor the execution. The `Non-Sucking Service Manager <http://nssm.cc/>`_ (NSSM) is such a free tool which allows you to wrap any executable into a Windows service."
+msgstr "For Windows there are several software tools which allow you to wrap a script into a service and monitor the execution. The `Non-Sucking Service Manager <http://nssm.cc/>`_ (NSSM) is such a free tool which allows you to wrap any executable into a Windows service."
 
-#: ../../installation.rst:501
+#: ../../installation.rst:502
 msgid "Download NSSM from http://nssm.cc/download"
 msgstr "Download NSSM from http://nssm.cc/download"
 
-#: ../../installation.rst:502
-msgid ""
-"Create a new local installation directory for NSSM, e.g. ``C:\\Program Files"
-"\\NSSM``."
-msgstr ""
-"Create a new local installation directory for NSSM, e.g. ``C:\\Program Files"
-"\\NSSM``."
-
 #: ../../installation.rst:503
-msgid ""
-"Unzip the downloaded file and copy either the 64-bit ``win64\\nssm.exe`` or "
-"the 32-bit ``win32\\nssm.exe`` file to your new local directory."
-msgstr ""
-"Unzip the downloaded file and copy either the 64-bit ``win64\\nssm.exe`` or "
-"the 32-bit ``win32\\nssm.exe`` file to your new local directory."
+msgid "Create a new local installation directory for NSSM, e.g. ``C:\\Program Files\\NSSM``."
+msgstr "Create a new local installation directory for NSSM, e.g. ``C:\\Program Files\\NSSM``."
 
 #: ../../installation.rst:504
 msgid ""
-"Add the installation directory of NSSM to the environment variable ``PATH`` "
-"in the Windows system settings."
+"Unzip the downloaded file and copy either the 64-bit ``win64\\n"
+"ssm.exe`` or the 32-bit ``win32\\n"
+"ssm.exe`` file to your new local directory."
 msgstr ""
-"Add the installation directory of NSSM to the environment variable ``PATH`` "
-"in the Windows system settings."
+"Unzip the downloaded file and copy either the 64-bit ``win64\\n"
+"ssm.exe`` or the 32-bit ``win32\\n"
+"ssm.exe`` file to your new local directory."
 
-#: ../../installation.rst:506
-msgid ""
-"This is necessary to use the ``nssm`` executable on the command line without "
-"an absolute path."
-msgstr ""
-"This is necessary to use the ``nssm`` executable on the command line without "
-"an absolute path."
+#: ../../installation.rst:505
+msgid "Add the installation directory of NSSM to the environment variable ``PATH`` in the Windows system settings."
+msgstr "Add the installation directory of NSSM to the environment variable ``PATH`` in the Windows system settings."
 
-#: ../../installation.rst:508
+#: ../../installation.rst:507
+msgid "This is necessary to use the ``nssm`` executable on the command line without an absolute path."
+msgstr "This is necessary to use the ``nssm`` executable on the command line without an absolute path."
+
+#: ../../installation.rst:509
 msgid "Open the command line ``cmd`` with administrative privileges."
 msgstr "Open the command line ``cmd`` with administrative privileges."
 
-#: ../../installation.rst:509
+#: ../../installation.rst:510
 msgid "Execute ``nssm install script-engine``."
 msgstr "Execute ``nssm install script-engine``."
 
-#: ../../installation.rst:510
+#: ../../installation.rst:511
 msgid "The NSSM configuration dialog open"
 msgstr "The NSSM configuration dialog open"
 
-#: ../../installation.rst:511
+#: ../../installation.rst:512
 msgid "In the *Application* tab fill in the following information:"
 msgstr "In the *Application* tab fill in the following information:"
 
-#: ../../installation.rst:513
-msgid ""
-"*Path*: the path to the Node.js .exe file, e.g. ``C:\\Program Files\\nodejs"
-"\\node.exe``"
-msgstr ""
-"*Path*: the path to the Node.js .exe file, e.g. ``C:\\Program Files\\nodejs"
-"\\node.exe``"
-
 #: ../../installation.rst:514
 msgid ""
-"*Startup directory*: the value of ``$SCRIPT_ENGINE_HOME``, e.g. ``C:"
-"\\Program Files\\Script Engine``."
+"*Path*: the path to the Node.js .exe file, e.g. ``C:\\Program Files\\n"
+"odejs\\n"
+"ode.exe``"
 msgstr ""
-"*Startup directory*: the value of ``$SCRIPT_ENGINE_HOME``, e.g. ``C:"
-"\\Program Files\\Script Engine``."
+"*Path*: the path to the Node.js .exe file, e.g. ``C:\\Program Files\\n"
+"odejs\\n"
+"ode.exe``"
 
 #: ../../installation.rst:515
+msgid "*Startup directory*: the value of ``$SCRIPT_ENGINE_HOME``, e.g. ``C:\\Program Files\\Script Engine``."
+msgstr "*Startup directory*: the value of ``$SCRIPT_ENGINE_HOME``, e.g. ``C:\\Program Files\\Script Engine``."
+
+#: ../../installation.rst:516
 msgid "*Arguments*: the exact value ``server.js``"
 msgstr "*Arguments*: the exact value ``server.js``"
 
-#: ../../installation.rst:519
+#: ../../installation.rst:520
 msgid "In the *Details* tab fill in the following information:"
 msgstr "In the *Details* tab fill in the following information:"
 
-#: ../../installation.rst:521
+#: ../../installation.rst:522
 msgid "*Display name*: the name of the service shown in ``services.msc``"
 msgstr "*Display name*: the name of the service shown in ``services.msc``"
 
-#: ../../installation.rst:522
-msgid ""
-"*Description*: a description which will help you to recognise the service"
-msgstr ""
-"*Description*: a description which will help you to recognise the service"
-
 #: ../../installation.rst:523
-msgid ""
-"*Startup type*: choose if the service shall start automatically on startup "
-"or if you want to start it manually"
-msgstr ""
-"*Startup type*: choose if the service shall start automatically on startup "
-"or if you want to start it manually"
+msgid "*Description*: a description which will help you to recognise the service"
+msgstr "*Description*: a description which will help you to recognise the service"
 
-#: ../../installation.rst:527
-msgid ""
-"Fill in any other service configuration settings you deem appropriate for "
-"your system in the other tabs."
-msgstr ""
-"Fill in any other service configuration settings you deem appropriate for "
-"your system in the other tabs."
+#: ../../installation.rst:524
+msgid "*Startup type*: choose if the service shall start automatically on startup or if you want to start it manually"
+msgstr "*Startup type*: choose if the service shall start automatically on startup or if you want to start it manually"
 
 #: ../../installation.rst:528
+msgid "Fill in any other service configuration settings you deem appropriate for your system in the other tabs."
+msgstr "Fill in any other service configuration settings you deem appropriate for your system in the other tabs."
+
+#: ../../installation.rst:529
 msgid "Click on *Install service*."
 msgstr "Click on *Install service*."
 
-#: ../../installation.rst:530
+#: ../../installation.rst:531
 msgid "Now you can start the script engine with the following command: ::"
 msgstr "Now you can start the script engine with the following command: ::"
 
-#: ../../installation.rst:534
+#: ../../installation.rst:535
 msgid "You can check the status of the script engine by executing: ::"
 msgstr "You can check the status of the script engine by executing: ::"
 
-#: ../../installation.rst:538
-msgid ""
-"In order to stop the script engine again, execute the following command: ::"
-msgstr ""
-"In order to stop the script engine again, execute the following command: ::"
+#: ../../installation.rst:539
+msgid "In order to stop the script engine again, execute the following command: ::"
+msgstr "In order to stop the script engine again, execute the following command: ::"
 
-#: ../../installation.rst:542
-msgid ""
-"While it is running, you can open your browser and go to the URL you have "
-"configured for the script engine, by default this ``http://localhost:8081``. "
-"If the engine is running, you will see a blank page with this content: ``{}``"
-msgstr ""
-"While it is running, you can open your browser and go to the URL you have "
-"configured for the script engine, by default this ``http://localhost:8081``. "
-"If the engine is running, you will see a blank page with this content: ``{}``"
+#: ../../installation.rst:543
+msgid "While it is running, you can open your browser and go to the URL you have configured for the script engine, by default this ``http://localhost:8081``. If the engine is running, you will see a blank page with this content: ``{}``"
+msgstr "While it is running, you can open your browser and go to the URL you have configured for the script engine, by default this ``http://localhost:8081``. If the engine is running, you will see a blank page with this content: ``{}``"
 
-#: ../../installation.rst:545
-msgid ""
-"Besides using ``nssm`` on the command line, you will find a new service when "
-"you open the ``services.msc``. The script engine will show up under the name "
-"you configured as display name. You can start and stop the script engine "
-"from here as well."
-msgstr ""
-"Besides using ``nssm`` on the command line, you will find a new service when "
-"you open the ``services.msc``. The script engine will show up under the name "
-"you configured as display name. You can start and stop the script engine "
-"from here as well."
+#: ../../installation.rst:546
+msgid "Besides using ``nssm`` on the command line, you will find a new service when you open the ``services.msc``. The script engine will show up under the name you configured as display name. You can start and stop the script engine from here as well."
+msgstr "Besides using ``nssm`` on the command line, you will find a new service when you open the ``services.msc``. The script engine will show up under the name you configured as display name. You can start and stop the script engine from here as well."
 
-#: ../../installation.rst:550
+#: ../../installation.rst:551
 msgid "Linux"
 msgstr "Linux"
 
-#: ../../installation.rst:551
-msgid ""
-"On Linux this task is usually accomplished with Init scripts using the "
-"respective Init system of your Linux distribution. Because there are several "
-"different Init systems, Signavio will not provide a template. However, if "
-"you don't already have a template, you can find lots of matching templates "
-"for your Init system on the internet."
-msgstr ""
-"On Linux this task is usually accomplished with Init scripts using the "
-"respective Init system of your Linux distribution. Because there are several "
-"different Init systems, Signavio will not provide a template. However, if "
-"you don't already have a template, you can find lots of matching templates "
-"for your Init system on the internet."
+#: ../../installation.rst:552
+msgid "On Linux this task is usually accomplished with Init scripts using the respective Init system of your Linux distribution. Because there are several different Init systems, Signavio will not provide a template. However, if you don't already have a template, you can find lots of matching templates for your Init system on the internet."
+msgstr "On Linux this task is usually accomplished with Init scripts using the respective Init system of your Linux distribution. Because there are several different Init systems, Signavio will not provide a template. However, if you don't already have a template, you can find lots of matching templates for your Init system on the internet."
 
-#: ../../installation.rst:555
-msgid ""
-"As mentioned before, the script engine can be started from within ``"
-"$SCRIPT_ENGINE_HOME`` by executing: ::"
-msgstr ""
-"As mentioned before, the script engine can be started from within ``"
-"$SCRIPT_ENGINE_HOME`` by executing: ::"
+#: ../../installation.rst:556
+msgid "As mentioned before, the script engine can be started from within ``$SCRIPT_ENGINE_HOME`` by executing: ::"
+msgstr "As mentioned before, the script engine can be started from within ``$SCRIPT_ENGINE_HOME`` by executing: ::"
 
-#: ../../installation.rst:559
-msgid ""
-"You have to ensure your Init script starts the Node.js executable ``node`` "
-"and uses the JavaScript file ``$SCRIPT_ENGINE_HOME/server.js`` as an "
-"argument. Note, if you use a restricted user to execute the command, make "
-"sure the user has appropriate access to the ``$SCRIPT_ENGINE_HOME`` "
-"directory."
-msgstr ""
-"You have to ensure your Init script starts the Node.js executable ``node`` "
-"and uses the JavaScript file ``$SCRIPT_ENGINE_HOME/server.js`` as an "
-"argument. Note, if you use a restricted user to execute the command, make "
-"sure the user has appropriate access to the ``$SCRIPT_ENGINE_HOME`` "
-"directory."
+#: ../../installation.rst:560
+msgid "You have to ensure your Init script starts the Node.js executable ``node`` and uses the JavaScript file ``$SCRIPT_ENGINE_HOME/server.js`` as an argument. Note, if you use a restricted user to execute the command, make sure the user has appropriate access to the ``$SCRIPT_ENGINE_HOME`` directory."
+msgstr "You have to ensure your Init script starts the Node.js executable ``node`` and uses the JavaScript file ``$SCRIPT_ENGINE_HOME/server.js`` as an argument. Note, if you use a restricted user to execute the command, make sure the user has appropriate access to the ``$SCRIPT_ENGINE_HOME`` directory."
 
-#: ../../installation.rst:565
+#: ../../installation.rst:566
 msgid "Configuring Workflow Accelerator"
 msgstr "Configuring Workflow Accelerator"
 
-#: ../../installation.rst:570
+#: ../../installation.rst:571
 msgid "Install the license file"
 msgstr "Install the license file"
 
-#: ../../installation.rst:571
-msgid ""
-"Along with the Workflow Accelerator application you have received the "
-"Workflow Accelerator license file license.xml. Before you can start the "
-"Workflow Accelerator system, you have to add the license file to the "
-"application. Therefore, copy the license file into the directory ``"
-"$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes``\\ . The Workflow Accelerator "
-"system will check your license file on startup and setup the defined number "
-"of licenses."
-msgstr ""
-"Along with the Workflow Accelerator application you have received the "
-"Workflow Accelerator license file license.xml. Before you can start the "
-"Workflow Accelerator system, you have to add the license file to the "
-"application. Therefore, copy the license file into the directory ``"
-"$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes``\\ . The Workflow Accelerator "
-"system will check your license file on startup and setup the defined number "
-"of licenses."
+#: ../../installation.rst:572
+msgid "Along with the Workflow Accelerator application you have received the Workflow Accelerator license file license.xml. Before you can start the Workflow Accelerator system, you have to add the license file to the application. Therefore, copy the license file into the directory ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes``\\ . The Workflow Accelerator system will check your license file on startup and setup the defined number of licenses."
+msgstr "Along with the Workflow Accelerator application you have received the Workflow Accelerator license file license.xml. Before you can start the Workflow Accelerator system, you have to add the license file to the application. Therefore, copy the license file into the directory ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes``\\ . The Workflow Accelerator system will check your license file on startup and setup the defined number of licenses."
 
-#: ../../installation.rst:579
+#: ../../installation.rst:580
 msgid "Update the Workflow Accelerator configuration file"
 msgstr "Update the Workflow Accelerator configuration file"
 
-#: ../../installation.rst:580
-msgid ""
-"Before you can start Workflow Accelerator for the first time, you need to "
-"configure some mandatory properties in the Workflow Accelerator "
-"configuration file. Make sure you have copied the Workflow Accelerator web "
-"application to the Tomcat’s webapps directory before continuing. The "
-"configuration file can be found here ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/"
-"classes/effektif-onpremise.properties``\\ ."
-msgstr ""
-"Before you can start Workflow Accelerator for the first time, you need to "
-"configure some mandatory properties in the Workflow Accelerator "
-"configuration file. Make sure you have copied the Workflow Accelerator web "
-"application to the Tomcat’s webapps directory before continuing. The "
-"configuration file can be found here ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/"
-"classes/effektif-onpremise.properties``\\ ."
+#: ../../installation.rst:581
+msgid "Before you can start Workflow Accelerator for the first time, you need to configure some mandatory properties in the Workflow Accelerator configuration file. Make sure you have copied the Workflow Accelerator web application to the Tomcat’s webapps directory before continuing. The configuration file can be found here ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes/effektif-onpremise.properties``\\ ."
+msgstr "Before you can start Workflow Accelerator for the first time, you need to configure some mandatory properties in the Workflow Accelerator configuration file. Make sure you have copied the Workflow Accelerator web application to the Tomcat’s webapps directory before continuing. The configuration file can be found here ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes/effektif-onpremise.properties``\\ ."
 
-#: ../../installation.rst:584
-msgid ""
-"The configuration file is a property file that contains one configuration "
-"option per line and key and value are separated by a ``=``. Every line that "
-"starts with a ``#`` is commented out and will not be used."
-msgstr ""
-"The configuration file is a property file that contains one configuration "
-"option per line and key and value are separated by a ``=``. Every line that "
-"starts with a ``#`` is commented out and will not be used."
+#: ../../installation.rst:585
+msgid "The configuration file is a property file that contains one configuration option per line and key and value are separated by a ``=``. Every line that starts with a ``#`` is commented out and will not be used."
+msgstr "The configuration file is a property file that contains one configuration option per line and key and value are separated by a ``=``. Every line that starts with a ``#`` is commented out and will not be used."
 
-#: ../../installation.rst:587
-msgid ""
-"In general, the configuration allows to configure the base URL of the "
-"Workflow Accelerator system, the mail server, the database connection and "
-"integrations with third party systems (e.g. Signavio). If you installed the "
-"Workflow Accelerator Script Engine, you need to configure the URL to the "
-"script engine as well. As described in :ref:`install-script-engine` the URL "
-"derives from the domain (``localhost`` for the same machine) and port the "
-"script engine is running on."
-msgstr ""
-"In general, the configuration allows to configure the base URL of the "
-"Workflow Accelerator system, the mail server, the database connection and "
-"integrations with third party systems (e.g. Signavio). If you installed the "
-"Workflow Accelerator Script Engine, you need to configure the URL to the "
-"script engine as well. As described in :ref:`install-script-engine` the URL "
-"derives from the domain (``localhost`` for the same machine) and port the "
-"script engine is running on."
+#: ../../installation.rst:588
+msgid "In general, the configuration allows to configure the base URL of the Workflow Accelerator system, the mail server, the database connection and integrations with third party systems (e.g. Signavio). If you installed the Workflow Accelerator Script Engine, you need to configure the URL to the script engine as well. As described in :ref:`install-script-engine` the URL derives from the domain (``localhost`` for the same machine) and port the script engine is running on."
+msgstr "In general, the configuration allows to configure the base URL of the Workflow Accelerator system, the mail server, the database connection and integrations with third party systems (e.g. Signavio). If you installed the Workflow Accelerator Script Engine, you need to configure the URL to the script engine as well. As described in :ref:`install-script-engine` the URL derives from the domain (``localhost`` for the same machine) and port the script engine is running on."
 
-#: ../../installation.rst:593
+#: ../../installation.rst:594
 msgid "``effektif.baseUrl``"
 msgstr "``effektif.baseUrl``"
 
-#: ../../installation.rst:593
-msgid ""
-"(Required) The IP address or server name (including the port) of the server "
-"running the Workflow Accelerator Tomcat application server. E.g. http://"
-"workflow.yourdomain.com:8080\\ . If the server is running on port 80, the "
-"port can be omitted."
-msgstr ""
-"(Required) The IP address or server name (including the port) of the server "
-"running the Workflow Accelerator Tomcat application server. E.g. http://"
-"workflow.yourdomain.com:8080\\ . If the server is running on port 80, the "
-"port can be omitted."
-
 #: ../../installation.rst:594
+msgid "(Required) The IP address or server name (including the port) of the server running the Workflow Accelerator Tomcat application server. E.g. http://workflow.yourdomain.com:8080\\ . If the server is running on port 80, the port can be omitted."
+msgstr "(Required) The IP address or server name (including the port) of the server running the Workflow Accelerator Tomcat application server. E.g. http://workflow.yourdomain.com:8080\\ . If the server is running on port 80, the port can be omitted."
+
+#: ../../installation.rst:595
 msgid "``effektif.smtp.host``"
 msgstr "``effektif.smtp.host``"
 
-#: ../../installation.rst:594
+#: ../../installation.rst:595
 msgid "(Required) The IP address or server name of the outgoing email server."
 msgstr "(Required) The IP address or server name of the outgoing email server."
 
-#: ../../installation.rst:595
+#: ../../installation.rst:596
 msgid "``effektif.smtp.port``"
 msgstr "``effektif.smtp.port``"
 
-#: ../../installation.rst:595
+#: ../../installation.rst:596
 msgid "The port on which the outgoing SMTP server listens"
 msgstr "The port on which the outgoing SMTP server listens"
 
-#: ../../installation.rst:596
+#: ../../installation.rst:597
 msgid "``effektif.smtp.ssl``"
 msgstr "``effektif.smtp.ssl``"
 
-#: ../../installation.rst:596
+#: ../../installation.rst:597
 msgid "If SSL should be used ( true or false )"
 msgstr "If SSL should be used ( true or false )"
 
-#: ../../installation.rst:597
+#: ../../installation.rst:598
 msgid "``effektif.smtp.tls``"
 msgstr "``effektif.smtp.tls``"
 
-#: ../../installation.rst:597
+#: ../../installation.rst:598
 msgid "If TLS should be used ( true or false )"
 msgstr "If TLS should be used ( true or false )"
 
-#: ../../installation.rst:598
+#: ../../installation.rst:599
 msgid "``effektif.smtp.user``"
 msgstr "``effektif.smtp.user``"
 
-#: ../../installation.rst:598
+#: ../../installation.rst:599
 msgid "The username for authentication"
 msgstr "The username for authentication"
 
-#: ../../installation.rst:599
+#: ../../installation.rst:600
 msgid "``effektif.smtp.password``"
 msgstr "``effektif.smtp.password``"
 
-#: ../../installation.rst:599
+#: ../../installation.rst:600
 msgid "The password for authentication"
 msgstr "The password for authentication"
 
-#: ../../installation.rst:600
+#: ../../installation.rst:601
 msgid "``effektif.mail.from``"
 msgstr "``effektif.mail.from``"
 
-#: ../../installation.rst:600
-msgid ""
-"This email address is used as the sender when the Workflow Accelerator "
-"system sends out notifications."
-msgstr ""
-"This email address is used as the sender when the Workflow Accelerator "
-"system sends out notifications."
-
 #: ../../installation.rst:601
+msgid "This email address is used as the sender when the Workflow Accelerator system sends out notifications."
+msgstr "This email address is used as the sender when the Workflow Accelerator system sends out notifications."
+
+#: ../../installation.rst:602
 msgid "``effektif.mail.feedback``"
 msgstr "``effektif.mail.feedback``"
 
-#: ../../installation.rst:601
-msgid ""
-"This email address will receive all feedback which is sent using the "
-"feedback functionality in the application."
-msgstr ""
-"This email address will receive all feedback which is sent using the "
-"feedback functionality in the application."
-
 #: ../../installation.rst:602
+msgid "This email address will receive all feedback which is sent using the feedback functionality in the application."
+msgstr "This email address will receive all feedback which is sent using the feedback functionality in the application."
+
+#: ../../installation.rst:603
 msgid "``effektif.mongodb.servers``"
 msgstr "``effektif.mongodb.servers``"
 
-#: ../../installation.rst:602
-msgid ""
-"A comma-separated list of MongoDB servers (hostnames). If you have MongodDB "
-"running on the same server as Tomcat, the default value of localhost is okay."
-msgstr ""
-"A comma-separated list of MongoDB servers (hostnames). If you have MongodDB "
-"running on the same server as Tomcat, the default value of localhost is okay."
-
 #: ../../installation.rst:603
+msgid "A comma-separated list of MongoDB servers (hostnames). If you have MongodDB running on the same server as Tomcat, the default value of localhost is okay."
+msgstr "A comma-separated list of MongoDB servers (hostnames). If you have MongodDB running on the same server as Tomcat, the default value of localhost is okay."
+
+#: ../../installation.rst:604
 msgid "``effektif.mongodb.username``"
 msgstr "``effektif.mongodb.username``"
 
-#: ../../installation.rst:603
-msgid ""
-"The Workflow Accelerator MongoDB user name. If you created the user "
-"following the instructions in this guide, the name is ``signavio``."
-msgstr ""
-"The Workflow Accelerator MongoDB user name. If you created the user "
-"following the instructions in this guide, the name is ``signavio``."
-
 #: ../../installation.rst:604
+msgid "The Workflow Accelerator MongoDB user name. If you created the user following the instructions in this guide, the name is ``signavio``."
+msgstr "The Workflow Accelerator MongoDB user name. If you created the user following the instructions in this guide, the name is ``signavio``."
+
+#: ../../installation.rst:605
 msgid "``effektif.mongodb.password``"
 msgstr "``effektif.mongodb.password``"
 
-#: ../../installation.rst:604
-msgid ""
-"The password of the Workflow Accelerator MongoDB user. This is the password "
-"you defined during user creation."
-msgstr ""
-"The password of the Workflow Accelerator MongoDB user. This is the password "
-"you defined during user creation."
-
 #: ../../installation.rst:605
+msgid "The password of the Workflow Accelerator MongoDB user. This is the password you defined during user creation."
+msgstr "The password of the Workflow Accelerator MongoDB user. This is the password you defined during user creation."
+
+#: ../../installation.rst:606
 msgid "``effektif.mongodb.database``"
 msgstr "``effektif.mongodb.database``"
 
-#: ../../installation.rst:605
-msgid ""
-"The name of the database Workflow Accelerator should use. The default value "
-"``signavio`` is okay."
-msgstr ""
-"The name of the database Workflow Accelerator should use. The default value "
-"``signavio`` is okay."
-
 #: ../../installation.rst:606
+msgid "The name of the database Workflow Accelerator should use. The default value ``signavio`` is okay."
+msgstr "The name of the database Workflow Accelerator should use. The default value ``signavio`` is okay."
+
+#: ../../installation.rst:607
 msgid "``effektif.javascript.server.url``"
 msgstr "``effektif.javascript.server.url``"
 
-#: ../../installation.rst:606
-msgid ""
-"(Optional) The URL of the Workflow Accelerator Script Engine, e.g. ``http://"
-"localhost:8081``\\ ."
-msgstr ""
-"(Optional) The URL of the Workflow Accelerator Script Engine, e.g. ``http://"
-"localhost:8081``\\ ."
+#: ../../installation.rst:607
+msgid "(Optional) The URL of the Workflow Accelerator Script Engine, e.g. ``http://localhost:8081``\\ ."
+msgstr "(Optional) The URL of the Workflow Accelerator Script Engine, e.g. ``http://localhost:8081``\\ ."
 
-#: ../../installation.rst:609
-msgid ""
-"The following properties are only relevant if your Workflow Accelerator "
-"installation is connected to your Signavio installation. ::"
-msgstr ""
-"The following properties are only relevant if your Workflow Accelerator "
-"installation is connected to your Signavio installation. ::"
+#: ../../installation.rst:610
+msgid "The following properties are only relevant if your Workflow Accelerator installation is connected to your Signavio installation. ::"
+msgstr "The following properties are only relevant if your Workflow Accelerator installation is connected to your Signavio installation. ::"
 
-#: ../../installation.rst:618
-msgid ""
-"See :ref:`signavio-integration` for more information on how to set up the "
-"integration."
-msgstr ""
-"See :ref:`signavio-integration` for more information on how to set up the "
-"integration."
+#: ../../installation.rst:619
+msgid "See :ref:`signavio-integration` for more information on how to set up the integration."
+msgstr "See :ref:`signavio-integration` for more information on how to set up the integration."
 
-#: ../../installation.rst:621
+#: ../../installation.rst:622
 msgid "Configure logging"
 msgstr "Configure logging"
 
-#: ../../installation.rst:622
-msgid ""
-"The Workflow Accelerator system has its own application log file ``effektif."
-"log``\\ . You need to define the directory where this log file is stored. "
-"The directory is specified in the file ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/"
-"classes/logback.xml``\\ . Open the file and update the following line: ::"
-msgstr ""
-"The Workflow Accelerator system has its own application log file ``effektif."
-"log``\\ . You need to define the directory where this log file is stored. "
-"The directory is specified in the file ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/"
-"classes/logback.xml``\\ . Open the file and update the following line: ::"
+#: ../../installation.rst:623
+msgid "The Workflow Accelerator system has its own application log file ``effektif.log``\\ . You need to define the directory where this log file is stored. The directory is specified in the file ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes/logback.xml``\\ . Open the file and update the following line: ::"
+msgstr "The Workflow Accelerator system has its own application log file ``effektif.log``\\ . You need to define the directory where this log file is stored. The directory is specified in the file ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes/logback.xml``\\ . Open the file and update the following line: ::"
 
-#: ../../installation.rst:629
-msgid ""
-"The value should contain an absolute path. Make sure the user executing "
-"Tomcat has the required read / write permissions for the directory."
-msgstr ""
-"The value should contain an absolute path. Make sure the user executing "
-"Tomcat has the required read / write permissions for the directory."
+#: ../../installation.rst:630
+msgid "The value should contain an absolute path. Make sure the user executing Tomcat has the required read / write permissions for the directory."
+msgstr "The value should contain an absolute path. Make sure the user executing Tomcat has the required read / write permissions for the directory."
 
-#: ../../installation.rst:632
-msgid ""
-"On Windows it necessary to escape all \"\\\\\". An example value could like "
-"this: ``\"C:\\\\Logs\\\\Signavio\"``\\ ."
-msgstr ""
-"On Windows it necessary to escape all \"\\\\\". An example value could like "
-"this: ``\"C:\\\\Logs\\\\Signavio\"``\\ ."
+#: ../../installation.rst:633
+msgid "On Windows it necessary to escape all \"\\\\\". An example value could like this: ``\"C:\\\\Logs\\\\Signavio\"``\\ ."
+msgstr "On Windows it necessary to escape all \"\\\\\". An example value could like this: ``\"C:\\\\Logs\\\\Signavio\"``\\ ."
 
-#: ../../installation.rst:634
-msgid ""
-"This configuration file also enables you to change the log level in this "
-"file. By default, the log level is INFO. However, in a scenario where you "
-"require official support, you will be asked to set the log level to DEBUG. "
-"In order to so, update the following: ::"
-msgstr ""
-"This configuration file also enables you to change the log level in this "
-"file. By default, the log level is INFO. However, in a scenario where you "
-"require official support, you will be asked to set the log level to DEBUG. "
-"In order to so, update the following: ::"
+#: ../../installation.rst:635
+msgid "This configuration file also enables you to change the log level in this file. By default, the log level is INFO. However, in a scenario where you require official support, you will be asked to set the log level to DEBUG. In order to so, update the following: ::"
+msgstr "This configuration file also enables you to change the log level in this file. By default, the log level is INFO. However, in a scenario where you require official support, you will be asked to set the log level to DEBUG. In order to so, update the following: ::"
 
-#: ../../installation.rst:641
+#: ../../installation.rst:642
 msgid "Change it to: ::"
 msgstr "Change it to: ::"
 
-#: ../../installation.rst:645
-msgid ""
-"You will need to restart the Tomcat server for the changes to take effect. "
-"You can find more detailed information on how to start the Tomcat server in "
-"the next section."
-msgstr ""
-"You will need to restart the Tomcat server for the changes to take effect. "
-"You can find more detailed information on how to start the Tomcat server in "
-"the next section."
+#: ../../installation.rst:646
+msgid "You will need to restart the Tomcat server for the changes to take effect. You can find more detailed information on how to start the Tomcat server in the next section."
+msgstr "You will need to restart the Tomcat server for the changes to take effect. You can find more detailed information on how to start the Tomcat server in the next section."
 
-#: ../../installation.rst:648
-msgid ""
-"The log file is configured to do a roll over. Every day, a new log file is "
-"created which contains a timestamp in the filename similar to "
-"``effektif-2014-10-09.log``\\ . The most recent log entries can still be "
-"found in the file effektif.log. After 30 days, the log files will be removed "
-"automatically."
-msgstr ""
-"The log file is configured to do a roll over. Every day, a new log file is "
-"created which contains a timestamp in the filename similar to "
-"``effektif-2014-10-09.log``\\ . The most recent log entries can still be "
-"found in the file effektif.log. After 30 days, the log files will be removed "
-"automatically.found in the file effektif.log. After 30 days, the log files "
-"will be removed automatically."
-
-#~ msgid ""
-#~ "MongoDB is currently the only database system that Workflow Accelerator "
-#~ "supports. If you already have an infrastructure that can provide a "
-#~ "MongoDB version 3.2.x (or 3.4.x) instance, simply create a new instance "
-#~ "for Workflow Accelerator and skip to :ref:`configure-mongodb`. Otherwise "
-#~ "continue with the installation instructions."
-#~ msgstr ""
-#~ "MongoDB is currently the only database system that Workflow Accelerator "
-#~ "supports. If you already have an infrastructure that can provide a "
-#~ "MongoDB version 3.2.x (or 3.4.x) instance, simply create a new instance "
-#~ "for Workflow Accelerator and skip to :ref:`configure-mongodb`. Otherwise "
-#~ "continue with the installation instructions."
-
-#~ msgid ""
-#~ "Please, make sure to download the 64-bit version of MongoDB. The 32-bit "
-#~ "version is limited to 2GB of stored content and cannot therefore be used "
-#~ "in production systems."
-#~ msgstr ""
-#~ "Please, make sure to download the 64-bit version of MongoDB. The 32-bit "
-#~ "version is limited to 2GB of stored content and cannot therefore be used "
-#~ "in production systems."
+#: ../../installation.rst:649
+msgid "The log file is configured to do a roll over. Every day, a new log file is created which contains a timestamp in the filename similar to ``effektif-2014-10-09.log``\\ . The most recent log entries can still be found in the file effektif.log. After 30 days, the log files will be removed automatically."
+msgstr "The log file is configured to do a roll over. Every day, a new log file is created which contains a timestamp in the filename similar to ``effektif-2014-10-09.log``\\ . The most recent log entries can still be found in the file effektif.log. After 30 days, the log files will be removed automatically.found in the file effektif.log. After 30 days, the log files will be removed automatically."

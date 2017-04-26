@@ -275,22 +275,23 @@ Debian
 ``````
 If you are installing MongoDB on a Debian system, you are advised to use the method described in the MongoDB configuration:
 
-https://docs.mongodb.org/manual/tutorial/install-mongodb-on-debian/
+https://docs.mongodb.com/manual/tutorial/install-mongodb-on-debian/
 
-For convenience, the script ``$WORKFLOW_HOME/mongodb.install.debian.sh`` wraps the necessary commands for installing the correct version of MongoDB on *Debian 7 Wheezy* using ``apt-get``.
+For convenience, the script ``$WORKFLOW_HOME/mongodb.install.debian.sh`` wraps the necessary commands for installing the correct version of MongoDB on *Debian 8 Jessie* using ``apt-get``.
 Simply execute it from the command line by opening ``$WORKFLOW_HOME`` and calling: ::
 
     sudo ./mongodb.install.debian.sh
 
-This will add the MongoDB repositories to your package sources and install the version 3.2.x of MongoDB.
-Note that this script only works with Debian 7 Wheezy.
+This will add the MongoDB repositories to your package sources and install the version 3.4.x of MongoDB.
+Note that this script only works with Debian 8 Jessie.
+The official documentation offers instructions for Debian 7 Wheezy as well.
 You can now simply start and stop the MongoDB server by calling ::
 
-    sudo /etc/init.d/mongod start
+    sudo service mongod start
 
 or ::
 
-    sudo /etc/init.d/mongod stop
+    sudo service mongod stop
 
 The server will use the default configuration file ``/etc/mongod.conf``\ . 
 See the next subsection for more information on how to configure MongoDB for Workflow Accelerator and create the required user. 
@@ -342,7 +343,7 @@ This setting tells MongoDB to only bind to the local interface and reject remote
 If you plan to install MongoDB and Tomcat on different machines, you must update this setting and either remove it or add the IP interface MongoDB should bind to, in order to listen for incoming connections.
 This value can contain a comma separated list of IPs and should NOT contain the IP address of the application server.
 
-For more configuration options, see https://docs.mongodb.org/manual/reference/configuration-options/\ .
+For more configuration options, see https://docs.mongodb.com/manual/reference/configuration-options/\ .
 
 .. _add-mongodb-user:
 
