@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Effektif administrators guide 3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-20 16:01+0200\n"
-"PO-Revision-Date: 2017-04-20 16:20+0100\n"
+"POT-Creation-Date: 2017-04-25 18:58+0200\n"
+"PO-Revision-Date: 2017-04-25 19:01+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif dev <dev@effektif.com>\n"
 "MIME-Version: 1.0\n"
@@ -24,425 +24,305 @@ msgid "Update notes"
 msgstr "Update notes"
 
 #: ../../update-notes.rst:6
-msgid ""
-"This section contains important information about Signavio Workflow "
-"Accelerator system updates. It lists changes to technical requirements for "
-"new versions and additional instructions for updates."
-msgstr ""
-"This section contains important information about Signavio Workflow "
-"Accelerator system updates. It lists changes to technical requirements for "
-"new versions and additional instructions for updates."
+msgid "This section contains important information about Signavio Workflow Accelerator system updates. It lists changes to technical requirements for new versions and additional instructions for updates."
+msgstr "This section contains important information about Signavio Workflow Accelerator system updates. It lists changes to technical requirements for new versions and additional instructions for updates."
 
 #: ../../update-notes.rst:10
-msgid ""
-"If you skip one or more versions of Workflow Accelerator during the update, "
-"please follow the update notes for the versions you are skipping as well. "
-"You should start with the oldest version which is newer than your currently "
-"installed version of Workflow Accelerator."
-msgstr ""
-"If you skip one or more versions of Workflow Accelerator during the update, "
-"please follow the update notes for the versions you are skipping as well. "
-"You should start with the oldest version which is newer than your currently "
-"installed version of Workflow Accelerator."
+msgid "If you skip one or more versions of Workflow Accelerator during the update, please follow the update notes for the versions you are skipping as well. You should start with the oldest version which is newer than your currently installed version of Workflow Accelerator."
+msgstr "If you skip one or more versions of Workflow Accelerator during the update, please follow the update notes for the versions you are skipping as well. You should start with the oldest version which is newer than your currently installed version of Workflow Accelerator."
 
 #: ../../update-notes.rst:13
-msgid "Updating to Signavio Workflow 3.15"
-msgstr "Updating to Signavio Workflow 3.15"
+msgid "Updating to Signavio Workflow Accelerator 3.22"
+msgstr "Updating to Signavio Workflow Accelerator 3.22"
 
 #: ../../update-notes.rst:14
-msgid ""
-"If you use Signavio Workflow in combination with the Signavio Process "
-"Editor, you must update the Signavio Process Editor to version 10.8."
-msgstr ""
-"If you use Signavio Workflow in combination with the Signavio Process "
-"Editor, you must update the Signavio Process Editor to version 10.8."
+msgid "Signavio Workflow has been renamed to Signavio Workflow Accelerator. If you use Workflow Accelerator in combination with Signavio Process Manager, you must update Process Manager to version 10.15."
+msgstr "Signavio Workflow has been renamed to Signavio Workflow Accelerator. If you use Workflow Accelerator in combination with Signavio Process Manager, you must update Process Manager to version 10.15."
 
-#: ../../update-notes.rst:16
-msgid ""
-"To update from a version prior to Signavio Workflow 3.11, first follow the "
-"instructions in the next sections version by version, starting with the "
-"oldest version which is higher than your currently installed version."
-msgstr ""
-"To update from a version prior to Signavio Workflow 3.11, first follow the "
-"instructions in the next sections version by version, starting with the "
-"oldest version which is higher than your currently installed version."
+#: ../../update-notes.rst:18
+msgid "To update Workflow Accelerator from a version prior to 3.11, you MUST first update the system to version 3.15 before you can update to version 3.22. Download `Signavio Workflow 3.15 <https://download.signavio.com/onpremise/latest/workflow/signavio-workflow-v3.15.11.zip>`_ and follow the respective previous update instructions, before you continue with this section."
+msgstr "To update Workflow Accelerator from a version prior to 3.11, you MUST first update the system to version 3.15 before you can update to version 3.22. Download `Signavio Workflow 3.15 <https://download.signavio.com/onpremise/latest/workflow/signavio-workflow-v3.15.11.zip>`_ and follow the respective previous update instructions, before you continue with this section."
 
-#: ../../update-notes.rst:19
-msgid "Updating to Signavio Workflow 3.11"
-msgstr "Updating to Signavio Workflow 3.11"
+#: ../../update-notes.rst:21
+msgid "As well as upgrading the application, you should upgrade MongoDB. See the following section for more information."
+msgstr "As well as upgrading the application, you should upgrade MongoDB. See the following section for more information."
 
-#: ../../update-notes.rst:20
-msgid ""
-"Effektif has been renamed to Signavio Workflow. Along with this change, the "
-"colors of the default theme have changed as well. You may notice the name of "
-"the database and database user in the examples in this manual have been "
-"changed from ``effektif`` to ``signavio``. You don't need to change any of "
-"the names in your production environment. But keep in mind that you might "
-"have to adjust any examples in this manual to your actual naming."
-msgstr ""
-"Effektif has been renamed to Signavio Workflow. Along with this change, the "
-"colors of the default theme have changed as well. You may notice the name of "
-"the database and database user in the examples in this manual have been "
-"changed from ``effektif`` to ``signavio``. You don't need to change any of "
-"the names in your production environment. But keep in mind that you might "
-"have to adjust any examples in this manual to your actual naming."
-
-#: ../../update-notes.rst:25
-msgid ""
-"With the new version of Signavio Workflow you are now able to configure a "
-"Node.js server to execute script tasks in a workflow. Note, you only need to "
-"configure this component if your version of Signavio Workflow supports "
-"script tasks. In general, you can use script tasks only with a full version "
-"of Signavio Workflow and not as part of the Signavio Approval Workflow. "
-"Refer to :ref:`install-script-engine` for more information on how to setup "
-"the Signavio Workflow Script Engine."
-msgstr ""
-"With the new version of Signavio Workflow you are now able to configure a "
-"Node.js server to execute script tasks in a workflow. Note, you only need to "
-"configure this component if your version of Signavio Workflow supports "
-"script tasks. In general, you can use script tasks only with a full version "
-"of Signavio Workflow and not as part of the Signavio Approval Workflow. "
-"Refer to :ref:`install-script-engine` for more information on how to setup "
-"the Signavio Workflow Script Engine."
-
-#: ../../update-notes.rst:30
-msgid ""
-"If you update from a version prior to Effektif 3.4, please follow the "
-"instructions in the next section to update your Java, Tomcat and MongoDB "
-"version as well. You don't need to do an intermediate update to Effektif "
-"version 3.4 and can directly update to version 3.11 of Signavio Workflow."
-msgstr ""
-"If you update from a version prior to Effektif 3.4, please follow the "
-"instructions in the next section to update your Java, Tomcat and MongoDB "
-"version as well. You don't need to do an intermediate update to Effektif "
-"version 3.4 and can directly update to version 3.11 of Signavio Workflow."
-
-#: ../../update-notes.rst:33
-msgid "Updating to Effektif 3.4"
-msgstr "Updating to Effektif 3.4"
-
-#: ../../update-notes.rst:34
-msgid ""
-"Effektif 3.4 requires several infrastructure changes. Starting with version "
-"3.4, Effektif requires Java 8. We also recommended upgrading MongoDB to "
-"version 3.2.x, because of the increased performance and functionality. "
-"Effektif 3.4 will still support MongoDB 2.4.x, but later releases will "
-"assume that you are using MongoDB 3.2. Last but not least, Effektif 3.4 "
-"supports Apache Tomcat 7 and 8. For now, you can use either version, but we "
-"recommend the optional upgrade to Tomcat 8."
-msgstr ""
-"Effektif 3.4 requires several infrastructure changes. Starting with version "
-"3.4, Effektif requires Java 8. We also recommended upgrading MongoDB to "
-"version 3.2.x, because of the increased performance and functionality. "
-"Effektif 3.4 will still support MongoDB 2.4.x, but later releases will "
-"assume that you are using MongoDB 3.2. Last but not least, Effektif 3.4 "
-"supports Apache Tomcat 7 and 8. For now, you can use either version, but we "
-"recommend the optional upgrade to Tomcat 8."
-
-#: ../../update-notes.rst:41
-msgid ""
-"If you are using Effektif in combination with a Signavio system, you are "
-"required to update your Signavio sytem as well to version 9.7 or higher."
-msgstr ""
-"If you are using Effektif in combination with a Signavio system, you are "
-"required to update your Signavio sytem as well to version 9.7 or higher."
-
-#: ../../update-notes.rst:43
-msgid ""
-"When updating Effektif and your infrastructure, follow the following "
-"sequence:"
-msgstr ""
-"When updating Effektif and your infrastructure, follow the following "
-"sequence:"
-
-#: ../../update-notes.rst:45
-msgid "Update Java to Java 8 (required)"
-msgstr "Update Java to Java 8 (required)"
-
-#: ../../update-notes.rst:46
-msgid "Update Tomcat to Tomcat 8 (optional)"
-msgstr "Update Tomcat to Tomcat 8 (optional)"
-
-#: ../../update-notes.rst:47
-msgid "Update the Effektif application"
-msgstr "Update the Effektif application"
-
-#: ../../update-notes.rst:48
-msgid "Update MongoDB to MongoDB 3.2 (required)"
-msgstr "Update MongoDB to MongoDB 3.2 (required)"
-
-#: ../../update-notes.rst:50
-msgid ""
-"Be aware, the update to Effektif 3.4 contains multiple changes in the "
-"underlying data schema which require several long running migrations. "
-"Depending on the size of your database, the migrations might take several "
-"seconds, or up to 20 minutes."
-msgstr ""
-"Be aware, the update to Effektif 3.4 contains multiple changes in the "
-"underlying data schema which require several long running migrations. "
-"Depending on the size of your database, the migrations might take several "
-"seconds, or up to 20 minutes."
-
-#: ../../update-notes.rst:54
-msgid "Updating Java and Tomcat"
-msgstr "Updating Java and Tomcat"
-
-#: ../../update-notes.rst:55
-msgid ""
-"The last Effektif release 2.27.x is already compatible with Java 8 and "
-"Tomcat 8. Start by updating Java and Tomcat, because Effektif 3.4 will not "
-"run on Java 7. You can install Tomcat 8 next to an existing Tomcat 7, and "
-"then switch between the application servers. :ref:`install-tomcat` explains "
-"how to setup a Tomcat 8 server. After the successful setup, ensure none of "
-"the Tomcat servers is running. Then copy the ``$TOMCAT_HOME/webapps/ROOT`` "
-"directory from your Tomcat 7 to your Tomcat 8 directory and start the Tomcat "
-"8 server. Now, you should be able to access the Effektif system again via a "
-"browser."
-msgstr ""
-"The last Effektif release 2.27.x is already compatible with Java 8 and "
-"Tomcat 8. Start by updating Java and Tomcat, because Effektif 3.4 will not "
-"run on Java 7. You can install Tomcat 8 next to an existing Tomcat 7, and "
-"then switch between the application servers. :ref:`install-tomcat` explains "
-"how to setup a Tomcat 8 server. After the successful setup, ensure none of "
-"the Tomcat servers is running. Then copy the ``$TOMCAT_HOME/webapps/ROOT`` "
-"directory from your Tomcat 7 to your Tomcat 8 directory and start the Tomcat "
-"8 server. Now, you should be able to access the Effektif system again via a "
-"browser."
-
-#: ../../update-notes.rst:64
-msgid "Updating Effektif"
-msgstr "Updating Effektif"
-
-#: ../../update-notes.rst:65
-msgid ""
-"As mentioned before, the update to version 3.4 changes the data schema. "
-"Create a backup of your database before updating the application."
-msgstr ""
-"As mentioned before, the update to version 3.4 changes the data schema. "
-"Create a backup of your database before updating the application."
-
-#: ../../update-notes.rst:68
-msgid ""
-"Data migrations might take from several seconds up to several minutes. These "
-"migrations are executed when the server starts, so the first start of "
-"Effektif might take longer than usual."
-msgstr ""
-"Data migrations might take from several seconds up to several minutes. These "
-"migrations are executed when the server starts, so the first start of "
-"Effektif might take longer than usual."
-
-#: ../../update-notes.rst:71
-msgid ""
-"See :ref:`update` for more information on how to update the Effektif "
-"application. After you have successfully updated Effektif, you can continue "
-"with the next section and update MongoDB."
-msgstr ""
-"See :ref:`update` for more information on how to update the Effektif "
-"application. After you have successfully updated Effektif, you can continue "
-"with the next section and update MongoDB."
-
-#: ../../update-notes.rst:75
+#: ../../update-notes.rst:25 ../../update-notes.rst:148
 msgid "Updating MongoDB"
 msgstr "Updating MongoDB"
 
-#: ../../update-notes.rst:76
-msgid ""
-"Effektif 3.4 now supports the latest version of MongoDB (3.2.x) which comes "
-"with improved performance and functionality. The usual upgrade from MongoDB "
-"2.4.x to 3.2.x (https://docs.mongodb.org/manual/release-notes/3.2-upgrade/) "
-"requires a stepwise approach, first upgrading from 2.4 to 2.6, then from 2.6 "
-"to 3.0 and at last from 3.0 to 3.2. Upgrading the database also changes the "
-"storage engine from the old MMAPv1 engine to the new WiredTiger engine."
-msgstr ""
-"Effektif 3.4 now supports the latest version of MongoDB (3.2.x) which comes "
-"with improved performance and functionality. The usual upgrade from MongoDB "
-"2.4.x to 3.2.x (https://docs.mongodb.org/manual/release-notes/3.2-upgrade/) "
-"requires a stepwise approach, first upgrading from 2.4 to 2.6, then from 2.6 "
-"to 3.0 and at last from 3.0 to 3.2. Upgrading the database also changes the "
-"storage engine from the old MMAPv1 engine to the new WiredTiger engine."
+#: ../../update-notes.rst:26
+msgid "Workflow Accelerator 3.22 now supports the latest version of MongoDB (3.4.x) which comes with improved performance and functionality. You should upgrade to MongoDB version 3.4, as Workflow Accelerator releases will require it."
+msgstr "Workflow Accelerator 3.22 now supports the latest version of MongoDB (3.4.x) which comes with improved performance and functionality. You should upgrade to MongoDB version 3.4, as Workflow Accelerator releases will require it."
 
-#: ../../update-notes.rst:80
-msgid ""
-"However, we will use a different approach to migrate your MongoDB 2.4.x to "
-"version 3.2.x. This approach will simply import a backup of MongoDB 2.4.x "
-"into a completely fresh setup of MongoDB 3.2.x."
-msgstr ""
-"However, we will use a different approach to migrate your MongoDB 2.4.x to "
-"version 3.2.x. This approach will simply import a backup of MongoDB 2.4.x "
-"into a completely fresh setup of MongoDB 3.2.x."
+#: ../../update-notes.rst:29
+msgid "You can only update to MongoDB 3.4 if you are currently using version 3.2. The official MongoDB documentation contains for more information about the update: https://docs.mongodb.com/manual/release-notes/3.4-upgrade-standalone/"
+msgstr "You can only update to MongoDB 3.4 if you are currently using version 3.2. The official MongoDB documentation contains for more information about the update: https://docs.mongodb.com/manual/release-notes/3.4-upgrade-standalone/"
 
-#: ../../update-notes.rst:82
+#: ../../update-notes.rst:33
+msgid "To update your standalone MongoDB 3.2 to version 3.4 follow these steps:"
+msgstr "To update your standalone MongoDB 3.2 to version 3.4 follow these steps:"
+
+#: ../../update-notes.rst:35 ../../update-notes.rst:155
 msgid "Stop the Tomcat application server - see :ref:`stopping`."
 msgstr "Stop the Tomcat application server - see :ref:`stopping`."
 
-#: ../../update-notes.rst:83
-msgid ""
-"Create a backup of your database using ``mongodump`` - see :ref:`backup`."
-msgstr ""
-"Create a backup of your database using ``mongodump`` - see :ref:`backup`."
+#: ../../update-notes.rst:36 ../../update-notes.rst:156
+msgid "Create a backup of your database using ``mongodump`` - see :ref:`backup`."
+msgstr "Create a backup of your database using ``mongodump`` - see :ref:`backup`."
 
-#: ../../update-notes.rst:85
-msgid "You will later import this backup into a new MongoDB 3.2 installation."
-msgstr "You will later import this backup into a new MongoDB 3.2 installation."
-
-#: ../../update-notes.rst:87
+#: ../../update-notes.rst:37 ../../update-notes.rst:160
 msgid "Stop MongoDB - see :ref:`stopping`."
 msgstr "Stop MongoDB - see :ref:`stopping`."
 
-#: ../../update-notes.rst:88
-msgid ""
-"*Windows only:* manually remove the created MongoDB service by executing ``"
-"$MONGO_HOME\\bin\\mongod.exe --remove`` with administrator privileges on the "
-"command line ``cmd``"
-msgstr ""
-"*Windows only:* manually remove the created MongoDB service by executing ``"
-"$MONGO_HOME\\bin\\mongod.exe --remove`` with administrator privileges on the "
-"command line ``cmd``"
+#: ../../update-notes.rst:38 ../../update-notes.rst:161
+msgid "*Windows only:* manually remove the created MongoDB service by executing ``$MONGO_HOME\\bin\\mongod.exe --remove`` with administrator privileges on the command line ``cmd``"
+msgstr "*Windows only:* manually remove the created MongoDB service by executing ``$MONGO_HOME\\bin\\mongod.exe --remove`` with administrator privileges on the command line ``cmd``"
 
-#: ../../update-notes.rst:89
-msgid "Uninstall MongoDB 2.4.x, but ensure you don't delete your backup!"
-msgstr "Uninstall MongoDB 2.4.x, but ensure you don't delete your backup!"
+#: ../../update-notes.rst:39
+msgid "Uninstall MongoDB 3.2.x, but ensure you don't delete the data directory and configuration file of your database as well as the backup!"
+msgstr "Uninstall MongoDB 3.2.x, but ensure you don't delete the data directory and configuration file of your database as well as the backup!"
 
-#: ../../update-notes.rst:91
-msgid "*Windows:* Delete the MongoDB directory."
-msgstr "*Windows:* Delete the MongoDB directory."
+#: ../../update-notes.rst:40
+msgid "Install MongoDB 3.4.x."
+msgstr "Install MongoDB 3.4.x."
 
-#: ../../update-notes.rst:92
-msgid ""
-"*Debian:* Use your package manager and uninstall the package "
-"``mongodb-10gen``."
-msgstr ""
-"*Debian:* Use your package manager and uninstall the package "
-"``mongodb-10gen``."
+#: ../../update-notes.rst:42
+msgid "You can find a suitable version for your operating system in the MongoDB download center: https://www.mongodb.com/download-center"
+msgstr "You can find a suitable version for your operating system in the MongoDB download center: https://www.mongodb.com/download-center"
 
-#: ../../update-notes.rst:94
-msgid "Install MongoDB 3.2.x and recreate the Effektif database user again."
-msgstr "Install MongoDB 3.2.x and recreate the Effektif database user again."
+#: ../../update-notes.rst:44
+msgid "*Windows only:* Open the command line ``cmd`` with administrative privileges and execute the following command. Make sure to use absolute paths and replace them with the matching paths on your system."
+msgstr "*Windows only:* Open the command line ``cmd`` with administrative privileges and execute the following command. Make sure to use absolute paths and replace them with the matching paths on your system."
 
-#: ../../update-notes.rst:96
-msgid ""
-"``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes/effektif-onpremise.properties`` "
-"contains the current name and password of the Effektif database user"
-msgstr ""
-"``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes/effektif-onpremise.properties`` "
-"contains the current name and password of the Effektif database user"
+#: ../../update-notes.rst:46
+msgid "``C:\\MongoDB\\bin\\mongod.exe --config C:\\MongoDB\\mongod.cfg --install``"
+msgstr "``C:\\MongoDB\\bin\\mongod.exe --config C:\\MongoDB\\mongod.cfg --install``"
 
-#: ../../update-notes.rst:97
-msgid ""
-"You can install the new version in the same place as the old one, please "
-"ensure the data directory of the new database is empty before you start it."
-msgstr ""
-"You can install the new version in the same place as the old one, please "
-"ensure the data directory of the new database is empty before you start it."
+#: ../../update-notes.rst:47
+msgid "The referenced configuration file is the one you have created previously for the old version of MongoDB and should still be in the same location."
+msgstr "The referenced configuration file is the one you have created previously for the old version of MongoDB and should still be in the same location."
 
-#: ../../update-notes.rst:98
-msgid "Note that the the MongoDB configuration file format has changed."
-msgstr "Note that the the MongoDB configuration file format has changed."
-
-#: ../../update-notes.rst:99
-msgid ""
-":ref:`install-mongodb` contains more information on how to setup MongoDB 3.2."
-"x"
-msgstr ""
-":ref:`install-mongodb` contains more information on how to setup MongoDB 3.2."
-"x"
-
-#: ../../update-notes.rst:101
+#: ../../update-notes.rst:49 ../../update-notes.rst:174
 msgid "Start the new MongoDB instance."
 msgstr "Start the new MongoDB instance."
 
-#: ../../update-notes.rst:102
-msgid ""
-"Restore the backup partially to your new MongoDB instance using "
-"``mongorestore``. Your backup from step 1 should contain multiple folders, "
-"one for each database in the MongoDB instance. You only need to restore the "
-"two that contain Effektif’s data. Their default names are ``effektif`` and "
-"``effektif-files``. You might have chosen a different name by defining "
-"another value for ``effektif.mongodb.database`` in your Effektif "
-"configuration file. The value there represents the name of the first "
-"database and the name of the second database is generated by adding ``-"
-"files``. You have to execute the restore command for both of the directories "
-"separately. The following lines show examples for the restore commands, "
-"assuming your MongoDB user and database are both called ``effektif``."
-msgstr ""
-"Restore the backup partially to your new MongoDB instance using "
-"``mongorestore``. Your backup from step 1 should contain multiple folders, "
-"one for each database in the MongoDB instance. You only need to restore the "
-"two that contain Effektif’s data. Their default names are ``effektif`` and "
-"``effektif-files``. You might have chosen a different name by defining "
-"another value for ``effektif.mongodb.database`` in your Effektif "
-"configuration file. The value there represents the name of the first "
-"database and the name of the second database is generated by adding ``-"
-"files``. You have to execute the restore command for both of the directories "
-"separately. The following lines show examples for the restore commands, "
-"assuming your MongoDB user and database are both called ``effektif``."
+#: ../../update-notes.rst:50
+msgid "Enable new functionality for version 3.4 by executing the following command on the command line."
+msgstr "Enable new functionality for version 3.4 by executing the following command on the command line."
 
-#: ../../update-notes.rst:104
-msgid ""
-"The database name is specified by the ``--db`` parameter and also by the "
-"existing backup directory name."
-msgstr ""
-"The database name is specified by the ``--db`` parameter and also by the "
-"existing backup directory name."
+#: ../../update-notes.rst:53
+msgid "Windows"
+msgstr "Windows"
 
-#: ../../update-notes.rst:105
+#: ../../update-notes.rst:54
+msgid "Open a command line with administrative privileges"
+msgstr "Open a command line with administrative privileges"
+
+#: ../../update-notes.rst:55
+msgid "Navigate to the MongoDB bin directory"
+msgstr "Navigate to the MongoDB bin directory"
+
+#: ../../update-notes.rst:57
+msgid "For example ``C:\\MongoDB\\bin``"
+msgstr "For example ``C:\\MongoDB\\bin``"
+
+#: ../../update-notes.rst:59 ../../update-notes.rst:72
+msgid "Execute the following command:"
+msgstr "Execute the following command:"
+
+#: ../../update-notes.rst:61 ../../update-notes.rst:74
+msgid "Replace ``<username>`` with your MongoDB user, e.g. ``signavio``"
+msgstr "Replace ``<username>`` with your MongoDB user, e.g. ``signavio``"
+
+#: ../../update-notes.rst:62 ../../update-notes.rst:75
+msgid "Replace ``<password>`` with your MongoDB user password"
+msgstr "Replace ``<password>`` with your MongoDB user password"
+
+#: ../../update-notes.rst:70
+msgid "Debian"
+msgstr "Debian"
+
+#: ../../update-notes.rst:71
+msgid "Open a command line"
+msgstr "Open a command line"
+
+#: ../../update-notes.rst:82
+msgid "You finished the MongoDB update successfully."
+msgstr "You finished the MongoDB update successfully."
+
+#: ../../update-notes.rst:86
+msgid "Updating to Signavio Workflow 3.15"
+msgstr "Updating to Signavio Workflow 3.15"
+
+#: ../../update-notes.rst:87
+msgid "If you use Signavio Workflow in combination with the Signavio Process Editor, you must update the Signavio Process Editor to version 10.8."
+msgstr "If you use Signavio Workflow in combination with the Signavio Process Editor, you must update the Signavio Process Editor to version 10.8."
+
+#: ../../update-notes.rst:89
+msgid "To update from a version prior to Signavio Workflow 3.11, first follow the instructions in the next sections version by version, starting with the oldest version which is higher than your currently installed version."
+msgstr "To update from a version prior to Signavio Workflow 3.11, first follow the instructions in the next sections version by version, starting with the oldest version which is higher than your currently installed version."
+
+#: ../../update-notes.rst:92
+msgid "Updating to Signavio Workflow 3.11"
+msgstr "Updating to Signavio Workflow 3.11"
+
+#: ../../update-notes.rst:93
+msgid "Effektif has been renamed to Signavio Workflow. Along with this change, the colors of the default theme have changed as well. You may notice the name of the database and database user in the examples in this manual have been changed from ``effektif`` to ``signavio``. You don't need to change any of the names in your production environment. But keep in mind that you might have to adjust any examples in this manual to your actual naming."
+msgstr "Effektif has been renamed to Signavio Workflow. Along with this change, the colors of the default theme have changed as well. You may notice the name of the database and database user in the examples in this manual have been changed from ``effektif`` to ``signavio``. You don't need to change any of the names in your production environment. But keep in mind that you might have to adjust any examples in this manual to your actual naming."
+
+#: ../../update-notes.rst:98
+msgid "With the new version of Signavio Workflow you are now able to configure a Node.js server to execute script tasks in a workflow. Note, you only need to configure this component if your version of Signavio Workflow supports script tasks. In general, you can use script tasks only with a full version of Signavio Workflow and not as part of the Signavio Approval Workflow. Refer to :ref:`install-script-engine` for more information on how to setup the Signavio Workflow Script Engine."
+msgstr "With the new version of Signavio Workflow you are now able to configure a Node.js server to execute script tasks in a workflow. Note, you only need to configure this component if your version of Signavio Workflow supports script tasks. In general, you can use script tasks only with a full version of Signavio Workflow and not as part of the Signavio Approval Workflow. Refer to :ref:`install-script-engine` for more information on how to setup the Signavio Workflow Script Engine."
+
+#: ../../update-notes.rst:103
+msgid "If you update from a version prior to Effektif 3.4, please follow the instructions in the next section to update your Java, Tomcat and MongoDB version as well. You don't need to do an intermediate update to Effektif version 3.4 and can directly update to version 3.11 of Signavio Workflow."
+msgstr "If you update from a version prior to Effektif 3.4, please follow the instructions in the next section to update your Java, Tomcat and MongoDB version as well. You don't need to do an intermediate update to Effektif version 3.4 and can directly update to version 3.11 of Signavio Workflow."
+
+#: ../../update-notes.rst:106
+msgid "Updating to Effektif 3.4"
+msgstr "Updating to Effektif 3.4"
+
+#: ../../update-notes.rst:107
+msgid "Effektif 3.4 requires several infrastructure changes. Starting with version 3.4, Effektif requires Java 8. We also recommended upgrading MongoDB to version 3.2.x, because of the increased performance and functionality. Effektif 3.4 will still support MongoDB 2.4.x, but later releases will assume that you are using MongoDB 3.2. Last but not least, Effektif 3.4 supports Apache Tomcat 7 and 8. For now, you can use either version, but we recommend the optional upgrade to Tomcat 8."
+msgstr "Effektif 3.4 requires several infrastructure changes. Starting with version 3.4, Effektif requires Java 8. We also recommended upgrading MongoDB to version 3.2.x, because of the increased performance and functionality. Effektif 3.4 will still support MongoDB 2.4.x, but later releases will assume that you are using MongoDB 3.2. Last but not least, Effektif 3.4 supports Apache Tomcat 7 and 8. For now, you can use either version, but we recommend the optional upgrade to Tomcat 8."
+
+#: ../../update-notes.rst:114
+msgid "If you are using Effektif in combination with a Signavio system, you are required to update your Signavio sytem as well to version 9.7 or higher."
+msgstr "If you are using Effektif in combination with a Signavio system, you are required to update your Signavio sytem as well to version 9.7 or higher."
+
+#: ../../update-notes.rst:116
+msgid "When updating Effektif and your infrastructure, follow the following sequence:"
+msgstr "When updating Effektif and your infrastructure, follow the following sequence:"
+
+#: ../../update-notes.rst:118
+msgid "Update Java to Java 8 (required)"
+msgstr "Update Java to Java 8 (required)"
+
+#: ../../update-notes.rst:119
+msgid "Update Tomcat to Tomcat 8 (optional)"
+msgstr "Update Tomcat to Tomcat 8 (optional)"
+
+#: ../../update-notes.rst:120
+msgid "Update the Effektif application"
+msgstr "Update the Effektif application"
+
+#: ../../update-notes.rst:121
+msgid "Update MongoDB to MongoDB 3.2 (required)"
+msgstr "Update MongoDB to MongoDB 3.2 (required)"
+
+#: ../../update-notes.rst:123
+msgid "Be aware, the update to Effektif 3.4 contains multiple changes in the underlying data schema which require several long running migrations. Depending on the size of your database, the migrations might take several seconds, or up to 20 minutes."
+msgstr "Be aware, the update to Effektif 3.4 contains multiple changes in the underlying data schema which require several long running migrations. Depending on the size of your database, the migrations might take several seconds, or up to 20 minutes."
+
+#: ../../update-notes.rst:127
+msgid "Updating Java and Tomcat"
+msgstr "Updating Java and Tomcat"
+
+#: ../../update-notes.rst:128
+msgid "The last Effektif release 2.27.x is already compatible with Java 8 and Tomcat 8. Start by updating Java and Tomcat, because Effektif 3.4 will not run on Java 7. You can install Tomcat 8 next to an existing Tomcat 7, and then switch between the application servers. :ref:`install-tomcat` explains how to setup a Tomcat 8 server. After the successful setup, ensure none of the Tomcat servers is running. Then copy the ``$TOMCAT_HOME/webapps/ROOT`` directory from your Tomcat 7 to your Tomcat 8 directory and start the Tomcat 8 server. Now, you should be able to access the Effektif system again via a browser."
+msgstr "The last Effektif release 2.27.x is already compatible with Java 8 and Tomcat 8. Start by updating Java and Tomcat, because Effektif 3.4 will not run on Java 7. You can install Tomcat 8 next to an existing Tomcat 7, and then switch between the application servers. :ref:`install-tomcat` explains how to setup a Tomcat 8 server. After the successful setup, ensure none of the Tomcat servers is running. Then copy the ``$TOMCAT_HOME/webapps/ROOT`` directory from your Tomcat 7 to your Tomcat 8 directory and start the Tomcat 8 server. Now, you should be able to access the Effektif system again via a browser."
+
+#: ../../update-notes.rst:137
+msgid "Updating Effektif"
+msgstr "Updating Effektif"
+
+#: ../../update-notes.rst:138
+msgid "As mentioned before, the update to version 3.4 changes the data schema. Create a backup of your database before updating the application."
+msgstr "As mentioned before, the update to version 3.4 changes the data schema. Create a backup of your database before updating the application."
+
+#: ../../update-notes.rst:141
+msgid "Data migrations might take from several seconds up to several minutes. These migrations are executed when the server starts, so the first start of Effektif might take longer than usual."
+msgstr "Data migrations might take from several seconds up to several minutes. These migrations are executed when the server starts, so the first start of Effektif might take longer than usual."
+
+#: ../../update-notes.rst:144
+msgid "See :ref:`update` for more information on how to update the Effektif application. After you have successfully updated Effektif, you can continue with the next section and update MongoDB."
+msgstr "See :ref:`update` for more information on how to update the Effektif application. After you have successfully updated Effektif, you can continue with the next section and update MongoDB."
+
+#: ../../update-notes.rst:149
+msgid "Effektif 3.4 now supports the latest version of MongoDB (3.2.x) which comes with improved performance and functionality. The usual upgrade from MongoDB 2.4.x to 3.2.x (https://docs.mongodb.org/manual/release-notes/3.2-upgrade/) requires a stepwise approach, first upgrading from 2.4 to 2.6, then from 2.6 to 3.0 and at last from 3.0 to 3.2. Upgrading the database also changes the storage engine from the old MMAPv1 engine to the new WiredTiger engine."
+msgstr "Effektif 3.4 now supports the latest version of MongoDB (3.2.x) which comes with improved performance and functionality. The usual upgrade from MongoDB 2.4.x to 3.2.x (https://docs.mongodb.org/manual/release-notes/3.2-upgrade/) requires a stepwise approach, first upgrading from 2.4 to 2.6, then from 2.6 to 3.0 and at last from 3.0 to 3.2. Upgrading the database also changes the storage engine from the old MMAPv1 engine to the new WiredTiger engine."
+
+#: ../../update-notes.rst:153
+msgid "However, we will use a different approach to migrate your MongoDB 2.4.x to version 3.2.x. This approach will simply import a backup of MongoDB 2.4.x into a completely fresh setup of MongoDB 3.2.x."
+msgstr "However, we will use a different approach to migrate your MongoDB 2.4.x to version 3.2.x. This approach will simply import a backup of MongoDB 2.4.x into a completely fresh setup of MongoDB 3.2.x."
+
+#: ../../update-notes.rst:158
+msgid "You will later import this backup into a new MongoDB 3.2 installation."
+msgstr "You will later import this backup into a new MongoDB 3.2 installation."
+
+#: ../../update-notes.rst:162
+msgid "Uninstall MongoDB 2.4.x, but ensure you don't delete your backup!"
+msgstr "Uninstall MongoDB 2.4.x, but ensure you don't delete your backup!"
+
+#: ../../update-notes.rst:164
+msgid "*Windows:* Delete the MongoDB directory."
+msgstr "*Windows:* Delete the MongoDB directory."
+
+#: ../../update-notes.rst:165
+msgid "*Debian:* Use your package manager and uninstall the package ``mongodb-10gen``."
+msgstr "*Debian:* Use your package manager and uninstall the package ``mongodb-10gen``."
+
+#: ../../update-notes.rst:167
+msgid "Install MongoDB 3.2.x and recreate the Effektif database user again."
+msgstr "Install MongoDB 3.2.x and recreate the Effektif database user again."
+
+#: ../../update-notes.rst:169
+msgid "``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes/effektif-onpremise.properties`` contains the current name and password of the Effektif database user"
+msgstr "``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes/effektif-onpremise.properties`` contains the current name and password of the Effektif database user"
+
+#: ../../update-notes.rst:170
+msgid "You can install the new version in the same place as the old one, please ensure the data directory of the new database is empty before you start it."
+msgstr "You can install the new version in the same place as the old one, please ensure the data directory of the new database is empty before you start it."
+
+#: ../../update-notes.rst:171
+msgid "Note that the the MongoDB configuration file format has changed."
+msgstr "Note that the the MongoDB configuration file format has changed."
+
+#: ../../update-notes.rst:172
+msgid ":ref:`install-mongodb` contains more information on how to setup MongoDB 3.2.x"
+msgstr ":ref:`install-mongodb` contains more information on how to setup MongoDB 3.2.x"
+
+#: ../../update-notes.rst:175
+msgid "Restore the backup partially to your new MongoDB instance using ``mongorestore``. Your backup from step 1 should contain multiple folders, one for each database in the MongoDB instance. You only need to restore the two that contain Effektif’s data. Their default names are ``effektif`` and ``effektif-files``. You might have chosen a different name by defining another value for ``effektif.mongodb.database`` in your Effektif configuration file. The value there represents the name of the first database and the name of the second database is generated by adding ``-files``. You have to execute the restore command for both of the directories separately. The following lines show examples for the restore commands, assuming your MongoDB user and database are both called ``effektif``."
+msgstr "Restore the backup partially to your new MongoDB instance using ``mongorestore``. Your backup from step 1 should contain multiple folders, one for each database in the MongoDB instance. You only need to restore the two that contain Effektif’s data. Their default names are ``effektif`` and ``effektif-files``. You might have chosen a different name by defining another value for ``effektif.mongodb.database`` in your Effektif configuration file. The value there represents the name of the first database and the name of the second database is generated by adding ``-files``. You have to execute the restore command for both of the directories separately. The following lines show examples for the restore commands, assuming your MongoDB user and database are both called ``effektif``."
+
+#: ../../update-notes.rst:177
+msgid "The database name is specified by the ``--db`` parameter and also by the existing backup directory name."
+msgstr "The database name is specified by the ``--db`` parameter and also by the existing backup directory name."
+
+#: ../../update-notes.rst:178
 msgid "*Windows:*"
 msgstr "*Windows:*"
 
-#: ../../update-notes.rst:107
-msgid ""
-"``$MONGO_HOME\\bin\\mongorestore.exe -u effektif -p <password> --"
-"authenticationDatabase admin --db effektif C:\\path\\to\\dumps\\effektif``"
-msgstr ""
-"``$MONGO_HOME\\bin\\mongorestore.exe -u effektif -p <password> --"
-"authenticationDatabase admin --db effektif C:\\path\\to\\dumps\\effektif``"
+#: ../../update-notes.rst:180
+msgid "``$MONGO_HOME\\bin\\mongorestore.exe -u effektif -p <password> --authenticationDatabase admin --db effektif C:\\path\\to\\dumps\\effektif``"
+msgstr "``$MONGO_HOME\\bin\\mongorestore.exe -u effektif -p <password> --authenticationDatabase admin --db effektif C:\\path\\to\\dumps\\effektif``"
 
-#: ../../update-notes.rst:108
-msgid ""
-"``$MONGO_HOME\\bin\\mongorestore.exe -u effektif -p <password> --"
-"authenticationDatabase admin --db effektif-files C:\\path\\to\\dumps"
-"\\effektif-files``"
-msgstr ""
-"``$MONGO_HOME\\bin\\mongorestore.exe -u effektif -p <password> --"
-"authenticationDatabase admin --db effektif-files C:\\path\\to\\dumps"
-"\\effektif-files``"
+#: ../../update-notes.rst:181
+msgid "``$MONGO_HOME\\bin\\mongorestore.exe -u effektif -p <password> --authenticationDatabase admin --db effektif-files C:\\path\\to\\dumps\\effektif-files``"
+msgstr "``$MONGO_HOME\\bin\\mongorestore.exe -u effektif -p <password> --authenticationDatabase admin --db effektif-files C:\\path\\to\\dumps\\effektif-files``"
 
-#: ../../update-notes.rst:110
+#: ../../update-notes.rst:183
 msgid "*Debian:*"
 msgstr "*Debian:*"
 
-#: ../../update-notes.rst:112
-msgid ""
-"``mongorestore -u effektif -p <password> --authenticationDatabase admin --db "
-"effektif /path/to/dumps/effektif``"
-msgstr ""
-"``mongorestore -u effektif -p <password> --authenticationDatabase admin --db "
-"effektif /path/to/dumps/effektif``"
+#: ../../update-notes.rst:185
+msgid "``mongorestore -u effektif -p <password> --authenticationDatabase admin --db effektif /path/to/dumps/effektif``"
+msgstr "``mongorestore -u effektif -p <password> --authenticationDatabase admin --db effektif /path/to/dumps/effektif``"
 
-#: ../../update-notes.rst:113
-msgid ""
-"``mongorestore -u effektif -p <password> --authenticationDatabase admin --db "
-"effektif-files /path/to/dumps/effektif-files``"
-msgstr ""
-"``mongorestore -u effektif -p <password> --authenticationDatabase admin --db "
-"effektif-files /path/to/dumps/effektif-files``"
+#: ../../update-notes.rst:186
+msgid "``mongorestore -u effektif -p <password> --authenticationDatabase admin --db effektif-files /path/to/dumps/effektif-files``"
+msgstr "``mongorestore -u effektif -p <password> --authenticationDatabase admin --db effektif-files /path/to/dumps/effektif-files``"
 
-#: ../../update-notes.rst:115
+#: ../../update-notes.rst:188
 msgid "Restart Effektif and MongoDB - see :ref:`starting-effektif`."
 msgstr "Restart Effektif and MongoDB - see :ref:`starting-effektif`."
 
-#: ../../update-notes.rst:117
-msgid ""
-"Your Effektif system has been updated successfully. You can now access the "
-"Effektif application again via a browser."
-msgstr ""
-"Your Effektif system has been updated successfully. You can now access the "
-"Effektif application again via a browser."
+#: ../../update-notes.rst:190
+msgid "Your Effektif system has been updated successfully. You can now access the Effektif application again via a browser."
+msgstr "Your Effektif system has been updated successfully. You can now access the Effektif application again via a browser."
 
-#: ../../update-notes.rst:120
-msgid ""
-"Note: if you use Robomongo to access MongoDB, download the latest version in "
-"order to be able to connect to MongoDB 3.2."
-msgstr ""
-"Note: if you use Robomongo to access MongoDB, download the latest version in "
-"order to be able to connect to MongoDB 3.2."
+#: ../../update-notes.rst:193
+msgid "Note: if you use Robomongo to access MongoDB, download the latest version in order to be able to connect to MongoDB 3.2."
+msgstr "Note: if you use Robomongo to access MongoDB, download the latest version in order to be able to connect to MongoDB 3.2."

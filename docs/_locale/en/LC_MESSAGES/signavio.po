@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-20 18:21+0200\n"
-"PO-Revision-Date: 2017-04-20 18:22+0100\n"
+"POT-Creation-Date: 2017-04-25 18:58+0200\n"
+"PO-Revision-Date: 2017-04-25 19:00+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
 "MIME-Version: 1.0\n"
@@ -24,42 +24,16 @@ msgid "Signavio Process Manager integration"
 msgstr "Signavio Process Manager integration"
 
 #: ../../signavio.rst:5
-msgid ""
-"The Signavio Process Manager integration with Signavio Workflow Accelerator "
-"enables Process Manager users to execute approval workflows for their "
-"process models using Workflow Accelerator. In order to setup the integration "
-"properly, both systems, Process Manager and Workflow Accelerator, have to be "
-"installed. For information about installing Process Manager refer to Process "
-"Managers's adminstration manual. In case both systems run on the same "
-"server, you need to set up two Tomcat instances."
-msgstr ""
-"The Signavio Process Manager integration with Signavio Workflow Accelerator "
-"enables Process Manager users to execute approval workflows for their "
-"process models using Workflow Accelerator. In order to setup the integration "
-"properly, both systems, Process Manager and Workflow Accelerator, have to be "
-"installed. For information about installing Process Manager refer to Process "
-"Managers's adminstration manual. In case both systems run on the same "
-"server, you need to set up two Tomcat instances."
+msgid "The Signavio Process Manager integration with Signavio Workflow Accelerator enables Process Manager users to execute approval workflows for their process models using Workflow Accelerator. In order to setup the integration properly, both systems, Process Manager and Workflow Accelerator, have to be installed. For information about installing Process Manager refer to Process Managers's adminstration manual. In case both systems run on the same server, you need to set up two Tomcat instances."
+msgstr "The Signavio Process Manager integration with Signavio Workflow Accelerator enables Process Manager users to execute approval workflows for their process models using Workflow Accelerator. In order to setup the integration properly, both systems, Process Manager and Workflow Accelerator, have to be installed. For information about installing Process Manager refer to Process Managers's adminstration manual. In case both systems run on the same server, you need to set up two Tomcat instances."
 
 #: ../../signavio.rst:11
 msgid "Compatibility list"
 msgstr "Compatibility list"
 
 #: ../../signavio.rst:12
-msgid ""
-"Due to changes in the communication protocol, you are required to use a "
-"compatible version of the Process Manager in combination with your Workflow "
-"Accelerator system. The following table shows the compatible versions of "
-"Workflow Accelerator and Process Manager. You are free to update both "
-"systems in any order. Please ensure that nobody is working on the systems "
-"while you update them."
-msgstr ""
-"Due to changes in the communication protocol, you are required to use a "
-"compatible version of the Process Manager in combination with your Workflow "
-"Accelerator system. The following table shows the compatible versions of "
-"Workflow Accelerator and Process Manager. You are free to update both "
-"systems in any order. Please ensure that nobody is working on the systems "
-"while you update them."
+msgid "Due to changes in the communication protocol, you are required to use a compatible version of the Process Manager in combination with your Workflow Accelerator system. The following table shows the compatible versions of Workflow Accelerator and Process Manager. You are free to update both systems in any order. Please ensure that nobody is working on the systems while you update them."
+msgstr "Due to changes in the communication protocol, you are required to use a compatible version of the Process Manager in combination with your Workflow Accelerator system. The following table shows the compatible versions of Workflow Accelerator and Process Manager. You are free to update both systems in any order. Please ensure that nobody is working on the systems while you update them."
 
 #: ../../signavio.rst:18
 msgid "Workflow Accelerator version"
@@ -109,183 +83,106 @@ msgstr "3.15.x"
 msgid "10.8"
 msgstr "10.8"
 
-#: ../../signavio.rst:27
+#: ../../signavio.rst:24
+msgid "3.22.x"
+msgstr "3.22.x"
+
+#: ../../signavio.rst:24
+msgid "10.15"
+msgstr "10.15"
+
+#: ../../signavio.rst:28
 msgid "Setup"
 msgstr "Setup"
 
-#: ../../signavio.rst:28
+#: ../../signavio.rst:29
 msgid "Make sure both systems are NOT running."
 msgstr "Make sure both systems are NOT running."
 
-#: ../../signavio.rst:29
-msgid ""
-"Edit the Process Manager configuration file, which can be found in the "
-"Tomcat that hosts the Process Manager system at the following path:"
-msgstr ""
-"Edit the Process Manager configuration file, which can be found in the "
-"Tomcat that hosts the Process Manager system at the following path:"
+#: ../../signavio.rst:30
+msgid "Edit the Process Manager configuration file, which can be found in the Tomcat that hosts the Process Manager system at the following path:"
+msgstr "Edit the Process Manager configuration file, which can be found in the Tomcat that hosts the Process Manager system at the following path:"
 
-#: ../../signavio.rst:31
-msgid ""
-"version 9.3 and earlier: ``WEBAPPS/ROOT/WEB-INF/classes/configuration.xml``"
-msgstr ""
-"version 9.3 and earlier: ``WEBAPPS/ROOT/WEB-INF/classes/configuration.xml``"
+#: ../../signavio.rst:32
+msgid "version 9.3 and earlier: ``WEBAPPS/ROOT/WEB-INF/classes/configuration.xml``"
+msgstr "version 9.3 and earlier: ``WEBAPPS/ROOT/WEB-INF/classes/configuration.xml``"
 
-#: ../../signavio.rst:33
+#: ../../signavio.rst:34
 msgid "version 9.7 and later: ``CONF/configuration.xml``"
 msgstr "version 9.7 and later: ``CONF/configuration.xml``"
 
-#: ../../signavio.rst:45
+#: ../../signavio.rst:46
 msgid "``effektifServerUrl``"
 msgstr "``effektifServerUrl``"
 
-#: ../../signavio.rst:45
-msgid ""
-"Defines the URL under which your Workflow Accelerator system is available."
-msgstr ""
-"Defines the URL under which your Workflow Accelerator system is available."
-
 #: ../../signavio.rst:46
+msgid "Defines the URL under which your Workflow Accelerator system is available."
+msgstr "Defines the URL under which your Workflow Accelerator system is available."
+
+#: ../../signavio.rst:47
 msgid "``effektifUserName``"
 msgstr "``effektifUserName``"
 
-#: ../../signavio.rst:46
-msgid ""
-"Defines the mail of the system user that will access the Workflow "
-"Accelerator system. Make sure to use ``system@signavio.com`` to ensure the "
-"integration to work properly. The value is already preconfigured. You do NOT "
-"have to create an account for this user in any of the systems."
-msgstr ""
-"Defines the mail of the system user that will access the Workflow "
-"Accelerator system. Make sure to use ``system@signavio.com`` to ensure the "
-"integration to work properly. The value is already preconfigured. You do NOT "
-"have to create an account for this user in any of the systems."
-
 #: ../../signavio.rst:47
+msgid "Defines the mail of the system user that will access the Workflow Accelerator system. Make sure to use ``system@signavio.com`` to ensure the integration to work properly. The value is already preconfigured. You do NOT have to create an account for this user in any of the systems."
+msgstr "Defines the mail of the system user that will access the Workflow Accelerator system. Make sure to use ``system@signavio.com`` to ensure the integration to work properly. The value is already preconfigured. You do NOT have to create an account for this user in any of the systems."
+
+#: ../../signavio.rst:48
 msgid "``effektifUserPw``"
 msgstr "``effektifUserPw``"
 
-#: ../../signavio.rst:47
-msgid ""
-"Defines the password of the system user. Remember this password, you will "
-"need to set the exact same password in the Workflow Accelerator "
-"configuration file."
-msgstr ""
-"Defines the password of the system user. Remember this password, you will "
-"need to set the exact same password in the Workflow Accelerator "
-"configuration file."
+#: ../../signavio.rst:48
+msgid "Defines the password of the system user. Remember this password, you will need to set the exact same password in the Workflow Accelerator configuration file."
+msgstr "Defines the password of the system user. Remember this password, you will need to set the exact same password in the Workflow Accelerator configuration file."
 
-#: ../../signavio.rst:50
-msgid ""
-"Edit the Workflow Accelerator configuration file ``$TOMCAT_HOME/webapps/ROOT/"
-"WEB-INF/classes/effektif-onpremise.properties`` and add / update the "
-"following entries. ::"
-msgstr ""
-"Edit the Workflow Accelerator configuration file ``$TOMCAT_HOME/webapps/ROOT/"
-"WEB-INF/classes/effektif-onpremise.properties`` and add / update the "
-"following entries. ::"
+#: ../../signavio.rst:51
+msgid "Edit the Workflow Accelerator configuration file ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes/effektif-onpremise.properties`` and add / update the following entries. ::"
+msgstr "Edit the Workflow Accelerator configuration file ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes/effektif-onpremise.properties`` and add / update the following entries. ::"
 
-#: ../../signavio.rst:59
-msgid ""
-"If you add any of the following properties to the configuration file, make "
-"sure to add the required prefix ``effektif.com.effektif.model.service."
-"signavio.SignavioAuthenticationProvider.`` in front of the property key:"
-msgstr ""
-"If you add any of the following properties to the configuration file, make "
-"sure to add the required prefix ``effektif.com.effektif.model.service."
-"signavio.SignavioAuthenticationProvider.`` in front of the property key:"
+#: ../../signavio.rst:60
+msgid "If you add any of the following properties to the configuration file, make sure to add the required prefix ``effektif.com.effektif.model.service.signavio.SignavioAuthenticationProvider.`` in front of the property key:"
+msgstr "If you add any of the following properties to the configuration file, make sure to add the required prefix ``effektif.com.effektif.model.service.signavio.SignavioAuthenticationProvider.`` in front of the property key:"
 
-#: ../../signavio.rst:64
+#: ../../signavio.rst:65
 msgid "``serviceBaseUrl``"
 msgstr "``serviceBaseUrl``"
 
-#: ../../signavio.rst:64
+#: ../../signavio.rst:65
 msgid "Defines the URL under which your Process Manager system is available."
 msgstr "Defines the URL under which your Process Manager system is available."
 
-#: ../../signavio.rst:65
+#: ../../signavio.rst:66
 msgid "``clientId``"
 msgstr "``clientId``"
 
-#: ../../signavio.rst:65
-msgid ""
-"Defines the ID the Workflow Accelerator system uses to identify itself to "
-"the Process Manager system. Make sure to use ``com.effektif.oem`` to ensure "
-"the integration to work properly. This value is already preconfigured."
-msgstr ""
-"Defines the ID the Workflow Accelerator system uses to identify itself to "
-"the Process Manager system. Make sure to use ``com.effektif.oem`` to ensure "
-"the integration to work properly. This value is already preconfigured."
-
 #: ../../signavio.rst:66
+msgid "Defines the ID the Workflow Accelerator system uses to identify itself to the Process Manager system. Make sure to use ``com.effektif.oem`` to ensure the integration to work properly. This value is already preconfigured."
+msgstr "Defines the ID the Workflow Accelerator system uses to identify itself to the Process Manager system. Make sure to use ``com.effektif.oem`` to ensure the integration to work properly. This value is already preconfigured."
+
+#: ../../signavio.rst:67
 msgid "``clientSecret``"
 msgstr "``clientSecret``"
 
-#: ../../signavio.rst:66
-msgid ""
-"Defines the password the Workflow Accelerator system uses to identify itself "
-"to the Process Manager system. Reuse the same password that you have set in "
-"the Process Manager configuration file."
-msgstr ""
-"Defines the password the Workflow Accelerator system uses to identify itself "
-"to the Process Manager system. Reuse the same password that you have set in "
-"the Process Manager configuration file."
+#: ../../signavio.rst:67
+msgid "Defines the password the Workflow Accelerator system uses to identify itself to the Process Manager system. Reuse the same password that you have set in the Process Manager configuration file."
+msgstr "Defines the password the Workflow Accelerator system uses to identify itself to the Process Manager system. Reuse the same password that you have set in the Process Manager configuration file."
 
-#: ../../signavio.rst:69
+#: ../../signavio.rst:70
 msgid "Start both systems."
 msgstr "Start both systems."
 
-#: ../../signavio.rst:70
-msgid ""
-"Activate the approval workflow feature within your Process Manager "
-"workspace. Your Workflow Accelerator organization will be setup "
-"automatically. For more information on how to activate the approval "
-"workflow, refer to Process Manager's user manual."
-msgstr ""
-"Activate the approval workflow feature within your Process Manager "
-"workspace. Your Workflow Accelerator organization will be setup "
-"automatically. For more information on how to activate the approval "
-"workflow, refer to Process Manager's user manual."
+#: ../../signavio.rst:71
+msgid "Activate the approval workflow feature within your Process Manager workspace. Your Workflow Accelerator organization will be setup automatically. For more information on how to activate the approval workflow, refer to Process Manager's user manual."
+msgstr "Activate the approval workflow feature within your Process Manager workspace. Your Workflow Accelerator organization will be setup automatically. For more information on how to activate the approval workflow, refer to Process Manager's user manual."
 
-#: ../../signavio.rst:75
+#: ../../signavio.rst:76
 msgid "User management"
 msgstr "User management"
 
-#: ../../signavio.rst:76
-msgid ""
-"In case you use the Workflow Accelerator OEM version that is shipped with "
-"the Process Manager, the user management is handled by the Process Manager "
-"system. The Process Manager system will synchronise all users to Workflow "
-"Accelerator. Within Workflow Accelerator you will not be able to register "
-"any initial user nor invite more users."
-msgstr ""
-"In case you use the Workflow Accelerator OEM version that is shipped with "
-"the Process Manager, the user management is handled by the Process Manager "
-"system. The Process Manager system will synchronise all users to Workflow "
-"Accelerator. Within Workflow Accelerator you will not be able to register "
-"any initial user nor invite more users."
+#: ../../signavio.rst:77
+msgid "In case you use the Workflow Accelerator OEM version that is shipped with the Process Manager, the user management is handled by the Process Manager system. The Process Manager system will synchronise all users to Workflow Accelerator. Within Workflow Accelerator you will not be able to register any initial user nor invite more users."
+msgstr "In case you use the Workflow Accelerator OEM version that is shipped with the Process Manager, the user management is handled by the Process Manager system. The Process Manager system will synchronise all users to Workflow Accelerator. Within Workflow Accelerator you will not be able to register any initial user nor invite more users."
 
-#: ../../signavio.rst:80
-msgid ""
-"If you have purchased a standalone version of Workflow Accelerator, you will "
-"be able to create an initial user and invite more users to Workflow "
-"Accelerator. However, it is advised to create your Workflow Accelerator "
-"organization by activating the approval workflow feature in the Process "
-"Manager. This way your Process Manager workspace and the Workflow "
-"Accelerator organization will be linked automatically."
-msgstr ""
-"If you have purchased a standalone version of Workflow Accelerator, you will "
-"be able to create an initial user and invite more users to Workflow "
-"Accelerator. However, it is advised to create your Workflow Accelerator "
-"organization by activating the approval workflow feature in the Process "
-"Manager. This way your Process Manager workspace and the Workflow "
-"Accelerator organization will be linked automatically."
-
-#~ msgid ""
-#~ "Defines the ID the Workflow Accelerator system uses to identify itself to "
-#~ "the Signavio system. Make sure to use ``com.effektif.oem`` to ensure the "
-#~ "integration to work properly. This value is already preconfigured."
-#~ msgstr ""
-#~ "Defines the ID the Workflow Accelerator system uses to identify itself to "
-#~ "the Signavio system. Make sure to use ``com.effektif.oem`` to ensure the "
-#~ "integration to work properly. This value is already preconfigured."
+#: ../../signavio.rst:81
+msgid "If you have purchased a standalone version of Workflow Accelerator, you will be able to create an initial user and invite more users to Workflow Accelerator. However, it is advised to create your Workflow Accelerator organization by activating the approval workflow feature in the Process Manager. This way your Process Manager workspace and the Workflow Accelerator organization will be linked automatically."
+msgstr "If you have purchased a standalone version of Workflow Accelerator, you will be able to create an initial user and invite more users to Workflow Accelerator. However, it is advised to create your Workflow Accelerator organization by activating the approval workflow feature in the Process Manager. This way your Process Manager workspace and the Workflow Accelerator organization will be linked automatically."
