@@ -607,6 +607,8 @@ If you installed the Workflow Accelerator Script Engine, you need to configure t
 ``effektif.mongodb.password``       The password of the Workflow Accelerator MongoDB user. This is the password you defined during user creation.
 ``effektif.mongodb.database``       The name of the database Workflow Accelerator should use. The default value ``signavio`` is okay.
 ``effektif.javascript.server.url``  (Optional) The URL of the Workflow Accelerator Script Engine, e.g. ``http://localhost:8081``\ .
+``effektif.mail.receiver.enabled``  (Optional)
+``effektif.mail.receiver.domain``   (Optional)
 ==================================  =============================
 
 The following properties are only relevant if your Workflow Accelerator installation is connected to your Signavio installation. ::
