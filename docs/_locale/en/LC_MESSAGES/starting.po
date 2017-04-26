@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-20 16:01+0200\n"
-"PO-Revision-Date: 2017-04-20 16:16+0100\n"
+"POT-Creation-Date: 2017-04-26 20:15+0200\n"
+"PO-Revision-Date: 2017-04-26 20:17+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
 "MIME-Version: 1.0\n"
@@ -217,7 +217,7 @@ msgstr ""
 "the ``services.msc``\\ . There, MongoDB will be listed among the other "
 "services and can be started and stopped."
 
-#: ../../starting.rst:69 ../../starting.rst:112
+#: ../../starting.rst:69 ../../starting.rst:116
 msgid "Tomcat"
 msgstr "Tomcat"
 
@@ -247,7 +247,7 @@ msgstr ""
 "“Automatic”. Then the Tomcat server will start automatically each time you "
 "restart your Windows server."
 
-#: ../../starting.rst:83 ../../starting.rst:130
+#: ../../starting.rst:83 ../../starting.rst:134
 msgid "Script Engine"
 msgstr "Script Engine"
 
@@ -263,7 +263,7 @@ msgstr ""
 "start it there. Otherwise open a command line, navigate to the ``"
 "$SCRIPT_ENGINE_HOME`` directory and execute: ::"
 
-#: ../../starting.rst:89 ../../starting.rst:136
+#: ../../starting.rst:89 ../../starting.rst:140
 msgid ""
 "Note, you cannot close the command line as long as the script engine is "
 "running."
@@ -280,12 +280,12 @@ msgid ""
 "If you followed the instructions in this guide to setup MongoDB using a "
 "packet manager, some additional scripts have been installed that allow you "
 "to start, stop and restart the database very easily. Be aware, the execution "
-"of those scripts might require root privileges. ::"
+"of those scripts require root privileges. ::"
 msgstr ""
 "If you followed the instructions in this guide to setup MongoDB using a "
 "packet manager, some additional scripts have been installed that allow you "
 "to start, stop and restart the database very easily. Be aware, the execution "
-"of those scripts might require root privileges. ::"
+"of those scripts require root privileges. ::"
 
 #: ../../starting.rst:101
 msgid ""
@@ -304,12 +304,12 @@ msgstr ""
 #: ../../starting.rst:109
 msgid ""
 "Be aware, in earlier versions of MongoDB, e.g. 2.4.x, the scripts had a "
-"different name ``/etc/init.d/mongodb``."
+"different name ``/etc/init.d/mongodb``. ::"
 msgstr ""
 "Be aware, in earlier versions of MongoDB, e.g. 2.4.x, the scripts had a "
-"different name ``/etc/init.d/mongodb``."
+"different name ``/etc/init.d/mongodb``. ::"
 
-#: ../../starting.rst:113
+#: ../../starting.rst:117
 msgid ""
 "The recommended way to install Tomcat is to use a packet manager. Installing "
 "Tomcat under Debian with APT will install additional scripts to start, stop "
@@ -320,33 +320,33 @@ msgstr ""
 "Tomcat under Debian with APT will install additional scripts to start, stop "
 "and restart the server. Be aware, the execution of those scripts might "
 "require root privileges. ::"
-
-#: ../../starting.rst:119
-msgid ""
-"You can restart the Tomcat server if it is already running by executing: ::"
-msgstr ""
-"You can restart the Tomcat server if it is already running by executing: ::"
 
 #: ../../starting.rst:123
 msgid ""
-"Furthermore, you can check upon the status of the Tomcat and determine "
-"whether it is running or not with the following command: ::"
+"You can restart the Tomcat server if it is already running by executing: ::"
 msgstr ""
-"Furthermore, you can check upon the status of the Tomcat and determine "
-"whether it is running or not with the following command: ::"
+"You can restart the Tomcat server if it is already running by executing: ::"
 
 #: ../../starting.rst:127
 msgid ""
-"The examples above show only the commands for Tomcat 8. However, if you use "
-"Tomcat 7, the same commands will work with the script ``/etc/init.d/tomcat7``"
-"\\ ."
+"Furthermore, you can check upon the status of the Tomcat and determine "
+"whether it is running or not with the following command: ::"
 msgstr ""
-"The examples above show only the commands for Tomcat 8. However, if you use "
-"Tomcat 7, the same commands will work with the script ``/etc/init.d/tomcat7``"
-"\\ ."
+"Furthermore, you can check upon the status of the Tomcat and determine "
+"whether it is running or not with the following command: ::"
 
 #: ../../starting.rst:131
 msgid ""
+"The examples above show only the commands for Tomcat 8. However, if you use "
+"Tomcat 7, the same commands will work with the script ``/etc/init.d/tomcat7``"
+"\\ ."
+msgstr ""
+"The examples above show only the commands for Tomcat 8. However, if you use "
+"Tomcat 7, the same commands will work with the script ``/etc/init.d/tomcat7``"
+"\\ ."
+
+#: ../../starting.rst:135
+msgid ""
 "If you installed the script engine and setup an Init script, execute the "
 "respective start command for the Init script. Otherwise open a command line, "
 "navigate to the ``$SCRIPT_ENGINE_HOME`` directory and execute: ::"
@@ -355,11 +355,11 @@ msgstr ""
 "respective start command for the Init script. Otherwise open a command line, "
 "navigate to the ``$SCRIPT_ENGINE_HOME`` directory and execute: ::"
 
-#: ../../starting.rst:139
+#: ../../starting.rst:143
 msgid "Login to Workflow Accelerator"
 msgstr "Login to Workflow Accelerator"
 
-#: ../../starting.rst:140
+#: ../../starting.rst:144
 msgid ""
 "When the Workflow Accelerator system was started properly you can see the "
 "login screen by entering the URL of your Workflow Accelerator installation "
@@ -373,11 +373,11 @@ msgstr ""
 "purchased an Workflow Accelerator standalone version, you will see a form "
 "that requires an email address and a password to login."
 
-#: ../../starting.rst:147
+#: ../../starting.rst:151
 msgid "The default Workflow Accelerator login screen"
 msgstr "The default Workflow Accelerator login screen"
 
-#: ../../starting.rst:149
+#: ../../starting.rst:153
 msgid ""
 "If you purchased Workflow Accelerator along with the Signavio Process "
 "Manager, you will see a login screen with one button. You can login to "
@@ -391,11 +391,11 @@ msgstr ""
 "the Workflow Accelerator users have been set up. Jump to section :ref:"
 "`signavio-user-management` for more information on how to set up the users."
 
-#: ../../starting.rst:156
+#: ../../starting.rst:160
 msgid "The Signavio login screen"
 msgstr "The Signavio login screen"
 
-#: ../../starting.rst:158
+#: ../../starting.rst:162
 msgid ""
 "When you click *Log in with Signavio account*\\ , you will be redirected to "
 "the Signavio Process Manager and asked to authorize the access of Workflow "
@@ -409,11 +409,11 @@ msgstr ""
 "Workflow Accelerator and automatically logged in. The authorization dialog "
 "is only shown the first time you use this method to login."
 
-#: ../../starting.rst:165
+#: ../../starting.rst:169
 msgid "The Signavio authorization dialog"
 msgstr "The Signavio authorization dialog"
 
-#: ../../starting.rst:167
+#: ../../starting.rst:171
 msgid ""
 "You have to be logged in to the Signavio Process Manager in order to see the "
 "authorization dialog. Otherwise, you will be redirected to the Collaboration "
@@ -423,11 +423,11 @@ msgstr ""
 "authorization dialog. Otherwise, you will be redirected to the Collaboration "
 "Portal."
 
-#: ../../starting.rst:172
+#: ../../starting.rst:176
 msgid "Create the initial user"
 msgstr "Create the initial user"
 
-#: ../../starting.rst:173
+#: ../../starting.rst:177
 msgid ""
 "In case you purchased Workflow Accelerator along with the Signavio Process "
 "Manager and want to setup the integration, you don't have to create the "
@@ -439,7 +439,7 @@ msgstr ""
 "initial Workflow Accelerator user manually. Please jump to section :ref:"
 "`signavio-user-management` for more information."
 
-#: ../../starting.rst:176
+#: ../../starting.rst:180
 msgid ""
 "Workflow Accelerator users are organized in organisations. There is a "
 "maximum amount of organisations that can be registered on an on-premise "
@@ -453,7 +453,7 @@ msgstr ""
 "license file. When the initial user registers, he will automatically create "
 "the first organisation."
 
-#: ../../starting.rst:181
+#: ../../starting.rst:185
 msgid ""
 "In order to register, enter the URL of your Workflow Accelerator "
 "installation in your browser. You will see the login screen of Workflow "
@@ -462,23 +462,23 @@ msgstr ""
 "In order to register, enter the URL of your Workflow Accelerator "
 "installation in your browser. You will see the login screen of Workflow "
 "Accelerator."
-
-#: ../../starting.rst:184
-msgid ""
-"Click *Register a new account*, fill in your email address and click "
-"*Register a new user*\\ . You will then receive an email with a link to "
-"complete your registration. After you have done that, your Workflow "
-"Accelerator organisation is set up and you can go ahead and invite more "
-"users."
-msgstr ""
-"Click *Register a new account*, fill in your email address and click "
-"*Register a new user*\\ . You will then receive an email with a link to "
-"complete your registration. After you have done that, your Workflow "
-"Accelerator organisation is set up and you can go ahead and invite more "
-"users."
 
 #: ../../starting.rst:188
 msgid ""
+"Click *Register a new account*, fill in your email address and click "
+"*Register a new user*\\ . You will then receive an email with a link to "
+"complete your registration. After you have done that, your Workflow "
+"Accelerator organisation is set up and you can go ahead and invite more "
+"users."
+msgstr ""
+"Click *Register a new account*, fill in your email address and click "
+"*Register a new user*\\ . You will then receive an email with a link to "
+"complete your registration. After you have done that, your Workflow "
+"Accelerator organisation is set up and you can go ahead and invite more "
+"users."
+
+#: ../../starting.rst:192
+msgid ""
 "Every time a user registers using the register link on the login screen, a "
 "new organisation is created until the maximum amount is reached. In general, "
 "you will create one organisation and invite other users to join this "
@@ -489,11 +489,11 @@ msgstr ""
 "you will create one organisation and invite other users to join this "
 "organisation. The next subsection explains how to invite users."
 
-#: ../../starting.rst:193
+#: ../../starting.rst:197
 msgid "Invite other users"
 msgstr "Invite other users"
 
-#: ../../starting.rst:194
+#: ../../starting.rst:198
 msgid ""
 "In case this is an integrated installation with the Signavio Process "
 "Manager, please jump to section :ref:`signavio-integration` for setting up "
@@ -503,7 +503,7 @@ msgstr ""
 "Manager, please jump to section :ref:`signavio-integration` for setting up "
 "synchronization of users."
 
-#: ../../starting.rst:196
+#: ../../starting.rst:200
 msgid ""
 "To invite other users, go to the organization configuration panel. That's "
 "located in the dropdown under your name in the top right corner named "
@@ -525,7 +525,7 @@ msgstr ""
 "organisation. If one organisation invites another user the count of unused "
 "licenses in all organisations decreases."
 
-#: ../../starting.rst:204
+#: ../../starting.rst:208
 msgid ""
 "A user can be invited to multiple organisations. If a user is part of two "
 "organisations, he will require two user licenses, one for each organisation "
@@ -535,7 +535,7 @@ msgstr ""
 "organisations, he will require two user licenses, one for each organisation "
 "he is part of."
 
-#: ../../starting.rst:207
+#: ../../starting.rst:211
 msgid ""
 "Besides the manual invitation of every user, the enterprise version of "
 "Workflow Accelerator offers the possibility to synchronise users and groups "

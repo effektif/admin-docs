@@ -94,19 +94,23 @@ Debian
 MongoDB
 ^^^^^^^
 If you followed the instructions in this guide to setup MongoDB using a packet manager, some additional scripts have been installed that allow you to start, stop and restart the database very easily. 
-Be aware, the execution of those scripts might require root privileges. ::
+Be aware, the execution of those scripts require root privileges. ::
 
-    /etc/init.d/mongod start
+    sudo service mongod start
 
 If MongoDB is already running, you can restart the database by executing: ::
     
-    /etc/init.d/mongod restart
+    sudo service mongod restart
 
 In order to determine whether MongoDB is running or not, you can check upon the status with the following command: ::
     
-    /etc/init.d/mongod status
+    sudo service mongod status
 
-Be aware, in earlier versions of MongoDB, e.g. 2.4.x, the scripts had a different name ``/etc/init.d/mongodb``.
+Be aware, in earlier versions of MongoDB, e.g. 2.4.x, the scripts had a different name ``/etc/init.d/mongodb``. ::
+
+    /etc/init.d/mongodb start
+    /etc/init.d/mongodb restart
+    /etc/init.d/mongodb status
 
 Tomcat
 ^^^^^^

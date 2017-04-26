@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-20 16:23+0200\n"
-"PO-Revision-Date: 2017-04-21 10:30+0100\n"
+"POT-Creation-Date: 2017-04-26 20:19+0200\n"
+"PO-Revision-Date: 2017-04-26 20:29+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
 "MIME-Version: 1.0\n"
@@ -79,7 +79,7 @@ msgstr ""
 "Services aus und klicken auf die *Stopp*\\ -Schaltfläche in den "
 "Diensteigenschaften."
 
-#: ../../stopping.rst:25 ../../stopping.rst:52
+#: ../../stopping.rst:25 ../../stopping.rst:54
 msgid "Script Engine"
 msgstr "Script Engine"
 
@@ -130,12 +130,12 @@ msgstr ""
 #: ../../stopping.rst:49
 msgid ""
 "In earlier versions of MongoDB, e.g. 2.4.x, the script had a different name: "
-"``/etc/init.d/mongodb``."
+"``/etc/init.d/mongodb``. ::"
 msgstr ""
 "In früheren Version von MongoDB, z.B. 2.4.x, hatte das Skript einen anderen "
-"Namen: ``/etc/init.d/mongodb``"
+"Namen: ``/etc/init.d/mongodb``. ::"
 
-#: ../../stopping.rst:53
+#: ../../stopping.rst:55
 msgid ""
 "If you installed the script engine and setup an Init script, execute the "
 "respective stop command for the Init script. If you are executing the script "
