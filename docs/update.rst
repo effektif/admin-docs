@@ -67,6 +67,11 @@ If you have installed the Workflow Accelerator Script Engine, you need to update
 #. Copy the content of the directory ``$WORKFLOW_HOME/nodejs`` to your ``$SCRIPT_ENGINE_HOME`` directory.
 #. Copy the configuration file ``configuration.onpremise.js`` you have backed up in subsection :ref:`update-backup-configuration` back into the directory ``$SCRIPT_ENGINE_HOME``.
 
+If you have installed the Workflow Accelerator Mail Relay, you need to update the content of the ``mail-relay.jar`` file within the ``$MAIL_RELAY_HOME`` directory with the newer version you can find in the extracted directory ``$WORKFLOW_HOME/mail-relay``\ .
+
+#. Delete the file ``$MAIL_RELAY_HOME/mail-relay.jar``
+#. Copy the file ``$WORKFLOW_HOME/mail-relay/mail-relay.jar`` to your ``$MAIL_RELAY_HOME`` directory.
+
 .. _update-revisit-configuration:
 
 Revisit the configuration files
@@ -99,6 +104,7 @@ In order to restore an older version, you can follow the instructions in this ch
 #. Backup the configuration files, see :ref:`update-backup-configuration`
 #. Install the older version of the webapp in ``$TOMCAT_HOME/webapps``\ , see :ref:`update-install-version`
 #. Install the older version of the script engine in ``$SCRIPT_ENGINE_HOME``, see :ref:`update-install-version`
+#. Install the older version of the mail relay in ``$MAIL_RELAY_HOME``, see :ref:`update-install-version`
 #. Check the configuration files again, see :ref:`update-revisit-configuration`
 #. Start the Workflow Accelerator system, see :ref:`starting-effektif`
 

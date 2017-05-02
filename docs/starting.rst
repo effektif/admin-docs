@@ -41,6 +41,16 @@ If your version includes the execution of JavaScript tasks:
     * the log files are configured
     * the script engine URL is configured in the Workflow Accelerator configuration file
 
+If your version includes the email trigger for workflows:
+
+* the Workflow Accelerator Mail Relay is installed
+* the Workflow Accelerator Mail Relay is configured
+
+    * the port is set
+    * the domain is set
+    * the Workflow Accelerator URL is set
+    * the log file is configured
+
 If the system is integrated with the Signavio Process Manager check also the following points:
 
 * Workflow Accelerator and Signavio Process Manager have compatible versions
@@ -87,6 +97,15 @@ Otherwise open a command line, navigate to the ``$SCRIPT_ENGINE_HOME`` directory
     node server.js
 
 Note, you cannot close the command line as long as the script engine is running.
+
+Mail Relay
+^^^^^^^^^^
+If you installed the mail relay and wrapped it into a service, you can open the ``services.msc``, locate the Signavio Mail Relay service and start it there.
+Otherwise open a command line and execute (replace the placeholder with the absolute path): ::
+
+    java -jar $MAIL_RELAY_HOME\mail-relay.jar
+
+Note, you cannot close the command line as long as the mail relay is running.
 
 Debian
 ``````
@@ -138,6 +157,15 @@ Otherwise open a command line, navigate to the ``$SCRIPT_ENGINE_HOME`` directory
     node server.js
 
 Note, you cannot close the command line as long as the script engine is running.
+
+Mail Relay
+^^^^^^^^^^
+If you installed the mail relay and setup an Init script, execute the respective start command for the Init script.
+Otherwise open a command line and execute (replace the placeholder with the absolute path): ::
+
+    java -jar $MAIL_RELAY_HOME\mail-relay.jar
+
+Note, you cannot close the command line as long as the mail relay is running.
 
 Login to Workflow Accelerator
 -----------------------------

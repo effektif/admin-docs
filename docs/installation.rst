@@ -598,7 +598,7 @@ The next subsection explains how you setup the mail relay and configure it to us
 
 Install and configure the mail relay
 ````````````````````````````````````
-The mail relay comes as JAR file which requires Java 8 for the execution.
+The mail relay comes as a JAR file which requires Java 8 for the execution.
 Please, make sure Java 8 is installed before continuing with the setup.
 
 The mail relay can be installed on the same server as the Workflow Accelerator web application or on a different server.
@@ -612,7 +612,7 @@ If you choose two different servers, please ensure the mail relay is able to rea
 
     * You should find the file ``mail-relay.jar`` directly within your directory: ``$MAIL_RELAY_HOME/mail-relay.jar``.
 
-#. Within the ``$MAIL_RELAY_HOME`` directory create new directory ``logs``.
+#. Within the ``$MAIL_RELAY_HOME`` directory create a new directory ``logs``.
 
 #. Open ``$MAIL_RELAY_HOME/logback.xml`` and edit ``value`` in the following line: ::
 
@@ -635,13 +635,13 @@ The configuration file offers the following options:
 ``workflow.relay.port``         Defines the port the SMTP will use and listen to.
 ============================    =================================================================================
 
-After the successful setup you can start the mail relay by opening the ``$MAIL_RELAY_HOME`` directory on a command line and executing the following command ::
+After the successful setup you can start the mail relay by opening the command line and executing the following command ::
     
     java -jar $MAIL_RELAY_HOME/mail-relay.jar
 
 Replace ``$MAIL_RELAY_HOME`` with the absolute path to the JAR file.
 
-You can also register a new service or setup a new init script depending on your operating system.
+You can also register a new service or setup a new init script depending on your operating system to ease the management of the mail relay.
 
 Windows
 ^^^^^^^
@@ -681,7 +681,7 @@ As mentioned before, the mail relay can be started by executing: ::
 
     java -jar $MAIL_RELAY_HOME/mail-relay.jar
 
-The placeholder ``$MAIL_RELAY_HOME`` has be replaced with the absolute path to the JAR file.
+The placeholder ``$MAIL_RELAY_HOME`` has to be replaced with the absolute path to the JAR file.
 
 You have to ensure your Init script starts the Java executable and uses the arguments ``-jar`` and the absolute path to JAR file ``mail-relay.jar``.
 Note, if you use a restricted user to execute the command, make sure the user has appropriate access to the ``$MAIL_RELAY_HOME`` directory.
@@ -690,7 +690,7 @@ Configure the web application
 `````````````````````````````
 After setting up the mail relay, the email trigger needs to be enabled in the web application configuration.
 Section :ref:`update-effektif-configuration` explains where you find the respective configuration file.
-Make sure to set proper values for the following to configuration values: ::
+Make sure to set proper values for the following configuration values: ::
 
     effektif.mail.receiver.enabled = true
     effektif.mail.receiver.domain = mail.yourcompany.com

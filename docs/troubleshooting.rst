@@ -20,8 +20,18 @@ If you are looking for any information about incidents on a specific date, open 
 
 Script Engine
 `````````````
-The Workflow Accelerator Script Engine log files have been configured in the configuration file ``$SCRIPT_ENGINE_HOME/configuration.onpremise.js``. 
+The Workflow Accelerator Script Engine log files have been configured in the configuration file ``$SCRIPT_ENGINE_HOME/configuration.onpremise.js``\ . 
 The values for the entries ``log`` ``file`` and ``log`` ``errorFile`` will tell you the name and location of the log files.
+
+Mail Relay
+^^^^^^^^^^
+The Workflow Accelerator Mail Relay log file ``mail.log`` has been configured in the logging configuration file ``$MAIL_RELAY_HOME/logback.xml``\ .
+This file contains the line: ::
+
+    <property name="LOG_DIR" value="/path/to/log"/>
+
+The value contains the directory of the log file. Besides the ``mail.log`` the directory contains more log files for every day of the past 30 days the server was running. 
+If you are looking for any information about incidents on a specific date, open the log file with the respective timestamp.
 
 MongoDB 
 ```````

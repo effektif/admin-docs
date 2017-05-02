@@ -26,6 +26,11 @@ Script Engine
 If you installed the script engine and wrapped it into a service, you can open the ``services.msc``, locate the Signavio Script Engine service and stop it there.
 If you are executing the script engine directly via command line, simply abort the process by pressing ``CTRL + C``.
 
+Mail Relay
+^^^^^^^^^^
+If you installed the mail relay and wrapped it into a service, you can open the ``services.msc``, locate the Signavio Mail Relay service and stop it there.
+If you are executing the mail relay directly via command line, simply abort the process by pressing ``CTRL + C``.
+
 Debian
 ``````
 
@@ -54,3 +59,8 @@ Script Engine
 ^^^^^^^^^^^^^
 If you installed the script engine and setup an Init script, execute the respective stop command for the Init script.
 If you are executing the script engine directly via command line, simply abort the process by pressing ``CTRL + C``.
+
+Mail Relay
+^^^^^^^^^^
+If you installed the mail relay and setup an Init script, execute the respective stop command for the Init script.
+If you are executing the mail relay directly via command line, simply abort the process by pressing ``CTRL + C``.
