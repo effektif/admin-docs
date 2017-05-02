@@ -485,6 +485,7 @@ After the successful setup you can start the script engine by opening the ``$SCR
     
     node server.js
 
+.. _wrap-into-service:
 
 Wrapping the Script Engine into a service
 `````````````````````````````````````````
@@ -559,6 +560,156 @@ As mentioned before, the script engine can be started from within ``$SCRIPT_ENGI
 
 You have to ensure your Init script starts the Node.js executable ``node`` and uses the JavaScript file ``$SCRIPT_ENGINE_HOME/server.js`` as an argument.
 Note, if you use a restricted user to execute the command, make sure the user has appropriate access to the ``$SCRIPT_ENGINE_HOME`` directory.
+
+.. _install-mail-relay:
+
+Installing the Workflow Accelerator Mail Relay
+----------------------------------------------
+.. important:: You only need to install and configure the Mail Relay if you purchased a version of Workflow Accelerator which allows you to use email triggers.
+
+The mail relay is a SMTP server which receives emails and forwards them via HTTP to the Workflow Accelerator web application.
+It is required in order to start a workflow by email.
+If you don't plan on starting workflows by email, you don't have to setup this component and can skip this section.
+
+The complete setup of the mail relay consists of the following steps:
+
+#. Create an email domain for the mail relay
+#. Install and configure the mail relay
+#. Configure the web application
+
+Create an email domain for the mail relay
+`````````````````````````````````````````
+In order to work properly, the mail relay needs to receive all relevant emails.
+The used email addresses are created dynamically based on the ID of the workflow that should be started.
+The domain used for the email addresses can be chosen by you and has to be configured in the system. 
+We advise that you create a specific subdomain which is different from your normal email domain and redirect any incoming emails to the mail relay.
+
+For example if you use the email domain ``mail.yourcompany.com``, a typical email address for the workflow system would look like this: ::
+
+    process-5702854fd1dfff250dc57994@mail.yourcompany.com
+
+How you route the emails to the mail relay is up to you and depends on your infrastructure.
+If the server which runs the mail relay is publicly available, you can simply setup a respective MX record.
+Note, the mail relay and the Workflow Accelerator web application don't have to run on the same server.
+If your email server (e.g. Microsoft Exchange) allows to reroute traffic for a specific subdomain to another server, you can also setup a respective rule there.
+Please, make sure the email is not modified and for instance the sender address is not changed due to some forwarding mechanism.
+
+The next subsection explains how you setup the mail relay and configure it to use your email domain.
+
+Install and configure the mail relay
+````````````````````````````````````
+The mail relay comes as JAR file which requires Java 8 for the execution.
+Please, make sure Java 8 is installed before continuing with the setup.
+
+The mail relay can be installed on the same server as the Workflow Accelerator web application or on a different server.
+If you choose two different servers, please ensure the mail relay is able to reach the server which runs the web application.
+
+#. Create a new local directory for the mail relay, e.g. ``C:\Program Files\Mail Relay`` or ``/var/lib/mail-relay``.
+
+    * We will refer to this directory as ``$MAIL_RELAY_HOME``.
+
+#. Copy the content of the directory ``$WORKFLOW_HOME/mail-relay/`` to your newly created directory.
+
+    * You should find the file ``mail-relay.jar`` directly within your directory: ``$MAIL_RELAY_HOME/mail-relay.jar``.
+
+#. Within the ``$MAIL_RELAY_HOME`` directory create new directory ``logs``.
+
+#. Open ``$MAIL_RELAY_HOME/logback.xml`` and edit ``value`` in the following line: ::
+
+    <property name="LOG_DIR" value="."/>
+
+#. Set ``value`` to the absolute path of ``$MAIL_RELAY_HOME/logs``.
+
+    * For example ``C:\\Program Files\\Mail Relay\\logs`` or ``/var/lib/mail-relay/logs``
+    * On Windows you have to use ``\\`` as a separator for the path.
+
+#. Open ``$MAIL_RELAY_HOME/mail-relay.properties`` and edit the values for the domain, port and Workflow Accelerator URL.
+
+    * Ensure that the port for the mail relay is not used by any other application.
+    
+The configuration file offers the following options:
+
+============================    =================================================================================
+``workflow.relay.domain``       Defines the (sub)domain which is used to receive emails for Workflow Accelerator.
+``workflow.relay.serverUrl``    Defines the URL of the Workflow Accelerator web application.
+``workflow.relay.port``         Defines the port the SMTP will use and listen to.
+============================    =================================================================================
+
+After the successful setup you can start the mail relay by opening the ``$MAIL_RELAY_HOME`` directory on a command line and executing the following command ::
+    
+    java -jar $MAIL_RELAY_HOME/mail-relay.jar
+
+Replace ``$MAIL_RELAY_HOME`` with the absolute path to the JAR file.
+
+You can also register a new service or setup a new init script depending on your operating system.
+
+Windows
+^^^^^^^
+Section :ref:`wrap-into-service` explains how you can wrap a single command into a service using NSSM.
+If you installed NSSM previously, you don't need to install it again.
+Simply follow the instructions and replace the details for the script engine with the details for the mail relay:
+
+#. Open a command line with administrator privileges and execute: ::
+
+    nssm install mail-relay
+
+#. In the *Application* tab fill in the following information:
+
+    * *Path*: the path to the Java .exe file, e.g. ``C:\Program Files\Java\jre1.8.0_92\bin\java.exe``
+    * *Startup directory*: the value of ``$MAIL_RELAY_HOME``, e.g. ``C:\Program Files\Mail Relay``.
+    * *Arguments*: the exact value ``-jar mail-relay.jar``
+    .. image:: _static/images/nssm/nssm03.png
+        :align: center
+
+#. In the *Details* tab fill in the following information:
+
+    * *Display name*: the name of the service shown in ``services.msc``
+    * *Description*: a description which will help you to recognise the service
+    * *Startup type*: choose if the service shall start automatically on startup or if you want to start it manually
+    .. image:: _static/images/nssm/nssm04.png
+        :align: center    
+
+After the successful registration, you can start the mail relay similar to the script engine either on command line or via ``services.msc``.
+
+Linux
+^^^^^
+Similar to the script engine, for the mail relay this task is usually accomplished with Init scripts using the respective Init system of your Linux distribution. 
+Because there are several different Init systems, Signavio will not provide a template.
+However, if you don't already have a template, you can find lots of matching templates for your Init system on the internet.
+
+As mentioned before, the mail relay can be started by executing: ::
+
+    java -jar $MAIL_RELAY_HOME/mail-relay.jar
+
+The placeholder ``$MAIL_RELAY_HOME`` has be replaced with the absolute path to the JAR file.
+
+You have to ensure your Init script starts the Java executable and uses the arguments ``-jar`` and the absolute path to JAR file ``mail-relay.jar``.
+Note, if you use a restricted user to execute the command, make sure the user has appropriate access to the ``$MAIL_RELAY_HOME`` directory.
+
+Configure the web application
+`````````````````````````````
+After setting up the mail relay, the email trigger needs to be enabled in the web application configuration.
+Section :ref:`update-effektif-configuration` explains where you find the respective configuration file.
+Make sure to set proper values for the following to configuration values: ::
+
+    effektif.mail.receiver.enabled = true
+    effektif.mail.receiver.domain = mail.yourcompany.com
+
+The first value must be set to ``true`` to enable the email trigger.
+The second value must be set to the email domain you created for the mail relay.
+It will be shown in the user interface of the web application.
+
+Testing the mail relay
+``````````````````````
+You can test if the mail relay receives incoming message by sending an email from the PowerShell: ::
+
+    Send-MailMessage -SMTPServer localhost -To process-123@mail.yourcompany.com -From you@yourcompany.com -Subject "This is a test email" -Body "This is the test message"
+
+Replace the domain of the email address for the ``-To`` parameter with the one you set in the configuration file.
+When you open the log file of the mail relay, you should see an entry for the incoming message.
+
+// TODO: error because of missing workflow
+
 
 .. _configure-effektif:
 
