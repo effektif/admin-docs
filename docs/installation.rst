@@ -738,6 +738,7 @@ Every line that starts with a ``#`` is commented out and will not be used.
 
 In general, the configuration allows to configure the base URL of the Workflow Accelerator system, the mail server, the database connection and integrations with third party systems (e.g. Signavio).
 If you installed the Workflow Accelerator Script Engine, you need to configure the URL to the script engine as well. As described in :ref:`install-script-engine` the URL derives from the domain (``localhost`` for the same machine) and port the script engine is running on. 
+If you installed the Workflow Accelerator Mail Relay, you need to enable the email trigger and set the email domain you have created during the setup.
 
 .. tabularcolumns:: |p{6cm}|p{9cm}|
 
@@ -756,8 +757,8 @@ If you installed the Workflow Accelerator Script Engine, you need to configure t
 ``effektif.mongodb.password``       The password of the Workflow Accelerator MongoDB user. This is the password you defined during user creation.
 ``effektif.mongodb.database``       The name of the database Workflow Accelerator should use. The default value ``signavio`` is okay.
 ``effektif.javascript.server.url``  (Optional) The URL of the Workflow Accelerator Script Engine, e.g. ``http://localhost:8081``\ .
-``effektif.mail.receiver.enabled``  (Optional)
-``effektif.mail.receiver.domain``   (Optional)
+``effektif.mail.receiver.enabled``  (Optional) Activates the email trigger if set to ``true``. You have to setup the mail relay for the trigger to work properly.
+``effektif.mail.receiver.domain``   (Optional) The email domain which is used to receive emails for the email trigger. The same value must be configured for the mail relay.
 ==================================  =============================
 
 The following properties are only relevant if your Workflow Accelerator installation is connected to your Signavio installation. ::
