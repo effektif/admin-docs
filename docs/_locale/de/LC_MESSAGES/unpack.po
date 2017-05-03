@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Signavio Workflow administrators guide 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-20 16:23+0200\n"
-"PO-Revision-Date: 2017-04-21 10:34+0100\n"
+"POT-Creation-Date: 2017-05-03 19:10+0200\n"
+"PO-Revision-Date: 2017-05-03 19:37+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Signavio Workflow Dev <dev.effektif@signavio.com>\n"
 "MIME-Version: 1.0\n"
@@ -52,27 +52,31 @@ msgid "mongod.cfg - configuration file for Windows"
 msgstr "mongod.cfg - Konfigurationsdatei für Windows"
 
 #: ../../unpack.rst:13
+msgid "mail-relay - directory that contains the mail relay"
+msgstr "mail-relay – Verzeichnis, das das Mail Relay enthält"
+
+#: ../../unpack.rst:14
 msgid "script-engine - directory that contains the script engine"
 msgstr "script-engine - Verzeichnis, das die Dateien der Script Engine enthält"
 
-#: ../../unpack.rst:14
+#: ../../unpack.rst:15
 msgid "optional - directory that contains optional resources"
 msgstr "optional – Verzeichnis, das optional Ressourcen enthält"
 
-#: ../../unpack.rst:16
+#: ../../unpack.rst:17
 msgid "spnego - directory that contains resources to setup SSO with SPNEGO"
 msgstr ""
 "spnego - Verzeichnis, das die Dateien enthält um SSO mit SPNEGO aufzusetzen"
 
-#: ../../unpack.rst:18
+#: ../../unpack.rst:19
 msgid "webapps - directory"
 msgstr "webapps - Verzeichnis"
 
-#: ../../unpack.rst:20
+#: ../../unpack.rst:21
 msgid "ROOT - this directory contains the web application"
 msgstr "ROOT - Verzeichnis, das die Webanwendung enthält"
 
-#: ../../unpack.rst:22
+#: ../../unpack.rst:23
 msgid ""
 "On Linux systems you need to make the scripts executable with the ``chmod`` "
 "command like this: ::"

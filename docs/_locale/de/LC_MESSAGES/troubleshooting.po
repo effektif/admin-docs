@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-20 16:23+0200\n"
-"PO-Revision-Date: 2017-04-21 10:34+0100\n"
+"POT-Creation-Date: 2017-05-03 19:10+0200\n"
+"PO-Revision-Date: 2017-05-03 19:36+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
 "MIME-Version: 1.0\n"
@@ -75,9 +75,9 @@ msgstr "Script Engine"
 #: ../../troubleshooting.rst:23
 msgid ""
 "The Workflow Accelerator Script Engine log files have been configured in the "
-"configuration file ``$SCRIPT_ENGINE_HOME/configuration.onpremise.js``. The "
-"values for the entries ``log`` ``file`` and ``log`` ``errorFile`` will tell "
-"you the name and location of the log files."
+"configuration file ``$SCRIPT_ENGINE_HOME/configuration.onpremise.js``\\ . "
+"The values for the entries ``log`` ``file`` and ``log`` ``errorFile`` will "
+"tell you the name and location of the log files."
 msgstr ""
 "Die Workflow Accelerator Script Engine Log-Dateien wurden in der "
 "Konfigurationsdatei ``$SCRIPT_ENGINE_HOME/configuration.onpremise.js`` "
@@ -85,10 +85,37 @@ msgstr ""
 "``errorFile`` nennen Ihnen die Namen der Log-Dateien."
 
 #: ../../troubleshooting.rst:27
+msgid "Mail Relay"
+msgstr "Mail Relay"
+
+#: ../../troubleshooting.rst:28
+msgid ""
+"The Workflow Accelerator Mail Relay log file ``mail.log`` has been "
+"configured in the logging configuration file ``$MAIL_RELAY_HOME/logback.xml``"
+"\\ . This file contains the line: ::"
+msgstr ""
+"Die Workflow Accelerator Mail Relay-Logdatei ``mail.log`` kann in dem "
+"Verzeichnis gefunden werden, das Sie in der Konfigurationsdatei ``"
+"$MAIL_RELAY_HOME/logback.xml`` eingetragen haben. Die Konfigurationsdatei "
+"enthält den Eintrag: ::"
+
+#: ../../troubleshooting.rst:33
+msgid ""
+"The value contains the directory of the log file. Besides the ``mail.log`` "
+"the directory contains more log files for every day of the past 30 days the "
+"server was running. If you are looking for any information about incidents "
+"on a specific date, open the log file with the respective timestamp."
+msgstr ""
+"Der Wert enthält das Logverzeichnis. Neben ``mail.log`` enthält das "
+"Verzeichnis weitere Logfiles über die letzten 30 Tage, an denen der Server "
+"ausgeführt wurde. Sie können über die Zeitstempel der Logdateien bequem "
+"Informationen über einen bestimmten Tage einsehen."
+
+#: ../../troubleshooting.rst:37
 msgid "MongoDB"
 msgstr "MongoDB"
 
-#: ../../troubleshooting.rst:28
+#: ../../troubleshooting.rst:38
 msgid ""
 "The MongoDB log file is configured by the logpath option. This is either "
 "defined in the MongoDB configuration file that you reference when starting "
@@ -99,7 +126,7 @@ msgstr ""
 "Diesen Parameter können Sie entweder beim Starten von MongoDB oder in der "
 "MongoDB-Konfigurationsdatei festlegen."
 
-#: ../../troubleshooting.rst:32
+#: ../../troubleshooting.rst:42
 msgid ""
 "On Linux, one default location where the log file can be found is ``/var/log/"
 "mongodb/mongodb.log``\\ . Whereas default locations for the configuration "
@@ -113,7 +140,7 @@ msgstr ""
 "Berücksichtigen Sie, dass diese Pfade abhängig von Ihrer Linux-Distribution "
 "und Ihrem Installationsvorgang von MongoDB variieren können."
 
-#: ../../troubleshooting.rst:36
+#: ../../troubleshooting.rst:46
 msgid ""
 "If you are using Windows and followed the instructions in this guide to "
 "setup MongoDB, you should find the log file in your MongoDB installation "
@@ -124,11 +151,11 @@ msgstr ""
 "logs Ihres MongoDB-Installationsverzeichnisses, also unter ``$MONGO_HOME"
 "\\logs``\\ ."
 
-#: ../../troubleshooting.rst:39
+#: ../../troubleshooting.rst:49
 msgid "Tomcat"
 msgstr "Tomcat"
 
-#: ../../troubleshooting.rst:40
+#: ../../troubleshooting.rst:50
 msgid ""
 "If not configured otherwise, the log files of the Apache Tomcat application "
 "server can be found either in the installation directory of the Tomcat ``"
@@ -139,11 +166,11 @@ msgstr ""
 "unter Windows im Verzeichnis ``$TOMCAT_HOME\\logs`` und unter Linux im "
 "gewohnten Logverzeichnis, zum Beispiel ``/var/log/tomcat7``\\ ."
 
-#: ../../troubleshooting.rst:43
+#: ../../troubleshooting.rst:53
 msgid "Common problems"
 msgstr "Häufige Fehler"
 
-#: ../../troubleshooting.rst:44
+#: ../../troubleshooting.rst:54
 msgid ""
 "This section lists some common problems that can arise during the setup of "
 "the Workflow Accelerator system and gives instructions on how to solve them."
@@ -152,12 +179,12 @@ msgstr ""
 "Workflow Accelerator auftreten können, zusammen mit Lösungsansätzen "
 "aufgeführt:"
 
-#: ../../troubleshooting.rst:47 ../../troubleshooting.rst:53
-#: ../../troubleshooting.rst:63 ../../troubleshooting.rst:81
+#: ../../troubleshooting.rst:57 ../../troubleshooting.rst:63
+#: ../../troubleshooting.rst:73 ../../troubleshooting.rst:91
 msgid "Problem:"
 msgstr "Problem:"
 
-#: ../../troubleshooting.rst:47
+#: ../../troubleshooting.rst:57
 msgid ""
 "The Workflow Accelerator site shows a HTTP Status 500 error including the "
 "message ``root cause java.lang.RuntimeException: Cannot find license.xml``"
@@ -167,12 +194,12 @@ msgstr ""
 "folgenden Fehlermeldung an: ``root cause java.lang.RuntimeException: Cannot "
 "find license.xml``\\ ."
 
-#: ../../troubleshooting.rst:50 ../../troubleshooting.rst:60
-#: ../../troubleshooting.rst:78 ../../troubleshooting.rst:96
+#: ../../troubleshooting.rst:60 ../../troubleshooting.rst:70
+#: ../../troubleshooting.rst:88 ../../troubleshooting.rst:106
 msgid "Solution:"
 msgstr "Lösung:"
 
-#: ../../troubleshooting.rst:50
+#: ../../troubleshooting.rst:60
 msgid ""
 "You have not installed the Workflow Accelerator license.xml at all or placed "
 "it in the wrong directory. See :ref:`install-license` to solve the issue."
@@ -181,7 +208,7 @@ msgstr ""
 "oder an einen falschen Ort gelegt. Lesen Sie den Abschnitt :ref:`install-"
 "license` um das Problem zu beheben."
 
-#: ../../troubleshooting.rst:53
+#: ../../troubleshooting.rst:63
 msgid ""
 "The Workflow Accelerator site shows a HTTP Status 500 error including the "
 "message ``com/effektif/EffektifServlet : Unsupported major.minor version "
@@ -192,7 +219,7 @@ msgstr ""
 "major.minor version 51.0 (unable to load class com.effektif."
 "EffektifServlet)``\\ ."
 
-#: ../../troubleshooting.rst:56
+#: ../../troubleshooting.rst:66
 msgid ""
 "The Tomcat server is using the wrong Java version. Workflow Accelerator "
 "requires Java 8. Make sure you have installed the correct Java version. You "
@@ -203,7 +230,7 @@ msgstr ""
 "installiert haben. Sie können Ihre Java-Version überprüfen, indem Sie den "
 "folgenden Befehl ausführen: ::"
 
-#: ../../troubleshooting.rst:60
+#: ../../troubleshooting.rst:70
 msgid ""
 "The :ref:`install-java` section explains how to install the correct Java "
 "version."
@@ -211,7 +238,7 @@ msgstr ""
 "Abschnitt :ref:`install-java` gibt Ihnen genauere Hinweise, wie Sie die "
 "richtige Java-Version installieren."
 
-#: ../../troubleshooting.rst:63
+#: ../../troubleshooting.rst:73
 msgid ""
 "Executing a MongoDB command yields the error message ``errmsg: "
 "“unauthorized”`` or  ``errmsg: “auth fails”``\\ ."
@@ -219,7 +246,7 @@ msgstr ""
 "Die Ausführung eines MongoDB-Befehls erzeugt den folgenden Fehler: ``errmsg: "
 "“unauthorized”`` or  ``errmsg: “auth fails”``\\ ."
 
-#: ../../troubleshooting.rst:66
+#: ../../troubleshooting.rst:76
 msgid ""
 "Either the username / password combination that is used to execute the "
 "command is wrong or the respective MongoDB user lacks some required roles."
@@ -228,20 +255,20 @@ msgstr ""
 "MongoDB-Nutzers falsch, oder der ausführende Nutzer verfügt hat nicht die "
 "notwendigen Rollen inne."
 
-#: ../../troubleshooting.rst:68
+#: ../../troubleshooting.rst:78
 msgid "The first issue can be checked by executing:"
 msgstr ""
 "Die erste Fehlerursache kann durch den folgenden Befehl überprüft werden:"
 
-#: ../../troubleshooting.rst:70
+#: ../../troubleshooting.rst:80
 msgid "Windows: ``mongo.exe admin -u signavio -p <yourSignavioUserPassword>``"
 msgstr "Windows: ``mongo.exe admin -u signavio -p <yourSignavioUserPassword>``"
 
-#: ../../troubleshooting.rst:72
+#: ../../troubleshooting.rst:82
 msgid "Debian: ``mongo admin -u signavio -p <yourSignavioUserPassword>``"
 msgstr "Debian: ``mongo admin -u signavio -p <yourSignavioUserPassword>``"
 
-#: ../../troubleshooting.rst:74
+#: ../../troubleshooting.rst:84
 msgid ""
 "If this command fails with the error message ``exception: login failed`` you "
 "know that your username / password combination is wrong. Please, make sure "
@@ -251,7 +278,7 @@ msgstr ""
 "wissen Sie, dass Ihre Nutzername/Passwort-Kombination nicht korrekt ist. "
 "Überprüfen Sie in diesem Fall die entsprechenden Daten noch einmal."
 
-#: ../../troubleshooting.rst:76
+#: ../../troubleshooting.rst:86
 msgid ""
 "In order to check the second issue, see the :ref:`add-mongodb-user` section. "
 "This section lists all necessary roles and explains how to verify that the "
@@ -264,7 +291,7 @@ msgstr ""
 "Rollen innehat. Vor allem setzen Backup und Wiederherstellung bestimmte "
 "Rollen voraus."
 
-#: ../../troubleshooting.rst:81
+#: ../../troubleshooting.rst:91
 msgid ""
 "Workflow Accelerator does not start and the log file contains the error "
 "message ``INFO  LockingDbExecutor Database is locked by another executor. "
@@ -274,7 +301,7 @@ msgstr ""
 "Fehlermeldung: ``INFO  LockingDbExecutor Database is locked by another "
 "executor. Wait...``."
 
-#: ../../troubleshooting.rst:84
+#: ../../troubleshooting.rst:94
 msgid ""
 "The problem with the LockingDbExecutor arises when the application server is "
 "shut down during the initialisation (update of licenses and migration of  "
@@ -291,26 +318,26 @@ msgstr ""
 "mongodb` beschreibt woher Robomongo bezogen werden kann und wie damit eine "
 "Verbindung zu MongoDB aufgebaut werden kann."
 
-#: ../../troubleshooting.rst:89
+#: ../../troubleshooting.rst:99
 msgid "Open Robomongo."
 msgstr "Öffnen Sie Robomongo."
 
-#: ../../troubleshooting.rst:90
+#: ../../troubleshooting.rst:100
 msgid "Establish a connection to MongoDB."
 msgstr "Stellen Sie eine Verbindung zu MongoDB her."
 
-#: ../../troubleshooting.rst:91
+#: ../../troubleshooting.rst:101
 msgid ""
 "Open the content of the Workflow Accelerator DB on the left side of the "
 "application."
 msgstr ""
 "Klappen Sie auf der linken Seite den Inhalt der Workflow Accelerator DB auf."
 
-#: ../../troubleshooting.rst:92
+#: ../../troubleshooting.rst:102
 msgid "Under Collections you will find the table ``properties``."
 msgstr "Unter Collections befindet sich dann die Tabelle ``properties``."
 
-#: ../../troubleshooting.rst:93
+#: ../../troubleshooting.rst:103
 msgid ""
 "A double click on ``properties`` shows all entries. In case of an error you "
 "will see three entries, if everything is normal there will be only two."
@@ -318,7 +345,7 @@ msgstr ""
 "Ein Doppelklick auf ``properties`` zeigt alle Einträge an. Im Fehlerfall "
 "sind es drei, im Normalfall sind es nur zwei."
 
-#: ../../troubleshooting.rst:94
+#: ../../troubleshooting.rst:104
 msgid ""
 "Out of the three entries in the list, select the one that contains the value "
 "``schema.lock`` for the key ``k``."
@@ -326,7 +353,7 @@ msgstr ""
 "Aus den drei Einträgen in der Liste ist derjenige auszuwählen, der für den "
 "Schlüssel ``k`` den Wert ``schema.lock`` enthält."
 
-#: ../../troubleshooting.rst:95
+#: ../../troubleshooting.rst:105
 msgid ""
 "Use a right click to open the context menu for the respective entry and "
 "choose „Delete Document…“ to remove the entry."
@@ -334,7 +361,7 @@ msgstr ""
 "Mit einem Rechtsklick auf den entsprechenden Eintrag und der Auswahl von "
 "„Delete Document…“ kann der Eintrag gelöscht werden."
 
-#: ../../troubleshooting.rst:97
+#: ../../troubleshooting.rst:107
 msgid ""
 "IMPORTANT: Only the entry for ``schema.lock`` must be deleted. You are "
 "advised to create a backup of the database upfront."

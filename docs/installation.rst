@@ -739,7 +739,7 @@ Open a command line on the server which is running the mail relay and execute: :
 
 Replace the number ``25`` with the respective port that you configured for the mail relay.
 
-Afterwards type in the following example line by line and replace the domain in the email for `rcpt to` to match the domain you configured for the mail relay.
+Afterwards type in the following example line by line and replace the domain in the email for ``rcpt to`` to match the domain you configured for the mail relay.
 
 ::
 

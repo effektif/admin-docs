@@ -61,10 +61,10 @@ In order to update the Workflow Accelerator system, you have to replace the ``RO
 #. Copy the configuration files you have backed up in subsection :ref:`update-backup-configuration` back into the directory ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes``\ .
 #. If you have been provided with a new ``license.xml``\ , copy the file into ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes`` and replace the existing file. Otherwise, you can keep on using the old ``license.xml``\ .
 
-If you have installed the Workflow Accelerator Script Engine, you need to update the content of the ``$SCRIPT_ENGINE_HOME`` directory with the newer version you can find in the extracted directory ``$WORKFLOW_HOME/nodejs``\ .
+If you have installed the Workflow Accelerator Script Engine, you need to update the content of the ``$SCRIPT_ENGINE_HOME`` directory with the newer version you can find in the extracted directory ``$WORKFLOW_HOME/script-engine``\ .
 
 #. Delete all files in the directory ``$SCRIPT_ENGINE_HOME``.
-#. Copy the content of the directory ``$WORKFLOW_HOME/nodejs`` to your ``$SCRIPT_ENGINE_HOME`` directory.
+#. Copy the content of the directory ``$WORKFLOW_HOME/script-engine`` to your ``$SCRIPT_ENGINE_HOME`` directory.
 #. Copy the configuration file ``configuration.onpremise.js`` you have backed up in subsection :ref:`update-backup-configuration` back into the directory ``$SCRIPT_ENGINE_HOME``.
 
 If you have installed the Workflow Accelerator Mail Relay, you need to update the content of the ``mail-relay.jar`` file within the ``$MAIL_RELAY_HOME`` directory with the newer version you can find in the extracted directory ``$WORKFLOW_HOME/mail-relay``\ .
