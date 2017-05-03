@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-20 16:01+0200\n"
-"PO-Revision-Date: 2017-04-20 16:20+0100\n"
+"POT-Creation-Date: 2017-05-03 19:04+0200\n"
+"PO-Revision-Date: 2017-05-03 19:07+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
 "MIME-Version: 1.0\n"
@@ -76,26 +76,30 @@ msgid "mongod.cfg - configuration file for Windows"
 msgstr "mongod.cfg - configuration file for Windows"
 
 #: ../../unpack.rst:13
+msgid "mail-relay - directory that contains the mail relay"
+msgstr "mail-relay - directory that contains the mail relay"
+
+#: ../../unpack.rst:14
 msgid "script-engine - directory that contains the script engine"
 msgstr "script-engine - directory that contains the script engine"
 
-#: ../../unpack.rst:14
+#: ../../unpack.rst:15
 msgid "optional - directory that contains optional resources"
 msgstr "optional - directory that contains optional resources"
 
-#: ../../unpack.rst:16
+#: ../../unpack.rst:17
 msgid "spnego - directory that contains resources to setup SSO with SPNEGO"
 msgstr "spnego - directory that contains resources to setup SSO with SPNEGO"
 
-#: ../../unpack.rst:18
+#: ../../unpack.rst:19
 msgid "webapps - directory"
 msgstr "webapps - directory"
 
-#: ../../unpack.rst:20
+#: ../../unpack.rst:21
 msgid "ROOT - this directory contains the web application"
 msgstr "ROOT - this directory contains the web application"
 
-#: ../../unpack.rst:22
+#: ../../unpack.rst:23
 msgid ""
 "On Linux systems you need to make the scripts executable with the ``chmod`` "
 "command like this: ::"
@@ -289,11 +293,35 @@ msgstr ""
 "up in subsection :ref:`update-backup-configuration` back into the directory "
 "``$SCRIPT_ENGINE_HOME``."
 
+#: ../../update.rst:70
+msgid ""
+"If you have installed the Workflow Accelerator Mail Relay, you need to "
+"update the content of the ``mail-relay.jar`` file within the ``"
+"$MAIL_RELAY_HOME`` directory with the newer version you can find in the "
+"extracted directory ``$WORKFLOW_HOME/mail-relay``\\ ."
+msgstr ""
+"If you have installed the Workflow Accelerator Mail Relay, you need to "
+"update the content of the ``mail-relay.jar`` file within the ``"
+"$MAIL_RELAY_HOME`` directory with the newer version you can find in the "
+"extracted directory ``$WORKFLOW_HOME/mail-relay``\\ ."
+
+#: ../../update.rst:72
+msgid "Delete the file ``$MAIL_RELAY_HOME/mail-relay.jar``"
+msgstr "Delete the file ``$MAIL_RELAY_HOME/mail-relay.jar``"
+
 #: ../../update.rst:73
+msgid ""
+"Copy the file ``$WORKFLOW_HOME/mail-relay/mail-relay.jar`` to your ``"
+"$MAIL_RELAY_HOME`` directory."
+msgstr ""
+"Copy the file ``$WORKFLOW_HOME/mail-relay/mail-relay.jar`` to your ``"
+"$MAIL_RELAY_HOME`` directory."
+
+#: ../../update.rst:78
 msgid "Revisit the configuration files"
 msgstr "Revisit the configuration files"
 
-#: ../../update.rst:74
+#: ../../update.rst:79
 msgid ""
 "After upgrading to a newer version, it might be necessary to update existing "
 "configuration files and add, remove, or modify some values. Refer to "
@@ -305,11 +333,11 @@ msgstr ""
 "section :ref:`configure-effektif` and make sure your Workflow Accelerator "
 "configuration file is up-to-date before starting the system again."
 
-#: ../../update.rst:78
+#: ../../update.rst:83
 msgid "Start Workflow Accelerator"
 msgstr "Start Workflow Accelerator"
 
-#: ../../update.rst:79
+#: ../../update.rst:84
 msgid ""
 "When you have successfully installed the new Workflow Accelerator version "
 "and verified that the configuration files are up-to-date, you can restart "
@@ -320,26 +348,26 @@ msgstr ""
 "and verified that the configuration files are up-to-date, you can restart "
 "the Workflow Accelerator system. Refer to chapter :ref:`starting-effektif` "
 "for more information on how to start Workflow Accelerator."
-
-#: ../../update.rst:82
-msgid ""
-"During the first startup the Workflow Accelerator system will migrate the "
-"database if there are any outstanding schema changes. Therefore, the startup "
-"might take a short while depending on the size of your database. If the "
-"system doesn't become available again within minutes, please check the "
-"Workflow Accelerator log file for any new error reports."
-msgstr ""
-"During the first startup the Workflow Accelerator system will migrate the "
-"database if there are any outstanding schema changes. Therefore, the startup "
-"might take a short while depending on the size of your database. If the "
-"system doesn't become available again within minutes, please check the "
-"Workflow Accelerator log file for any new error reports."
 
 #: ../../update.rst:87
+msgid ""
+"During the first startup the Workflow Accelerator system will migrate the "
+"database if there are any outstanding schema changes. Therefore, the startup "
+"might take a short while depending on the size of your database. If the "
+"system doesn't become available again within minutes, please check the "
+"Workflow Accelerator log file for any new error reports."
+msgstr ""
+"During the first startup the Workflow Accelerator system will migrate the "
+"database if there are any outstanding schema changes. Therefore, the startup "
+"might take a short while depending on the size of your database. If the "
+"system doesn't become available again within minutes, please check the "
+"Workflow Accelerator log file for any new error reports."
+
+#: ../../update.rst:92
 msgid "Restore an older version"
 msgstr "Restore an older version"
 
-#: ../../update.rst:88
+#: ../../update.rst:93
 msgid ""
 "In case of exceptional problems you might want to restore an older version "
 "of Workflow Accelerator. Be aware, if you revert Workflow Accelerator to an "
@@ -361,7 +389,7 @@ msgstr ""
 "support. This is the reason why you should create a backup before updating "
 "the system."
 
-#: ../../update.rst:94
+#: ../../update.rst:99
 msgid ""
 "In order to restore an older version, you can follow the instructions in "
 "this chapter again. However, instead of creating a backup you should restore "
@@ -376,7 +404,7 @@ msgstr ""
 "a newer version of the database schema which it doesn't support. This is the "
 "reason why you should create a backup before updating the system."
 
-#: ../../update.rst:96
+#: ../../update.rst:101
 msgid ""
 "Unpack the older version of Workflow Accelerator, see :ref:`update-unpack-"
 "effektif`"
@@ -384,11 +412,11 @@ msgstr ""
 "Unpack the older version of Workflow Accelerator, see :ref:`update-unpack-"
 "effektif`"
 
-#: ../../update.rst:97
+#: ../../update.rst:102
 msgid "Stop the Workflow Accelerator system, see :ref:`update-stop-effektif`"
 msgstr "Stop the Workflow Accelerator system, see :ref:`update-stop-effektif`"
 
-#: ../../update.rst:98
+#: ../../update.rst:103
 msgid ""
 "Restore an earlier back up that was taken while the old Workflow Accelerator "
 "version was deployed. See chapter :ref:`restore` for more information on how "
@@ -398,11 +426,11 @@ msgstr ""
 "version was deployed. See chapter :ref:`restore` for more information on how "
 "to restore a backup."
 
-#: ../../update.rst:99
+#: ../../update.rst:104
 msgid "Backup the configuration files, see :ref:`update-backup-configuration`"
 msgstr "Backup the configuration files, see :ref:`update-backup-configuration`"
 
-#: ../../update.rst:100
+#: ../../update.rst:105
 msgid ""
 "Install the older version of the webapp in ``$TOMCAT_HOME/webapps``\\ , see :"
 "ref:`update-install-version`"
@@ -410,7 +438,7 @@ msgstr ""
 "Install the older version in ``$TOMCAT_HOME/webapps``\\ , see :ref:`update-"
 "install-version`"
 
-#: ../../update.rst:101
+#: ../../update.rst:106
 msgid ""
 "Install the older version of the script engine in ``$SCRIPT_ENGINE_HOME``, "
 "see :ref:`update-install-version`"
@@ -418,17 +446,25 @@ msgstr ""
 "Install the older version of the script engine in ``$SCRIPT_ENGINE_HOME``, "
 "see :ref:`update-install-version`"
 
-#: ../../update.rst:102
+#: ../../update.rst:107
+msgid ""
+"Install the older version of the mail relay in ``$MAIL_RELAY_HOME``, see :"
+"ref:`update-install-version`"
+msgstr ""
+"Install the older version of the mail relay in ``$MAIL_RELAY_HOME``, see :"
+"ref:`update-install-version`"
+
+#: ../../update.rst:108
 msgid ""
 "Check the configuration files again, see :ref:`update-revisit-configuration`"
 msgstr ""
 "Check the configuration files again, see :ref:`update-revisit-configuration`"
 
-#: ../../update.rst:103
+#: ../../update.rst:109
 msgid "Start the Workflow Accelerator system, see :ref:`starting-effektif`"
 msgstr "Start the Workflow Accelerator system, see :ref:`starting-effektif`"
 
-#: ../../update.rst:105
+#: ../../update.rst:111
 msgid ""
 "Now, the Workflow Accelerator system should be running with the older "
 "version again."
