@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Effektif administrators guide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-20 16:01+0200\n"
-"PO-Revision-Date: 2017-04-20 16:18+0100\n"
+"POT-Creation-Date: 2017-05-03 19:04+0200\n"
+"PO-Revision-Date: 2017-05-03 19:07+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Signavio Workflow Dev <dev.effektif@signavio.com>\n"
 "MIME-Version: 1.0\n"
@@ -52,26 +52,30 @@ msgid "mongod.cfg - configuration file for Windows"
 msgstr "mongod.cfg - configuration file for Windows"
 
 #: ../../unpack.rst:13
+msgid "mail-relay - directory that contains the mail relay"
+msgstr "mail-relay - directory that contains the mail relay"
+
+#: ../../unpack.rst:14
 msgid "script-engine - directory that contains the script engine"
 msgstr "script-engine - directory that contains the script engine"
 
-#: ../../unpack.rst:14
+#: ../../unpack.rst:15
 msgid "optional - directory that contains optional resources"
 msgstr "optional - directory that contains optional resources"
 
-#: ../../unpack.rst:16
+#: ../../unpack.rst:17
 msgid "spnego - directory that contains resources to setup SSO with SPNEGO"
 msgstr "spnego - directory that contains resources to setup SSO with SPNEGO"
 
-#: ../../unpack.rst:18
+#: ../../unpack.rst:19
 msgid "webapps - directory"
 msgstr "webapps - directory"
 
-#: ../../unpack.rst:20
+#: ../../unpack.rst:21
 msgid "ROOT - this directory contains the web application"
 msgstr "ROOT - this directory contains the web application"
 
-#: ../../unpack.rst:22
+#: ../../unpack.rst:23
 msgid ""
 "On Linux systems you need to make the scripts executable with the ``chmod`` "
 "command like this: ::"

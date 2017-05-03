@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-26 20:15+0200\n"
-"PO-Revision-Date: 2017-04-26 20:17+0100\n"
+"POT-Creation-Date: 2017-05-03 18:39+0200\n"
+"PO-Revision-Date: 2017-05-03 19:07+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
 "MIME-Version: 1.0\n"
@@ -39,7 +39,7 @@ msgstr ""
 msgid "Windows"
 msgstr "Windows"
 
-#: ../../stopping.rst:12 ../../stopping.rst:33
+#: ../../stopping.rst:12 ../../stopping.rst:38
 msgid "Tomcat"
 msgstr "Tomcat"
 
@@ -57,7 +57,7 @@ msgstr ""
 "\\Configure Tomcat``\\ , open the tab *General* and click the button *Stop*"
 "\\ ."
 
-#: ../../stopping.rst:17 ../../stopping.rst:43
+#: ../../stopping.rst:17 ../../stopping.rst:48
 msgid "MongoDB"
 msgstr "MongoDB"
 
@@ -79,7 +79,7 @@ msgstr ""
 "Or you run ``services.msc``\\ , select MongoDB in the list of services and "
 "click on *Stop*\\ ."
 
-#: ../../stopping.rst:25 ../../stopping.rst:54
+#: ../../stopping.rst:25 ../../stopping.rst:59
 msgid "Script Engine"
 msgstr "Script Engine"
 
@@ -95,45 +95,61 @@ msgstr ""
 "stop it there. If you are executing the script engine directly via command "
 "line, simply abort the process by pressing ``CTRL + C``."
 
-#: ../../stopping.rst:30
+#: ../../stopping.rst:30 ../../stopping.rst:64
+msgid "Mail Relay"
+msgstr "Mail Relay"
+
+#: ../../stopping.rst:31
+msgid ""
+"If you installed the mail relay and wrapped it into a service, you can open "
+"the ``services.msc``, locate the Signavio Mail Relay service and stop it "
+"there. If you are executing the mail relay directly via command line, simply "
+"abort the process by pressing ``CTRL + C``."
+msgstr ""
+"If you installed the mail relay and wrapped it into a service, you can open "
+"the ``services.msc``, locate the Signavio Mail Relay service and stop it "
+"there. If you are executing the mail relay directly via command line, simply "
+"abort the process by pressing ``CTRL + C``."
+
+#: ../../stopping.rst:35
 msgid "Debian"
 msgstr "Debian"
 
-#: ../../stopping.rst:34
-msgid ""
-"If you installed Tomcat using a packet manager, you can simply run the "
-"following command. This might require root privileges. ::"
-msgstr ""
-"If you installed Tomcat using a packet manager, you can simply run the "
-"following command. This might require root privileges. ::"
-
 #: ../../stopping.rst:39
 msgid ""
-"The example above shows only the command for Tomcat 8. However, if you use "
-"Tomcat 7, the same command will work with the ``/etc/init.d/tomcat7`` script."
+"If you installed Tomcat using a packet manager, you can simply run the "
+"following command. This might require root privileges. ::"
 msgstr ""
-"The example above shows only the command for Tomcat 8. However, if you use "
-"Tomcat 7, the same command will work with the ``/etc/init.d/tomcat7`` script."
+"If you installed Tomcat using a packet manager, you can simply run the "
+"following command. This might require root privileges. ::"
 
 #: ../../stopping.rst:44
 msgid ""
-"If MongoDB was setup following the instructions in this guide, you can "
-"simply stop the MongoDB server by executing the following command. This "
-"might require root privileges. ::"
+"The example above shows only the command for Tomcat 8. However, if you use "
+"Tomcat 7, the same command will work with the ``/etc/init.d/tomcat7`` script."
 msgstr ""
-"If MongoDB was setup following the instructions in this guide, you can "
-"simply stop the MongoDB server by executing the following command. This "
-"might require root privileges. ::"
+"The example above shows only the command for Tomcat 8. However, if you use "
+"Tomcat 7, the same command will work with the ``/etc/init.d/tomcat7`` script."
 
 #: ../../stopping.rst:49
 msgid ""
+"If MongoDB was setup following the instructions in this guide, you can "
+"simply stop the MongoDB server by executing the following command. This "
+"might require root privileges. ::"
+msgstr ""
+"If MongoDB was setup following the instructions in this guide, you can "
+"simply stop the MongoDB server by executing the following command. This "
+"might require root privileges. ::"
+
+#: ../../stopping.rst:54
+msgid ""
 "In earlier versions of MongoDB, e.g. 2.4.x, the script had a different name: "
 "``/etc/init.d/mongodb``. ::"
 msgstr ""
 "In earlier versions of MongoDB, e.g. 2.4.x, the script had a different name: "
 "``/etc/init.d/mongodb``. ::"
 
-#: ../../stopping.rst:55
+#: ../../stopping.rst:60
 msgid ""
 "If you installed the script engine and setup an Init script, execute the "
 "respective stop command for the Init script. If you are executing the script "
@@ -144,3 +160,15 @@ msgstr ""
 "respective stop command for the Init script. If you are executing the script "
 "engine directly via command line, simply abort the process by pressing "
 "``CTRL + C``."
+
+#: ../../stopping.rst:65
+msgid ""
+"If you installed the mail relay and setup an Init script, execute the "
+"respective stop command for the Init script. If you are executing the mail "
+"relay directly via command line, simply abort the process by pressing ``CTRL "
+"+ C``."
+msgstr ""
+"If you installed the mail relay and setup an Init script, execute the "
+"respective stop command for the Init script. If you are executing the mail "
+"relay directly via command line, simply abort the process by pressing ``CTRL "
+"+ C``."

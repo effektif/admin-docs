@@ -54,6 +54,7 @@ Within this adminstrators guide several placeholders are used to increase the re
 ``$TOMCAT_HOME``    	Refers to the directory where your Apache Tomcat is installed. This directory contains the folders ``webapps`` and ``conf``\ . On Linux for example the directory might be located in ``/var/lib/tomcat8``\ .
 ``$MONGO_HOME``     	Refers to the directory where your MongoDB is installed.
 ``$SCRIPT_ENGINE_HOME``	Refers to the directory where your Workflow Accelerator Script Engine is installed.
+``$MAIL_RELAY_HOME``	Refers to the directory where your Workflow Accelerator Mail Relay is installed.
 =======================	==================
 
 Those placeholders are used within example command line code. You need to replace those placeholders with the appropriate paths on your system.

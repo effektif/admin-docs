@@ -10,6 +10,7 @@ The directory will contain the following files:
     * mongod.conf - configuration file for Linux
     * mongod.cfg - configuration file for Windows
 
+* mail-relay - directory that contains the mail relay
 * script-engine - directory that contains the script engine
 * optional - directory that contains optional resources
 	

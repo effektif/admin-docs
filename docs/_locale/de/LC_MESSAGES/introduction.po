@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-20 16:23+0200\n"
-"PO-Revision-Date: 2017-04-20 17:15+0100\n"
+"POT-Creation-Date: 2017-05-03 19:10+0200\n"
+"PO-Revision-Date: 2017-05-03 19:12+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
 "MIME-Version: 1.0\n"
@@ -207,7 +207,19 @@ msgstr ""
 "Bezeichnet das Verzeichnis, in dem die Workflow Accelerator Script Engine "
 "installiert ist."
 
-#: ../../introduction.rst:59
+#: ../../introduction.rst:57
+msgid "``$MAIL_RELAY_HOME``"
+msgstr "``$MAIL_RELAY_HOME``"
+
+#: ../../introduction.rst:57
+msgid ""
+"Refers to the directory where your Workflow Accelerator Mail Relay is "
+"installed."
+msgstr ""
+"Bezeichnet das Verzeichnis, in dem das Workflow Accelerator Mail Relay "
+"installiert ist."
+
+#: ../../introduction.rst:60
 msgid ""
 "Those placeholders are used within example command line code. You need to "
 "replace those placeholders with the appropriate paths on your system."

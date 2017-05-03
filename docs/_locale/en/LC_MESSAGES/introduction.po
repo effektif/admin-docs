@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-20 16:01+0200\n"
-"PO-Revision-Date: 2017-04-20 16:14+0100\n"
+"POT-Creation-Date: 2017-05-03 18:39+0200\n"
+"PO-Revision-Date: 2017-05-03 19:06+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
 "MIME-Version: 1.0\n"
@@ -24,92 +24,160 @@ msgid "Introduction"
 msgstr "Introduction"
 
 #: ../../introduction.rst:3
-msgid "This is the Signavio Workflow Accelerator administration manual. It will provide you with information to setup the Workflow Accelerator system on your own server infrastructure. Workflow Accelerator officially supports Microsoft Windows Server 64Bit and Debian Stable 64Bit."
-msgstr "This is the Signavio Workflow Accelerator administration manual. It will provide you with information to setup the Workflow Accelerator system on your own server infrastructure. Workflow Accelerator officially supports Microsoft Windows Server 64Bit and Debian Stable 64Bit."
+msgid ""
+"This is the Signavio Workflow Accelerator administration manual. It will "
+"provide you with information to setup the Workflow Accelerator system on "
+"your own server infrastructure. Workflow Accelerator officially supports "
+"Microsoft Windows Server 64Bit and Debian Stable 64Bit."
+msgstr ""
+"This is the Signavio Workflow Accelerator administration manual. It will "
+"provide you with information to setup the Workflow Accelerator system on "
+"your own server infrastructure. Workflow Accelerator officially supports "
+"Microsoft Windows Server 64Bit and Debian Stable 64Bit."
 
 #: ../../introduction.rst:7
-msgid "It is possible to setup Workflow Accelerator also on other Linux distributions. However, the instructions in this manual are only tested for Debian. Probably, you will have to adjust the instructions to your system, but the used software should work on most distributions."
-msgstr "It is possible to setup Workflow Accelerator also on other Linux distributions. However, the instructions in this manual are only tested for Debian. Probably, you will have to adjust the instructions to your system, but the used software should work on most distributions."
+msgid ""
+"It is possible to setup Workflow Accelerator also on other Linux "
+"distributions. However, the instructions in this manual are only tested for "
+"Debian. Probably, you will have to adjust the instructions to your system, "
+"but the used software should work on most distributions."
+msgstr ""
+"It is possible to setup Workflow Accelerator also on other Linux "
+"distributions. However, the instructions in this manual are only tested for "
+"Debian. Probably, you will have to adjust the instructions to your system, "
+"but the used software should work on most distributions."
 
 #: ../../introduction.rst:12
 msgid "Software components"
 msgstr "Software components"
 
 #: ../../introduction.rst:13
-msgid "In order to setup and work with Workflow Accelerator, several software components are necessary."
-msgstr "In order to setup and work with Workflow Accelerator, several software components are necessary."
+msgid ""
+"In order to setup and work with Workflow Accelerator, several software "
+"components are necessary."
+msgstr ""
+"In order to setup and work with Workflow Accelerator, several software "
+"components are necessary."
 
 #: ../../introduction.rst:16
 msgid "Workflow Accelerator system"
 msgstr "Workflow Accelerator system"
 
 #: ../../introduction.rst:17
-msgid "The Workflow Accelerator system refers to the application that you will run on your server and that consists of a Java web archive (WAR) that is deployed on Tomcat and a MongoDB database."
-msgstr "The Workflow Accelerator system refers to the application that you will run on your server and that consists of a Java web archive (WAR) that is deployed on Tomcat and a MongoDB database."
+msgid ""
+"The Workflow Accelerator system refers to the application that you will run "
+"on your server and that consists of a Java web archive (WAR) that is "
+"deployed on Tomcat and a MongoDB database."
+msgstr ""
+"The Workflow Accelerator system refers to the application that you will run "
+"on your server and that consists of a Java web archive (WAR) that is "
+"deployed on Tomcat and a MongoDB database."
 
 #: ../../introduction.rst:20
 msgid "Apache Tomcat"
 msgstr "Apache Tomcat"
 
 #: ../../introduction.rst:21
-msgid "The Apache Tomcat is an application server that hosts the Workflow Accelerator web application. The Workflow Accelerator web application serves the Workflow Accelerator application to the users’ browser and it also includes the backend of the Workflow Accelerator system."
-msgstr "The Apache Tomcat is an application server that hosts the Workflow Accelerator web application. The Workflow Accelerator web application serves the Workflow Accelerator application to the users’ browser and it also includes the backend of the Workflow Accelerator system."
+msgid ""
+"The Apache Tomcat is an application server that hosts the Workflow "
+"Accelerator web application. The Workflow Accelerator web application serves "
+"the Workflow Accelerator application to the users’ browser and it also "
+"includes the backend of the Workflow Accelerator system."
+msgstr ""
+"The Apache Tomcat is an application server that hosts the Workflow "
+"Accelerator web application. The Workflow Accelerator web application serves "
+"the Workflow Accelerator application to the users’ browser and it also "
+"includes the backend of the Workflow Accelerator system."
 
 #: ../../introduction.rst:25
 msgid "MongoDB"
 msgstr "MongoDB"
 
 #: ../../introduction.rst:26
-msgid "MongoDB is a document-oriented database system. It is the only database system that Workflow Accelerator supports. You can find more detailed information in the `MongoDB documentation <https://docs.mongodb.org>`_."
-msgstr "MongoDB is a document-oriented database system. It is the only database system that Workflow Accelerator supports. You can find more detailed information in the `MongoDB documentation <https://docs.mongodb.org>`_."
+msgid ""
+"MongoDB is a document-oriented database system. It is the only database "
+"system that Workflow Accelerator supports. You can find more detailed "
+"information in the `MongoDB documentation <https://docs.mongodb.org>`_."
+msgstr ""
+"MongoDB is a document-oriented database system. It is the only database "
+"system that Workflow Accelerator supports. You can find more detailed "
+"information in the `MongoDB documentation <https://docs.mongodb.org>`_."
 
 #: ../../introduction.rst:31
 msgid "Node.js"
 msgstr "Node.js"
 
 #: ../../introduction.rst:32
-msgid "Node.js is a runtime environment for JavaScript which is used by Workflow Accelerator to execute custom JavaScript tasks created by the user."
-msgstr "Node.js is a runtime environment for JavaScript which is used by Workflow Accelerator to execute custom JavaScript tasks created by the user."
+msgid ""
+"Node.js is a runtime environment for JavaScript which is used by Workflow "
+"Accelerator to execute custom JavaScript tasks created by the user."
+msgstr ""
+"Node.js is a runtime environment for JavaScript which is used by Workflow "
+"Accelerator to execute custom JavaScript tasks created by the user."
 
 #: ../../introduction.rst:35
 msgid "Mail server (SMTP)"
 msgstr "Mail server (SMTP)"
 
 #: ../../introduction.rst:36
-msgid "The mail server is necessary to send notifications and invitation requests to users. Any server that is accessible via SMTP can be used."
-msgstr "The mail server is necessary to send notifications and invitation requests to users. Any server that is accessible via SMTP can be used."
+msgid ""
+"The mail server is necessary to send notifications and invitation requests "
+"to users. Any server that is accessible via SMTP can be used."
+msgstr ""
+"The mail server is necessary to send notifications and invitation requests "
+"to users. Any server that is accessible via SMTP can be used."
 
 #: ../../introduction.rst:40
 msgid "Web browser"
 msgstr "Web browser"
 
 #: ../../introduction.rst:41
-msgid "Workflow Accelerator runs as a web application. The user interface can be accessed using a modern web browser. More details about the supported browsers can be found in the section :ref:`supported-browsers`\\ ."
-msgstr "Workflow Accelerator runs as a web application. The user interface can be accessed using a modern web browser. More details about the supported browsers can be found in the section :ref:`supported-browsers`\\ ."
+msgid ""
+"Workflow Accelerator runs as a web application. The user interface can be "
+"accessed using a modern web browser. More details about the supported "
+"browsers can be found in the section :ref:`supported-browsers`\\ ."
+msgstr ""
+"Workflow Accelerator runs as a web application. The user interface can be "
+"accessed using a modern web browser. More details about the supported "
+"browsers can be found in the section :ref:`supported-browsers`\\ ."
 
 #: ../../introduction.rst:46
 msgid "Naming conventions"
 msgstr "Naming conventions"
 
 #: ../../introduction.rst:47
-msgid "Within this adminstrators guide several placeholders are used to increase the readability."
-msgstr "Within this adminstrators guide several placeholders are used to increase the readability."
+msgid ""
+"Within this adminstrators guide several placeholders are used to increase "
+"the readability."
+msgstr ""
+"Within this adminstrators guide several placeholders are used to increase "
+"the readability."
 
 #: ../../introduction.rst:53
 msgid "``$WORKFLOW_HOME``"
 msgstr "``$WORKFLOW_HOME``"
 
 #: ../../introduction.rst:53
-msgid "Refers to the directory that contains the unzipped content of the downloaded signavio-workflow-{version}.zip."
-msgstr "Refers to the directory that contains the unzipped content of the downloaded signavio-workflow-{version}.zip."
+msgid ""
+"Refers to the directory that contains the unzipped content of the downloaded "
+"signavio-workflow-{version}.zip."
+msgstr ""
+"Refers to the directory that contains the unzipped content of the downloaded "
+"signavio-workflow-{version}.zip."
 
 #: ../../introduction.rst:54
 msgid "``$TOMCAT_HOME``"
 msgstr "``$TOMCAT_HOME``"
 
 #: ../../introduction.rst:54
-msgid "Refers to the directory where your Apache Tomcat is installed. This directory contains the folders ``webapps`` and ``conf``\\ . On Linux for example the directory might be located in ``/var/lib/tomcat8``\\ ."
-msgstr "Refers to the directory where your Apache Tomcat is installed. This directory contains the folders ``webapps`` and ``conf``\\ . On Linux for example the directory might be located in ``/var/lib/tomcat8``\\ ."
+msgid ""
+"Refers to the directory where your Apache Tomcat is installed. This "
+"directory contains the folders ``webapps`` and ``conf``\\ . On Linux for "
+"example the directory might be located in ``/var/lib/tomcat8``\\ ."
+msgstr ""
+"Refers to the directory where your Apache Tomcat is installed. This "
+"directory contains the folders ``webapps`` and ``conf``\\ . On Linux for "
+"example the directory might be located in ``/var/lib/tomcat8``\\ ."
 
 #: ../../introduction.rst:55
 msgid "``$MONGO_HOME``"
@@ -124,9 +192,29 @@ msgid "``$SCRIPT_ENGINE_HOME``"
 msgstr "``$SCRIPT_ENGINE_HOME``"
 
 #: ../../introduction.rst:56
-msgid "Refers to the directory where your Workflow Accelerator Script Engine is installed."
-msgstr "Refers to the directory where your Workflow Accelerator Script Engine is installed."
+msgid ""
+"Refers to the directory where your Workflow Accelerator Script Engine is "
+"installed."
+msgstr ""
+"Refers to the directory where your Workflow Accelerator Script Engine is "
+"installed."
 
-#: ../../introduction.rst:59
-msgid "Those placeholders are used within example command line code. You need to replace those placeholders with the appropriate paths on your system."
-msgstr "Those placeholders are used within example command line code. You need to replace those placeholders with the appropriate paths on your system."
+#: ../../introduction.rst:57
+msgid "``$MAIL_RELAY_HOME``"
+msgstr "``$MAIL_RELAY_HOME``"
+
+#: ../../introduction.rst:57
+msgid ""
+"Refers to the directory where your Workflow Accelerator Mail Relay is "
+"installed."
+msgstr ""
+"Refers to the directory where your Workflow Accelerator Mail Relay is "
+"installed."
+
+#: ../../introduction.rst:60
+msgid ""
+"Those placeholders are used within example command line code. You need to "
+"replace those placeholders with the appropriate paths on your system."
+msgstr ""
+"Those placeholders are used within example command line code. You need to "
+"replace those placeholders with the appropriate paths on your system."
