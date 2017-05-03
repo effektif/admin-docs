@@ -701,14 +701,58 @@ It will be shown in the user interface of the web application.
 
 Testing the mail relay
 ``````````````````````
-You can test if the mail relay receives incoming message by sending an email from the PowerShell: ::
+In order to verify the setup works as intended, it can be helpful to test it.
+If you have installed Workflow Accelerator completely and created an organization within the application, you can directly test the setup with a workflow.
+
+#. Create a new workflow
+#. Choose the email trigger
+#. Copy the email address which is shown in the UI
+#. Publish the workflow
+#. Send an email to the copied email address
+
+The case list should now contain a new completed case which shows your email in the event stream.
+If no case was started, you should check the log file ``$MAIL_RELAY_HOME/logs/mail.log`` for any error message.
+
+
+If you haven't finished the complete setup, but at least the web application is running as well, you can test already whether the communication between the mail relay and the web application works.
+A simple way to do that is to send an email via command line to the mail relay and consult the log file to see the result from the server.
+The following examples will show you how you can do that on different operating systems.
+The examples will send an email to a not existing workflow which is referenced by ``process-123``.
+Therefore, the web application will respond with an error code and you will see a message similar to ``Invalid response status code: 400`` in the log file.
+This error is expected, as the workflow doesn't exist, and proves the communication is working.
+
+Windows
+^^^^^^^
+You can send an email using the Windows PowerShell: ::
 
     Send-MailMessage -SMTPServer localhost -To process-123@mail.yourcompany.com -From you@yourcompany.com -Subject "This is a test email" -Body "This is the test message"
 
 Replace the domain of the email address for the ``-To`` parameter with the one you set in the configuration file.
-When you open the log file of the mail relay, you should see an entry for the incoming message.
 
-// TODO: error because of missing workflow
+Linux
+^^^^^
+You can send an email using telnet to connect to the mail relay.
+
+Open a command line on the server which is running the mail relay and execute: ::
+
+    telnet localhost 25
+
+Replace the number ``25`` with the respective port that you configured for the mail relay.
+
+Afterwards type in the following example line by line and replace the domain in the email for `rcpt to` to match the domain you configured for the mail relay.
+
+::
+
+    helo me
+    mail from:<john.doe@yourcompany.com>
+    rcpt to:<process-123@mail.yourcompany.com>
+    data
+    From: john.doe@yourcompany.com
+    Subject: test subject
+
+    This is the body
+    .
+    quit
 
 
 .. _configure-effektif:
