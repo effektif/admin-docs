@@ -1,6 +1,6 @@
 Installing Signavio Workflow Accelerator
 ========================================
-This section will guide you through the setup of Workflow Accelerator. 
+This section will guide you through the set-up of Workflow Accelerator. 
 Simply follow the subsections step by step. 
 If you have already installed Workflow Accelerator and want to update the system to a newer version, you can skip this chapter.
 
@@ -22,8 +22,8 @@ Furthermore, MongoDB is limited to 2GB of content on 32-bit operating systems.
 
 Hardware requirements
 `````````````````````
-The described installation in this adminstration guide will setup the database and the application server on the same system. 
-However, it is also possible to setup the database and application server on separate systems. 
+The described installation in this adminstration guide will set up the database and the application server on the same system. 
+However, it is also possible to set up the database and application server on separate systems. 
 For instance, if you already have an infrastructure that provides MongoDB instances for different applications, you can simply reuse your infrastructure and just create another database for Workflow Accelerator.
 
 The minimal hardware requirements for the combined system of application and database server are:
@@ -176,8 +176,8 @@ In case you have created a new ``setenv.sh`` file, you have to make sure it is e
 
     chmod a+x setenv.sh
 
-Setup the Tomcat connector
-``````````````````````````
+Set up the Tomcat connector
+```````````````````````````
 By default the Tomcat server will start up using port 8080 and 8005. 
 Port 8080 is used for serving the Workflow Accelerator web application. Port 8005 is used to shutdown the Tomcat instance. 
 You can change the port in the server.xml which is located in ``$TOMCAT_HOME/conf/server.xml``\ .
@@ -220,8 +220,8 @@ There are two versions of MongoDB, *MongoDB Community Edition* and *MongoDB Ente
 You can use either version with Workflow Accelerator.
 
 In case you are using Linux, you have the possibilities to install MongoDB using either a package manager like ``apt-get`` or downloading the binaries directly. 
-It is recommened to use the package manager because it will also setup scripts that allow you to start and stop the server easily. 
-However, you have to make sure the correct version is installed. :ref:`install-mongodb-debian` explains in more details how to setup MongoDB on Debian and might work as an example for other Linux distributions.
+It is recommened to use the package manager because it will also set up scripts that allow you to start and stop the server easily. 
+However, you have to make sure the correct version is installed. :ref:`install-mongodb-debian` explains in more details how to set up MongoDB on Debian and might work as an example for other Linux distributions.
 
 Remarks for downloading the binaries
 ````````````````````````````````````
@@ -365,7 +365,7 @@ Workflow Accelerator will create two databases, one for the user and workflow da
 The name of the first database can be configured in the Workflow Accelerator configuration file. The name of the second database is derived from the name of the first one by adding “-files”. For instance, if you define the database name “signavio”, the databases “signavio” and “signavio-files” will be created.
 
 In general, if you want to create a new user in MongoDB you will need to authenticate with an existing user that has the role userAdmin or userAdminAnyDatabase. 
-There is an exception for a fresh MongoDB setup. 
+There is an exception for a fresh MongoDB set-up. 
 It will allow you to create the first user from localhost without any authentication. 
 The following examples will show you how to create a new user using the credentials of an admin user and how to do it without any credentials in case of a new MongoDB.
 
@@ -430,7 +430,7 @@ We recommend using the Node.js LTS (Long Term Support) version 6.x.
 
 Windows
 ```````
-For Windows there is a comfortable installer to setup Node.js.
+For Windows there is a comfortable installer to set up Node.js.
 
 #. Go to https://nodejs.org/en/download/
 #. Select the LTS version.
@@ -481,7 +481,7 @@ The configuration file offers the following options:
 ``log`` ``errorFile``   Defines the location and name of the script engine error log file.
 =====================   ==================================================================
 
-After the successful setup you can start the script engine by opening the ``$SCRIPT_ENGINE_HOME`` directory on a command line and executing the following command ::
+After the successful set-up you can start the script engine by opening the ``$SCRIPT_ENGINE_HOME`` directory on a command line and executing the following command ::
     
     node server.js
 
@@ -569,9 +569,9 @@ Installing the Workflow Accelerator Mail Relay
 
 The mail relay is a SMTP server which receives emails and forwards them via HTTP to the Workflow Accelerator web application.
 It is required in order to start a workflow by email.
-If you don't plan on starting workflows by email, you don't have to setup this component and can skip this section.
+If you don't plan on starting workflows by email, you don't have to set this component up and can skip this section.
 
-The complete setup of the mail relay consists of the following steps:
+The complete set-up of the mail relay consists of the following steps:
 
 #. Create an email domain for the mail relay
 #. Install and configure the mail relay
@@ -589,17 +589,17 @@ For example if you use the email domain ``mail.yourcompany.com``, a typical emai
     process-5702854fd1dfff250dc57994@mail.yourcompany.com
 
 How you route the emails to the mail relay is up to you and depends on your infrastructure.
-If the server which runs the mail relay is publicly available, you can simply setup a respective MX record.
+If the server which runs the mail relay is publicly available, you can simply set up a respective `MX record <https://en.wikipedia.org/wiki/MX_record>`_\ .
 Note, the mail relay and the Workflow Accelerator web application don't have to run on the same server.
-If your email server (e.g. Microsoft Exchange) allows to reroute traffic for a specific subdomain to another server, you can also setup a respective rule there.
+If your email server (e.g. Microsoft Exchange) allows rerouting traffic for a specific subdomain to another server, you can also set up a respective rule there.
 Please, make sure the email is not modified and for instance the sender address is not changed due to some forwarding mechanism.
 
-The next subsection explains how you setup the mail relay and configure it to use your email domain.
+The next subsection explains how you set up the mail relay and configure it to use your email domain.
 
 Install and configure the mail relay
 ````````````````````````````````````
 The mail relay comes as a JAR file which requires Java 8 for the execution.
-Please, make sure Java 8 is installed before continuing with the setup.
+Please, make sure Java 8 is installed before continuing with the set-up.
 
 The mail relay can be installed on the same server as the Workflow Accelerator web application or on a different server.
 If you choose two different servers, please ensure the mail relay is able to reach the server which runs the web application.
@@ -608,7 +608,7 @@ If you choose two different servers, please ensure the mail relay is able to rea
 
     * We will refer to this directory as ``$MAIL_RELAY_HOME``.
 
-#. Copy the content of the directory ``$WORKFLOW_HOME/mail-relay/`` to your newly created directory.
+#. Copy the contents of the directory ``$WORKFLOW_HOME/mail-relay/`` to your newly created directory.
 
     * You should find the file ``mail-relay.jar`` directly within your directory: ``$MAIL_RELAY_HOME/mail-relay.jar``.
 
@@ -635,13 +635,13 @@ The configuration file offers the following options:
 ``workflow.relay.port``         Defines the port the SMTP will use and listen to.
 ============================    =================================================================================
 
-After the successful setup you can start the mail relay by opening the command line and executing the following command ::
+After the successful set-up you can start the mail relay by opening the command line and executing the following command ::
     
     java -jar $MAIL_RELAY_HOME/mail-relay.jar
 
 Replace ``$MAIL_RELAY_HOME`` with the absolute path to the JAR file.
 
-You can also register a new service or setup a new init script depending on your operating system to ease the management of the mail relay.
+You can also register a new service or set up a new Linux Init script depending on your operating system to ease the management of the mail relay.
 
 Windows
 ^^^^^^^
@@ -669,7 +669,7 @@ Simply follow the instructions and replace the details for the script engine wit
     .. image:: _static/images/nssm/nssm04.png
         :align: center    
 
-After the successful registration, you can start the mail relay similar to the script engine either on command line or via ``services.msc``.
+After the successful registration, you can start the mail relay similarly to the script engine either on command line or via ``services.msc``.
 
 Linux
 ^^^^^
@@ -701,8 +701,8 @@ It will be shown in the user interface of the web application.
 
 Testing the mail relay
 ``````````````````````
-In order to verify the setup works as intended, it can be helpful to test it.
-If you have installed Workflow Accelerator completely and created an organization within the application, you can directly test the setup with a workflow.
+In order to verify the set-up works as intended, it can be helpful to test it.
+If you have installed Workflow Accelerator completely and created an organization within the application, you can directly test the set-up with a workflow.
 
 #. Create a new workflow
 #. Choose the email trigger
@@ -714,7 +714,7 @@ The case list should now contain a new completed case which shows your email in 
 If no case was started, you should check the log file ``$MAIL_RELAY_HOME/logs/mail.log`` for any error message.
 
 
-If you haven't finished the complete setup, but at least the web application is running as well, you can test already whether the communication between the mail relay and the web application works.
+If you haven't finished the complete set-up, but at least the web application is running as well, you can test already whether the communication between the mail relay and the web application works.
 A simple way to do that is to send an email via command line to the mail relay and consult the log file to see the result from the server.
 The following examples will show you how you can do that on different operating systems.
 The examples will send an email to a not existing workflow which is referenced by ``process-123``.
@@ -767,7 +767,7 @@ Install the license file
 Along with the Workflow Accelerator application you have received the Workflow Accelerator license file license.xml. 
 Before you can start the Workflow Accelerator system, you have to add the license file to the application.
 Therefore, copy the license file into the directory ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes``\ . 
-The Workflow Accelerator system will check your license file on startup and setup the defined number of licenses.
+The Workflow Accelerator system will check your license file on startup and set up the defined number of licenses.
 
 .. _update-effektif-configuration:
 
@@ -782,7 +782,7 @@ Every line that starts with a ``#`` is commented out and will not be used.
 
 In general, the configuration allows to configure the base URL of the Workflow Accelerator system, the mail server, the database connection and integrations with third party systems (e.g. Signavio).
 If you installed the Workflow Accelerator Script Engine, you need to configure the URL to the script engine as well. As described in :ref:`install-script-engine` the URL derives from the domain (``localhost`` for the same machine) and port the script engine is running on. 
-If you installed the Workflow Accelerator Mail Relay, you need to enable the email trigger and set the email domain you have created during the setup.
+If you installed the Workflow Accelerator Mail Relay, you need to enable the email trigger and set the email domain that you created during the set-up.
 
 .. tabularcolumns:: |p{6cm}|p{9cm}|
 
@@ -801,7 +801,7 @@ If you installed the Workflow Accelerator Mail Relay, you need to enable the ema
 ``effektif.mongodb.password``       The password of the Workflow Accelerator MongoDB user. This is the password you defined during user creation.
 ``effektif.mongodb.database``       The name of the database Workflow Accelerator should use. The default value ``signavio`` is okay.
 ``effektif.javascript.server.url``  (Optional) The URL of the Workflow Accelerator Script Engine, e.g. ``http://localhost:8081``\ .
-``effektif.mail.receiver.enabled``  (Optional) Activates the email trigger if set to ``true``. You have to setup the mail relay for the trigger to work properly.
+``effektif.mail.receiver.enabled``  (Optional) Activates the email trigger if set to ``true``. You have to set up the mail relay for the trigger to work properly.
 ``effektif.mail.receiver.domain``   (Optional) The email domain which is used to receive emails for the email trigger. The same value must be configured for the mail relay.
 ==================================  =============================
 
