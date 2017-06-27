@@ -23,7 +23,10 @@ prepare(CWD, PROJECT_PATH, language)
 
 def build_search_snippets(app, docname):
     if app.builder.name == 'html':
-        clean_txts(PROJECT_PATH, language)
+        try:
+            clean_txts(PROJECT_PATH, language)
+        except:
+            pass
 
 
 def setup(app):
