@@ -1,4 +1,4 @@
-Effektif adminstrators guide
+Effektif adminstrators guide [![Build Status](https://travis-ci.org/effektif/admin-docs.svg?branch=master)](https://travis-ci.org/effektif/admin-docs)
 ============================
 
 The Effektif administrators guide uses [Sphinx](http://sphinx-doc.org/) to create the documentation as HTML and PDF. Sphinx is a Python library. The documentation itself is written using reStructuredText with some Sphinx flavor and is available in english and german. The online version can be found here: [Effektif administrators guide](http://effektif-administrators-guide.readthedocs.org/)
