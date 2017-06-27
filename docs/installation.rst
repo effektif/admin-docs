@@ -182,7 +182,7 @@ By default the Tomcat server will start up using port 8080 and 8005.
 Port 8080 is used for serving the Workflow Accelerator web application. Port 8005 is used to shutdown the Tomcat instance.
 You can change the port in the server.xml which is located in ``$TOMCAT_HOME/conf/server.xml``\ .
 
-.. hint:: If the server is running on any other port than port 80, your users will have to enter the port in the address line of the web browser, e.g. ``http://workflow.yourdomain.com:8080/`` .
+.. hint:: If the server is running on any other port than port 80, your users will have to enter the port in the address line of the web browser, e.g. ``http://workflow.yourdomain.com:8080/``.
 
 Locate the HTTP connector and change the value of port to your preferred port.
 Furthermore, make sure the connector contains the entry ``URIEnconding="UTF-8"``\ .
@@ -791,7 +791,7 @@ If you installed the Workflow Accelerator Mail Relay, you need to enable the ema
 .. tabularcolumns:: |p{6cm}|p{9cm}|
 
 ==================================  =============================
-``effektif.baseUrl``                (Required) The IP address or server name (including the port) of the server running the Workflow Accelerator Tomcat application server. E.g. http://workflow.yourdomain.com:8080\ . If the server is running on port 80, the port can be omitted.
+``effektif.baseUrl``                (Required) The IP address or server name (including the port) of the server running the Workflow Accelerator Tomcat application server. E.g. ``http://workflow.yourdomain.com:8080`` . If the server is running on port 80, the port can be omitted.
 ``effektif.smtp.host``              (Required) The IP address or server name of the outgoing email server.
 ``effektif.smtp.port``              The port on which the outgoing SMTP server listens
 ``effektif.smtp.ssl``               If SSL should be used ( true or false )
