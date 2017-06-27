@@ -3,7 +3,7 @@ Signavio Workflow Accelerator administrators documentation
 
 .. toctree::
     :maxdepth: 2
-   
+
     introduction
     installation
     optional
@@ -16,7 +16,8 @@ Signavio Workflow Accelerator administrators documentation
     tooling
     signavio
     troubleshooting
-    .. appendix --> currently not used
+
+.. appendix --> currently not used
 
 
 Contact and legal information
