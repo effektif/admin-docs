@@ -223,7 +223,7 @@ latex_elements = {
 'pointsize': '10pt',
 
 # Additional stuff for the LaTeX preamble.
-'preamble': '\usepackage{upquote}',
+'preamble': '\\usepackage{upquote}',
 }
 
 # IMPORTANT: more document information can be found in ./(en|de)/conf.py

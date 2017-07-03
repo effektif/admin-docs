@@ -58,9 +58,9 @@ def copy_images(lang=DEFAULT_LANG, path=PROJET_PATH, silent=False):
     if missing_files:
         missing_files = sorted(missing_files, key=lambda x: x[0])
 
-        print colored('\nNot all images have translations!', 'red')
-        print colored('The following files still need to be translated to \"%s\"\n' % lang, 'yellow')
-        print tabulate(missing_files, headers=['Folder', 'File'])
+        print(colored('\nNot all images have translations!', 'red'))
+        print(colored('The following files still need to be translated to \"%s\"\n' % lang, 'yellow'))
+        print(tabulate(missing_files, headers=['Folder', 'File']))
 
 def copy_sources(dest, origin=PROJET_PATH):
     BLACKLIST = LANGUAGES + [
@@ -71,7 +71,7 @@ def copy_sources(dest, origin=PROJET_PATH):
         dest.replace(PROJET_PATH, '')
     ]
 
-    print "using %s as destination" % dest
+    print("using %s as destination" % dest)
 
     for name in os.listdir(origin):
         if name in BLACKLIST:
@@ -110,4 +110,3 @@ def prepare_language(cwd, path=PROJET_PATH, lang=DEFAULT_LANG):
     remove_stale_data(cwd)
 
     copy_sources(cwd, origin=path)
-

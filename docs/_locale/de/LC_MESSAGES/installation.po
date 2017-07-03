@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-27 14:32+0200\n"
-"PO-Revision-Date: 2017-06-27 14:33+0200\n"
+"POT-Creation-Date: 2017-07-03 16:20+0200\n"
+"PO-Revision-Date: 2017-07-03 16:21+0200\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language: de\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
@@ -243,6 +243,51 @@ msgstr "Microsoft Internet Explorer 9 oder neuer"
 msgid "Apple Safari 5 or newer"
 msgstr "Apple Safari 5 oder neuer"
 
+#: ../../installation.rst:81
+msgid ""
+"Since `Microsoft stopped supporting Internet Explorer 9 and 10 for most "
+"platforms on January 12, 2016 <https://support.microsoft.com/en-us/help/17454/"
+"lifecycle-faq-internet-explorer>`_, it is getting increasingly difficult for "
+"Signavio to provide a state-of-the-art user experience while supporting these "
+"browsers. As we want to continue innovating and provide the best features and "
+"user experience possible, we will stop supporting Microsoft Internet Explorer 9 "
+"and 10 on December 31, 2017. If you use Internet Explorer 9 or 10, we recommend "
+"switching to one of the following browsers as soon as possible:"
+msgstr ""
+"Seitdem `Microsoft den Support für Internet Explorer 9 und 10 für die meisten "
+"Plattformen am 12. Januar 2016 eingestellt hat <https://support.microsoft.com/"
+"de-de/help/17454/lifecycle-faq-internet-explorer>`_, ist es technisch schwer "
+"möglich optimale Nutzeroberflächen für diese Browser zur Verfügung zu stellen. "
+"Da wir weiterhin innovative Produkte mit bestmöglicher Funktionalität und "
+"nutzerfreundlichen Oberflächen zur Verfügung stellen möchten, werden wir die "
+"Unterstützung für Microsoft Internet Explorer 9 und 10 am 31. Dezember 2017 "
+"einstellen. Falls Sie Internet Explorer 9 oder 10 verwenden, empfehlen wir "
+"Ihnen, schon jetzt auf einen der folgenden Browser umzusteigen:"
+
+#: ../../installation.rst:85
+msgid ""
+"`Google Chrome <https://www.google.com/chrome/browser/desktop/index.html>`_"
+msgstr ""
+"`Google Chrome <https://www.google.de/chrome/browser/desktop/index.html>`_"
+
+#: ../../installation.rst:86
+msgid "`Microsoft Edge <https://www.microsoft.com/en-us/windows/microsoft-edge>`_"
+msgstr ""
+"`Microsoft Edge <https://www.microsoft.com/de-de/windows/microsoft-edge>`_"
+
+#: ../../installation.rst:87
+msgid "`Mozilla Firefox <https://www.mozilla.org/en/firefox/new/>`_"
+msgstr "`Mozilla Firefox <https://www.mozilla.org/de/firefox/new/>`_"
+
+#: ../../installation.rst:88
+msgid ""
+"`Internet Explorer 11 (only if none of the above is viable) <https://www."
+"microsoft.com/en-us/download/internet-explorer-11-for-windows-7-details.aspx>`_"
+msgstr ""
+"`Internet Explorer 11 <https://www.microsoft.com/de-de/download/internet-"
+"explorer-11-for-windows-7-details.aspx>`_ (nur falls kein Wechsel zu einem der "
+"obigen Browser möglich ist)"
+
 #: ../../unpack.rst:2
 msgid "Unpack Signavio Workflow Accelerator"
 msgstr "Workflow Accelerator entpacken"
@@ -308,11 +353,11 @@ msgstr ""
 "Auf Linuxsystemen ist es notwendig, die Shellskripte ausführbar zu machen. "
 "Verwenden Sie hierfür den ``chmod``\\ -Befehl, wie zum Beispiel: ::"
 
-#: ../../installation.rst:84
+#: ../../installation.rst:95
 msgid "Installing Java"
 msgstr "Java installieren"
 
-#: ../../installation.rst:85
+#: ../../installation.rst:96
 msgid ""
 "The application server requires a Java runtime environment in order to execute "
 "Workflow Accelerator’s Java backend. You must install Java 8 64-bit on the "
@@ -323,15 +368,15 @@ msgstr ""
 "End von Workflow Accelerator auszuführen. Installieren Sie daher Java 8 64-Bit "
 "für Ihr Betriebssystem. Die entsprechenden Dateien erhalten Sie hier:"
 
-#: ../../installation.rst:89
+#: ../../installation.rst:100
 msgid "https://www.java.com/en/download/manual.jsp"
 msgstr "https://www.java.com/en/download/manual.jsp"
 
-#: ../../installation.rst:94
+#: ../../installation.rst:105
 msgid "Installing Tomcat"
 msgstr "Tomcat installieren"
 
-#: ../../installation.rst:95
+#: ../../installation.rst:106
 msgid ""
 "The Java backend of the Workflow Accelerator system is executed using Apache "
 "Tomcat. Workflow Accelerator supports Apache Tomcat 64-bit versions 7 and 8. We "
@@ -341,7 +386,7 @@ msgstr ""
 "ausgeführt. Workflow Accelerator unterstützt die Apache Tomcat 64-Bit Versionen "
 "7 und 8. Wir empfehlen die Nutzung der neueren Version Tomcat 8."
 
-#: ../../installation.rst:99
+#: ../../installation.rst:110
 msgid ""
 "You can download the latest installation files for different operating systems "
 "from the following site:"
@@ -349,11 +394,11 @@ msgstr ""
 "Die Tomcat-Installationsdateien erhalten Sie für verschiedene Betriebssysteme "
 "hier:"
 
-#: ../../installation.rst:101
+#: ../../installation.rst:112
 msgid "http://tomcat.apache.org/download-80.cgi"
 msgstr "http://tomcat.apache.org/download-80.cgi"
 
-#: ../../installation.rst:103
+#: ../../installation.rst:114
 msgid ""
 "In general, please make sure the user executing the Tomcat has read/write "
 "permissions for the ``$TOMCAT_HOME/webapps`` directory and its sub-directories."
@@ -361,14 +406,14 @@ msgstr ""
 "Stellen Sie bitte sicher, dass der Tomcat Lese- und Schreibrechte im "
 "Verzeichnis ``$TOMCAT_HOME/webapps`` und den enthaltenen Ordnern hat."
 
-#: ../../installation.rst:106 ../../installation.rst:155
-#: ../../installation.rst:233 ../../installation.rst:376
-#: ../../installation.rst:432 ../../installation.rst:499
-#: ../../installation.rst:649 ../../installation.rst:729
+#: ../../installation.rst:117 ../../installation.rst:166
+#: ../../installation.rst:244 ../../installation.rst:387
+#: ../../installation.rst:443 ../../installation.rst:510
+#: ../../installation.rst:660 ../../installation.rst:740
 msgid "Windows"
 msgstr "Windows"
 
-#: ../../installation.rst:107
+#: ../../installation.rst:118
 msgid ""
 "If you are using a Windows system, the download site offers a Windows Service "
 "Installer (“32-bit/64-bit Windows Service Installer”). This installer will "
@@ -383,7 +428,7 @@ msgstr ""
 "gestartet, gestoppt und weitgehend konfiguriert werden kann. Führen Sie den "
 "Installer mit Administratorrechten aus."
 
-#: ../../installation.rst:112
+#: ../../installation.rst:123
 msgid ""
 "Furthermore, it is recommended to install the Apache Tomcat into a root "
 "directory on ``C:\\``\\ ."
@@ -391,13 +436,13 @@ msgstr ""
 "Es wird empfohlen, Apache Tomcat in einem root-Ordner unter ``C:\\`` zu "
 "installieren."
 
-#: ../../installation.rst:115 ../../installation.rst:168
-#: ../../installation.rst:275 ../../installation.rst:396
-#: ../../installation.rst:441
+#: ../../installation.rst:126 ../../installation.rst:179
+#: ../../installation.rst:286 ../../installation.rst:407
+#: ../../installation.rst:452
 msgid "Debian"
 msgstr "Debian"
 
-#: ../../installation.rst:116
+#: ../../installation.rst:127
 msgid ""
 "If you are using Linux, consider installing Apache Tomcat using a package "
 "manager. On Debian, you can use the Advanced Packaging Tool (APT) and execute "
@@ -406,11 +451,11 @@ msgstr ""
 "Unter Linux ist es empfehlenswert, Apache Tomcat über den Paketmanager zu "
 "installieren. Unter Debian bietet sich das Advanced Packaging Tool (APT) an: ::"
 
-#: ../../installation.rst:123
+#: ../../installation.rst:134
 msgid "Configuring Tomcat"
 msgstr "Tomcat konfigurieren"
 
-#: ../../installation.rst:124
+#: ../../installation.rst:135
 msgid ""
 "This section will point the configuration options that are required to run "
 "Workflow Accelerator. However, Tomcat offers more configuration options that "
@@ -420,15 +465,15 @@ msgstr ""
 "sind, um Workflow Accelerator auszuführen. Weitere Einstellungen, die Sie "
 "eventuell vornehmen möchten, finden Sie hier:"
 
-#: ../../installation.rst:127
+#: ../../installation.rst:138
 msgid "http://tomcat.apache.org/tomcat-8.0-doc/"
 msgstr "http://tomcat.apache.org/tomcat-8.0-doc/"
 
-#: ../../installation.rst:130
+#: ../../installation.rst:141
 msgid "Java options"
 msgstr "Java-Optionen"
 
-#: ../../installation.rst:131
+#: ../../installation.rst:142
 msgid ""
 "There are some Java options that need to be configured before starting the "
 "Tomcat server. These options are configured using the ``JAVA_OPTS`` environment "
@@ -437,48 +482,48 @@ msgstr ""
 "Die folgenden Java-Optionen müssen über die ``JAVA_OPTS`` Umgebungsvariable "
 "gesetzt werden, bevor Tomcat gestartet wird:"
 
-#: ../../installation.rst:136
+#: ../../installation.rst:147
 msgid "``-Xms1536m``"
 msgstr "``-Xms1536m``"
 
-#: ../../installation.rst:136
+#: ../../installation.rst:147
 msgid "minimum RAM, should be at least 1.5GB"
 msgstr "minimaler RAM, sollte mindestens 1.5GB betragen"
 
-#: ../../installation.rst:138
+#: ../../installation.rst:149
 msgid "``-Xmx2048m``"
 msgstr "``-Xmx2048m``"
 
-#: ../../installation.rst:138
+#: ../../installation.rst:149
 msgid "maximum RAM, should be at least 2GB but more is recommended"
 msgstr ""
 "maximaler RAM, sollte mindestens 2GB betragen, mehr ist jedoch empfehlenswert"
 
-#: ../../installation.rst:140
+#: ../../installation.rst:151
 msgid "``-Dfile.encoding=UTF-8``"
 msgstr "``-Dfile.encoding=UTF-8``"
 
-#: ../../installation.rst:140
+#: ../../installation.rst:151
 msgid "sets UTF-8 as Apache Tomcat’s default encoding mechanism"
 msgstr "setzt UTF-8 als den Standard-Encodingsmechanismus des Apache Tomcats"
 
-#: ../../installation.rst:142
+#: ../../installation.rst:153
 msgid "``-XX:PermSize=128m``"
 msgstr "``-XX:PermSize=128m``"
 
-#: ../../installation.rst:142
+#: ../../installation.rst:153
 msgid "initial permanent generation space in MB"
 msgstr "initialer “Permantent Generation Space” in MB"
 
-#: ../../installation.rst:144
+#: ../../installation.rst:155
 msgid "``-XX:MaxPermSize=256m``"
 msgstr "``-XX:MaxPermSize=256m``"
 
-#: ../../installation.rst:144
+#: ../../installation.rst:155
 msgid "maximum permanent generation space in MB"
 msgstr "maximaler “Permantent Generation Space” in MB"
 
-#: ../../installation.rst:147
+#: ../../installation.rst:158
 msgid ""
 "In order to allocate sufficient RAM to the Tomcat server you have to set the "
 "``Xms`` and ``Xmx`` options, followed by the number of MB allocated and a "
@@ -494,7 +539,7 @@ msgstr ""
 "empfehlenswert. Wenn Sie z.B. 4GB maximalen RAM zuweisen möchten, würde die "
 "Option wie folgt aussehen: ``-Xmx4096m``"
 
-#: ../../installation.rst:152
+#: ../../installation.rst:163
 msgid ""
 "The values for the permanent generation space have to be increased as well, "
 "these are defined by the values ``-XX:PermSize=128m`` and ``-XX:"
@@ -504,7 +549,7 @@ msgstr ""
 "Hierfür sind die Variablen ``-XX:PermSize=128m`` und ``-XX:MaxPermSize=256m`` "
 "zu setzen."
 
-#: ../../installation.rst:156
+#: ../../installation.rst:167
 msgid ""
 "If you installed Tomcat using the Windows service installer, you can open the "
 "configuration dialog by opening the Windows start menu and selecting ``Program "
@@ -514,11 +559,11 @@ msgstr ""
 "den Konfigurationsdialog über das ``Startmenü und Programme\\Apache Tomcat"
 "\\Configure Tomcat``\\ . "
 
-#: ../../installation.rst:162
+#: ../../installation.rst:173
 msgid "The Java tab of the Tomcat configuration dialog"
 msgstr "Das Java-Tab in Tomcats Konfigurationsdialog"
 
-#: ../../installation.rst:164
+#: ../../installation.rst:175
 msgid ""
 "The tab Java offers the possibility to set the options and define the memory "
 "pool (minimum and maximum RAM usage). Fill in the values for Xms and Xmx into "
@@ -530,7 +575,7 @@ msgstr ""
 "“Maximum memory pool” definiert. Fügen Sie die verbleibenden Option in das "
 "Textfeld \"Java Options\" ein."
 
-#: ../../installation.rst:169
+#: ../../installation.rst:180
 msgid ""
 "One way to define the ``JAVA_OPTS`` under Debian and other Linux distributions "
 "is to create the file ``setenv.sh`` in the Tomcat ``/bin/`` directory. This "
@@ -547,7 +592,7 @@ msgstr ""
 "sh`` (oder öffen Sie die bestehende Datei) und fügen Sie eine Zeile für die "
 "``JAVA_OPTS`` hinzu: ::"
 
-#: ../../installation.rst:175
+#: ../../installation.rst:186
 msgid ""
 "In case you have created a new ``setenv.sh`` file, you have to make sure it is "
 "executable using the ``chmod`` command: ::"
@@ -555,11 +600,11 @@ msgstr ""
 "Wenn Sie eine neue ``setenv.sh``-Datei erstellt haben, müssen Sie diese noch "
 "ausführbar machen. Verwenden Sie hierfür den ``chmod``\\-Befehl: ::"
 
-#: ../../installation.rst:180
+#: ../../installation.rst:191
 msgid "Set up the Tomcat connector"
 msgstr "Erstellen des Tomcat Connectors"
 
-#: ../../installation.rst:181
+#: ../../installation.rst:192
 msgid ""
 "By default the Tomcat server will start up using port 8080 and 8005. Port 8080 "
 "is used for serving the Workflow Accelerator web application. Port 8005 is used "
@@ -572,7 +617,7 @@ msgstr ""
 "geändert werden, die im Verzeichnis ``$TOMCAT_HOME/conf/server.xml`` zu finden "
 "ist."
 
-#: ../../installation.rst:185
+#: ../../installation.rst:196
 msgid ""
 "If the server is running on any other port than port 80, your users will have "
 "to enter the port in the address line of the web browser, e.g. ``http://"
@@ -582,7 +627,7 @@ msgstr ""
 "der Adressleiste des Browsers referenziert werden, zum Beispiel wie in: "
 "``http://workflow.yourdomain.com:8080/``."
 
-#: ../../installation.rst:187
+#: ../../installation.rst:198
 msgid ""
 "Locate the HTTP connector and change the value of port to your preferred port. "
 "Furthermore, make sure the connector contains the entry ``URIEnconding="
@@ -593,11 +638,11 @@ msgstr ""
 "der Connector den Eintrag ``URIEnconding=”UTF-8“``\\ . Der Connector könnte z."
 "B. so aussehen:"
 
-#: ../../installation.rst:199
+#: ../../installation.rst:210
 msgid "Installing the Workflow Accelerator web application"
 msgstr "Installieren der Workflow Accelerator Webanwendung"
 
-#: ../../installation.rst:200
+#: ../../installation.rst:211
 msgid ""
 "The Workflow Accelerator web application, which can be found in the directory ``"
 "$WORKFLOW_HOME/workflow/ROOT``, needs to be copied to the Tomcat’s ``webapps`` "
@@ -610,7 +655,7 @@ msgstr ""
 "webapps`` und kopieren Sie den Ordner ``ROOT`` nach ``$TOMCAT_HOME/webapps/``"
 "\\ ."
 
-#: ../../installation.rst:203
+#: ../../installation.rst:214
 msgid ""
 "The Workflow Accelerator application needs to run as the ROOT application in "
 "the Tomcat. Running it in parallel with another application that requires to "
@@ -620,11 +665,11 @@ msgstr ""
 "ist es momentan nicht möglich, eine andere Anwendung, die ebenfalls als ROOT-"
 "Anwendung ausgeführt werden muss, im selben Tomcat auszuführen."
 
-#: ../../installation.rst:209
+#: ../../installation.rst:220
 msgid "Installing MongoDB"
 msgstr "MongoDB installieren"
 
-#: ../../installation.rst:210
+#: ../../installation.rst:221
 msgid ""
 "MongoDB is currently the only database system that Workflow Accelerator "
 "supports. If you already have an infrastructure that can provide a MongoDB "
@@ -638,18 +683,18 @@ msgstr ""
 "erstellen und zum Abschnitt :ref:`configure-mongodb` springen. Folgen Sie "
 "andernfalls den folgenden Anweisungen."
 
-#: ../../installation.rst:214
+#: ../../installation.rst:225
 msgid ""
 "General information about installing MongoDB on different operating systems can "
 "be found at:"
 msgstr ""
 "Allgemeine Informationen zur Installation von MongoDB 2.4.x erhalten Sie hier:"
 
-#: ../../installation.rst:216
+#: ../../installation.rst:227
 msgid "https://docs.mongodb.com/manual/installation/"
 msgstr "https://docs.mongodb.com/manual/installation/"
 
-#: ../../installation.rst:218
+#: ../../installation.rst:229
 msgid ""
 "There are two versions of MongoDB, *MongoDB Community Edition* and *MongoDB "
 "Enterprise*. *MongoDB Community Edition* can be used free of charge even in a "
@@ -663,7 +708,7 @@ msgstr ""
 "kommerzielles Produkt ist, welches zusätzliche technische Unterstützung und "
 "Support bietet. Für Workflow Accelerator können Sie beide Versionen verwenden."
 
-#: ../../installation.rst:222
+#: ../../installation.rst:233
 msgid ""
 "In case you are using Linux, you have the possibilities to install MongoDB "
 "using either a package manager like ``apt-get`` or downloading the binaries "
@@ -682,19 +727,19 @@ msgstr ""
 "erklärt genauer wie MongoDB unter Debian installiert werden kann und kann als "
 "Beispiel für andere Linux-Distributionen dienen."
 
-#: ../../installation.rst:227
+#: ../../installation.rst:238
 msgid "Remarks for downloading the binaries"
 msgstr "Anmerkungen zum Download der Binary-Dateien"
 
-#: ../../installation.rst:228
+#: ../../installation.rst:239
 msgid "You can find a version of MongoDB for your operating system here:"
 msgstr "Sie finden eine Version von MongoDB für Ihr Betriebssystem hier:"
 
-#: ../../installation.rst:230
+#: ../../installation.rst:241
 msgid "https://www.mongodb.com/download-center"
 msgstr "https://www.mongodb.com/download-center"
 
-#: ../../installation.rst:234
+#: ../../installation.rst:245
 msgid ""
 "Windows requires you to download the binaries. Consider the remarks of the last "
 "subsection when doing so. If you are using any version older than Windows "
@@ -705,7 +750,7 @@ msgstr ""
 "Falls Sie eine ältere Windows-Version als Windows Server 2008 R2 verwenden, "
 "laden Sie das 64-Bit Legacy Release herunter."
 
-#: ../../installation.rst:238
+#: ../../installation.rst:249
 msgid ""
 "You can find more details about installing MongoDB on Windows in the "
 "documentation:"
@@ -713,15 +758,15 @@ msgstr ""
 "Weitere Details zur Installation von MongoDB unter Windows finden Sie hier in "
 "der MongoDB Dokumenation:"
 
-#: ../../installation.rst:240
+#: ../../installation.rst:251
 msgid "https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/"
 msgstr "https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/"
 
-#: ../../installation.rst:242
+#: ../../installation.rst:253
 msgid "When you finished downloading MongoDB follow the next steps:"
 msgstr "Folgen Sie diesen Schritten, nachdem Sie MongoDB heruntergeladen haben:"
 
-#: ../../installation.rst:244
+#: ../../installation.rst:255
 msgid ""
 "Start the installation by double-clicking the downloaded MongoDB ``.msi`` and "
 "following the instructions."
@@ -729,7 +774,7 @@ msgstr ""
 "Starten Sie die Installation indem Sie doppelt auf die heruntergeladene MongoDB "
 "``.msi`` klicken und folgen Sie den Anweisungen."
 
-#: ../../installation.rst:246
+#: ../../installation.rst:257
 msgid ""
 "You can select another install directory, e.g. ``C:\\MongoDB``, if you choose "
 "the *Custom* installation option."
@@ -737,14 +782,14 @@ msgstr ""
 "Sie können ein anderes Installationsverzeichnis auswählen, z.B. ``C:\\MongoDB``"
 "\\ , wenn Sie die *Custom* Installationsoption auswählen."
 
-#: ../../installation.rst:248
+#: ../../installation.rst:259
 msgid ""
 "Create a data directory for the MongoDB files, e.g. ``C:\\MongoDB\\data``\\ ."
 msgstr ""
 "Erstellen Sie ein Datenverzeichnis für die MongoDB-Dateien, zum Beispiel: ``C:"
 "\\MongoDB\\data``\\ . "
 
-#: ../../installation.rst:250
+#: ../../installation.rst:261
 msgid ""
 "This directory will need the most disk space. Make sure the drive has "
 "sufficient disk space."
@@ -753,7 +798,7 @@ msgstr ""
 "verwenden. Stellen Sie daher sicher, dass das Laufwerk genügend Speicehrplatz "
 "zur Verfügung stellt."
 
-#: ../../installation.rst:252
+#: ../../installation.rst:263
 msgid ""
 "Create a logs directory for the MongoDB log files, e.g. ``C:\\MongoDB\\logs``"
 "\\ ."
@@ -761,7 +806,7 @@ msgstr ""
 "Erstellen Sie ein Verzeichnis für die MongoDB Log-Dateien, zum Beispiel ``C:"
 "\\MongoDB\\logs``\\ ."
 
-#: ../../installation.rst:253
+#: ../../installation.rst:264
 msgid ""
 "Copy the file ``$WORKFLOW_HOME\\db\\mongod.cfg`` to your MongoDB directory ``C:"
 "\\MongoDB\\mongod.cfg`` and edit the file."
@@ -770,7 +815,7 @@ msgstr ""
 "das MongoDB-Verzeichnis ``C:\\MongoDB\\mongod.cfg`` und bearbeiten Sie die "
 "Datei."
 
-#: ../../installation.rst:255
+#: ../../installation.rst:266
 msgid ""
 "The ``dbPath`` under ``storage`` must contain the absolute path to the data "
 "directory, e.g. ``C:\\MongoDB\\data``\\ ."
@@ -778,7 +823,7 @@ msgstr ""
 "Die Variable ``dbPath`` unter ``storage`` muss den absoluten Pfad zum "
 "Datenverzeichnis enthalten, zum Beispiel ``C:\\MongoDB\\data``\\ ."
 
-#: ../../installation.rst:256
+#: ../../installation.rst:267
 msgid ""
 "The ``path`` under ``systemLog`` must contain the absolute path to the log "
 "file, e.g. ``C:\\MongoDB\\logs\\mongodb.log``\\ . The log file will be created "
@@ -789,7 +834,7 @@ msgstr ""
 "Die Logdatei wird beim Starten von MongoDB erstellt (beziehungsweise, falls "
 "vorhanden, ergänzt)."
 
-#: ../../installation.rst:257
+#: ../../installation.rst:268
 msgid ""
 "The configuration file needs to be in a valid `YAML <http://yaml.org>`_ format. "
 "You can use an online checker like `YAML Lint <http://www.yamllint.com/>`_ to "
@@ -799,7 +844,7 @@ msgstr ""
 "entsprechen. Sie können einen Online Checker wie `YAML Lint <http://www."
 "yamllint.com/>`_ verwenden, um das Format zu überprüfen."
 
-#: ../../installation.rst:258
+#: ../../installation.rst:269
 msgid ""
 "See :ref:`configure-mongodb` for more information about the other configuration "
 "values."
@@ -807,7 +852,7 @@ msgstr ""
 "Im Abschnitt :ref:`configure-mongodb` werden weitere Konfigurationsoptionen "
 "beschrieben."
 
-#: ../../installation.rst:260
+#: ../../installation.rst:271
 msgid ""
 "Open the command line ``cmd`` with administrative privileges and execute the "
 "following command. Make sure to use absolute paths and replace them with the "
@@ -817,20 +862,20 @@ msgstr ""
 "und führen Sie das folgende Kommando aus. Stellen Sie dabei sicher, dass die "
 "Pfade den von Ihnen konfigurierten absoluten Pfaden entsprechen."
 
-#: ../../installation.rst:262
+#: ../../installation.rst:273
 msgid ""
 "``C:\\MongoDB\\bin\\mongod.exe --config C:\\MongoDB\\mongod.cfg --install``"
 msgstr ""
 "``C:\\MongoDB\\bin\\mongod.exe --config C:\\MongoDB\\mongod.cfg --install``"
 
-#: ../../installation.rst:263
+#: ../../installation.rst:274
 msgid ""
 "The command line should tell you that the service MongoDB was properly created."
 msgstr ""
 "Das Kommandozeilentool sollte Ihnen bestätigen, dass der MongoDB Service "
 "erfolgreich registriert wurde."
 
-#: ../../installation.rst:264
+#: ../../installation.rst:275
 msgid ""
 "You can unregister the service again by executing: ``C:\\MongoDB\\bin\\mongod."
 "exe --remove``"
@@ -838,13 +883,13 @@ msgstr ""
 "Mit dem folgenden Befehl können Sie den Service wieder entfernen: ``C:\\MongoDB"
 "\\bin\\mongod.exe --remove``"
 
-#: ../../installation.rst:265
+#: ../../installation.rst:276
 msgid ""
 "The registered service should start MongoDB automatically on startup of Windows."
 msgstr ""
 "Der Service wird MongoDB nach dem Starten von Windows automatisch ausführen."
 
-#: ../../installation.rst:267
+#: ../../installation.rst:278
 msgid ""
 "You can now start MongoDB by executing the following command: ``net start "
 "MongoDB``"
@@ -852,11 +897,11 @@ msgstr ""
 "Mit dem folgenden Befehl können Sie MongoDB nun direkt ausführen: ``net start "
 "MongoDB``"
 
-#: ../../installation.rst:269
+#: ../../installation.rst:280
 msgid "You can stop MongoDB by calling: ``net stop MongoDB``"
 msgstr "Der folgende Befehl stoppt MongoDB: ``net stop MongoDB``"
 
-#: ../../installation.rst:270
+#: ../../installation.rst:281
 msgid ""
 "The service is also listed in the services window that can be opened by running "
 "``services.msc``\\ ."
@@ -864,7 +909,7 @@ msgstr ""
 "Der MongoDB Service ist nun auch unter der Serviceverwaltung gelistet, die über "
 "``services.msc`` aufgerufen werden kann."
 
-#: ../../installation.rst:276
+#: ../../installation.rst:287
 msgid ""
 "If you are installing MongoDB on a Debian system, you are advised to use the "
 "method described in the MongoDB configuration:"
@@ -872,11 +917,11 @@ msgstr ""
 "Falls Sie MongoDB unter Debian installieren, halten Sie sich bitte an die "
 "folgenden Anweisungen: "
 
-#: ../../installation.rst:278
+#: ../../installation.rst:289
 msgid "https://docs.mongodb.com/manual/tutorial/install-mongodb-on-debian/"
 msgstr "https://docs.mongodb.com/manual/tutorial/install-mongodb-on-debian/"
 
-#: ../../installation.rst:280
+#: ../../installation.rst:291
 msgid ""
 "For convenience, the script ``$WORKFLOW_HOME/mongodb.install.debian.sh`` wraps "
 "the necessary commands for installing the correct version of MongoDB on *Debian "
@@ -888,7 +933,7 @@ msgstr ""
 "Jessie* zu installieren. Führen Sie das Skript aus, indem Sie in das "
 "Verzeichnis ``$WORKFLOW_HOME`` wechseln und den folgenden Befehl ausführen: ::"
 
-#: ../../installation.rst:285
+#: ../../installation.rst:296
 msgid ""
 "This will add the MongoDB repositories to your package sources and install the "
 "version 3.4.x of MongoDB. Note that this script only works with Debian 8 "
@@ -901,11 +946,11 @@ msgstr ""
 "finden Sie weitere Hinweise für Debian 7 Wheezy. Nun können Sie MongoDB mit den "
 "folgenden Befehlen stoppen und starten: ::"
 
-#: ../../installation.rst:292
+#: ../../installation.rst:303
 msgid "or ::"
 msgstr "oder ::"
 
-#: ../../installation.rst:296
+#: ../../installation.rst:307
 msgid ""
 "The server will use the default configuration file ``/etc/mongod.conf``\\ . See "
 "the next subsection for more information on how to configure MongoDB for "
@@ -919,11 +964,11 @@ msgstr ""
 "nach der Installation wahrscheinlich schon gestartet wurde. Stellen Sie sicher, "
 "dass Sie MongoDB nach Änderungen in der Konfiguration neu starten."
 
-#: ../../installation.rst:304
+#: ../../installation.rst:315
 msgid "Configuring MongoDB"
 msgstr "MongoDB konfigurieren"
 
-#: ../../installation.rst:305
+#: ../../installation.rst:316
 msgid ""
 "In order to run MongoDB properly, some configuration options have to be "
 "defined. The easiest solution is to create a configuration file and link this "
@@ -940,7 +985,7 @@ msgstr ""
 "<http://www.yamllint.com/>`_ verwenden, um das Format Ihrer Konfigurationsdatei "
 "zu überprüfen."
 
-#: ../../installation.rst:309
+#: ../../installation.rst:320
 msgid ""
 "If you installed MongoDB under Windows using the method in the last section, "
 "you have already copied the predefined configuration file and adjusted the "
@@ -951,7 +996,7 @@ msgstr ""
 "Sie bereits eine Konfigurationsdatei erstellt und die Werte für ``dbPath`` und "
 "``systemLog`` ``path`` angepasst, sodass sie die richtigen Werte enthält."
 
-#: ../../installation.rst:311
+#: ../../installation.rst:322
 msgid ""
 "If you installed MongoDB under Linux using ``apt-get``, e.g. by following the "
 "instructions in the last section, there should be a ``/etc/mongod.conf`` "
@@ -966,7 +1011,7 @@ msgstr ""
 "sollten bereits definiert sein. Wir empfehlen die Variablen ``logAppend`` auf "
 "``true`` und ``authorization`` auf ``enabled`` zu setzen."
 
-#: ../../installation.rst:314
+#: ../../installation.rst:325
 msgid ""
 "In any other case make sure the configuration file contains the following "
 "properties. ::"
@@ -974,27 +1019,27 @@ msgstr ""
 "Stellen Sie im Falle einer abweichenden Installationsprozedur sicher, dass die "
 "folgenden Einträge korrekt gesetzt sind: ::"
 
-#: ../../installation.rst:328
+#: ../../installation.rst:339
 msgid "``dbPath``"
 msgstr "``dbPath``"
 
-#: ../../installation.rst:328
+#: ../../installation.rst:339
 msgid "Defines the directory where the database files are stored."
 msgstr "Definiert das Verzeichnis, in dem die Daten gespeichert werden."
 
-#: ../../installation.rst:330
+#: ../../installation.rst:341
 msgid "``path``"
 msgstr "``path``"
 
-#: ../../installation.rst:330
+#: ../../installation.rst:341
 msgid "Defines the file that will contain the logging output."
 msgstr "Definiert das Logverzeichnis."
 
-#: ../../installation.rst:332
+#: ../../installation.rst:343
 msgid "``logAppend``"
 msgstr "``logAppend``"
 
-#: ../../installation.rst:332
+#: ../../installation.rst:343
 msgid ""
 "Indicates that new logs will be appended to an existing log file after "
 "restarting the server, if set to true."
@@ -1002,11 +1047,11 @@ msgstr ""
 "Falls auf “true” gesetzt, werden nach einem Neustart von MongoDB die neuen "
 "Logeinträge falls möglich an ein bereits bestehendes Logfile angefügt."
 
-#: ../../installation.rst:334
+#: ../../installation.rst:345
 msgid "``authorization``"
 msgstr "``authorization``"
 
-#: ../../installation.rst:334
+#: ../../installation.rst:345
 msgid ""
 "(optional) Turns authentication on, if set to ``enabled``. It is advised to "
 "turn authentication on in case the MongoDB instance can be accessed over the "
@@ -1017,7 +1062,7 @@ msgstr ""
 "zuzugreifen. Dies hängt von Ihren Administrationseinstellungen/"
 "Firewalleinstellungen ab."
 
-#: ../../installation.rst:337
+#: ../../installation.rst:348
 msgid ""
 "If you have installed MongoDB on Debian using a package manager, the default "
 "configuration file will probably contain the following entry: ::"
@@ -1025,7 +1070,7 @@ msgstr ""
 "Wenn Sie MongoDB auf Debian über einen Paketmanager installiert haben, wird die "
 "Standardkonfigurationsdatei wahrscheinlich den folgenden Eintrag enthalten: ::"
 
-#: ../../installation.rst:342
+#: ../../installation.rst:353
 msgid ""
 "This setting tells MongoDB to only bind to the local interface and reject "
 "remote connections. If you plan to install MongoDB and Tomcat on different "
@@ -1043,7 +1088,7 @@ msgstr ""
 "kommagetrennte Liste von IPs enthalten und sollte NICHT die IP des "
 "Anwendungsservers enthalten."
 
-#: ../../installation.rst:346
+#: ../../installation.rst:357
 msgid ""
 "For more configuration options, see https://docs.mongodb.com/manual/reference/"
 "configuration-options/\\ ."
@@ -1052,11 +1097,11 @@ msgstr ""
 "Dokumentation setzen: https://docs.mongodb.com/manual/reference/configuration-"
 "options/\\ ."
 
-#: ../../installation.rst:351
+#: ../../installation.rst:362
 msgid "Add a database user for Workflow Accelerator"
 msgstr "Einen Datenbanknutzer für Workflow Accelerator hinzufügen"
 
-#: ../../installation.rst:352
+#: ../../installation.rst:363
 msgid ""
 "Workflow Accelerator requires a MongoDB user in the admin database that has the "
 "following roles:"
@@ -1064,19 +1109,19 @@ msgstr ""
 "Workflow Accelerator benötigt einen MongoDB-Nutzer, der in der "
 "Administrationsdatenbank die folgenden Rollen innehat:"
 
-#: ../../installation.rst:357
+#: ../../installation.rst:368
 msgid "``dbAdminAnyDatabase``"
 msgstr "``dbAdminAnyDatabase``"
 
-#: ../../installation.rst:358
+#: ../../installation.rst:369
 msgid "``readWriteAnyDatabase``"
 msgstr "``readWriteAnyDatabase``"
 
-#: ../../installation.rst:359
+#: ../../installation.rst:370
 msgid "``clusterAdmin``"
 msgstr "``clusterAdmin``"
 
-#: ../../installation.rst:359
+#: ../../installation.rst:370
 msgid ""
 "This role will allow you to list all databases. This becomes necessary if you "
 "plan on using the user credentials when editing any database content with a "
@@ -1086,15 +1131,15 @@ msgstr ""
 "Backups und falls ein Tool wie Robomongo für den Zugriff auf mehrere "
 "Datenbanken genutzt werden soll."
 
-#: ../../installation.rst:360
+#: ../../installation.rst:371
 msgid "``userAdminAnyDatabase``"
 msgstr "``userAdminAnyDatabase``"
 
-#: ../../installation.rst:360
+#: ../../installation.rst:371
 msgid "This role is required for backups."
 msgstr "Diese Rolle wird für Backups benötigt."
 
-#: ../../installation.rst:363
+#: ../../installation.rst:374
 msgid ""
 "The user will access the databases for Workflow Accelerator. Workflow "
 "Accelerator will create two databases, one for the user and workflow data, and "
@@ -1112,7 +1157,7 @@ msgstr ""
 "Nennen Sie Ihre erste Datenbank „signavio“, so heißt die zweite Datenbank "
 "„signavio-files“."
 
-#: ../../installation.rst:367
+#: ../../installation.rst:378
 msgid ""
 "In general, if you want to create a new user in MongoDB you will need to "
 "authenticate with an existing user that has the role userAdmin or "
@@ -1130,7 +1175,7 @@ msgstr ""
 "Administratorennutzer als auch als Teil einer neuen MongoDB-Installation "
 "erstellt."
 
-#: ../../installation.rst:372
+#: ../../installation.rst:383
 msgid ""
 "In order to add a new user to MongoDB, the MongoDB server has to be running. "
 "The following subsections will show you how to create the Workflow Accelerator "
@@ -1140,7 +1185,7 @@ msgstr ""
 "folgenden Unterabschnitte beschreiben, wie Sie den Workflow Accelerator "
 "Datenbanknutzer mit Hilfe der Kommandozeile anlegen können. "
 
-#: ../../installation.rst:378
+#: ../../installation.rst:389
 msgid ""
 "Open the command line ``cmd`` and go to your MongoDB\\bin directory, e.g. by "
 "executing: ``cd C:\\MongoDB\\bin``"
@@ -1148,14 +1193,14 @@ msgstr ""
 "Öffnen Sie in der Kommandozeile ``cmd`` das Verzeichnis MongoDB\\bin, z.B. in "
 "dem Sie das folgende Kommando ausführen: ``cd C:\\MongoDB\\bin``"
 
-#: ../../installation.rst:379 ../../installation.rst:399
+#: ../../installation.rst:390 ../../installation.rst:410
 msgid ""
 "If you have an admin user, create the Workflow Accelerator user by executing:"
 msgstr ""
 "Falls Sie einen Administratorennutzer angelegt haben, erstellen Sie den neuen "
 "Nutzer wie folgt:"
 
-#: ../../installation.rst:381
+#: ../../installation.rst:392
 msgid ""
 "``mongo.exe admin -u admin -p <enterYourAdminPasswordHere> --eval \"db."
 "createUser( { user: 'signavio', pwd: '<enterSignavioPasswordHere>', roles: "
@@ -1167,14 +1212,14 @@ msgstr ""
 "['dbAdminAnyDatabase', 'readWriteAnyDatabase', 'clusterAdmin', "
 "'userAdminAnyDatabase'] } )\"``"
 
-#: ../../installation.rst:382 ../../installation.rst:402
+#: ../../installation.rst:393 ../../installation.rst:413
 msgid ""
 "Replace <enterAdminPasswordHere> with the password, you have defined for the "
 "admin user."
 msgstr "Ersetzen Sie <enterAdminPasswordHere> mit dem Administratorenpasswort."
 
-#: ../../installation.rst:383 ../../installation.rst:388
-#: ../../installation.rst:403 ../../installation.rst:408
+#: ../../installation.rst:394 ../../installation.rst:399
+#: ../../installation.rst:414 ../../installation.rst:419
 msgid ""
 "Replace <enterSignavioPasswordHere> with the password for the new Workflow "
 "Accelerator user. As you can see the user name is signavio."
@@ -1182,7 +1227,7 @@ msgstr ""
 "Ersetzen Sie <enterSignavioPasswordHere> mit dem Passwort des neuen Nutzers. "
 "Der Nutzername ist signavio."
 
-#: ../../installation.rst:385 ../../installation.rst:405
+#: ../../installation.rst:396 ../../installation.rst:416
 msgid ""
 "If you have a new MongoDB and no admin user, create the Workflow Accelerator "
 "user by executing:"
@@ -1190,7 +1235,7 @@ msgstr ""
 "Falls Sie ein neues MongoDB System ohne Administratorennutzer aufgesetzt haben, "
 "führen Sie den folgenden Befehl aus:"
 
-#: ../../installation.rst:387
+#: ../../installation.rst:398
 msgid ""
 "``mongo.exe admin --eval \"db.createUser( { user: 'signavio', pwd: "
 "'<enterSignavioPasswordHere>', roles: ['dbAdminAnyDatabase', "
@@ -1200,14 +1245,14 @@ msgstr ""
 "'<enterSignavioPasswordHere>', roles: ['dbAdminAnyDatabase', "
 "'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )\"``"
 
-#: ../../installation.rst:390 ../../installation.rst:410
+#: ../../installation.rst:401 ../../installation.rst:421
 msgid ""
 "You can verify the creation of the new Workflow Accelerator user by executing:"
 msgstr ""
 "Um die Erstellung des Nutzers zu verifizieren, führen Sie den folgenden Befehl "
 "aus:"
 
-#: ../../installation.rst:392
+#: ../../installation.rst:403
 msgid ""
 "``mongo.exe admin -u signavio -p <enterSignavioPasswordHere> --eval \"db."
 "getUser('signavio');\"``"
@@ -1215,14 +1260,14 @@ msgstr ""
 "``mongo.exe admin -u signavio -p <enterSignavioPasswordHere> --eval \"db."
 "getUser('signavio');\"``"
 
-#: ../../installation.rst:393 ../../installation.rst:413
+#: ../../installation.rst:404 ../../installation.rst:424
 msgid ""
 "On the command line you will see the user information including the four "
 "assigned roles."
 msgstr ""
 "Die Kommandozeile wird den Nutzer und die vier assoziierten Rollen anzeigen."
 
-#: ../../installation.rst:397
+#: ../../installation.rst:408
 msgid ""
 "If you have installed MongoDB using a package manager, the binaries should be "
 "available on the path. Otherwise, open the directory with the MongoDB binary "
@@ -1234,37 +1279,37 @@ msgstr ""
 "das Verzeichnis mit den Binaries, um dort die unten aufgeführten Befehle "
 "auszuführen."
 
-#: ../../installation.rst:401
-msgid ""
-"``mongo admin -u admin -p <enterYourAdminPasswordHere> --eval \"db."
-"createUser( { user: 'signavio', pwd: '<enterSignavioPasswordHere>', roles: "
-"['dbAdminAnyDatabase', 'readWriteAnyDatabase', 'clusterAdmin', "
-"'userAdminAnyDatabase'] } )\"``"
-msgstr ""
-"``mongo admin -u admin -p <enterYourAdminPasswordHere> --eval \"db."
-"createUser( { user: 'signavio', pwd: '<enterSignavioPasswordHere>', roles: "
-"['dbAdminAnyDatabase', 'readWriteAnyDatabase', 'clusterAdmin', "
-"'userAdminAnyDatabase'] } )\"``"
-
-#: ../../installation.rst:407
-msgid ""
-"``mongo admin --eval \"db.createUser( { user: 'signavio', pwd: "
-"'<enterSignavioPasswordHere>', roles: ['dbAdminAnyDatabase', "
-"'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )\"``"
-msgstr ""
-"``mongo admin --eval \"db.createUser( { user: 'signavio', pwd: "
-"'<enterSignavioPasswordHere>', roles: ['dbAdminAnyDatabase', "
-"'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )\"``"
-
 #: ../../installation.rst:412
 msgid ""
+"``mongo admin -u admin -p <enterYourAdminPasswordHere> --eval \"db."
+"createUser( { user: 'signavio', pwd: '<enterSignavioPasswordHere>', roles: "
+"['dbAdminAnyDatabase', 'readWriteAnyDatabase', 'clusterAdmin', "
+"'userAdminAnyDatabase'] } )\"``"
+msgstr ""
+"``mongo admin -u admin -p <enterYourAdminPasswordHere> --eval \"db."
+"createUser( { user: 'signavio', pwd: '<enterSignavioPasswordHere>', roles: "
+"['dbAdminAnyDatabase', 'readWriteAnyDatabase', 'clusterAdmin', "
+"'userAdminAnyDatabase'] } )\"``"
+
+#: ../../installation.rst:418
+msgid ""
+"``mongo admin --eval \"db.createUser( { user: 'signavio', pwd: "
+"'<enterSignavioPasswordHere>', roles: ['dbAdminAnyDatabase', "
+"'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )\"``"
+msgstr ""
+"``mongo admin --eval \"db.createUser( { user: 'signavio', pwd: "
+"'<enterSignavioPasswordHere>', roles: ['dbAdminAnyDatabase', "
+"'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )\"``"
+
+#: ../../installation.rst:423
+msgid ""
 "``mongo admin -u signavio -p <enterSignavioPasswordHere> --eval \"db."
 "getUser('signavio');\"``"
 msgstr ""
 "``mongo admin -u signavio -p <enterSignavioPasswordHere> --eval \"db."
 "getUser('signavio');\"``"
 
-#: ../../installation.rst:415
+#: ../../installation.rst:426
 msgid ""
 "Once the Workflow Accelerator user is created, its credentials have to be added "
 "to the Workflow Accelerator configuration file to the ``effektif.mongodb."
@@ -1277,11 +1322,11 @@ msgstr ""
 "Kapitel :ref:`update-effektif-configuration` beschreibt die Anpassung der "
 "Konfigurationsdatei."
 
-#: ../../installation.rst:419
+#: ../../installation.rst:430
 msgid "Backup and restore"
 msgstr "Backup und Wiederherstellung"
 
-#: ../../installation.rst:420
+#: ../../installation.rst:431
 msgid ""
 "You are advised to do regular backups of the MongoDB database to prevent a "
 "complete data loss in case of a system failure. The Workflow Accelerator system "
@@ -1296,11 +1341,11 @@ msgstr ""
 "anlegen können. In Kapitel :ref:`restore` wird Ihnen zusätzlich erklärt, wie "
 "Sie Backups verwenden um ältere Versionen der Nutzerdaten wieder herzustellen."
 
-#: ../../installation.rst:425
+#: ../../installation.rst:436
 msgid "Installing Node.js"
 msgstr "Node.js installieren"
 
-#: ../../installation.rst:426
+#: ../../installation.rst:437
 msgid ""
 "You only need to install and configure Node.js if you purchased a version of "
 "Workflow Accelerator which allows you to use JavaScript tasks."
@@ -1309,7 +1354,7 @@ msgstr ""
 "von Workflow Accelerator erworben haben, welche die Ausführung von JavaScript-"
 "Tasks ermöglicht."
 
-#: ../../installation.rst:428
+#: ../../installation.rst:439
 msgid ""
 "Node.js is a runtime environment for JavaScript which is used by Workflow "
 "Accelerator to execute custom JavaScript tasks created by the user. We "
@@ -1319,31 +1364,31 @@ msgstr ""
 "Accelerator genutzt wird, um benutzerdefinierte JavaScript-Tasks auszuführen. "
 "Wir empfehlen Node.js LTS (Long Term Support) Version 6.x zu verwenden."
 
-#: ../../installation.rst:433
+#: ../../installation.rst:444
 msgid "For Windows there is a comfortable installer to set up Node.js."
 msgstr ""
 "Unter Windows kann Node.js einfach per Installationsprogramm installiert werden."
 
-#: ../../installation.rst:435
+#: ../../installation.rst:446
 msgid "Go to https://nodejs.org/en/download/"
 msgstr "Öffnen Sie https://nodejs.org/en/download/"
 
-#: ../../installation.rst:436
+#: ../../installation.rst:447
 msgid "Select the LTS version."
 msgstr "Wählen Sie die LTS Version aus."
 
-#: ../../installation.rst:437
+#: ../../installation.rst:448
 msgid "Download the *Windows Installer (.msi)* for your Windows version."
 msgstr ""
 "Laden Sie den *Windows Installer (.msi)* für Ihre Windows-Version herunter."
 
-#: ../../installation.rst:438
+#: ../../installation.rst:449
 msgid "Execute the downloaded installer and follow installation guide."
 msgstr ""
 "Führen Sie das heruntergeladene Installationsprogramm aus und folgen Sie den "
 "Installationsanweisungen."
 
-#: ../../installation.rst:442
+#: ../../installation.rst:453
 msgid ""
 "The Node.js site offers additional documentation for setting up Node.js on "
 "Debian using the package manager APT:"
@@ -1351,7 +1396,7 @@ msgstr ""
 "Die Node.js-Seite bietet zusätzliche Information für die Installation von Node."
 "js unter Debian mit Hilfe des Paketmanagers APT an:"
 
-#: ../../installation.rst:444
+#: ../../installation.rst:455
 msgid ""
 "https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-"
 "distributions"
@@ -1359,16 +1404,16 @@ msgstr ""
 "https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-"
 "distributions"
 
-#: ../../installation.rst:446
+#: ../../installation.rst:457
 msgid "Please, make sure to install the LTS version of Node.js."
 msgstr ""
 "Bitte stellen Sie sicher, dass Sie die LTS-Version von Node.js installieren."
 
-#: ../../installation.rst:451
+#: ../../installation.rst:462
 msgid "Installing the Workflow Accelerator Script Engine"
 msgstr "Workflow Accelerator Script Engine installieren"
 
-#: ../../installation.rst:452
+#: ../../installation.rst:463
 msgid ""
 "You only need to install and configure the Script Engine if you purchased a "
 "version of Workflow Accelerator which allows you to use JavaScript tasks."
@@ -1377,7 +1422,7 @@ msgstr ""
 "Version von Workflow Accelerator erworben haben, welche die Ausführung von "
 "JavaScript-Tasks ermöglicht."
 
-#: ../../installation.rst:454
+#: ../../installation.rst:465
 msgid ""
 "The Workflow Accelerator Script Engine uses Node.js to execute JavaScript tasks "
 "within a workflow and an embedded HTTP server to communicate with the Workflow "
@@ -1397,7 +1442,7 @@ msgstr ""
 "über HTTP auf den konfigurierten Port der Script Engine zugreifen kann und "
 "umgekehrt. Folgen Sie diesen Schritten, um die Script Engine zu installieren:"
 
-#: ../../installation.rst:459
+#: ../../installation.rst:470
 msgid ""
 "Create new local directory for the script engine, e.g. ``C:\\Program Files"
 "\\Script Engine`` or ``/var/lib/script-engine``."
@@ -1405,12 +1450,12 @@ msgstr ""
 "Legen Sie ein neues lokales Verzeichnis für die Script Engine an, z.B. ``C:"
 "\\Program Files\\Script Engine`` oder ``/var/lib/script-engine``."
 
-#: ../../installation.rst:461
+#: ../../installation.rst:472
 msgid "We will refer to this directory as ``$SCRIPT_ENGINE_HOME``."
 msgstr ""
 "Im folgenden wird dieses Verzeichnis als ``$SCRIPT_ENGINE_HOME`` referenziert."
 
-#: ../../installation.rst:463
+#: ../../installation.rst:474
 msgid ""
 "Copy the content of the directory ``$WORKFLOW_HOME/script-engine/`` to your "
 "newly created directory."
@@ -1418,7 +1463,7 @@ msgstr ""
 "Kopieren Sie den Inhalt des Verzeichnisses ``$WORKFLOW_HOME/script-engine/`` in "
 "Ihr neu angelegtes Verzeichnis."
 
-#: ../../installation.rst:465
+#: ../../installation.rst:476
 msgid ""
 "You should find the file ``server.js`` directly within your directory: ``"
 "$SCRIPT_ENGINE_HOME/server.js``."
@@ -1426,7 +1471,7 @@ msgstr ""
 "Die Datei ``server.js`` sollte sich direkt in Ihrem Verzeichnis befinden:  ``"
 "$SCRIPT_ENGINE_HOME/server.js``."
 
-#: ../../installation.rst:467
+#: ../../installation.rst:478
 msgid ""
 "Open ``$SCRIPT_ENGINE_HOME/configuration.onpremise.js`` and edit the values for "
 "the port, log files and Workflow Accelerator URL."
@@ -1434,14 +1479,14 @@ msgstr ""
 "Öffnen Sie ``$SCRIPT_ENGINE_HOME/configuration.onpremise.js`` und passen Sie "
 "die Werte für den Port, die Log-Dateien und die Workflow Accelerator URL an."
 
-#: ../../installation.rst:469
+#: ../../installation.rst:480
 msgid ""
 "Ensure that the port for the script engine is not used by any other application."
 msgstr ""
 "Stellen Sie sicher, dass der Port für die Script Engine nicht bereits von einer "
 "anderen Anwendung genutzt wird."
 
-#: ../../installation.rst:471
+#: ../../installation.rst:482
 msgid ""
 "Add the URL of the script engine to the Workflow Accelerator configuration "
 "file, see :ref:`update-effektif-configuration` for more information."
@@ -1450,7 +1495,7 @@ msgstr ""
 "Konfigurationsdatei hinzu, vgl. :ref:`update-effektif-configuration` für "
 "weitere Informationen."
 
-#: ../../installation.rst:473
+#: ../../installation.rst:484
 msgid ""
 "If you run the script engine on the same machine as the web application and use "
 "the default port the URL will be ``http://localhost:8081``."
@@ -1459,15 +1504,15 @@ msgstr ""
 "Webanwendung und den Standardport benutzen, dann lautet die URL ``http://"
 "localhost:8081``."
 
-#: ../../installation.rst:475 ../../installation.rst:632
+#: ../../installation.rst:486 ../../installation.rst:643
 msgid "The configuration file offers the following options:"
 msgstr "Die Konfigurationsdatei bietet die folgenden Optionen:"
 
-#: ../../installation.rst:478
+#: ../../installation.rst:489
 msgid "``port``"
 msgstr "``port``"
 
-#: ../../installation.rst:478
+#: ../../installation.rst:489
 msgid ""
 "Defines the port the script engine will bind to and listen for incoming HTTP "
 "requests."
@@ -1475,11 +1520,11 @@ msgstr ""
 "Legt den Port fest, an den sich die Script Engine bindet und auf eingehende "
 "HTTP Anfragen wartet."
 
-#: ../../installation.rst:479
+#: ../../installation.rst:490
 msgid "``workflowUrl``"
 msgstr "``workflowUrl``"
 
-#: ../../installation.rst:479
+#: ../../installation.rst:490
 msgid ""
 "Defines the URL of the Workflow Accelerator system (including port), e.g. "
 "``http://localhost:8080``"
@@ -1487,11 +1532,11 @@ msgstr ""
 "Legt die URL fest, unter welcher das Workflow Accelerator System erreichbar ist "
 "(inklusive Port), z.B. ``http://localhost:8080``."
 
-#: ../../installation.rst:480
+#: ../../installation.rst:491
 msgid "``log`` ``file``"
 msgstr "``log`` ``file``"
 
-#: ../../installation.rst:480
+#: ../../installation.rst:491
 msgid ""
 "Defines the location and name of the script engine log file. You can an "
 "absolute or relative path. By default, the log files are stored in the same "
@@ -1501,15 +1546,15 @@ msgstr ""
 "absoluten oder relativen Pfad angeben. Standardmäßig werden die Log-Dateien im "
 "Verzeichnis der Script Engine abgelegt."
 
-#: ../../installation.rst:481
+#: ../../installation.rst:492
 msgid "``log`` ``errorFile``"
 msgstr "``log`` ``errorFile``"
 
-#: ../../installation.rst:481
+#: ../../installation.rst:492
 msgid "Defines the location and name of the script engine error log file."
 msgstr "Legt den Ort und Namen der Script Engine Fehler-Log-Datei fest."
 
-#: ../../installation.rst:484
+#: ../../installation.rst:495
 msgid ""
 "After the successful set-up you can start the script engine by opening the ``"
 "$SCRIPT_ENGINE_HOME`` directory on a command line and executing the following "
@@ -1519,11 +1564,11 @@ msgstr ""
 "dem Sie das Verzeichnis ``$SCRIPT_ENGINE_HOME`` auf der Kommandozeile öffnen "
 "und folgenden Befehl ausführen ::"
 
-#: ../../installation.rst:491
+#: ../../installation.rst:502
 msgid "Wrapping the Script Engine into a service"
 msgstr "Die Script Engine als Service registrieren"
 
-#: ../../installation.rst:492
+#: ../../installation.rst:503
 msgid ""
 "The script engine can be executed as shown above by running the command on a "
 "command line. However, it might be useful for production systems to run the "
@@ -1540,7 +1585,7 @@ msgstr ""
 "Nutzung von Software von Drittanbietern. Nutzen Sie diese deshalb auf eigene "
 "Verantwortung."
 
-#: ../../installation.rst:500
+#: ../../installation.rst:511
 msgid ""
 "For Windows there are several software tools which allow you to wrap a script "
 "into a service and monitor the execution. The `Non-Sucking Service Manager "
@@ -1552,11 +1597,11 @@ msgstr ""
 "Service Manager <http://nssm.cc/>`_ (NSSM) ist ein entsprechendes Programm, "
 "welches es erlaubt beliebige ausführbare Dateien als Service zu registrieren."
 
-#: ../../installation.rst:503
+#: ../../installation.rst:514
 msgid "Download NSSM from http://nssm.cc/download"
 msgstr "Laden Sie NSSM von http://nssm.cc/download herunter"
 
-#: ../../installation.rst:504
+#: ../../installation.rst:515
 msgid ""
 "Create a new local installation directory for NSSM, e.g. ``C:\\Program Files"
 "\\NSSM``."
@@ -1564,7 +1609,7 @@ msgstr ""
 "Legen Sie ein neues lokales Verzeichnis für NSSM an, z.B. ``C:\\Program Files"
 "\\NSSM``."
 
-#: ../../installation.rst:505
+#: ../../installation.rst:516
 msgid ""
 "Unzip the downloaded file and copy either the 64-bit ``win64\\nssm.exe`` or the "
 "32-bit ``win32\\nssm.exe`` file to your new local directory."
@@ -1573,7 +1618,7 @@ msgstr ""
 "``win64\\nssm.exe`` oder die 32-Bit ``win32\\nssm.exe`` Datei in Ihr neues "
 "lokales Verzeichnis."
 
-#: ../../installation.rst:506
+#: ../../installation.rst:517
 msgid ""
 "Add the installation directory of NSSM to the environment variable ``PATH`` in "
 "the Windows system settings."
@@ -1581,7 +1626,7 @@ msgstr ""
 "Fügen Sie das Installationsverzeichnis von NSSM zu der Umgebungsvariable "
 "``PATH`` in den Windows Systemeinstellungen hinzu."
 
-#: ../../installation.rst:508
+#: ../../installation.rst:519
 msgid ""
 "This is necessary to use the ``nssm`` executable on the command line without an "
 "absolute path."
@@ -1589,23 +1634,23 @@ msgstr ""
 "Dies ist notwendig um den ``nssm`` Befehl auf der Kommandozeile ohne absoluten "
 "Pfad ausführen zu können."
 
-#: ../../installation.rst:510
+#: ../../installation.rst:521
 msgid "Open the command line ``cmd`` with administrative privileges."
 msgstr "Öffnen Sie die Kommandozeile ``cmd`` mit Administratorrechten."
 
-#: ../../installation.rst:511
+#: ../../installation.rst:522
 msgid "Execute ``nssm install script-engine``."
 msgstr " Führen Sie ``nssm install script-engine`` aus."
 
-#: ../../installation.rst:512
+#: ../../installation.rst:523
 msgid "The NSSM configuration dialog open"
 msgstr "Der NSSM Konfigurationsdialog öffnet sich"
 
-#: ../../installation.rst:513 ../../installation.rst:658
+#: ../../installation.rst:524 ../../installation.rst:669
 msgid "In the *Application* tab fill in the following information:"
 msgstr "In dem Tab *Application* fügen Sie folgende Informationen hinzu:"
 
-#: ../../installation.rst:515
+#: ../../installation.rst:526
 msgid ""
 "*Path*: the path to the Node.js .exe file, e.g. ``C:\\Program Files\\nodejs"
 "\\node.exe``"
@@ -1613,7 +1658,7 @@ msgstr ""
 "*Path*: der Pfad zu der Node.js .exe Datei, z.B. ``C:\\Program Files\\nodejs"
 "\\node.exe``"
 
-#: ../../installation.rst:516
+#: ../../installation.rst:527
 msgid ""
 "*Startup directory*: the value of ``$SCRIPT_ENGINE_HOME``, e.g. ``C:\\Program "
 "Files\\Script Engine``."
@@ -1621,27 +1666,27 @@ msgstr ""
 "*Startup directory*: das richtige Verzeichnis von ``$SCRIPT_ENGINE_HOME``, z.B. "
 "``C:\\Program Files\\Script Engine``."
 
-#: ../../installation.rst:517
+#: ../../installation.rst:528
 msgid "*Arguments*: the exact value ``server.js``"
 msgstr "*Arguments*: der genaue Wert ``server.js``"
 
-#: ../../installation.rst:522 ../../installation.rst:667
+#: ../../installation.rst:533 ../../installation.rst:678
 msgid "In the *Details* tab fill in the following information:"
 msgstr "In dem Tab *Details* fügen Sie folgende Informationen hinzu:"
 
-#: ../../installation.rst:524 ../../installation.rst:669
+#: ../../installation.rst:535 ../../installation.rst:680
 msgid "*Display name*: the name of the service shown in ``services.msc``"
 msgstr ""
 "*Display name*: der Name des Service, welcher in  ``services.msc`` angezeigt "
 "wird"
 
-#: ../../installation.rst:525 ../../installation.rst:670
+#: ../../installation.rst:536 ../../installation.rst:681
 msgid "*Description*: a description which will help you to recognise the service"
 msgstr ""
 "*Description*: eine Beschreibung, die Ihnen dabei hilft den Service wieder zu "
 "erkennen"
 
-#: ../../installation.rst:526 ../../installation.rst:671
+#: ../../installation.rst:537 ../../installation.rst:682
 msgid ""
 "*Startup type*: choose if the service shall start automatically on startup or "
 "if you want to start it manually"
@@ -1649,7 +1694,7 @@ msgstr ""
 "*Startup type*: wählen Sie ob der Service automatisch beim Systemstart oder "
 "manuell gestartet werden soll"
 
-#: ../../installation.rst:531
+#: ../../installation.rst:542
 msgid ""
 "Fill in any other service configuration settings you deem appropriate for your "
 "system in the other tabs."
@@ -1657,26 +1702,26 @@ msgstr ""
 "Füllen Sie je nach Bedarf weitere Informationen in die anderen Tabs, die Sie "
 "für die Ausführung auf Ihrem System als notwendig erachten."
 
-#: ../../installation.rst:532
+#: ../../installation.rst:543
 msgid "Click on *Install service*."
 msgstr "Klicken Sie auf *Install service*."
 
-#: ../../installation.rst:534
+#: ../../installation.rst:545
 msgid "Now you can start the script engine with the following command: ::"
 msgstr "Nun können Sie die Script Engine mit dem folgenden Befehl starten: ::"
 
-#: ../../installation.rst:538
+#: ../../installation.rst:549
 msgid "You can check the status of the script engine by executing: ::"
 msgstr ""
 "Sie können den Status der Script Engine mit dem folgenden Befehl überprüfen: ::"
 
-#: ../../installation.rst:542
+#: ../../installation.rst:553
 msgid ""
 "In order to stop the script engine again, execute the following command: ::"
 msgstr ""
 "Um die Script Engine wieder zu stoppen, führen Sie den folgenden Befehl aus: ::"
 
-#: ../../installation.rst:546
+#: ../../installation.rst:557
 msgid ""
 "While it is running, you can open your browser and go to the URL you have "
 "configured for the script engine, by default this ``http://localhost:8081``. If "
@@ -1687,7 +1732,7 @@ msgstr ""
 "haben. Standardmäßig lautet die URL ``http://localhost:8081``. Wenn die Script "
 "Engine läuft, werden Sie eine leere Seite mit folgendem Inhalt sehen: ``{}``"
 
-#: ../../installation.rst:549
+#: ../../installation.rst:560
 msgid ""
 "Besides using ``nssm`` on the command line, you will find a new service when "
 "you open the ``services.msc``. The script engine will show up under the name "
@@ -1699,12 +1744,12 @@ msgstr ""
 "starten und stoppen. Die Script Engine wird unter dem Namen verfügbar sein, "
 "welchen Sie als Anzeigenamen konfiguriert haben."
 
-#: ../../installation.rst:554 ../../installation.rst:679
-#: ../../installation.rst:737
+#: ../../installation.rst:565 ../../installation.rst:690
+#: ../../installation.rst:748
 msgid "Linux"
 msgstr "Linux"
 
-#: ../../installation.rst:555
+#: ../../installation.rst:566
 msgid ""
 "On Linux this task is usually accomplished with Init scripts using the "
 "respective Init system of your Linux distribution. Because there are several "
@@ -1718,7 +1763,7 @@ msgstr ""
 "Verfügung. Für den Fall, dass Sie selbst noch kein Template besitzen, finden "
 "Sie im Internet zahlreiche Beispiele für die verschiedenen Init-Systeme."
 
-#: ../../installation.rst:559
+#: ../../installation.rst:570
 msgid ""
 "As mentioned before, the script engine can be started from within ``"
 "$SCRIPT_ENGINE_HOME`` by executing: ::"
@@ -1726,7 +1771,7 @@ msgstr ""
 "Wie bereits erwähnt, kann die Script Engine mit folgendem Befehl aus dem "
 "Verzeichnis ``$SCRIPT_ENGINE_HOME`` gestartet werden: ::"
 
-#: ../../installation.rst:563
+#: ../../installation.rst:574
 msgid ""
 "You have to ensure your Init script starts the Node.js executable ``node`` and "
 "uses the JavaScript file ``$SCRIPT_ENGINE_HOME/server.js`` as an argument. "
@@ -1739,11 +1784,11 @@ msgstr ""
 "für die Ausführung nutzen, dann muss dieser entsprechenden Zugriff auf das ``"
 "$SCRIPT_ENGINE_HOME`` Verzeichnis haben."
 
-#: ../../installation.rst:569
+#: ../../installation.rst:580
 msgid "Installing the Workflow Accelerator Mail Relay"
 msgstr "Workflow Accelerator Mail Relay installieren"
 
-#: ../../installation.rst:570
+#: ../../installation.rst:581
 msgid ""
 "You only need to install and configure the Mail Relay if you purchased a "
 "version of Workflow Accelerator which allows you to use email triggers."
@@ -1752,7 +1797,7 @@ msgstr ""
 "Version von Workflow Accelerator erworben haben, welche die Verwendung des E-"
 "Mail-Auslösers erlaubt."
 
-#: ../../installation.rst:572
+#: ../../installation.rst:583
 msgid ""
 "The mail relay is a SMTP server which receives emails and forwards them via "
 "HTTP to the Workflow Accelerator web application. It is required in order to "
@@ -1765,23 +1810,23 @@ msgstr ""
 "dann müssen Sie diese Komponente nicht aufsetzen und können diesen Abschnitt "
 "überspringen."
 
-#: ../../installation.rst:576
+#: ../../installation.rst:587
 msgid "The complete set-up of the mail relay consists of the following steps:"
 msgstr "Das komplette Setup des Mail Relay umfasst folgende Schritte:"
 
-#: ../../installation.rst:578 ../../installation.rst:583
+#: ../../installation.rst:589 ../../installation.rst:594
 msgid "Create an email domain for the mail relay"
 msgstr "Eine E-Mail-Domain für das Mail Relay anlegen"
 
-#: ../../installation.rst:579 ../../installation.rst:602
+#: ../../installation.rst:590 ../../installation.rst:613
 msgid "Install and configure the mail relay"
 msgstr "Das Mail Relay installieren und konfigurieren"
 
-#: ../../installation.rst:580 ../../installation.rst:694
+#: ../../installation.rst:591 ../../installation.rst:705
 msgid "Configure the web application"
 msgstr "Die Webanwendung konfigurieren"
 
-#: ../../installation.rst:584
+#: ../../installation.rst:595
 msgid ""
 "In order to work properly, the mail relay needs to receive all relevant emails. "
 "The used email addresses are created dynamically based on the ID of the "
@@ -1798,7 +1843,7 @@ msgstr ""
 "normalen E-Mail-Domain unterscheidet und dann entsprechend alle eingehenden E-"
 "Mails für diese Domain an das Mail Relay zu leiten."
 
-#: ../../installation.rst:589
+#: ../../installation.rst:600
 msgid ""
 "For example if you use the email domain ``mail.yourcompany.com``, a typical "
 "email address for the workflow system would look like this: ::"
@@ -1806,7 +1851,7 @@ msgstr ""
 "Wenn Sie z.B. die E-Mail-Domain ``mail.yourcompany.com`` verwenden, würde eine "
 "typische E-Mail-Adresse des Workflow-Systems wie folgt aussehen: ::"
 
-#: ../../installation.rst:593
+#: ../../installation.rst:604
 msgid ""
 "How you route the emails to the mail relay is up to you and depends on your "
 "infrastructure. If the server which runs the mail relay is publicly available, "
@@ -1830,7 +1875,7 @@ msgstr ""
 "nicht verändert wird und so z.B. auch der ursprüngliche Absender erhalten "
 "bleibt und nicht durch die Weiterleitung verändert wird."
 
-#: ../../installation.rst:599
+#: ../../installation.rst:610
 msgid ""
 "The next subsection explains how you set up the mail relay and configure it to "
 "use your email domain."
@@ -1838,7 +1883,7 @@ msgstr ""
 "Der nächste Abschnitt erklärt, wie Sie das Mail Relay aufsetzen und Ihre E-Mail-"
 "Domain hinein konfigurieren."
 
-#: ../../installation.rst:603
+#: ../../installation.rst:614
 msgid ""
 "The mail relay comes as a JAR file which requires Java 8 for the execution. "
 "Please, make sure Java 8 is installed before continuing with the set-up."
@@ -1847,7 +1892,7 @@ msgstr ""
 "Ausführung. Stellen Sie bitte sicher, dass Java 8 installiert ist, bevor sie "
 "mit dem Setup fortfahren."
 
-#: ../../installation.rst:606
+#: ../../installation.rst:617
 msgid ""
 "The mail relay can be installed on the same server as the Workflow Accelerator "
 "web application or on a different server. If you choose two different servers, "
@@ -1859,7 +1904,7 @@ msgstr ""
 "unterschiedlichen Servern installieren. Stellen Sie jedoch sicher, dass das "
 "Mail Relay ein Verbindung zu der Webanwendung herstellen kann."
 
-#: ../../installation.rst:609
+#: ../../installation.rst:620
 msgid ""
 "Create a new local directory for the mail relay, e.g. ``C:\\Program Files\\Mail "
 "Relay`` or ``/var/lib/mail-relay``."
@@ -1867,12 +1912,12 @@ msgstr ""
 "Legen Sie ein neues lokales Verzeichnis für das Mail Relay an, z.B. ``C:"
 "\\Program Files\\Mail Relay`` oder ``/var/lib/mail-relay``."
 
-#: ../../installation.rst:611
+#: ../../installation.rst:622
 msgid "We will refer to this directory as ``$MAIL_RELAY_HOME``."
 msgstr ""
 "Im folgenden wird dieses Verzeichnis als ``$MAIL_RELAY_HOME`` referenziert."
 
-#: ../../installation.rst:613
+#: ../../installation.rst:624
 msgid ""
 "Copy the contents of the directory ``$WORKFLOW_HOME/mail-relay/`` to your newly "
 "created directory."
@@ -1880,7 +1925,7 @@ msgstr ""
 "Kopieren Sie den Inhalt des Verzeichnisses ``$WORKFLOW_HOME/mail-relay/`` in "
 "Ihr neu angelegtes Verzeichnis."
 
-#: ../../installation.rst:615
+#: ../../installation.rst:626
 msgid ""
 "You should find the file ``mail-relay.jar`` directly within your directory: ``"
 "$MAIL_RELAY_HOME/mail-relay.jar``."
@@ -1888,13 +1933,13 @@ msgstr ""
 "Die Datei ``mail-relay.jar`` sollte sich direkt in Ihrem Verzeichnis befinden:  "
 "``$MAIL_RELAY_HOME/server.js``."
 
-#: ../../installation.rst:617
+#: ../../installation.rst:628
 msgid "Within the ``$MAIL_RELAY_HOME`` directory create a new directory ``logs``."
 msgstr ""
 "Legen Sie innerhalb des Verzeichnisses ``$MAIL_RELAY_HOME`` ein neues "
 "Verzeichnis ``logs`` an."
 
-#: ../../installation.rst:619
+#: ../../installation.rst:630
 msgid ""
 "Open ``$MAIL_RELAY_HOME/logback.xml`` and edit ``value`` in the following "
 "line: ::"
@@ -1902,13 +1947,13 @@ msgstr ""
 "Öffnen Sie ``$MAIL_RELAY_HOME/logback.xml`` und ändern Sie den Eintrag "
 "``value`` in der folgenden Zeile: ::"
 
-#: ../../installation.rst:623
+#: ../../installation.rst:634
 msgid "Set ``value`` to the absolute path of ``$MAIL_RELAY_HOME/logs``."
 msgstr ""
 "Setzen Sie den Wert von ``value`` auf den absoluten Dateipfad von ``"
 "$MAIL_RELAY_HOME/logs``."
 
-#: ../../installation.rst:625
+#: ../../installation.rst:636
 msgid ""
 "For example ``C:\\\\Program Files\\\\Mail Relay\\\\logs`` or ``/var/lib/mail-"
 "relay/logs``"
@@ -1916,11 +1961,11 @@ msgstr ""
 "Z.B. ``C:\\\\Program Files\\\\Mail Relay\\\\logs`` oder ``/var/lib/mail-relay/"
 "logs``"
 
-#: ../../installation.rst:626
+#: ../../installation.rst:637
 msgid "On Windows you have to use ``\\\\`` as a separator for the path."
 msgstr "Unter Windows müssen ``\\\\`` als Trennzeichen für den Pfad nutzen."
 
-#: ../../installation.rst:628
+#: ../../installation.rst:639
 msgid ""
 "Open ``$MAIL_RELAY_HOME/mail-relay.properties`` and edit the values for the "
 "domain, port and Workflow Accelerator URL."
@@ -1928,18 +1973,18 @@ msgstr ""
 "Öffnen Sie ``$MAIL_RELAY_HOME/mail-relay.properties`` und passen Sie die Werte "
 "für die Domain, den Port und die Workflow Accelerator URL an."
 
-#: ../../installation.rst:630
+#: ../../installation.rst:641
 msgid ""
 "Ensure that the port for the mail relay is not used by any other application."
 msgstr ""
 "Stellen Sie sicher, dass der Port für das Mail Relay nicht bereits von einer "
 "anderen Anwendung genutzt wird."
 
-#: ../../installation.rst:635
+#: ../../installation.rst:646
 msgid "``workflow.relay.domain``"
 msgstr "``workflow.relay.domain``"
 
-#: ../../installation.rst:635
+#: ../../installation.rst:646
 msgid ""
 "Defines the (sub)domain which is used to receive emails for Workflow "
 "Accelerator."
@@ -1947,23 +1992,23 @@ msgstr ""
 "Definiert die (Sub-)Domain, welche für den Empfang von E-Mails für Workflow "
 "Accelerator genutzt wird."
 
-#: ../../installation.rst:636
+#: ../../installation.rst:647
 msgid "``workflow.relay.serverUrl``"
 msgstr "``workflow.relay.serverUrl``"
 
-#: ../../installation.rst:636
+#: ../../installation.rst:647
 msgid "Defines the URL of the Workflow Accelerator web application."
 msgstr "Legt die URL der Workflow Accelerator Webanwendung fest."
 
-#: ../../installation.rst:637
+#: ../../installation.rst:648
 msgid "``workflow.relay.port``"
 msgstr "``workflow.relay.port``"
 
-#: ../../installation.rst:637
+#: ../../installation.rst:648
 msgid "Defines the port the SMTP will use and listen to."
 msgstr "Legt den Port fest, welchen der SMTP-Server verwenden wird."
 
-#: ../../installation.rst:640
+#: ../../installation.rst:651
 msgid ""
 "After the successful set-up you can start the mail relay by opening the command "
 "line and executing the following command ::"
@@ -1971,12 +2016,12 @@ msgstr ""
 "Nach der erfolgreichen Installation können Sie das Mail Relay starten, in dem "
 "Sie die Kommandozeile öffnen und folgenden Befehl ausführen ::"
 
-#: ../../installation.rst:644
+#: ../../installation.rst:655
 msgid "Replace ``$MAIL_RELAY_HOME`` with the absolute path to the JAR file."
 msgstr ""
 "Ersetzen Sie ``$MAIL_RELAY_HOME`` mit dem absoluten Dateipfad zu der JAR-Datei."
 
-#: ../../installation.rst:646
+#: ../../installation.rst:657
 msgid ""
 "You can also register a new service or set up a new Linux Init script depending "
 "on your operating system to ease the management of the mail relay."
@@ -1985,7 +2030,7 @@ msgstr ""
 "entsprechenden Service registrieren oder ein Linux-Init-Skript aufsetzen, "
 "abhängig von Ihrem Betriebssystem."
 
-#: ../../installation.rst:650
+#: ../../installation.rst:661
 msgid ""
 "Section :ref:`wrap-into-service` explains how you can wrap a single command "
 "into a service using NSSM. If you installed NSSM previously, you don't need to "
@@ -1998,13 +2043,13 @@ msgstr ""
 "Sie einfach den Anweisungen in dem Abschnitt und ersetzen Sie die Details für "
 "die Script Engine mit den Details für das Mail Relay."
 
-#: ../../installation.rst:654
+#: ../../installation.rst:665
 msgid "Open a command line with administrator privileges and execute: ::"
 msgstr ""
 "Öffnen Sie die Kommandozeile ``cmd`` mit Administratorrechten und führen Sie "
 "folgenden Befehl aus: ::"
 
-#: ../../installation.rst:660
+#: ../../installation.rst:671
 msgid ""
 "*Path*: the path to the Java .exe file, e.g. ``C:\\Program Files\\Java"
 "\\jre1.8.0_92\\bin\\java.exe``"
@@ -2012,7 +2057,7 @@ msgstr ""
 "*Path*: der Pfad zu der Java .exe Datei, z.B. ``C:\\Program Files\\Java"
 "\\jre1.8.0_92\\bin\\java.exe``"
 
-#: ../../installation.rst:661
+#: ../../installation.rst:672
 msgid ""
 "*Startup directory*: the value of ``$MAIL_RELAY_HOME``, e.g. ``C:\\Program Files"
 "\\Mail Relay``."
@@ -2020,11 +2065,11 @@ msgstr ""
 "*Startup directory*: das richtige Verzeichnis von ``$MAIL_RELAY_HOME``, z.B. "
 "``C:\\Program Files\\Mail Relay``."
 
-#: ../../installation.rst:662
+#: ../../installation.rst:673
 msgid "*Arguments*: the exact value ``-jar mail-relay.jar``"
 msgstr "*Arguments*: der genaue Wert ``-jar mail-relay.jar``"
 
-#: ../../installation.rst:676
+#: ../../installation.rst:687
 msgid ""
 "After the successful registration, you can start the mail relay similarly to "
 "the script engine either on command line or via ``services.msc``."
@@ -2032,7 +2077,7 @@ msgstr ""
 "Nach der erfolgreichen Registrierung können Sie das Mail Relay ähnlich wie die "
 "Script Engine entweder per Kommandozeile oder via ``services.msc`` starten."
 
-#: ../../installation.rst:680
+#: ../../installation.rst:691
 msgid ""
 "Similar to the script engine, for the mail relay this task is usually "
 "accomplished with Init scripts using the respective Init system of your Linux "
@@ -2047,13 +2092,13 @@ msgstr ""
 "kein Template besitzen, finden Sie im Internet zahlreiche Beispiele für die "
 "verschiedenen Init-Systeme."
 
-#: ../../installation.rst:684
+#: ../../installation.rst:695
 msgid "As mentioned before, the mail relay can be started by executing: ::"
 msgstr ""
 "Wie bereits erwähnt, kann das Mail Relay mit folgendem Befehl gestartet "
 "werden: ::"
 
-#: ../../installation.rst:688
+#: ../../installation.rst:699
 msgid ""
 "The placeholder ``$MAIL_RELAY_HOME`` has to be replaced with the absolute path "
 "to the JAR file."
@@ -2061,7 +2106,7 @@ msgstr ""
 "Der Platzhalter ``$MAIL_RELAY_HOME`` muss durch den absoluten Dateipfad zu der "
 "JAR-Datei ersetzt werden."
 
-#: ../../installation.rst:690
+#: ../../installation.rst:701
 msgid ""
 "You have to ensure your Init script starts the Java executable and uses the "
 "arguments ``-jar`` and the absolute path to JAR file ``mail-relay.jar``. Note, "
@@ -2074,7 +2119,7 @@ msgstr ""
 "verwenden, stellen Sie bitte sicher, dass dieser Zugriff auf das Verzeichnis ``"
 "$MAIL_RELAY_HOME`` hat."
 
-#: ../../installation.rst:695
+#: ../../installation.rst:706
 msgid ""
 "After setting up the mail relay, the email trigger needs to be enabled in the "
 "web application configuration. Section :ref:`update-effektif-configuration` "
@@ -2087,7 +2132,7 @@ msgstr ""
 "ist. Stellen Sie sicher, dass für die folgenden Einstellungen gültige Werte "
 "konfiguriert sind: ::"
 
-#: ../../installation.rst:702
+#: ../../installation.rst:713
 msgid ""
 "The first value must be set to ``true`` to enable the email trigger. The second "
 "value must be set to the email domain you created for the mail relay. It will "
@@ -2098,11 +2143,11 @@ msgstr ""
 "die Sie für das Mail Relay angelegt haben. Diese wird in der Nutzeroberfläche "
 "der Webanwendung angezeigt."
 
-#: ../../installation.rst:707
+#: ../../installation.rst:718
 msgid "Testing the mail relay"
 msgstr "Das Mail Relay testen"
 
-#: ../../installation.rst:708
+#: ../../installation.rst:719
 msgid ""
 "In order to verify the set-up works as intended, it can be helpful to test it. "
 "If you have installed Workflow Accelerator completely and created an "
@@ -2114,28 +2159,28 @@ msgstr ""
 "und bereits eine Organisation in der Anwendung erstellt haben, können Sie das "
 "Setup direkt mit einem Workflow testen."
 
-#: ../../installation.rst:711
+#: ../../installation.rst:722
 msgid "Create a new workflow"
 msgstr "Erzeugen Sie einen neuen Workflow"
 
-#: ../../installation.rst:712
+#: ../../installation.rst:723
 msgid "Choose the email trigger"
 msgstr "Wählen Sie den E-Mail-Auslöser aus"
 
-#: ../../installation.rst:713
+#: ../../installation.rst:724
 msgid "Copy the email address which is shown in the UI"
 msgstr ""
 "Kopieren Sie die E-Mail-Adresse, die in der Nutzeroberfläche angezeigt wird"
 
-#: ../../installation.rst:714
+#: ../../installation.rst:725
 msgid "Publish the workflow"
 msgstr "Veröffentlichen Sie den Workflow"
 
-#: ../../installation.rst:715
+#: ../../installation.rst:726
 msgid "Send an email to the copied email address"
 msgstr "Senden Sie eine E-Mail an die kopierte E-Mail-Adresse"
 
-#: ../../installation.rst:717
+#: ../../installation.rst:728
 msgid ""
 "The case list should now contain a new completed case which shows your email in "
 "the event stream. If no case was started, you should check the log file ``"
@@ -2146,7 +2191,7 @@ msgstr ""
 "Wenn kein Fall gestartet wurde, dann überprüfen Sie bitte die Log-Datei ``"
 "$MAIL_RELAY_HOME/logs/mail.log`` auf Fehlernachrichten."
 
-#: ../../installation.rst:721
+#: ../../installation.rst:732
 msgid ""
 "If you haven't finished the complete set-up, but at least the web application "
 "is running as well, you can test already whether the communication between the "
@@ -2173,12 +2218,12 @@ msgstr ""
 "Dieser Fehler wird erwartet, da der Workflow nicht existiert und beweist, dass "
 "die Kommunikation funktioniert."
 
-#: ../../installation.rst:730
+#: ../../installation.rst:741
 msgid "You can send an email using the Windows PowerShell: ::"
 msgstr ""
 "Sie können eine E-Mail mit Hilfe der Windows PowerShell wie folgt versenden: ::"
 
-#: ../../installation.rst:734
+#: ../../installation.rst:745
 msgid ""
 "Replace the domain of the email address for the ``-To`` parameter with the one "
 "you set in the configuration file."
@@ -2186,13 +2231,13 @@ msgstr ""
 "Ersetzen Sie die Domain der E-Mail-Adresse des ``-To`` Parameters mit der "
 "Domain, die Sie in der Konfigurationsdatei eingetragen haben."
 
-#: ../../installation.rst:738
+#: ../../installation.rst:749
 msgid "You can send an email using telnet to connect to the mail relay."
 msgstr ""
 "Sie können eine E-Mail versenden, indem Sie sich mit telnet zu dem Mail Relay "
 "verbinden."
 
-#: ../../installation.rst:740
+#: ../../installation.rst:751
 msgid ""
 "Open a command line on the server which is running the mail relay and "
 "execute: ::"
@@ -2200,7 +2245,7 @@ msgstr ""
 "Öffnen Sie die Kommandozeile auf dem Server, auf dem das Mail Relay ausgeführt "
 "wird und führen Sie folgenden Befehl aus: ::"
 
-#: ../../installation.rst:744
+#: ../../installation.rst:755
 msgid ""
 "Replace the number ``25`` with the respective port that you configured for the "
 "mail relay."
@@ -2208,7 +2253,7 @@ msgstr ""
 "Ersetzen Sie die Nummer ``25`` mit dem entsprechenden Port, den Sie bei der "
 "Konfiguration des Mail Relay festgelegt haben."
 
-#: ../../installation.rst:746
+#: ../../installation.rst:757
 msgid ""
 "Afterwards type in the following example line by line and replace the domain in "
 "the email for ``rcpt to`` to match the domain you configured for the mail relay."
@@ -2217,15 +2262,15 @@ msgstr ""
 "Sie dabei die Domain der E-Mail unter ``rcpt to`` mit dem von Ihnen "
 "konfigurierten Wert für das Mail Relay."
 
-#: ../../installation.rst:765
+#: ../../installation.rst:776
 msgid "Configuring Workflow Accelerator"
 msgstr "Workflow Accelerator konfigurieren"
 
-#: ../../installation.rst:770
+#: ../../installation.rst:781
 msgid "Install the license file"
 msgstr "Lizenzinstallation"
 
-#: ../../installation.rst:771
+#: ../../installation.rst:782
 msgid ""
 "Along with the Workflow Accelerator application you have received the Workflow "
 "Accelerator license file license.xml. Before you can start the Workflow "
@@ -2240,11 +2285,11 @@ msgstr ""
 "Accelerator überprüft die Datei wenn das System startet und stellt die "
 "entsprechenden Lizenzen zur Verfügung."
 
-#: ../../installation.rst:779
+#: ../../installation.rst:790
 msgid "Update the Workflow Accelerator configuration file"
 msgstr "Die Workflow Accelerator-Konfigurationsdatei aktualisieren"
 
-#: ../../installation.rst:780
+#: ../../installation.rst:791
 msgid ""
 "Before you can start Workflow Accelerator for the first time, you need to "
 "configure some mandatory properties in the Workflow Accelerator configuration "
@@ -2260,7 +2305,7 @@ msgstr ""
 "sich nun unter ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes/effektif-onpremise."
 "properties``\\ ."
 
-#: ../../installation.rst:784
+#: ../../installation.rst:795
 msgid ""
 "The configuration file is a property file that contains one configuration "
 "option per line and key and value are separated by a ``=``. Every line that "
@@ -2271,7 +2316,7 @@ msgstr ""
 "Jede Zeile die mit einer Raute „#“ beginnt, ist auskommentiert und wird nicht "
 "berücksichtigt."
 
-#: ../../installation.rst:787
+#: ../../installation.rst:798
 msgid ""
 "In general, the configuration allows to configure the base URL of the Workflow "
 "Accelerator system, the mail server, the database connection and integrations "
@@ -2294,11 +2339,11 @@ msgstr ""
 "und die E-Mail-Domain festlegen, die Sie während der Installation festgelegt "
 "haben."
 
-#: ../../installation.rst:794
+#: ../../installation.rst:805
 msgid "``effektif.baseUrl``"
 msgstr "``effektif.baseUrl``"
 
-#: ../../installation.rst:794
+#: ../../installation.rst:805
 msgid ""
 "(Required) The IP address or server name (including the port) of the server "
 "running the Workflow Accelerator Tomcat application server. E.g. ``http://"
@@ -2310,59 +2355,59 @@ msgstr ""
 "Falls der Server auf Port 80 läuft, kann auf die Angabe des Ports verzichtet "
 "werden."
 
-#: ../../installation.rst:795
+#: ../../installation.rst:806
 msgid "``effektif.smtp.host``"
 msgstr "``effektif.smtp.host``"
 
-#: ../../installation.rst:795
+#: ../../installation.rst:806
 msgid "(Required) The IP address or server name of the outgoing email server."
 msgstr "(Pflichtvariable) Die IP-Addresse oder der Servername des Emailservers"
 
-#: ../../installation.rst:796
+#: ../../installation.rst:807
 msgid "``effektif.smtp.port``"
 msgstr "``effektif.smtp.port``"
 
-#: ../../installation.rst:796
+#: ../../installation.rst:807
 msgid "The port on which the outgoing SMTP server listens"
 msgstr "Der Port des Emailservers"
 
-#: ../../installation.rst:797
+#: ../../installation.rst:808
 msgid "``effektif.smtp.ssl``"
 msgstr "``effektif.smtp.ssl``"
 
-#: ../../installation.rst:797
+#: ../../installation.rst:808
 msgid "If SSL should be used ( true or false )"
 msgstr "Ob SSL verwendet werden soll ( true oder false )"
 
-#: ../../installation.rst:798
+#: ../../installation.rst:809
 msgid "``effektif.smtp.tls``"
 msgstr "``effektif.smtp.tls``"
 
-#: ../../installation.rst:798
+#: ../../installation.rst:809
 msgid "If TLS should be used ( true or false )"
 msgstr "Ob TLS verwendet werden soll ( true or false )"
 
-#: ../../installation.rst:799
+#: ../../installation.rst:810
 msgid "``effektif.smtp.user``"
 msgstr "``effektif.smtp.user``"
 
-#: ../../installation.rst:799
+#: ../../installation.rst:810
 msgid "The username for authentication"
 msgstr "Der Nutzername zur Authentifizierung am Emailserver"
 
-#: ../../installation.rst:800
+#: ../../installation.rst:811
 msgid "``effektif.smtp.password``"
 msgstr "``effektif.smtp.password``"
 
-#: ../../installation.rst:800
+#: ../../installation.rst:811
 msgid "The password for authentication"
 msgstr "Das Passwort zur Authentifizierung am Emailserver"
 
-#: ../../installation.rst:801
+#: ../../installation.rst:812
 msgid "``effektif.mail.from``"
 msgstr "``effektif.mail.from``"
 
-#: ../../installation.rst:801
+#: ../../installation.rst:812
 msgid ""
 "This email address is used as the sender when the Workflow Accelerator system "
 "sends out notifications."
@@ -2370,11 +2415,11 @@ msgstr ""
 "Die Sender-E-Mail-Adresse von Workflow Accelerator-Benachrichtigungen und "
 "Einladungen."
 
-#: ../../installation.rst:802
+#: ../../installation.rst:813
 msgid "``effektif.mail.feedback``"
 msgstr "``effektif.mail.feedback``"
 
-#: ../../installation.rst:802
+#: ../../installation.rst:813
 msgid ""
 "This email address will receive all feedback which is sent using the feedback "
 "functionality in the application."
@@ -2382,11 +2427,11 @@ msgstr ""
 "Diese E-Mail-Adresse erhält alle Feedback-Nachrichten, welche über die "
 "integrierte Feedback-Funktion in der Anwendung gesendet werden."
 
-#: ../../installation.rst:803
+#: ../../installation.rst:814
 msgid "``effektif.mongodb.servers``"
 msgstr "``effektif.mongodb.servers``"
 
-#: ../../installation.rst:803
+#: ../../installation.rst:814
 msgid ""
 "A comma-separated list of MongoDB servers (hostnames). If you have MongodDB "
 "running on the same server as Tomcat, the default value of localhost is okay."
@@ -2395,11 +2440,11 @@ msgstr ""
 "Maschine läuft, auf der Tomcat die Effektif-Webanwendung zur Verfügung stellt, "
 "kann der Standardwert localhost beibehalten werden."
 
-#: ../../installation.rst:804
+#: ../../installation.rst:815
 msgid "``effektif.mongodb.username``"
 msgstr "``effektif.mongodb.username``"
 
-#: ../../installation.rst:804
+#: ../../installation.rst:815
 msgid ""
 "The Workflow Accelerator MongoDB user name. If you created the user following "
 "the instructions in this guide, the name is ``signavio``."
@@ -2407,11 +2452,11 @@ msgstr ""
 "Der Workflow Accelerator-MongoDB-Nutzername. Falls Sie den Nutzer entsprechend "
 "der Anweisungen erstellt haben, ist der name ``signavio`` ."
 
-#: ../../installation.rst:805
+#: ../../installation.rst:816
 msgid "``effektif.mongodb.password``"
 msgstr "``effektif.mongodb.password``"
 
-#: ../../installation.rst:805
+#: ../../installation.rst:816
 msgid ""
 "The password of the Workflow Accelerator MongoDB user. This is the password you "
 "defined during user creation."
@@ -2419,11 +2464,11 @@ msgstr ""
 "Das Passwort des MongoDB Nutzers, das bei der Erstellung des Nutzers definiert "
 "wurde."
 
-#: ../../installation.rst:806
+#: ../../installation.rst:817
 msgid "``effektif.mongodb.database``"
 msgstr "``effektif.mongodb.database``"
 
-#: ../../installation.rst:806
+#: ../../installation.rst:817
 msgid ""
 "The name of the database Workflow Accelerator should use. The default value "
 "``signavio`` is okay."
@@ -2431,11 +2476,11 @@ msgstr ""
 "Der Name der Datenbank, die von Workflow Accelerator verwendet werden soll. Der "
 "Standardwert ``signavio`` kann beibehalten werden."
 
-#: ../../installation.rst:807
+#: ../../installation.rst:818
 msgid "``effektif.javascript.server.url``"
 msgstr "``effektif.javascript.server.url``"
 
-#: ../../installation.rst:807
+#: ../../installation.rst:818
 msgid ""
 "(Optional) The URL of the Workflow Accelerator Script Engine, e.g. ``http://"
 "localhost:8081``\\ ."
@@ -2443,11 +2488,11 @@ msgstr ""
 "(Optional) Die URL der Workflow Accelerator Script Engine, z.B. ``http://"
 "localhost:8081``\\ ."
 
-#: ../../installation.rst:808
+#: ../../installation.rst:819
 msgid "``effektif.mail.receiver.enabled``"
 msgstr "``effektif.mail.receiver.enabled``"
 
-#: ../../installation.rst:808
+#: ../../installation.rst:819
 msgid ""
 "(Optional) Activates the email trigger if set to ``true``. You have to set up "
 "the mail relay for the trigger to work properly."
@@ -2456,11 +2501,11 @@ msgstr ""
 "wird. Sie müssen das Mail Relay installieren, damit der Auslöser benutzt werden "
 "kann."
 
-#: ../../installation.rst:809
+#: ../../installation.rst:820
 msgid "``effektif.mail.receiver.domain``"
 msgstr "``effektif.mail.receiver.domain``"
 
-#: ../../installation.rst:809
+#: ../../installation.rst:820
 msgid ""
 "(Optional) The email domain which is used to receive emails for the email "
 "trigger. The same value must be configured for the mail relay."
@@ -2469,7 +2514,7 @@ msgstr ""
 "Auslöser zu empfangen. Der gleiche Wert muss auch in der Konfiguration des Mail "
 "Relay gesetzt sein."
 
-#: ../../installation.rst:812
+#: ../../installation.rst:823
 msgid ""
 "The following properties are only relevant if your Workflow Accelerator "
 "installation is connected to your Signavio installation. ::"
@@ -2477,7 +2522,7 @@ msgstr ""
 "Die folgenden Eigenschaften sind nur relevant, falls Workflow Accelerator mit "
 "Ihrer Process Manager-Installation verbunden werden soll: ::"
 
-#: ../../installation.rst:821
+#: ../../installation.rst:832
 msgid ""
 "See :ref:`signavio-integration` for more information on how to set up the "
 "integration."
@@ -2485,11 +2530,11 @@ msgstr ""
 "Weitere Details zur Signavio-Integration erhalten Sie im Kapitel :ref:`signavio-"
 "integration`\\ ."
 
-#: ../../installation.rst:824
+#: ../../installation.rst:835
 msgid "Configure logging"
 msgstr "Logging konfigurieren"
 
-#: ../../installation.rst:825
+#: ../../installation.rst:836
 msgid ""
 "The Workflow Accelerator system has its own application log file ``effektif."
 "log``\\ . You need to define the directory where this log file is stored. The "
@@ -2501,7 +2546,7 @@ msgstr ""
 "Datei konfiguriert werden: ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes/logback."
 "xml``\\ . Öffnen Sie die datei und passen Sie die folgende Zeile an: ::"
 
-#: ../../installation.rst:832
+#: ../../installation.rst:843
 msgid ""
 "The value should contain an absolute path. Make sure the user executing Tomcat "
 "has the required read / write permissions for the directory."
@@ -2510,7 +2555,7 @@ msgstr ""
 "Nutzer, der Tomcat ausführt Lese- und Schreibzugriff auf das entsprechende "
 "Verzeichnis hat."
 
-#: ../../installation.rst:835
+#: ../../installation.rst:846
 msgid ""
 "On Windows it necessary to escape all \"\\\\\". An example value could like "
 "this: ``\"C:\\\\Logs\\\\Signavio\"``\\ ."
@@ -2518,7 +2563,7 @@ msgstr ""
 "Unter Windows ist es notwendig, alle \"\\\\\" zu escapen, sodass sich zum "
 "Beispiel der folgende Wert ergibt: ``\"C:\\\\Logs\\\\Signavio\"``\\ ."
 
-#: ../../installation.rst:837
+#: ../../installation.rst:848
 msgid ""
 "This configuration file also enables you to change the log level in this file. "
 "By default, the log level is INFO. However, in a scenario where you require "
@@ -2530,11 +2575,11 @@ msgstr ""
 "Troubleshooting Support benötigen, ist es sinnvoll, das Loglevel auf DEBUG zu "
 "erhöhen. Hierfür muss die folgende Zeile angepasst werden: ::"
 
-#: ../../installation.rst:844
+#: ../../installation.rst:855
 msgid "Change it to: ::"
 msgstr "Der geänderte Eintrag sollte wie folgt aussehen: ::"
 
-#: ../../installation.rst:848
+#: ../../installation.rst:859
 msgid ""
 "You will need to restart the Tomcat server for the changes to take effect. You "
 "can find more detailed information on how to start the Tomcat server in the "
@@ -2544,7 +2589,7 @@ msgstr ""
 "nächste Abschnitt gibt Ihnen detailliertere Hinweise, wie sie den Tomcat server "
 "starten können."
 
-#: ../../installation.rst:851
+#: ../../installation.rst:862
 msgid ""
 "The log file is configured to do a roll over. Every day, a new log file is "
 "created which contains a timestamp in the filename similar to "
