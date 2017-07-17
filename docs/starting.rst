@@ -51,10 +51,10 @@ If your version includes the email trigger for workflows:
     * the Workflow Accelerator URL is set
     * the log file is configured
 
-If the system is integrated with the Signavio Process Manager check also the following points:
+If the system is integrated with Signavio Process Manager check also the following points:
 
 * Workflow Accelerator and Signavio Process Manager have compatible versions
-* Workflow Accelerator is configured in the Signavio Process Manager configuration.xml
+* Workflow Accelerator is configured in Signavio Process Manager configuration.xml
 * Signavio Process Manager is configured in the Workflow Accelerator configuration file
 
 Start Workflow Accelerator
@@ -178,7 +178,7 @@ If you purchased an Workflow Accelerator standalone version, you will see a form
 
     The default Workflow Accelerator login screen
 
-If you purchased Workflow Accelerator along with the Signavio Process Manager, you will see a login screen with one button. 
+If you purchased Workflow Accelerator along with Signavio Process Manager, you will see a login screen with one button. 
 You can login to Workflow Accelerator using your Signavio Process Manager account as soon as the Workflow Accelerator users have been set up. 
 Jump to section :ref:`signavio-user-management` for more information on how to set up the users. 
 
@@ -187,7 +187,7 @@ Jump to section :ref:`signavio-user-management` for more information on how to s
 
     The Signavio login screen
 
-When you click *Log in with Signavio account*\ , you will be redirected to the Signavio Process Manager and asked to authorize the access of Workflow Accelerator. 
+When you click *Log in with Signavio account*\ , you will be redirected to Signavio Process Manager and asked to authorize the access of Workflow Accelerator. 
 When you click on *Grant*\ , you will be redirected back to Workflow Accelerator and automatically logged in. 
 The authorization dialog is only shown the first time you use this method to login.
 
@@ -196,13 +196,13 @@ The authorization dialog is only shown the first time you use this method to log
 
     The Signavio authorization dialog
 
-.. hint:: You have to be logged in to the Signavio Process Manager in order to see the authorization dialog. Otherwise, you will be redirected to the Collaboration Portal.
+.. hint:: You have to be logged in to Signavio Process Manager in order to see the authorization dialog. Otherwise, you will be redirected to the Collaboration Portal.
 
 .. _create-initial-user:
 
 Create the initial user
 -----------------------
-In case you purchased Workflow Accelerator along with the Signavio Process Manager and want to setup the integration, you don't have to create the initial Workflow Accelerator user manually. 
+In case you purchased Workflow Accelerator along with Signavio Process Manager and want to setup the integration, you don't have to create the initial Workflow Accelerator user manually. 
 Please jump to section :ref:`signavio-user-management` for more information.
 
 Workflow Accelerator users are organized in organisations. 
@@ -223,7 +223,7 @@ The next subsection explains how to invite users.
 
 Invite other users
 ------------------
-In case this is an integrated installation with the Signavio Process Manager, please jump to section :ref:`signavio-integration` for setting up synchronization of users.
+In case this is an integrated installation with Signavio Process Manager, please jump to section :ref:`signavio-integration` for setting up synchronization of users.
 
 To invite other users, go to the organization configuration panel. 
 That's located in the dropdown under your name in the top right corner named *Organization settings*\ . 

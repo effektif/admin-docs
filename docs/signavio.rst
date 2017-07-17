@@ -9,7 +9,7 @@ In case both systems run on the same server, you need to set up two Tomcat insta
 
 Compatibility list
 ------------------
-Due to changes in the communication protocol, you are required to use a compatible version of the Process Manager in combination with your Workflow Accelerator system.
+Due to changes in the communication protocol, you are required to use a compatible version of Process Manager in combination with your Workflow Accelerator system.
 The following table shows the compatible versions of Workflow Accelerator and Process Manager.
 You are free to update both systems in any order.
 Please ensure that nobody is working on the systems while you update them.
@@ -32,7 +32,7 @@ Setup
   * version 9.3 and earlier: ``WEBAPPS/ROOT/WEB-INF/classes/configuration.xml``
 
   * version 9.7 and later: ``CONF/configuration.xml``
-  
+
   ::
 
     <effektif>
@@ -75,10 +75,10 @@ If you add any of the following properties to the configuration file, make sure 
 
 User management
 ---------------
-In case you use the Workflow Accelerator OEM version that is shipped with the Process Manager, the user management is handled by the Process Manager system.
+In case you use the Workflow Accelerator OEM version that is shipped with Process Manager, the user management is handled by the Process Manager system.
 The Process Manager system will synchronise all users to Workflow Accelerator.
 Within Workflow Accelerator you will not be able to register any initial user nor invite more users.
 
 If you have purchased a standalone version of Workflow Accelerator, you will be able to create an initial user and invite more users to Workflow Accelerator.
-However, it is advised to create your Workflow Accelerator organization by activating the approval workflow feature in the Process Manager.
+However, it is advised to create your Workflow Accelerator organization by activating the approval workflow feature in Process Manager.
 This way your Process Manager workspace and the Workflow Accelerator organization will be linked automatically.
