@@ -9,6 +9,12 @@ It lists changes to technical requirements for new versions and additional instr
 .. IMPORTANT::
 	If you skip one or more versions of Workflow Accelerator during the update, please follow the update notes for the versions you are skipping as well. You should start with the oldest version which is newer than your currently installed version of Workflow Accelerator.
 
+Updating to Signavio Workflow Accelerator 3.39
+----------------------------------------------
+If you use Workflow Accelerator in combination with Signavio Process Manager, you must update Process Manager to version 11.5.
+
+To update from a version prior to Signavio Workflow 3.22, first follow the instructions in the next sections version by version, starting with the oldest version which is higher than your currently installed version.
+
 Updating to Signavio Workflow Accelerator 3.22
 ----------------------------------------------
 Signavio Workflow has been renamed to Signavio Workflow Accelerator.
